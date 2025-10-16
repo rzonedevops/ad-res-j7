@@ -1,4 +1,3 @@
-
 #!/usr/bin/env node
 
 const HypergraphManager = require('./hypergraph-manager');

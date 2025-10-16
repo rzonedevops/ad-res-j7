@@ -41,7 +41,10 @@
     "db:hypergraph:setup": "node db/hypergraph-migrate.js",
     "db:hypergraph:stats": "node db/hypergraph-manager.js stats",
     "db:hypergraph:demo": "node db/hypergraph-manager.js demo",
-    "db:hypergraph:populate": "node db/populate-case-hypergraph.js"
+    "db:hypergraph:populate": "node db/populate-case-hypergraph.js",
+    "db:lex:setup": "node db/lex-inference-migrate.js",
+    "db:lex:demo": "node db/lex-demo-case.js",
+    "db:lex:analyze": "node db/lex-inference-engine.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",

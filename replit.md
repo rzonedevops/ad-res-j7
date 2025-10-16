@@ -57,15 +57,26 @@ npm run db:hypergraph:stats     # View graph statistics
 npm run db:hypergraph:demo      # Run demo with sample data
 ```
 
+### Lex Inference Engine Commands
+```bash
+npm run db:lex:setup            # Create lex inference schema
+npm run db:lex:demo             # Run deterministic guilt resolution demo
+npm run db:lex:analyze          # Analyze case with modal logic
+```
+
 ### Current Status
 - **All Tests:** 128/128 passing (100% success rate)
 - **Test Coverage:** 
   - 85 validation tests (workflow structure and syntax)
   - 43 integration tests (functional behavior)
 - **Database:** 
-  - 9 tables (5 case tables + 4 hypergraph tables)
+  - 19 tables total:
+    - 5 case management tables
+    - 4 hypergraph knowledge graph tables
+    - 10 lex inference engine tables
   - 12 critical issues tracked
   - 26 hypergraph nodes, 15 edges, 37 relations
+  - 48 configurations enumerated for deterministic guilt resolution
 
 ## Automated Workflows
 
@@ -75,6 +86,13 @@ The project validates two main GitHub Actions workflows:
 2. **file-representations** - Maintains JSON and Markdown file format synchronization
 
 ## Recent Changes
+
+**2025-10-16:** Lex Inference Engine implemented
+- Created deterministic legal inference system with 10 database tables
+- Implemented Themis-Nemesis duality for possibility space enumeration
+- Built agent-arena-event-horizon configuration generator
+- Added invariant guilt detection across all possible configurations
+- Demonstrated Case 2025-137857 with 48 configuration enumeration
 
 **2025-10-15:** Initial Replit setup completed
 - Installed Node.js 20 and dependencies
