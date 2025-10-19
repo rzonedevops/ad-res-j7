@@ -1486,6 +1486,27 @@
       "size_bytes": 11258
     },
     {
+      "file": "tests/malformed-markdown-test-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4051
+    },
+    {
+      "file": "tests/security-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73384
+    },
+    {
+      "file": "tests/workflow-validation-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 11258
+    },
+    {
       "file": "todo/Executive Summary_ Jax-Dan Response Improvements.json",
       "status": "valid",
       "error": null,
