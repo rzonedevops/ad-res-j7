@@ -1,7 +1,7 @@
 {
-  "timestamp": "2025-10-17T04:38:46.921259",
-  "total_files": 209,
-  "valid_files": 209,
+  "timestamp": "2025-10-17T04:37:53.987777",
+  "total_files": 214,
+  "valid_files": 214,
   "invalid_files": 0,
   "errors": [],
   "warnings": [],
@@ -1133,7 +1133,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 35063
+      "size_bytes": 36927
     },
     {
       "file": "legal-hypergraphql/evaluation-reports/case-2025-137857-evaluation.json",
@@ -1203,7 +1203,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 1989
+      "size_bytes": 1924
     },
     {
       "file": "reports/comprehensive-status-report.json",
@@ -1234,105 +1234,140 @@
       "size_bytes": 1561
     },
     {
-      "file": "test-data/archives/comprehensive-test-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/comprehensive-test-results_2025-10-17_04-27-14.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 4679
     },
     {
-      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/comprehensive-test-results_2025-10-17_04-29-38.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4679
+    },
+    {
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-27-13.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 22948
     },
     {
-      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-29-38.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 22948
     },
     {
-      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/comprehensive-workflow-results_2025-10-17_04-37-53.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 22948
+    },
+    {
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-27-13.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 165204
     },
     {
-      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-29-38.json",
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 168909
+      "size_bytes": 165204
     },
     {
-      "file": "test-data/archives/integration-test-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/end-to-end-test-results_2025-10-17_04-37-53.json",
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 8679
+      "size_bytes": 165204
     },
     {
-      "file": "test-data/archives/integration-test-results_2025-10-17_04-29-20.json",
-      "status": "valid",
-      "error": null,
-      "warnings": [],
-      "size_bytes": 8679
-    },
-    {
-      "file": "test-data/archives/integration-test-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/integration-test-results_2025-10-17_04-27-13.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 8679
     },
     {
-      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/integration-test-results_2025-10-17_04-29-38.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8679
+    },
+    {
+      "file": "test-data/archives/integration-test-results_2025-10-17_04-37-53.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 8679
+    },
+    {
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-27-14.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 4508
     },
     {
-      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-29-38.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 4508
     },
     {
-      "file": "test-data/archives/security-validation-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/malformed-markdown-test-results_2025-10-17_04-37-53.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 4508
+    },
+    {
+      "file": "test-data/archives/security-validation-results_2025-10-17_04-27-13.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 73933
     },
     {
-      "file": "test-data/archives/security-validation-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/security-validation-results_2025-10-17_04-29-38.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 73933
     },
     {
-      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-27-07.json",
+      "file": "test-data/archives/security-validation-results_2025-10-17_04-37-53.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 73933
+    },
+    {
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-27-13.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 11816
     },
     {
-      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-29-06.json",
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-29-38.json",
       "status": "valid",
       "error": null,
       "warnings": [],
       "size_bytes": 11816
     },
     {
-      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-38-46.json",
+      "file": "test-data/archives/workflow-validation-results_2025-10-17_04-37-53.json",
       "status": "valid",
       "error": null,
       "warnings": [],
@@ -1357,7 +1392,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 168725
+      "size_bytes": 165020
     },
     {
       "file": "test-data/latest/integration-test-results.json",
@@ -1406,7 +1441,7 @@
       "status": "valid",
       "error": null,
       "warnings": [],
-      "size_bytes": 168381
+      "size_bytes": 164676
     },
     {
       "file": "tests/integration-test-results.json",
@@ -1435,6 +1470,13 @@
       "error": null,
       "warnings": [],
       "size_bytes": 73384
+    },
+    {
+      "file": "tests/specific-failing-tests-results.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 5007
     },
     {
       "file": "tests/workflow-validation-results.json",
