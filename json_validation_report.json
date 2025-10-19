@@ -170,6 +170,13 @@
       "size_bytes": 47035
     },
     {
+      "file": "burden-of-proof-analysis.json",
+      "status": "valid",
+      "error": null,
+      "warnings": [],
+      "size_bytes": 92446
+    },
+    {
       "file": "case_2025_137857/02_evidence/evidence_package_20251012/regima_uk_extraction.json",
       "status": "valid",
       "error": null,
