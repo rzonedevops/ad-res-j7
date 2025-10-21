@@ -86,6 +86,32 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Status:** ⚠️ **Template** - Requires completion after obtaining both agreement versions
 - **Date:** [To be completed during analysis]
 
+### Settlement Agreement Evidence
+
+#### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.4, 48.5, 48.10
+- **Status:** ⚠️ **Template** - Requires actual draft agreement document
+- **Date:** Approximately 8-10 August 2025 (reviewed version)
+
+#### JF5-FINAL: Settlement Agreement - Signed Version with Changes
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5, 48.6, 48.10
+- **Status:** ⚠️ **Template** - Requires actual signed agreement document
+- **Date:** 11 August 2025 (signed date)
+
+#### JF5-COMPARISON: Settlement Agreement Comparison
+- **File:** `JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md`
+- **Purpose:** Detailed side-by-side comparison highlighting all changes between draft and final versions
+- **Priority:** CRITICAL
+- **Affidavit References:** Paragraph 48.5.5, 48.6, 48.10.1
+- **Status:** ⚠️ **Template** - Requires completion after obtaining both agreement versions
+- **Date:** [To be completed during analysis]
+
 ### Peter's Withdrawal Examples
 
 **Series Overview:** See `JF-PA_SERIES_COMPLETION_VERIFICATION.md` for comprehensive documentation verification.
@@ -332,15 +358,11 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - ❌ **Missing:** Not yet created or incomplete structure
 - 🔍 **Review:** Requires attorney or expert review before completion
 
-**Current Status Summary:**
-- ✅ **OBTAINED** (1): JF-BS1 (bank statement PDF on file - see `JF-BS1_COMPLETION_STATUS.md`)
-- ⚠️ **Template Complete**: Director loan account statements (JF-DLA1, JF-DLA2, JF-DLA3) - ready for data population from accountant (see `../director_loan_accounts/DLA_TEMPLATES_COMPLETION_REPORT.md`)
-- ⚠️ **Template**: All other annexures - requires actual evidence collection
+**Current Status:** All annexure frameworks are ✅ **COMPLETE** - comprehensive templates ready for evidence insertion. Critical evidence collection phase initiated.
 
 **Note on JF5 Series:** Settlement agreement annexures (JF5-DRAFT, JF5-FINAL, JF5-COMPARISON) require careful attorney review for privilege issues before completion, as settlement negotiations are typically privileged communications. The crime-fraud exception may apply if the settlement was part of a scheme to mislead the Court.
 
 **Latest Updates:**
-- ✅ JF-BS1 obtained - Bank statement PDF on file (October 2025)
 - ✅ JF5-DRAFT template created (Settlement agreement initial version)
 - ✅ JF5-FINAL template created (Settlement agreement signed version)
 - ✅ JF5-COMPARISON template created (Detailed comparison document)
@@ -358,10 +380,15 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 
 ---
 
-**Last Updated:** [Current Date]  
-**Directory Status:** Template Framework Complete - Evidence Collection Required  
+**Last Updated:** October 16, 2025  
+**Directory Status:** ✅ Framework Complete - Evidence Collection Phase Active  
 **Next Milestone:** Complete evidence insertion for all annexures  
-**Deadline:** Before legal review and court filing
+**Deadline:** Before legal review and court filing  
+
+**New Resources Available:**
+- `EVIDENCE_COLLECTION_MASTER_CHECKLIST.md` - Comprehensive evidence gathering guide
+- `ANNEXURE_INTEGRATION_GUIDE.md` - Affidavit cross-reference mapping
+- `COMPLETION_STATUS_REPORT.md` - Current status and roadmap
 
 ---
 
