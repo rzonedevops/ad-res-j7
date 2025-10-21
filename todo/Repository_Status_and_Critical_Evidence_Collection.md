@@ -35,6 +35,7 @@ The repository has grown significantly:
 ### Should-Do (Phase 2) - High Priority Evidence
 
 1. Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
+2. ✅ **COMPLETED** - Collect correspondence showing Daniel provided documentation (JF-CORR1) - **Annexure Created**: `evidence/annexures/JF-CORR1_CORRESPONDENCE_EVIDENCE.md` - Consolidates JF8, JF8A, JF8B, JF8C, JF8D evidence packages
 2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
 3. ✅ **FRAMEWORK COMPLETE** - Gather IT service invoices and contracts (JF-ITS1)
    - **Framework Created:** `evidence/annexures/JF-ITS1_IT_SERVICE_INVOICES_AND_CONTRACTS.md`
