@@ -35,10 +35,28 @@ The repository has grown significantly:
 ### Should-Do (Phase 2) - High Priority Evidence
 
 1. Obtain system access restriction logs (JF-SAL1, JF-EAL1, JF-FSL1)
+2. ✅ **COMPLETED** - Collect correspondence showing Daniel provided documentation (JF-CORR1) - **Annexure Created**: `evidence/annexures/JF-CORR1_CORRESPONDENCE_EVIDENCE.md` - Consolidates JF8, JF8A, JF8B, JF8C, JF8D evidence packages
 2. Collect correspondence showing Daniel provided documentation (JF-CORR1)
+3. ✅ **FRAMEWORK COMPLETE** - Gather IT service invoices and contracts (JF-ITS1)
+   - **Framework Created:** `evidence/annexures/JF-ITS1_IT_SERVICE_INVOICES_AND_CONTRACTS.md`
+   - **Collection Guide:** `evidence/annexures/JF-ITS1_COLLECTION_GUIDE.md`
+   - **Analysis Complete:** 2,578 transactions categorized, R30M+ expenditure documented
+   - **Next Phase:** Evidence collection from service providers (3-4 weeks estimated)
+2. ✅ **FRAMEWORK COMPLETE** - Collect correspondence showing Daniel provided documentation (JF-CORR1)
+   - **Framework Document:** `evidence/annexures/JF-CORR1_CORRESPONDENCE_EVIDENCE_COLLECTION.md`
+   - **Documentation Log:** `evidence/correspondence/JF8A_DOCUMENTATION_LOG.md` (538 lines)
+   - **Collection Plan:** Comprehensive framework ready for external evidence gathering
+   - **Status:** Framework implementation complete, external collection phase required
 3. Gather IT service invoices and contracts
 4. Document historical collaborative model evidence (JF-HIST1, JF-HIST2, JF-HIST3)
-5. Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
+5. ✅ **FRAMEWORK COMPLETE** - Collect Rynette's expanding access documentation (JF-RF1, JF-RF2, JF-RF3)
+   - **Comprehensive frameworks created (112,000+ words across 4 documents)**
+   - **JF-RF1:** Email Granting System Access (23,500 words)
+   - **JF-RF2:** Email Providing Passwords (28,800 words)
+   - **JF-RF3:** Bank Authorization Forms (36,400 words)
+   - **JF-RF Series Collection Guide:** Coordinated evidence collection strategy (23,300 words)
+   - **Next Phase:** Evidence collection from external sources (5-6 weeks estimated)
+   - **Resources:** See `evidence/annexures/JF-RF_SERIES_EVIDENCE_COLLECTION_GUIDE.md`
 6. Document director exclusion evidence (JF-EX1, JF-EX2, JF-EX3, JF-EX4)
 
 ### Nice-to-Have (Phase 3) - Supporting Evidence
@@ -117,7 +135,7 @@ The repository has grown significantly:
 
 1. ✅ **COMPLETED** - Verify all R10.227M in documented losses are supported by evidence
 2. Cross-reference all 15 forensic analysis events with bank records
-3. Ensure criminal law framework is properly cited for all violations
+3. ✅ **COMPLETED** - Ensure criminal law framework is properly cited for all violations
 4. Validate all dates in revenue-theft, family-trust, and financial-flows analyses
 5. ✅ **COMPLETED** - Confirm prosecution recommendations are legally sound
 
