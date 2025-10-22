@@ -371,7 +371,7 @@ class LegalCaseSimulation:
         print(f"JF1 (Shopify Email) Weight: {self.evidence['JF1_shopify_email']['weight']:.3f}")
         print(f"JF1 (Shopify Email) Credibility: {self.evidence['JF1_shopify_email']['credibility']:.3f}")
         print(f"JF1 (Shopify Email) Impact: IRREFUTABLE - Demolishes applicant's central claims")
-        print(f"\nJF11 (Medical Records) Weight: {self.evidence['JF11_medical_records']['weight']:.3f}")
+        print(f"\nJF11 (Medical Records): Evidence considered [details redacted]")
         print(f"JF11 (Medical Records) Impact: Refutes dementia gaslighting claim")
         print(f"\nJF9 (Evidence Destruction) Weight: {self.evidence['JF9_timeline_evidence_destruction']['weight']:.3f}")
         print(f"JF9 (Evidence Destruction) Impact: Demonstrates consciousness of guilt")
