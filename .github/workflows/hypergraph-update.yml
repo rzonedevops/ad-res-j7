@@ -1,4 +1,6 @@
 name: Update Hypergraph
+permissions:
+  contents: write
 
 on:
   push:
