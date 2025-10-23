@@ -6,9 +6,25 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ## Directory Contents
 
-### Timeline Analysis Documents (NEW)
+### Comparative Analysis Documents (NEW)
 
-#### 1. **COMPREHENSIVE_TIMELINE_ANALYSIS.md**
+#### 1. **PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md** ⭐ NEW
+- **Purpose:** Systematic comparison of Peter's claims against documented evidence
+- **Central Revelation:** Dan & Kay's Shopify platform was paid for by Dan & Jax's UK company RegimA Zone Ltd the entire time - RWD ZA has no independent revenue stream
+- **Contents:**
+  - Executive summary of RegimA Zone Ltd payment revelation
+  - Comparative analysis of all five major claim categories
+  - Unjust enrichment calculation (R2.94M-R6.88M)
+  - Five Critical Questions framework (shifting burden of proof)
+  - Trust asset abandonment analysis
+  - Comparative misconduct analysis
+  - Strategic legal recommendations
+- **Key Finding:** Every financial allegation Peter makes collapses when confronted with RWD ZA's appropriation of revenue from RegimA Zone Ltd's platform
+- **Usage:** Primary counter-attack document, interrogatory foundation, unjust enrichment counterclaim basis
+
+### Timeline Analysis Documents
+
+#### 2. **COMPREHENSIVE_TIMELINE_ANALYSIS.md**
 - **Purpose:** Complete timeline analysis demonstrating Peter's bad faith
 - **Contents:**
   - Executive summary of strategic coordination
@@ -20,7 +36,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 - **Key Finding:** Strategic litigation for control, not genuine business concerns
 - **Usage:** Primary reference for timeline arguments throughout affidavit
 
-#### 2. **TIMELINE_VISUAL_DIAGRAM.md**
+#### 3. **TIMELINE_VISUAL_DIAGRAM.md**
 - **Purpose:** Visual representation of timeline using Mermaid diagrams
 - **Contents:**
   - Comprehensive Gantt chart
@@ -33,7 +49,7 @@ This directory contains comprehensive analysis documents supporting the answerin
 - **Format:** Mermaid syntax (renders in Markdown, exportable to images)
 - **Usage:** Court exhibits, visual presentations, annexures
 
-#### 3. **TIMELINE_QUICK_REFERENCE.md**
+#### 4. **TIMELINE_QUICK_REFERENCE.md**
 - **Purpose:** Quick reference guide for key timeline facts and arguments
 - **Contents:**
   - Critical timeline facts to memorize
@@ -47,19 +63,19 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### Existing Affidavit Analysis Documents
 
-#### 4. **Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx**
+#### 5. **Affidavit_Analysis_-_Part_1_Irrefutable_Proof.docx**
 - Classification: Irrefutable proof elements
 - Evidence categorization: Tier 1 strongest evidence
 
-#### 5. **Affidavit_Analysis_-_Part_2_Strong_Supporting_Evidence.docx**
+#### 6. **Affidavit_Analysis_-_Part_2_Strong_Supporting_Evidence.docx**
 - Classification: Strong supporting evidence
 - Evidence categorization: Tier 2 corroborating evidence
 
-#### 6. **Affidavit_Analysis_-_Part_3_Circumstantial_and_Inferred_Points.docx**
+#### 7. **Affidavit_Analysis_-_Part_3_Circumstantial_and_Inferred_Points.docx**
 - Classification: Circumstantial and inferred points
 - Evidence categorization: Tier 3 supporting context
 
-#### 7. **Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx**
+#### 8. **Affidavit_Analysis_-_Summary_of_Three-Part_Classification.docx**
 - Summary of three-part evidence classification system
 - Overview of all evidence tiers
 
@@ -69,17 +85,23 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### For Affidavit Drafting
 
-1. **Start with Timeline Analysis** (`COMPREHENSIVE_TIMELINE_ANALYSIS.md`)
+1. **Start with Comparative Analysis** (`PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md`)
+   - Review RegimA Zone Ltd revelation as foundation
+   - Use Five Critical Questions to shift burden of proof
+   - Reference unjust enrichment calculation (R2.94M-R6.88M)
+   - Apply comparative misconduct analysis
+   
+2. **Integrate Timeline Analysis** (`COMPREHENSIVE_TIMELINE_ANALYSIS.md`)
    - Review executive summary for core argument
    - Reference specific timeline events in relevant affidavit sections
    - Use timeline insights to structure bad faith arguments
 
-2. **Use Quick Reference** (`TIMELINE_QUICK_REFERENCE.md`)
+3. **Use Quick Reference** (`TIMELINE_QUICK_REFERENCE.md`)
    - Keep open during drafting for quick fact-checking
    - Copy soundbites for consistent phrasing
    - Reference key arguments by section
 
-3. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md`)
+4. **Prepare Visual Exhibits** (`TIMELINE_VISUAL_DIAGRAM.md`)
    - Export Mermaid diagrams to PNG/PDF
    - Attach as annexures (JF-TIMELINE-VISUAL series)
    - Reference in affidavit text
@@ -105,10 +127,40 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### For Legal Argument Development
 
-**Timeline as Foundation:**
+**Comparative Analysis as Foundation:**
+- Every expenditure allegation must be countered with revenue legitimacy question
+- Use Five Critical Questions to shift burden of proof to Peter
+- Establish unjust enrichment claim (R2.94M-R6.88M) as primary counter-attack
+- Demonstrate comparative misconduct (Peter questions R500K while conducting R7.6M-R12.4M)
+
+**Timeline as Supporting Framework:**
 - Every major argument should reference timeline
 - Timeline demonstrates pattern, not isolated incidents
 - Use timeline to rebut Peter's narrative
+
+**Key Comparative Analysis Arguments:**
+
+1. **Revenue Stream Impossibility**
+   - RWD ZA has no stock, inventory, or assets
+   - All revenue from RegimA Zone Ltd's Shopify platform
+   - Platform paid by Daniel's UK company for 28 months
+
+2. **Unjust Enrichment**
+   - R140K-R280K platform costs never compensated
+   - R2.94M-R6.88M total unjust enrichment claim
+   - RWD ZA appropriated revenue without authorization
+
+3. **Five Critical Questions**
+   - Trust structure consistency (Catch-22)
+   - Revenue generation capacity (unanswerable)
+   - Platform owner compensation (missing)
+   - Distributor payment discrepancy (inconsistent)
+   - RSA tax filing consistency (contradictory)
+
+4. **Comparative Misconduct**
+   - Peter questions R500K with authorization
+   - Peter conducts/ignores R7.6M-R12.4M unauthorized activities
+   - Hypocrisy exposed through side-by-side comparison
 
 **Key Timeline Arguments:**
 
@@ -231,6 +283,13 @@ This directory contains comprehensive analysis documents supporting the answerin
 
 ### Changes Log
 
+**October 23, 2025:**
+- ✅ Created Peters Claims vs Documented Evidence Comparative Analysis
+- ✅ Established RegimA Zone Ltd payment revelation as central thread
+- ✅ Documented Five Critical Questions framework
+- ✅ Calculated unjust enrichment (R2.94M-R6.88M)
+- ✅ Completed comparative misconduct analysis
+
 **October 15, 2025:**
 - ✅ Created comprehensive timeline analysis
 - ✅ Created visual timeline diagrams
@@ -278,12 +337,14 @@ This directory contains comprehensive analysis documents supporting the answerin
 ### New to Timeline Analysis?
 
 **Start Here:**
-1. Read Executive Summary in `COMPREHENSIVE_TIMELINE_ANALYSIS.md`
+1. **CRITICAL:** Read `PETERS_CLAIMS_VS_DOCUMENTED_EVIDENCE_COMPARATIVE_ANALYSIS.md` first - this is the foundational counter-attack document
+2. Read Executive Summary in `COMPREHENSIVE_TIMELINE_ANALYSIS.md`
 2. Review Key Timeline Events table
 3. Study the six Timeline Analysis Insights
 4. Review visual diagrams in `TIMELINE_VISUAL_DIAGRAM.md`
 
 **Time Required:**
+- Critical comparative analysis: 30-45 minutes
 - Quick overview: 15 minutes
 - Detailed review: 1-2 hours
 - Complete mastery: 4-6 hours
@@ -327,11 +388,16 @@ For questions about timeline analysis or these documents:
 ## Document Status
 
 **Comprehensive Timeline Analysis:** ✅ Complete  
+**Comparative Analysis (Peter's Claims vs Evidence):** ✅ Complete ⭐ NEW
 **Visual Timeline Diagrams:** ✅ Complete  
 **Quick Reference Guide:** ✅ Complete  
 **README.md Documentation:** ✅ Complete  
 
 **Integration Status:**
+- [x] Comparative analysis document created with RegimA Zone Ltd revelation
+- [x] Five Critical Questions framework established
+- [x] Unjust enrichment calculation completed
+- [ ] Comparative analysis referenced in draft affidavit
 - [ ] Timeline referenced in draft affidavit
 - [ ] Visual diagrams exported for exhibits
 - [ ] Evidence gaps filled
