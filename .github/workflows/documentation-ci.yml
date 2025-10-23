@@ -39,6 +39,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     
+    permissions:
+      contents: read
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -73,6 +76,9 @@ jobs:
     name: Validate Evidence Cross-References
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    
+    permissions:
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -319,6 +325,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
+    permissions:
+      contents: read
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -338,6 +347,9 @@ jobs:
     name: Validate Date Formats
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    
+    permissions:
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -359,6 +371,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: [validate-markdown, validate-evidence-links, validate-shopify-platform-evidence, validate-json-files, validate-dates]
     if: always()
+    
+    permissions:
+      contents: read
     
     steps:
       - name: Generate summary
