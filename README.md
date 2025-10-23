@@ -26,6 +26,7 @@ All documentation has been organized into a comprehensive structure for easy nav
 - **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
 - **Evidence**: Browse [📂 Evidence Collections](/evidence/)
 - **Directory Consolidation**: See [📖 Jax Response Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
+- **Documentation CI**: View [📊 Documentation CI Implementation](/docs/DOCUMENTATION_CI_IMPLEMENTATION.md)
 
 ### 📂 **Jax Response Directory** - `/jax-response/`
 
