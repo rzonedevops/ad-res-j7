@@ -14,12 +14,13 @@ const databaseUrl = process.env.DATABASE_URL;
 let isNeonDatabase = false;
 try {
   const url = new URL(databaseUrl);
-  isNeonDatabase = url.hostname.includes('neon.tech') || 
-                   url.hostname.endsWith('.neon.tech') ||
+  isNeonDatabase = url.hostname.endsWith('.neon.tech') ||
+                   url.hostname === 'neon.tech' ||
                    url.protocol === 'neon:';
 } catch (e) {
   // If URL parsing fails, fall back to string matching
-  isNeonDatabase = databaseUrl.includes('neon.tech') || 
+  isNeonDatabase = databaseUrl.includes('.neon.tech') || 
+                   databaseUrl.includes('neon.tech/') ||
                    databaseUrl.startsWith('neon://');
 }
 
