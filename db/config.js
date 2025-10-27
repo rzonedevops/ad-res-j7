@@ -1,9 +1,4 @@
-const { Pool, neonConfig } = require('@neondatabase/serverless');
-const { drizzle } = require('drizzle-orm/neon-serverless');
-const ws = require('ws');
 require('dotenv').config();
-
-neonConfig.webSocketConstructor = ws;
 
 if (!process.env.DATABASE_URL) {
   throw new Error(
@@ -11,7 +6,32 @@ if (!process.env.DATABASE_URL) {
   );
 }
 
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-const db = drizzle({ client: pool });
+const databaseUrl = process.env.DATABASE_URL;
+
+// Detect if using Neon database (has specific Neon patterns in URL)
+// or standard PostgreSQL (postgres:// or postgresql://)
+const isNeonDatabase = databaseUrl.includes('neon.tech') || 
+                       databaseUrl.includes('neon.') ||
+                       databaseUrl.startsWith('neon://');
+
+let pool, db;
+
+if (isNeonDatabase) {
+  // Use Neon serverless driver for Neon databases
+  const { Pool: NeonPool, neonConfig } = require('@neondatabase/serverless');
+  const { drizzle: neonDrizzle } = require('drizzle-orm/neon-serverless');
+  const ws = require('ws');
+  
+  neonConfig.webSocketConstructor = ws;
+  pool = new NeonPool({ connectionString: databaseUrl });
+  db = neonDrizzle({ client: pool });
+} else {
+  // Use standard pg driver for regular PostgreSQL databases
+  const { Pool: PgPool } = require('pg');
+  const { drizzle: pgDrizzle } = require('drizzle-orm/node-postgres');
+  
+  pool = new PgPool({ connectionString: databaseUrl });
+  db = pgDrizzle({ client: pool });
+}
 
 module.exports = { db, pool };
