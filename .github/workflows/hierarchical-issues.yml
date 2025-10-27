@@ -1,4 +1,6 @@
 name: Hierarchical Issues - Setup and Population
+permissions:
+  contents: read
 
 on:
   workflow_dispatch:
