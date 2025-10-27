@@ -20,6 +20,7 @@ async function testConnection() {
     console.log('Current time:', result.rows[0].current_time);
     console.log('Database version:', result.rows[0].db_version);
     
+    await pool.end();
     process.exit(0);
   } catch (error) {
     console.error('❌ Database connection failed:', error.message);
@@ -28,9 +29,9 @@ async function testConnection() {
     console.error('2. Check DATABASE_URL in .env file');
     console.error('3. Verify user has correct permissions');
     console.error('4. See db/README.md for setup instructions');
-    process.exit(1);
-  } finally {
+    
     await pool.end();
+    process.exit(1);
   }
 }
 

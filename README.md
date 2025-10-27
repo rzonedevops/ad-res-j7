@@ -142,6 +142,7 @@ class LegalAttentionEngine:
 
 1. **Clone the repository**
    ```bash
+   # Clone this repository
    git clone https://github.com/cogpy/ad-res-j7.git
    cd ad-res-j7
    ```
