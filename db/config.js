@@ -14,13 +14,16 @@ const databaseUrl = process.env.DATABASE_URL;
 let isNeonDatabase = false;
 try {
   const url = new URL(databaseUrl);
+  // Neon hostnames either end with .neon.tech or are exactly neon.tech
+  // This covers ep-xxx.region.neon.tech and api.neon.tech patterns
   isNeonDatabase = url.hostname.endsWith('.neon.tech') ||
                    url.hostname === 'neon.tech' ||
                    url.protocol === 'neon:';
 } catch (e) {
   // If URL parsing fails, fall back to string matching
+  // Match the same patterns: ends with .neon.tech, or neon.tech/ (with db name)
   isNeonDatabase = databaseUrl.includes('.neon.tech') || 
-                   databaseUrl.includes('neon.tech/') ||
+                   databaseUrl.match(/neon\.tech\//) !== null ||
                    databaseUrl.startsWith('neon://');
 }
 
