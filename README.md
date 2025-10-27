@@ -231,6 +231,47 @@ python3 scripts/validate_evidence_completeness.py
 
 **Current Status:** All validation checks passing at 100% completeness
 
+### Hierarchical Issue Structure
+
+**NEW: Hierarchical organization of legal issues by argument strength**
+
+Organize task-level issues under feature-level issues with paragraphs and rank-ordered weighting:
+
+```bash
+# Setup database tables
+npm run db:hierarchy:setup
+
+# Populate demo data (2 arguments, 3 features, 7 paragraphs, 13 tasks)
+npm run db:hierarchy:populate
+
+# View statistics
+npm run db:hierarchy:stats
+
+# Run tests
+npm run test:hierarchical-issues
+```
+
+**Structure:**
+```
+Legal Argument (Strategy)
+  └─ Feature Issue (Proves/disproves argument)
+     └─ Paragraph (Fact grouping - ranked by influence)
+        └─ Task Issue (Individual work - ranked by influence)
+```
+
+**Key Features:**
+- ✅ 4-level hierarchy: Argument → Feature → Paragraph → Task
+- ✅ Rank ordering (1 = highest importance)
+- ✅ Weighting system (0-100 = degree of influence)
+- ✅ Aggregate strength calculation for features
+- ✅ Integration with hypergraph for evidence linking
+
+**Documentation:**
+- [Quick Start Guide](HIERARCHICAL_ISSUES_QUICKSTART.md)
+- [User Guide](db/HIERARCHICAL_ISSUES_GUIDE.md)
+- [Implementation Details](HIERARCHICAL_ISSUES_IMPLEMENTATION.md)
+- [Visual Diagrams](HIERARCHICAL_ISSUES_DIAGRAM.md)
+
 ### Test Suite
 
 Run the comprehensive test suite:
@@ -241,6 +282,7 @@ npm test
 
 # Run specific test categories
 npm run test:evidence-completeness    # Evidence completeness validation tests
+npm run test:hierarchical-issues      # Hierarchical issue structure tests
 npm run test:validation                # Workflow validation tests
 npm run test:security                  # Security validation tests
 npm run test:json-validation          # JSON file validation
