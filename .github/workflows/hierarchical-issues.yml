@@ -61,7 +61,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run database migration
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
         run: |
           echo "🔄 Setting up hierarchical issues database schema..."
           npm run db:hierarchy:setup
@@ -119,6 +125,18 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
 
       - name: Populate hierarchical issues
         run: |
@@ -180,6 +198,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
+
       - name: Run demo
         run: |
           echo "🎬 Running hierarchical issues demo..."
@@ -231,6 +261,18 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
 
       - name: Get statistics
         run: |
@@ -334,6 +376,18 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Run base database migration
+        run: |
+          echo "🔄 Setting up base database schema..."
+          npm run db:migrate
+          echo "✅ Base schema setup complete!"
+
+      - name: Run hierarchical issues migration
+        run: |
+          echo "🔄 Setting up hierarchical issues database schema..."
+          npm run db:hierarchy:setup
+          echo "✅ Hierarchical schema setup complete!"
 
       - name: Run tests
         run: |
