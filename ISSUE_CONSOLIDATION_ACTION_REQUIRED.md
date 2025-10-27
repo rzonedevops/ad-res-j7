@@ -38,6 +38,46 @@ The script:
 
 ## What You Need to Do
 
+You have two options for running the consolidation:
+
+### Option A: Using GitHub Actions Workflow (Recommended)
+
+This is easier and doesn't require local setup:
+
+1. Go to **Actions** tab in GitHub
+2. Select **Issue Consolidation** workflow
+3. Click **Run workflow**
+4. Select action:
+   - **report** - Generate report only
+   - **dry-run** - Preview what will be closed
+   - **execute** - Actually close issues (requires typing "I CONFIRM")
+5. Click **Run workflow**
+
+The workflow will:
+- ✅ Automatically authenticate with GitHub
+- ✅ Generate reports available as artifacts
+- ✅ Show summary in workflow output
+- ✅ Safely close issues with explanations
+
+### Option B: Running Locally
+
+If you prefer to run locally:
+
+#### Prerequisites
+
+You need GitHub CLI (`gh`) installed and authenticated:
+
+```bash
+# Install gh (if not already installed)
+# See: https://cli.github.com/
+
+# Authenticate
+gh auth login
+
+# Verify authentication
+gh auth status
+```
+
 ### Step 1: Review the Consolidation Plan
 
 Run the report to see what will be kept vs. closed:
