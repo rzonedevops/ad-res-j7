@@ -404,7 +404,7 @@
 
 ### Key Repository Files (Absolute Paths)
 
-**Executive Summary**: `/home/runner/work/ad-res-j7/ad-res-j7/EXECUTIVE_SUMMARY_KEY_EVIDENCE_ATTORNEY_REVIEW.md`
+**Executive Briefing**: `/home/runner/work/ad-res-j7/ad-res-j7/ATTORNEY_EXECUTIVE_BRIEFING.md`
 
 **Complete Affidavit**: `/home/runner/work/ad-res-j7/ad-res-j7/FINAL_ANSWERING_AFFIDAVIT_COMPLETE.md`
 
@@ -499,7 +499,7 @@ This quick reference guide contains privileged attorney-client information. Do n
 
 **VERSION**: 1.0  
 **DATE**: October 27, 2025  
-**COMPANION DOCUMENT**: Executive Summary Key Evidence for Attorney Review
+**COMPANION DOCUMENT**: Attorney Executive Briefing (`ATTORNEY_EXECUTIVE_BRIEFING.md`)
 
 ---
 
