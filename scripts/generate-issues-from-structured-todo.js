@@ -47,9 +47,9 @@ async function main() {
   const createIssues = args.includes('--create-issues');
   const dryRun = args.includes('--dry-run') || !createIssues;
 
-  log('=' .repeat(70), 'bright');
+  log('='.repeat(70), 'bright');
   log('🏗️  GitHub Issue Generation from structured-todo.md', 'bright');
-  log('=' .repeat(70), 'bright');
+  log('='.repeat(70), 'bright');
   
   // Check if input file exists
   if (!fs.existsSync(inputFile)) {
@@ -151,7 +151,7 @@ async function main() {
       log('STEP 3: Create GitHub Issues', 'bright');
       log('='.repeat(70), 'bright');
       
-      log('\n⚠️  WARNING: This will create 146 GitHub issues!', 'yellow');
+      log(`\n⚠️  WARNING: This will create ${issuesData.summary.total_issues} GitHub issues!`, 'yellow');
       log('Are you sure you want to continue? (Press Ctrl+C to cancel)', 'yellow');
       
       // Wait 5 seconds for user to cancel
@@ -160,11 +160,75 @@ async function main() {
       log('\n🚀 Creating GitHub issues...', 'cyan');
       log('This may take several minutes...', 'cyan');
       
-      // Note: Actual issue creation would be done via GitHub API or gh CLI
-      // This would require GITHUB_TOKEN to be set
-      log('\n⚠️  Direct issue creation from this script is not yet implemented.', 'yellow');
-      log('Please use the GitHub Actions workflow instead:', 'yellow');
-      log('  gh workflow run todo-to-issues.yml', 'yellow');
+      // Check if gh CLI is available
+      try {
+        execSync('gh --version', { stdio: 'pipe' });
+      } catch (error) {
+        log('\n❌ GitHub CLI (gh) is not installed or not in PATH', 'red');
+        log('Please install gh CLI: https://cli.github.com/', 'yellow');
+        log('Or use the GitHub Actions workflow:', 'yellow');
+        log('  gh workflow run todo-to-issues.yml', 'yellow');
+        process.exit(1);
+      }
+
+      // Check if authenticated
+      try {
+        execSync('gh auth status', { stdio: 'pipe' });
+      } catch (error) {
+        log('\n❌ Not authenticated with GitHub CLI', 'red');
+        log('Please run: gh auth login', 'yellow');
+        process.exit(1);
+      }
+
+      // Create issues using gh CLI
+      let created = 0;
+      let failed = 0;
+      
+      for (let i = 0; i < issuesData.issues.length; i++) {
+        const issue = issuesData.issues[i];
+        const progress = `[${i + 1}/${issuesData.issues.length}]`;
+        
+        try {
+          // Check for duplicates first
+          const titleEscaped = issue.title.replace(/'/g, "'\"'\"'");
+          const checkCmd = `gh issue list --search "${titleEscaped}" --state open --json number --limit 1`;
+          const existing = execSync(checkCmd, { encoding: 'utf8', stdio: 'pipe' });
+          
+          if (existing.trim() !== '[]') {
+            log(`${progress} ⚠️  Skipping duplicate: ${issue.title.substring(0, 50)}...`, 'yellow');
+            continue;
+          }
+          
+          // Create the issue
+          const labelsArg = issue.labels.map(l => `--label "${l}"`).join(' ');
+          const titleArg = `--title "${titleEscaped}"`;
+          const bodyFile = `/tmp/issue-body-${i}.txt`;
+          fs.writeFileSync(bodyFile, issue.body);
+          
+          const createCmd = `gh issue create ${titleArg} --body-file "${bodyFile}" ${labelsArg}`;
+          execSync(createCmd, { stdio: 'pipe' });
+          
+          fs.unlinkSync(bodyFile); // Clean up temp file
+          
+          created++;
+          log(`${progress} ✅ Created: ${issue.title.substring(0, 50)}...`, 'green');
+          
+          // Rate limiting - wait 1 second between issues
+          if (i < issuesData.issues.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+          
+        } catch (error) {
+          failed++;
+          log(`${progress} ❌ Failed: ${issue.title.substring(0, 50)}...`, 'red');
+          log(`   Error: ${error.message}`, 'red');
+        }
+      }
+      
+      log(`\n📊 Results:`, 'cyan');
+      log(`  ✅ Created: ${created}`, 'green');
+      log(`  ❌ Failed: ${failed}`, failed > 0 ? 'red' : 'cyan');
+      log(`  ⚠️  Skipped: ${issuesData.issues.length - created - failed}`, 'yellow');
     }
 
     log('\n' + '='.repeat(70), 'bright');
