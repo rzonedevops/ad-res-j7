@@ -82,3 +82,9 @@ repo-analysis/analysss/
 repo-analysis/analyticase/
 repo-analysis/avtomaatoctory/
 cross_reference_validation_report.json
+
+# Generated parser output files
+hierarchy-ast.json
+parsed-*.json
+hierarchy-stats.json
+hierarchy-report.json
