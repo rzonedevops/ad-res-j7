@@ -65,10 +65,13 @@ class EnsureLabelsTests {
    */
   testScriptSyntax() {
     this.test('Script has valid bash syntax', () => {
-      try {
-        execSync(`bash -n ${this.scriptPath}`, { stdio: 'pipe' });
-      } catch (error) {
-        throw new Error(`Script has syntax errors: ${error.message}`);
+      const result = spawnSync('bash', ['-n', this.scriptPath], { 
+        encoding: 'utf8',
+        stdio: 'pipe'
+      });
+      
+      if (result.status !== 0) {
+        throw new Error(`Script has syntax errors: ${result.stderr}`);
       }
     });
   }
