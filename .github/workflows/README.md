@@ -1,5 +1,209 @@
 # GitHub Actions Workflows
 
+## Generate Feature-Level Issues from need-classification.md
+
+**Workflow File:** `generate-feature-issues.yml`
+
+This workflow automatically creates feature-level GitHub issues from `todo/need-classification.md` and links existing task-level issues as sub-issues.
+
+### Features
+
+- ✅ Parses hierarchical structure (Legal Arguments → Features → Paragraphs → Tasks)
+- ✅ Creates feature-level issues with comprehensive metadata
+- ✅ Links existing task-level issues as GitHub sub-issues (tasklists)
+- ✅ Preserves rank ordering and weight information
+- ✅ Supports dry-run mode to preview without creating
+- ✅ Generates detailed summary reports
+
+### How to Run
+
+#### Option 1: GitHub Web Interface
+
+1. Go to the **Actions** tab in your repository
+2. Select **"Generate Feature-Level Issues from need-classification.md"** workflow
+3. Click **"Run workflow"** button
+4. Configure options:
+   - **Dry run:** Choose `true` to preview without creating issues (default)
+   - **Dry run:** Choose `false` to create the feature issues
+5. Click **"Run workflow"**
+
+#### Option 2: GitHub CLI
+
+```bash
+# Dry run (preview only) - DEFAULT
+gh workflow run generate-feature-issues.yml
+
+# Dry run explicitly
+gh workflow run generate-feature-issues.yml -f dry_run=true
+
+# Create feature issues
+gh workflow run generate-feature-issues.yml -f dry_run=false
+```
+
+### Workflow Inputs
+
+| Input | Description | Default | Options |
+|-------|-------------|---------|---------|
+| `dry_run` | Preview issues without creating them | `true` | `true`, `false` |
+
+### What Gets Created
+
+The workflow will create **16 feature-level issues** from need-classification.md:
+
+- **Legal Argument 1: Workflow Testing & Quality Assurance**
+  - Feature: Core Workflow Testing (17 tasks)
+  - Feature: Workflow Enhancement (6 tasks)
+  
+- **Legal Argument 2: Legal Burden of Proof Implementation**
+  - Feature: Civil Evidence Standards (10 tasks)
+  - Feature: Criminal Evidence Standards (10 tasks)
+  - Feature: Mathematical Proof Standards (10 tasks)
+  - Feature: Evidence Collection Infrastructure (15 tasks)
+
+- **Legal Argument 3: Case Evidence Collection & Documentation**
+  - Feature: Phase 1 Critical Evidence (7 tasks)
+  - Feature: Phase 2 Supporting Evidence (10 tasks)
+
+- **And 8 more features...** (see need-classification.md for full list)
+
+**Total:** 16 features consolidating 146 existing task-level issues
+
+### Feature Issue Format
+
+Each created feature issue includes:
+
+```markdown
+**Priority:** [critical|high|medium|low]
+
+[Feature description]
+
+**Legal Argument:** [Parent legal argument]
+
+---
+
+## Paragraph Structure
+
+### Paragraph 1: [Paragraph Name]
+- **Rank:** [1-N] (1 = highest influence)
+- **Weight:** [0-100]/100
+- **Tasks:** [count]
+
+---
+
+## Task Issues
+
+### [Paragraph Name]
+
+- [ ] #[issue-number] - [task description]
+- [ ] #[issue-number] - [task description]
+...
+
+---
+
+**Total Task Issues:** [count]
+**Paragraphs:** [count]
+
+*This feature issue was automatically generated from todo/need-classification.md*
+```
+
+### Workflow Steps
+
+1. **Parse need-classification.md** - Extracts hierarchical structure
+2. **Display parsed features** - Shows what will be created
+3. **Generate feature issues** - Creates issues or shows dry-run preview
+4. **Generate summary** - Produces detailed report
+5. **Upload artifacts** - Saves parsed data and reports
+
+### Permissions
+
+The workflow requires:
+- `issues: write` - To create feature-level issues
+- `contents: read` - To read need-classification.md
+
+### Monitoring Progress
+
+1. Go to **Actions** tab
+2. Click on the running workflow
+3. View real-time logs showing:
+   - Parsing results (7 legal arguments, 16 features, 146 tasks)
+   - Feature processing progress
+   - Created issue URLs (if not dry-run)
+   - Final summary report
+
+### Workflow Output
+
+The workflow produces:
+
+```
+## Parsing Results
+- Legal Arguments: 7
+- Features: 16
+
+📊 Parsed Features:
+- [high] Core Workflow Testing (17 tasks)
+- [medium] Workflow Enhancement (6 tasks)
+...
+
+## Results
+Mode: 🔍 DRY RUN (no issues created)
+
+- Total Features: 16
+- Successfully Created: 0
+- Failed: 0
+- Total Task Issues Linked: 146
+```
+
+### Artifacts
+
+Download from the workflow run:
+- `parsed-features.json` - Structured feature data
+- `feature-issues-report.json` - Creation summary
+
+### Testing Locally
+
+```bash
+# Install dependencies
+npm ci
+
+# Parse need-classification.md
+node scripts/parse-need-classification.js todo/need-classification.md parsed-features.json
+
+# Test in dry-run mode
+node scripts/generate-feature-issues.js parsed-features.json --dry-run
+
+# Run tests
+npm run test:feature-issues
+```
+
+### Troubleshooting
+
+#### No issues created
+**Solution:** Set `dry_run: false` when running the workflow.
+
+#### Parsing errors
+**Solution:** Verify need-classification.md format:
+- Legal Arguments: `## Legal Argument: [name]`
+- Features: `### Feature: [name]`
+- Paragraphs: `#### Paragraph N: [name]`
+- Tasks: `- [ ] **Task N** (Rank N, Weight N): [description]`
+  - Followed by: `- Issue: [#NNNN](...)`
+
+#### Missing task references
+**Solution:** Ensure each task has an issue reference on the following line.
+
+### Best Practices
+
+1. **Always dry-run first:** Preview what will be created
+2. **Review the output:** Check parsed features before creating
+3. **Monitor for duplicates:** Ensure features don't already exist
+4. **Check task links:** Verify all referenced issues exist
+
+### Related Documentation
+
+See `.github/workflows/README-generate-feature-issues.md` for detailed documentation.
+
+---
+
 ## Create Issues from Structured Todo
 
 **Workflow File:** `create-issues-from-todo.yml`
