@@ -74,3 +74,4 @@ build/
 file-converter.js
 ocr-file-converter.js.merge-marker
 __pycache__/
+cross_reference_validation_report.json
