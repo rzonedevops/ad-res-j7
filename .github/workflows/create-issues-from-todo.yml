@@ -114,19 +114,19 @@ jobs:
             paragraphId=$(echo "$task" | jq -r '.paragraphId // "N/A"')
             
             # Build issue body
-            body="**Priority:** $priority
-**Description:** $description
-
----
-
-**Source:** \`$source\` (line $lineNumber)
-**Feature ID:** \`$featureId\`
-**Paragraph ID:** \`$paragraphId\`
-**Task ID:** \`$id\`
-
----
-
-*This issue was automatically generated from structured-todo.json*"
+            body="**Priority:** $priority"
+            body="$body"$'\n'"**Description:** $description"
+            body="$body"$'\n'
+            body="$body"$'\n'"---"
+            body="$body"$'\n'
+            body="$body"$'\n'"**Source:** \`$source\` (line $lineNumber)"
+            body="$body"$'\n'"**Feature ID:** \`$featureId\`"
+            body="$body"$'\n'"**Paragraph ID:** \`$paragraphId\`"
+            body="$body"$'\n'"**Task ID:** \`$id\`"
+            body="$body"$'\n'
+            body="$body"$'\n'"---"
+            body="$body"$'\n'
+            body="$body"$'\n'"*This issue was automatically generated from structured-todo.json*"
             
             # Write to temp files to handle special characters
             echo "$title" > /tmp/issue_title.txt
