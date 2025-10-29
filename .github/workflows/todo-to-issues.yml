@@ -283,6 +283,22 @@ jobs:
             fi
           fi
 
+      - name: Ensure required labels exist
+        if: steps.load_issues.outputs.has_issues == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create labels used by this workflow
+          ./scripts/ensure-labels.sh \
+            "todo:1d76db:To do items" \
+            "enhancement:a2eeef:New feature or request" \
+            "task:c5def5:Task item" \
+            "hierarchical-task:bfdadc:Hierarchical task" \
+            "priority: critical:d73a4a:Critical priority" \
+            "priority: high:ff9800:High priority" \
+            "priority: medium:ffc107:Medium priority" \
+            "priority: low:8bc34a:Low priority"
+
       - name: Create GitHub issues
         if: steps.load_issues.outputs.has_issues == 'true'
         env:
