@@ -36,6 +36,7 @@
     "test:hierarchical-issues": "node tests/hierarchical-issue-manager.test.js",
     "test:hierarchical-workflow": "node tests/hierarchical-todo-workflow.test.js",
     "test:cross-reference": "node tests/cross-reference-integration.test.js",
+    "test:feature-issues": "node tests/feature-issue-generation.test.js",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
     "validate-file-paths": "node scripts/validate_file_paths.js",
     "validate-evidence-completeness": "node scripts/validate-evidence-completeness.js",
