@@ -5,7 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Package manager files
-package-lock.json
+# Note: package-lock.json is now committed for CI caching support
+# package-lock.json
 yarn.lock
 
 # Temporary files
@@ -39,6 +40,7 @@ tests/sample-todos/
 extracted-issue-generator.js
 todo-issues.json
 todo-issues-test.json
+structured-todo.json
 validation-report.json
 json-parsing-validation-report.json
 
@@ -47,10 +49,13 @@ test-data/
 !test-data/.gitkeep
 
 # Temporary summary and report files (should be generated dynamically)
+# Exclude auto-generated summaries but allow important documentation
 *SUMMARY*.md
 *REPORT*.md
 *_SUMMARY.md
 *_REPORT.md
+!IMPLEMENTATION_SUMMARY.md
+!HIERARCHICAL_ISSUES_SUMMARY.md
 duplicate-cleanup-report.json
 specific-duplicates-summary.json
 repository_tree.txt
@@ -59,6 +64,11 @@ repository_tree.txt
 dist/
 build/
 *.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 
 # Auto-generated workflow scripts (temporary exclusion)
 file-converter.js
