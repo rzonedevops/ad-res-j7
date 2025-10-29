@@ -63,10 +63,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "🏷️  Ensuring required labels exist..."
-          gh label create "feature" --color "0052CC" --description "Feature request" || echo "Label 'feature' already exists"
-          gh label create "needs-triage" --color "FFCC00" --description "Requires triage" || echo "Label 'needs-triage' already exists"
-          echo "✅ Labels verified"
+          # Create only the labels needed for this workflow
+          ./scripts/ensure-labels.sh \
+            "feature:0052CC:Feature request" \
+            "needs-triage:FFCC00:Requires triage"
       
       - name: Generate feature issues
         env:
