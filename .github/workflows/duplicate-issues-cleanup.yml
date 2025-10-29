@@ -115,7 +115,7 @@ jobs:
                 execution_mode="$INPUT_EXECUTION_MODE"
                 ;;
               *)
-                echo "⚠️  Invalid execution_mode: $INPUT_EXECUTION_MODE, defaulting to preview"
+                echo "⚠️ Invalid execution_mode: $INPUT_EXECUTION_MODE, defaulting to preview"
                 execution_mode="preview"
                 ;;
             esac

@@ -143,10 +143,14 @@ jobs:
           INPUT_CASE_NUMBER: ${{ github.event.inputs.case_number }}
         run: |
           # Validate case_number is safe (alphanumeric, dashes, underscores only)
+          case_number_valid=false
           if [[ "$INPUT_CASE_NUMBER" =~ ^[a-zA-Z0-9_-]+$ ]]; then
-            echo "📊 Populating hierarchical issues for case $INPUT_CASE_NUMBER..."
+            SAFE_CASE_NUMBER="$INPUT_CASE_NUMBER"
+            case_number_valid=true
+            echo "📊 Populating hierarchical issues for case $SAFE_CASE_NUMBER..."
           else
             echo "📊 Populating hierarchical issues..."
+            echo "⚠️ Note: Invalid case_number format (allowed: alphanumeric, dashes, underscores)"
           fi
           npm run db:hierarchy:populate
           echo "✅ Population complete!"
