@@ -1,0 +1,86 @@
+{
+  "arguments": [
+    {
+      "type": "argument",
+      "name": "revenue_defense",
+      "features": [
+        {
+          "type": "feature",
+          "number": 1001,
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "number": 1,
+              "tasks": [
+                {
+                  "type": "task",
+                  "number": 2001,
+                  "title": "Document R1M bank transfer",
+                  "description": "Obtain and attach bank records showing the R1,000,000 transfer from RegimA Zone Ltd UK to ZA operations",
+                  "undefined": "100"
+                },
+                {
+                  "type": "task",
+                  "number": 2002,
+                  "title": "Compile investment allocation breakdown",
+                  "description": "Detail how R1M was allocated: infrastructure, salaries, systems, operations",
+                  "undefined": "90"
+                },
+                {
+                  "type": "task",
+                  "number": 2003,
+                  "title": "Cross-reference with expense records",
+                  "description": "Match investment amount with actual expenses incurred for business setup",
+                  "undefined": "85"
+                }
+              ],
+              "title": "R1M Investment Evidence",
+              "content": "RegimA Zone Ltd (UK) invested R1,000,000 in South African operations, funding all infrastructure, staff, and systems",
+              "undefined": "100"
+            }
+          ],
+          "title": "Payment Structure Analysis",
+          "description": "Detailed analysis of RegimA Zone Ltd payment flows and investment structure",
+          "undefined": "95"
+        }
+      ],
+      "undefined": "active",
+      "description": "Prove RegimA Zone Ltd made legitimate R1M investment showing proper business structure",
+      "strategy": "Demonstrate R1,000,000 investment vs R1,000 admin fee (0.1%) proves no profiteering intent"
+    },
+    {
+      "type": "argument",
+      "name": "bad_faith_litigation",
+      "features": [
+        {
+          "type": "feature",
+          "number": 1003,
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "number": 1,
+              "tasks": [
+                {
+                  "type": "task",
+                  "number": 2013,
+                  "title": "Map destruction to interdict timing",
+                  "description": "Show how document destruction preceded interdict filing",
+                  "undefined": "100"
+                }
+              ],
+              "title": "Document Destruction Timeline",
+              "content": "Timeline shows Peter cancelled cards/emails, then filed interdict claiming respondents couldn't prove ownership",
+              "undefined": "100"
+            }
+          ],
+          "title": "Timeline Evidence of Bad Faith",
+          "description": "Chronological analysis of Peter's actions demonstrates calculated delay tactics",
+          "undefined": "92"
+        }
+      ],
+      "undefined": "counterclaim",
+      "description": "Expose Peter's strategic delays and document destruction to undermine respondents' defense",
+      "strategy": "Timeline analysis shows Peter deliberately delayed proceedings while causing maximum business harm"
+    }
+  ]
+}

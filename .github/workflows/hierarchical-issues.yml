@@ -296,6 +296,8 @@ jobs:
     name: Parse Grammar Files to Issues
     runs-on: ubuntu-latest
     if: github.event.inputs.action == 'setup-and-populate'
+    env:
+      DATABASE_URL: postgres://testuser:testpass@localhost:5432/testdb
 
     steps:
       - name: Checkout repository
