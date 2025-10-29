@@ -59,6 +59,15 @@ jobs:
           echo "📊 Parsed Features:"
           jq -r '.features[] | "- [\(.priority)] \(.name) (\(.taskIssues | length) tasks)"' parsed-features.json
       
+      - name: Ensure required labels exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🏷️  Ensuring required labels exist..."
+          gh label create "feature" --color "0052CC" --description "Feature request" || echo "Label 'feature' already exists"
+          gh label create "needs-triage" --color "FFCC00" --description "Requires triage" || echo "Label 'needs-triage' already exists"
+          echo "✅ Labels verified"
+      
       - name: Generate feature issues
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
