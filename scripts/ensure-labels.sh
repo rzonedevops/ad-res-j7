@@ -48,7 +48,20 @@ create_label() {
     local label_spec="$1"
     
     # Parse label specification (format: name:color:description)
-    IFS=':' read -r name color description <<< "$label_spec"
+    # Handle descriptions that may contain colons by only splitting on first two colons
+    local name color description
+    
+    # Extract name (everything before first colon)
+    name="${label_spec%%:*}"
+    
+    # Remove name and first colon to get remainder
+    local remainder="${label_spec#*:}"
+    
+    # Extract color (everything before next colon in remainder)
+    color="${remainder%%:*}"
+    
+    # Extract description (everything after second colon)
+    description="${remainder#*:}"
     
     # Trim whitespace
     name=$(echo "$name" | xargs)
