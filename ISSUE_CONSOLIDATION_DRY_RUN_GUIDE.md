@@ -165,10 +165,10 @@ The test suite verifies:
 For manual verification without GitHub API access:
 
 ```bash
-# Create mock test
-node /tmp/test-consolidation-mock.js
+# Run the automated test suite
+npm run test:consolidation-dry-run
 
-# Verify report was created
+# Verify report was created (tests will generate this)
 ls -la issue-consolidation-report.json
 
 # View report
@@ -190,7 +190,7 @@ cat issue-consolidation-report.json | jq .
 ### Common Issues
 
 **Problem**: "Unknown action: dry-run"  
-**Solution**: Verify you're running the correct version of the script. The dry-run case should be on line 253-257.
+**Solution**: Verify you're running the correct version of the script. The dry-run case should be in the main switch statement in the `main()` function, handling the 'dry-run' command argument.
 
 **Problem**: No report generated  
 **Solution**: Check file permissions and ensure the script completed successfully.
