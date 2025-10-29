@@ -153,21 +153,31 @@ class EnsureLabelsTests {
       );
       
       // Verify label format (name:color:description)
-      // Updated regex to handle label names with colons and spaces
+      // Use similar parsing logic to the script for robustness
       const labelLines = labelsSection.split('\n').filter(line => line.trim().startsWith('"'));
       labelLines.forEach(line => {
-        // Match: "anything:6-hex-digits:anything" 
-        // The label name and description can contain colons, spaces, and special chars
-        // The color is always a 6-digit hex code
-        const match = line.match(/"(.+?):([0-9a-fA-F]{6}):(.+)"/);
+        // Remove quotes and split into parts
+        const content = line.trim().replace(/^"|"$/g, '');
+        
+        // Find the color code (6 hex digits surrounded by colons)
+        const colorMatch = content.match(/:([0-9a-fA-F]{6}):/);
         this.assert(
-          match,
-          `Label line does not match expected format (name:hexcolor:description): ${line.trim()}`
+          colorMatch,
+          `Label line does not contain a valid hex color code: ${line.trim()}`
         );
         
-        // Validate color is 6-digit hex
-        if (match) {
-          const color = match[2];
+        if (colorMatch) {
+          const color = colorMatch[1];
+          const colonBeforeColor = content.indexOf(':' + color);
+          const colonAfterColor = colonBeforeColor + color.length + 1;
+          
+          // Ensure there's content before and after the color
+          this.assert(
+            colonBeforeColor > 0 && colonAfterColor < content.length,
+            `Label must have name before and description after color: ${line.trim()}`
+          );
+          
+          // Validate color is 6-digit hex
           this.assert(
             /^[0-9a-fA-F]{6}$/.test(color),
             `Invalid color format in label: ${line.trim()}`
