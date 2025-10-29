@@ -8,7 +8,7 @@
 
 ## Executive Summary
 
-This document provides the optimal order for completing **16 feature issues** containing **147 total task issues**. The prioritization is based on:
+This document provides the optimal order for completing **16 feature issues** containing **146 total task issues** (143 unique tasks, 3 duplicates identified). The prioritization is based on:
 
 1. **Legal Impact** - Alignment with burden of proof requirements
 2. **Evidence Collection Phases** - Critical evidence must be gathered first
@@ -911,9 +911,9 @@ Tasks #2819-#2833 should be evaluated individually for uniqueness before proceed
 
 ### By Phase
 - **Phase 1 (Critical Foundation):** 13 tasks across 2 features
-- **Phase 2 (Legal Evidence Building):** 45 tasks across 4 features
-- **Phase 3 (Infrastructure & Quality):** 59 tasks across 7 features
-- **Phase 4 (Enhancement & Optimization):** 30 tasks across 3 features (mostly optional)
+- **Phase 2 (Legal Evidence Building):** 29 tasks across 3 features
+- **Phase 3 (Infrastructure & Quality):** 69 tasks across 8 features
+- **Phase 4 (Enhancement & Optimization):** 35 tasks across 3 features (mostly optional)
 
 ### Completion Timeline Estimate
 - **Phase 1:** 2-3 weeks (CRITICAL - immediate start)
@@ -1053,7 +1053,7 @@ This optimal completion order prioritizes **legal impact** and **burden of proof
 4. **Quality gates enforced** - Validation before legal review
 5. **Optional tasks deferred** - Focus on case-critical work
 
-Following this order ensures the strongest possible legal case while efficiently managing the 147 tasks across 16 features.
+Following this order ensures the strongest possible legal case while efficiently managing the 146 tasks (143 unique) across 16 features.
 
 ---
 
