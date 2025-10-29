@@ -42,8 +42,10 @@ jobs:
       
       - name: Validate execution confirmation
         if: github.event.inputs.action == 'execute'
+        env:
+          INPUT_CONFIRM: ${{ github.event.inputs.confirm_execution }}
         run: |
-          if [ "${{ github.event.inputs.confirm_execution }}" != "I CONFIRM" ]; then
+          if [ "$INPUT_CONFIRM" != "I CONFIRM" ]; then
             echo "❌ Execution not confirmed"
             echo "To execute consolidation, you must type 'I CONFIRM' in the confirmation field"
             exit 1
@@ -53,19 +55,32 @@ jobs:
       - name: Run consolidation script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_ACTION: ${{ github.event.inputs.action }}
         run: |
           echo "🔧 Running issue consolidation tool"
-          echo "Action: ${{ github.event.inputs.action }}"
+          echo "Action: $INPUT_ACTION"
           echo ""
           
           # Authenticate gh CLI
-          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          echo "$GITHUB_TOKEN" | gh auth login --with-token
           
           # Verify authentication
           gh auth status
           
+          # Validate action against allowed values
+          case "$INPUT_ACTION" in
+            report|dry-run|execute)
+              # Action is valid, proceed
+              ;;
+            *)
+              echo "❌ Invalid action: $INPUT_ACTION"
+              echo "Allowed actions: report, dry-run, execute"
+              exit 1
+              ;;
+          esac
+          
           # Run appropriate action
-          case "${{ github.event.inputs.action }}" in
+          case "$INPUT_ACTION" in
             report)
               node scripts/consolidate-issues-to-hierarchy.js report
               ;;
@@ -76,10 +91,6 @@ jobs:
               # Create confirmation file for script
               echo "I confirm closing auto-generated issues" > CONFIRM_CLOSE_ISSUES.txt
               node scripts/consolidate-issues-to-hierarchy.js execute
-              ;;
-            *)
-              echo "Unknown action: ${{ github.event.inputs.action }}"
-              exit 1
               ;;
           esac
       
@@ -94,8 +105,10 @@ jobs:
       
       - name: Generate workflow summary
         if: always()
+        env:
+          INPUT_ACTION: ${{ github.event.inputs.action }}
         run: |
-          echo "# 🔧 Issue Consolidation - ${{ github.event.inputs.action }}" >> $GITHUB_STEP_SUMMARY
+          echo "# 🔧 Issue Consolidation - $INPUT_ACTION" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           
           if [ -f "issue-consolidation-report.json" ]; then
@@ -113,12 +126,12 @@ jobs:
             echo "- **Hierarchical Issues**: $HIERARCHICAL" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             
-            if [ "${{ github.event.inputs.action }}" = "execute" ]; then
+            if [ "$INPUT_ACTION" = "execute" ]; then
               echo "✅ **Consolidation executed!**" >> $GITHUB_STEP_SUMMARY
               echo "" >> $GITHUB_STEP_SUMMARY
               echo "Closed $TO_CLOSE auto-generated issues." >> $GITHUB_STEP_SUMMARY
               echo "Kept $TO_KEEP issues (including $HIERARCHICAL hierarchical issues)." >> $GITHUB_STEP_SUMMARY
-            elif [ "${{ github.event.inputs.action }}" = "dry-run" ]; then
+            elif [ "$INPUT_ACTION" = "dry-run" ]; then
               echo "ℹ️ **This was a dry run - no issues were closed.**" >> $GITHUB_STEP_SUMMARY
               echo "" >> $GITHUB_STEP_SUMMARY
               echo "Would close: $TO_CLOSE issues" >> $GITHUB_STEP_SUMMARY
@@ -134,15 +147,23 @@ jobs:
       
       - name: Report failure
         if: failure()
+        env:
+          INPUT_ACTION: ${{ github.event.inputs.action }}
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
         uses: actions/github-script@v7
         with:
           script: |
+            const action = process.env.INPUT_ACTION || 'unknown';
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            
             const issueBody = `## ❌ Issue Consolidation Workflow Failed
             
             The issue consolidation workflow has failed.
             
-            **Action**: ${{ github.event.inputs.action }}
-            **Run**: [View Run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            **Action**: ${action}
+            **Run**: [View Run](${runUrl})
             **Triggered by**: @${{ github.actor }}
             **Time**: ${new Date().toISOString()}
             

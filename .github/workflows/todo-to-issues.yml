@@ -334,7 +334,14 @@ jobs:
           }
           
           # Check if force regeneration is requested
-          force_regenerate="${{ github.event.inputs.force_regenerate }}"
+          INPUT_FORCE_REGEN="${{ github.event.inputs.force_regenerate }}"
+          
+          # Validate boolean input
+          if [ "$INPUT_FORCE_REGEN" = "true" ]; then
+            force_regenerate="true"
+          else
+            force_regenerate="false"
+          fi
           
           if [ "$force_regenerate" = "true" ]; then
             echo "🔄 Force regeneration requested - closing existing todo-related issues..."

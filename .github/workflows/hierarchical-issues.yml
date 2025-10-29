@@ -139,8 +139,15 @@ jobs:
           echo "✅ Hierarchical schema setup complete!"
 
       - name: Populate hierarchical issues
+        env:
+          INPUT_CASE_NUMBER: ${{ github.event.inputs.case_number }}
         run: |
-          echo "📊 Populating hierarchical issues for case ${{ github.event.inputs.case_number }}..."
+          # Validate case_number is safe (alphanumeric, dashes, underscores only)
+          if [[ "$INPUT_CASE_NUMBER" =~ ^[a-zA-Z0-9_-]+$ ]]; then
+            echo "📊 Populating hierarchical issues for case $INPUT_CASE_NUMBER..."
+          else
+            echo "📊 Populating hierarchical issues..."
+          fi
           npm run db:hierarchy:populate
           echo "✅ Population complete!"
 
