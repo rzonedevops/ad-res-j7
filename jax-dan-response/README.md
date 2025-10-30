@@ -90,6 +90,14 @@ This analysis directly refutes the "unauthorized payment" allegation and demonst
   - Material non-disclosure analysis showing facts omitted from ex parte application
   - This directly refutes the "unauthorized payment" allegation by demonstrating the Applicant's sudden objection is inconsistent with his decades-long acceptance and use of the same practice
 
+- **`PETERS_CAUSATION_ANALYSIS.md`**: Critical analysis demonstrating that Peter Faucitt created the very problems he complains about through his own unilateral actions (Section 5 / Part B Material Non-Disclosures). This analysis provides:
+  - Card Cancellations Created Documentation Gap (Section 5.1): Peter cancelled all business cards on 7 June 2025 (day after Daniel provided reports to accountant), disrupting documentation systems, then demanded documentation he made inaccessible
+  - System Lockouts Prevented Normal Operations (Section 5.2): Peter restricted directors' access to systems while empowering non-director Rynette Farrar with unrestricted access
+  - Self-Created Crisis Used as Pretext (Section 5.3): Timeline analysis showing Peter manufactured crisis (11 August 2025 settlement → 2 days → 14 August interdict filing → 9 months → May 2026 investment payout)
+  - Peter's Own Fiduciary Breaches (Section 5.4): Documentation of Peter's violations of his own fiduciary duties through unilateral destructive actions
+  - Material non-disclosure analysis showing Peter failed to disclose his causation in ex parte application
+  - This establishes that Peter cannot complain of problems he himself created and that the interdict must be set aside for material non-disclosure
+
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.
 

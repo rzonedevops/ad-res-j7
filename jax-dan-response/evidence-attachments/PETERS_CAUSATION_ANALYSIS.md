@@ -251,10 +251,10 @@
 | 7 June 2025 | Peter secretly cancels all business cards | Day after reports provided - creates crisis |
 | June-July 2025 | Services disrupted, documentation systems inaccessible | Manufactured "problem" |
 | July 2025 | Peter demands documentation | Demands what he made inaccessible |
-| **[Date]** | Settlement agreement signed | 8 days before interdict |
+| 11 August 2025 | Settlement agreement signed | 8 days before interdict |
 | 14 August 2025 | Peter files founding affidavit | Material non-disclosures |
 | 19 August 2025 | Ex parte interdict granted | Based on false information |
-| **[Date +9 months]** | Investment payout due | Underlying motive for control |
+| May 2026 | Investment payout due | Underlying motive for control |
 
 4.2.2 **The Two-Month Delay**: The Applicant allegedly "discovered" issues in June 2025 but waited until August 2025 to file the interdict. This delay:
    - Contradicts claims of genuine urgency
