@@ -3,14 +3,15 @@
 
 **Case Number:** 2025-137857  
 **Witness Name:** Daniel James Faucitt  
-**Date of Statement:** [TO BE COMPLETED]  
-**Location:** [TO BE COMPLETED]  
+**Identity Number:** 820715 5300 18 2  
+**Date of Statement:** [PENDING - To be completed by witness at time of signing]  
+**Location:** [PENDING - To be completed by witness at time of signing]  
 
 ---
 
 ## Statement Purpose
 
-This witness statement provides a first-hand account of the exchange that occurred on 11 August 2025 regarding changes made to the settlement agreement (JF5) immediately prior to signing. This statement specifically addresses the question "Has anything changed?" and the response received from the attorneys.
+This witness statement provides a first-hand account of the exchange that occurred on 18 September 2025 (Thursday) at mediation regarding changes made to the settlement agreement (JF5) immediately prior to signing. This statement specifically addresses the question "Has anything changed?" and the response received from the attorneys.
 
 ---
 
@@ -18,27 +19,31 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 ### Timeline of Events
 
-1. **Prior to 11 August 2025:**
+1. **Prior to 18 September 2025:**
    - Settlement discussions regarding psychiatric evaluations and drug screening
    - Draft agreement reviewed by all parties
    - Understanding reached on key terms: voluntary participation, party control, neutral oversight
 
-2. **11 August 2025 - Morning:**
-   - Attorneys indicated final version was ready for signature
-   - All parties convened for signing ceremony
+2. **18 September 2025 (Thursday) - At Mediation:**
+   - Attorneys (ENS Africa representing Applicant) indicated final version was ready for signature
+   - All parties convened for signing ceremony at mediation
    - Attorneys stated they needed to "check with the Applicant if everything was acceptable"
 
-3. **11 August 2025 - Immediately Before Signing:**
+3. **18 September 2025 - Immediately Before Signing:**
    - Attorneys returned with printed copies
    - **Critical exchange occurred** (detailed below)
 
-4. **11 August 2025 - After Signing:**
-   - All parties signed the agreement
+4. **18 September 2025 - After Signing:**
+   - All parties signed the agreement at mediation
    - Agreement became effective immediately
 
-5. **13 August 2025 - Two Days Later:**
-   - Applicant filed interdict application
-   - Used signed settlement agreement as part of litigation strategy
+5. **19 September 2025 (Friday) - Day After:**
+   - Respondents received final draft copy
+   - Began reviewing the agreement
+
+6. **22 September 2025 (Monday) - Weekend Review:**
+   - Respondents withdrew after noticing multiple discrepancies over the weekend
+   - Discrepancies discovered between what was represented and what was signed
 
 ---
 
@@ -50,7 +55,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 **Context:** 
 - Question asked after attorneys returned with printed copies
-- Asked in the presence of [LIST OTHER PARTIES PRESENT]
+- Asked in the presence of Jacqueline Faucitt (First Respondent, mother) and [PENDING - Other parties to be specified by witness]
 - Asked before reviewing the final printed version
 - Asked to confirm whether any material changes had been made from the version previously reviewed
 
@@ -63,7 +68,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 **Exact Words:** "No, we just added the details for the attorneys."
 
-**Who Responded:** [NAME OF ATTORNEY WHO RESPONDED]
+**Who Responded:** [ATTORNEY NAME - To be specified by witness; attorneys representing Applicant from ENS Africa]
 
 **Context:**
 - Response provided verbally
@@ -99,7 +104,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - Decision-making authority transferred to attorneys
 - Parties relegated to passive role
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 2. Removal of Neutral Oversight
 
@@ -112,7 +117,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - No neutral arbiter included in final version
 - Attorneys given unilateral control
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 3. Expansion of Scope
 
@@ -127,7 +132,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - Open-ended financial obligations
 - Arbitrary professional decisions for additional procedures
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 4. Jurisdictional Implications Not Disclosed
 
@@ -172,9 +177,10 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 ### Strategic Timeline
 
-- **11 August 2025:** Settlement agreement signed under false pretenses
-- **13 August 2025:** Interdict application filed (2 days later)
-- Interdict relies on settlement agreement as evidence of urgency/necessity
+- **18 September 2025 (Thursday):** Settlement agreement signed at mediation under false pretenses
+- **19 September 2025 (Friday):** Respondents received final draft copy
+- **22 September 2025 (Monday):** Respondents withdrew after discovering multiple discrepancies over weekend
+- Settlement obtained through misrepresentation about changes made
 
 ### Pattern of Control and Manipulation
 
@@ -201,9 +207,10 @@ This exchange is consistent with a broader pattern of:
 ### Witnesses to the Exchange
 
 **Present at the time of the "Has anything changed?" exchange:**
-1. [NAME, RELATIONSHIP, CONTACT]
-2. [NAME, RELATIONSHIP, CONTACT]
-3. [NAME, RELATIONSHIP, CONTACT]
+1. Jacqueline Faucitt (First Respondent, mother of Daniel Faucitt)
+2. Peter Andrew Faucitt (Applicant)
+3. [PENDING - Attorney names from ENS Africa]
+4. [PENDING - Other parties if applicable]
 
 ---
 
@@ -227,11 +234,11 @@ This misrepresentation provides grounds to void the JF5 agreement because:
 
 ### Impact on Current Proceedings
 
-This evidence is relevant to current interdict proceedings because:
-1. Applicant relies on JF5 agreement as evidence
+This evidence is relevant to current proceedings because:
+1. Applicant relies on JF5 agreement as basis for court orders
 2. Agreement was obtained through misrepresentation
-3. Timing shows coordination (settlement → 2 days → interdict)
-4. Pattern demonstrates manipulation, not genuine urgency
+3. Respondents withdrew on 22 September after discovering discrepancies
+4. Pattern demonstrates manipulation through concealment of material changes
 
 ---
 
@@ -249,6 +256,8 @@ I, **Daniel James Faucitt**, hereby declare that:
 ---
 
 **Signature:** ___________________________  
+**Daniel James Faucitt**  
+**Identity Number:** 820715 5300 18 2  
 **Date:** ___________________________  
 **Place:** ___________________________  
 
@@ -262,11 +271,13 @@ Signed in the presence of:
 Name: ___________________________  
 Signature: ___________________________  
 Date: ___________________________  
+ID Number: ___________________________
 
 **Witness 2:**  
 Name: ___________________________  
 Signature: ___________________________  
 Date: ___________________________  
+ID Number: ___________________________  
 
 ---
 

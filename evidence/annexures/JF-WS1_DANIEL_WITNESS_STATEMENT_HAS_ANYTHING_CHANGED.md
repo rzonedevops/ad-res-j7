@@ -26,12 +26,12 @@ This annexure contains Daniel Faucitt's witness statement documenting the critic
 
 ### DEPONENT INFORMATION
 
-**Full Name:** Daniel Faucitt  
-**Identity Number:** [To be completed]  
-**Address:** [To be completed]  
+**Full Name:** Daniel James Faucitt  
+**Identity Number:** 820715 5300 18 2  
+**Address:** [PENDING - To be completed by witness at time of attestation]  
 **Relationship to Case:** Second Respondent in Case 2025-137857  
-**Date of Statement:** [To be completed]  
-**Commissioner of Oaths:** [To be completed]
+**Date of Statement:** [PENDING - To be completed at time of attestation]  
+**Commissioner of Oaths:** [PENDING - To be completed at time of attestation]
 
 ---
 
@@ -47,7 +47,7 @@ I, **DANIEL FAUCITT**, do hereby make oath and state that:
 
 1.3 The facts contained in this statement are within my personal knowledge and are true and correct.
 
-1.4 I was present during the signing of the JF5 settlement agreement on or about 11 August 2025.
+1.4 I was present during the signing of the JF5 settlement agreement on 18 September 2025 (Thursday) at mediation.
 
 ### 2. THE SETTLEMENT AGREEMENT CONTEXT
 
@@ -170,13 +170,14 @@ I certify that:
 4. I regard the prescribed oath as binding on my conscience
 
 **DEPONENT:** _________________________  
-**DANIEL FAUCITT**  
-**Date:** [To be completed]
+**DANIEL JAMES FAUCITT**  
+**Identity Number:** 820715 5300 18 2  
+**Date:** [PENDING - To be completed at attestation]
 
 **COMMISSIONER OF OATHS:** _________________________  
-**Name:** [To be completed]  
-**Designation:** [To be completed]  
-**Date:** [To be completed]
+**Name:** [PENDING - To be completed at attestation]  
+**Designation:** [PENDING - To be completed at attestation]  
+**Date:** [PENDING - To be completed at attestation]
 
 ---
 
@@ -264,9 +265,9 @@ This witness statement is **CRITICAL** because it:
 ### Immediate Actions Required:
 
 1. **Complete Deponent Information:**
-   - Insert Daniel Faucitt's identity number
-   - Add current address details
-   - Specify date of statement preparation
+   - ✅ Identity number completed: 820715 5300 18 2
+   - [PENDING] Current address details - to be provided by witness at attestation
+   - [PENDING] Date of statement preparation - to be completed at attestation
 
 2. **Commissioner of Oaths:**
    - Arrange appointment with Commissioner of Oaths
@@ -311,11 +312,11 @@ This witness statement is **CRITICAL** because it:
 
 ---
 
-**Last Updated:** [Date]  
-**Document Version:** 1.0  
-**Prepared By:** [Legal Team]  
-**Reviewed By:** [Attorney Name]  
-**Ready for Attestation:** [Pending completion of personal details]
+**Last Updated:** 30 October 2025  
+**Document Version:** 1.1 - Populated with available factual information  
+**Prepared By:** Legal Team  
+**Reviewed By:** [Attorney Name - PENDING]  
+**Ready for Attestation:** PENDING - Requires witness address and Commissioner of Oaths appointment
 
 ---
 
