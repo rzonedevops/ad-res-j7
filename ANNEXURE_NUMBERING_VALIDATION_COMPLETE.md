@@ -180,11 +180,21 @@ npm run validate-annexure-numbering
 
 ### Integration with CI/CD
 
-Consider adding the validation script to continuous integration:
+Consider adding the validation script to continuous integration. Example GitHub Actions step:
 
 ```yaml
-- name: Validate Annexure Numbering
-  run: npm run validate-annexure-numbering
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm install
+      - name: Validate Annexure Numbering
+        run: npm run validate-annexure-numbering
 ```
 
 ## Files Modified
@@ -211,8 +221,8 @@ Consider adding the validation script to continuous integration:
 |--------|-------|
 | Total Annexures | 12 |
 | Annexure Range | JF01-JF12 |
-| Total Files | 220+ |
-| Total Size | ~40 MB |
+| Total Files | 220+ (estimate as of Oct 2025) |
+| Total Size | ~40 MB (estimate as of Oct 2025) |
 | Evidence Span | 2017-2025 (8 years) |
 | Directories Validated | 3 (ANNEXURES, FINAL_AFFIDAVIT_PACKAGE/ANNEXURES, docs/legal/annexures) |
 | Validation Status | ✅ PASSED |
