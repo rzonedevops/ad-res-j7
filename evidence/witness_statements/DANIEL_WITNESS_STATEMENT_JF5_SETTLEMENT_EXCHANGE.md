@@ -3,8 +3,9 @@
 
 **Case Number:** 2025-137857  
 **Witness Name:** Daniel James Faucitt  
-**Date of Statement:** [TO BE COMPLETED]  
-**Location:** [TO BE COMPLETED]  
+**Identity Number:** 820715 5300 18 2  
+**Date of Statement:** [PENDING - To be completed by witness at time of signing]  
+**Location:** [PENDING - To be completed by witness at time of signing]  
 
 ---
 
@@ -24,7 +25,7 @@ This witness statement provides a first-hand account of the exchange that occurr
    - Understanding reached on key terms: voluntary participation, party control, neutral oversight
 
 2. **11 August 2025 - Morning:**
-   - Attorneys indicated final version was ready for signature
+   - Attorneys (ENS Africa representing Applicant) indicated final version was ready for signature
    - All parties convened for signing ceremony
    - Attorneys stated they needed to "check with the Applicant if everything was acceptable"
 
@@ -50,7 +51,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 **Context:** 
 - Question asked after attorneys returned with printed copies
-- Asked in the presence of [LIST OTHER PARTIES PRESENT]
+- Asked in the presence of Jacqueline Faucitt (First Respondent, mother) and [OTHER PARTIES PRESENT - To be specified by witness]
 - Asked before reviewing the final printed version
 - Asked to confirm whether any material changes had been made from the version previously reviewed
 
@@ -63,7 +64,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 **Exact Words:** "No, we just added the details for the attorneys."
 
-**Who Responded:** [NAME OF ATTORNEY WHO RESPONDED]
+**Who Responded:** [ATTORNEY NAME - To be specified by witness; attorneys representing Applicant from ENS Africa]
 
 **Context:**
 - Response provided verbally
@@ -99,7 +100,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - Decision-making authority transferred to attorneys
 - Parties relegated to passive role
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 2. Removal of Neutral Oversight
 
@@ -112,7 +113,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - No neutral arbiter included in final version
 - Attorneys given unilateral control
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 3. Expansion of Scope
 
@@ -127,7 +128,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 - Open-ended financial obligations
 - Arbitrary professional decisions for additional procedures
 
-**Evidence:** [REFERENCE TO JF5 DRAFT VS FINAL COMPARISON DOCUMENT]
+**Evidence:** See JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md (evidence/annexures/)
 
 ### 4. Jurisdictional Implications Not Disclosed
 
@@ -201,9 +202,10 @@ This exchange is consistent with a broader pattern of:
 ### Witnesses to the Exchange
 
 **Present at the time of the "Has anything changed?" exchange:**
-1. [NAME, RELATIONSHIP, CONTACT]
-2. [NAME, RELATIONSHIP, CONTACT]
-3. [NAME, RELATIONSHIP, CONTACT]
+1. Jacqueline Faucitt (First Respondent, mother of Daniel Faucitt)
+2. Peter Andrew Faucitt (Applicant)
+3. [ATTORNEY NAMES from ENS Africa - To be specified by witness]
+4. [OTHER PARTIES - To be specified by witness if applicable]
 
 ---
 
@@ -249,6 +251,8 @@ I, **Daniel James Faucitt**, hereby declare that:
 ---
 
 **Signature:** ___________________________  
+**Daniel James Faucitt**  
+**Identity Number:** 820715 5300 18 2  
 **Date:** ___________________________  
 **Place:** ___________________________  
 
@@ -262,11 +266,13 @@ Signed in the presence of:
 Name: ___________________________  
 Signature: ___________________________  
 Date: ___________________________  
+ID Number: ___________________________
 
 **Witness 2:**  
 Name: ___________________________  
 Signature: ___________________________  
 Date: ___________________________  
+ID Number: ___________________________  
 
 ---
 
