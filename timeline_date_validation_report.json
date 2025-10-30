@@ -1,0 +1,1024 @@
+{
+  "timestamp": "2025-10-30T09:03:20.637Z",
+  "summary": {
+    "errors": 0,
+    "warnings": 0,
+    "info": 18
+  },
+  "errors": [],
+  "warnings": [],
+  "info": [
+    {
+      "message": "✓ Critical event 2025-05-22 (Shopify Audit Trail Hijacking) verified in 7 sources"
+    },
+    {
+      "message": "✓ Critical event 2025-05-15 (Jax Confrontation / Unauthorized Transfers) verified in 10 sources"
+    },
+    {
+      "message": "✓ Critical event 2025-05-29 (Domain Registration) verified in 7 sources"
+    },
+    {
+      "message": "✓ Folder 08-july-warehouse-popi matches event date 2025-07-08 (Warehouse POPI Violations)"
+    },
+    {
+      "message": "✓ Folder 14-apr-bank-letter matches event date 2025-04-14 (Bank Account Change Letter)"
+    },
+    {
+      "message": "✓ Folder 20-june-gee-gayane-email matches event date 2025-06-20 (Email Impersonation Pattern)"
+    },
+    {
+      "message": "✓ Folder 22-may-shopify-audit matches event date 2025-05-22 (Shopify Audit Trail Hijacking)"
+    },
+    {
+      "message": "✓ Folder 29-may-domain-registration matches event date 2025-05-29 (Domain Registration (Identity Fraud))"
+    },
+    {
+      "message": "✓ Folder 02-may-beneficiary-changes matches event date 2025-05-02 (Unauthorized Beneficiary Changes)"
+    },
+    {
+      "message": "✓ Folder 10-aug-trust-breach-evidence matches event date 2025-08-10 (Trust Breach Evidence)"
+    },
+    {
+      "message": "✓ Folder 15-mar-trust-establishment matches event date 2025-03-15 (Trust Structure Establishment)"
+    },
+    {
+      "message": "✓ Folder 18-june-trust-violation matches event date 2025-06-18 (Systematic Trust Violations)"
+    },
+    {
+      "message": "✓ Folder 25-july-asset-misappropriation matches event date 2025-07-25 (Trust Asset Misappropriation)"
+    },
+    {
+      "message": "✓ Folder 01-apr-payment-redirection matches event date 2025-04-01 (Payment Redirection Scheme)"
+    },
+    {
+      "message": "✓ Folder 12-july-account-manipulations matches event date 2025-07-12 (Account Manipulation)"
+    },
+    {
+      "message": "✓ Folder 15-may-unauthorized-transfers matches event date 2025-05-15 (Unauthorized Transfers (R850K+))"
+    },
+    {
+      "message": "✓ Folder 20-aug-financial-concealment matches event date 2025-08-20 (Financial Evidence Concealment)"
+    },
+    {
+      "message": "✓ Folder 30-june-fund-diversions matches event date 2025-06-30 (Coordinated Fund Diversions)"
+    }
+  ],
+  "dateOccurrences": {
+    "2025-03-15": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Trust Structure Establishment"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "6. **2025-03-15:** Trust Structure Establishment"
+      }
+    ],
+    "2025-04-01": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Payment Redirection Scheme"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "11. **2025-04-01:** Payment Redirection Scheme"
+      }
+    ],
+    "2025-04-14": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Bank Account Change Letter"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **April 14, 2025** | Rynette sends email to all clients - new payment account "
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "1. **2025-04-14:** Bank Account Change Letter"
+      }
+    ],
+    "2025-05-02": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Unauthorized Beneficiary Changes"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "7. **2025-05-02:** Unauthorized Beneficiary Changes"
+      }
+    ],
+    "2025-05-15": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Unauthorized Transfers (R850K+)"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 15, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "3. **Confrontation Trigger** (May 15, 2025): Jax's confrontation catalyzes cover"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Jax as Victim, Not Perpetrator**: The evidence demonstrates that Jax, as CEO o"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 15, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "3. **Confrontation Trigger** (May 15, 2025): Jax's confrontation catalyzes cover"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Jax as Victim, Not Perpetrator**: The evidence demonstrates that Jax, as CEO o"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **May 15, 2025** | Query to Rynette about Rezonance payments regarding Kayla |"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-05-15-kayla-query` - Estate payment query"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "12. **2025-05-15:** Unauthorized Transfers (R850K+)"
+      }
+    ],
+    "2025-05-22": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Shopify Audit Trail Hijacking"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 22, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "4. **Evidence Destruction** (May 22, 2025): Digital audit trails eliminated"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 22, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "4. **Evidence Destruction** (May 22, 2025): Digital audit trails eliminated"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **May 22, 2025** | Revenue streams hijacked via Shopify, Sage, QuickBooks | Bu"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "2. **2025-05-22:** Shopify Audit Trail Hijacking ⭐ CRITICAL"
+      }
+    ],
+    "2025-05-29": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Domain Registration (Identity Fraud)"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 29, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "5. **Infrastructure Control** (May 29, 2025): Domain control consolidated"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 29, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "5. **Infrastructure Control** (May 29, 2025): Domain control consolidated"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **May 29, 2025** | Domain creation in Rynette's son's name | Identity fraud in"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "3. **2025-05-29:** Domain Registration (Identity Fraud)"
+      }
+    ],
+    "2025-06-18": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Systematic Trust Violations"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "8. **2025-06-18:** Systematic Trust Violations"
+      }
+    ],
+    "2025-06-20": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Email Impersonation Pattern"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **JF3:** Sage screenshot (June 20, 2025)"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| June 20, 2025 | First Sage screenshot | Rynette email control proved |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- First Sage screenshot: June 20, 2025 (JF3)"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | June 20, 2025 | First Sage screenshot | Rynette Farrar controls Pete@regima."
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> 3. **First Sage screenshot** (June 20, 2025) - Control documented"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "- \"Timeline Event: June 20, 2025 - Rynette email control (JF3)\""
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "4. **2025-06-20:** Email Impersonation Pattern"
+      }
+    ],
+    "2025-06-30": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Coordinated Fund Diversions"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "13. **2025-06-30:** Coordinated Fund Diversions"
+      }
+    ],
+    "2025-07-08": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Warehouse POPI Violations"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "5. **2025-07-08:** Warehouse POPI Violations"
+      }
+    ],
+    "2025-07-12": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Account Manipulation"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "14. **2025-07-12:** Account Manipulation"
+      }
+    ],
+    "2025-07-25": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Trust Asset Misappropriation"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "9. **2025-07-25:** Trust Asset Misappropriation"
+      }
+    ],
+    "2025-08-10": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Trust Breach Evidence"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "10. **2025-08-10:** Trust Breach Evidence"
+      }
+    ],
+    "2025-08-20": [
+      {
+        "source": "forensic-events-data.json",
+        "context": "Financial Evidence Concealment"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "**Timeline Duration:** March 15 - August 20, 2025 (158 days)"
+      },
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "15. **2025-08-20:** Financial Evidence Concealment"
+      }
+    ],
+    "2019-03-01": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 1, 2019"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 1, 2019"
+      }
+    ],
+    "2019-05-01": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 1, 2019"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### May 1, 2019"
+      }
+    ],
+    "2020-02-20": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 20, 2020"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 20, 2020"
+      }
+    ],
+    "2020-02-28": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 28, 2020"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 28, 2020"
+      }
+    ],
+    "2020-04-30": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### April 30, 2020"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### April 30, 2020"
+      }
+    ],
+    "2020-08-13": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### August 13, 2020"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### August 13, 2020"
+      }
+    ],
+    "2017-06-30": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### June 30, 2017"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### June 30, 2017"
+      }
+    ],
+    "2017-09-30": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### September 30, 2017"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### September 30, 2017"
+      }
+    ],
+    "2022-03-01": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 1, 2022"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 1, 2022"
+      }
+    ],
+    "2022-07-11": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 11, 2022"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 11, 2022"
+      }
+    ],
+    "2023-02-28": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 28, 2023"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### February 28, 2023"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-02-28** | R1,035,000+ overdue invoices RST for ReZ | Massive debt accum"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-02-28 | R1,035,000+ overdue invoices RST for ReZ | Massive debt accumulat"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "6. **2023-02-28** - R1,035,000+ overdue invoices RST for ReZ"
+      }
+    ],
+    "2023-03-15": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 15, 2023"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### March 15, 2023"
+      }
+    ],
+    "2023-09-20": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### September 20, 2023"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### September 20, 2023"
+      }
+    ],
+    "2025-04-15": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### April 15, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### April 15, 2025"
+      }
+    ],
+    "2025-06-07": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### June 7, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "6. **Financial Control** (June 7, 2025): Payment mechanisms controlled"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### June 7, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "6. **Financial Control** (June 7, 2025): Payment mechanisms controlled"
+      },
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **June 7, 2025** | Worldwide cards cancelled by Peter | Financial control seiz"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-06-07-cards-cancelled` - Payment cards cancellation"
+      }
+    ],
+    "2025-07-02": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 2, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 2, 2025"
+      }
+    ],
+    "2025-07-07": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 7, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### July 7, 2025"
+      }
+    ],
+    "2025-10-09": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### October 9, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### October 9, 2025"
+      }
+    ],
+    "2025-10-12": [
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### October 12, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Created**: October 12, 2025"
+      },
+      {
+        "source": "ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Last Updated**: October 12, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "### October 12, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Created**: October 12, 2025"
+      },
+      {
+        "source": "FINAL_AFFIDAVIT_PACKAGE/ANNEXURES/JF09/COMPREHENSIVE_TIMELINE_2017_2025.md",
+        "context": "**Last Updated**: October 12, 2025"
+      }
+    ],
+    "2025-10-15": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "**Date:** 2025-10-15"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "**Date Completed:** October 15, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "**Task Completion Date:** October 15, 2025"
+      }
+    ],
+    "2020-04-01": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2020-04-01** | Worldwide starts Shopify during lockdowns | Business expansio"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2020-04-01 | Worldwide starts Shopify during lockdowns | International expansi"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "2. **2020-04-01** - Worldwide starts Shopify during lockdowns"
+      }
+    ],
+    "2022-02-28": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2022-02-28** | Kachan distribution ends & Dan automates | Distribution autom"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2022-02-28 | Kachan distribution ends & Dan automates | Automation phase begin"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "3. **2022-02-28** - Kachan distribution ends & Dan automates"
+      }
+    ],
+    "2022-11-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2022-11-30** | Krenance distribution ends & Dan automates | Further automati"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2022-11-30 | Krenance distribution ends & Dan automates | Distribution consoli"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "4. **2022-11-30** - Krenance distribution ends & Dan automates"
+      }
+    ],
+    "2023-01-10": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-01-10** | Krenance Staff at RegimA HO (Liezel & Nikita) | External staf"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-01-10 | Krenance Staff at RegimA HO (Liezel & Nikita) | Workplace infiltr"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "5. **2023-01-10** - Krenance Staff at RegimA HO (Liezel & Nikita)"
+      }
+    ],
+    "2023-04-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-04-30** | Peak of massive thefts in office (Moffat arrest) | Internal s"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-04-30 | Peak of massive thefts in office (Moffat arrest) | Criminal activ"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "7. **2023-04-30** - Peak of massive thefts in office (Moffat arrest)"
+      }
+    ],
+    "2023-05-05": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-05-05** | Liezel reports violation of staff bodily autonomy | Workplace"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-05-05 | Liezel reports violation of staff bodily autonomy | Witness intim"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "8. **2023-05-05** - Liezel reports violation of staff bodily autonomy"
+      }
+    ],
+    "2023-05-10": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-05-10** | Peter plants drugs in Liezel's desk to discredit | Evidence t"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-05-10 | Peter plants drugs in Liezel's desk to discredit | Evidence tampe"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "9. **2023-05-10** - Peter plants drugs in Liezel's desk to discredit"
+      }
+    ],
+    "2023-05-15": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-05-15** | Liezel complains about sabotage & resigns | Witness eliminati"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-05-15 | Liezel complains about sabotage & resigns | Successful witness el"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "10. **2023-05-15** - Liezel complains about sabotage & resigns"
+      }
+    ],
+    "2023-06-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-06-30** | Nikita recruits Team members then Resigns | Staff turnover af"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-06-30 | Nikita recruits Team members then Resigns | Staff turnover patter"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "11. **2023-06-30** - Nikita recruits Team members then Resigns"
+      }
+    ],
+    "2023-07-13": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-07-13** | Kayla Pretorius murdered (Kelly dismissed) | Account access c"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-07-13 | Kayla Pretorius murdered (Kelly dismissed) | Key partner eliminat"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "12. **2023-07-13** - Kayla Pretorius murdered (Kelly dismissed)"
+      }
+    ],
+    "2023-07-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-07-30** | All cards expire & put on Worldwide \"temp\" | Financial contro"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-07-30 | All cards expire & put on Worldwide \"temp\" | Financial control ce"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "13. **2023-07-30** - All cards expire & put on Worldwide \"temp\""
+      }
+    ],
+    "2023-09-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2023-09-30** | RegimA EU distribution ends & Dan automates | European operat"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2023-09-30 | RegimA EU distribution ends & Dan automates | EU operations conso"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "14. **2023-09-30** - RegimA EU distribution ends & Dan automates"
+      }
+    ],
+    "2024-02-14": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2024-02-14** | Pete, Rynette, Bantjies tell Dan to wind up ReZ | Coordinated"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2024-02-14 | Pete, Rynette, Bantjies tell Dan to wind up ReZ | Creditor elimin"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "15. **2024-02-14** - Pete, Rynette, Bantjies tell Dan to wind up ReZ"
+      }
+    ],
+    "2024-10-28": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **2024-10-28** | Bantjies added to trust Authority register | Official authori"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| 2024-10-28 | Bantjies added to trust Authority register | Official authority p"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "17. **2024-10-28** - Bantjies added to trust Authority register"
+      }
+    ],
+    "2025-02-25": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **February 25, 2025** | SLG Stock Missing (R5.2M) & Large Invoice (R5.2M SLG→R"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-02-25-slg-asset-strip` - R5.2M asset stripping"
+      }
+    ],
+    "2025-03-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **March 30, 2025** | Rynette reveals 2 years unprocessed RWW transactions | Cr"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-03-30-rynette-reveals` - Artificial urgency creation"
+      }
+    ],
+    "2025-04-22": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **April 22, 2025** | Pete orders Cloud IT systems removal | Infrastructure con"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-04-22-cloud-removal` - IT systems removal"
+      }
+    ],
+    "2025-04-30": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **April 30, 2025** | Server missing from office | Evidence tampering begins | "
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-04-30-server-missing` - Physical evidence removal"
+      }
+    ],
+    "2025-06-08": [
+      {
+        "source": "affidavit_work/analysis/COMPREHENSIVE_TIMELINE_ANALYSIS.md",
+        "context": "| **June 8, 2025** | Shopify orders stopped & audit trail missing | Business dis"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-06-08-shopify-stopped` - Shopify disruption"
+      }
+    ],
+    "2025-08-19": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **Interdict granted:** August 19, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- Interdict granted: August 19, 2025"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-08-19-interdict` - Ex parte interdict granted"
+      }
+    ],
+    "2025-06-10": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **Bantjies learns of crimes:** June 10, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "> \"Mr. Bantjies learned of criminal matters on **June 10, 2025** (murder, fraud,"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| June 10, 2025 | Bantjies learns of crimes | Knowledge before false affidavit |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- Knowledge acquired: June 10, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | June 10, 2025 | Bantjies learns of criminal matters | Knowledge acquired (mu"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> June 10, 2025: Bantjies learns of crimes"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-06-10-bantjies-criminal` - Bantjies learns of crimes"
+      }
+    ],
+    "2025-08-25": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "> \"The Sage screenshots dated June 20 and August 25, 2025 prove Rynette Farrar c"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **JF3A:** Updated Sage screenshot (August 25, 2025)"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| August 25, 2025 | Second Sage screenshot | Ongoing email control |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- Second Sage screenshot: August 25, 2025 (JF3A)"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | August 25, 2025 | Second Sage screenshot | Ongoing control confirmed after i"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> 5. **Second Sage screenshot** (August 25, 2025) - Ongoing control confirmed"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-08-25-sage-screenshot` - Email control confirmation"
+      }
+    ],
+    "2025-08-29": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **Evidence:** Email August 29, 2025: \"Received, thanks Daniel\""
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| August 29, 2025 | ENS acknowledges crimes | Suppression of material evidence |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- ENS acknowledgment: August 29, 2025 (\"Received, thanks Daniel\")"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | August 29, 2025 | ENS Africa: \"Received, thanks Daniel\" | Acknowledgment of "
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> **August 29, 2025 Email:** \"Received, thanks Daniel\""
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> August 29, 2025: ENS acknowledges receipt"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-08-29-ens-acknowledges` - Criminal matters suppressed"
+      }
+    ],
+    "2025-08-14": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **Evidence:** Confirmatory affidavit August 14, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "- **Known:** Interdict filed August 14, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_ANALYSIS_COMPLETION_SUMMARY.md",
+        "context": "- Interdict filed: August 14, 2025"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | August 14, 2025 | **Interdict application filed** |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> 4. **Founding affidavit filed** (August 14, 2025) - False claims about email"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> - Confirmatory affidavit against beneficiary: August 14, 2025"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-08-14-affidavit-filed` - Founding affidavit with perjury"
+      }
+    ],
+    "2025-07-16": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_QUICK_REFERENCE.md",
+        "context": "| July 16, 2025 | R500K payment | Legitimate director loan |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | July 16, 2025 | R500K payment to Daniel (later characterized as \"gift\") |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> The Applicant characterizes the R500K payment to Daniel on July 16, 2025 as an"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> **July 16, 2025 - The Payment:**"
+      }
+    ],
+    "2025-06-15": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | June 15, 2025 | Daniel provided all reports to accountant Bantjies |"
+      }
+    ],
+    "2025-06-16": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> | June 16, 2025 | Applicant cancelled all business cards |"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> **Step 2: Applicant Cancels All Business Cards THE NEXT DAY (June 16, 2025)**"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> - **Evidence:** Bank notifications dated June 16, 2025 (JF-CARDS)"
+      },
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "- \"As proven by bank records dated June 16, 2025 (JF-CARDS)\""
+      }
+    ],
+    "2025-08-13": [
+      {
+        "source": "affidavit_work/analysis/TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "> August 13, 2025: False confirmatory affidavit"
+      }
+    ],
+    "2025-10-16": [
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "## Date: 2025-10-16"
+      },
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "*Integration Complete: 2025-10-16*"
+      },
+      {
+        "source": "TIMELINE_IMPLEMENTATION_COMPLETE.md",
+        "context": "**Date:** 2025-10-16"
+      }
+    ],
+    "2025-08-06": [
+      {
+        "source": "KEY_TIMELINE_EVENTS_INTEGRATION_REPORT.md",
+        "context": "- `event-2025-08-06-settlement` - Settlement signed (8 days before interdict)"
+      }
+    ],
+    "2025-10-30": [
+      {
+        "source": "FORENSIC_TIMELINE_INTEGRATION_GUIDE.md",
+        "context": "**Last Updated:** 2025-10-30"
+      }
+    ]
+  }
+}
