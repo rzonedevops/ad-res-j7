@@ -11,6 +11,7 @@ const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
 const EmptyTodoFileValidator = require('./empty-todo-file-validation.test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
+const FilePathValidationTest = require('./file-path-validation.test.js');
 const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
 const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
 const RepositoryStructureIntegrityTest = require('./repository-structure-integrity.test.js');
@@ -28,6 +29,7 @@ class TestRunner {
       endToEnd: null,
       emptyTodoValidation: null,
       malformedMarkdown: null,
+      filePathValidation: null,
       noActionableTasks: null,
       todoValidation: null,
       repositoryStructure: null,
@@ -237,12 +239,32 @@ class TestRunner {
     return success;
   }
 
+  async runFilePathValidationTests() {
+    console.log('\n📋 Running File Path Validation Tests...\n');
+    
+    const filePathTest = new FilePathValidationTest();
+    const success = await filePathTest.runAllTests();
+    
+    this.results.filePathValidation = {
+      success: success,
+      total: filePathTest.testResults.length,
+      passed: filePathTest.testResults.filter(t => t.passed).length,
+      failed: filePathTest.testResults.filter(t => !t.passed).length,
+      errors: filePathTest.errors
+    };
+    
+    return success;
+  }
+
   calculateOverallResults() {
     this.results.overall.total_tests = this.results.validation.total + 
                                        this.results.integration.total + 
                                        this.results.api.total +
                                        this.results.comprehensive.total + 
                                        this.results.security.total + 
+                                       this.results.endToEnd.total +
+                                       this.results.malformedMarkdown.total +
+                                       this.results.filePathValidation.total;
                                        this.results.endToEnd.total + 
                                        this.results.emptyTodoValidation.total +
                                        this.results.malformedMarkdown.total +
@@ -255,6 +277,9 @@ class TestRunner {
                                         this.results.api.passed +
                                         this.results.comprehensive.passed + 
                                         this.results.security.passed + 
+                                        this.results.endToEnd.passed +
+                                        this.results.malformedMarkdown.passed +
+                                        this.results.filePathValidation.passed;
                                         this.results.endToEnd.passed + 
                                         this.results.emptyTodoValidation.passed +
                                         this.results.malformedMarkdown.passed +
@@ -267,6 +292,9 @@ class TestRunner {
                                         this.results.api.failed +
                                         this.results.comprehensive.failed + 
                                         this.results.security.failed + 
+                                        this.results.endToEnd.failed +
+                                        this.results.malformedMarkdown.failed +
+                                        this.results.filePathValidation.failed;
                                         this.results.endToEnd.failed + 
                                         this.results.emptyTodoValidation.failed +
                                         this.results.malformedMarkdown.failed +
@@ -466,6 +494,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'file-path-validation']
         test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure']
       },
       summary: this.results.overall
@@ -488,6 +517,7 @@ class TestRunner {
       const endToEndSuccess = await this.runEndToEndTests();
       const emptyTodoSuccess = await this.runEmptyTodoValidationTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
+      const filePathValidationSuccess = await this.runFilePathValidationTests();
       const noActionableTasksSuccess = await this.runNoActionableTasksTests();
       const todoValidationSuccess = await this.runTodoValidationTests();
       const repositoryStructureSuccess = await this.runRepositoryStructureTests();
@@ -502,6 +532,7 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && 
                              comprehensiveSuccess && securitySuccess && endToEndSuccess && 
                              emptyTodoSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && 
