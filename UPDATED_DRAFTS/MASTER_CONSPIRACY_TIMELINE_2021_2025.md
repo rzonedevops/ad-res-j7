@@ -66,7 +66,7 @@
 
 **May 15, 2025**
 - **Event:** Jacqui (Trustee) confronts Rynette about R1,035,000 owed to Rezonance
-- **Context:** Debt established February 2023, Kayla murdered August 2023
+- **Context:** Debt established February 2023, Kayla Pretorius murdered July 13, 2023
 - **Jacqui's Statement:** *"These funds owed to Rezonance were part of Kayla's estate and keeping them would be profiting from the proceeds of murder."*
 - **Rynette's Response:** Falsely claimed debt was paid (debt remains unpaid)
 - **Significance:** **TRUSTEE JACQUI ACTIVELY INVESTIGATING FRAUD**
@@ -91,7 +91,8 @@
 
 **May 29, 2025 (14 DAYS AFTER CONFRONTATION)**
 - **Event:** regimaskin.co.za domain registered by **Adderory** (Rynette's son's company)
-- **Significance:** **THEFT OF BUSINESS** - Domain stolen from Daniel's companies
+- **Significance:** **THEFT OF DOMAIN** - Rynette's son OWNS regimaskin.co.za (not RegimA)
+- **Purpose:** Create fraudulent email addresses (pete@regimaskin.co.za, rynette@regimaskin.co.za)
 - **Family Conspiracy:** Rynette's son actively participated in retaliation
 - **Impact:** Business diverted to Rynette's son
 - **Evidence:** WHOIS records, domain registration, Adderory company records
@@ -170,7 +171,17 @@
 - **Significance:** Bantjies gives direct instructions (proves he's in control)
 - **Evidence:** Email "danierequest.eml"
 
-**Legal Analysis:**
+**Post-May 29, 2025 (INTERNATIONAL ESCALATION - Date Unknown)**
+- **Event:** Letter sent to **HM Revenue & Customs (HMRC)** in United Kingdom
+- **Content:** Directing Jacqui's pension correspondence to **pete@regimaskin.co.za**
+- **Domain Owner:** **RYNETTE'S SON** (Adderory Pty Ltd) - NOT Peter or RegimA
+- **Significance:** **INTERNATIONAL FINANCIAL CRIME** - UK government agency fraud
+- **Target:** Jacqui's UK pension assets
+- **Legal Characterization:** **PENSION FRAUD + GOVERNMENT AGENCY IMPERSONATION**
+- **UK Offenses:** Fraud Act 2006 (10 years), Pension Schemes Act 2021 (7 years)
+- **Evidence:** HMRC correspondence, WHOIS records (regimaskin.co.za owned by Rynette's son)
+
+**Legal Analysis:
 - **August 11 email proves Rynette reports to BANTJIES** (not Peter)
 - **2-day timeline** (deception Aug 11 → betrayal Aug 13) proves PRE-MEDITATION
 - **Backdating document** = FRAUD
