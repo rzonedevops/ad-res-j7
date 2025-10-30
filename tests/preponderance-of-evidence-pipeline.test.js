@@ -29,10 +29,11 @@ class PreponderanceOfEvidencePipeline {
     this.evidenceScenarios = [];
     
     // Preponderance threshold constants
-    // Note: 0.501 represents 50.1% - the minimum threshold for preponderance
-    // This is slightly above 50% to ensure "more likely than not" standard is met
-    // Exactly 50% (0.500) is not sufficient as it represents equal likelihood
-    this.PREPONDERANCE_THRESHOLD = 0.501; // >50% (50.1%)
+    // Note: 0.501 represents 50.1% as specified in burden-of-proof-requirements.json
+    // This aligns with the framework's civil standard threshold configuration
+    // "More likely than not" means >50%, and 0.501 ensures clear preponderance
+    // Exactly 50% (0.500) represents equal likelihood and fails the preponderance test
+    this.PREPONDERANCE_THRESHOLD = 0.501; // >50% (50.1% per framework spec)
     this.HIGH_CONFIDENCE = 0.75; // 75%+
     this.LOW_CONFIDENCE = 0.40; // <50%
   }
