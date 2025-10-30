@@ -494,8 +494,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'file-path-validation']
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure', 'file-path-validation']
       },
       summary: this.results.overall
     });
