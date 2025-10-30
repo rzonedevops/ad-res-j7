@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events Timeline: March-August 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .date-range {
+            color: #e74c3c;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .revelation-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 35px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        
+        .revelation-box h2 {
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .revelation-box p {
+            line-height: 1.7;
+            font-size: 1.1em;
+        }
+        
+        .revelation-box strong {
+            background: rgba(255,255,255,0.25);
+            padding: 3px 10px;
+            border-radius: 5px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        
+        .stat-value {
+            font-size: 2.8em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 1em;
+            opacity: 0.95;
+        }
+        
+        .category-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+        
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .timeline-event {
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .timeline-event:nth-child(odd) {
+            flex-direction: row;
+        }
+        
+        .timeline-event:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            width: 45%;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid;
+            position: relative;
+        }
+        
+        .timeline-event:nth-child(odd) .timeline-content {
+            margin-right: auto;
+        }
+        
+        .timeline-event:nth-child(even) .timeline-content {
+            margin-left: auto;
+        }
+        
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 10px);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px;
+            z-index: 10;
+        }
+        
+        .event-date {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .event-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        
+        .event-description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        
+        .event-perpetrators {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            border-left: 3px solid #ffc107;
+        }
+        
+        .event-perpetrators strong {
+            color: #856404;
+        }
+        
+        .event-impact {
+            background: #f8d7da;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            border-left: 3px solid #dc3545;
+        }
+        
+        .event-impact strong {
+            color: #721c24;
+        }
+        
+        .event-legal {
+            background: #d1ecf1;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9em;
+            border-left: 3px solid #17a2b8;
+        }
+        
+        .event-legal strong {
+            color: #0c5460;
+        }
+        
+        .shopify-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        
+        .category-revenue {
+            border-left-color: #e74c3c;
+        }
+        
+        .category-trust {
+            border-left-color: #3498db;
+        }
+        
+        .category-financial {
+            border-left-color: #2ecc71;
+        }
+        
+        .dot-revenue {
+            box-shadow: 0 0 0 4px #e74c3c;
+            background: #e74c3c;
+        }
+        
+        .dot-trust {
+            box-shadow: 0 0 0 4px #3498db;
+            background: #3498db;
+        }
+        
+        .dot-financial {
+            box-shadow: 0 0 0 4px #2ecc71;
+            background: #2ecc71;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        .footer-note {
+            font-size: 0.95em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-event,
+            .timeline-event:nth-child(odd),
+            .timeline-event:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .timeline-content,
+            .timeline-event:nth-child(odd) .timeline-content,
+            .timeline-event:nth-child(even) .timeline-content {
+                width: 100%;
+                margin-left: 60px;
+            }
+            
+            .timeline-dot {
+                left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Key Events Timeline</h1>
+            <p class="subtitle">Case 2025-137857: Peter Faucitt v. Jacqueline Faucitt et al.</p>
+            <p class="date-range">March - August 2025</p>
+        </header>
+
+        <div class="revelation-box">
+            <h2>💡 Critical Revelation</h2>
+            <p>The Shopify platform has been owned and paid for since <strong>July 2023</strong> by Daniel Faucitt's independent UK entity <strong>RegimA Zone Ltd</strong> (28+ months, R140K-R280K total investment). RWD ZA actually has no revenue stream of its own - all revenues were generated through infrastructure owned, paid for, and operated by Daniel's UK company. RWD merely issued invoices for sales occurring on a platform it neither owned nor funded.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Key Events Documented</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">158</div>
+                <div class="stat-label">Days of Criminal Activity</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">R10.3M</div>
+                <div class="stat-label">Total Documented Losses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">6 Months</div>
+                <div class="stat-label">Timeline Duration</div>
+            </div>
+        </div>
+
+        <div class="category-legend">
+            <h3 style="width: 100%; margin-bottom: 10px; color: #2c3e50;">Event Categories:</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #e74c3c;"></div>
+                <span>Revenue Theft (R3.1M+)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #3498db;"></div>
+                <span>Family Trust Violations (R2.9M+)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #2ecc71;"></div>
+                <span>Financial Flows (R4.3M+)</span>
+            </div>
+        </div>
+
+        <div class="timeline">
+            <!-- March 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-trust">
+                    <div class="timeline-dot dot-trust"></div>
+                    <div class="event-date">March 15, 2025</div>
+                    <div class="event-title">Trust Structure Establishment</div>
+                    <div class="event-description">
+                        Fraudulent trust establishment with intentional structural flaws creating foundation for systematic asset misappropriation.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Foundation for R2.85M+ trust violations
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Initial documentation of trust structure manipulation
+                    </div>
+                </div>
+            </div>
+
+            <!-- April 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-financial">
+                    <div class="timeline-dot dot-financial"></div>
+                    <div class="event-date">April 1, 2025</div>
+                    <div class="event-title">Payment Redirection Scheme</div>
+                    <div class="event-description">
+                        Systematic redirection of customer payments to unauthorized accounts, beginning coordinated financial fraud. Customer payments were for sales on a Shopify platform continuously funded by Dan's UK company, not RWD ZA.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Rynette Farrar, Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Part of R4.28M+ financial diversions
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Initial implementation of systematic financial fraud scheme
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-revenue">
+                    <div class="timeline-dot dot-revenue"></div>
+                    <div class="event-date">April 14, 2025</div>
+                    <div class="event-title">Bank Account Change Letter</div>
+                    <div class="event-description">
+                        Rynette Farrar sends fraudulent letter to clients redirecting payments to unauthorized accounts. Bank changes targeted revenue from Shopify platform paid by Dan's UK company. Attempted to redirect payments for sales on infrastructure owned and paid by RegimA Zone Ltd.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Rynette Farrar
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Setup for R3.14M+ revenue theft
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> First documented act in coordinated scheme
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <!-- May 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-trust">
+                    <div class="timeline-dot dot-trust"></div>
+                    <div class="event-date">May 2, 2025</div>
+                    <div class="event-title">Unauthorized Beneficiary Changes</div>
+                    <div class="event-description">
+                        Peter Faucitt and Rynette Farrar coordinate unauthorized modifications to trust beneficiaries.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt, Rynette Farrar
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Exclusion of legitimate beneficiaries
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Direct violation of trust obligations and beneficiary rights
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-financial">
+                    <div class="timeline-dot dot-financial"></div>
+                    <div class="event-date">May 15, 2025</div>
+                    <div class="event-title">Unauthorized Transfers (R850K+)</div>
+                    <div class="event-description">
+                        Large-scale unauthorized financial transfers from business accounts by Peter Faucitt. R850K+ transferred included revenue from platform paid by Dan's UK company over 28 months.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> R850,000+ unauthorized transfers
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Direct evidence of financial authority abuse and theft
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-revenue">
+                    <div class="timeline-dot dot-revenue"></div>
+                    <div class="event-date">May 22, 2025</div>
+                    <div class="event-title">Shopify Audit Trail Hijacking ⚠️</div>
+                    <div class="event-description">
+                        Complete destruction of Shopify audit trails 7 days after Jax confrontation. 100% business shutdown. Destruction of audit trails for platform owned, paid for, and operated by RegimA Zone Ltd (UK) since July 2023, proving RWD ZA generated no independent revenue.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Coordinated action
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> R1M+ monthly revenue → R0
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Central evidence destruction event proving consciousness of guilt
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM - CRITICAL</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-revenue">
+                    <div class="timeline-dot dot-revenue"></div>
+                    <div class="event-date">May 29, 2025</div>
+                    <div class="event-title">Domain Registration (Identity Fraud)</div>
+                    <div class="event-description">
+                        Rynette's son (Addarory) registers domain for customer base theft and revenue diversion infrastructure. Identity fraud to impersonate legitimate business operating on Dan's UK-funded infrastructure.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Rynette Farrar, Addarory (son)
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Customer hijacking platform
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Family conspiracy escalation and digital impersonation
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <!-- June 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-trust">
+                    <div class="timeline-dot dot-trust"></div>
+                    <div class="event-date">June 18, 2025</div>
+                    <div class="event-title">Systematic Trust Violations</div>
+                    <div class="event-description">
+                        Peter Faucitt breaches fiduciary duties with unauthorized use of trust assets for personal benefit.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Trustee misconduct and self-dealing
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Clear evidence of trustee misconduct and self-dealing
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-revenue">
+                    <div class="timeline-dot dot-revenue"></div>
+                    <div class="event-date">June 20, 2025</div>
+                    <div class="event-title">Email Impersonation Pattern</div>
+                    <div class="event-description">
+                        Rynette Farrar controls pete@regima.com email for systematic hijacking and fraudulent directives. Email impersonation facilitated fraud related to Shopify platform Dan's UK company had been paying for since July 2023.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Rynette Farrar
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> R3.1M+ losses enabled by email control
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Pattern of impersonation supporting criminal conspiracy charges
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-financial">
+                    <div class="timeline-dot dot-financial"></div>
+                    <div class="event-date">June 30, 2025</div>
+                    <div class="event-title">Coordinated Fund Diversions</div>
+                    <div class="event-description">
+                        Multi-account coordination involving multiple financial institutions in complex transaction structuring. Fund diversions targeted revenue generated on infrastructure continuously funded by RegimA Zone Ltd.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt, Rynette Farrar, Associates
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Complex financial flow manipulation
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Evidence of sophisticated financial crime coordination
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <!-- July 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-revenue">
+                    <div class="timeline-dot dot-revenue"></div>
+                    <div class="event-date">July 8, 2025</div>
+                    <div class="event-title">Warehouse POPI Violations</div>
+                    <div class="event-description">
+                        Pete stops warehouse Shopify operations with POPI violations and employee endangerment. Business sabotage of operations running on platform paid by Dan & Jax UK company since July 2023.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Complete operational shutdown
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Documented evidence of systematic business destruction
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-financial">
+                    <div class="timeline-dot dot-financial"></div>
+                    <div class="event-date">July 12, 2025</div>
+                    <div class="event-title">Account Manipulation</div>
+                    <div class="event-description">
+                        Bank account manipulation and complete control seizure of legitimate business banking operations. Seized control of accounts receiving revenue from Shopify platform owned and funded by RegimA Zone Ltd.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Financial control seizure
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Documented evidence of financial system abuse and unauthorized control
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-trust">
+                    <div class="timeline-dot dot-trust"></div>
+                    <div class="event-date">July 25, 2025</div>
+                    <div class="event-title">Trust Asset Misappropriation</div>
+                    <div class="event-description">
+                        Systematic removal of trust assets from legitimate control through coordinated asset removal scheme.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Trust property theft
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Documented theft of trust property and breach of fiduciary duty
+                    </div>
+                </div>
+            </div>
+
+            <!-- August 2025 -->
+            <div class="timeline-event">
+                <div class="timeline-content category-trust">
+                    <div class="timeline-dot dot-trust"></div>
+                    <div class="event-date">August 10, 2025</div>
+                    <div class="event-title">Trust Breach Evidence</div>
+                    <div class="event-description">
+                        Comprehensive documentation of continuing trust violations and evidence concealment attempts.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Peter Faucitt
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Complete compromise of trust integrity
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Systematic evidence of ongoing trust law violations
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-event">
+                <div class="timeline-content category-financial">
+                    <div class="timeline-dot dot-financial"></div>
+                    <div class="event-date">August 20, 2025</div>
+                    <div class="event-title">Financial Evidence Concealment</div>
+                    <div class="event-description">
+                        Systematic concealment of financial crime evidence through record destruction and transaction manipulation. Cover-up attempt to conceal fact that RWD ZA has no independent revenue stream - all revenue from Dan's UK-funded Shopify platform.
+                    </div>
+                    <div class="event-perpetrators">
+                        <strong>Perpetrators:</strong> Coordinated network
+                    </div>
+                    <div class="event-impact">
+                        <strong>Impact:</strong> Cover-up operations demonstrating guilt
+                    </div>
+                    <div class="event-legal">
+                        <strong>Legal Significance:</strong> Consciousness of guilt through evidence destruction attempts
+                    </div>
+                    <span class="shopify-badge">🛒 SHOPIFY PLATFORM</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-note">
+                <p><strong>Source:</strong> forensic-events-data.json | Case 2025-137857</p>
+                <p><strong>Documentation Date:</strong> October 2025</p>
+                <p><strong>Evidence References:</strong> All events cross-referenced with physical evidence in jax-response directory structure</p>
+                <p style="margin-top: 15px; font-style: italic;">This timeline demonstrates systematic coordination across multiple crime categories over a 6-month period, with particular emphasis on the critical Shopify platform revelation showing RWD ZA generated no independent revenue.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
