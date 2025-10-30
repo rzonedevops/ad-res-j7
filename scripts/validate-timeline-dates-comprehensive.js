@@ -53,7 +53,7 @@ class TimelineDateValidator {
    */
   async validate() {
     console.log('🔍 Comprehensive Timeline Date Validation\n');
-    console.log('=' .repeat(80));
+    console.log('='.repeat(80));
     
     // Step 1: Load and validate forensic events data
     this.validateForensicEvents();
@@ -269,14 +269,14 @@ class TimelineDateValidator {
       
       folders.forEach(folder => {
         // Extract date from folder name (e.g., "22-may-shopify-audit")
-        const match = folder.match(/^(\d{1,2})-(jan|feb|mar|apr|may|june?|july?|aug|sep|oct|nov|dec)/i);
+        const match = folder.match(/^(\d{1,2})-(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)/i);
         
         if (match) {
           const day = match[1].padStart(2, '0');
           const monthStr = match[2].toLowerCase();
           const monthMap = {
             'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04',
-            'may': '05', 'jun': '06', 'june': '06', 'jul': '07', 'july': '07',
+            'may': '05', 'jun': '06', 'jul': '07',
             'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
           };
           
