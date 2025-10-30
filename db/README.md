@@ -130,6 +130,7 @@ cp .env.example .env
 - `npm run db:hypergraph:stats` - Show hypergraph statistics
 - `npm run db:hypergraph:demo` - Run demo
 - `npm run db:hypergraph:populate` - Populate hypergraph data
+- `npm run db:forensic-timeline:populate` - Populate all 15 forensic timeline events
 
 ### Lex Inference Engine
 - `npm run db:lex:setup` - Setup lex inference schema
