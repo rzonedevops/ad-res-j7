@@ -36,3 +36,9 @@ This file provides a list of all annexures and evidence refered to in the variou
 | JF-FORENSIC-REPORT | Independent Forensic Investigator Report |
 | JF-HIST1 | Evidence of Historical Collaborative Model |
 | JF-HIST2 | Documentation of Historical Roles and Responsibilities |
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis in jax-response/AD directory for related paragraph responses.

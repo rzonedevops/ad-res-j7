@@ -43,6 +43,7 @@
     "test:json-validation": "python3 scripts/validate_json_files.py",
     "test:evidence-completeness": "node tests/evidence-completeness-validation.test.js",
     "test:jax-dan-contradictions": "node tests/jax-dan-contradictions.test.js",
+    "test:jacqueline-perspective": "node tests/jacqueline-perspective-verification.test.js",
     "test:hierarchical-issues": "node tests/hierarchical-issue-manager.test.js",
     "test:hierarchical-workflow": "node tests/hierarchical-todo-workflow.test.js",
     "test:cross-reference": "node tests/cross-reference-integration.test.js",

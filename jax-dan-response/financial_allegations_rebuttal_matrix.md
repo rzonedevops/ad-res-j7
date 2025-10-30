@@ -25,3 +25,9 @@ The Applicant makes numerous, wide-ranging, and unsubstantiated financial allega
     - Independent audits (**Annexure JF4E**)
     - SARS tax compliance (**Annexure JF4D**)
     - Strong relationships with banking partners.
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis in jax-response/AD directory for related paragraph responses.
