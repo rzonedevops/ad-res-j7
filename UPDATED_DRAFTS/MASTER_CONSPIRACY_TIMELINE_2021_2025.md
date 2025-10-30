@@ -108,12 +108,31 @@
 ## PHASE 5: DANIEL REPORTS FRAUD TO PERPETRATOR (June 2025)
 ### Unknowingly Reports to Trustee Bantjies
 
+**May 22-23, 2025 (FINANCIAL STRANGULATION PHASE 3)**
+- **Event:** Orders removed from Shopify platform
+- **Method:** Physical removal of ALL order history
+- **Executor:** Rynette Farrar (under Bantjies' instruction)
+- **Effect:** Daniel loses order data, customer information, revenue records
+- **Significance:** **THIRD ATTACK** - 8 days after Jacqui's May 15 confrontation (IMMEDIATE RETALIATION)
+- **Evidence:** Shopify records showing order removal (May 22-23, 2025)
+- **Additional Harm:** **EVIDENCE DESTRUCTION** - removes financial records needed for fraud investigation
+
 **June 6, 2025**
-- **Event:** Daniel emails Bantjies explaining IT expenses (1,500+ words)
-- **Context:** Daniel does NOT know Bantjies is Trustee
-- **Content:** Comprehensive explanations of R8.85M IT expenses
-- **Significance:** Daniel provides detailed information to accountant (normal practice)
+- **Event:** Daniel sends comprehensive analysis to Bantjies
+- **Content:** IT expenses analysis, Villa Via profit extraction, SLG inventory manipulation
+- **Bantjies' Response:** Acknowledges receipt, says will consider
+- **Significance:** **DANIEL PROVIDES DETAILED FRAUD EVIDENCE TO BANTJIES**
 - **Evidence:** Email "Re: The RegimA Group results and Computer Expense analysis"
+
+**June 7, 2025 (FINANCIAL STRANGULATION PHASE 4 - SECRET)**
+- **Event:** Daniel's credit/debit cards **SECRETLY CANCELLED** without notification
+- **Method:** Bank account access removed
+- **Executor:** Rynette Farrar (under Bantjies' instruction)
+- **Effect:** Daniel UNABLE TO PAY creditors, suppliers, operational costs
+- **Significance:** **FOURTH ATTACK** - 15 days after Shopify orders removed, 3 days BEFORE Daniel reports fraud to Bantjies
+- **Evidence:** Card cancellation records, bank notifications (or lack thereof)
+- **Strategic Purpose:** Sabotage payment ability to force defaults and insolvency
+- **Timing:** Cards cancelled BEFORE fraud report = Pre-emptive attack
 
 **June 10, 2025**
 - **Event:** Daniel reports fraud to Bantjies (Villa Via, SLG)
@@ -123,12 +142,23 @@
 - **Significance:** **DANIEL UNKNOWINGLY REPORTS FRAUD TO PERPETRATOR**
 - **Evidence:** June 10 email exchanges
 
-**June 7, 2025 (NEXT DAY AFTER REPORTING FRAUD)**
-- **Event:** Cards cancelled
-- **Significance:** **IMMEDIATE RETALIATION** for reporting fraud
-- **Impact:** Daniel cannot access documentation, cannot obtain evidence
-- **Timing:** 1 day after fraud report = Proves causation
-- **Evidence:** Card cancellation records, bank notifications
+**June 20, 2025 (FINANCIAL STRANGULATION PHASE 5)**
+- **Event:** Client email diversion instruction sent
+- **Method:** Gee instructed to send email: "Don't use regima.zone, only use regimaskin.co.za"
+- **Domain Owner:** **RYNETTE'S SON** (Adderory Pty Ltd) - NOT Peter or RegimA
+- **Executor:** Gee (instructed by Rynette/Bantjies)
+- **Effect:** Clients diverted to Rynette's son, Daniel loses client relationships and future revenue
+- **Significance:** **FIFTH ATTACK** - 10 days after Daniel reports fraud, 13 days after card cancellations
+- **Evidence:** **Gee's email to Jax (August 2025)** explaining she was instructed on June 20 - CRITICAL WITNESS TESTIMONY
+- **Additional Evidence:** Sage screenshot (June 20) shows Rynette controls pete@regima.com (SAME DAY)
+
+**ABSA Accounts Fraud (FINANCIAL STRANGULATION PHASE 6 - Date Unknown)**
+- **Event:** 8 ABSA accounts opened using Daniel's stolen card
+- **Method:** Card delivered by bank but never reached Daniel (intercepted)
+- **Executor:** Rynette Farrar (under Bantjies' instruction)
+- **Effect:** Daniel's identity stolen, fraudulent accounts created
+- **Significance:** **SIXTH ATTACK** - Identity theft + bank fraud
+- **Evidence:** ABSA account opening records, card delivery confirmation (who signed?)
 
 **Legal Analysis:**
 - **Bantjies had DUTY to investigate** (as Trustee of companies being defrauded)
@@ -170,6 +200,22 @@
 - **Event:** Bantjies emails Daniel, Jacqui, Peter with instructions
 - **Significance:** Bantjies gives direct instructions (proves he's in control)
 - **Evidence:** Email "danierequest.eml"
+
+**March 1, 2025 (FINANCIAL STRANGULATION PHASE 1)**
+- **Event:** RegimA SA revenue diverted
+- **Method:** Bank account diversion
+- **Executor:** Rynette Farrar (under Bantjies' instruction)
+- **Effect:** Daniel loses ALL RegimA SA revenue, retains ALL obligations
+- **Significance:** **FIRST ATTACK** in coordinated financial strangulation
+- **Evidence:** Bank account change documentation (to be obtained)
+
+**April 14, 2025 (FINANCIAL STRANGULATION PHASE 2)**
+- **Event:** RegimA Worldwide revenue diverted
+- **Method:** **Rynette's bank letter** to financial institutions
+- **Executor:** Rynette Farrar (under Bantjies' instruction)
+- **Effect:** Daniel loses ALL RegimA Worldwide revenue, retains ALL obligations
+- **Significance:** **SECOND ATTACK** - 44 days after Phase 1
+- **Evidence:** **Rynette's bank letter (April 14, 2025)** - CRITICAL EVIDENCE
 
 **Post-May 29, 2025 (INTERNATIONAL ESCALATION - Date Unknown)**
 - **Event:** Letter sent to **HM Revenue & Customs (HMRC)** in United Kingdom
