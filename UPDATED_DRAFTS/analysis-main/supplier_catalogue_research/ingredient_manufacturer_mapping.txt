@@ -1,0 +1,99 @@
+Ingredient Manufacturer and Availability Mapping
+================================================
+
+Based on research, the following manufacturers have been identified for specific ingredients:
+
+SEPPIC Products (distributed by CJP Chemicals):
+- Sepicalm S (R1905014) - CONFIRMED AVAILABLE
+  * Manufacturer: Seppic
+  * Product: SEPICALM S WP
+  * Description: Aminovector combining amino acids with minerals for anti-stress protection
+  * Applications: Sensitive and irritated skin
+  
+- Montanov L (R1906000) - CONFIRMED AVAILABLE
+  * Manufacturer: Seppic
+  * Product: MONTANOV L
+  * Description: 100% natural origin O/W versatile emulsifier
+  * Applications: All types of applications from sprayable to thick creams
+  
+- Montanov S (R1906001) - CONFIRMED AVAILABLE
+  * Manufacturer: Seppic
+  * Related to Montanov L product line
+  
+- Sepimax Zen (R1911002) - CONFIRMED AVAILABLE
+  * Manufacturer: Seppic
+  * Product: SEPIMAX ZEN
+  * Description: Non-microplastic thickening, stabilizing and texturizing powder polymer
+  * Applications: Skin care, hair care, sun care, make-up, hygiene products
+
+MIBELLE BIOCHEMISTRY Products (distributed by Carst & Walker):
+- CM-Glucan Granulate (R1905011) - CONFIRMED AVAILABLE
+  * Manufacturer: Mibelle Biochemistry
+  * Product: CM-Glucan Forte
+  * Description: Special Beta Glucan from baker's yeast
+  * Benefits: Soothes irritated skin, rebalances skin's immune system, calms sensitive and itching skin
+  
+- Perfection Peptide P3 (R1905012) - CONFIRMED AVAILABLE
+  * Manufacturer: Mibelle Biochemistry
+  * Product: PerfectionPeptide P3
+  * Description: Biologically active tripeptide
+  * Benefits: Reactivates natural desquamation process, natural peeling effect
+  
+- AquaCacteen (R1905023) - CONFIRMED AVAILABLE
+  * Manufacturer: Mibelle Biochemistry
+  * Product: AquaCacteen
+  * Description: Ultra-refined elixir from organic prickly pear (Opuntia ficus-indica)
+  * Benefits: Blocks release of stress markers, soothes irritated skin, hydrates
+
+BASF Products:
+- Carbopol Ultrez 30 (R1911001) - CONFIRMED AVAILABLE
+  * Manufacturer: Lubrizol (formerly Noveon)
+  * Product line: Carbopol polymers
+  * Description: Rheology modifier for cosmetic formulations
+  
+- Carbopol EDT 2050 (R1911003) - CONFIRMED AVAILABLE
+  * Manufacturer: Lubrizol
+  * Product line: Carbopol polymers
+
+CRODA Products (distributed by Croda Chemicals S.A):
+- Arlamol LST-LQ-(MH) (R1901005) - REQUIRES VERIFICATION
+  * Manufacturer: Croda
+  * Product line: Arlamol emollients
+  
+- Chronodyn (R1905002) - NOT FOUND IN CURRENT CATALOGUE
+  * May be discontinued or renamed
+  * Requires direct inquiry with Croda
+  
+- Biopeptide CL (R1905003) - REQUIRES VERIFICATION
+  * Manufacturer: Croda (formerly Sederma)
+  * Product line: Peptides
+  
+- Skin Tightener-ST(TM) PH (R1905025) - REQUIRES VERIFICATION
+- Beautifeye (R1905026) - REQUIRES VERIFICATION
+- Evermat (R1905033) - REQUIRES VERIFICATION
+- Intenslim (R1905034) - REQUIRES VERIFICATION
+
+IMCD South Africa Products:
+- Celligent (R1905028) - NOT FOUND IN SOUTH AFRICA CATALOGUE
+  * May require account access or may not be available in SA region
+  
+- Defensil Plus (R1905040) - REQUIRES VERIFICATION
+- Genencare OSMS BA (R1905013) - REQUIRES VERIFICATION
+- ProRenew Complex CLR (R1905038) - REQUIRES VERIFICATION
+
+Other Suppliers:
+- Botanichem products (Epigenist LS10003, Eperuline PW LS 9627) - REQUIRES DIRECT INQUIRY
+- Meganede CC products (15 ingredients) - REQUIRES DIRECT INQUIRY
+- Natchem CC products (16 botanical extracts) - REQUIRES DIRECT INQUIRY
+
+Availability Status Summary:
+- CONFIRMED AVAILABLE: 10 products
+- REQUIRES VERIFICATION: 8 products
+- NOT FOUND: 2 products
+- REQUIRES DIRECT INQUIRY: 33+ products
+
+Note: Many suppliers do not publish pricing publicly. Pricing requires:
+1. Business account registration
+2. Direct contact with sales representatives
+3. Formal quotation request with quantities and delivery requirements
+

@@ -1,0 +1,24 @@
+Multi-Repository Ecosystem Analysis Report
+==========================================
+
+Generated: Thu Oct 16 11:27:22 UTC 2025
+Hypergraph File: multi_repo_hypergraph_20251016_112720.json
+
+Summary Statistics:
+  Total Repositories: 1
+  Total Nodes: 28
+  Total Edges: 0
+  Cross-Repo Nodes: 0
+  Cross-Repo Edges: 0
+
+Repositories Analyzed:
+  • rzonedevops/analysis
+
+Generated Files:
+  • Hypergraph JSON: multi_repo_hypergraph_20251016_112720.json
+  • Comparison Chart: multi_repo_comparison.png
+  • Relationships: multi_repo_relationships.png
+  • Metrics Dashboard: multi_repo_metrics_dashboard.png
+  • Shared Concepts: multi_repo_shared_concepts.png
+  • This Report: ecosystem_report_20251016_112720.txt
+

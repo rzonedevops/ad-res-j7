@@ -1,0 +1,48 @@
+sequenceDiagram
+    participant T as Therapist App
+    participant PC as Perfect Corp API
+    participant HKE as Hyper-Knowledge Engine
+    participant ST as Skin-Twin Engine
+    participant PV as PrimeVessel IoT
+    participant SZ as Skin-Zone Marketplace
+    participant DB as Database
+
+    Note over T,DB: Patient Diagnostic & Treatment Workflow
+
+    T->>PC: 1. Capture skin images (front, left, right)
+    PC->>PC: 2. Analyze images (14+ metrics)
+    PC->>T: 3. Return diagnostic data
+    T->>DB: 4. Store diagnostic session
+    T->>HKE: 5. Request formulation recommendation
+    
+    HKE->>DB: 6. Query patient history
+    DB->>HKE: 7. Return historical data
+    HKE->>HKE: 8. Run HyperGNN inference
+    HKE->>ST: 9. Send optimized parameters
+    
+    ST->>ST: 10. Generate formulation recipe
+    ST->>HKE: 11. Return formulation
+    HKE->>DB: 12. Store formulation in knowledge graph
+    HKE->>T: 13. Return recommendation with confidence
+    
+    T->>T: 14. Therapist reviews & approves
+    T->>PV: 15. Send formulation recipe (MQTT)
+    
+    PV->>PV: 16. Validate recipe & check inventory
+    PV->>T: 17. Confirm job queued
+    PV->>PV: 18. Dispense ingredients & mix
+    PV->>T: 19. Report completion
+    PV->>DB: 20. Log dispensing event
+    
+    PV->>SZ: 21. Report inventory levels
+    SZ->>SZ: 22. Check reorder thresholds
+    SZ->>PV: 23. Schedule ingredient delivery
+    
+    Note over T,DB: Follow-up & Outcome Tracking
+    
+    T->>PC: 24. Capture follow-up images (2-4 weeks later)
+    PC->>T: 25. Return updated metrics
+    T->>DB: 26. Store outcome data
+    T->>HKE: 27. Submit treatment outcome
+    HKE->>HKE: 28. Update knowledge graph & retrain model
+    HKE->>DB: 29. Store learned insights

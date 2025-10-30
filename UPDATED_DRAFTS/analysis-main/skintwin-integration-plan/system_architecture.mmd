@@ -1,0 +1,45 @@
+graph TD
+    subgraph "Therapist Environment"
+        A[Therapist Mobile App] --> B{AI Skin Diagnostic};
+        A --> C{Patient Management};
+        A --> D{Formulation Interface};
+        A --> E{IoT Device Control};
+    end
+
+    subgraph "Cloud Platform (SkinTwin-ASI)"
+        B --> F[Perfect Corp. API/SDK];
+        F --> G[Hyper-Knowledge Engine];
+        C --> G;
+        G --> H[Skin-Twin Formulation Engine];
+        D --> H;
+        H --> G;
+        H --> I[Prime-Vessel IoT Platform];
+        E --> I;
+        G --> J[Skin-Zone Marketplace API];
+        I --> J;
+
+        subgraph "Hyper-Knowledge Engine"
+            direction LR
+            K[AtomSpace Knowledge Graph] <--> L[HyperGNN Inference Engine];
+        end
+    end
+
+    subgraph "Physical Environment"
+        I --> M[Prime-Vessel Automixer];
+    end
+
+    subgraph "Business Environment"
+        J --> N[Ingredient Suppliers];
+        J --> O[Product Distribution];
+    end
+
+    %% Styling
+    classDef therapist fill:#D6EAF8,stroke:#333,stroke-width:2px;
+    classDef cloud fill:#E8DAEF,stroke:#333,stroke-width:2px;
+    classDef physical fill:#D5F5E3,stroke:#333,stroke-width:2px;
+    classDef business fill:#FCF3CF,stroke:#333,stroke-width:2px;
+
+    class A,B,C,D,E therapist;
+    class F,G,H,I,J,K,L cloud;
+    class M physical;
+    class N,O business;

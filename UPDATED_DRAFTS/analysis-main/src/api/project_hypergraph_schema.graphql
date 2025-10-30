@@ -1,0 +1,203 @@
+# Project HyperGraphQL Schema
+# ============================
+# 
+# GraphQL schema for querying the project hypergraph constructed from the 
+# rzonedevops/analysis codebase. Supports:
+# - 985 nodes across 12 types
+# - 532 hyperedges across 3 types  
+# - 8-layer architecture navigation
+# - Graph analysis and traversal
+
+# Scalar types
+scalar JSON
+scalar DateTime
+
+# Enums for project-specific types
+enum ProjectNodeType {
+  DIRECTORY
+  MODULE  
+  PYTHON_FILE
+  FUNCTION
+  CLASS
+  DATABASE_TABLE
+  DATABASE_INDEX
+  GRAPHQL_TYPE
+  DEPENDENCY
+  DOCUMENTATION
+  CONFIGURATION
+  TEST_FILE
+}
+
+enum ProjectEdgeType {
+  CONTAINS
+  DEFINES
+  DOCUMENTATION_CATEGORY
+}
+
+enum ProjectLayerType {
+  FILESYSTEM
+  PYTHON_CODE
+  DATABASE
+  API
+  DEPENDENCIES
+  DOCUMENTATION
+  CONFIGURATION
+  TESTS
+}
+
+# Core types
+type ProjectNode {
+  id: ID!
+  type: ProjectNodeType!
+  name: String!
+  properties: JSON!
+  layer: ProjectLayerType!
+  
+  # Computed fields
+  degree: Int!
+  neighbors(depth: Int = 1): [ProjectNode!]!
+  connectedEdges: [ProjectHyperEdge!]!
+}
+
+type ProjectHyperEdge {
+  id: ID!
+  type: ProjectEdgeType!
+  nodes: [ProjectNode!]!
+  nodeIds: [ID!]!
+  properties: JSON!
+  
+  # Computed fields
+  size: Int!
+}
+
+type ProjectLayer {
+  name: ProjectLayerType!
+  description: String!
+  nodes: [ProjectNode!]!
+  nodeCount: Int!
+  nodeTypes: [String!]!
+}
+
+type ProjectSubgraph {
+  nodes: [ProjectNode!]!
+  edges: [ProjectHyperEdge!]!
+  nodeCount: Int!
+  edgeCount: Int!
+}
+
+# Metrics types
+type ProjectNodeMetrics {
+  nodeId: ID!
+  degree: Int!
+  type: ProjectNodeType!
+  layer: ProjectLayerType!
+}
+
+type ProjectHypergraphMetrics {
+  totalNodes: Int!
+  totalHyperedges: Int!
+  totalLayers: Int!
+  nodeTypes: JSON!
+  edgeTypes: JSON!
+  layerSizes: JSON!
+  density: Float!
+  averageDegree: Float!
+}
+
+type ProjectCommunity {
+  id: Int!
+  nodes: [ProjectNode!]!
+  size: Int!
+  density: Float!
+}
+
+# Input types for mutations
+input ProjectNodeInput {
+  type: ProjectNodeType!
+  name: String!
+  properties: JSON
+  layer: ProjectLayerType
+}
+
+input ProjectHyperEdgeInput {
+  type: ProjectEdgeType!
+  nodeIds: [ID!]!
+  properties: JSON
+}
+
+# Query type - main entry point
+type Query {
+  # Single node/edge queries
+  projectNode(id: ID!): ProjectNode
+  projectHyperedge(id: ID!): ProjectHyperEdge
+  
+  # Collection queries with filtering
+  projectNodes(
+    type: ProjectNodeType
+    layer: ProjectLayerType
+    limit: Int = 100
+    offset: Int = 0
+  ): [ProjectNode!]!
+  
+  projectNodesByName(name: String!): [ProjectNode!]!
+  
+  projectHyperedges(
+    type: ProjectEdgeType
+    limit: Int = 100
+    offset: Int = 0
+  ): [ProjectHyperEdge!]!
+  
+  # Layer queries
+  projectLayer(name: ProjectLayerType!): ProjectLayer
+  projectLayers: [ProjectLayer!]!
+  
+  # Graph traversal queries
+  projectNeighbors(nodeId: ID!, depth: Int = 1): [ProjectNode!]!
+  projectShortestPath(fromId: ID!, toId: ID!): [ProjectNode!]!
+  projectSubgraph(nodeIds: [ID!]!): ProjectSubgraph!
+  
+  # Analysis queries
+  projectMetrics: ProjectHypergraphMetrics!
+  projectNodeMetrics(nodeId: ID!): ProjectNodeMetrics
+  projectCommunityDetection(algorithm: String = "louvain"): [ProjectCommunity!]!
+  
+  # Search queries
+  searchProjectNodes(
+    query: String!
+    type: ProjectNodeType
+    layer: ProjectLayerType
+    limit: Int = 50
+  ): [ProjectNode!]!
+}
+
+# Mutation type for hypergraph updates
+type Mutation {
+  # Node mutations
+  addProjectNode(input: ProjectNodeInput!): ProjectNode!
+  updateProjectNode(id: ID!, input: ProjectNodeInput!): ProjectNode!
+  deleteProjectNode(id: ID!): Boolean!
+  
+  # Edge mutations  
+  addProjectHyperEdge(input: ProjectHyperEdgeInput!): ProjectHyperEdge!
+  deleteProjectHyperEdge(id: ID!): Boolean!
+  
+  # Batch operations
+  addProjectNodes(inputs: [ProjectNodeInput!]!): [ProjectNode!]!
+  deleteProjectNodes(ids: [ID!]!): Boolean!
+}
+
+# Subscription type for real-time updates
+type Subscription {
+  projectNodeAdded: ProjectNode!
+  projectNodeUpdated: ProjectNode!
+  projectNodeDeleted: ID!
+  projectHyperEdgeAdded: ProjectHyperEdge!
+  projectHyperEdgeDeleted: ID!
+}
+
+# Schema definition
+schema {
+  query: Query
+  mutation: Mutation
+  subscription: Subscription
+}
