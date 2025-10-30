@@ -17,7 +17,7 @@ class EvidenceValidationWorkflow {
     this.evidencePaths = [
       './evidence',
       './jax-response/evidence-attachments',
-      './jax-dan-response/evidence-attachments',
+      './jax-response/evidence-attachments/dan-technical',
       './case_2025_137857/02_evidence'
     ];
     

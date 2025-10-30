@@ -3,6 +3,13 @@
 /**
  * Jacqueline & Daniel Response Contradiction Checker
  * 
+ * ⚠️ NOTE (October 30, 2025): The jax-response and jax-dan-response directories have been
+ * consolidated. This script now checks for contradictions between:
+ * - jax-response/ (Jacqueline's perspective)
+ * - jax-response/dan-response-materials/ and jax-response/AD/dan-perspective/ (Daniel's perspective)
+ * 
+ * The script will redirect references from jax-dan-response to the consolidated locations.
+ * 
  * This script checks for contradictions between Jacqueline's and Daniel's responses
  * to ensure consistency in key facts, dates, amounts, system names, and terminology.
  * 
@@ -24,7 +31,10 @@ class ContradictionChecker {
         this.repoRoot = options.repoRoot || '/home/runner/work/ad-res-j7/ad-res-j7';
         this.verbose = options.verbose || false;
         this.jaxDir = path.join(this.repoRoot, 'jax-response');
-        this.danDir = path.join(this.repoRoot, 'jax-dan-response');
+        // Note: jax-dan-response has been consolidated into jax-response/dan-response-materials
+        // and jax-response/AD/dan-perspective - we check both for Daniel's perspective
+        this.danDir = path.join(this.repoRoot, 'jax-response', 'dan-response-materials');
+        this.danADDir = path.join(this.repoRoot, 'jax-response', 'AD', 'dan-perspective');
         
         this.contradictions = [];
         this.warnings = [];
