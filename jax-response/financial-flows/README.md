@@ -1,7 +1,32 @@
 # Financial Flows Forensic Analysis - Case 2025-137857
 
 ## Overview
-This directory contains forensic evidence and analysis for the systematic financial manipulation and fund diversion scheme targeting legitimate business and trust financial flows from April through August 2025. The evidence demonstrates coordinated financial fraud involving unauthorized transfers, payment redirections, and systematic concealment of financial assets.
+This directory contains forensic evidence and analysis for the systematic financial manipulation and fund diversion scheme targeting legitimate business and trust financial flows from April through August 2025. The evidence demonstrates coordinated financial fraud involving unauthorized transfers, payment redirections, systematic concealment of financial assets, and cross-border value misappropriation.
+
+## Cross-Border Transaction Analysis (NEW - Phase 2)
+
+**📄 UK_SA_CROSS_BORDER_TRANSACTION_ANALYSIS.md**
+
+This comprehensive analysis examines the cross-border financial flows between UK entities (RegimA Zone Ltd) and South African entities (RWD ZA, Faucitt Family Trust), documenting systematic revenue misappropriation across international boundaries.
+
+**Key Findings:**
+- **UK Entity Funded Platform:** RegimA Zone Ltd (UK) paid R140K-R280K in Shopify platform costs over 28 months
+- **SA Entity Appropriated Revenue:** RWD ZA received R16.3M-R32.6M in platform revenue without compensation
+- **Unjust Enrichment:** R2.94M-R6.88M conservative estimate of cross-border value transfer
+- **Regulatory Violations:** SARB exchange control, SARS/HMRC transfer pricing, UK-SA tax treaty breaches
+- **Tax Exposure:** R999,600-R2,339,200 in unpaid taxes and penalties
+
+**Analysis Components:**
+1. Cross-border entity structure (UK and SA)
+2. Financial flow analysis (UK → Platform → SA revenue)
+3. Regulatory framework (SARB, SARS, HMRC, UK-SA treaty)
+4. Timeline of systematic value transfer (July 2023 - October 2025)
+5. Financial impact quantification
+6. Legal framework for cross-border recovery
+7. Expert witness requirements
+8. Strategic litigation considerations
+
+**Task Reference:** Task 105 (feature_47, para_43)
 
 ## Financial Crime Summary
 **Total Criminal Timeline:** April 1 - 2025-08-20 (141 days)  

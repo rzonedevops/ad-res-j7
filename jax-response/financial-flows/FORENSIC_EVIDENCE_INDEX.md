@@ -1,5 +1,18 @@
 # Financial Flows Forensic Evidence Index - Case 2025-137857
 
+## Cross-Border Transaction Analysis
+
+**📄 UK_SA_CROSS_BORDER_TRANSACTION_ANALYSIS.md**
+- **Type:** Phase 2 Forensic Analysis - Cross-Border Financial Flows
+- **Focus:** UK-SA international transaction analysis (RegimA Zone Ltd → RWD ZA)
+- **Financial Impact:** R2.94M-R6.88M unjust enrichment through cross-border value transfer
+- **Regulatory Issues:** SARB exchange control, SARS/HMRC transfer pricing, UK-SA tax treaty
+- **Evidence Grade:** Grade A (documentary evidence of systematic cross-border misappropriation)
+- **Legal Relevance:** Unjust enrichment, transfer pricing violations, tax evasion, exchange control breaches
+- **Task Reference:** Task 105 (feature_47, para_43) - Cross-border financial flow analysis
+
+---
+
 ## Evidence Classification System
 
 ### Grade A Evidence (Unassailable)

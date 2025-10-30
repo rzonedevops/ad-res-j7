@@ -90,3 +90,4 @@ parsed-*.json
 hierarchy-stats.json
 hierarchy-report.json
 feature-issues-report.json
+file-path-validation-report.json
