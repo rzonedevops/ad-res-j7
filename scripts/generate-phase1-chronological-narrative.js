@@ -31,6 +31,7 @@ const phase1Evidence = {
       rank: 1,
       weight: 100,
       adReferences: ['AD 3.3', 'AD 3.4', 'AD 3.5', 'AD 3.6', 'AD 3.7'],
+      highPriorityADReferences: ['PARA_3-3_10', 'PARA_3_11-3_13'],
       description: 'Evidence demonstrating Jacqueline Faucitt\'s designation as Responsible Person across 37 jurisdictions',
       tasks: [
         {
@@ -93,6 +94,7 @@ const phase1Evidence = {
               date: '2025-08-19',
               event: 'Interdict prevents RP duties performance',
               adReference: 'AD 3.6.1, AD 3.6.2, AD 3.6.3',
+              highPriorityAD: 'PARA_3-3_10, PARA_13-13_1',
               evidenceFile: 'JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md',
               significance: 'Immediate regulatory non-compliance in 37 jurisdictions',
               impact: 'Cannot access systems, documentation, or perform legal duties'
@@ -108,6 +110,7 @@ const phase1Evidence = {
               date: '2025-08-19',
               event: 'Regulatory risk analysis conducted post-interdict',
               adReference: 'AD 3.6.4',
+              highPriorityAD: 'PARA_13-13_1',
               evidenceFile: 'JF-RP2_REGULATORY_RISK_ANALYSIS.md',
               significance: 'Quantifies immediate compliance risks across 37 jurisdictions',
               impact: 'Market access loss, penalties €10K-€1M per jurisdiction, criminal liability'
@@ -130,6 +133,7 @@ const phase1Evidence = {
       rank: 2,
       weight: 95,
       adReferences: ['AD 7.8', 'AD 7.9', 'AD 7.10', 'AD 7.11', 'AD 10.5'],
+      highPriorityADReferences: ['PARA_7_12-7_13', 'PARA_7_14-7_15'],
       description: 'Evidence demonstrating director loan account practices and Peter\'s own withdrawals',
       tasks: [
         {
@@ -245,6 +249,7 @@ const phase1Evidence = {
       rank: 3,
       weight: 90,
       adReferences: ['AD 2.2', 'AD 7.7', 'AD 11.6'],
+      highPriorityADReferences: ['PARA_8-8_3', 'PARA_8_4', 'PARA_11-11_5'],
       description: 'Evidence showing material non-disclosures and witness testimony',
       tasks: [
         {
@@ -256,6 +261,7 @@ const phase1Evidence = {
               date: '2025-08-13',
               event: 'Peter\'s ex parte interdict application filed',
               adReference: 'AD 2.2.1, AD 2.2.2',
+              highPriorityAD: 'PARA_11-11_5',
               evidenceFile: 'FOUNDING_AFFIDAVIT_ANALYSIS.md',
               significance: 'Material non-disclosures in ex parte application',
               impact: 'Failed to disclose RP role, settlement agreement, upcoming investment payout'
@@ -264,6 +270,7 @@ const phase1Evidence = {
               date: '2025-08-19',
               event: 'Ex parte interdict granted',
               adReference: 'AD 2.2.4',
+              highPriorityAD: 'PARA_13-13_1',
               evidenceFile: 'INTERDICT_ORDER_ANALYSIS.md',
               significance: 'Court granted interdict without knowing material facts',
               impact: 'Immediate regulatory non-compliance, business destruction'
@@ -287,6 +294,7 @@ const phase1Evidence = {
               date: '2025-06-01',
               event: 'Peter cancels all business cards',
               adReference: 'AD 7.7',
+              highPriorityAD: 'PARA_7_14-7_15',
               evidenceFile: 'DANIEL_FAUCITT_WITNESS_STATEMENT.md',
               significance: 'Peter\'s unilateral actions causing business disruption',
               impact: 'Director oversight characterized as "interference"'
@@ -295,6 +303,7 @@ const phase1Evidence = {
               date: '2025-08-11',
               event: 'Settlement agreement signed',
               adReference: 'AD 2.2.3',
+              highPriorityAD: 'PARA_8-8_3, PARA_11-11_5',
               evidenceFile: 'DANIEL_FAUCITT_WITNESS_STATEMENT.md',
               significance: 'Agreement signed 8 days before interdict',
               impact: 'Suggests strategic litigation rather than genuine concern'
@@ -303,6 +312,7 @@ const phase1Evidence = {
               date: '2025-08-13',
               event: 'Daniel asked "Has anything changed?"',
               adReference: 'AD 11.6',
+              highPriorityAD: 'PARA_8_4',
               evidenceFile: 'DANIEL_FAUCITT_WITNESS_STATEMENT.md',
               significance: 'Direct contradiction to Peter\'s claims of sudden changes',
               impact: 'No changes to established practices - Peter\'s complaint is pretextual'
@@ -352,6 +362,9 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
     narrative += `**Rank:** ${paragraph.rank} (1 = highest influence)\n`;
     narrative += `**Weight:** ${paragraph.weight}/100\n`;
     narrative += `**AD References:** ${paragraph.adReferences.join(', ')}\n`;
+    if (paragraph.highPriorityADReferences && paragraph.highPriorityADReferences.length > 0) {
+      narrative += `**High-Priority AD Responses:** ${paragraph.highPriorityADReferences.map(ref => `[\`${ref}\`](jax-dan-response/AD/2-High-Priority/${ref}_*.md)`).join(', ')}\n`;
+    }
     narrative += `**Description:** ${paragraph.description}\n\n`;
     narrative += `---\n\n`;
     
@@ -366,6 +379,10 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
       task.chronologicalEvents.forEach((event, index) => {
         narrative += `**${event.date}** - ${event.event}\n\n`;
         narrative += `- **AD Reference:** ${event.adReference}\n`;
+        if (event.highPriorityAD) {
+          const refs = event.highPriorityAD.split(',').map(r => r.trim());
+          narrative += `- **High-Priority AD:** ${refs.map(ref => `[\`${ref}\`](jax-dan-response/AD/2-High-Priority/${ref.replace(/[^A-Z0-9_-]/g, '_')}*.md)`).join(', ')}\n`;
+        }
         if (Array.isArray(event.evidenceFile)) {
           narrative += `- **Evidence Files:**\n`;
           event.evidenceFile.forEach(file => {
@@ -433,6 +450,21 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
   narrative += `| AD 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |\n`;
   narrative += `| AD 10.5 | Historical Business Model | JF-DLA series |\n`;
   narrative += `| AD 11.6 | Daniel's Witness Statement | JF-DWS1 |\n\n`;
+  
+  // Add High-Priority AD Responses Section
+  narrative += `---\n\n`;
+  narrative += `## High-Priority AD Response Documents\n\n`;
+  narrative += `The following detailed response documents address Peter's allegations from Daniel Faucitt's technical and operational perspective:\n\n`;
+  narrative += `| AD Response | Topic | Key Focus |\n`;
+  narrative += `|-------------|-------|----------|\n`;
+  narrative += `| [PARA_3-3_10](jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md) | Responsible Person Role | Material non-disclosure of RP regulatory crisis |\n`;
+  narrative += `| [PARA_3_11-3_13](jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md) | Jax's Role & Technical Dependencies | Technical infrastructure requirements for RP compliance |\n`;
+  narrative += `| [PARA_7_12-7_13](jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_DAN_ACCOUNTANT.md) | Accountant Concerns | Dan's documentation provision and accountant context |\n`;
+  narrative += `| [PARA_7_14-7_15](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.md) | Documentation Requests | Technical constraints and Peter's bad faith requests |\n`;
+  narrative += `| [PARA_8-8_3](jax-dan-response/AD/2-High-Priority/PARA_8-8_3_DAN_DISCOVERY.md) | Peter's Discovery | System logs proving continuous knowledge, strategic timing |\n`;
+  narrative += `| [PARA_8_4](jax-dan-response/AD/2-High-Priority/PARA_8_4_DAN_CONFRONTATION.md) | Confrontation | First-hand witness account of intimidation |\n`;
+  narrative += `| [PARA_11-11_5](jax-dan-response/AD/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md) | Urgency Claims | 2-month delay proves no genuine urgency |\n`;
+  narrative += `| [PARA_13-13_1](jax-dan-response/AD/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.md) | Interim Relief | Technical impossibility and regulatory catastrophe |\n\n`;
   
   narrative += `---\n\n`;
   narrative += `## Next Steps for Legal Review\n\n`;

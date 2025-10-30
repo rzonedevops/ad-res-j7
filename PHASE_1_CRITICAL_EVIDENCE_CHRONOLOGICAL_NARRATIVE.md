@@ -27,6 +27,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **Rank:** 1 (1 = highest influence)
 **Weight:** 100/100
 **AD References:** AD 3.3, AD 3.4, AD 3.5, AD 3.6, AD 3.7
+**High-Priority AD Responses:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10_*.md), [`PARA_3_11-3_13`](jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_*.md)
 **Description:** Evidence demonstrating Jacqueline Faucitt's designation as Responsible Person across 37 jurisdictions
 
 ---
@@ -84,6 +85,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-19** - Interdict prevents RP duties performance
 
 - **AD Reference:** AD 3.6.1, AD 3.6.2, AD 3.6.3
+- **High-Priority AD:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10*.md), [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Immediate regulatory non-compliance in 37 jurisdictions
 - **Impact:** Cannot access systems, documentation, or perform legal duties
@@ -99,6 +101,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-19** - Regulatory risk analysis conducted post-interdict
 
 - **AD Reference:** AD 3.6.4
+- **High-Priority AD:** [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP2_REGULATORY_RISK_ANALYSIS.md`
 - **Significance:** Quantifies immediate compliance risks across 37 jurisdictions
 - **Impact:** Market access loss, penalties €10K-€1M per jurisdiction, criminal liability
@@ -117,6 +120,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **Rank:** 2 (1 = highest influence)
 **Weight:** 95/100
 **AD References:** AD 7.8, AD 7.9, AD 7.10, AD 7.11, AD 10.5
+**High-Priority AD Responses:** [`PARA_7_12-7_13`](jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_*.md), [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_*.md)
 **Description:** Evidence demonstrating director loan account practices and Peter's own withdrawals
 
 ---
@@ -226,6 +230,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **Rank:** 3 (1 = highest influence)
 **Weight:** 90/100
 **AD References:** AD 2.2, AD 7.7, AD 11.6
+**High-Priority AD Responses:** [`PARA_8-8_3`](jax-dan-response/AD/2-High-Priority/PARA_8-8_3_*.md), [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4_*.md), [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5_*.md)
 **Description:** Evidence showing material non-disclosures and witness testimony
 
 ---
@@ -239,6 +244,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-13** - Peter's ex parte interdict application filed
 
 - **AD Reference:** AD 2.2.1, AD 2.2.2
+- **High-Priority AD:** [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/FOUNDING_AFFIDAVIT_ANALYSIS.md`
 - **Significance:** Material non-disclosures in ex parte application
 - **Impact:** Failed to disclose RP role, settlement agreement, upcoming investment payout
@@ -246,6 +252,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-19** - Ex parte interdict granted
 
 - **AD Reference:** AD 2.2.4
+- **High-Priority AD:** [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/INTERDICT_ORDER_ANALYSIS.md`
 - **Significance:** Court granted interdict without knowing material facts
 - **Impact:** Immediate regulatory non-compliance, business destruction
@@ -268,6 +275,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-06-01** - Peter cancels all business cards
 
 - **AD Reference:** AD 7.7
+- **High-Priority AD:** [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Peter's unilateral actions causing business disruption
 - **Impact:** Director oversight characterized as "interference"
@@ -275,6 +283,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-11** - Settlement agreement signed
 
 - **AD Reference:** AD 2.2.3
+- **High-Priority AD:** [`PARA_8-8_3`](jax-dan-response/AD/2-High-Priority/PARA_8-8_3*.md), [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Agreement signed 8 days before interdict
 - **Impact:** Suggests strategic litigation rather than genuine concern
@@ -282,6 +291,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 **2025-08-13** - Daniel asked "Has anything changed?"
 
 - **AD Reference:** AD 11.6
+- **High-Priority AD:** [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Direct contradiction to Peter's claims of sudden changes
 - **Impact:** No changes to established practices - Peter's complaint is pretextual
@@ -337,6 +347,23 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 | AD 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
 | AD 10.5 | Historical Business Model | JF-DLA series |
 | AD 11.6 | Daniel's Witness Statement | JF-DWS1 |
+
+---
+
+## High-Priority AD Response Documents
+
+The following detailed response documents address Peter's allegations from Daniel Faucitt's technical and operational perspective:
+
+| AD Response | Topic | Key Focus |
+|-------------|-------|----------|
+| [PARA_3-3_10](jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md) | Responsible Person Role | Material non-disclosure of RP regulatory crisis |
+| [PARA_3_11-3_13](jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md) | Jax's Role & Technical Dependencies | Technical infrastructure requirements for RP compliance |
+| [PARA_7_12-7_13](jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_DAN_ACCOUNTANT.md) | Accountant Concerns | Dan's documentation provision and accountant context |
+| [PARA_7_14-7_15](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.md) | Documentation Requests | Technical constraints and Peter's bad faith requests |
+| [PARA_8-8_3](jax-dan-response/AD/2-High-Priority/PARA_8-8_3_DAN_DISCOVERY.md) | Peter's Discovery | System logs proving continuous knowledge, strategic timing |
+| [PARA_8_4](jax-dan-response/AD/2-High-Priority/PARA_8_4_DAN_CONFRONTATION.md) | Confrontation | First-hand witness account of intimidation |
+| [PARA_11-11_5](jax-dan-response/AD/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md) | Urgency Claims | 2-month delay proves no genuine urgency |
+| [PARA_13-13_1](jax-dan-response/AD/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.md) | Interim Relief | Technical impossibility and regulatory catastrophe |
 
 ---
 
