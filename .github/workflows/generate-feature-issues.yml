@@ -1,0 +1,137 @@
+name: Generate Feature-Level Issues from need-classification.md
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (show what would be created without creating issues)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  generate-feature-issues:
+    name: Generate Feature-Level Issues
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Parse need-classification.md
+        id: parse
+        run: |
+          echo "📄 Parsing need-classification.md..."
+          node scripts/parse-need-classification.js todo/need-classification.md parsed-features.json
+          
+          # Get statistics
+          TOTAL_FEATURES=$(jq '.metadata.total_features' parsed-features.json)
+          TOTAL_ARGUMENTS=$(jq '.metadata.total_arguments' parsed-features.json)
+          
+          echo "total_features=$TOTAL_FEATURES" >> $GITHUB_OUTPUT
+          echo "total_arguments=$TOTAL_ARGUMENTS" >> $GITHUB_OUTPUT
+          
+          # Add to summary
+          echo "## Parsing Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Legal Arguments:** $TOTAL_ARGUMENTS" >> $GITHUB_STEP_SUMMARY
+          echo "- **Features:** $TOTAL_FEATURES" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+      
+      - name: Display parsed features
+        run: |
+          echo "📊 Parsed Features:"
+          jq -r '.features[] | "- [\(.priority)] \(.name) (\(.taskIssues | length) tasks)"' parsed-features.json
+      
+      - name: Ensure required labels exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Create only the labels needed for this workflow
+          ./scripts/ensure-labels.sh \
+            "feature:0052CC:Feature request" \
+            "needs-triage:FFCC00:Requires triage"
+      
+      - name: Generate feature issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            echo "🔍 DRY RUN MODE - No issues will be created"
+            node scripts/generate-feature-issues.js parsed-features.json --dry-run --output=feature-issues-report.json
+          else
+            echo "🚀 LIVE MODE - Creating feature issues"
+            node scripts/generate-feature-issues.js parsed-features.json --output=feature-issues-report.json
+          fi
+      
+      - name: Generate summary
+        if: always()
+        run: |
+          # Parse results
+          TOTAL=$(jq '.total' feature-issues-report.json)
+          SUCCESSFUL=$(jq '.successful' feature-issues-report.json)
+          FAILED=$(jq '.failed' feature-issues-report.json)
+          TASK_COUNT=$(jq '.totalTasksLinked' feature-issues-report.json)
+          IS_DRY_RUN=$(jq '.dryRun' feature-issues-report.json)
+          
+          # Add to GitHub summary
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "$IS_DRY_RUN" = "true" ]; then
+            echo "**Mode:** 🔍 DRY RUN (no issues created)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**Mode:** 🚀 LIVE" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Features:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+          echo "- **Successfully Created:** $SUCCESSFUL" >> $GITHUB_STEP_SUMMARY
+          echo "- **Failed:** $FAILED" >> $GITHUB_STEP_SUMMARY
+          echo "- **Total Task Issues Linked:** $TASK_COUNT" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Show created issues if not dry run
+          if [ "$IS_DRY_RUN" = "false" ]; then
+            echo "### Created Feature Issues" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            jq -r '.issues[] | select(.created == true) | "- [#\(.issueNumber)](\(.issueUrl)) - \(.title) (\(.taskCount) tasks)"' feature-issues-report.json >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: feature-issues-report
+          path: |
+            parsed-features.json
+            feature-issues-report.json
+          retention-days: 30
+      
+      - name: Check for failures
+        if: inputs.dry_run == 'false'
+        run: |
+          FAILED=$(jq '.failed' feature-issues-report.json)
+          if [ "$FAILED" -gt 0 ]; then
+            echo "❌ Some feature issues failed to create"
+            exit 1
+          fi
+          echo "✅ All feature issues created successfully"

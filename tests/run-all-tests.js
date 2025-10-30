@@ -9,8 +9,12 @@ const APIIntegrationTests = require('./api-integration-tests.js');
 const ComprehensiveWorkflowTest = require('./comprehensive-workflow-test.js');
 const SecurityValidationTest = require('./security-validation-test.js');
 const EndToEndWorkflowTest = require('./end-to-end-workflow-test.js');
+const EmptyTodoFileValidator = require('./empty-todo-file-validation.test.js');
 const MalformedMarkdownTest = require('./malformed-markdown-test.js');
 const FilePathValidationTest = require('./file-path-validation.test.js');
+const NoActionableTasksValidator = require('./no-actionable-tasks-test.js');
+const ComprehensiveTodoFileValidation = require('./comprehensive-todo-file-validation.test.js');
+const RepositoryStructureIntegrityTest = require('./repository-structure-integrity.test.js');
 const fs = require('fs');
 const TestResultArchiver = require('./test-result-archiver');
 
@@ -23,8 +27,12 @@ class TestRunner {
       comprehensive: null,
       security: null,
       endToEnd: null,
+      emptyTodoValidation: null,
       malformedMarkdown: null,
       filePathValidation: null,
+      noActionableTasks: null,
+      todoValidation: null,
+      repositoryStructure: null,
       overall: {
         total_tests: 0,
         passed_tests: 0,
@@ -140,18 +148,92 @@ class TestRunner {
     return success;
   }
 
+  async runEmptyTodoValidationTests() {
+    console.log('\n📋 Running Empty Todo File Validation Tests...\n');
+    
+    const emptyTodoValidator = new EmptyTodoFileValidator();
+    const success = emptyTodoValidator.runAllTests();
+    
+    this.results.emptyTodoValidation = {
+      success: success,
+      total: emptyTodoValidator.testResults.length,
+      passed: emptyTodoValidator.testResults.filter(t => t.passed).length,
+      failed: emptyTodoValidator.testResults.filter(t => !t.passed).length,
+      errors: emptyTodoValidator.errors,
+      requirement_source: 'todo/workflow-validation-tests.md line 71'
+    };
+    
+    return success;
+  }
+
+  async runTodoValidationTests() {
+    console.log('\n📋 Running Comprehensive Todo File Validation Tests...\n');
+    
+    const todoValidator = new ComprehensiveTodoFileValidation();
+    const success = todoValidator.runComprehensiveValidation();
+    
+    this.results.todoValidation = {
+      success: success,
+      total: todoValidator.testResults.length,
+      passed: todoValidator.testResults.filter(t => t.passed).length,
+      failed: todoValidator.testResults.filter(t => !t.passed).length,
+      errors: todoValidator.errors,
+      validationMetrics: todoValidator.validationMetrics
+    };
+    
+    return success;
+  }
+
   async runMalformedMarkdownTests() {
     console.log('\n📋 Running Malformed Markdown Tests...\n');
     
-    const malformedTest = new MalformedMarkdownTest();
-    const success = await malformedTest.run();
+    const malformedMarkdownTest = new MalformedMarkdownTest();
+    const success = await malformedMarkdownTest.run();
     
     this.results.malformedMarkdown = {
       success: success,
-      total: malformedTest.testResults.length,
-      passed: malformedTest.testResults.filter(t => t.passed).length,
-      failed: malformedTest.testResults.filter(t => !t.passed).length,
-      errors: malformedTest.errors
+      total: malformedMarkdownTest.testResults.length,
+      passed: malformedMarkdownTest.testResults.filter(t => t.passed).length,
+      failed: malformedMarkdownTest.testResults.filter(t => !t.passed).length,
+      errors: malformedMarkdownTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
+    };
+    
+    return success;
+  }
+
+  async runNoActionableTasksTests() {
+    console.log('\n📋 Running No Actionable Tasks Tests...\n');
+    
+    const noActionableTasksTest = new NoActionableTasksValidator();
+    const success = noActionableTasksTest.runAllTests();
+    
+    this.results.noActionableTasks = {
+      success: success,
+      total: noActionableTasksTest.testResults.length,
+      passed: noActionableTasksTest.testResults.filter(t => t.passed).length,
+      failed: noActionableTasksTest.testResults.filter(t => !t.passed).length,
+      errors: noActionableTasksTest.errors,
+      scenarios_tested: 5 // empty directory, non-actionable content, mixed content, empty files, exit behavior
+    };
+    
+    return success;
+  }
+
+  async runRepositoryStructureTests() {
+    console.log('\n🏗️  Running Repository Structure Integrity Tests...\n');
+    
+    const structureTest = new RepositoryStructureIntegrityTest();
+    const success = structureTest.runAllTests();
+    
+    this.results.repositoryStructure = {
+      success: success,
+      total: structureTest.testResults.length,
+      passed: structureTest.testResults.filter(t => t.passed).length,
+      failed: structureTest.testResults.filter(t => !t.passed).length,
+      errors: structureTest.errors,
+      metrics: structureTest.structureMetrics,
+      requirement_source: 'todo/Repository_Status_and_Critical_Evidence_Collection.md line 178'
     };
     
     return success;
@@ -183,6 +265,12 @@ class TestRunner {
                                        this.results.endToEnd.total +
                                        this.results.malformedMarkdown.total +
                                        this.results.filePathValidation.total;
+                                       this.results.endToEnd.total + 
+                                       this.results.emptyTodoValidation.total +
+                                       this.results.malformedMarkdown.total +
+                                       this.results.noActionableTasks.total +
+                                       this.results.todoValidation.total +
+                                       this.results.repositoryStructure.total;
     
     this.results.overall.passed_tests = this.results.validation.passed + 
                                         this.results.integration.passed + 
@@ -192,6 +280,12 @@ class TestRunner {
                                         this.results.endToEnd.passed +
                                         this.results.malformedMarkdown.passed +
                                         this.results.filePathValidation.passed;
+                                        this.results.endToEnd.passed + 
+                                        this.results.emptyTodoValidation.passed +
+                                        this.results.malformedMarkdown.passed +
+                                        this.results.noActionableTasks.passed +
+                                        this.results.todoValidation.passed +
+                                        this.results.repositoryStructure.passed;
     
     this.results.overall.failed_tests = this.results.validation.failed + 
                                         this.results.integration.failed + 
@@ -201,6 +295,12 @@ class TestRunner {
                                         this.results.endToEnd.failed +
                                         this.results.malformedMarkdown.failed +
                                         this.results.filePathValidation.failed;
+                                        this.results.endToEnd.failed + 
+                                        this.results.emptyTodoValidation.failed +
+                                        this.results.malformedMarkdown.failed +
+                                        this.results.noActionableTasks.failed +
+                                        this.results.todoValidation.failed +
+                                        this.results.repositoryStructure.failed;
     
     this.results.overall.success_rate = Math.round((this.results.overall.passed_tests / this.results.overall.total_tests) * 100);
   }
@@ -241,11 +341,37 @@ class TestRunner {
     console.log(`   ❌ Failed: ${this.results.endToEnd.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.endToEnd.passed / this.results.endToEnd.total) * 100)}%`);
     console.log(`   🔄 Simulated Issues: ${this.results.endToEnd.simulated_issues}`);
+
+    console.log('\n📂 Empty Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.emptyTodoValidation.passed}/${this.results.emptyTodoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.emptyTodoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.emptyTodoValidation.passed / this.results.emptyTodoValidation.total) * 100)}%`);
+    console.log(`   📋 Requirement: ${this.results.emptyTodoValidation.requirement_source}`);
     
-    console.log('\n🔧 Malformed Markdown Tests:');
+    console.log('\n🧨 Malformed Markdown Tests:');
     console.log(`   ✅ Passed: ${this.results.malformedMarkdown.passed}/${this.results.malformedMarkdown.total}`);
     console.log(`   ❌ Failed: ${this.results.malformedMarkdown.failed}`);
     console.log(`   📈 Success Rate: ${Math.round((this.results.malformedMarkdown.passed / this.results.malformedMarkdown.total) * 100)}%`);
+    
+    console.log('\n🚫 No Actionable Tasks Tests:');
+    console.log(`   ✅ Passed: ${this.results.noActionableTasks.passed}/${this.results.noActionableTasks.total}`);
+    console.log(`   ❌ Failed: ${this.results.noActionableTasks.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.noActionableTasks.passed / this.results.noActionableTasks.total) * 100)}%`);
+    console.log(`   🔍 Scenarios Tested: ${this.results.noActionableTasks.scenarios_tested}`);
+    
+    console.log('\n📋 Todo Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.todoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
+    console.log(`   📋 Todo Files Tested: ${this.results.todoValidation.todo_files_tested}`);
+    
+    console.log('\n📋 Todo File Validation Tests:');
+    console.log(`   ✅ Passed: ${this.results.todoValidation.passed}/${this.results.todoValidation.total}`);
+    console.log(`   ❌ Failed: ${this.results.todoValidation.failed}`);
+    console.log(`   📈 Success Rate: ${Math.round((this.results.todoValidation.passed / this.results.todoValidation.total) * 100)}%`);
+    console.log(`   📁 Files Validated: ${this.results.todoValidation.validationMetrics.totalFiles}`);
+    console.log(`   📋 Tasks Found: ${this.results.todoValidation.validationMetrics.totalTasks}`);
+    console.log(`   🔥 Critical Tasks: ${this.results.todoValidation.validationMetrics.criticalTasks}`);
     
     console.log('\n🎯 OVERALL RESULTS:');
     console.log(`   📝 Total Tests: ${this.results.overall.total_tests}`);
@@ -316,6 +442,38 @@ class TestRunner {
           failureIndex++;
         });
       }
+      
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.todoValidation.errors.length > 0) {
+        console.log('   Todo Validation Test Failures:');
+        this.results.todoValidation.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.noActionableTasks.errors.length > 0) {
+        console.log('   No Actionable Tasks Test Failures:');
+        this.results.noActionableTasks.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
+      
+      if (this.results.todoValidation.errors.length > 0) {
+        console.log('   Todo Validation Test Failures:');
+        this.results.todoValidation.errors.forEach(error => {
+          console.log(`   ${failureIndex}. ${error}`);
+          failureIndex++;
+        });
+      }
     }
     
     console.log('\n📁 Test artifacts are archived in:');
@@ -337,6 +495,7 @@ class TestRunner {
       metadata: {
         runner_version: '1.0.0',
         test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'file-path-validation']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure']
       },
       summary: this.results.overall
     });
@@ -356,8 +515,12 @@ class TestRunner {
       const comprehensiveSuccess = await this.runComprehensiveTests();
       const securitySuccess = await this.runSecurityTests();
       const endToEndSuccess = await this.runEndToEndTests();
+      const emptyTodoSuccess = await this.runEmptyTodoValidationTests();
       const malformedMarkdownSuccess = await this.runMalformedMarkdownTests();
       const filePathValidationSuccess = await this.runFilePathValidationTests();
+      const noActionableTasksSuccess = await this.runNoActionableTasksTests();
+      const todoValidationSuccess = await this.runTodoValidationTests();
+      const repositoryStructureSuccess = await this.runRepositoryStructureTests();
       
       this.calculateOverallResults();
       this.saveResults();
@@ -370,6 +533,10 @@ class TestRunner {
       
       // Exit with appropriate code
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
+      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && 
+                             comprehensiveSuccess && securitySuccess && endToEndSuccess && 
+                             emptyTodoSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && 
+                             todoValidationSuccess && repositoryStructureSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
