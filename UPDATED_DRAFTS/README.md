@@ -208,13 +208,13 @@
 1. **Accountant** (RegimA companies - financial dependence)
 2. **Commissioner of Oaths** (dual role - witness + certifier)
 3. **Covert Trustee** (appointed July 2024 - Daniel and Jacqui NOT INFORMED)
-4. **R18.685M Creditor** (first payment due May 2026 - 9 months after interdict)
+4. **R18.685M DEBTOR** (first payment due May 2026 - 9 months after interdict)
 
 **Material Omissions:**
 - June 6 email (Daniel's fraud report to Bantjies)
 - June 10 email (Daniel's cooperation with investigation)
 - Trustee role (covert appointment July 2024)
-- R18.685M debt (leverage over Peter)
+- R18.685M debt (DESPERATE MOTIVE (avoid paying R18.685M debt))
 
 **Criminal Offenses:**
 - Perjury (Criminal Procedure Act s319) → 10 years imprisonment

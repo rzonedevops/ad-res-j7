@@ -492,7 +492,7 @@ This document exposes the **R5.4M PHYSICAL STOCK THEFT** from Strategic Logistic
 - Email controlled by Rynette (pete@regima.com)
 
 **Potential Defense:**
-- R18.6M debt to Bantjies = Duress
+- R18.6M debt FROM Bantjies = Duress
 - No control over accounts, banks, email
 - Rynette takes orders from Bantjies, not Peter
 

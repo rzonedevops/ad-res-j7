@@ -230,7 +230,7 @@ This document exposes the **DELIBERATE 2-YEAR ACCOUNTING BLACKOUT** (2023-2025) 
 - **Actions:**
   - Participated in expense dumping (March 30)
   - Email controlled by Rynette (pete@regima.com)
-- **Potential Defense:** R18.6M debt to Bantjies = Duress
+- **Potential Defense:** R18.6M debt FROM Bantjies = Duress
 
 ---
 

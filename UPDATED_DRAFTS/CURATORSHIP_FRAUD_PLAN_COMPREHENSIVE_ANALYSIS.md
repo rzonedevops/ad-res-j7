@@ -367,7 +367,7 @@ Actual: EXPOSED AS FRAUD
 - **Trustee** of Faucitt Family Trust (appointed July 2024, covert)
 - **Accountant** for RegimA companies
 - **Commissioner of Oaths** (certified documents)
-- **R18.6M creditor** (due May 2026 - leverage over Peter)
+- **R18.6M DEBTOR** (due May 2026 - DESPERATE MOTIVE (avoid paying R18.685M debt))
 
 **Actions:**
 - **March 30:** Orchestrates expense dumping (via Rynette/Peter)
@@ -438,7 +438,7 @@ Actual: EXPOSED AS FRAUD
 - Peter is CC'd on trustee appointment letter (August 11 - not primary recipient)
 
 **Potential Duress:**
-- R18.6M debt to Bantjies (due May 2026)
+- R18.6M debt FROM Bantjies (due May 2026)
 - Financial dependence on Bantjies
 - Possible coercion or threats
 
@@ -449,7 +449,7 @@ Actual: EXPOSED AS FRAUD
 
 **Legal Liability:**
 - **Conspiracy** - Participated in expense dumping and Jacqui's deception
-- **Possible Duress Defense** - R18.6M debt to Bantjies may prove coercion
+- **Possible Duress Defense** - R18.6M debt FROM Bantjies may prove coercion
 
 ### Jacqui Faucitt - VICTIM
 

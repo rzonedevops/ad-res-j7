@@ -91,7 +91,7 @@ The updated drafts from Dan & Jax attorneys **completely miss the most explosive
   - **Fiduciary duty** to Peter (as settlor)
 - **Material non-disclosure** - Neither Peter's founding affidavit nor Danie's confirmatory affidavit disclose this trustee relationship
 
-**Conflict #4: Creditor Owed R18,685,000 (Massive Financial Dependence)**
+**Conflict #4: DEBTOR Owing R18,685,000 (Massive Financial Dependence)**
 - **MOST EXPLOSIVE CONFLICT**
 - Investment payout schedule:
   - **May 2026:** R18,685,000 (first payment)
@@ -316,7 +316,7 @@ X.4 **Conflict #2: Commissioner of Oaths.** Mr Bantjes likely certified document
 
 X.5 **Conflict #3: Trustee of Faucitt Family Trust.** Mr Bantjes was appointed as a Trustee of the Faucitt Family Trust in July 2024. The Trust owns Villa Via Arcadia No 2 CC (Fifth Respondent) and RegimA Worldwide Distribution (Third Respondent). As Trustee, Mr Bantjes has a direct financial interest in the litigation outcome and a fiduciary duty to the Applicant (as settlor). **Neither the founding affidavit nor the confirmatory affidavit disclose this trustee relationship.**
 
-X.6 **Conflict #4: Creditor Owed R18,685,000.** Mr Bantjes is owed R18,685,000 by the Applicant and First Respondent, with the first payment due in May 2026 (nine months after the interdict was filed). I attach hereto marked "JF-DB2" the investment payout schedule showing this debt. **This massive financial dependence gives Mr Bantjes a direct financial incentive to support the Applicant's narrative.** If the Applicant's companies fail or the Applicant becomes insolvent, Mr Bantjes loses R18.6 million. **Neither the founding affidavit nor the confirmatory affidavit disclose this debt.**
+X.6 **Conflict #4: DEBTOR Owing R18,685,000.** Mr Bantjes is owes R18,685,000 to the Applicant and First Respondent, with the first payment due in May 2026 (nine months after the interdict was filed). I attach hereto marked "JF-DB2" the investment payout schedule showing this debt. **This massive financial dependence gives Mr Bantjes a direct financial incentive to support the Applicant's narrative.** If the Applicant's companies fail or the Applicant becomes insolvent, Mr Bantjes loses R18.6 million. **Neither the founding affidavit nor the confirmatory affidavit disclose this debt.**
 
 X.7 **Material Omission: June 6 & 10, 2025 Email Exchanges.** On June 10, 2025, Mr Bantjes requested information from me regarding IT expenses. I provided a comprehensive 1,500+ word explanation detailing:
 - Emergency measure (cards expired after Kayla's murder in August 2023)

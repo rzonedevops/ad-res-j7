@@ -216,13 +216,13 @@ A letter was sent to **HM Revenue & Customs (HMRC)** in the United Kingdom direc
 - Trustee (July 2024) - Controls trust-owned companies
 - Accountant - Access to all financial information
 - Commissioner of Oaths - Dual role as witness and certifier
-- R18.6M Creditor - Financial leverage over Peter (due May 2026)
+- R18.6M Creditor - Financial DESPERATE MOTIVE (avoid paying R18.685M debt) (due May 2026)
 
 **Actions in HMRC Fraud:**
 - **Orchestrates conspiracy** - Overall strategic direction
 - **Controls Rynette** - Instructs her to execute fraud
 - **Conceals role** - Presents as "independent witness"
-- **Benefits financially** - Maintains R18.6M leverage over Peter
+- **Benefits financially** - Maintains R18.6M DESPERATE MOTIVE (avoid paying R18.685M debt)
 
 **Evidence:**
 - August 11 email - Rynette reports TO BANTJIES (not Peter)
@@ -282,13 +282,13 @@ A letter was sent to **HM Revenue & Customs (HMRC)** in the United Kingdom direc
 
 **Reality:**
 - NO control over accounts, banks, email systems
-- R18.6M debt to Bantjies (financial dependence)
+- R18.6M debt FROM Bantjies (financial dependence)
 - Rynette controls his email (pete@regima.com)
 - Rynette's son controls fraudulent email (pete@regimaskin.co.za)
 
 **Actions in HMRC Fraud:**
 - **Provides legal cover** - Name used for impersonation
-- **Signs documents** (potentially under duress from R18.6M leverage)
+- **Signs documents** (potentially under duress from R18.6M DEBT MOTIVE)
 - **Takes responsibility** - Appears to be in control (false)
 
 **Evidence:**
@@ -297,7 +297,7 @@ A letter was sent to **HM Revenue & Customs (HMRC)** in the United Kingdom direc
 - September 11 - Peter has NO ACCESS to bank accounts (Rynette transfers R1.73M)
 
 **Legal Position:**
-- **Potential duress defense** - R18.6M leverage from Bantjies
+- **Potential duress defense** - R18.6M DEBT MOTIVE from Bantjies
 - **Potential victim** - Identity used without consent
 - **Potential co-conspirator** - If knowingly participated
 

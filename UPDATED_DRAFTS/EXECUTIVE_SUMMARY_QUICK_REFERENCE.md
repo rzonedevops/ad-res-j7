@@ -20,7 +20,7 @@
 - Trustee (Faucitt Family Trust - July 2024, covert)
 - Accountant (RegimA companies - financial dependence)
 - Commissioner of Oaths (dual role - witness + certifier)
-- R18.685M Creditor (first payment due May 2026)
+- R18.685M DEBTOR (first payment due May 2026)
 
 **Level 2: RYNETTE FARRAR (Executor)**
 - Controls Peter's email (pete@regima.com)
@@ -30,7 +30,7 @@
 
 **Level 3: PETER FAUCITT (Figurehead)**
 - NO ACCESS to accounts, banks, or email
-- R18.685M debt to Bantjies (leverage)
+- R18.685M debt FROM Bantjies (leverage)
 - Puppet with no independent control
 
 ---
@@ -196,7 +196,7 @@
 **1. Expose Real Power Structure**
 - Bantjies → Rynette → Peter (with evidence)
 - Peter is figurehead (no access)
-- Bantjies is ultimate controller (R18.685M leverage, SARS email)
+- Bantjies is ultimate controller (R18.685M DEBT MOTIVE, SARS email)
 
 **2. Expose Three Smoking Guns**
 - 2-Year Accounting Blackout (obstruction of justice)

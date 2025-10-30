@@ -348,7 +348,7 @@
 
 **4. Peter Faucitt - FIGUREHEAD**
 - **Reality:** NO control over accounts, banks, email, or decisions
-- **Leverage:** R18.6M debt to Bantjies (financial dependence)
+- **Leverage:** R18.6M debt FROM Bantjies (financial dependence)
 - **Role:** Provides legal cover, signs documents (under duress), takes responsibility
 - **Actions:** Files false affidavits (claims control he doesn't have)
 
@@ -393,7 +393,7 @@
 - Sage screenshot (June 20) - Rynette controls pete@regima.com
 - Sage screenshot (Aug 25) - Rynette is subscription owner
 - Aug 11 email - Rynette reports to Bantjies (not Peter)
-- Investment payout schedule - R18.6M leverage
+- Investment payout schedule - R18.6M DEBT MOTIVE
 
 **Conspiracy:**
 - CIPC records - Rynette's son's companies (April 2021)
@@ -433,7 +433,7 @@
 1. Perjury (Criminal Procedure Act s319) - 10 years imprisonment
 2. Fraud (Common law) - 15 years imprisonment
 3. Conspiracy (Common law) - 20 years imprisonment
-*(Note: Peter may have defenses - duress from R18.6M leverage)*
+*(Note: Peter may have defenses - duress from R18.6M DEBT MOTIVE)*
 
 ### The Legal Strategy
 
@@ -449,7 +449,7 @@
 
 **3. Expose Bantjies' Perjury**
 - Concealed Trustee role
-- Concealed R18.6M leverage
+- Concealed R18.6M DEBT MOTIVE
 - Concealed control over everything
 - Presented as "independent witness"
 

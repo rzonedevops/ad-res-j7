@@ -92,7 +92,7 @@ This master consolidation document brings together **21 comprehensive analyses**
 - **Trustee** (Faucitt Family Trust - appointed July 2024, covert)
 - **Accountant** (RegimA companies - financial dependence)
 - **Commissioner of Oaths** (dual role - witness + certifier)
-- **R18.685M Creditor** (first payment due May 2026 - 9 months after interdict)
+- **R18.685M DEBTOR** (first payment due May 2026 - 9 months after interdict)
 
 **Level 2: RYNETTE FARRAR (EXECUTOR)**
 - **Controls Peter's email** (pete@regima.com - Sage screenshot June 20)
@@ -122,7 +122,7 @@ This master consolidation document brings together **21 comprehensive analyses**
 2. **No accounting access** - Rynette is subscription owner (Sage screenshot)
 3. **No bank access** - Rynette controls all accounts (bank statements)
 4. **CC'd on emails** - Not primary recipient (August 11 email to Bantjies)
-5. **R18.685M debt** - Bantjies has leverage over Peter
+5. **R18.685M debt** - Bantjies has DESPERATE MOTIVE (avoid paying R18.685M debt)
 
 **Peter's Role:**
 - **Figurehead** for legal process (founding affidavit, interdict application)
@@ -792,7 +792,7 @@ This master consolidation document brings together **21 comprehensive analyses**
 
 1. **BANTJIES_ULTIMATE_CONTROL_POWER_STRUCTURE_ANALYSIS.md** (23 KB)
    - Real power structure: Bantjies → Rynette → Peter
-   - R18.685M leverage, Sage screenshots, email evidence
+   - R18.685M DEBT MOTIVE, Sage screenshots, email evidence
 
 2. **TRUSTEE_CONSPIRACY_COMPREHENSIVE_ANALYSIS.md** (29 KB)
    - 6-phase conspiracy, trustee powers vs beneficiary rights
@@ -900,7 +900,7 @@ This master consolidation document brings together **21 comprehensive analyses**
 ### PART IX-26: QUICK REFERENCE GUIDE
 
 **The Real Power Structure:**
-- **Level 1:** Bantjies (Trustee, R18.685M leverage)
+- **Level 1:** Bantjies (Trustee, R18.685M DEBT MOTIVE)
 - **Level 2:** Rynette (Executor, controls accounts/banks/Peter's email)
 - **Level 3:** Peter (Figurehead, no access)
 
@@ -963,7 +963,7 @@ This master consolidation document brings together **21 comprehensive analyses**
 **1. Expose the Real Power Structure**
 - Bantjies → Rynette → Peter (with evidence)
 - Peter is figurehead (no access to accounts/banks/email)
-- Bantjies is ultimate controller (R18.685M leverage, SARS email)
+- Bantjies is ultimate controller (R18.685M DEBT MOTIVE, SARS email)
 
 **2. Expose the Three Smoking Guns**
 - 2-Year Accounting Blackout (obstruction of justice)

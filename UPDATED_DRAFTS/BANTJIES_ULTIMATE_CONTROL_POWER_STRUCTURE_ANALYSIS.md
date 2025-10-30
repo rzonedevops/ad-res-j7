@@ -256,7 +256,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 **Step 1: Bantjies Makes Decision**
 - As Trustee, Bantjies decides what happens
 - As Accountant, Bantjies has all financial information
-- As R18.6M creditor, Bantjies has leverage over Peter
+- As R18.6M DEBTOR, Bantjies has DESPERATE MOTIVE (avoid paying R18.685M debt)
 
 **Step 2: Bantjies Instructs Rynette**
 - Rynette is Bantjies' executor
@@ -270,7 +270,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 - Manipulates records
 
 **Step 4: Peter Provides Cover**
-- Peter signs documents (under duress - R18.6M leverage)
+- Peter signs documents (under duress - R18.6M DEBT MOTIVE)
 - Peter appears to be in control (false narrative)
 - Peter takes legal responsibility (while having no actual control)
 - **Peter is the FALL GUY**
@@ -340,7 +340,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 - He made decisions
 
 **Reality:**
-- **Bantjies is in control** (Trustee + R18.6M leverage)
+- **Bantjies is in control** (Trustee + R18.6M DEBT MOTIVE)
 - **Rynette gives instructions** (from Bantjies)
 - **Rynette runs the companies** (Sage subscription owner)
 - **Bantjies makes decisions** (Peter is puppet)
@@ -370,7 +370,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 
 **Reality:**
 - **Bantjies is the TRUSTEE** (massive conflict)
-- **Bantjies has R18.6M leverage** over Peter (financial dependence)
+- **Bantjies has R18.6M DEBT MOTIVE** over Peter (financial dependence)
 - **Bantjies controls everything** (not independent)
 - **Bantjies orchestrated the conspiracy** (not witness)
 
@@ -414,7 +414,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 
 **Answering Affidavit Should State:**
 
-> "The Applicant's founding affidavit creates the false impression that Peter Faucitt is the controlling party. The evidence proves otherwise. The REAL CONTROLLER is Danie Bantjies, who was covertly appointed Trustee in July 2024 and has R18,685,000 financial leverage over Peter.
+> "The Applicant's founding affidavit creates the false impression that Peter Faucitt is the controlling party. The evidence proves otherwise. The REAL CONTROLLER is Danie Bantjies, who was covertly appointed Trustee in July 2024 and has R18,685,000 financial DESPERATE MOTIVE (avoid paying R18.685M debt).
 >
 > Bantjies controls everything through Rynette Farrar, who:
 > - Controls Peter's email address (pete@regima.com)
@@ -432,7 +432,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 > 1. Add Danie Bantjies as a respondent (he is the REAL CONTROLLER)
 > 2. Order Bantjies to file an affidavit disclosing:
 >    - His role as Trustee (appointed July 2024)
->    - His R18.6M financial leverage over Peter
+>    - His R18.6M financial DESPERATE MOTIVE (avoid paying R18.685M debt)
 >    - His instructions to Rynette Farrar
 >    - His control of trust-owned companies
 > 3. Set aside the interdict (obtained through fraud - Bantjies concealed his role)"
@@ -444,7 +444,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 > "Danie Bantjies' confirmatory affidavit is PERJURY. He swore that Peter's testimony was 'true and correct' while concealing that:
 > - HE is the Trustee (not Peter)
 > - HE controls the companies (not Peter)
-> - HE has R18.6M leverage over Peter
+> - HE has R18.6M DESPERATE MOTIVE (avoid paying R18.685M debt)
 > - HE orchestrated the conspiracy (not Peter)
 >
 > Bantjies presented himself as an 'independent witness' while being the ULTIMATE CONTROLLER. This is FRAUD UPON THE COURT."
@@ -547,7 +547,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 - **Penalty:** 20 years imprisonment
 - **Evidence:** Participated in conspiracy (even if under duress)
 
-**Note:** Peter may have defenses (duress - R18.6M leverage) but still criminally liable.
+**Note:** Peter may have defenses (duress - R18.6M DEBT MOTIVE) but still criminally liable.
 
 ---
 
@@ -585,7 +585,7 @@ This proves Bantjies has **LEGAL AUTHORITY** to control the companies that are w
 **This is BANTJIES' CONSPIRACY with Peter as the puppet.**
 
 **The Evidence Proves:**
-1. **Bantjies is the ULTIMATE CONTROLLER** (Trustee + R18.6M leverage)
+1. **Bantjies is the ULTIMATE CONTROLLER** (Trustee + R18.6M DEBT MOTIVE)
 2. **Rynette is Bantjies' EXECUTOR** (controls accounts, banks, Peter's email)
 3. **Peter is a FIGUREHEAD** (no access, no control, financially dependent)
 4. **4-year pre-meditated conspiracy** (2021-2025)

@@ -264,18 +264,18 @@ LEVEL 4: PETER FAUCITT (FIGUREHEAD)
 - Based on false premise (Peter in control)
 - Conceals real controller (Bantjies)
 - Conceals Bantjies' theft (instructed "huge payments")
-- Conceals Bantjies' conflict of interest (Trustee, R18.6M creditor)
+- Conceals Bantjies' conflict of interest (Trustee, R18.6M DEBTOR)
 
 **Bantjies' confirmatory affidavit is PERJURY:**
 - Concealed his role as Trustee
 - Concealed his control (instructing "huge payments")
-- Concealed his conflict of interest (R18.6M creditor)
+- Concealed his conflict of interest (R18.6M DEBTOR)
 - Created false impression of independence
 
 **The interdict was OBTAINED THROUGH FRAUD:**
 - Court misled about who controls companies (Bantjies, not Peter)
 - Court misled about Bantjies' role (controller, not independent accountant)
-- Court misled about Bantjies' conflicts (Trustee, R18.6M creditor, orchestrating theft)
+- Court misled about Bantjies' conflicts (Trustee, R18.6M DEBTOR, orchestrating theft)
 
 **Remedy:** **INTERDICT MUST BE SET ASIDE** with costs against Bantjies and Peter (de bonis propriis)
 

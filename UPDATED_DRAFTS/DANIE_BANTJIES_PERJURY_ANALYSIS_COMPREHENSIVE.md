@@ -72,7 +72,7 @@ Danie Bantjies (Daniel Jacobus Bantjes) provided a confirmatory affidavit (marke
 - Perjury by omission (failure to disclose material interest)
 - Fraud upon the Court (concealment of material facts)
 
-### 1.4 Role #4: Creditor Owed ZAR 18,685,000
+### 1.4 Role #4: DEBTOR Owing ZAR 18,685,000
 
 **Evidence:**
 - Investment payout schedule document (BantjiesInvestmentPayoutDates2026-05.jpg)
