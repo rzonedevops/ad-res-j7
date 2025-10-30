@@ -153,7 +153,7 @@ class MultiLabelIssueCreationTest {
 
     // Check for label format validation
     this.assert(
-      content.includes('[a-zA-Z0-9:\\ ._-]+'),
+      content.includes('[a-zA-Z0-9:\\ ._-]+') || content.includes('[a-zA-Z0-9: ._-]+'),
       'Workflow validates label format (alphanumeric, colons, spaces, dots, underscores, dashes)'
     );
 
@@ -174,6 +174,7 @@ class MultiLabelIssueCreationTest {
     ];
 
     validLabels.forEach(label => {
+      // Match the workflow's validation pattern: [a-zA-Z0-9:\ ._-]+
       const isValid = /^[a-zA-Z0-9: ._-]+$/.test(label) && label.length <= 50;
       this.assert(
         isValid,
@@ -373,6 +374,7 @@ class MultiLabelIssueCreationTest {
     ];
 
     invalidLabels.forEach(label => {
+      // Match the workflow's validation pattern: [a-zA-Z0-9:\ ._-]+
       const isInvalid = !/^[a-zA-Z0-9: ._-]+$/.test(label) || label.length > 50;
       this.assert(
         isInvalid,
