@@ -1,13 +1,43 @@
-# ANNEXURE JF5-COMPARISON: SETTLEMENT AGREEMENT ANALYSIS - Provable Issues Despite Evidentiary Limitations
+# ANNEXURE JF5-COMPARISON: SETTLEMENT AGREEMENT ANALYSIS - Comparison Framework
 
 **Case Reference:** 2025-137857  
 **Annexure Reference:** JF5-COMPARISON  
 **Priority:** CRITICAL  
-**Date:** October 16, 2025  
-**Purpose:** Legal analysis demonstrating settlement agreement fraud evidence despite mediation agreement restrictions on draft admissibility
-**Date:** October 16, 2025
-**Status:** COMPLETED - Full legal attention analysis integrated
+**Created:** October 16, 2025  
+**Last Updated:** October 30, 2025  
+**Status:** FRAMEWORK COMPLETE - Awaiting Actual Draft and Final Agreements  
 **Purpose:** Detailed comparison document highlighting all changes between draft and final settlement agreement versions, demonstrating systematic unconscionability through legal attention mechanism analysis
+
+**Current State:**
+- ✅ Legal attention mechanism framework complete
+- ✅ Evidentiary limitations analysis complete
+- ✅ Provable defects analysis complete (based on final agreement)
+- ⏳ Awaiting: Actual draft agreement document
+- ⏳ Awaiting: Actual final signed agreement document
+- ⏳ Pending: Clause-by-clause comparison (requires both documents)
+
+**Quick Action Plan:**
+1. **Obtain Documents** → Request JF5 draft and final from ENS Africa correspondence (Aug 2025)
+2. **Compare Documents** → Use Word Compare or Adobe Acrobat to identify all changes
+3. **Complete Placeholders** → Replace all `[PLACEHOLDER]` sections with actual content
+4. **Apply Framework** → Use the legal attention mechanism to analyze changes
+5. **Legal Review** → Attorney approval for disclosure strategy and filing
+
+---
+
+## TABLE OF CONTENTS
+
+1. [Critical Evidentiary Framework](#critical-evidentiary-framework)
+2. [Executive Summary](#executive-summary)
+3. [Part 1: Incoherent Terminology](#part-1-incoherent-terminology-in-final-agreement)
+4. [Part 2: Duplicate Cost Clauses](#part-2-duplicate-cost-clauses-last-minute-addition-evidence)
+5. [Part 3: Missing Procedures](#part-3-missing-procedures-for-ongoing-treatments)
+6. [Part 4: Unlimited Financial Exposure](#part-4-unlimited-financial-exposure)
+7. [Part 5: Same-Day Rush Timeline](#part-5-same-day-rush-timeline)
+8. [Legal Attention Mechanism](#legal-attention-mechanism-integration)
+9. [Comprehensive Change Log](#comprehensive-change-log)
+10. [Strategic Analysis](#strategic-analysis)
+11. [Completion Requirements](#completion-requirements)
 
 ---
 
@@ -990,7 +1020,31 @@ This annexure is **CRITICAL** because it:
 
 ## COMPLETION REQUIREMENTS
 
-### Immediate Actions Required:
+### Phase 1: Document Acquisition (CURRENT PHASE)
+
+**Objective:** Obtain both draft and final settlement agreements
+
+**Action Items:**
+1. ✅ Comparison framework template created
+2. ⏳ Request draft settlement agreement from ENS Africa correspondence (approx. Aug 8-10, 2025)
+3. ⏳ Request final signed settlement agreement from ENS Africa or parties' files (dated Aug 11, 2025)
+4. ⏳ Verify both documents are complete with all schedules and appendices
+5. ⏳ Confirm version control (ensure correct versions for comparison)
+
+**Key Sources:**
+- ENS Africa email correspondence August 2025
+- Personal files of Jacqueline and Daniel Faucitt
+- Attorney files
+
+**Estimated Timeline:** Dependent on external document collection
+
+---
+
+### Phase 2: Document Comparison
+
+**Objective:** Perform detailed comparison and populate all placeholder sections
+
+**Action Items:**
 
 1. **Obtain Both Complete Documents:**
    - Full draft version (JF5-DRAFT)
@@ -1027,14 +1081,30 @@ This annexure is **CRITICAL** because it:
 
 ### Quality Assurance:
 
-- [x] Both source documents (draft and final) obtained  
-- [x] Legal attention mechanism analysis completed
-- [x] Manual verification of all changes performed
-- [x] Each material change analyzed for significance with attention weights
-- [x] Strategic analysis connecting changes to arguments completed
-- [x] Timeline correlation documented with temporal attention analysis
+**Framework Status:**
+- [x] Legal attention mechanism framework designed
+- [x] Evidentiary limitations analysis completed
+- [x] Provable defects analysis framework completed
 - [x] Legal privilege issues addressed (focus on admissible final agreement)
-- [x] Multi-head attention framework applied for comprehensive analysis
+- [x] Multi-head attention framework designed for comprehensive analysis
+
+**Evidence Collection Status:**
+- [ ] Draft settlement agreement obtained (JF5-DRAFT)
+- [ ] Final signed settlement agreement obtained (JF5-FINAL)
+- [ ] Both source documents verified complete with all schedules/appendices
+
+**Comparison Work Status:**
+- [ ] Document comparison software analysis performed
+- [ ] Manual verification of all changes performed
+- [ ] Each change categorized by type and significance
+- [ ] Attention weights assigned to material changes
+- [ ] Strategic analysis connecting changes to case arguments completed
+- [ ] Timeline correlation documented with temporal attention analysis
+
+**Ready for Completion When:**
+1. Both JF5-DRAFT and JF5-FINAL documents are obtained
+2. Legal team confirms which comparison method to use given mediation restrictions
+3. Attorney approval obtained for disclosure strategy
 
 ---
 
@@ -1051,11 +1121,11 @@ This annexure is **CRITICAL** because it:
 
 ---
 
-**Last Updated:** October 16, 2025  
-**Document Version:** 2.0 - Completed Analysis  
-**Comparison Method:** Manual analysis with legal attention mechanism  
-**Reviewed By:** Legal AI Analysis System  
-**Approved for Filing:** October 16, 2025
+**Last Updated:** October 30, 2025  
+**Document Version:** 2.1 - Framework Complete, Awaiting Source Documents  
+**Comparison Method:** Legal attention mechanism framework ready for application  
+**Framework By:** Legal AI Analysis System  
+**Status:** Ready for document comparison when JF5-DRAFT and JF5-FINAL are obtained
 
 ---
 
