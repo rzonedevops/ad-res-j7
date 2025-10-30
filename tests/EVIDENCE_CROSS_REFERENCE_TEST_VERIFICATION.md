@@ -12,7 +12,7 @@
 
 ## Executive Summary
 
-The evidence cross-referencing system has been comprehensively tested for accuracy using a multi-layered test suite consisting of 3 independent test suites with 30 total test cases. **All 30 tests passed successfully**, confirming the accuracy and completeness of the evidence cross-referencing system.
+The evidence cross-referencing system has been comprehensively tested for accuracy using a multi-layered test suite consisting of 3 independent test suites with 24 total test cases. **All 24 tests passed successfully**, confirming the accuracy and completeness of the evidence cross-referencing system.
 
 ### Test Results Overview
 
