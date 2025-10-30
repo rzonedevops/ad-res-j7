@@ -590,3 +590,9 @@ R68,277,000 ÷ R500,000 = **136.5:1**
 **Prepared for:** Case 2025-137857  
 **Date:** October 16, 2025  
 **Document Code:** STRAT-006
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis in jax-response/AD directory for related paragraph responses.

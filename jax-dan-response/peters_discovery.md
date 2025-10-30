@@ -18,3 +18,9 @@ The Applicant presents his allegations as a recent, shocking discovery, implying
 **Timeline Analysis Showing Pretext**
 - A detailed timeline of events, provided in **Annexure JF10A**, shows the correlation between the Applicant's actions and the settlement negotiations.
 - This timeline demonstrates that the interdict was not a response to an urgent crisis, but a premeditated legal maneuver designed to derail the settlement process and impose the Applicant's will on the company.
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis: jax-response/AD/2-High-Priority/PARA_8-8_3.md

@@ -18,3 +18,9 @@ The Applicant attempts to use routine inquiries from the company's accountant, D
 **Normal Tax Preparation Workflow**
 - The timeline of these communications, when viewed in the context of the tax preparation cycle, shows a normal workflow.
 - The Applicant has cherry-picked routine professional correspondence and presented it out of context to create a false narrative of alarm.
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis: jax-response/AD/2-High-Priority/PARA_7_12-7_13.md

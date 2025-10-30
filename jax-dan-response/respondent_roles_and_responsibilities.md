@@ -22,3 +22,9 @@ The Applicant's founding affidavit minimizes the First Respondent's role and res
 - **Daniel Faucitt (Second Respondent):** CIO of RegimA Worldwide Distribution. His focus is on the company's technical infrastructure, e-commerce platform, and business automation.
 
 This clear differentiation is essential to counter the Applicant's attempts to conflate their roles and misrepresent their respective responsibilities.
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis: jax-response/AD/2-High-Priority/PARA_3_11-3_13.md

@@ -45,3 +45,9 @@ This timeline demonstrates the strategic coordination of the Applicant's actions
     -   Bantjies knew of criminal matters by 10 June 2025
     -   Provided confirmatory affidavit anyway
     -   Knowledge + false affidavit = perjury
+
+
+---
+
+### Jacqueline's Legal Perspective:
+See complementary legal analysis in jax-response/AD directory for related paragraph responses.
