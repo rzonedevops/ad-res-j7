@@ -63,7 +63,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 ### Settlement Agreement Evidence
 
 #### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
-- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md`
 - **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.4, 48.5, 48.10
@@ -71,7 +71,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Date:** Approximately 8-10 August 2025 (reviewed version)
 
 #### JF5-FINAL: Settlement Agreement - Signed Version with Changes
-- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md`
 - **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.5, 48.6, 48.10
@@ -89,7 +89,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 ### Settlement Agreement Evidence
 
 #### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
-- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md`
 - **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.4, 48.5, 48.10
@@ -97,7 +97,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Date:** Approximately 8-10 August 2025 (reviewed version)
 
 #### JF5-FINAL: Settlement Agreement - Signed Version with Changes
-- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md`
 - **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.5, 48.6, 48.10
@@ -115,7 +115,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 ### Settlement Agreement Evidence
 
 #### JF5-DRAFT: Settlement Agreement - Initial Version Reviewed
-- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md`
+- **File:** `JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL.md`
 - **Purpose:** Initial version of settlement agreement reviewed by Jacqueline and Daniel Faucitt before final changes were made
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.4, 48.5, 48.10
@@ -123,7 +123,7 @@ All annexures in this directory are classified as **CRITICAL PRIORITY** and must
 - **Date:** Approximately 8-10 August 2025 (reviewed version)
 
 #### JF5-FINAL: Settlement Agreement - Signed Version with Changes
-- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md`
+- **File:** `JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED.md`
 - **Purpose:** Final signed version of settlement agreement containing material changes made after respondents' review
 - **Priority:** CRITICAL
 - **Affidavit References:** Paragraph 48.5, 48.6, 48.10
