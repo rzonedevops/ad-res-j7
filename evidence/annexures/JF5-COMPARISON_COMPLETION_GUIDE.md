@@ -52,7 +52,7 @@ Before beginning, ensure you have:
 
 ### Phase 4: Placeholder Completion ⏳
 
-Complete all `[PLACEHOLDER]` sections in the comparison document. Total: 19 placeholders to fill.
+Complete all `[PLACEHOLDER]` sections in the comparison document. Total: 20 placeholders to fill.
 
 #### Change Category Placeholders:
 
@@ -269,7 +269,7 @@ Based on document complexity, expect:
 
 Before marking document as complete:
 
-- [ ] All 19 placeholders filled with actual content
+- [ ] All 20 placeholders filled with actual content
 - [ ] All cross-references verified and accurate
 - [ ] All statistical summaries calculated and inserted
 - [ ] All attention weights assigned and ranked
