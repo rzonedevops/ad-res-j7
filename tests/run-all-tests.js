@@ -494,8 +494,7 @@ class TestRunner {
       testType: 'comprehensive-test',
       metadata: {
         runner_version: '1.0.0',
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'malformed-markdown', 'file-path-validation']
-        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure']
+        test_suites: ['validation', 'integration', 'api', 'comprehensive', 'security', 'end-to-end', 'empty-todo-validation', 'malformed-markdown', 'todo-validation', 'repository-structure', 'file-path-validation']
       },
       summary: this.results.overall
     });
@@ -532,11 +531,10 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && 
                              comprehensiveSuccess && securitySuccess && endToEndSuccess && 
                              emptyTodoSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && 
-                             todoValidationSuccess && repositoryStructureSuccess;
+                             todoValidationSuccess && repositoryStructureSuccess && filePathValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
