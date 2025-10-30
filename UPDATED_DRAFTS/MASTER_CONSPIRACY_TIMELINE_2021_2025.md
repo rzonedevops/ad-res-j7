@@ -117,11 +117,13 @@
 - **Evidence:** Shopify records showing order removal (May 22-23, 2025)
 - **Additional Harm:** **EVIDENCE DESTRUCTION** - removes financial records needed for fraud investigation
 
-**June 6, 2025**
-- **Event:** Daniel sends comprehensive analysis to Bantjies
-- **Content:** IT expenses analysis, Villa Via profit extraction, SLG inventory manipulation
+**June 6, 2025 (END OF 68-DAY INVESTIGATION)**
+- **Event:** Daniel sends comprehensive analysis to Bantjies (result of 68-day investigation)
+- **Content:** IT expenses analysis, Villa Via profit extraction (86% margin), SLG inventory manipulation (R5.4M loss)
+- **Context:** Daniel spent 68 days (March 30 - June 6) investigating fraud INSTEAD OF panic-signing fraudulent accounts
+- **Findings:** Fraud hidden in accounts Rynette/Peter pressured Daniel to sign in 12 hours
 - **Bantjies' Response:** Acknowledges receipt, says will consider
-- **Significance:** **DANIEL PROVIDES DETAILED FRAUD EVIDENCE TO BANTJIES**
+- **Significance:** **DANIEL EXPOSES FRAUD HIDDEN IN ACCOUNTS** - Proves he REFUSED to be trapped
 - **Evidence:** Email "Re: The RegimA Group results and Computer Expense analysis"
 
 **June 7, 2025 (FINANCIAL STRANGULATION PHASE 4 - SECRET)**
@@ -209,6 +211,23 @@
 - **Significance:** **FIRST ATTACK** in coordinated financial strangulation
 - **Evidence:** Bank account change documentation (to be obtained)
 
+**March 30, 2025 (THE TRAP - EXPENSE DUMPING)**
+- **Event:** Rynette and Peter dump **2 YEARS OF UNALLOCATED EXPENSES** from all companies onto Daniel
+- **Method:** Load all expenses into RegimA Worldwide accounts
+- **Claim:** "These are ALL your expenses"
+- **Deadline:** **12 HOURS** to sign SARS VAT & Annual Accounts
+- **Expected:** Daniel panics and signs without looking (accepting fraudulent accounts)
+- **Reality:** Daniel REFUSES to panic-sign, begins 68-day investigation
+- **Significance:** **THE TRAP** - Pressure Daniel to sign fraudulent accounts to later use as "evidence" of incompetence
+- **Evidence:** Expense dump documentation, SARS VAT & Annual Accounts deadline, Daniel's investigation timeline
+
+**March 30 - June 6, 2025 (DANIEL'S 68-DAY INVESTIGATION)**
+- **Event:** Daniel investigates 2 years of unallocated expenses instead of panic-signing
+- **Duration:** 68 days (March 30 - June 6)
+- **Findings:** Villa Via profit extraction (86% margin), SLG inventory manipulation (R5.4M loss), IT expense allocation fraud
+- **Significance:** **DANIEL DISCOVERS THE FRAUD** hidden in accounts he was pressured to sign
+- **Evidence:** Daniel's comprehensive reports (June 6 & 10 emails to Bantjies)
+
 **April 14, 2025 (FINANCIAL STRANGULATION PHASE 2)**
 - **Event:** RegimA Worldwide revenue diverted
 - **Method:** **Rynette's bank letter** to financial institutions
@@ -239,13 +258,17 @@
 ## PHASE 7: FINANCIAL ATTACK (September 2025)
 ### Coordinated Destruction of Daniel's Operations
 
-**September 11, 2025**
+**September 11, 2025 (EMERGENCY MEASURE - FINAL ATTACK)**
 - **Event:** Rynette transfers **R1,730,000** out of Villa Via account
 - **From Account:** Villa Via Main Account (62423540807)
 - **Transaction:** "TRF TO SAVINGS ACCOU" - R1,730,000.00
 - **Result:** Balance dropped from R1,745,329.68 to **R15,329.68**
 - **Who Executed:** **RYNETTE** (Peter has no access to bank accounts)
-- **Significance:** **COORDINATED FINANCIAL ATTACK**
+- **Context:** **DANIEL WAS STILL MANAGING TO PAY CREDITORS** after 6 months of financial sabotage (March-September)
+- **Expected:** Daniel would fail to pay creditors → "evidence" of incompetence → justify curatorship
+- **Reality:** Daniel STILL PAYING CREDITORS despite zero revenue + all liabilities + card cancellations
+- **Emergency Measure:** Empty accounts to FORCE failure and create "evidence" for curatorship fraud
+- **Significance:** **FINAL ATTACK** - Proves curatorship was the goal all along
 - **Evidence:** Villa Via bank statement (Sept 11, 2025), CCE20250911_0002.jpg
 
 **September 11, 2025 - Same Day**
