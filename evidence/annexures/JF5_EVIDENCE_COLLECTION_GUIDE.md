@@ -65,7 +65,7 @@ The settlement agreement (referred to as "JF5" in the affidavit) was signed on 1
 - [ ] Document signature block and witnesses
 - [ ] Identify all duplicate clauses or editing errors
 
-### 3. JF5-COMPARISON_SETTLEMENT_AGREEMENT_CHANGES.md
+### 3. JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md
 
 **Purpose:** Detailed side-by-side comparison proving material misrepresentation.
 
