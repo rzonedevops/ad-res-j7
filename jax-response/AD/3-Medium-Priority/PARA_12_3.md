@@ -31,6 +31,19 @@
 ### Evidence Required:
 - [ ] *[List specific annexures needed]*
 
+
+### Daniel's Technical Perspective
+
+For detailed technical and operational analysis from Daniel Faucitt (CIO), see:
+- [PARA_12_3_DAN_SETTLEMENT_TIMING.md](../dan-perspective/3-Medium-Priority/PARA_12_3_DAN_SETTLEMENT_TIMING.md)
+
+This supplementary document provides:
+- Technical infrastructure requirements and dependencies
+- Operational impact analysis from a CIO perspective
+- System architecture details relevant to the claims
+- Evidence of technical implementation and business necessity
+
+
 ### Cross-References:
 - See: comprehensive_reference_index.json
 - See: Faucitt_Interdict_Analysis.md

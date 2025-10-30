@@ -96,6 +96,19 @@ Peter's allegations about a R500,000 payment ignore fundamental questions about 
 - See: PARA_7_7-7_8.md (payment details)
 - See: PARA_7_9-7_11.md (payment justification)
 
+
+### Daniel's Technical Perspective
+
+For detailed technical and operational analysis from Daniel Faucitt (CIO), see:
+- [PARA_7_6_DAN_DIRECTOR_LOAN.md](../dan-perspective/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md)
+
+This supplementary document provides:
+- Technical infrastructure requirements and dependencies
+- Operational impact analysis from a CIO perspective
+- System architecture details relevant to the claims
+- Evidence of technical implementation and business necessity
+
+
 ---
 
 *Priority Rating: 1/5 - Critical*  
