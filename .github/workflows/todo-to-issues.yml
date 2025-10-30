@@ -500,6 +500,7 @@ jobs:
               }
             }
           }
+          EOF
       - name: Upload structured TODO
         uses: actions/upload-artifact@v4
         with:
