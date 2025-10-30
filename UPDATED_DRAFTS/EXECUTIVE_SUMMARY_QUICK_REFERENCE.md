@@ -35,21 +35,34 @@
 
 ---
 
-## THE THREE SMOKING GUNS
+## THE FIVE SMOKING GUNS
 
-**#1: 2-YEAR ACCOUNTING BLACKOUT**
+**#1: WAREHOUSE FRAUD (July 8, 2025)**
+- Peter instructed warehouse to STOP SHOPIFY ORDERS
+- R34.9M operations sabotaged (93.3% revenue collapse)
+- POPI violations (10 years imprisonment + R10M fine)
+- Proves intent: DESTRUCTION (not management)
+
+**#2: PERJURY (Multiple Instances)**
+- Peter: "Erratic behavior" (after 165 days of torture)
+- Peter: "Urgency" (67-day delay proves false)
+- Peter: "Discovery" (system logs prove 4-year knowledge)
+- Bantjies: "No knowledge of crimes" (65-day timeline proves false)
+- Exposure: **15 YEARS PER COUNT**
+
+**#3: 2-YEAR ACCOUNTING BLACKOUT**
 - July 13, 2023: Kayla murdered → Law enforcement: "TOUCH NOTHING"
 - 2023: Court order obtained → Interfered with murder investigation
 - 2023-2025: 2 YEARS NO BOOKS (despite Linda employed "just to do those books")
 - March 30, 2025: Dump 2 years unallocated expenses (12-hour deadline)
 
-**#2: R5.4M STOCK THEFT**
+**#4: R5.4M STOCK THEFT**
 - R5.4M from Strategic Logistics (SLG) as "stock adjustment"
 - Stock "disappeared" → Diverted to Adderory (Rynette's son)
 - Negative R4.2M inventory (accounting fiction)
 - Theft as Trustee → **LIFE IMPRISONMENT**
 
-**#3: SARS AUDIT EMAIL**
+**#5: SARS AUDIT EMAIL**
 - SARS was auditing and asking about huge amounts
 - Rynette said: **"BANTJIES INSTRUCTED HER TO MAKE THOSE HUGE PAYMENTS"**
 - Proves Bantjies' ultimate control (not Peter)
@@ -67,7 +80,7 @@
 **PRONG #6 (Unknown Date):** ABSA Accounts Fraud (8 accounts, Daniel's stolen card)  
 **PRONG #7 (Unknown Date):** HMRC Pension Fraud (UK - pete@regimaskin.co.za)  
 **PRONG #8 (September 11, 2025):** Account Emptying (R1.73M transfer)  
-**PRONG #9 (May 22 - June 8, 2025):** Warehouse Sabotage (POPIA violations)
+**PRONG #9 (July 8, 2025):** Warehouse Sabotage (POPI violations - R34.9M operations destroyed)
 
 **THE FORMULA:** ZERO REVENUE + ALL LIABILITIES = FORCED INSOLVENCY
 
