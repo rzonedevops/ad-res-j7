@@ -486,9 +486,60 @@ class CivilEvidenceStandardsValidation {
     return true;
   }
 
-  // Test 14: Validate damages/harm calculation framework
+  /**
+   * Helper method to detect duplicate damage claims
+   * Prevents double-counting by identifying claims with the same category and time period
+   */
+  detectDuplicateDamageClaims(damages) {
+    const seen = new Map();
+    const duplicates = [];
+    
+    damages.forEach((claim, index) => {
+      // Create a unique key from category and period to detect duplicates
+      const key = `${claim.category}_${claim.period}`;
+      
+      if (seen.has(key)) {
+        duplicates.push({
+          current: index,
+          original: seen.get(key),
+          category: claim.category,
+          period: claim.period
+        });
+      } else {
+        seen.set(key, index);
+      }
+    });
+    
+    return {
+      hasDuplicates: duplicates.length > 0,
+      duplicates: duplicates,
+      uniqueCount: seen.size
+    };
+  }
+
+  /**
+   * Calculate total damages while preventing duplicate counting
+   */
+  calculateNonDuplicatedDamages(damages) {
+    const seen = new Map();
+    let total = 0;
+    
+    damages.forEach(claim => {
+      const key = `${claim.category}_${claim.period}`;
+      
+      // Only add if not already counted
+      if (!seen.has(key)) {
+        total += claim.amount;
+        seen.set(key, true);
+      }
+    });
+    
+    return total;
+  }
+
+  // Test 14: Validate damages/harm calculation framework with duplicate prevention
   testDamagesCalculationFramework() {
-    console.log('\n🧪 Test 14: Validate damages/harm calculation framework...');
+    console.log('\n🧪 Test 14: Validate damages/harm calculation framework with duplicate prevention...');
     
     const civil = this.requirements.standards.civil;
     const mustProve = civil.requirements.what_dan_jax_must_prove;
@@ -522,6 +573,40 @@ class CivilEvidenceStandardsValidation {
     
     this.assert(validCalculations >= 2,
                 `Damages calculations properly validated (${validCalculations}/${damage_scenarios.length})`);
+    
+    // Test duplicate prevention in damages calculation
+    const damageClaimsWithDuplicates = [
+      { category: 'revenue_loss', period: '2025-Q1', amount: 50000 },
+      { category: 'operational_costs', period: '2025-Q1', amount: 20000 },
+      { category: 'revenue_loss', period: '2025-Q1', amount: 50000 }, // Duplicate
+      { category: 'reputation_damage', period: '2025-Q2', amount: 30000 },
+      { category: 'operational_costs', period: '2025-Q2', amount: 15000 }
+    ];
+    
+    const duplicateCheck = this.detectDuplicateDamageClaims(damageClaimsWithDuplicates);
+    this.assert(duplicateCheck.hasDuplicates === true, 
+                'Duplicate damage detection correctly identifies duplicates');
+    this.assert(duplicateCheck.duplicates.length === 1,
+                `Detected ${duplicateCheck.duplicates.length} duplicate claim(s)`);
+    
+    const totalWithoutDuplicates = this.calculateNonDuplicatedDamages(damageClaimsWithDuplicates);
+    const expectedTotal = 50000 + 20000 + 30000 + 15000; // 115000
+    this.assert(totalWithoutDuplicates === expectedTotal,
+                `Duplicate prevention correctly calculates total: ${this.CURRENCY_SYMBOL}${totalWithoutDuplicates} (expected ${this.CURRENCY_SYMBOL}${expectedTotal})`);
+    
+    // Test scenario without duplicates
+    const uniqueDamageClaims = [
+      { category: 'revenue_loss', period: '2025-Q1', amount: 50000 },
+      { category: 'operational_costs', period: '2025-Q1', amount: 20000 },
+      { category: 'revenue_loss', period: '2025-Q2', amount: 45000 }, // Different period
+      { category: 'reputation_damage', period: '2025-Q2', amount: 30000 }
+    ];
+    
+    const uniqueCheck = this.detectDuplicateDamageClaims(uniqueDamageClaims);
+    this.assert(uniqueCheck.hasDuplicates === false,
+                'No duplicates detected in unique damage claims');
+    this.assert(uniqueCheck.uniqueCount === uniqueDamageClaims.length,
+                `All ${uniqueDamageClaims.length} claims are unique`);
     
     return true;
   }
