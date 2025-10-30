@@ -75,7 +75,7 @@ jobs:
           gh --version
           echo "✅ GitHub CLI installed and ready"
 
-      - name: Authenticate GitHub CLI (server-side)
+      - name: Authenticate GitHub CLI
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -86,15 +86,40 @@ jobs:
 
       - name: Determine execution parameters
         id: params
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          INPUT_INCLUDE_CLOSED: ${{ github.event.inputs.include_closed }}
+          INPUT_EXECUTION_MODE: ${{ github.event.inputs.execution_mode }}
         run: |
           echo "🔧 Determining execution parameters..."
           
           # Set dry_run based on inputs or event type
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            dry_run="${{ github.event.inputs.dry_run }}"
-            include_closed="${{ github.event.inputs.include_closed }}"
-            execution_mode="${{ github.event.inputs.execution_mode }}"
-          elif [ "${{ github.event_name }}" = "issues" ]; then
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            # Validate and sanitize boolean inputs
+            if [ "$INPUT_DRY_RUN" = "true" ]; then
+              dry_run="true"
+            else
+              dry_run="false"
+            fi
+            
+            if [ "$INPUT_INCLUDE_CLOSED" = "true" ]; then
+              include_closed="true"
+            else
+              include_closed="false"
+            fi
+            
+            # Validate execution_mode against allowed values
+            case "$INPUT_EXECUTION_MODE" in
+              preview|execute|report-only)
+                execution_mode="$INPUT_EXECUTION_MODE"
+                ;;
+              *)
+                echo "⚠️ Invalid execution_mode: $INPUT_EXECUTION_MODE, defaulting to preview"
+                execution_mode="preview"
+                ;;
+            esac
+          elif [ "$EVENT_NAME" = "issues" ]; then
             # For issue events, always dry run initially
             dry_run="true"
             include_closed="false"
@@ -122,12 +147,14 @@ jobs:
           echo "  - Include Closed: $include_closed"
           echo "  - Execution Mode: $execution_mode"
           echo "  - Will Execute Cleanup: $execute_cleanup"
-          echo "  - Event: ${{ github.event_name }}"
+          echo "  - Event: $EVENT_NAME"
 
       - name: Run duplicate analysis
         id: analysis
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTIONS: true
         run: |
           echo "🔍 Running duplicate issue analysis..."
           

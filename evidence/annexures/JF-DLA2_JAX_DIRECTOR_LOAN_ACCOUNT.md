@@ -131,24 +131,34 @@ This annexure contains Jacqueline Faucitt's complete director loan account state
 
 ## ACCOUNTING METHODOLOGY
 
-### Director Loan Account Treatment:
+### Informal Director Loan Account Treatment:
 
-**Recognition Criteria:**
-- **Business expenses incurred by director:** Credit to account when paid personally
-- **Professional services provided:** Credit at market rates for regulatory work
-- **Deferred compensation:** Salary deferrals credited to account
-- **Director withdrawals:** Debit when funds withdrawn for personal use
+⚠️ **IMPORTANT:** Director loan accounts were always maintained **INFORMALLY** in the RegimA businesses. Given that the companies owed the directors large sums of money, the exact fluctuations in director loan balances were tracked informally throughout the year and reconciled against bank statements at year-end.
 
-**Valuation Method:**
-- **Expenses:** Actual cost (supported by receipts and invoices)
-- **Professional services:** Market rate for regulatory compliance work
-- **Interest:** [Rate]% per annum on credit balances
-- **Withdrawals:** Actual amounts transferred
+**Informal Methodology:**
+1. **Director Withdrawals:** Processed directly via bank transfers without formal board resolutions
+2. **Tracking:** Fluctuations added and subtracted according to bank statement activity
+3. **Year-End Reconciliation:** Balances calculated and adjusted based on annual bank statement review
+4. **SARS Reporting:** Annual tax returns filed based on reconciled year-end balances
+5. **Consistent Practice:** Same informal process applied to all three directors for multiple years
+
+**Recognition Criteria (Informal Year-End Basis):**
+- **Business expenses incurred by director:** Credit to account at year-end reconciliation
+- **Professional services provided:** Credit at year-end based on accumulated contributions
+- **Director withdrawals:** Debit based on bank statement records throughout the year
+- **Net balance:** Reconciled annually from bank statements
+
+**Key Characteristics:**
+- No formal board resolutions required for withdrawals
+- No monthly ledger reconciliations (only year-end)
+- Bank statements serve as primary source documentation
+- All directors used identical informal process
+- Process accepted by all parties for years until current dispute
 
 **Compliance Framework:**
-- **Close Corporations Act 69 of 1984:** Member drawings provisions
-- **IFRS/SAICA standards:** Related party transaction disclosure
-- **SARS requirements:** Annual reporting of director loan balances
+- **Close Corporations Act 69 of 1984:** Member drawings provisions (allows informal processes for small businesses)
+- **IFRS/SAICA standards:** Related party transaction disclosure (annual basis)
+- **SARS requirements:** Annual reporting of director loan balances (based on year-end reconciliation)
 
 ---
 

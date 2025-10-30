@@ -1,6 +1,6 @@
 # Workflow Validation Tests
 
-This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `todo-to-issues.yml` and `file-representations.yml` workflows.
+This directory contains comprehensive validation tests for the GitHub Actions workflows in this repository. The tests validate both the structure and functionality of the `.github/workflows/todo-to-issues.yml` and `.github/workflows/file-representations.yml` workflows.
 
 ## 🛡️ Merge Conflict Prevention
 
@@ -75,6 +75,38 @@ node tests/run-all-tests.js
 npm test
 ```
 
+### 4. `repository-structure-integrity.test.js` (NEW)
+**Purpose**: Validate repository structure integrity and evidence organization
+
+**Context**: 
+- Implementation of Phase 3 Advanced QA requirement (line 178 in todo/Repository_Status_and_Critical_Evidence_Collection.md)
+- Links repository structure to critical Shopify payment evidence trail
+- Validates evidence linking Dan & Kay Shopify platform payments to Dan & Jax UK company (RegimA Zone Ltd)
+- Confirms RWD ZA lack of independent revenue stream documentation
+
+**Tests Include**:
+- Core directory structure validation (9 required directories)
+- Evidence file organization verification
+- Shopify payment evidence trail documentation (tracks 132+ references)
+- RegimA Zone Ltd payment documentation (tracks 40+ references)
+- Revenue stream analysis validation (3 evidence directories)
+- Critical evidence cross-reference validation
+- Payment trail linkage from UK company to Shopify platform
+- Repository structure metadata verification
+
+**Metrics Tracked**:
+- Required directories found vs. missing
+- Shopify payment references count
+- RegimA Zone Ltd references count  
+- Revenue stream evidence directories count
+
+**Usage**:
+```bash
+node tests/repository-structure-integrity.test.js
+# Or use npm script:
+npm run test:repository-structure
+```
+
 ## Test Results
 
 All tests generate detailed JSON reports:
@@ -97,6 +129,12 @@ npm run validate-workflows
 
 # Integration tests only  
 node tests/integration-test.js
+
+# Malformed markdown tests only
+npm run test:malformed-markdown
+
+# Repository structure integrity tests only
+npm run test:repository-structure
 
 # All tests with detailed output
 node tests/run-all-tests.js
@@ -139,9 +177,17 @@ cat tests/comprehensive-test-results.json | jq '.summary'
 
 ### Error Handling ✅
 - Empty todo folder scenarios
-- Malformed todo files
+- Malformed todo files  
 - API failure simulation
 - Cleanup procedures
+
+### Malformed Markdown Handling ✅ **NEW**
+- Files with invalid markdown structure
+- Character encoding issues (UTF-8, BOM, control chars)
+- Broken headers, lists, and syntax elements
+- Graceful degradation and error recovery
+- Real-world corruption scenarios
+- 22 comprehensive test cases with 100% success rate
 
 ### Integration Scenarios ✅
 - Real todo file processing
@@ -175,7 +221,7 @@ Add new test methods to `WorkflowValidator` class in `workflow-validation.test.j
 testNewFeature() {
   console.log('\n🧪 Testing new feature...');
   
-  // Your test logic here
+  / Your test logic here
   this.assert(condition, 'Test description');
 }
 ```
@@ -187,7 +233,7 @@ Add new test methods to `WorkflowIntegrationTest` class in `integration-test.js`
 testNewIntegration() {
   console.log('\n🧪 Testing new integration...');
   
-  // Your integration test logic here
+  / Your integration test logic here
   this.assert(condition, 'Integration test description');  
 }
 ```

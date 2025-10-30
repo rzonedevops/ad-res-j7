@@ -1,16 +1,20 @@
 # ANNEXURE JF-BS1: BANK STATEMENT 16 JULY 2025 (R500K PAYMENT)
 
 **Case Reference:** 2025-137857  
-**Annexure Reference:** JF-BS1  
+**Parent Annexure:** JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)  
+**Specific Reference:** JF-BS1 (Extract from JF04)  
+**Source Document:** `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`  
 **Priority:** CRITICAL  
-**Date:** [To be completed]  
+**Date:** 16 July 2025  
 **Purpose:** Bank statement evidence showing R500,000 payment on 16 July 2025 with clear reference demonstrating routine business transaction, not unauthorized "birthday gift"
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-This annexure contains the actual bank statement showing the R500,000 transaction on 16 July 2025 that Peter Faucitt alleges was an unauthorized "birthday gift." The bank records demonstrate this was a routine business transfer with proper reference codes, identical to countless previous transactions Peter himself made using the same process.
+This annexure is a specific extract from **JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)**, focusing on the R500,000 transaction on 16 July 2025 that Peter Faucitt alleges was an unauthorized "birthday gift." The bank records in JF04 demonstrate this was a routine business transfer with proper reference codes, identical to countless previous transactions Peter himself made using the same process.
+
+**Source Evidence:** The complete July 2025 bank statement is located in `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf` (153KB). This document provides analysis and context for the specific transaction on 16 July 2025.
 
 ### Key Evidence Elements:
 
