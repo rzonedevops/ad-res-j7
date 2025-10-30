@@ -8,7 +8,9 @@
 
 ## Task Summary
 
-Successfully documented and organized comprehensive director loan account statement templates for all three directors (Peter, Jacqueline, and Daniel Faucitt). These templates are ready to be populated with actual accounting data from the company's accountant to support the responding affidavit in Case 2025-137857.
+Successfully documented and organized comprehensive director loan account statement templates for all three directors (Peter, Jacqueline, and Daniel Faucitt). **Templates have been updated to reflect the informal accounting methodology** used in the RegimA businesses, where director loan account fluctuations were tracked according to bank statements and reconciled at year-end. These templates are ready to be populated with actual accounting data based on year-end bank statement reconciliations to support the responding affidavit in Case 2025-137857.
+
+**Key Update (Current Session):** Templates updated to document that director loan accounts were always maintained **informally** as the companies owed the directors large sums of money, with fluctuations added and subtracted according to bank statements at year-end.
 
 ## Templates Collected
 
@@ -23,16 +25,17 @@ Successfully documented and organized comprehensive director loan account statem
 - Director Loan Account Statement (Account Information, Transaction Summary)
 - Detailed Transaction History (placeholder table for actual transactions)
 - Withdrawal Pattern Analysis (minimum 4 comparable examples)
-- Accounting Methodology (legal basis, standards, transaction processing)
+- **Informal Accounting Methodology** (legal basis, standards, informal transaction processing)
 - Compliance Documentation (SARS, audit documentation)
 - Strategic Importance (exposes Peter's hypocrisy)
 - Affidavit Integration Points
 - Completion Requirements
 
 **Strategic Value:**
-- Exposes Peter's hypocrisy by documenting his identical withdrawals for years
-- Establishes long-standing accepted practice
+- Exposes Peter's hypocrisy by documenting his identical **informal** withdrawals for years
+- Establishes long-standing accepted **informal** practice
 - Demonstrates financial legitimacy through credit balances
+- **Explains absence of board resolutions** - informal process never required them for any director
 - Supports pretext argument
 
 ### 2. JF-DLA2: Jax's Director Loan Account Statement
@@ -117,7 +120,7 @@ Successfully documented and organized comprehensive director loan account statem
 
 ## Supporting Documentation Already in Place
 
-### Directory README
+### Directory README.md
 **File:** `README.md` (140 lines)  
 **Status:** ✅ Complete
 
@@ -143,7 +146,7 @@ Provides:
 - Legal and regulatory compliance documentation
 - Cross-references to the three director statements
 
-### Annexures Directory README
+### Annexures Directory README.md
 **File:** `../annexures/README.md`  
 **Status:** ✅ Complete
 
@@ -287,7 +290,7 @@ The three director loan account statements are integrated with the following sup
 ### Repository Integration:
 ✅ Files located in correct directory (`evidence/annexures/`)  
 ✅ Consistent naming convention (JF-DLA1, JF-DLA2, JF-DLA3)  
-✅ Cross-referenced in directory READMEs  
+✅ Cross-referenced in directory README.mds  
 ✅ Documented in evidence index  
 ✅ Linked to affidavit sections  
 ✅ Part of comprehensive evidence collection strategy  

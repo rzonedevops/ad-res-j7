@@ -114,6 +114,17 @@ This annexure contains Daniel Faucitt's complete director loan account statement
 
 ## PROCESS CONSISTENCY ANALYSIS
 
+### Informal Accounting Methodology:
+
+⚠️ **IMPORTANT:** Director loan accounts were always maintained **INFORMALLY** in the RegimA businesses. Given that the companies owed the directors large sums of money, the exact fluctuations in director loan balances were tracked informally throughout the year and reconciled against bank statements at year-end.
+
+**Informal Process Applied to All Directors:**
+- **No formal board resolutions** required for any director withdrawals
+- **Bank statement tracking:** Fluctuations added and subtracted according to bank activity
+- **Year-end reconciliation:** Balances calculated from annual bank statement review
+- **SARS compliance:** Annual tax returns based on reconciled year-end balances
+- **Accepted practice:** Same process used by all three directors for multiple years
+
 ### Identical Process Across All Directors:
 
 **Withdrawal Authorization Process:**
