@@ -26,6 +26,13 @@ class CivilEvidenceStandardsValidation {
     this.startTime = Date.now();
     this.requirements = null;
     this.evidenceItems = [];
+    // Constants for better maintainability
+    this.SEPARATOR_LENGTH = 80;
+    this.CURRENCY_SYMBOL = 'R'; // South African Rand
+    // Causation weighting factors
+    this.TEMPORAL_PROXIMITY_WEIGHT = 0.3;
+    this.INTERVENING_FACTORS_WEIGHT = 0.3;
+    this.CAUSATION_STRENGTH_WEIGHT = 0.4;
   }
 
   assert(condition, message) {
@@ -111,8 +118,9 @@ class CivilEvidenceStandardsValidation {
     ];
     
     expectedElements.forEach(expected => {
-      const found = elements.some(element => element.includes(expected.split(' ')[0]));
-      this.assert(found, `Contains element related to "${expected.split(' ')[0]}..."`);
+      const keyword = expected.split(' ')[0];
+      const found = elements.some(element => element.includes(keyword));
+      this.assert(found, `Contains element related to "${keyword}..."`);
     });
     
     return true;
@@ -509,7 +517,7 @@ class CivilEvidenceStandardsValidation {
         validCalculations++;
       }
       
-      console.log(`   Claimed: R${scenario.claimed}, Proven: R${scenario.proven} (${proof_percentage.toFixed(1)}%) → ${evaluated_meets ? 'MEETS' : 'FAILS'}`);
+      console.log(`   Claimed: ${this.CURRENCY_SYMBOL}${scenario.claimed}, Proven: ${this.CURRENCY_SYMBOL}${scenario.proven} (${proof_percentage.toFixed(1)}%) → ${evaluated_meets ? 'MEETS' : 'FAILS'}`);
     });
     
     this.assert(validCalculations >= 2,
@@ -560,9 +568,9 @@ class CivilEvidenceStandardsValidation {
     
     causation_cases.forEach(caseItem => {
       // Calculate weighted causation strength considering all factors
-      const assessed_strength = (caseItem.temporal_proximity * 0.3 + 
-                                  (100 - caseItem.intervening_factors) * 0.3 + 
-                                  caseItem.strength * 0.4);
+      const assessed_strength = (caseItem.temporal_proximity * this.TEMPORAL_PROXIMITY_WEIGHT + 
+                                  (100 - caseItem.intervening_factors) * this.INTERVENING_FACTORS_WEIGHT + 
+                                  caseItem.strength * this.CAUSATION_STRENGTH_WEIGHT);
       const evaluated_meets = assessed_strength > 50;
       
       const correct = evaluated_meets === caseItem.meets_standard;
@@ -584,7 +592,7 @@ class CivilEvidenceStandardsValidation {
     console.log('🚀 Starting Civil Evidence Standards Validation Test Suite');
     console.log('🎯 Testing comprehensive validation for civil standard (>50% likelihood)');
     console.log('📋 Task: task_24 from feature_33 (Civil Standard - Balance of Probabilities)');
-    console.log('=' .repeat(80));
+    console.log('='.repeat(this.SEPARATOR_LENGTH));
 
     const tests = [
       () => this.testCivilStandardFramework(),
@@ -619,9 +627,9 @@ class CivilEvidenceStandardsValidation {
     const duration = ((Date.now() - this.startTime) / 1000).toFixed(2);
 
     // Print summary
-    console.log('\n' + '=' .repeat(80));
+    console.log('\n' + '='.repeat(this.SEPARATOR_LENGTH));
     console.log('📊 Civil Evidence Standards Validation Test Summary');
-    console.log('=' .repeat(80));
+    console.log('='.repeat(this.SEPARATOR_LENGTH));
     console.log(`✅ Passed: ${passedTests}/${totalTests}`);
     console.log(`❌ Failed: ${failedTests}`);
     console.log(`📈 Success Rate: ${successRate}%`);
@@ -643,7 +651,7 @@ class CivilEvidenceStandardsValidation {
       console.log('\n⚠️  Some tests failed. Review the output above.');
     }
 
-    console.log('=' .repeat(80));
+    console.log('='.repeat(this.SEPARATOR_LENGTH));
 
     return allTestsPassed;
   }
