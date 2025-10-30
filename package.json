@@ -34,6 +34,7 @@
     "test:malformed-markdown": "node tests/malformed-markdown-test.js",
     "test:file-paths": "node tests/file-path-validation.test.js",
     "validate-dates": "python3 scripts/validate_analysis_dates.py",
+    "validate-timeline-dates": "node scripts/validate-timeline-dates-comprehensive.js",
     "validate-file-paths": "node scripts/validate_file_paths.js",
     "test:repository-structure": "node tests/repository-structure-integrity.test.js",
     "test:json-validation": "python3 scripts/validate_json_files.py",
