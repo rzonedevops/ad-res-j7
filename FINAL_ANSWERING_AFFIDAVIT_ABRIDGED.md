@@ -431,6 +431,8 @@ This emergency response demonstrates:
 
 7.2.16 **Conclusion on IT Expenses:**
 
+The Second Respondent, Daniel Faucitt, as Chief Information Officer (CIO) of RegimA Worldwide Distribution, has provided a comprehensive Technical Infrastructure Affidavit (**Annexure DF1**) providing detailed technical justification, industry benchmarks, and expert opinion on all IT expenses.
+
 The IT expenses totaling R6,738,007.47 (2024) and R2,116,159.47 (2025 YTD) are:
 - **Legitimate** business expenses for international operations across 37 jurisdictions;
 - **Necessary** for regulatory compliance (CPNP, GDPR, PCI-DSS);
@@ -779,6 +781,7 @@ The Applicant's allegation that a board resolution was required is inconsistent 
 - JF-RP2: Regulatory risk analysis and penalty assessment
 
 **JF-DAN-IT Series (IT Infrastructure - Daniel's Technical Evidence):**
+- DF1: Daniel Faucitt Technical Infrastructure Affidavit (comprehensive CIO expert opinion)
 - JF-DAN-IT1: Technical architecture diagrams
 - JF-DAN-IT2: System specification documents
 - JF-DAN-IT3: Vendor invoices with technical details (Mar-Apr 2025 analysis)
