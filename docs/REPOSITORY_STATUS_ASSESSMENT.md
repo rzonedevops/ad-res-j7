@@ -172,7 +172,7 @@ Multiple documentation files have been added or updated:
 
 Many documents now have accompanying JSON files for structured data representation:
 
-- All README files have `.json` counterparts
+- All README.md files have `.json` counterparts
 - Analysis documents have `.json` versions
 - Evidence indexes have `.json` formats
 
@@ -357,14 +357,14 @@ Seven strategic arguments with supporting evidence:
 
 ### Critical Evidence Gaps
 
-Based on the jax-response README, the following critical evidence is still needed:
+Based on the jax-response README.md, the following critical evidence is still needed:
 
 #### Must-Have (Not Yet Confirmed):
 - ☐ Responsible Person documentation (37 jurisdictions) - JF-RP1
 - ☐ Regulatory risk analysis - JF-RP2
 - ☐ Director loan account statements (all 3 directors) - JF-DLA1, JF-DLA2, JF-DLA3
 - ☐ Peter's own withdrawals (minimum 4 examples) - JF-PA1 through JF-PA4
-- ☐ R500K payment bank statement (16 July 2025) - JF-BS1
+- ☑ R500K payment bank statement (16 July 2025) - JF-BS1 ✅ OBTAINED (PDF on file)
 - ☐ JF5 draft agreement (initial version reviewed)
 - ☐ JF5 final agreement (signed version with changes)
 - ☐ Comparison document highlighting all changes
@@ -391,9 +391,11 @@ Based on the jax-response README, the following critical evidence is still neede
 
 ### Repository Maintenance
 
-1. **Consolidate Directories** - Consider merging `jax-response/` and `jax-dan-response/`
+1. ✅ **Consolidate Directories** - **COMPLETED (October 19, 2025)** - Merged `jax-response/` and `jax-dan-response/` into unified structure
+   - **Documentation:** [JAX Response Directory Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
+   - **Backups:** Original directories preserved at `/backups/pre-consolidation/`
 2. **Archive Old Versions** - Move v1-v2 to archive directory
-3. **Update Documentation** - Ensure all README files reflect current state
+3. **Update Documentation** - Ensure all README.md files reflect current state
 4. **Clean Up Temporary Files** - Remove test artifacts and temporary files
 5. **Optimize File Structure** - Reduce duplication between JSON and Markdown
 
@@ -437,7 +439,7 @@ The **cogpy/ad-res-j7** repository has evolved from a basic case management stru
 2. **Forensic Analysis Framework** - R10.227M+ in documented losses
 3. **Strategic Legal Arguments** - Seven key arguments with supporting evidence
 4. **Version Control** - Five affidavit versions with tracked changes
-5. **Professional Documentation** - Extensive README files and guides
+5. **Professional Documentation** - Extensive README.md files and guides
 6. **Testing Infrastructure** - Workflow validation and integration tests
 7. **Data Accessibility** - Both human-readable (MD) and machine-readable (JSON) formats
 
@@ -446,7 +448,7 @@ The **cogpy/ad-res-j7** repository has evolved from a basic case management stru
 1. **Evidence Gaps** - Critical evidence still needs to be gathered
 2. **Directory Consolidation** - Potential duplication between jax-response and jax-dan-response
 3. **File Organization** - Some temporary files and artifacts need cleanup
-4. **Documentation Updates** - Some README files may be outdated
+4. **Documentation Updates** - Some README.md files may be outdated
 5. **Annexure Preparation** - Evidence needs to be formatted for court submission
 
 ### Readiness Assessment

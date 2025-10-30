@@ -5,7 +5,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Package manager files
-package-lock.json
+# Note: package-lock.json is now committed for CI caching support
+# package-lock.json
 yarn.lock
 
 # Temporary files
@@ -35,15 +36,57 @@ Thumbs.db
 tests/*-results.json
 tests/sample-todos/
 
+# Temporary workflow testing files
+extracted-issue-generator.js
+todo-issues.json
+todo-issues-test.json
+structured-todo.json
+validation-report.json
+json-parsing-validation-report.json
+
 # Test data archive directory (prevents merge conflicts)
 test-data/
 !test-data/.gitkeep
+
+# Temporary summary and report files (should be generated dynamically)
+# Exclude auto-generated summaries but allow important documentation
+*SUMMARY*.md
+*REPORT*.md
+*_SUMMARY.md
+*_REPORT.md
+!FEATURE_ISSUE_GENERATION_SUMMARY.md
+!HIERARCHICAL_ISSUES_SUMMARY.md
+!IMPLEMENTATION_SUMMARY.md
+duplicate-cleanup-report.json
+specific-duplicates-summary.json
+repository_tree.txt
 
 # Build outputs
 dist/
 build/
 *.log
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
 # Auto-generated workflow scripts (temporary exclusion)
 file-converter.js
 ocr-file-converter.js.merge-marker
+__pycache__/
+
+# Local analysis clones (keep untracked to avoid multiple Git repos)
+ad-hypergraph-mapping/repos/
+repo-analysis/ad-res-j7/
+repo-analysis/analysss/
+repo-analysis/analyticase/
+repo-analysis/avtomaatoctory/
+cross_reference_validation_report.json
+
+# Generated parser output files
+hierarchy-ast.json
+parsed-*.json
+hierarchy-stats.json
+hierarchy-report.json
+feature-issues-report.json

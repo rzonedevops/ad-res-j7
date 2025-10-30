@@ -10,7 +10,7 @@ This document provides accounting records demonstrating proper allocation of tra
 
 ## Background
 
-The RegimA businesses maintain director loan accounts for all directors in accordance with standard accounting practices for close corporations and private companies. These accounts track amounts owed by the companies to directors (credit balances) and amounts owed by directors to the companies (debit balances).
+The RegimA businesses maintain director loan accounts for all directors. **Importantly, these accounts were always maintained INFORMALLY** given that the companies owed the directors large sums of money. Exact fluctuations in balances were tracked informally throughout the year and reconciled against bank statements at year-end, following standard practices for small close corporations.
 
 ---
 
@@ -22,17 +22,20 @@ Director loan accounts operate under the following principles:
 
 1. **Credit Balance (Company owes Director)**: When directors advance funds to the company, pay company expenses personally, or provide services without immediate compensation
 2. **Debit Balance (Director owes Company)**: When directors withdraw funds, receive payments, or take distributions
-3. **Reconciliation**: Regular accounting reconciliation ensures all transactions are properly allocated
-4. **Tax Treatment**: Director loan accounts are tax-neutral; they represent inter-company/director obligations rather than income or expenses
+3. **Informal Tracking**: Balances tracked informally throughout the year based on bank statement activity
+4. **Year-End Reconciliation**: Annual reconciliation from bank statements for SARS reporting
+5. **Tax Treatment**: Director loan accounts are tax-neutral; they represent inter-company/director obligations rather than income or expenses
 
-### 1.2 Transaction Processing Method
+### 1.2 Informal Transaction Processing Method
 
-For the RegimA businesses, director loan account transactions are processed as follows:
+For the RegimA businesses, director loan account transactions were processed informally:
 
-1. **Bank Reference Method**: Transactions are marked on bank statements with clear references (e.g., "Director Loan - Daniel", "DL - Peter", "Director withdrawal - Jax")
-2. **Automatic Allocation**: Bank feed integration with accounting software (Sage) automatically allocates transactions based on reference coding
-3. **Monthly Reconciliation**: Accountant reviews and reconciles all director loan account transactions monthly
-4. **No Board Resolution Requirement**: For routine director loan account transactions, formal board resolutions are not required under the established practice of these close corporations
+1. **Direct Bank Transfers**: Directors made withdrawals via direct bank transfers without formal board resolutions
+2. **Bank Statement Tracking**: Fluctuations added and subtracted according to bank statement activity
+3. **Year-End Reconciliation**: Accountant reconciled balances annually based on bank statement review (not monthly)
+4. **No Board Resolution Requirement**: Informal process meant no board resolutions were required or used for any director withdrawals
+5. **Consistent Practice**: Identical informal process applied to all three directors for multiple years
+6. **SARS Compliance**: Annual tax returns filed based on reconciled year-end balances
 
 ---
 
