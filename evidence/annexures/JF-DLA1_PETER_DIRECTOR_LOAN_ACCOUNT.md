@@ -92,13 +92,23 @@ This annexure contains Peter Faucitt's complete director loan account statement 
 - **South African GAAP:** Director loan accounting treatment
 - **SAICA Guidelines:** Close Corporation accounting
 
-### Transaction Processing:
+### Informal Transaction Processing:
 
-1. **Director Withdrawal:** Recorded as debit to Director Loan Account
-2. **Interest Calculation:** [Rate]% per annum on outstanding balance
-3. **Periodic Reconciliation:** Monthly/quarterly account reconciliation
-4. **SARS Reporting:** Annual compliance with tax obligations
-5. **Audit Trail:** Complete documentation for all transactions
+⚠️ **IMPORTANT:** Director loan accounts were always maintained **INFORMALLY** in the RegimA businesses. Given that the companies owed the directors large sums of money, the exact fluctuations in director loan balances were tracked informally throughout the year and reconciled against bank statements at year-end.
+
+**Informal Methodology:**
+1. **Director Withdrawals:** Processed directly via bank transfers without formal board resolutions
+2. **Tracking:** Fluctuations added and subtracted according to bank statement activity
+3. **Year-End Reconciliation:** Balances calculated and adjusted based on annual bank statement review
+4. **SARS Reporting:** Annual tax returns filed based on reconciled year-end balances
+5. **Consistent Practice:** Same informal process applied to all three directors for multiple years
+
+**Key Characteristics:**
+- No formal board resolutions required for withdrawals
+- No monthly ledger reconciliations (only year-end)
+- Bank statements serve as primary source documentation
+- All directors used identical informal process
+- Process accepted by all parties for years until current dispute
 
 ---
 
