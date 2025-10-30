@@ -432,7 +432,7 @@ RegimA maintains enterprise-grade security infrastructure:
 5.4.1 Inadequate IT infrastructure would result in:
 
 - **Lost revenue**: Unable to process international orders
-- **Regulatory fines**: GDPR violations (up to €20 million), PCI-DSS violations (up to $500,000 per incident)
+- **Regulatory fines**: GDPR violations (up to €20 million / approximately R400M), PCI-DSS violations (up to $500,000 / approximately R10M per incident)
 - **Data breaches**: Average cost of R50M+ in South Africa
 - **Business shutdown**: Loss of market access and customer trust
 - **Legal liability**: Breach of Responsible Person duties
@@ -481,9 +481,9 @@ RegimA maintains enterprise-grade security infrastructure:
 6.3.1 The financial impact of the interdict would include:
 
 - **Lost revenue**: R500,000+ per week in online sales
-- **Regulatory fines**: Potential €20 million+ for GDPR violations
+- **Regulatory fines**: Potential €20 million+ (approximately R400M+) for GDPR violations
 - **Customer refunds**: R2M+ for unfulfilled orders
-- **Permanent customers loss**: 80% of customer base
+- **Permanent customer loss**: 80% of customer base
 - **Business valuation loss**: R50M+ in business value
 
 6.3.2 This represents **permanent and irreparable harm** to the business.
@@ -497,7 +497,7 @@ RegimA maintains enterprise-grade security infrastructure:
 - Third-party IT consultants would require months to learn the systems
 - Regulatory compliance cannot be delegated to non-technical personnel
 
-6.4.2 The Applicant's suggestion that operations can continue without my involvement demonstrates a **fundamental misunderstanding** of modern e-commerce operations.
+6.4.2 The Applicant's suggestion that operations can continue without my involvement reflects an incomplete understanding of the technical complexity and operational requirements of modern international e-commerce operations.
 
 ---
 
