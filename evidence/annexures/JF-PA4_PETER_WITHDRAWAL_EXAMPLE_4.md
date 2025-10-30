@@ -143,8 +143,9 @@ This annexure provides the fourth and final required example of Peter Faucitt us
 - **2023:** 5 withdrawals, R400,000, no board resolutions, company owed CR R1.9-2.0M - **JF-PA3**
 - **2024:** 5 withdrawals, R360,000, no board resolutions, company owed CR R1.7-1.9M
 - **10 May 2025:** R95,000, no board resolution, company owed CR R1.82M
+- **7 June 2025:** **Peter secretly cancels company cards**, forcing all company payments onto Dan's personal backup card
 - **15 March 2025:** R125,000, no board resolution - **JF-PA1**
-- **16 July 2025:** Daniel uses **Peter's established process** (R500,000)
+- **16 July 2025:** Daniel uses **Peter's established process** (R500,000) - **partial repayment of director loans to RegimA Worldwide** + **RegimA Skin owed Rezonance R1.0-1.8M for IT services since Feb 2023**
 - **20 July 2025:** R120,000, no board resolution, 4 days after Daniel - **JF-PA2**
 - **5 August 2025:** Peter objects to **his own established pattern**
 
@@ -152,6 +153,9 @@ This annexure provides the fourth and final required example of Peter Faucitt us
 - **6 years** of comfortable use by Peter (2020-2025)
 - **27 withdrawals** without single board resolution
 - **67 days** between Peter's May 2025 withdrawal and Daniel's July withdrawal
+- **7 June 2025:** Peter cancels company cards, forcing payments to Dan's personal card
+- **RegimA Skin owed Rezonance R1.0-1.8M** for IT services since Feb 2023 (**over double** the disputed R500K)
+- **Daniel's R500K** was partial repayment of director loans to RegimA Worldwide
 - **4 days** between Daniel's withdrawal and Peter's next withdrawal
 - **Strategic timing** of objection correlates with settlement pressure
 - **No procedural changes** between any of Peter's 27 withdrawals and Daniel's identical transaction
@@ -317,4 +321,8 @@ This annexure **COMPLETES THE DECISIVE EVIDENCE** by:
 
 ---
 
-**CRITICAL NOTE:** This comprehensive pattern analysis EXCEEDS the minimum required evidence and creates an UNASSAILABLE legal position. Peter made 27 withdrawals totaling R2,055,000 from 2020-2025, all using the identical informal process without board resolutions. This is 4.11 TIMES MORE than Daniel's single R500,000 withdrawal that Peter complained about. Throughout this 6-year period, the company owed Peter consistently large amounts (CR R1.6M-R2.0M), which justified the informal withdrawal process. Year-end bank statements from 2020-2025 consistently show companies owing directors substantial amounts, supporting the established practice. Peter's four documented instances (JF-PA1 to JF-PA4) meet the affidavit minimum, but the full 27-withdrawal pattern makes his objection to Daniel's use of the identical process both hypocritical and legally impossible to sustain. The evidence is overwhelming and decisive.
+**CRITICAL NOTE:** This comprehensive pattern analysis EXCEEDS the minimum required evidence and creates an UNASSAILABLE legal position. Peter made 27 withdrawals totaling R2,055,000 from 2020-2025, all using the identical informal process without board resolutions. This is 4.11 TIMES MORE than Daniel's single R500,000 withdrawal that Peter complained about. 
+
+**Additional Critical Context:** RegimA Skin Treatments owed Rezonance (Dan's company) R1.0-1.8 million for IT services since February 2023 - **over double the disputed R500K amount**. Daniel's R500K withdrawal was partial repayment of director loans Dan made to RegimA Worldwide, triggered after Peter secretly cancelled company cards on 7 June 2025, forcing all company payments onto Dan's personal backup card. 
+
+Throughout this 6-year period, companies owed Peter consistently large amounts (CR R1.6M-R2.0M) and owed Dan over R1.0-1.8M plus director loans, which fully justified the informal withdrawal process. Year-end bank statements from 2020-2025 consistently show companies owing directors substantial amounts, supporting the established practice. Peter's selective objection to Daniel's R500K (while owing Dan far more than the disputed amount and having made 27 withdrawals himself totaling R2.06M) is both hypocritical and legally impossible to sustain. The evidence is overwhelming and decisive.

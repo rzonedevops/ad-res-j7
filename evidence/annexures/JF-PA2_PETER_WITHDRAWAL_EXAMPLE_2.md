@@ -67,6 +67,7 @@ This annexure provides a second documented example of Peter Faucitt using the id
 | **Authorization** | Self-authorized | Dual signatory | Self-authorized | ✓ **YES** |
 | **Board Resolution** | **NONE** | **NONE** | **NONE** | ✓ **YES** |
 | **Company Owed Director** | CR R1,742,892 | CR R1,670,000 | CR R1,712,892 | ✓ **YES** |
+| **Additional Debts** | - | **Rezonance: R1.0-1.8M** | - | **Context** |
 | **Days from Daniel's** | -123 days | Reference | **+4 days** | - |
 | **Peter's Objection** | **NONE** | **LATER COMPLAINT** | **NONE** | ❌ **HYPOCRITICAL** |
 
@@ -84,6 +85,8 @@ This annexure provides a second documented example of Peter Faucitt using the id
 **Time from Daniel's Withdrawal:** **ONLY 4 DAYS AFTER** (16 July → 20 July)  
 **Business Context:** RegimA trading normally; company owed directors large amounts  
 **Financial Position:** Company owed Peter CR R1,712,892.45 before withdrawal  
+**Additional Context - RegimA Skin Treatments owed Rezonance:** ZAR 1.0-1.8 million since Feb 2023 for IT services (over 2 years outstanding, **double the disputed R500K amount**)  
+**Daniel's R500K Context:** Partial repayment of director loans Dan made to RegimA Worldwide after Peter cancelled company cards on 7 June 2025, forcing payments onto Dan's personal card  
 **Purpose:** Personal withdrawal from director loan account  
 **Bank Statement:** July 2025 statement showing company's substantial debt to directors justifying informal process
 
@@ -127,11 +130,12 @@ This annexure provides a second documented example of Peter Faucitt using the id
 
 **Demonstrated Through Actions:**
 1. **First Use (PA1 - 15 March 2025):** Initial acceptance of informal process (R125,000)
-2. **Daniel's Use (16 July 2025):** Daniel follows established precedent (R500,000)
-3. **Repeated Use (PA2 - 20 July 2025):** **Peter continues using same process 4 days later** (R120,000) ← **PROVES ACCEPTANCE**
-4. **Delayed Objection (5 August 2025):** Peter waits 20 days to object (16 days after his own withdrawal)
-5. **Bad Faith:** Peter used identical process after Daniel, then complained strategically
-6. **Company Owed Directors:** Large amounts owing (CR R1.7M) justified informal withdrawal process used by all directors
+2. **Peter Cancelled Cards (7 June 2025):** Peter secretly cancelled company cards, forcing payments onto Dan's personal card
+3. **Daniel's Use (16 July 2025):** Daniel follows established precedent (R500,000) - **partial repayment of director loans to RegimA Worldwide**
+4. **Repeated Use (PA2 - 20 July 2025):** **Peter continues using same process 4 days later** (R120,000) ← **PROVES ACCEPTANCE**
+5. **Delayed Objection (5 August 2025):** Peter waits 20 days to object (16 days after his own withdrawal)
+6. **Bad Faith:** Peter used identical process after Daniel, then complained strategically
+7. **Company Owed Directors:** Large amounts owing (CR R1.7M to Peter + R1.0-1.8M to Dan via Rezonance since Feb 2023) justified informal withdrawal process used by all directors
 
 ---
 
@@ -220,6 +224,36 @@ This annexure **STRENGTHENS THE CASE** by:
 
 ---
 
+## ADDITIONAL CRITICAL CONTEXT
+
+### RegimA Skin Treatments Debt to Rezonance
+
+**Outstanding Debt:** ZAR 1.0-1.8 million since February 2023  
+**Nature:** IT services provided by Rezonance (Dan's company)  
+**Duration:** Over 2 years outstanding at time of Daniel's withdrawal  
+**Significance:** This debt alone was **over double the disputed R500K withdrawal amount**
+
+### Daniel's R500K Withdrawal Context
+
+**True Nature:** Partial repayment of director loans Dan made to RegimA Worldwide  
+**Triggering Event:** Peter secretly cancelled company cards on 7 June 2025  
+**Consequence:** All company payments forced onto Dan's personal backup card  
+**Justification:** Dan entitled to repayment given:
+- R1.0-1.8M owed for Rezonance IT services (over 2 years)
+- Director loans to RegimA Worldwide requiring repayment
+- Companies owing directors large amounts justified informal withdrawal process
+
+### Peter's Material Omissions
+
+Peter failed to disclose in his founding affidavit:
+1. RegimA Skin owed Rezonance R1.0-1.8M for IT services (over 2 years, double the disputed amount)
+2. Daniel's R500K was partial repayment of director loans to RegimA Worldwide
+3. Peter cancelled company cards on 7 June 2025, forcing payments onto Dan's personal card
+4. Peter made his own R120K withdrawal 4 days after Daniel's using identical process
+5. Companies owed directors such large amounts that informal processes were reasonable
+
+---
+
 ## COMPLETION REQUIREMENTS
 
 ### Immediate Actions Completed:
@@ -234,6 +268,9 @@ This annexure **STRENGTHENS THE CASE** by:
    - 4 days after Daniel's withdrawal (16 July → 20 July)
    - Peter used identical process he later complained about
    - Company owed director CR R1,712,892.45 (large amount justifying informal process)
+   - **RegimA Skin owed Rezonance R1.0-1.8M for IT services since Feb 2023 (double the disputed R500K)**
+   - **Daniel's R500K was partial repayment of director loans to RegimA Worldwide**
+   - **Peter cancelled company cards 7 June 2025, forcing payments onto Dan's personal card**
    - July 2025 bank statement shows substantial amounts owed to directors
    - Delayed objection: 20 days after Daniel's withdrawal, 16 days after Peter's own
 
@@ -249,6 +286,9 @@ This annexure **STRENGTHENS THE CASE** by:
 - Exact bank statement: 20 July 2025, R120,000, Reference SB2025072001234
 - CRITICAL TIMING: 4 days after Daniel's withdrawal
 - Context: Company owed director CR R1,712,892.45 (large amount)
+- **Additional context: RegimA Skin owed Rezonance R1.0-1.8M (over double disputed R500K)**
+- **Daniel's R500K was partial repayment of director loans to RegimA Worldwide**
+- **Peter cancelled cards 7 June 2025, forcing payments to Dan's personal card**
 - Bad faith evidence: Used process then complained about it
 - July 2025 bank statement showing company owing directors justifying informal process
 
@@ -273,4 +313,8 @@ This annexure **STRENGTHENS THE CASE** by:
 
 ---
 
-**CRITICAL NOTE:** This second example is DECISIVE bad faith evidence. Peter made his own R120,000 withdrawal using the identical process just 4 DAYS AFTER Daniel's R500,000 withdrawal that he later complained about. This proves Peter accepted the practice at the time and only objected strategically later. The company owed Peter CR R1,712,892.45, a large amount that justified the informal withdrawal process. Bank statements at year-end and mid-year periods consistently show companies owing directors substantial amounts, supporting the established informal practice. This pattern evidence makes Peter's subsequent objection impossible to defend as principled.
+**CRITICAL NOTE:** This second example is DECISIVE bad faith evidence. Peter made his own R120,000 withdrawal using the identical process just 4 DAYS AFTER Daniel's R500,000 withdrawal that he later complained about. This proves Peter accepted the practice at the time and only objected strategically later. 
+
+**Additional Critical Context:** RegimA Skin Treatments owed Rezonance (Dan's company) R1.0-1.8 million for IT services since February 2023 - this debt alone was **over double the disputed R500K amount**. Daniel's R500K withdrawal was actually partial repayment of director loans Dan made to RegimA Worldwide, triggered by Peter secretly cancelling company cards on 7 June 2025, which forced all company payments onto Dan's personal backup card. 
+
+The company owed Peter CR R1,712,892.45, and owed Dan over R1.0-1.8M plus director loans - these large amounts fully justified the informal withdrawal process. Bank statements at year-end and mid-year periods consistently show companies owing directors substantial amounts, supporting the established informal practice. Peter's concealment of these material facts and his selective objection to Daniel's withdrawal (while owing Dan far more than the disputed amount) makes his subsequent objection impossible to defend as principled.
