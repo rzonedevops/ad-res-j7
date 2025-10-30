@@ -2,7 +2,7 @@
 ## Case 2025-137857: Jacqueline Faucitt and Daniel James Faucitt (Respondents)
 
 **Date**: October 2025  
-**Total Annexures**: 10 (JF1 through JF10)  
+**Total Annexures**: 12 (JF1 through JF12)  
 **Total Size**: ~40 MB
 
 ---
@@ -371,6 +371,79 @@ This annexure contains the **single most important piece of evidence** in the en
 
 ---
 
+## ANNEXURE JF11: MEDICAL COERCION EVIDENCE
+
+**Location**: `ANNEXURES/JF11/`  
+**Size**: 9.3 KB  
+**Priority**: **HIGH**
+
+### Contents
+
+1. **MED-COERCIVE.md** - Medical coercion evidence analysis
+   - Elliott Attorneys' September 2, 2025 correspondence
+   - Evidence of weaponized medical testing demands
+   - False pretexts for psychiatric evaluation
+   - Criminal conspiracy to discredit witnesses
+
+### Significance
+
+**Proves**:
+- ✅ Medical testing weaponized to silence crime reporting
+- ✅ Attorneys coordinated discrediting scheme
+- ✅ False narratives created (forgetfulness, behavioral changes)
+- ✅ Extortion via testing as "condition" for mediation
+
+**Demonstrates**:
+- Pattern of obstruction of justice
+- Conspiracy to discredit crime witnesses
+- False allegations to force psychiatric evaluation
+- Coordination between opposing attorneys
+
+**Criminal Implications**:
+- Conspiracy to obstruct justice
+- Using false medical claims to discredit witnesses
+- Extortion through coerced medical testing
+- Professional misconduct by attorneys
+
+---
+
+## ANNEXURE JF12: CRIMINAL MATTER SAFETY GUIDE
+
+**Location**: `ANNEXURES/JF12/`  
+**Size**: 10.3 KB  
+**Priority**: **HIGH**
+
+### Contents
+
+1. **criminal_matter_safety_guide.md** - Safety and legal response plan
+   - Immediate danger assessment protocols
+   - Hawks (Priority Crimes Unit) contact information
+   - Legal reality of void settlements
+   - R12 million theft evidence documentation
+   - Proper withdrawal process through law enforcement
+
+### Significance
+
+**Proves**:
+- ✅ R12,330,131.18 stolen while accounts supposedly frozen
+- ✅ Theft deliberately hidden at September 18 mediation
+- ✅ Criminal conspiracy involving attorneys
+- ✅ Death threats suppressed during mediation
+
+**Demonstrates**:
+- Systematic theft and evidence suppression
+- Coordination to conceal criminal activity
+- Pattern of intimidation and coercion
+- Need for law enforcement intervention
+
+**Legal Framework**:
+- Ex turpi causa non oritur actio (no action from illegal cause)
+- Void settlements due to fraud and perjury
+- Criminal reporting procedures
+- Safety protocols for witnesses
+
+---
+
 ## SUMMARY OF ANNEXURES
 
 ### By Priority
@@ -385,6 +458,8 @@ This annexure contains the **single most important piece of evidence** in the en
 - **JF6**: Court Documents and Filings - 7.4 MB
 - **JF8**: Evidence Packages (May-October 2025) - 5.8 MB
 - **JF9**: Timeline Analysis - 128 KB
+- **JF11**: Medical Coercion Evidence - 9.3 KB
+- **JF12**: Criminal Matter Safety Guide - 10.3 KB
 
 **MEDIUM (Corroborating Evidence)**:
 - **JF5**: Correspondence Evidence (JF8 Series) - 132 KB
@@ -393,9 +468,9 @@ This annexure contains the **single most important piece of evidence** in the en
 
 ### Total Evidence
 
-- **Total Annexures**: 10
+- **Total Annexures**: 12
 - **Total Size**: ~40 MB
-- **Total Files**: 208+ files
+- **Total Files**: 220+ files
 - **Evidence Span**: 2017-2025 (8 years)
 
 ### Evidence Strength Assessment
@@ -412,6 +487,8 @@ This annexure contains the **single most important piece of evidence** in the en
 | JF8 | Evidence packages | **MEDIUM** | ⚠️ Possible |
 | JF9 | Timeline analysis | **STRONG** | ⚠️ Difficult |
 | JF10 | Accounting records | **STRONG** | ⚠️ Difficult |
+| JF11 | Medical coercion evidence | **HIGH** | ⚠️ Difficult |
+| JF12 | Criminal safety guide | **HIGH** | ⚠️ Difficult |
 
 ---
 
@@ -491,8 +568,8 @@ This annexure bundle provides **comprehensive, irrefutable evidence** that:
 **Document Prepared By**: Legal Team  
 **Date**: October 2025  
 **Case**: 2025-137857  
-**Total Annexures**: 10  
-**Total Evidence**: 208+ files, ~40 MB
+**Total Annexures**: 12  
+**Total Evidence**: 220+ files, ~40 MB
 
 ---
 
