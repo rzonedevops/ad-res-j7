@@ -1,0 +1,890 @@
+{
+  "timestamp": "2025-10-30T13:37:55.330Z",
+  "summary": {
+    "contradictions": 0,
+    "warnings": 16,
+    "info": 45
+  },
+  "contradictions": [],
+  "warnings": [
+    {
+      "type": "amount_difference",
+      "paraId": "10_5-10_10",
+      "category": "Sage",
+      "jaxAmounts": [
+        "R140,000",
+        "R280,000",
+        "R500,000",
+        "R1,000,000",
+        "R300,000",
+        "R600,000",
+        "R2,000,000",
+        "R5,000,000"
+      ],
+      "danAmounts": [
+        "R3",
+        "R7",
+        "R12",
+        "R24",
+        "R50",
+        "R75",
+        "R3",
+        "R7",
+        "R500",
+        "R3",
+        "R7"
+      ],
+      "message": "Different amounts found for Sage - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "10_5-10_10",
+      "category": "IT expense",
+      "jaxAmounts": [
+        "R8",
+        "R500",
+        "R500"
+      ],
+      "danAmounts": [
+        "R8.85",
+        "R3",
+        "R8.85",
+        "R3",
+        "R7",
+        "R8.85",
+        "R3",
+        "R7"
+      ],
+      "message": "Different amounts found for IT expense - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "entity_name_variations",
+      "paraId": "10_5-10_10",
+      "variations": [
+        {
+          "base": "RegimA",
+          "jaxForms": [
+            "RegimA Zone",
+            "RegimA SA"
+          ],
+          "danForms": [
+            "RegimA Zone"
+          ],
+          "allForms": [
+            "RegimA Zone",
+            "RegimA SA"
+          ]
+        }
+      ],
+      "message": "Entity names have minor variations - verify consistency"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "Shopify",
+      "jaxAmounts": [
+        "R300",
+        "R12",
+        "R2",
+        "R12",
+        "R19",
+        "R450,000",
+        "R600,000",
+        "R12",
+        "R19"
+      ],
+      "danAmounts": [
+        "R450,000",
+        "R600,000",
+        "R,",
+        "R,"
+      ],
+      "message": "Different amounts found for Shopify - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "AWS",
+      "jaxAmounts": [
+        "R400",
+        "R600,000",
+        "R1,200,000"
+      ],
+      "danAmounts": [
+        "R600,000",
+        "R1,200,000",
+        "R,",
+        "R,"
+      ],
+      "message": "Different amounts found for AWS - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "Sage",
+      "jaxAmounts": [
+        "R30",
+        "R24,000",
+        "R72,000"
+      ],
+      "danAmounts": [
+        "R24,000",
+        "R72,000",
+        "R300",
+        "R600",
+        "R300",
+        "R600",
+        "R1,800",
+        "R3,600",
+        "R21,600",
+        "R43,200",
+        "R200",
+        "R400"
+      ],
+      "message": "Different amounts found for Sage - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "Microsoft",
+      "jaxAmounts": [
+        "R60",
+        "R60,000",
+        "R120,000"
+      ],
+      "danAmounts": [
+        "R60,000",
+        "R120,000",
+        "R500",
+        "R600",
+        "R240",
+        "R10",
+        "R,"
+      ],
+      "message": "Different amounts found for Microsoft - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "Adobe",
+      "jaxAmounts": [
+        "R40",
+        "R48,000",
+        "R144,000"
+      ],
+      "danAmounts": [
+        "R48,000",
+        "R144,000",
+        "R48",
+        "R144",
+        "R1",
+        "R2",
+        "R,"
+      ],
+      "message": "Different amounts found for Adobe - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_2-7_5",
+      "category": "IT expense",
+      "jaxAmounts": [
+        "R300",
+        "R6,738,007.47",
+        "R2,116,159.47",
+        "R2,116,159.47",
+        "R2",
+        "R12",
+        "R19",
+        "R6,738,007",
+        "R15",
+        "R6,738,007.47",
+        "R2,116,159.47",
+        "R2,116,159.47",
+        "R2",
+        "R12",
+        "R19",
+        "R2",
+        "R12",
+        "R19",
+        "R,",
+        "R8"
+      ],
+      "danAmounts": [
+        "R8,854,166.94",
+        "R8,854,166.94",
+        "R,"
+      ],
+      "message": "Different amounts found for IT expense - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "entity_name_variations",
+      "paraId": "7_2-7_5",
+      "variations": [
+        {
+          "base": "RegimA",
+          "jaxForms": [
+            "RegimA SA",
+            "RegimA WW",
+            "RegimA Worldwide Distribution"
+          ],
+          "danForms": [
+            "RegimA Worldwide Distribution (Pty) Ltd",
+            "RegimA Worldwide Distribution",
+            "RegimA SA",
+            "RegimA WW"
+          ],
+          "allForms": [
+            "RegimA SA",
+            "RegimA WW",
+            "RegimA Worldwide Distribution",
+            "RegimA Worldwide Distribution (Pty) Ltd"
+          ]
+        },
+        {
+          "base": "Sage",
+          "jaxForms": [
+            "Sage",
+            "Sage Accounting",
+            "Sage accounting"
+          ],
+          "danForms": [
+            "Sage",
+            "Sage Accounting",
+            "Sage accounting"
+          ],
+          "allForms": [
+            "Sage",
+            "Sage Accounting",
+            "Sage accounting"
+          ]
+        }
+      ],
+      "message": "Entity names have minor variations - verify consistency"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_6",
+      "category": "Shopify",
+      "jaxAmounts": [
+        "R140",
+        "R280"
+      ],
+      "danAmounts": [
+        "R300",
+        "R500",
+        "R800",
+        "R1",
+        "R500",
+        "R800",
+        "R50",
+        "R75",
+        "R140,000",
+        "R280,000",
+        "R5,000",
+        "R10,000",
+        "R140,000",
+        "R280,000",
+        "R5,000",
+        "R10,000",
+        "R80,000",
+        "R150,000",
+        "R40,000",
+        "R80,000",
+        "R60,000",
+        "R120,000",
+        "R3",
+        "R6.75"
+      ],
+      "message": "Different amounts found for Shopify - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_6",
+      "category": "Sage",
+      "jaxAmounts": [
+        "R140",
+        "R280",
+        "R2.94",
+        "R6.88"
+      ],
+      "danAmounts": [
+        "R100,000",
+        "R500,000",
+        "R0.00",
+        "R3.32",
+        "R7.38",
+        "R500",
+        "R3",
+        "R7",
+        "R3",
+        "R6.75",
+        "R320",
+        "R630",
+        "R360",
+        "R810",
+        "R3.68",
+        "R8.19",
+        "R500",
+        "R3.68",
+        "R8.19",
+        "R3",
+        "R7",
+        "R1.36",
+        "R500",
+        "R3",
+        "R6.75",
+        "R3",
+        "R7"
+      ],
+      "message": "Different amounts found for Sage - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "entity_name_variations",
+      "paraId": "7_6",
+      "variations": [
+        {
+          "base": "RegimA",
+          "jaxForms": [
+            "RegimA SA",
+            "RegimA Zone"
+          ],
+          "danForms": [
+            "RegimA Worldwide Distribution (Pty) Ltd",
+            "RegimA Zone",
+            "RegimA Worldwide Distribution"
+          ],
+          "allForms": [
+            "RegimA SA",
+            "RegimA Zone",
+            "RegimA Worldwide Distribution (Pty) Ltd",
+            "RegimA Worldwide Distribution"
+          ]
+        }
+      ],
+      "message": "Entity names have minor variations - verify consistency"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_7-7_8",
+      "category": "director loan",
+      "jaxAmounts": [
+        "R500",
+        "R500",
+        "R500",
+        "R500,000",
+        "R545,000",
+        "R675,000",
+        "R545,000",
+        "R675,000",
+        "R3.14",
+        "R500",
+        "R500",
+        "R4.36"
+      ],
+      "danAmounts": [
+        "R500",
+        "R500",
+        "R500"
+      ],
+      "message": "Different amounts found for director loan - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "amount_difference",
+      "paraId": "7_9-7_11",
+      "category": "Shopify",
+      "jaxAmounts": [
+        "R140",
+        "R280"
+      ],
+      "danAmounts": [
+        "R140,000",
+        "R280,000",
+        "R140,000",
+        "R280,000",
+        "R80,000",
+        "R150,000",
+        "R40,000",
+        "R80,000",
+        "R60,000",
+        "R120,000",
+        "R320",
+        "R630",
+        "R30",
+        "R45",
+        "R0.00",
+        "R320",
+        "R630",
+        "R30",
+        "R45",
+        "R500",
+        "R320",
+        "R630",
+        "R360",
+        "R810"
+      ],
+      "message": "Different amounts found for Shopify - verify if ranges vs specific amounts"
+    },
+    {
+      "type": "entity_name_variations",
+      "paraId": "7_9-7_11",
+      "variations": [
+        {
+          "base": "RegimA",
+          "jaxForms": [
+            "RegimA SA",
+            "RegimA Zone"
+          ],
+          "danForms": [
+            "RegimA Worldwide Distribution",
+            "RegimA Zone",
+            "RegimA SA"
+          ],
+          "allForms": [
+            "RegimA SA",
+            "RegimA Zone",
+            "RegimA Worldwide Distribution"
+          ]
+        }
+      ],
+      "message": "Entity names have minor variations - verify consistency"
+    }
+  ],
+  "info": [
+    {
+      "type": "amount_consistency",
+      "paraId": "10_5-10_10",
+      "amount": "R500",
+      "status": "found_in_both",
+      "jaxContext": "- Unexplained IT expenses (R8.8M+)\n- Unauthorized R500K payment\n- Lack of proper documentation\n- Questio",
+      "danContext": " with technical expert justification\n\n---\n\n### B. R500K Payment - Previously Addressed\n\n**Peter's Claim*"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "10_5-10_10",
+      "jaxActions": [
+        "Peter fails to address RWD",
+        "Peter alleges systematic financial misconduct including",
+        "Peter can establish systematic financial misconduct",
+        "Peter prove RWD generated revenue independently",
+        "Peter must maintain consistency in trust structure"
+      ],
+      "danActions": [
+        "Peter restricted access to documentation",
+        "Peter Created This Problem",
+        "Peter cancelled all business payment cards",
+        "Peter blocked my access to Sage accounting",
+        "Peter restricted my access to cloud storage"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R6,738,007.47",
+      "status": "found_in_both",
+      "jaxContext": "ar 'expenses', for this category alone, amount to R6,738,007.47.\"\n\n**8.6** - \"The 2025 tax year, thus far, for th",
+      "danContext": ".94 over 18 months (2024-2025)\n  - 2024 tax year: R6,738,007.47\n  - 2025 tax year (partial): R2,116,159.47\n- Clai"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R2,116,159.47",
+      "status": "found_in_both",
+      "jaxContext": "ear, thus far, for this category only, amounts to R2,116,159.47.\"\n\n**8.7** - \"These amounts exclude the 'birthday",
+      "danContext": " year: R6,738,007.47\n  - 2025 tax year (partial): R2,116,159.47\n- Claims \"majority are unexplained\"\n- Claims \"alm"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R8,854,166.94",
+      "status": "found_in_both",
+      "jaxContext": "ints from Peter's Allegations**:\n- Total claimed: R8,854,166.94 over ~18 months\n- Acknowledges Sage as legitimate",
+      "danContext": "# Peter's Claim: Unexplained IT expenses totaling R8,854,166.94\n\n---\n\n## Daniel Faucitt's Role and Expertise\n\n**P"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R300",
+      "status": "found_in_both",
+      "jaxContext": "Categories:**\n\na) **Shopify Plus Subscriptions** (R300K-600K annually)\n   - Enterprise e-commerce platfo",
+      "danContext": "xpense Level**:\n- Sage Business Cloud Accounting: R300-R600 per entity/month\n- 6 entities × R300-R600 = "
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R12",
+      "status": "found_in_both",
+      "jaxContext": "imA SA, RegimA WW, Zone stores)\n   - Required for R12-19M annual revenue operations\n\nb) **AWS Cloud Hos",
+      "danContext": "rowth from R2M (2017) to R19.8M (2023)\n- Supports R12M-R19M annual revenue (2.5-4% of revenue for platf"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R400",
+      "status": "found_in_both",
+      "jaxContext": "ual revenue operations\n\nb) **AWS Cloud Hosting** (R400K-800K annually)\n   - Global infrastructure and CD",
+      "danContext": "year\n- Additional users (accountant access): R200-R400/user/month\n- Advanced features (multi-currency, c"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R60",
+      "status": "found_in_both",
+      "jaxContext": " recovery systems\n\nc) **Microsoft 365 Business** (R60K-120K annually)\n   - Business email and productiv",
+      "danContext": "(Shopify Plus)\n\n**Annual Cost Range**: R450,000 - R600,000\n\n**Technical Requirements**:\n- **Multi-Store"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R10",
+      "status": "found_in_both",
+      "jaxContext": "ount tracking\n\nf) **Domain Registrations & SSL** (R10K-30K annually)\n   - Website infrastructure\n   - S",
+      "danContext": "nce\n- Alternative (building custom platform): R5M-R10M development cost + R1M+ annual maintenance\n\n---\n"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R2",
+      "status": "found_in_both",
+      "jaxContext": "ear, thus far, for this category only, amounts to R2,116,159.47.\"\n\n**8.7** - \"These amounts exclude th",
+      "danContext": " year: R6,738,007.47\n  - 2025 tax year (partial): R2,116,159.47\n- Claims \"majority are unexplained\"\n- "
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R19",
+      "status": "found_in_both",
+      "jaxContext": "ical Revenue Growth**: R2M (2017) → R12M (2020) → R19.8M (2023 peak)\n- **Recent Monthly Revenue (2025)*",
+      "danContext": "latform enabled revenue growth from R2M (2017) to R19.8M (2023)\n- Supports R12M-R19M annual revenue (2."
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R1",
+      "status": "found_in_both",
+      "jaxContext": "imA SA, RegimA WW, Zone stores)\n   - Required for R12-19M annual revenue operations\n\nb) **AWS Cloud Ho",
+      "danContext": "latform enabled revenue growth from R2M (2017) to R19.8M (2023)\n- Supports R12M-R19M annual revenue (2"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R15",
+      "status": "found_in_both",
+      "jaxContext": " - Brand protection\n\ng) **Payment Gateway Fees** (R150K-400K annually)\n   - Stripe, PayPal, Peach Payme",
+      "danContext": "\n\n**Cost Calculation Example**:\n- Annual Revenue: R15M\n- Online percentage: 80% = R12M processed throug"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R450,000",
+      "status": "found_in_both",
+      "jaxContext": "ies**:\n1. **Shopify Plus** (E-Commerce Platform): R450,000-R600,000/year\n   - Enterprise e-commerce platform",
+      "danContext": "chitecture (Shopify Plus)\n\n**Annual Cost Range**: R450,000 - R600,000\n\n**Technical Requirements**:\n- **Multi"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R600,000",
+      "status": "found_in_both",
+      "jaxContext": " **Shopify Plus** (E-Commerce Platform): R450,000-R600,000/year\n   - Enterprise e-commerce platform for R12M",
+      "danContext": "(Shopify Plus)\n\n**Annual Cost Range**: R450,000 - R600,000\n\n**Technical Requirements**:\n- **Multi-Store Conf"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R1,200,000",
+      "status": "found_in_both",
+      "jaxContext": "g\n   \n2. **AWS** (Cloud Infrastructure): R600,000-R1,200,000/year\n   - Global content delivery network (CDN)\n ",
+      "danContext": "tructure (AWS)\n\n**Annual Cost Range**: R600,000 - R1,200,000\n\n**Technical Components**:\n\n1. **Content Delivery"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R60,000",
+      "status": "found_in_both",
+      "jaxContext": "   \n3. **Microsoft 365** (Business Productivity): R60,000-R120,000/year\n   - Professional email systems (pe",
+      "danContext": "er recovery (automated daily backups)\n   - Cost: ~R60,000-R120,000 annually\n\n4. **Compute Services (EC2, La"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R120,000",
+      "status": "found_in_both",
+      "jaxContext": "*Microsoft 365** (Business Productivity): R60,000-R120,000/year\n   - Professional email systems (pete@regima",
+      "danContext": "management across multiple warehouses\n   - Cost: ~R120,000-R180,000 annually\n\n3. **Storage Services (S3, Gla"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R48,000",
+      "status": "found_in_both",
+      "jaxContext": "4. **Adobe Creative Cloud** (Marketing & Design): R48,000-R144,000/year\n   - Professional product photograp",
+      "danContext": "Creative Cloud (Business)\n\n**Annual Cost Range**: R48,000 - R144,000 (2-6 licenses)\n\n**Business-Critical Ap"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R144,000",
+      "status": "found_in_both",
+      "jaxContext": "be Creative Cloud** (Marketing & Design): R48,000-R144,000/year\n   - Professional product photography\n   - R",
+      "danContext": "loud (Business)\n\n**Annual Cost Range**: R48,000 - R144,000 (2-6 licenses)\n\n**Business-Critical Applications*"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R24,000",
+      "status": "found_in_both",
+      "jaxContext": " materials\n   \n5. **Sage** (Accounting Software): R24,000-R72,000/year\n   - SARS-compliant accounting and t",
+      "danContext": "Software (Business Cloud)\n\n**Annual Cost Range**: R24,000 - R72,000 (6 entities, multiple users)\n\n**Critica"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R72,000",
+      "status": "found_in_both",
+      "jaxContext": "ls\n   \n5. **Sage** (Accounting Software): R24,000-R72,000/year\n   - SARS-compliant accounting and tax repor",
+      "danContext": "Business Cloud)\n\n**Annual Cost Range**: R24,000 - R72,000 (6 entities, multiple users)\n\n**Critical Note**: "
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R360,000",
+      "status": "found_in_both",
+      "jaxContext": "6. **Payment Gateways** (Transaction Processing): R360,000-R1,200,000/year\n   - Stripe (international transa",
+      "danContext": "essing and system monitoring\n   - Cost: ~R180,000-R360,000 annually\n\n5. **Security Services (WAF, Shield, Gu"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R,",
+      "status": "found_in_both",
+      "jaxContext": "tes\n   - Security and compliance tools (POPIA, GDPR, PCI-DSS)\n   - Customer support systems for 37 mar",
+      "danContext": "iguration:\n  - Currency conversion and display (EUR, GBP, USD, ZAR, AUD, etc.)\n  - Tax calculation eng"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_2-7_5",
+      "amount": "R3",
+      "status": "found_in_both",
+      "jaxContext": "Categories:**\n\na) **Shopify Plus Subscriptions** (R300K-600K annually)\n   - Enterprise e-commerce plat",
+      "danContext": "essing and system monitoring\n   - Cost: ~R180,000-R360,000 annually\n\n5. **Security Services (WAF, Shie"
+    },
+    {
+      "type": "date_consistency",
+      "paraId": "7_2-7_5",
+      "date": "19 August 2025",
+      "status": "consistent"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "7_2-7_5",
+      "jaxActions": [
+        "Peter Created Documentation Gap",
+        "Peter cancelled cards",
+        "Peter secretly cancels ALL business cards without",
+        "Peter demands documentation from systems he made",
+        "Peter created the"
+      ],
+      "danActions": [
+        "Peter questions this expense while using pete",
+        "Peter acknowledges Sage as legitimate in paragraph",
+        "Peter now questions",
+        "Peter unilaterally cancelled all business payment cards",
+        "Peter secretly cancelled all business payment cards"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_6",
+      "amount": "R500",
+      "status": "found_in_both",
+      "jaxContext": "RAGRAPH 7.6\n\n## Priority: 1 - Critical\n\n## Topic: R500K Payment\n\n## Peter's Claim: Unauthorized R500,000",
+      "danContext": "PERSPECTIVE\n\n## Priority: 1 - Critical\n\n## Topic: R500K Payment - Director Loan Account System Architect"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_6",
+      "amount": "R500,000",
+      "status": "found_in_both",
+      "jaxContext": "ic: R500K Payment\n\n## Peter's Claim: Unauthorized R500,000 payment to Jax\n\n---\n\n## Peter's Founding Affidavi",
+      "danContext": "stem Architecture\n\n## Peter's Claim: Unauthorized R500,000 \"birthday gift\" payment to Daniel\n\n---\n\n## Daniel"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_6",
+      "amount": "R6.88",
+      "status": "found_in_both",
+      "jaxContext": "\n   - Total potential claim against RWD: R2.94M - R6.88M\n\n**Strategic Response:**\n> \"Peter's allegations ",
+      "danContext": "K | R500K |\n| **Net Still Owed** | **R2.82M** | **R6.88M** |\n\n**Peter's Position**:\n- Questions R500K pay"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "7_6",
+      "jaxActions": [
+        "Peter fails to address RWD payment obligations",
+        "Peter can characterize this payment as unauthorized",
+        "Peter fails to clarify whether RWD holds",
+        "Peter question one R500K payment while ignoring",
+        "Peter ignores RWD"
+      ],
+      "danActions": [
+        "Peter without objection for years",
+        "Peter decided to weaponize it for litigation",
+        "Peter Withdrawals",
+        "Peter uses the system",
+        "Peter never objected"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_7-7_8",
+      "amount": "R500",
+      "status": "found_in_both",
+      "jaxContext": " 7.7 TO 7.8\n\n## Priority: 1 - Critical\n\n## Topic: R500K Payment Details\n\n## Peter's Claim: Payment made ",
+      "danContext": "PERSPECTIVE\n\n## Priority: 1 - Critical\n\n## Topic: R500K Payment Details - Technical Payment Processing P"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_7-7_8",
+      "amount": "R545,000",
+      "status": "found_in_both",
+      "jaxContext": "disruption\n- R35,000 in recovery costs\n- **Total: R545,000+ in actual unauthorized diversions**\n- See: finan",
+      "danContext": "- Bypassed normal authorization flows\n   - Caused R545,000+ in losses\n\n3. **Access Restriction Campaign**\n  "
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_7-7_8",
+      "amount": "R500,000",
+      "status": "found_in_both",
+      "jaxContext": "------------|\n| R500K to Daniel (director loan) | R500,000 | Legitimate signatory authority + established pr",
+      "danContext": "e.md paragraphs 7.7-7.8]*\n\nPeter alleges that the R500,000 payment to Daniel was made \"without authorization"
+    },
+    {
+      "type": "date_consistency",
+      "paraId": "7_7-7_8",
+      "date": "16 July 2025",
+      "status": "consistent"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "7_7-7_8",
+      "jaxActions": [
+        "Peter used same practice for years without",
+        "Peter participated in same practice he now",
+        "Peter calls it",
+        "Peter authorized payments to himself",
+        "Peter calls them legitimate"
+      ],
+      "danActions": [
+        "Peter alleges that the R500",
+        "Peter using same payment workflows",
+        "Peter deliberately omits regarding how director loan",
+        "Peter Never Requested System Changes",
+        "Peter never"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_9-7_11",
+      "amount": "R500",
+      "status": "found_in_both",
+      "jaxContext": "ter-Argument Framework:**\n\nPeter's claim that the R500K payment has \"no legitimate business purpose\" rev",
+      "danContext": "wnership and Unjust Enrichment\n\n## Peter's Claim: R500K payment has \"no legitimate business purpose\"\n\n--"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_9-7_11",
+      "amount": "R,",
+      "status": "found_in_both",
+      "jaxContext": "oversight\n- Regulatory compliance work (POPIA, GDPR, cosmetics regulations)\n\n#### 3. Expose Peter's Ma",
+      "danContext": "ergency response\n6. **Regulatory Compliance**: GDPR, POPIA, data protection, technical controls\n7. **V"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_9-7_11",
+      "amount": "R1",
+      "status": "found_in_both",
+      "jaxContext": "hopify platform since July 2023\n- Platform costs: R140K-R280K over 28 months\n- RWD issued invoices for",
+      "danContext": "er 2025):\n- Shopify Plus Enterprise subscription: R140,000 - R280,000\n- Custom app development: R80,00"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "7_9-7_11",
+      "jaxActions": [
+        "Peter fails to address RWD",
+        "Peter must clarify",
+        "Peter calls it unauthorized",
+        "Peter Fails to Address",
+        "Peter questions R500K while ignoring millions in"
+      ],
+      "danActions": [
+        "Peter claims the R500K payment to me",
+        "Peter unilaterally cancelled all business payment cards",
+        "Peter silent",
+        "Peter objects",
+        "Peter as legitimate"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "3_11-3_13",
+      "jaxActions": [
+        "Peter knew and deliberately concealed these roles",
+        "Peter appointed Jacqueline to these roles",
+        "Peter Faucitt was intimately familiar with Jacqueline",
+        "Peter received and acknowledged",
+        "Peter chose to characterize Jacqueline as merely"
+      ],
+      "danActions": [
+        "Peter describes Jacqueline",
+        "Peter knew about but deliberately concealed",
+        "Peter on these dependencies",
+        "Peter Knew But Didn",
+        "Peter reviewed and approved RP"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "amount_consistency",
+      "paraId": "7_14-7_15",
+      "amount": "R3",
+      "status": "found_in_both",
+      "jaxContext": "ers (€20M fines)\n\n**Documented Financial Loss:** >R3.1 million from revenue hijacking scheme\n\n### Comp",
+      "danContext": "ributor customers using company data\n> - Result: >R3.1M in documented revenue losses\n>\n> **Fifth**, da"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "7_14-7_15",
+      "jaxActions": [
+        "Peter instructed RST staff to stop using"
+      ],
+      "danActions": [
+        "Peter alleges that Daniel failed to provide",
+        "Peter blocked our own documentation access",
+        "Peter created the very access problems he",
+        "Peter blocks access then demands documentation",
+        "Peter associate"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    },
+    {
+      "type": "peter_actions_mentioned",
+      "paraId": "8_4",
+      "jaxActions": [
+        "Peter confronted Jax"
+      ],
+      "danActions": [
+        "Peter confronted Jax",
+        "Peter presents the confrontation as a reasonable",
+        "Peter Faucitt",
+        "Peter did not arrive for a",
+        "Peter and Jacqueline"
+      ],
+      "message": "Both mention Peter's actions - verify consistency"
+    }
+  ]
+}
