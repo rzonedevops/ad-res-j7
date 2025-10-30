@@ -34,15 +34,19 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 
 ---
 
-### Attack #2: AUGUST 13, 2025 - KAYLA'S BIRTHDAY
+### Attack #2: AUGUST 19, 2025 - KAYLA'S BIRTHDAY
 
 **The Attack:**
-- **Interdict served by Sheriff**
+- **Interdict SCHEDULED FOR DELIVERY by Sheriff**
+- **Interdict obtained August 13, 2025** (6 days earlier)
+- **Deliberately held 6 days** for delivery on Kayla's birthday
 - **Jacqui included as respondent** (punished for trustee duty)
 - **Legal process weaponized** against family
 
 **The Timing:**
-- **Kayla Pretorius' birthday** - Daniel's murdered partner (July 13, 2023)
+- **Kayla Pretorius' birthday: August 19** - Daniel's murdered partner (July 13, 2023)
+- **Interdict obtained: August 13** - Could have been served immediately
+- **6-day deliberate delay** - Held specifically for Kayla's birthday delivery
 - **First birthday after murder** (2024 birthday: mourning; 2025 birthday: ATTACKED)
 - **Day meant for remembrance** transformed into legal attack
 
@@ -124,7 +128,7 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 ### The Four Attacks Reveal Systematic Pattern
 
 **Attack #1 (June 7):** Jacqui's birthday → **Financial devastation**  
-**Attack #2 (August 13):** Kayla's birthday (murdered partner) → **Legal attack + weaponized grief**  
+**Attack #2 (August 19):** Kayla's birthday (murdered partner) → **Legal attack + weaponized grief + 6-day deliberate delay**  
 **Attack #3 (Day before Mom's birthday):** Medical testing → **Family attack + curatorship fraud**  
 **Attack #4 (Day after Dan's birthday):** Interdict payment → **Legal attack + financial threat**  
 
@@ -214,9 +218,11 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 - **Jacqui's birth certificate** (confirms birthday)
 - **300+ defaulting bills** (evidence of devastation)
 
-**2. August 13, 2025 - Kayla's Birthday**
-- **Sheriff's service record** (interdict served August 13)
-- **Kayla's birth certificate** (confirms birthday)
+**2. August 19, 2025 - Kayla's Birthday**
+- **Interdict obtained: August 13, 2025** (court records)
+- **Interdict scheduled for delivery: August 19, 2025** (Sheriff's service record)
+- **6-day deliberate delay** (August 13-19) - Held for birthday delivery
+- **Kayla's birth certificate** (confirms birthday: August 19)
 - **Kayla's death certificate** (murdered July 13, 2023)
 - **First birthday after murder** (2024: mourning; 2025: ATTACKED)
 
@@ -315,7 +321,7 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 
 **The Evidence:**
 1. **June 7** - Jacqui's birthday → Card cancellations
-2. **August 13** - Kayla's birthday (murdered partner) → Interdict served
+2. **August 19** - Kayla's birthday (murdered partner) → Interdict delivered (obtained August 13, held 6 days)
 3. **Day before Mom's birthday** - Medical testing (curatorship fraud)
 4. **Day after Dan's birthday** - Interdict payment
 
@@ -382,7 +388,8 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 
 **May 22, 2025:** Orders stopped, data extraction begins  
 **June 7, 2025:** **JACQUI'S BIRTHDAY** - Card cancellations (financial devastation)  
-**August 13, 2025:** **KAYLA'S BIRTHDAY** - Interdict served (weaponized grief)  
+**August 13, 2025:** Interdict obtained  
+**August 19, 2025:** **KAYLA'S BIRTHDAY** - Interdict **SCHEDULED FOR DELIVERY** (6-day deliberate delay, weaponized grief)  
 **September 11, 2025:** Accounts emptied (R1.73M)  
 
 **The Result:**
@@ -403,7 +410,9 @@ This is not coincidence. This is **SYSTEMATIC PSYCHOLOGICAL WARFARE** using lega
 - **Daniel continuing Kayla's legacy** (giving away R100M+)
 
 **The Attack:**
-- **August 13, 2025** - Kayla's birthday
+- **August 13, 2025** - Interdict obtained (could have been served immediately)
+- **6-day deliberate delay** - Held specifically for Kayla's birthday
+- **August 19, 2025** - Kayla's birthday - **SCHEDULED FOR DELIVERY**
 - **Interdict served by Sheriff** (legal attack)
 - **Jacqui included as respondent** (punished for trustee duty)
 
