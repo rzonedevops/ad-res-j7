@@ -46,6 +46,7 @@
 **#2: PERJURY (Multiple Instances)**
 - Peter: "Erratic behavior" (after 165 days of torture)
 - Peter: "Urgency" (67-day delay proves false)
+- Peter: "Interdict needed" (**TRUST ALREADY OWNS COMPANIES - NO COURT ORDER NEEDED**)
 - Peter: "Discovery" (system logs prove 4-year knowledge)
 - Bantjies: "No knowledge of crimes" (65-day timeline proves false)
 - Exposure: **15 YEARS PER COUNT**

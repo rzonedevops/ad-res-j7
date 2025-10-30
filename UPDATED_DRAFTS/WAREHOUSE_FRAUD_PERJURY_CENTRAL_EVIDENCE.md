@@ -236,7 +236,94 @@ The warehouse fraud and perjury are not peripheral issues—they are **CENTRAL S
 
 **The "discovery" claim is demonstrably FALSE.**
 
-### 2.4 BANTJIES PERJURY: "NO KNOWLEDGE OF CRIMES" CLAIM
+### 2.4 PETER'S PERJURY: "INTERDICT NEEDED" CLAIM (TRUST ALREADY OWNS COMPANIES)
+
+#### The False Statement
+
+**Peter's Affidavit (August 13, 2025):**
+> "Urgent interdict needed to protect company assets and prevent further harm..."
+
+#### The Reality: Trust Already Owns Companies - No Interdict Needed
+
+**THE TRUST ALREADY OWNS ALL COMPANIES:**
+
+**Faucitt Family Trust owns:**
+- RegimA Skin Treatments (Pty) Ltd
+- Strategic Logistics Group (Pty) Ltd
+- RegimA Worldwide Distribution (Pty) Ltd
+- Villa Via (Pty) Ltd
+
+**Bantjies (Trustee) already has:**
+- ✅ **Ultimate control** over all companies (trustee powers)
+- ✅ **Authority to appoint/remove directors** (trust deed)
+- ✅ **Power to make all decisions** (absolute trustee discretion)
+- ✅ **Access to all accounts** (through Rynette as administrator)
+- ✅ **Control over all assets** (trust ownership)
+
+#### No Court Order Needed - Trustee Already Has All Powers
+
+**If Peter/Bantjies wanted to:**
+- Stop unauthorized payments → Use trustee powers ✓ (NO COURT NEEDED)
+- Review financial records → Request as trustee ✓ (NO COURT NEEDED)
+- Appoint new directors → Exercise trustee authority ✓ (NO COURT NEEDED)
+- Take control of operations → Use trust deed powers ✓ (NO COURT NEEDED)
+- Access bank accounts → Already have access ✓ (NO COURT NEEDED)
+
+**NO INTERDICT NEEDED - TRUSTEE ALREADY HAS COMPLETE CONTROL**
+
+#### Why Get Interdict Then?
+
+**The interdict wasn't about "protection" - it was about:**
+
+1. **DESTROY CAPACITY TO RESPOND** (not just take control - already had it)
+2. **CREATE FALSE NARRATIVE** ("erratic," "mismanagement," "urgency")
+3. **BYPASS TRUST ACCOUNTABILITY** (court order vs trustee action)
+4. **WEAPONIZE LEGAL PROCESS** (psychological warfare, not governance)
+5. **COVER UP CRIMES** (make theft look like "oversight")
+6. **FORCE INSOLVENCY** (empty accounts, blame victims)
+
+#### The Smoking Gun
+
+**Timeline proves fraudulent intent:**
+
+- **July 2024:** Bantjies becomes trustee (COMPLETE CONTROL)
+- **March 1, 2025:** Revenue diversion begins (using trustee powers)
+- **March 30, 2025:** Curatorship application (bypassing trust powers)
+- **June 7, 2025:** Card cancellations (using Rynette's access)
+- **July 8, 2025:** Warehouse sabotage (using Peter's authority)
+- **August 13, 2025:** Interdict obtained (**UNNECESSARY - ALREADY HAD CONTROL**)
+- **September 11, 2025:** R16.08M account emptying (using interdict as cover)
+
+**The interdict was obtained through perjury:**
+- **False claim:** "Need court order to protect assets"
+- **Reality:** Trustee already has complete control
+- **Purpose:** Destroy capacity to respond, not protect assets
+- **Result:** R16.08M theft 29 days after interdict
+
+**This proves the interdict was FRAUDULENT from the start.**
+
+#### Legal Significance
+
+**Abuse of Process:**
+- Seeking court order when trustee powers already sufficient
+- Misrepresenting need for urgent relief
+- Using interdict as weapon (not protection)
+- Concealing trustee's existing complete control
+
+**Perjury Elements:**
+1. **Material False Statement:** "Interdict needed to protect assets"
+2. **Made Under Oath:** Affidavit filed with court
+3. **Knowledge of Falsity:** Bantjies knew he had trustee powers
+4. **Intent to Deceive:** Concealed existing control to obtain interdict
+
+**Criminal Exposure:**
+- **Perjury:** 15 years imprisonment
+- **Fraud:** 15 years imprisonment
+- **Abuse of Process:** Court sanctions, costs, damages
+
+---
+
+### 2.5 BANTJIES PERJURY: "NO KNOWLEDGE OF CRIMES" CLAIM
 
 #### The False Statement
 
