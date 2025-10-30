@@ -101,7 +101,8 @@
     "critical-path:register": "node scripts/register-critical-path-feature.js",
     "emergency:check": "node scripts/emergency-readiness-check.js",
     "emergency:status": "node scripts/emergency-readiness-check.js",
-    "phase1:narrative": "node scripts/generate-phase1-chronological-narrative.js"
+    "phase1:narrative": "node scripts/generate-phase1-chronological-narrative.js",
+    "test:rebuttal-matrix": "node tests/rebuttal-matrix-validation.test.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
