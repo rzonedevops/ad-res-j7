@@ -76,7 +76,14 @@
     "hierarchy:batch-populate": "node scripts/batch-populate.js populate-all",
     "hierarchy:list-templates": "node scripts/batch-populate.js list-templates",
     "issues:generate": "node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --dry-run",
-    "issues:generate:create": "node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --create-issues"
+    "issues:generate:create": "node scripts/generate-issues-from-structured-todo.js /tmp/structured-todo.md --create-issues",
+    "critical-path:status": "node scripts/critical-path-tracker.js --status",
+    "critical-path:blockers": "node scripts/critical-path-tracker.js --blockers",
+    "critical-path:week": "node scripts/critical-path-tracker.js --week",
+    "critical-path:task": "node scripts/critical-path-tracker.js --task",
+    "critical-path:viz": "node scripts/critical-path-visualization.js --ascii",
+    "critical-path:export": "node scripts/critical-path-visualization.js --export",
+    "critical-path:register": "node scripts/register-critical-path-feature.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
