@@ -292,3 +292,14 @@ The settlement and timing evidence demonstrates that this matter should never ha
 **Document Status:** Draft - requires exact settlement agreement date and investment payout details  
 **Integration Notes:** Links to PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md and COMPREHENSIVE_TIMELINE_ANALYSIS.md  
 **Evidence Dependencies:** Settlement agreement, investment documentation, correspondence files
+
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md`
+
+---

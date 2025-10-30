@@ -161,3 +161,14 @@ This statement is extracted from:
 
 Prepared by: [Chief Financial Officer]
 Date: [Current Date]
+
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md`
+
+---

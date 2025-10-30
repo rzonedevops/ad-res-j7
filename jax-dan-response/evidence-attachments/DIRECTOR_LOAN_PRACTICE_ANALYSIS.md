@@ -225,3 +225,18 @@
 **Priority Rating**: Critical (Priority 1)  
 **Status**: Comprehensive analysis completed  
 **Last Updated**: 2025-10-15
+
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md`
+- `jax-dan-response/AD/1-Critical/PARA_7_9-7_11_DAN_JUSTIFICATION.md`
+- `jax-dan-response/AD/1-Critical/README.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_9-7_11_DAN_JUSTIFICATION.md`
+- `jax-response/AD/dan-perspective/1-Critical/README.md`
+
+---

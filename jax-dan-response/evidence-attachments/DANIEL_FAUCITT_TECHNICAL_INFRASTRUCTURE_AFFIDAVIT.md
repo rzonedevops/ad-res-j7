@@ -516,3 +516,25 @@ Date: _______________
 ---
 
 **END OF AFFIDAVIT**
+
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md`
+- `jax-dan-response/AD/1-Critical/PARA_7_7-7_8_DAN_PAYMENT_DETAILS.md`
+- `jax-dan-response/AD/1-Critical/README.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md`
+- `jax-dan-response/AD/README.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_7-7_8_DAN_PAYMENT_DETAILS.md`
+- `jax-response/AD/dan-perspective/1-Critical/README.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_7_14-7_15_DOCUMENTATION.md`
+- `jax-response/AD/dan-perspective/README.md`
+
+---

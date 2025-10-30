@@ -477,3 +477,17 @@ The Applicant's characterization of these expenses as "unexplained" or "question
 
 *This analysis demonstrates that RegimA's IT infrastructure spending is reasonable, justified, and within industry norms for an international e-commerce business operating across 37 jurisdictions with extensive regulatory compliance requirements.*
 
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md`
+- `jax-dan-response/AD/1-Critical/README.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md`
+- `jax-response/AD/dan-perspective/1-Critical/README.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+
+---

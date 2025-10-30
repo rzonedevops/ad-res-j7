@@ -397,3 +397,18 @@ Peter's conduct violates the clean hands doctrine:
 *Date: 2025-10-15*  
 *Full detailed version: JF8A*
 
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_DAN_ACCOUNTANT.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.md`
+- `jax-dan-response/AD/2-High-Priority/README.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_7_12-7_13_DAN_ACCOUNTANT.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_7_14-7_15_DOCUMENTATION.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/README.md`
+
+---
