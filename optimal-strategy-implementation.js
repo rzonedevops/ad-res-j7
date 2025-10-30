@@ -160,7 +160,7 @@ class OptimalStrategyImplementation {
       name: 'Responsible Person Regulatory Crisis Documentation',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/responsible_person_regulatory_crisis.md',
+      file: 'jax-response/dan-response-materials/responsible_person_regulatory_crisis.md',
       impact: 'Set aside interdict grounds',
       estimatedHours: 8,
       dependencies: []
@@ -172,7 +172,7 @@ class OptimalStrategyImplementation {
       name: 'Settlement Timing and Strategic Litigation Analysis',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/settlement_and_timing.md',
+      file: 'jax-response/dan-response-materials/settlement_and_timing.md',
       impact: 'Prove lack of urgency, expose strategic motive',
       estimatedHours: 6,
       dependencies: []
@@ -184,7 +184,7 @@ class OptimalStrategyImplementation {
       name: 'Peter\'s Causation Analysis',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/peters_causation.md',
+      file: 'jax-response/dan-response-materials/peters_causation.md',
       impact: 'Prove Peter manufactured problems',
       estimatedHours: 8,
       dependencies: []
@@ -220,7 +220,7 @@ class OptimalStrategyImplementation {
       name: 'Quantified Harm Analysis',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/quantified_harm_analysis.md',
+      file: 'jax-response/dan-response-materials/quantified_harm_analysis.md',
       impact: 'Demonstrate 36:1 harm ratio',
       estimatedHours: 12,
       dependencies: ['STRAT-001', 'STRAT-004', 'STRAT-005']
@@ -232,7 +232,7 @@ class OptimalStrategyImplementation {
       name: 'Comprehensive Material Non-Disclosure Summary',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/comprehensive_material_non_disclosure.md',
+      file: 'jax-response/dan-response-materials/comprehensive_material_non_disclosure.md',
       impact: 'Consolidated evidence for setting aside interdict',
       estimatedHours: 16,
       dependencies: ['STRAT-001', 'STRAT-002', 'STRAT-003', 'STRAT-006']
@@ -281,7 +281,7 @@ class OptimalStrategyImplementation {
       name: 'Comprehensive Burden of Proof Analysis',
       priority: 1,
       status: 'completed',
-      file: 'jax-dan-response/burden_of_proof_analysis.md',
+      file: 'jax-response/dan-response-materials/burden_of_proof_analysis.md',
       impact: 'Optimal strategies for proving guilt across civil, criminal, and mathematical standards',
       estimatedHours: 16,
       dependencies: ['STRAT-001', 'STRAT-002', 'STRAT-003', 'STRAT-006', 'STRAT-007']

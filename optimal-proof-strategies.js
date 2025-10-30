@@ -761,7 +761,7 @@ class OptimalProofStrategies {
     const report = this.generateImplementationReport();
 
     // Save outputs
-    const outputDir = path.join(process.cwd(), 'jax-dan-response');
+    const outputDir = path.join(process.cwd(), 'jax-response', 'dan-response-materials');
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
