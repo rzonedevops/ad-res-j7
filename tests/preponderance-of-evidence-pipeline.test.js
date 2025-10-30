@@ -29,7 +29,10 @@ class PreponderanceOfEvidencePipeline {
     this.evidenceScenarios = [];
     
     // Preponderance threshold constants
-    this.PREPONDERANCE_THRESHOLD = 0.501; // >50%
+    // Note: 0.501 represents 50.1% - the minimum threshold for preponderance
+    // This is slightly above 50% to ensure "more likely than not" standard is met
+    // Exactly 50% (0.500) is not sufficient as it represents equal likelihood
+    this.PREPONDERANCE_THRESHOLD = 0.501; // >50% (50.1%)
     this.HIGH_CONFIDENCE = 0.75; // 75%+
     this.LOW_CONFIDENCE = 0.40; // <50%
   }
@@ -228,15 +231,13 @@ class PreponderanceOfEvidencePipeline {
   testProbabilityCalculations() {
     console.log('\n🧪 Phase 3.1: Test probability calculations...');
     
-    // Bayesian-style probability update
+    // Evidence-weighted probability update
+    // This is a simplified approach where we weight the prior probability
+    // with the evidence likelihood based on evidence strength
     const calculatePosteriorProbability = (priorProb, evidenceStrength, evidenceLikelihood) => {
-      // Simple Bayesian update: P(H|E) = P(E|H) * P(H) / P(E)
-      // Assuming P(E) normalizes to make this a weighted average
-      const posterior = (evidenceLikelihood * priorProb + (1 - evidenceLikelihood) * (1 - priorProb)) / 
-                       (evidenceLikelihood * priorProb + (1 - evidenceLikelihood) * (1 - priorProb) + 
-                        (1 - evidenceLikelihood) * priorProb + evidenceLikelihood * (1 - priorProb));
-      
-      // Simplified: weight by evidence strength
+      // Weighted average: 
+      // posterior = prior * (1 - evidenceStrength) + evidenceLikelihood * evidenceStrength
+      // This gives more weight to evidenceLikelihood when evidenceStrength is high
       return priorProb * (1 - evidenceStrength) + evidenceStrength * evidenceLikelihood;
     };
     
