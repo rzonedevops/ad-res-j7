@@ -598,7 +598,7 @@ The Technical Infrastructure Affidavit provides comprehensive documentation of:
 
 (d) Security and risk management infrastructure (cybersecurity, encryption, backup systems, disaster recovery);
 
-(e) Cost justification with industry benchmarks demonstrating IT spend of 6-10% of revenue is standard for international e-commerce operations.
+(e) Cost justification with industry benchmarks demonstrating IT spend of 5-10% of revenue is standard for international e-commerce operations, with up to 12% for multi-jurisdiction operations.
 
 8.11.3 **Industry Benchmark Validation:**
 
