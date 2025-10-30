@@ -85,7 +85,7 @@ The witness statement templates for Daniel Faucitt regarding the "Has anything c
 **Location 1:** `evidence/witness_statements/DANIEL_WITNESS_STATEMENT_JF5_SETTLEMENT_EXCHANGE.md`
 - **Type:** Comprehensive witness statement template
 - **Status:** Populated with factual information
-- **Lines:** 316 lines
+- **Lines:** Approximately 321 lines
 - **Purpose:** Detailed documentation for legal team and witness review
 - **Completed:** Identity number, case context, event details, supporting evidence
 - **Pending:** Address, specific attorney names, attestation details

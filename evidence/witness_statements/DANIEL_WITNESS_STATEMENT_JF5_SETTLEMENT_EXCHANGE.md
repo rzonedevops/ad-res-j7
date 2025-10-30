@@ -51,7 +51,7 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 **Context:** 
 - Question asked after attorneys returned with printed copies
-- Asked in the presence of Jacqueline Faucitt (First Respondent, mother) and [OTHER PARTIES PRESENT - To be specified by witness]
+- Asked in the presence of Jacqueline Faucitt (First Respondent, mother) and [PENDING - Other parties to be specified by witness]
 - Asked before reviewing the final printed version
 - Asked to confirm whether any material changes had been made from the version previously reviewed
 
@@ -204,8 +204,8 @@ This exchange is consistent with a broader pattern of:
 **Present at the time of the "Has anything changed?" exchange:**
 1. Jacqueline Faucitt (First Respondent, mother of Daniel Faucitt)
 2. Peter Andrew Faucitt (Applicant)
-3. [ATTORNEY NAMES from ENS Africa - To be specified by witness]
-4. [OTHER PARTIES - To be specified by witness if applicable]
+3. [PENDING - Attorney names from ENS Africa]
+4. [PENDING - Other parties if applicable]
 
 ---
 
