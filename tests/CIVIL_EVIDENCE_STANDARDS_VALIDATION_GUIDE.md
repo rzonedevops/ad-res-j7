@@ -77,7 +77,7 @@ The civil evidence standards validation test ensures that the burden of proof fr
 - **Threshold Application**: Confirms primary explanation must exceed 50%
 - **Scenario Testing**: Tests multiple explanation comparison scenarios
 
-### 12. Damages/Harm Calculation Framework with Duplicate Prevention (Test 14)
+### 12. Damages/Harm Calculation Framework (Test 14)
 - **Requirement Validation**: Confirms damages must be proven
 - **Calculation Testing**: Validates damage proof percentage calculations
 - **Threshold Application**: Tests that proven damages must meet >50% of claimed
@@ -132,7 +132,7 @@ npm test
 ```
 
 ### Metrics Reported
-- **Total Tests**: 56 assertions across 15 test categories (updated with duplicate prevention)
+- **Total Tests**: 56 assertions across 15 test categories
 - **Success Rate**: Percentage of passed tests
 - **Execution Time**: Test suite duration in seconds
 - **Standard**: Balance of Probabilities
@@ -207,11 +207,12 @@ The test suite integrates with:
 
 ### Duplicate Prevention Scenarios (Task 33 Implementation)
 1. **Duplicate Detection**: Multiple claims with same category and period
-   - Example: Two "revenue_loss" claims for "2025-Q1" 
+   - Example: Two "revenue_loss" claims for "2025-Q1" (each R50,000)
    - Detection: Identifies 1 duplicate from 5 total claims
 2. **Duplicate-Free Calculation**: Properly excludes duplicates from totals
-   - Input: 5 claims totaling R165,000 with 1 duplicate (R50,000)
-   - Output: R115,000 (correct total without double-counting)
+   - Input claims: R50,000 + R20,000 + R50,000 (duplicate) + R30,000 + R15,000
+   - Without duplicate prevention: R165,000 (incorrect - double-counted)
+   - With duplicate prevention: R115,000 (correct total)
 3. **Unique Claims Validation**: All unique claims counted when no duplicates exist
    - Different categories: "revenue_loss" vs "operational_costs"
    - Different periods: "2025-Q1" vs "2025-Q2"
