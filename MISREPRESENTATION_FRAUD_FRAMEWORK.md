@@ -224,7 +224,7 @@ The misrepresentation framework reveals the **TRUE STORY** - legitimate business
 #### 2. DAMAGE MULTIPLICATION
 - **Material Non-Disclosure**: R60+ million in concealed revenue ownership
 - **Fraudulent Misrepresentation**: Systematic misrepresentation
-- **Breach of Fiduciar Duties**: Multiple duty breaches
+- **Breach of Fiduciary Duties**: Multiple duty breaches
 - **Unfair Labour Practices**: Staff exploitation through misrepresentation
 
 #### 3. LEGAL POSITION
