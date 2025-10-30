@@ -92,3 +92,10 @@ hierarchy-stats.json
 hierarchy-report.json
 feature-issues-report.json
 file-path-validation-report.json
+
+# Generated analytics dashboard files (regenerate with npm run analytics:*)
+reports/*analytics-dashboard.json
+reports/*analytics-dashboard.html
+reports/sample-*.json
+reports/test-*.json
+reports/test-*.html
