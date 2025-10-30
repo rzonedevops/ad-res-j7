@@ -13,6 +13,11 @@
           "content": "The root directory contains the main README.md file, which provides an overview of the case and the repository structure. It also contains configuration files and utility scripts."
         },
         {
+          "heading": "Comprehensive Evidence Index",
+          "level": 3,
+          "content": "The repository includes a **Comprehensive Evidence Index** (`COMPREHENSIVE_EVIDENCE_INDEX.md` and `COMPREHENSIVE_EVIDENCE_INDEX.json`) that maps all 1,700+ files with complete metadata including:\n\n- File categorization by type and purpose\n- Evidence code cross-references (JF-, PF-, JAX, DJF, etc.)\n- File size and location information\n- Directory summaries and statistics\n- Detailed file-by-file listing organized by category and directory\n\nThis index can be regenerated at any time using `scripts/generate_comprehensive_evidence_index.py` to ensure it stays up-to-date as files are added or modified."
+        },
+        {
           "heading": "`affidavit_work/`",
           "level": 3,
           "content": "This directory contains all work related to the drafting and analysis of affidavits for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`analysis/`**: Contains in-depth analysis of the applicant's affidavit and supporting documents. This includes a three-part classification of the evidence (Irrefutable Proof, Strong Evidence, and Circumstantial/Inferred).\n- **`corrections/`**: Contains critical corrections to the information presented in the applicant's affidavit.\n- **`recommendations/`**: Contains recommendations for the responding affidavit.\n- **`versions/`**: Contains different versions of the responding affidavit."
@@ -48,14 +53,39 @@
           "content": "This directory contains raw evidence collected for Case 2025-137857. It is organized into the following subdirectories:\n\n- **`bank_records/`**: Contains personal and business bank records.\n- **`shopify_reports/`**: Contains sales and financial reports from Shopify.\n- **`invoices/`**: Contains invoices for various business expenses.\n- **`correspondence/`**: Contains email and other correspondence relevant to the case."
         },
         {
-          "heading": "`jax-dan-response/`",
+          "heading": "`jax-response/`",
           "level": 3,
-          "content": "This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:\n\n- **`AD/`**: Contains documents related to the \"AD Response J7\" project.\n- **`analysis-output/`**: Contains output from the analysis of the case.\n- **`evidence-attachments/`**: Contains evidence attached to the responding affidavit.\n- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit.\n- **`financial-analysis/`**: Contains detailed financial analysis to refute the applicant's claims."
+          "content": "**CONSOLIDATED** - Complete forensic evidence analysis and response materials for Jacqueline and Daniel Faucitt (formerly split across jax-response and jax-dan-response, now unified). Contains:\n\n- **`revenue-theft/`**: Forensic analysis of coordinated revenue hijacking scheme (5 events, R3.1M+ losses)\n- **`family-trust/`**: Analysis of systematic family trust manipulation (5 events, R2.851M+ losses)\n- **`financial-flows/`**: Analysis of financial manipulation and fund diversion (5 events, R4.276M+ losses)\n- **`AD/`**: Documents related to the \"AD Response J7\" project\n- **`source-documents/`**: Original affidavit drafts and source materials\n- **`evidence-attachments/`**: Supporting evidence and analysis documents\n- **`peter-interdict/`**: Peter Faucitt's interdict application and court order\n- **`analysis-output/`**: Comprehensive analysis including current affidavit v3\n- **`dan-response-materials/`**: Dan-specific response materials\n\nNote: Previous jax-dan-response directory has been consolidated here. Historical versions available in backups/pre-consolidation/"
         },
         {
-          "heading": "`tools/`",
+          "heading": "`1-CIVIL-RESPONSE/`",
           "level": 3,
-          "content": "This directory contains scripts and tools used for analysis and document processing."
+          "content": "Civil case response materials and analysis framework."
+        },
+        {
+          "heading": "`2-CRIMINAL-CASE/`",
+          "level": 3,
+          "content": "Criminal prosecution framework for Peter Faucitt, Rynette Farrar, and others. Currently blocked by interdict pending civil case resolution."
+        },
+        {
+          "heading": "`3-EXTERNAL-VALIDATION/`",
+          "level": 3,
+          "content": "External validation and cross-repository analysis integration."
+        },
+        {
+          "heading": "`todo/`",
+          "level": 3,
+          "content": "Automated task generation system for case management. Contains comprehensive action plans automatically processed by GitHub Actions to generate tracked issues."
+        },
+        {
+          "heading": "`tests/`",
+          "level": 3,
+          "content": "Comprehensive automated testing pipeline for workflow validation with 118 tests achieving 92%+ success rate."
+        },
+        {
+          "heading": "`scripts/`",
+          "level": 3,
+          "content": "Utility scripts and automation tools for repository management and case processing."
         },
         {
           "heading": "File Naming Conventions",

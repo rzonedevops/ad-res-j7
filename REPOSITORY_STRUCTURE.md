@@ -62,19 +62,120 @@ This directory contains raw evidence collected for Case 2025-137857. It is organ
 - **`invoices/`**: Contains invoices for various business expenses.
 - **`correspondence/`**: Contains email and other correspondence relevant to the case.
 
-### `jax-dan-response/`
+### `jax-response/`
 
-This directory contains the specific response of Jacqueline and Daniel Faucitt to the allegations made by Peter Faucitt in Case 2025-137857. It is organized into the following subdirectories:
+**Complete forensic evidence analysis with three major components documenting over R10.227M in financial losses.**
 
-- **`AD/`**: Contains documents related to the "AD Response J7" project.
-- **`analysis-output/`**: Contains output from the analysis of the case.
-- **`evidence-attachments/`**: Contains evidence attached to the responding affidavit.
-- **`source-documents/`**: Contains source documents used in the response, including the main draft of the responding affidavit.
-- **`financial-analysis/`**: Contains detailed financial analysis to refute the applicant's claims.
+Consolidated structure combining Jacqueline and Daniel Faucitt's responses to Peter Faucitt's interdict application (Case 2025-137857). This directory contains comprehensive forensic analysis, evidence, and legal response materials.
 
-### `tools/`
+#### Sub-directories:
 
-This directory contains scripts and tools used for analysis and document processing.
+- **`AD/`**: Structured response framework with paragraph-by-paragraph analysis organized by priority rating
+  - **`1-Critical/` through `5-Meaningless/`**: Jacqueline's comprehensive legal responses
+  - **`dan-perspective/`**: Daniel's technical perspective as CIO, focusing on technical infrastructure and regulatory compliance
+    - Contains specialized technical analysis for IT, compliance systems, and business continuity
+
+- **`revenue-theft/`**: Forensic analysis of coordinated revenue hijacking scheme (5 events, R3.1M+ losses)
+  - **`14-apr-bank-letter/`**: Bank account change fraud (April 14, 2025)
+  - **`22-may-shopify-audit/`**: Shopify audit trail destruction (May 22, 2025)
+  - **`29-may-domain-registration/`**: Domain registration by son for identity fraud (May 29, 2025)
+  - **`20-june-gee-gayane-email/`**: Administrative instruction coordination evidence (June 20, 2025)
+  - **`08-july-warehouse-popi/`**: Business sabotage and POPI violations (July 8, 2025)
+  - **`email-impersonation-pattern-jf3a/`**: Email impersonation pattern analysis
+  - **`shopify-system-comparison/`**: Shopify system comparison analysis
+  - Key files: `README.md` (forensic analysis overview), `FORENSIC_EVIDENCE_INDEX.md` (evidence catalog and prosecution framework)
+
+- **`family-trust/`**: Analysis of systematic family trust manipulation (5 events, R2.851M+ losses)
+  - **`15-mar-trust-establishment/`**: Trust structure establishment documentation (March 15, 2025)
+  - **`02-may-beneficiary-changes/`**: Unauthorized beneficiary modifications (May 2, 2025)
+  - **`18-june-trust-violation/`**: Systematic trust obligation breaches (June 18, 2025)
+  - **`25-july-asset-misappropriation/`**: Trust asset misappropriation scheme (July 25, 2025)
+  - **`10-aug-trust-breach-evidence/`**: Comprehensive trust breach documentation (August 10, 2025)
+  - Key files: `README.md` (trust violation forensic analysis), trust law violation framework
+
+- **`financial-flows/`**: Analysis of financial manipulation and fund diversion (5 events, R4.276M+ losses)
+  - **`01-apr-payment-redirection/`**: Systematic payment redirection scheme (April 1, 2025)
+  - **`15-may-unauthorized-transfers/`**: Large-scale unauthorized financial transfers (May 15, 2025)
+  - **`30-june-fund-diversions/`**: Coordinated fund diversion operations (June 30, 2025)
+  - **`12-july-account-manipulations/`**: Bank account manipulation and control seizure (July 12, 2025)
+  - **`20-aug-financial-concealment/`**: Financial evidence concealment and destruction (August 20, 2025)
+  - Key files: `README.md` (financial crime forensic analysis), financial flow network analysis
+
+- **`source-documents/`**: Original affidavit drafts and source materials
+  - Contains Jacqueline's materials: Enhanced answering affidavit with AD PARAGRAPH structure, final drafts
+  - **`dan-materials/`**: Daniel's source documents including technical affidavit drafts and infrastructure documentation
+
+- **`evidence-attachments/`**: Supporting evidence and analysis documents
+  - Settlement agreement evidence (JF5 draft vs final)
+  - Chesno fraud documentation (JF-CHESNO1-4)
+  - Financial analysis and director loan evidence
+  - UK tax residency and restoration evidence
+  - **`dan-technical/`**: Daniel's technical infrastructure evidence including:
+    - Technical Infrastructure Affidavit
+    - IT spend industry comparative analysis
+    - System access audit and regulatory crisis documentation
+    - Business continuity impact assessments
+  - **`settlement-agreement-jf5/`**: Settlement agreement analysis and comparison documents
+
+- **`dan-response-materials/`**: Daniel's strategic documents and response materials
+  - Comprehensive response structure and evidence mapping
+  - Criminal enterprise evidence structure
+  - Burden of proof analysis from technical perspective
+  - Implementation optimization and strategy reports
+
+- **`peter-interdict/`**: Peter Faucitt's interdict application and court order
+  - Complete interdict application documents
+  - Court order for Case 2025-137857
+  - Combined and dated versions of interdict documents
+
+- **`analysis-output/`**: Comprehensive analysis and revised affidavit versions
+  - **Legal Analysis**: Interdict analysis, comprehensive legal analysis (JSON), reference indexes
+  - **Strategic Recommendations**: Amendment recommendations, strategic contradictions analysis, trustee contradictions analysis
+  - **Revised Affidavit Versions**:
+    - `REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md` (v3) - **CURRENT VERSION** with critical corrections
+    - `REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v4.md` (v4) - Enhanced version
+    - `REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v5.md` (v5) - Latest version with comprehensive updates
+  - **Critical Corrections**: Detailed corrections for paragraphs 48 & 129, settlement agreement manipulation, Isaac Chesno fraud correction
+  - **Summaries**: Complete change overviews and version history
+
+- **Key Files**:
+  - `README.md`: Complete overview of consolidated response structure
+  - `FORENSIC_EVIDENCE_INDEX.json` and `FORENSIC_EVIDENCE_INDEX.md`: Comprehensive evidence catalogs
+
+**Current Version**: v3 (`analysis-output/REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md`)
+
+**Strategic Framework**: Seven key arguments including material non-disclosure, Peter's inconsistency, pattern of misrepresentation, and regulatory crisis.
+
+**Case Information**:
+- Case Number: 2025-137857
+- Court: High Court of South Africa, Gauteng Division, Pretoria
+- Applicant: Peter Andrew Faucitt
+- First Respondent: Jacqueline Faucitt
+- Second Respondent: Daniel James Faucitt
+
+### `1-CIVIL-RESPONSE/`
+
+Civil case response materials and analysis framework.
+
+### `2-CRIMINAL-CASE/`
+
+Criminal prosecution framework for Peter Faucitt, Rynette Farrar, and others. Currently blocked by interdict pending civil case resolution.
+
+### `3-EXTERNAL-VALIDATION/`
+
+External validation and cross-repository analysis integration.
+
+### `todo/`
+
+Automated task generation system for case management. Contains comprehensive action plans automatically processed by GitHub Actions to generate tracked issues.
+
+### `tests/`
+
+Comprehensive automated testing pipeline for workflow validation with 118 tests achieving 92%+ success rate.
+
+### `scripts/`
+
+Utility scripts and automation tools for repository management and case processing.
 
 ## File Naming Conventions
 
@@ -108,3 +209,7 @@ This repository is designed to facilitate collaboration between legal profession
 
 The repository should be regularly updated with new evidence, analysis, and documents as they become available. Backups should be created regularly to prevent data loss. The repository structure should be reviewed periodically to ensure that it continues to meet the needs of the project.
 
+---
+
+*Last Updated: 2025-10-21*  
+*Repository: cogpy/ad-res-j7*
