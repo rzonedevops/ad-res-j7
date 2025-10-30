@@ -582,6 +582,60 @@ The IT expenses cited by the Applicant must be understood in the context of my r
 
 8.10 The Applicant's characterization of this as evidence of misconduct is misleading and unsupported. An international cosmetics business with regulatory obligations in 37 jurisdictions cannot operate without substantial foreign payments, and these payments are entirely normal, necessary, and properly documented.
 
+### 8.11 Technical Infrastructure Affidavit
+
+8.11.1 The Second Respondent, Daniel Faucitt, in his capacity as Chief Information Officer (CIO) of RegimA Worldwide Distribution, has provided a comprehensive Technical Infrastructure Affidavit (**Annexure DF1**) which provides detailed technical justification for all IT expenses alleged by the Applicant to be "unexplained".
+
+8.11.2 **Detailed Technical Architecture:**
+
+The Technical Infrastructure Affidavit provides comprehensive documentation of:
+
+(a) E-commerce platform architecture (Shopify Plus multi-store configuration, payment gateways, CDN infrastructure);
+
+(b) International compliance systems (GDPR, PCI-DSS Level 1, product safety databases across 37 jurisdictions);
+
+(c) Business automation platform (order management, inventory synchronization, CRM, financial reporting);
+
+(d) Security and risk management infrastructure (cybersecurity, encryption, backup systems, disaster recovery);
+
+(e) Cost justification with industry benchmarks demonstrating IT spend of 6-10% of revenue is standard for international e-commerce operations.
+
+8.11.3 **Industry Benchmark Validation:**
+
+The Technical Infrastructure Affidavit demonstrates that the IT expenses complained of by the Applicant:
+
+(a) Fall within industry-standard ranges for international e-commerce businesses (typically 5-10% of revenue, up to 12% for multi-jurisdiction operations);
+
+(b) Are essential for regulatory compliance across 37 jurisdictions;
+
+(c) Are necessary for business continuity and customer data protection;
+
+(d) Are fully justified by the technical requirements of operating an international distribution business.
+
+8.11.4 **Peter's Creation of Documentation Gap:**
+
+The Technical Infrastructure Affidavit further demonstrates how the Applicant's own actions in June 2025 (cancelling access cards and restricting system access) created the very documentation gaps he now complains about, including:
+
+(a) Disruption of cloud storage and backup systems;
+
+(b) Suspension of accounting software access;
+
+(c) Termination of email services and domain registrations;
+
+(d) Forced emergency restoration using personal funds (R50,000-R75,000) to prevent business collapse.
+
+8.11.5 **Expert Technical Opinion:**
+
+As a qualified CIO with over 20 years of experience in information technology and international business operations, the Second Respondent's Technical Infrastructure Affidavit provides expert technical opinion on:
+
+(a) The necessity and appropriateness of each category of IT expense;
+
+(b) Industry benchmarks for comparable international e-commerce businesses;
+
+(c) The technical impossibility of operating the business without the infrastructure complained of;
+
+(d) The devastating operational and compliance impact of the interdict on IT infrastructure.
+
 ---
 
 ## 9. RESPONSE TO ALLEGATIONS OF FINANCIAL MISCONDUCT
@@ -1029,6 +1083,9 @@ The final agreement contains **two separate clauses** stating that parties "will
 - **JF-FSL1:** Financial system logs
 - **JF-CORR1:** Correspondence showing Daniel provided documentation
 
+### Technical Infrastructure
+- **DF1:** Daniel Faucitt Technical Infrastructure Affidavit (comprehensive technical justification for IT expenses)
+
 ### Historical Collaborative Model
 - **JF-HIST1:** Historical emails showing collaboration
 - **JF-HIST2:** Examples of consultative decisions
@@ -1070,7 +1127,8 @@ COMMISSIONER OF OATHS
 2. **Section 3 (Responsible Person):** Extensively detailed regulatory role and compliance crisis
 3. **Section 7.2 (IT Expenses):** Added international operations context and Peter's restriction of access
 4. **Section 7.8 (R500K Payment):** Added director loan account structure and Peter's inconsistency
-5. **Section 12 (Breakdown):** Added historical collaborative model and Rynette's expanding access
+5. **Section 8.11 (Technical Infrastructure):** Added Daniel Faucitt's Technical Infrastructure Affidavit with expert technical opinion on IT expenses (Annexure DF1)
+6. **Section 12 (Breakdown):** Added historical collaborative model and Rynette's expanding access
 
 ### Strategic Focus:
 
