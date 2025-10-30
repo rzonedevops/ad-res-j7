@@ -23,6 +23,12 @@ The repository has grown significantly:
 2. Obtain regulatory risk analysis documentation (JF-RP2)
 3. Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)
 4. Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)
+5. Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
+6. Secure JF5 draft agreement initial version reviewed
+7. Secure JF5 final agreement signed version with changes
+8. Create comparison document highlighting all changes between JF5 draft and final
+9. 🔄 Obtain Daniel's witness statement regarding "Has anything changed?" exchange - Template created at evidence/witness_statements/DANIEL_WITNESS_STATEMENT_JF5_SETTLEMENT_EXCHANGE.md (INCOMPLETE - requires dates, names, witnesses, signatures)
+10. Gather UK tax residency documentation
 5. ✅ **COMPLETED** - Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
    - **Evidence Location**: `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf` (153KB)
    - **Parent Annexure**: JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)
