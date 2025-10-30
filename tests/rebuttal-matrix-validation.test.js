@@ -99,8 +99,8 @@ class RebuttalMatrixValidator {
     testTableStructure() {
         this.log('\n2. Testing Table Structure', 'cyan');
 
-        // Check for table headers
-        const headerPattern = /\| Paragraph Reference \| Applicant's Allegation \| Respondent's Rebuttal & Evidence \| Status \|/g;
+        // Check for table headers (allow flexible spacing)
+        const headerPattern = /\|\s*Paragraph Reference\s*\|\s*Applicant's Allegation\s*\|\s*Respondent's Rebuttal & Evidence\s*\|\s*Status\s*\|/g;
         const headers = this.content.match(headerPattern);
         
         if (headers && headers.length >= 13) {
@@ -109,8 +109,8 @@ class RebuttalMatrixValidator {
             this.fail(`Found ${headers ? headers.length : 0} table headers (expected ≥13)`);
         }
 
-        // Check for table separator rows
-        const separatorPattern = /\| :--- \| :--- \| :--- \| :--- \|/g;
+        // Check for table separator rows (allow flexible spacing)
+        const separatorPattern = /\|\s*:---\s*\|\s*:---\s*\|\s*:---\s*\|\s*:---\s*\|/g;
         const separators = this.content.match(separatorPattern);
         
         if (separators && separators.length >= 13) {
@@ -140,8 +140,10 @@ class RebuttalMatrixValidator {
         let missingParagraphs = [];
 
         expectedParagraphs.forEach(para => {
-            // Check if paragraph number appears in a table row
-            const paraPattern = new RegExp(`\\|\\s*${para.replace('.', '\\.')}\\s*\\|`, 'g');
+            // Escape special regex characters in paragraph number
+            const escapedPara = para.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            // Check if paragraph number appears in a table row (at start of table cell)
+            const paraPattern = new RegExp(`^\\|\\s*${escapedPara}\\s*\\|`, 'gm');
             if (paraPattern.test(this.content)) {
                 foundCount++;
             } else {
@@ -197,7 +199,9 @@ class RebuttalMatrixValidator {
 
         let statusCounts = {};
         expectedStatuses.forEach(status => {
-            const pattern = new RegExp(`\\|\\s*${status}`, 'g');
+            // Escape special regex characters and match complete table cells
+            const escapedStatus = status.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const pattern = new RegExp(`\\|\\s*${escapedStatus}\\s*\\|`, 'g');
             const matches = this.content.match(pattern);
             const count = matches ? matches.length : 0;
             statusCounts[status] = count;
