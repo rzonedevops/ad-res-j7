@@ -247,34 +247,53 @@ class LegalAttentionTransform {
   extractRegulatoryElements(responsiblePersonContext) {
     return [
       {
-        id: 'eu_regulation_1223_appointment',
-        type: 'regulatory_appointment',
-        description: 'Jacqueline Faucitt designated as Responsible Person under EU Regulation 1223/2009',
+        id: 'jurisdictional_office_structure',
+        type: 'regulatory_framework',
+        description: 'Each of 37 jurisdictions has designated office/entity as formal Responsible Person',
         jurisdictions: 37,
         timestamp: responsiblePersonContext.appointmentDate,
+        legalWeight: 0.88
+      },
+      {
+        id: 'central_coordination_dependency',
+        type: 'operational_requirement',
+        description: 'All 37 jurisdictional offices depend on Jacqueline Faucitt and John Knowlton for guidance and technical oversight',
+        dependencies: ['jacqui_expertise', 'john_knowlton_formulation', 'central_databases', 'crisis_management'],
+        timestamp: 'ongoing',
         legalWeight: 0.95
+      },
+      {
+        id: 'health_authority_communication',
+        type: 'operational_evidence',
+        description: 'Email evidence shows health authorities communicate directly with Jacqui and John during regulatory crises',
+        evidenceType: 'email_correspondence',
+        witnesses: ['john_knowlton'],
+        timestamp: 'historical_crises',
+        legalWeight: 0.92
       },
       {
         id: 'system_access_requirements',
         type: 'operational_requirement',
-        description: 'Access to product databases and compliance systems required for regulatory duties',
-        dependencies: ['product_information_files', 'regulatory_correspondence', 'compliance_systems'],
+        description: 'Access to central product databases and compliance systems required for coordinating all 37 jurisdictional offices',
+        dependencies: ['product_information_files', 'regulatory_correspondence', 'compliance_systems', 'financial_systems'],
         timestamp: 'ongoing',
-        legalWeight: 0.88
+        legalWeight: 0.90
       },
       {
-        id: 'interdict_regulatory_obstruction',
+        id: 'interdict_coordination_obstruction',
         type: 'harm_causation',
-        description: 'Ex parte interdict prevents fulfillment of non-delegable Responsible Person duties',
+        description: 'Ex parte interdict prevents Jacqui from coordinating Responsible Person compliance across all 37 jurisdictions',
         harmMagnitude: 1850000000, // €1.85 billion exposure
+        affectedJurisdictions: 37,
         timestamp: '2025-08-19',
-        legalWeight: 0.92
+        legalWeight: 0.93
       },
       {
         id: 'peter_knowledge_concealment',
         type: 'material_non_disclosure',
-        description: 'Peter knew of regulatory role but concealed from court in ex parte application',
+        description: 'Peter knew of central coordinating role and dependency structure but concealed from court in ex parte application',
         evidenceStrength: 0.89,
+        evidenceTypes: ['company_records', 'email_correspondence', 'john_knowlton_testimony'],
         timestamp: '2025-08-19',
         legalWeight: 0.87
       }
