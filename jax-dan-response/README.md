@@ -4,38 +4,13 @@ This directory contains the specific response of Jacqueline and Daniel Faucitt t
 
 ## Subdirectories
 
-- **`AD/`**: **NEW** - Structured response framework mirroring jax-response/AD with Daniel's technical perspective on allegations. Includes critical Responsible Person regulatory crisis analysis.
-- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit and **the critical Responsible Person Regulatory Crisis Section**.
+- **`AD/`**: Documents related to the "AD Response J7" project.
+- **`analysis-output/`**: Output from the analysis of the case.
+- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit.
 - **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
+- **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
 
 ## Key Evidence Documents
-
-### **🔥 CRITICAL: Responsible Person Regulatory Crisis Section**
-**Location**: `evidence-attachments/RESPONSIBLE_PERSON_REGULATORY_CRISIS_SECTION.md`
-
-**⚠️ PRIORITY 1 (MUST-DO PHASE 1) - This is the most significant material non-disclosure in Peter's founding affidavit.**
-
-This critical section addresses the Applicant's failure to disclose that Jacqueline Faucitt holds the legally designated Responsible Person position under EU Regulation 1223/2009 for cosmetic products in **37 international jurisdictions**. This material non-disclosure may alone justify setting aside the interdict.
-
-**Key Components:**
-1. **Legal Framework** - EU Regulation 1223/2009 requirements across 37 jurisdictions
-2. **Non-Delegable Duties** - Personal legal liability and system access requirements
-3. **Immediate Crisis** - How interdict prevents fulfillment of regulatory obligations
-4. **Regulatory Consequences** - Potential penalties of R50M+ and business destruction
-5. **Material Non-Disclosure** - Evidence of Applicant's knowledge and failure to disclose
-
-**Critical Impact:**
-- Creates immediate regulatory compliance crisis across 37 jurisdictions
-- Exposes business to penalties of €10,000-€1,000,000 per jurisdiction per violation
-- Prevents response to regulatory inquiries within statutory timeframes (24-48 hours)
-- Blocks ability to implement safety recalls or corrective actions
-- May constitute fraud upon the Court through systematic material non-disclosure
-
-**Evidence Requirements:**
-- JF-RP1: Responsible Person designation documentation (37 jurisdictions)
-- JF-RP2: Regulatory risk analysis and penalty assessment
-- JF-RP3: System access requirements for compliance
-- JF-RP4: Evidence of immediate consequences post-interdict
 
 ### Dan's Technical Infrastructure Affidavit
 **Location**: `evidence-attachments/Dan_Technical_Infrastructure_Affidavit.md`
@@ -152,6 +127,9 @@ This enhanced section applies sophisticated Legal Attention Transform mechanisms
 **Evidence Cross-Reference:**
 - `SECTION_12_DOCUMENTARY_EVIDENCE_INDEX.md` - Complete evidence indexing
 - `POINT_BY_POINT_REBUTTAL_MATRIX.md` - Systematic rebuttal framework
+- **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's technical infrastructure affidavit.
+- **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
+- **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
 
 ## Key Documents
 
@@ -177,14 +155,22 @@ This enhanced section applies sophisticated Legal Attention Transform mechanisms
   - Material non-disclosure analysis showing facts omitted from ex parte application
   - This directly refutes the "unauthorized payment" allegation by demonstrating the Applicant's sudden objection is inconsistent with his decades-long acceptance and use of the same practice
 
-- **`SECTION_4_SETTLEMENT_AND_TIMING.md`**: Section 4 of the new structured response addressing settlement agreement and strategic timing (NEW - High Priority). This section provides:
-  - Documentation that settlement agreement was signed 8 days before interdict filing
-  - Analysis of investment payout timeline (9 months) as ulterior motive
-  - Evidence of strategic litigation for settlement leverage rather than genuine urgency
-  - Demonstration of material non-disclosure in ex parte application regarding settlement context
-  - Timeline analysis showing 68+ day delay contradicting urgency claims
-  - Legal analysis of abuse of court process and ex parte procedure
-  - This directly refutes claims of urgency and exposes the strategic nature of the interdict application
+- **`PETERS_CAUSATION_ANALYSIS.md`**: Critical analysis demonstrating that Peter Faucitt created the very problems he complains about through his own unilateral actions (Section 5 / Part B Material Non-Disclosures). This analysis provides:
+  - Card Cancellations Created Documentation Gap (Section 5.1): Peter cancelled all business cards on 7 June 2025 (day after Daniel provided reports to accountant), disrupting documentation systems, then demanded documentation he made inaccessible
+  - System Lockouts Prevented Normal Operations (Section 5.2): Peter restricted directors' access to systems while empowering non-director Rynette Farrar with unrestricted access
+  - Self-Created Crisis Used as Pretext (Section 5.3): Timeline analysis showing Peter manufactured crisis (11 August 2025 settlement → 2 days → 14 August interdict filing → 9 months → May 2026 investment payout)
+  - Peter's Own Fiduciary Breaches (Section 5.4): Documentation of Peter's violations of his own fiduciary duties through unilateral destructive actions
+  - Material non-disclosure analysis showing Peter failed to disclose his causation in ex parte application
+  - This establishes that Peter cannot complain of problems he himself created and that the interdict must be set aside for material non-disclosure
+
+- **`PETERS_BAD_FAITH_TIMELINE_ANALYSIS.md`**: Focused timeline analysis demonstrating Peter's systematic pattern of bad faith, premeditation, and strategic manipulation. This analysis provides:
+  - Complete chronological timeline from June 2025 (setup phase) through May 2026 (payout due)
+  - Five key bad faith indicators: Two-month delay (negates urgency), Settlement-to-interdict coordination (2 days), Investment payout timing (9 months), Bantjies contradiction (selective use of proper procedures), Manufactured crisis pattern
+  - Analysis of each timeline element showing absence of genuine urgency and presence of strategic coordination
+  - Material non-disclosures revealed by timeline (timing, causation, settlement manipulation, Peter's own conduct)
+  - Legal consequences: interdict must be set aside, personal costs order warranted, declaratory relief required
+  - Cross-references to supporting evidence documents
+  - Establishes that Peter's conduct reveals strategic litigation for personal advantage, not genuine concern for companies
 
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE.docx`**: Comprehensive Shopify evidence documentation.
 - **`AFFIDAVIT_SHOPIFY_EVIDENCE_COMPREHENSIVE-ENHANCED.docx`**: Enhanced version of Shopify evidence documentation.

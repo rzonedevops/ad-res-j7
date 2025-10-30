@@ -1,0 +1,121 @@
+{
+  "total": 16,
+  "successful": 0,
+  "failed": 0,
+  "dryRun": true,
+  "totalTasksLinked": 146,
+  "issues": [
+    {
+      "feature": "Core Workflow Testing",
+      "title": "[FEATURE] Core Workflow Testing",
+      "taskCount": 17,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Workflow Enhancement",
+      "title": "[FEATURE] Workflow Enhancement",
+      "taskCount": 6,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Civil Evidence Standards",
+      "title": "[FEATURE] Civil Evidence Standards",
+      "taskCount": 10,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Criminal Evidence Standards",
+      "title": "[FEATURE] Criminal Evidence Standards",
+      "taskCount": 10,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Mathematical Proof Standards",
+      "title": "[FEATURE] Mathematical Proof Standards",
+      "taskCount": 10,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Evidence Collection Infrastructure",
+      "title": "[FEATURE] Evidence Collection Infrastructure",
+      "taskCount": 15,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Phase 1 Critical Evidence",
+      "title": "[FEATURE] Phase 1 Critical Evidence",
+      "taskCount": 7,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Phase 2 Supporting Evidence",
+      "title": "[FEATURE] Phase 2 Supporting Evidence",
+      "taskCount": 10,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Repository Structure",
+      "title": "[FEATURE] Repository Structure",
+      "taskCount": 6,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Timeline & Visualization",
+      "title": "[FEATURE] Timeline & Visualization",
+      "taskCount": 6,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Pre-Legal Review Validation",
+      "title": "[FEATURE] Pre-Legal Review Validation",
+      "taskCount": 6,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Forensic Analysis Enhancement",
+      "title": "[FEATURE] Forensic Analysis Enhancement",
+      "taskCount": 9,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Critical System Testing",
+      "title": "[FEATURE] Critical System Testing",
+      "taskCount": 6,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Advanced QA Automation",
+      "title": "[FEATURE] Advanced QA Automation",
+      "taskCount": 5,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Critical Timeline Tasks",
+      "title": "[FEATURE] Critical Timeline Tasks",
+      "taskCount": 9,
+      "created": false,
+      "dryRun": true
+    },
+    {
+      "feature": "Jax-Dan Response Integration",
+      "title": "[FEATURE] Jax-Dan Response Integration",
+      "taskCount": 14,
+      "created": false,
+      "dryRun": true
+    }
+  ]
+}
