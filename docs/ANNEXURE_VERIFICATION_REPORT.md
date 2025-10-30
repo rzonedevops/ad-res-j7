@@ -1,6 +1,9 @@
 # ANNEXURE VERIFICATION REPORT
 ## Case 2025-137857 - Affidavit v3 Annexure Reference Verification
 
+> **⚠️ NOTE:** This is the original verification report from October 16, 2025.  
+> **For the most recent verification, see:** `ANNEXURE_VERIFICATION_REPORT_2025_10_30.md`
+
 **Report Date:** October 16, 2025  
 **Task Reference:** Repository_Status_and_Critical_Evidence_Collection.md, Line 59  
 **Affidavit Version:** REVISED_Answering_Affidavit_Jax_TRACKED_CHANGES_v3.md  
