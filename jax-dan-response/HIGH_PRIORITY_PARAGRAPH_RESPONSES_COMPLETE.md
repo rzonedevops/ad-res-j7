@@ -143,7 +143,7 @@ All high-priority paragraph responses are properly integrated:
 
 ## Conclusion
 
-Task #145 "Add all high-priority paragraph responses" is **100% COMPLETE**. All 8 high-priority paragraphs from the AD framework have comprehensive, evidence-rich responses that:
+Task #145 "Add all high-priority paragraph responses" (from `todo/structured-todo.json`) is **100% COMPLETE**. All 8 high-priority paragraphs from the AD framework have comprehensive, evidence-rich responses that:
 
 - Address Peter's specific allegations from the founding affidavit
 - Provide Daniel's unique CIO/technical perspective
