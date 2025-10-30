@@ -57,6 +57,7 @@ test-data/
 !FEATURE_ISSUE_GENERATION_SUMMARY.md
 !HIERARCHICAL_ISSUES_SUMMARY.md
 !IMPLEMENTATION_SUMMARY.md
+!CROSS_REFERENCE_VALIDATION_REPORT.md
 duplicate-cleanup-report.json
 specific-duplicates-summary.json
 repository_tree.txt

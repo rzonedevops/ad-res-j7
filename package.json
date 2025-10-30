@@ -32,6 +32,8 @@
     "test:automated-cross-reference": "python3 scripts/automated_cross_reference_checker.py",
     "test:automated-cross-reference-unit": "python3 tests/test_automated_cross_reference_checker.py",
     "validate-cross-references": "python3 scripts/automated_cross_reference_checker.py --output cross_reference_validation_report.json",
+    "verify-all-cross-references": "bash scripts/verify-all-cross-references.sh",
+    "verify-cross-references-verbose": "bash scripts/verify-all-cross-references.sh --verbose",
     "test:date-validation": "node tests/date-validation-test.js",
     "test:empty-todo-validation": "node tests/empty-todo-file-validation.test.js",
     "test:malformed-markdown": "node tests/malformed-markdown-test.js",
