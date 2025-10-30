@@ -16,6 +16,7 @@
     "test:forensic-timeline": "node tests/forensic-timeline-population.test.js",
     "test:duplicate-cleanup": "node tests/duplicate-cleanup-test.js",
     "test:label-handling": "node tests/label-handling-test.js",
+    "test:verify-multiple-labels": "node tests/verify-multiple-labels-issue-creation.test.js",
     "test:burden-of-proof": "node tests/burden-of-proof-workflow-test.js",
     "test:civil-evidence-standards": "node tests/civil-evidence-standards-validation.test.js",
     "test:label-creation": "node tests/manual-test-label-creation.js",
