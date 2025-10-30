@@ -531,11 +531,10 @@ class TestRunner {
       console.log(`⏱️  Total execution time: ${duration}s`);
       
       // Exit with appropriate code
-      const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && comprehensiveSuccess && securitySuccess && endToEndSuccess && malformedMarkdownSuccess && filePathValidationSuccess;
       const overallSuccess = validationSuccess && integrationSuccess && apiSuccess && 
                              comprehensiveSuccess && securitySuccess && endToEndSuccess && 
                              emptyTodoSuccess && malformedMarkdownSuccess && noActionableTasksSuccess && 
-                             todoValidationSuccess && repositoryStructureSuccess;
+                             todoValidationSuccess && repositoryStructureSuccess && filePathValidationSuccess;
       process.exit(overallSuccess ? 0 : 1);
       
     } catch (error) {
