@@ -23,7 +23,13 @@ The repository has grown significantly:
 2. Obtain regulatory risk analysis documentation (JF-RP2)
 3. Collect director loan account statements for all 3 directors (JF-DLA1, JF-DLA2, JF-DLA3)
 4. Document Peter's own withdrawals with minimum 4 examples (JF-PA1 through JF-PA4)
-5. Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
+5. ✅ **COMPLETED** - Obtain R500K payment bank statement dated 16 July 2025 (JF-BS1)
+   - **Evidence Location**: `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf` (153KB)
+   - **Parent Annexure**: JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)
+   - **Documentation**: `ANNEXURES/JF04/README.md` (complete 5-month bank statement collection)
+   - **Sub-Annexure**: `evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md` (analysis template)
+   - **Status**: Evidence obtained and documented. Ready for data insertion phase.
+   - **Completion Date**: 30 October 2025
 6. Secure JF5 draft agreement initial version reviewed - **Template created**: `evidence/annexures/JF5-DRAFT_SETTLEMENT_AGREEMENT_INITIAL_VERSION.md` - Requires actual draft document from ENS correspondence
 7. Secure JF5 final agreement signed version with changes - **Template created**: `evidence/annexures/JF5-FINAL_SETTLEMENT_AGREEMENT_SIGNED_VERSION.md` - Requires actual signed document
 8. Create comparison document highlighting all changes between JF5 draft and final - **Template created**: `evidence/annexures/JF5-COMPARISON_DRAFT_VS_FINAL_CHANGES.md` - Requires completion after obtaining both agreements

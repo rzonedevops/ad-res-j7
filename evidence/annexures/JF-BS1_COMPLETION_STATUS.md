@@ -21,12 +21,14 @@
 ## Evidence Obtained
 
 ### Primary Source Document
-**File**: `evidence/bank_records/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`
+**File**: `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`
+- **Parent Annexure**: JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)
 - **Type**: PDF Bank Statement
 - **Size**: 153KB
 - **Statement Period**: July 2025 (includes 16 July 2025)
 - **Account Holder**: D. Faucitt
 - **Status**: ✅ On file
+- **Duplicate Copy**: `evidence/bank_records/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf` (for working reference)
 
 ### Template Document
 **File**: `evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md`
@@ -39,22 +41,36 @@
 
 ## Evidence Chain Documentation
 
-### 1. Source Material (OBTAINED)
-✅ **PDF Bank Statement**: `D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`
+### 1. Source Material (OBTAINED) ✅
+**Primary Location**: `ANNEXURES/JF04/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`
+- **Parent Annexure**: JF04 (DANIEL FAUCITT PERSONAL BANK RECORDS)
 - Official bank records for July 2025
 - Contains the disputed R500,000 transaction dated 16 July 2025
-- Stored in `evidence/bank_records/` directory
 - File integrity verified (153KB, valid PDF format)
+- Part of 5-month bank statement collection (June-October 2025)
 
-### 2. Template Framework (COMPLETE)
-✅ **Structured Annexure**: `JF-BS1_BANK_STATEMENT_16_JULY_2025.md`
+**Working Copy**: `evidence/bank_records/D_FAUCITT_PERSONAL_BANK_RECORDS_20250704.pdf`
+- Duplicate copy for attorney/paralegal working reference
+- Identical to JF04 version
+- Not to be filed separately with court
+
+### 2. Annexure Documentation (COMPLETE) ✅
+**JF04 Index**: `ANNEXURES/JF04/README.md`
+- Comprehensive 336-line documentation (9,340 characters)
+- Covers all 5 monthly bank statements (June-October 2025)
+- Special highlight on July 2025 statement containing R500K transaction
+- Cross-references to all related evidence
+- Affidavit integration points documented
+- Strategic significance analysis complete
+
+### 3. Sub-Annexure Framework (COMPLETE) ✅
+**JF-BS1 Template**: `evidence/annexures/JF-BS1_BANK_STATEMENT_16_JULY_2025.md`
 - Comprehensive 311-line template
+- Updated to reference JF04 as parent annexure
 - 11 major sections with proper legal framework
 - Placeholder markers for data insertion
 - Cross-references to related evidence (JF-DLA3, JF-PA1-4, JF-AR1)
 - Affidavit integration points documented
-
-### 3. Supporting Evidence (CROSS-REFERENCED)
 ✅ **Related Annexures**:
 - JF-DLA3: Daniel's director loan account statement
 - JF-PA1 to JF-PA4: Peter's withdrawal examples (for comparison)
