@@ -49,6 +49,7 @@
     "test:feature-issues": "node tests/feature-issue-generation.test.js",
     "test:consolidation-dry-run": "node tests/consolidation-dry-run.test.js",
     "test:affidavit-v3-annexures": "node tests/affidavit-v3-annexure-verification.test.js",
+    "test:phase1-narrative": "node tests/phase1-chronological-narrative.test.js",
     "validate-evidence-completeness": "node scripts/validate-evidence-completeness.js",
     "validate-evidence-completeness-py": "python3 scripts/validate_evidence_completeness.py",
     "check:jax-dan-contradictions": "node scripts/check-jax-dan-contradictions.js",
