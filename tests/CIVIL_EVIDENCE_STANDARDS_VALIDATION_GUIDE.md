@@ -77,11 +77,18 @@ The civil evidence standards validation test ensures that the burden of proof fr
 - **Threshold Application**: Confirms primary explanation must exceed 50%
 - **Scenario Testing**: Tests multiple explanation comparison scenarios
 
-### 12. Damages/Harm Calculation Framework (Test 14)
+### 12. Damages/Harm Calculation Framework with Duplicate Prevention (Test 14)
 - **Requirement Validation**: Confirms damages must be proven
 - **Calculation Testing**: Validates damage proof percentage calculations
 - **Threshold Application**: Tests that proven damages must meet >50% of claimed
 - **Scenario Coverage**: Tests various damage claim scenarios
+- **Duplicate Detection**: Identifies duplicate damage claims by category and time period
+- **Duplicate Prevention**: Ensures damage claims are not double-counted in totals
+- **Test Cases**:
+  - Detects duplicate claims with same category and period
+  - Calculates correct totals excluding duplicates (e.g., R115,000 from 5 claims with 1 duplicate)
+  - Validates all unique claims are properly counted
+  - Confirms no false positives when claims differ by period or category
 
 ### 13. Causal Connection Requirements (Test 15)
 - **Framework Requirement**: Validates causal connection proof is required
@@ -125,7 +132,7 @@ npm test
 ```
 
 ### Metrics Reported
-- **Total Tests**: 51 assertions across 15 test categories
+- **Total Tests**: 56 assertions across 15 test categories (updated with duplicate prevention)
 - **Success Rate**: Percentage of passed tests
 - **Execution Time**: Test suite duration in seconds
 - **Standard**: Balance of Probabilities
@@ -197,6 +204,18 @@ The test suite integrates with:
 1. **High Proof Rate**: 85% of claimed damages proven (MEETS threshold)
 2. **Moderate Proof Rate**: 60% of claimed damages proven (MEETS threshold)
 3. **Low Proof Rate**: 47.5% of claimed damages proven (FAILS threshold)
+
+### Duplicate Prevention Scenarios (Task 33 Implementation)
+1. **Duplicate Detection**: Multiple claims with same category and period
+   - Example: Two "revenue_loss" claims for "2025-Q1" 
+   - Detection: Identifies 1 duplicate from 5 total claims
+2. **Duplicate-Free Calculation**: Properly excludes duplicates from totals
+   - Input: 5 claims totaling R165,000 with 1 duplicate (R50,000)
+   - Output: R115,000 (correct total without double-counting)
+3. **Unique Claims Validation**: All unique claims counted when no duplicates exist
+   - Different categories: "revenue_loss" vs "operational_costs"
+   - Different periods: "2025-Q1" vs "2025-Q2"
+   - Result: All 4 claims properly counted as unique
 
 ## Maintenance
 
