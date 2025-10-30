@@ -180,3 +180,22 @@ The systematic omission of material facts that would have influenced the Court's
 **Impact:** Highest - May alone justify setting aside interdict  
 **Status:** Ready for integration into main affidavit  
 **Last Updated:** 2025-10-15
+
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- `jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md`
+- `jax-dan-response/AD/2-High-Priority/README.md`
+- `jax-dan-response/AD/README.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/README.md`
+- `jax-response/AD/dan-perspective/README.md`
+
+---

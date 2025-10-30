@@ -570,3 +570,13 @@ The interdict fails the proportionality test under:
 *Annexure: JF-DISPROP*  
 *Date: 2025-10-15*
 
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.md`
+- `jax-response/AD/dan-perspective/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.md`
+
+---

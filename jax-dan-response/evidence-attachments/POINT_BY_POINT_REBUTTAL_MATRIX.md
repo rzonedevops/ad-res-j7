@@ -707,3 +707,13 @@ The 1 meaningless allegation is purely formal and requires minimal response:
 *Annexure: JF-REBUTTAL-MATRIX*  
 *Date: 2025-10-15*
 
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/README.md`
+- `jax-response/AD/dan-perspective/README.md`
+
+---

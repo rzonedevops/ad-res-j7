@@ -528,3 +528,13 @@ External validation will:
 *Annexure: JF-EXTERNAL-VAL*  
 *Date: 2025-10-15*
 
+---
+
+## Referenced By
+
+This evidence file is referenced in the following Answering Affidavit sections:
+
+- `jax-dan-response/AD/1-Critical/PARA_10_5-10_10_23_DAN_FINANCIAL.md`
+- `jax-response/AD/dan-perspective/1-Critical/PARA_10_5-10_10_23_DAN_FINANCIAL.md`
+
+---
