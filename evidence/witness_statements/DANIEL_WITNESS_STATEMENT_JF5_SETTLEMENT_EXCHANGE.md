@@ -11,7 +11,7 @@
 
 ## Statement Purpose
 
-This witness statement provides a first-hand account of the exchange that occurred on 11 August 2025 regarding changes made to the settlement agreement (JF5) immediately prior to signing. This statement specifically addresses the question "Has anything changed?" and the response received from the attorneys.
+This witness statement provides a first-hand account of the exchange that occurred on 18 September 2025 (Thursday) at mediation regarding changes made to the settlement agreement (JF5) immediately prior to signing. This statement specifically addresses the question "Has anything changed?" and the response received from the attorneys.
 
 ---
 
@@ -19,27 +19,31 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 ### Timeline of Events
 
-1. **Prior to 11 August 2025:**
+1. **Prior to 18 September 2025:**
    - Settlement discussions regarding psychiatric evaluations and drug screening
    - Draft agreement reviewed by all parties
    - Understanding reached on key terms: voluntary participation, party control, neutral oversight
 
-2. **11 August 2025 - Morning:**
+2. **18 September 2025 (Thursday) - At Mediation:**
    - Attorneys (ENS Africa representing Applicant) indicated final version was ready for signature
-   - All parties convened for signing ceremony
+   - All parties convened for signing ceremony at mediation
    - Attorneys stated they needed to "check with the Applicant if everything was acceptable"
 
-3. **11 August 2025 - Immediately Before Signing:**
+3. **18 September 2025 - Immediately Before Signing:**
    - Attorneys returned with printed copies
    - **Critical exchange occurred** (detailed below)
 
-4. **11 August 2025 - After Signing:**
-   - All parties signed the agreement
+4. **18 September 2025 - After Signing:**
+   - All parties signed the agreement at mediation
    - Agreement became effective immediately
 
-5. **13 August 2025 - Two Days Later:**
-   - Applicant filed interdict application
-   - Used signed settlement agreement as part of litigation strategy
+5. **19 September 2025 (Friday) - Day After:**
+   - Respondents received final draft copy
+   - Began reviewing the agreement
+
+6. **22 September 2025 (Monday) - Weekend Review:**
+   - Respondents withdrew after noticing multiple discrepancies over the weekend
+   - Discrepancies discovered between what was represented and what was signed
 
 ---
 
@@ -173,9 +177,10 @@ This witness statement provides a first-hand account of the exchange that occurr
 
 ### Strategic Timeline
 
-- **11 August 2025:** Settlement agreement signed under false pretenses
-- **13 August 2025:** Interdict application filed (2 days later)
-- Interdict relies on settlement agreement as evidence of urgency/necessity
+- **18 September 2025 (Thursday):** Settlement agreement signed at mediation under false pretenses
+- **19 September 2025 (Friday):** Respondents received final draft copy
+- **22 September 2025 (Monday):** Respondents withdrew after discovering multiple discrepancies over weekend
+- Settlement obtained through misrepresentation about changes made
 
 ### Pattern of Control and Manipulation
 
@@ -229,11 +234,11 @@ This misrepresentation provides grounds to void the JF5 agreement because:
 
 ### Impact on Current Proceedings
 
-This evidence is relevant to current interdict proceedings because:
-1. Applicant relies on JF5 agreement as evidence
+This evidence is relevant to current proceedings because:
+1. Applicant relies on JF5 agreement as basis for court orders
 2. Agreement was obtained through misrepresentation
-3. Timing shows coordination (settlement → 2 days → interdict)
-4. Pattern demonstrates manipulation, not genuine urgency
+3. Respondents withdrew on 22 September after discovering discrepancies
+4. Pattern demonstrates manipulation through concealment of material changes
 
 ---
 

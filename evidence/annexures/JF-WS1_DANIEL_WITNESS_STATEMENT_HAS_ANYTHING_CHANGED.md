@@ -47,7 +47,7 @@ I, **DANIEL FAUCITT**, do hereby make oath and state that:
 
 1.3 The facts contained in this statement are within my personal knowledge and are true and correct.
 
-1.4 I was present during the signing of the JF5 settlement agreement on or about 11 August 2025.
+1.4 I was present during the signing of the JF5 settlement agreement on 18 September 2025 (Thursday) at mediation.
 
 ### 2. THE SETTLEMENT AGREEMENT CONTEXT
 

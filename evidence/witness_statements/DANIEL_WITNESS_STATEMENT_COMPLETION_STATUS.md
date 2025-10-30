@@ -6,6 +6,18 @@
 
 ---
 
+## IMPORTANT TIMELINE CORRECTION
+
+**Corrected Date:** The settlement agreement signing occurred on **18 September 2025 (Thursday)** at mediation, NOT 11 August 2025 as initially documented. 
+
+**Context:**
+- 11 August 2025 was the date of the Jacqui & Peter "Main Trustee" agreement (backdated to 1 July 2025)
+- The actual JF5 settlement agreements were signed on **Thursday 18 September 2025** at mediation
+- Respondents received final draft copy on **Friday 19 September 2025**
+- Respondents withdrew on **Monday 22 September 2025** after noticing multiple discrepancies over the weekend
+
+---
+
 ## Summary
 
 The witness statement templates for Daniel Faucitt regarding the "Has anything changed?" exchange during the JF5 settlement agreement signing have been populated with all available factual information from case documentation. The templates are now ready for final witness input and formal attestation.
@@ -22,10 +34,13 @@ The witness statement templates for Daniel Faucitt regarding the "Has anything c
    - Case role: Second Respondent in Case 2025-137857
 
 2. **Event Details**
-   - Date of exchange: 11 August 2025
+   - Date of exchange: 18 September 2025 (Thursday)
+   - Location: Mediation
    - Context: Settlement agreement signing
    - Parties: Settlement between Peter Faucitt and Jacqueline Faucitt & Daniel Faucitt
    - Attorney firm: ENS Africa (representing Applicant)
+   - Post-signing: Respondents received final draft on 19 September 2025 (Friday)
+   - Withdrawal: 22 September 2025 (Monday) after discovering discrepancies over weekend
 
 3. **Critical Exchange Documentation**
    - Question: "Has anything changed?"
@@ -139,7 +154,7 @@ The witness statement templates for Daniel Faucitt regarding the "Has anything c
 - [x] All factual information from case files included
 - [x] Identity number verified (820715 5300 18 2)
 - [x] Case number confirmed (2025-137857)
-- [x] Event date verified (11 August 2025)
+- [x] Event date verified (18 September 2025 - Thursday mediation)
 - [x] Critical quotes documented accurately
 - [x] Supporting evidence cross-referenced
 - [x] Legal framework properly outlined
@@ -208,12 +223,11 @@ This witness statement is **CRITICAL** because it provides:
 
 ## Timeline Context
 
-- **11 August 2025:** Settlement agreement signed (subject of this witness statement)
-- **13 August 2025:** Interdict application filed (2 days later)
-- **19 August 2025:** Interdict served
-- **30 October 2025:** Witness statement template substantially completed
+- **18 September 2025 (Thursday):** Settlement agreement signed at mediation (subject of this witness statement)
+- **19 September 2025 (Friday):** Respondents received final draft copy
+- **22 September 2025 (Monday):** Respondents withdrew after discovering multiple discrepancies over the weekend
 
-This tight timeline demonstrates the strategic manipulation and urgency of documenting the "Has anything changed?" exchange.
+This timeline demonstrates the respondents' due diligence in reviewing the agreement and promptly withdrawing upon discovering the misrepresentation about changes made.
 
 ---
 
