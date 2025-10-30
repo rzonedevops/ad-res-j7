@@ -9,6 +9,39 @@ This directory contains the specific response of Jacqueline and Daniel Faucitt t
 - **`evidence-attachments/`**: Evidence attached to the responding affidavit, including Dan's Technical Infrastructure Affidavit.
 - **`source-documents/`**: Source documents used in the response, including the main draft of the responding affidavit.
 - **`financial-analysis/`**: Detailed financial analysis to refute the applicant's claims.
+- **`medium_priority_responses/`**: Completed responses for medium-priority paragraphs.
+
+## Response Templates
+
+**NEW: Standardized Paragraph Response Templates** - Task 144 Implementation
+
+The following templates provide a consistent structure for preparing responses to medium-priority paragraphs:
+
+1. **`STANDARDIZED_PARAGRAPH_RESPONSE_TEMPLATE.md`** - Complete template with detailed guidance
+   - Comprehensive framework for all paragraph responses
+   - Six-part response structure (Factual Corrections, Counter-Evidence, Material Non-Disclosures, Inconsistency, Counter-Narrative, Causation)
+   - Evidence integration guidelines
+   - Quality assurance checklist
+   - Cross-reference strategy
+
+2. **`PARAGRAPH_RESPONSE_QUICK_REFERENCE.md`** - Quick reference guide
+   - 5-minute paragraph response checklist
+   - Category-specific focus areas (Financial, Governance, Operational, Investigation)
+   - Annexure naming conventions
+   - Common mistakes to avoid
+   - Time-saving tips
+
+3. **`BLANK_PARAGRAPH_RESPONSE_TEMPLATE.md`** - Ready-to-use blank template
+   - Copy this file to start a new paragraph response
+   - Fill in each section with paragraph-specific content
+   - Pre-submission checklist included
+   - Guidance notes for each section
+
+**Usage:**
+- Review the full template for comprehensive guidance
+- Use the quick reference for rapid deployment
+- Copy the blank template for each new paragraph response
+- See `medium_priority_responses/` for completed examples
 
 ## Key Evidence Documents
 
