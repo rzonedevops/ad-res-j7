@@ -15,7 +15,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 **Entities Analyzed:** 12 primary entities (3 natural persons, 6 juristic persons, 3 additional actors)  
 **Relations Identified:** 10 critical legal relationships requiring lex principles  
 **Events Mapped:** 18 critical timeline events with legal implications  
-**Lex Refinements:** 9 new principles + 7 enhanced existing principles  
+**Lex Refinements:** 14 new/enhanced principles (5 new, 9 enhanced)  
 **Integration Points:** 28 jax-dan-response documents requiring lex principle integration  
 **Critical Gaps Identified:** 5 major framework gaps requiring immediate implementation
 
@@ -42,7 +42,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 | Principle | Location | Confidence | Application |
 |-----------|----------|-----------|-------------|
 | `fiduciary-duty` | lv1/known_laws.scm | 1.0 | Director and trustee duties |
-| `trust-power-bypass-indicators` | trs/za/enhanced_v2.scm | 0.94 | Seeks interdict despite absolute powers |
+| `trust-power-bypass-temporal-analysis` | trs/za/enhanced_v3.scm | 0.96 | Seeks interdict despite absolute powers |
 | `beneficiary-adverse-action-prohibition` | trs/za/enhanced_v2.scm | 0.97 | Attacks beneficiary Jax |
 | `director-self-dealing-prohibition` | cmp/za/company_law.scm | 0.97 | Villa Via 86% profit margin |
 | `excessive-profit-extraction-test` | cmp/za/forensic_v3.scm | 0.94 | Villa Via rent 2-4x market |
@@ -54,13 +54,13 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 1. **Trust Power Bypass with Settlement Timing Correlation**
    - **Issue:** Peter has absolute trust powers but seeks court interdict against beneficiary Jax during settlement negotiation (2 days after settlement discussion on 11 Aug 2025)
    - **Lex Gap:** Need temporal analysis of trust power bypass with settlement timing
-   - **Refinement Required:** Add `trust-power-bypass-temporal-analysis` principle
+   - **Refinement Applied:** `trust-power-bypass-temporal-analysis` (trs/za/enhanced_v3.scm)
    - **Evidence:** Settlement discussion 11 Aug, Jax signs backdating 11 Aug, Peter files interdict 13 Aug
 
 2. **Manufactured Crisis Indicators**
    - **Issue:** Card cancellations on 7 Jun 2025 (day after Dan provides reports to accountant on 6 Jun)
    - **Lex Gap:** Need `manufactured-crisis-indicators` with temporal pattern analysis
-   - **Refinement Required:** Create new principle linking timing to bad faith
+   - **Refinement Applied:** `manufactured-crisis-indicators` (trs/za/enhanced_v3.scm)
    - **Pattern:** Reports submitted 6 Jun → Cards cancelled 7 Jun → Interdict filed 13 Aug
 
 3. **Self-Dealing via Villa Via with Material Non-Disclosure**
@@ -72,7 +72,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 4. **Coercion Indicators for Backdating**
    - **Issue:** Jax signs backdating Peter's Main Trustee status on 11 Aug; Peter includes Jax in interdict 2 days later (13 Aug)
    - **Lex Gap:** Need coercion indicators for backdating combined with immediate adverse action
-   - **Refinement Required:** Add `backdating-coercion-indicators` principle
+   - **Refinement Applied:** `backdating-coercion-indicators` (trs/za/enhanced_v3.scm)
    - **Timeline:** Backdating signature 11 Aug → Interdict against signer 13 Aug
 
 #### Jacqueline Faucitt (First Respondent)
@@ -93,7 +93,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 | `fiduciary-duty` | lv1/known_laws.scm | 1.0 | Director duties |
 | `eu-responsible-person-duty` | int/za/regulatory_compliance.scm | 0.96 | EU compliance obligations |
 | `regulatory-compliance-necessity` | int/za/regulatory_compliance.scm | 0.97 | Mandatory compliance |
-| `beneficiary-protection-when-attacked` | **NEW REQUIRED** | 0.96 | Trustee attacks beneficiary |
+| `beneficiary-protection-when-attacked` | trs/za/enhanced_v3.scm | 0.97 | Trustee attacks beneficiary |
 | `director-collective-action-requirement` | cmp/za/company_law.scm | 0.96 | Peter's unilateral actions |
 
 **Critical Legal Issues:**
@@ -101,7 +101,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 1. **Beneficiary Attacked by Trustee**
    - **Issue:** Peter (Trustee) and Danie (Co-Trustee) include Jax (Beneficiary) in interdict for "helping Daniel"
    - **Lex Gap:** Need specific principle for beneficiary protection when trustee attacks
-   - **Refinement Required:** Create `beneficiary-protection-when-attacked` principle
+   - **Refinement Applied:** `beneficiary-protection-when-attacked` (trs/za/enhanced_v3.scm)
    - **Aggravating Factor:** Beneficiary punished for supporting another beneficiary
 
 2. **EU Responsible Person Regulatory Crisis**
@@ -114,7 +114,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
    - **Issue:** Jax confronted Rynette on 15 May 2025 regarding ZAR 1,035,000 debt to Rezonance
    - **Subsequent Actions:** Orders removed from Shopify 22 May, new domain registered 29 May
    - **Lex Gap:** Need correlation between confrontation and revenue hijacking
-   - **Refinement Required:** Add `confrontation-retaliation-indicators` principle
+   - **Refinement Applied:** `fraud-exposure-retaliation-indicators` (trs/za/enhanced_v3.scm) - covers retaliation for exposure/confrontation
 
 #### Daniel Faucitt (Second Respondent)
 
@@ -165,7 +165,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 3. **Fraud Exposure Leading to Retaliation**
    - **Issue:** Dan exposed Villa Via fraud to Bantjies in June 2025; immediate retaliation followed
    - **Lex Gap:** Need `fraud-exposure-retaliation-indicators` principle
-   - **Refinement Required:** Create temporal correlation between fraud exposure and adverse actions
+   - **Refinement Applied:** `fraud-exposure-retaliation-indicators` (trs/za/enhanced_v3.scm)
 
 ---
 
@@ -183,7 +183,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 |-----------|----------|-----------|-------------|
 | `fiduciary-duty` | lv1/known_laws.scm | 1.0 | Core trustee obligation |
 | `beneficiary-adverse-action-prohibition` | trs/za/enhanced_v2.scm | 0.97 | Attacking beneficiaries |
-| `trust-power-bypass-indicators` | trs/za/enhanced_v2.scm | 0.94 | Seeking court relief unnecessarily |
+| `trust-power-bypass-temporal-analysis` | trs/za/enhanced_v3.scm | 0.96 | Seeking court relief unnecessarily |
 | `trust-asset-abandonment-indicators` | trs/za/enhanced_v2.scm | 0.93 | RWD neglect |
 
 **Critical Legal Issues:**
@@ -196,7 +196,7 @@ This refined analysis identifies relevant legal aspects of **entities**, **relat
 2. **Trust Power Bypass**
    - **Issue:** Peter has absolute powers under trust deed but seeks court interdict
    - **Temporal Analysis:** Interdict filed 2 days after Jax signs backdating document
-   - **Lex Enhancement Required:** Add temporal correlation analysis
+   - **Lex Enhancement Applied:** `trust-power-bypass-temporal-analysis` (trs/za/enhanced_v3.scm)
 
 #### Director-Company Relations
 
