@@ -116,7 +116,7 @@ Fiduciaries must provide full accounting of dealings.
 - No regular reporting
 
 **Case Law:**
-- *Robinson v Randfontein Estates GM Co Ltd* 1921 AD 168
+- *Robinson v Randfontein Estates GM Co Ltd* 1921 AD 168 / JR 168 / DR 168
 - *Phillips v Fieldstone Africa (Pty) Ltd* 2004 (3) SA 465 (SCA)
 - *Volvo (Southern Africa) (Pty) Ltd v Yssel* 2009 (6) SA 531 (SCA)
 
@@ -326,3 +326,7 @@ The legal framework overwhelmingly supports urgent judicial intervention. Multip
 4. Public interest in compliance
 
 The court has both the jurisdiction and duty to grant the relief sought to restore lawful business operations and protect stakeholder rights.
+
+### Commentary on AD 1
+
+Director Liability for Breach of Fiduciary Duty

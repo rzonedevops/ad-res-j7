@@ -295,7 +295,7 @@ Throughout the affidavit, add cross-references to the causation defense:
 - *Brisley v Drotsky* 2002 (4) SA 1 (SCA)
 
 **Causation and Proportionality:**
-- *Setlogelo v Setlogelo* 1914 AD 221
+- *Setlogelo v Setlogelo* 1914 AD 221 / JR 221 / DR 221
 - *Knox D'Arcy Ltd v Jamieson* 1996 (4) SA 348 (A)
 
 **Ex Parte Material Non-Disclosure:**
@@ -308,3 +308,13 @@ Throughout the affidavit, add cross-references to the causation defense:
 *For integration into Answering Affidavit*  
 *Date: 2025-10-15*
 
+
+
+### Commentary on AD 2
+
+Company Business Conduct Requirements
+
+
+### Commentary on AD 22
+
+Additional Party Information

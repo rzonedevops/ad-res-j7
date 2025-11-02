@@ -112,8 +112,8 @@ npm run test:phase1-narrative
 
 | Annexure | Evidence File | AD References |
 |----------|--------------|---------------|
-| JF-RP1 | Responsible Person Designation Documentation | AD 3.3, 3.4, 3.5, 3.6 |
-| JF-RP2 | Regulatory Risk Analysis | AD 3.6.4, 3.6.5, 3.7 |
+| JF-RP1 | Responsible Person Designation Documentation | AD 3.3 / JR 3.3 / DR 3.3, 3.4, 3.5, 3.6 |
+| JF-RP2 | Regulatory Risk Analysis | AD 3.6.4 / JR 3.6.4 / DR 3.6.4, 3.6.5, 3.7 |
 
 **Chronological Events:** 8 events from 2018-03-15 to 2025-08-19
 
@@ -122,14 +122,14 @@ npm run test:phase1-narrative
 
 | Annexure | Evidence File | AD References |
 |----------|--------------|---------------|
-| JF-DLA1 | Peter Faucitt Director Loan Account | AD 7.9, 7.10 |
-| JF-DLA2 | Jacqueline Faucitt Director Loan Account | AD 7.9, 7.10 |
-| JF-DLA3 | Daniel Faucitt Director Loan Account | AD 7.9, 7.10 |
-| JF-PA1 | Peter Withdrawal 15 Mar 2025 | AD 7.8.5.3 |
-| JF-PA2 | Peter Withdrawal 20 Jul 2025 | AD 7.8.5.3 |
-| JF-PA3 | Peter Withdrawal 12 Jan 2023 | AD 7.8.5.3 |
-| JF-PA4 | Peter Withdrawal 15 Feb 2023 | AD 7.8.5.3 |
-| JF-BS1 | R500K Payment Bank Statement | AD 7.8.5.2 |
+| JF-DLA1 | Peter Faucitt Director Loan Account | AD 7.9 / JR 7.9 / DR 7.9, 7.10 |
+| JF-DLA2 | Jacqueline Faucitt Director Loan Account | AD 7.9 / JR 7.9 / DR 7.9, 7.10 |
+| JF-DLA3 | Daniel Faucitt Director Loan Account | AD 7.9 / JR 7.9 / DR 7.9, 7.10 |
+| JF-PA1 | Peter Withdrawal 15 Mar 2025 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 |
+| JF-PA2 | Peter Withdrawal 20 Jul 2025 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 |
+| JF-PA3 | Peter Withdrawal 12 Jan 2023 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 |
+| JF-PA4 | Peter Withdrawal 15 Feb 2023 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 |
+| JF-BS1 | R500K Payment Bank Statement | AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2 |
 
 **Chronological Events:** 12 events from 2023-01-01 to 2025-07-25
 
@@ -138,8 +138,8 @@ npm run test:phase1-narrative
 
 | Annexure | Evidence File | AD References |
 |----------|--------------|---------------|
-| JF-CMP1 | Comparison Founding vs Answering | AD 2.2, 2.3 |
-| JF-DWS1 | Daniel Faucitt Witness Statement | AD 7.7, 11.6 |
+| JF-CMP1 | Comparison Founding vs Answering | AD 2.2 / JR 2.2 / DR 2.2, 2.3 |
+| JF-DWS1 | Daniel Faucitt Witness Statement | AD 7.7 / JR 7.7 / DR 7.7, 11.6 |
 
 **Chronological Events:** 6 events from 2025-06-01 to 2025-10-30
 
@@ -341,3 +341,28 @@ The Phase 1 Critical Evidence chronological narrative generator successfully:
 *Generated: 2025-10-30*  
 *Case: 2025-137857*  
 *Agent: GitHub Copilot*
+
+
+### Commentary on AD 2
+
+Company Business Conduct Requirements
+
+
+### Commentary on AD 3
+
+Court Order for Probation of Directors/Members
+
+
+### Commentary on AD 3.6
+
+Fourth Respondent - Regim A WWD
+
+
+### Commentary on AD 7
+
+Urgency and Delay Considerations
+
+
+### Commentary on AD 7.8
+
+Continuing Harm to Corporations

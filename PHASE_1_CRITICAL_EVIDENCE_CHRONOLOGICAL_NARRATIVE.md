@@ -18,7 +18,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 - **Paragraph 3:** Document Comparison & Witness Statements (Rank 3, Weight 90/100)
 
 **Total Tasks:** 7
-**AD References:** Multiple paragraphs from AD 2.2 through AD 11.6
+**AD References:** Multiple paragraphs from AD 2.2 / JR 2.2 / DR 2.2 through AD 11.6 / JR 11.6 / DR 11.6
 
 ---
 
@@ -26,7 +26,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 1 (1 = highest influence)
 **Weight:** 100/100
-**AD References:** AD 3.3, AD 3.4, AD 3.5, AD 3.6, AD 3.7
+**AD References:** AD 3.3 / JR 3.3 / DR 3.3, AD 3.4 / JR 3.4 / DR 3.4, AD 3.5 / JR 3.5 / DR 3.5, AD 3.6 / JR 3.6 / DR 3.6, AD 3.7 / JR 3.7 / DR 3.7
 **High-Priority AD Responses:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10_*.md), [`PARA_3_11-3_13`](jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_*.md)
 **Description:** Evidence demonstrating Jacqueline Faucitt's designation as Responsible Person across 37 jurisdictions
 
@@ -40,51 +40,51 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2018-03-15** - Initial Responsible Person designation for EU (27 states)
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Establishes legal foundation of RP role across EU
 - **Impact:** Personal legal liability for product safety and compliance
 
 **2019-04-05** - Canada Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Expansion of RP duties to North American jurisdiction
 
 **2019-06-20** - Switzerland Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Extension to European non-EU markets
 
 **2020-09-10** - Australia AICIS Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Asia-Pacific regulatory compliance established
 
 **2021-01-01** - UK Post-Brexit Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Separate UK designation required post-Brexit
 - **Impact:** Critical for maintaining UK market access
 
 **2021-11-12** - UAE ESMA Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Middle East market regulatory compliance
 
 **2022-02-18** - Singapore HSA Responsible Person designation
 
-- **AD Reference:** AD 3.3.1
+- **AD Reference:** AD 3.3.1 / JR 3.3.1 / DR 3.3.1
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Southeast Asian regulatory framework compliance
 
 **2025-08-19** - Interdict prevents RP duties performance
 
-- **AD Reference:** AD 3.6.1, AD 3.6.2, AD 3.6.3
+- **AD Reference:** AD 3.6.1 / JR 3.6.1 / DR 3.6.1, AD 3.6.2 / JR 3.6.2 / DR 3.6.2, AD 3.6.3 / JR 3.6.3 / DR 3.6.3
 - **High-Priority AD:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10*.md), [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Immediate regulatory non-compliance in 37 jurisdictions
@@ -100,7 +100,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-19** - Regulatory risk analysis conducted post-interdict
 
-- **AD Reference:** AD 3.6.4
+- **AD Reference:** AD 3.6.4 / JR 3.6.4 / DR 3.6.4
 - **High-Priority AD:** [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP2_REGULATORY_RISK_ANALYSIS.md`
 - **Significance:** Quantifies immediate compliance risks across 37 jurisdictions
@@ -108,7 +108,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-20** - Timeline for compliance restoration analysis
 
-- **AD Reference:** AD 3.6.5
+- **AD Reference:** AD 3.6.5 / JR 3.6.5 / DR 3.6.5
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP2_REGULATORY_RISK_ANALYSIS.md`
 - **Significance:** 6-12 month restoration period required
 - **Impact:** Massive financial and reputational damage
@@ -119,7 +119,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 2 (1 = highest influence)
 **Weight:** 95/100
-**AD References:** AD 7.8, AD 7.9, AD 7.10, AD 7.11, AD 10.5
+**AD References:** AD 7.8 / JR 7.8 / DR 7.8, AD 7.9 / JR 7.9 / DR 7.9, AD 7.10 / JR 7.10 / DR 7.10, AD 7.11 / JR 7.11 / DR 7.11, AD 10.5 / JR 10.5 / DR 10.5
 **High-Priority AD Responses:** [`PARA_7_12-7_13`](jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_*.md), [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_*.md)
 **Description:** Evidence demonstrating director loan account practices and Peter's own withdrawals
 
@@ -133,7 +133,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2023-01-01** - Director loan account baseline - all directors
 
-- **AD Reference:** AD 7.9
+- **AD Reference:** AD 7.9 / JR 7.9 / DR 7.9
 - **Evidence Files:**
   - `jax-dan-response/evidence-attachments/JF-DLA1_PETER_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
   - `jax-dan-response/evidence-attachments/JF-DLA2_JACQUELINE_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
@@ -143,7 +143,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-07-31** - July 2025 director loan account positions
 
-- **AD Reference:** AD 7.9, AD 7.10
+- **AD Reference:** AD 7.9 / JR 7.9 / DR 7.9, AD 7.10 / JR 7.10 / DR 7.10
 - **Evidence Files:**
   - `jax-dan-response/evidence-attachments/JF-DLA1_PETER_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
   - `jax-dan-response/evidence-attachments/JF-DLA2_JACQUELINE_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
@@ -161,28 +161,28 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2023-02-15** - Peter withdrawal #4 - R120,000
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-PA4_PETER_WITHDRAWAL_15FEB2023.md`
 - **Significance:** Peter used identical informal process 2.5 years before complaint
 - **Impact:** No board resolution, self-authorized, against credit balance
 
 **2023-01-12** - Peter withdrawal #3 - R95,000
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-PA3_PETER_WITHDRAWAL_12JAN2023.md`
 - **Significance:** Routine withdrawal without board resolution
 - **Impact:** Demonstrates long-standing informal practice
 
 **2025-03-15** - Peter withdrawal #1 - R125,000
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-PA1_PETER_WITHDRAWAL_15MAR2025.md`
 - **Significance:** Peter made R125K withdrawal just 4 months before complaint
 - **Impact:** Self-authorized, no board resolution, identical to process he now objects to
 
 **2025-07-20** - Peter withdrawal #2 - R120,000
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-PA2_PETER_WITHDRAWAL_20JUL2025.md`
 - **Significance:** Peter withdrew R120K just 4 days after Daniel's R500K withdrawal
 - **Impact:** Hypocritical complaint - Peter continued using same informal process
@@ -197,28 +197,28 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-07-16** - Daniel's R500,000 director loan withdrawal
 
-- **AD Reference:** AD 7.8.5.2
+- **AD Reference:** AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-BS1_R500K_PAYMENT_BANK_STATEMENT.md`
 - **Significance:** Central transaction in Peter's complaint
 - **Impact:** Properly authorized, dual signatory, against R1.67M credit balance
 
 **2025-07-16** - Normal business operations continue same day
 
-- **AD Reference:** AD 7.8.5.2
+- **AD Reference:** AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-BS1_R500K_PAYMENT_BANK_STATEMENT.md`
 - **Significance:** Shopify fees, AWS costs, customer payments all processed
 - **Impact:** Director loan payment was routine transaction among many
 
 **2025-07-20** - Peter's own R120K withdrawal 4 days later
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-BS1_R500K_PAYMENT_BANK_STATEMENT.md`
 - **Significance:** Peter used same informal process after Daniel's withdrawal
 - **Impact:** Demonstrates acceptance of informal practice
 
 **2025-07-25** - Jacqueline's R145K withdrawal same month
 
-- **AD Reference:** AD 7.8.5.3
+- **AD Reference:** AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-BS1_R500K_PAYMENT_BANK_STATEMENT.md`
 - **Significance:** All three directors withdrew in July without board resolutions
 - **Impact:** Confirms established informal practice
@@ -229,7 +229,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 3 (1 = highest influence)
 **Weight:** 90/100
-**AD References:** AD 2.2, AD 7.7, AD 11.6
+**AD References:** AD 2.2 / JR 2.2 / DR 2.2, AD 7.7 / JR 7.7 / DR 7.7, AD 11.6 / JR 11.6 / DR 11.6
 **High-Priority AD Responses:** [`PARA_8-8_3`](jax-dan-response/AD/2-High-Priority/PARA_8-8_3_*.md), [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4_*.md), [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5_*.md)
 **Description:** Evidence showing material non-disclosures and witness testimony
 
@@ -243,7 +243,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-13** - Peter's ex parte interdict application filed
 
-- **AD Reference:** AD 2.2.1, AD 2.2.2
+- **AD Reference:** AD 2.2.1 / JR 2.2.1 / DR 2.2.1, AD 2.2.2 / JR 2.2.2 / DR 2.2.2
 - **High-Priority AD:** [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/FOUNDING_AFFIDAVIT_ANALYSIS.md`
 - **Significance:** Material non-disclosures in ex parte application
@@ -251,7 +251,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-19** - Ex parte interdict granted
 
-- **AD Reference:** AD 2.2.4
+- **AD Reference:** AD 2.2.4 / JR 2.2.4 / DR 2.2.4
 - **High-Priority AD:** [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/INTERDICT_ORDER_ANALYSIS.md`
 - **Significance:** Court granted interdict without knowing material facts
@@ -259,7 +259,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-10-30** - Answering affidavit preparation
 
-- **AD Reference:** AD 2.3
+- **AD Reference:** AD 2.3 / JR 2.3 / DR 2.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/COMPARISON_FOUNDING_VS_ANSWERING.md`
 - **Significance:** Comprehensive response revealing material non-disclosures
 - **Impact:** Demonstrates basis for setting aside ex parte interdict
@@ -274,7 +274,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-06-01** - Peter cancels all business cards
 
-- **AD Reference:** AD 7.7
+- **AD Reference:** AD 7.7 / JR 7.7 / DR 7.7
 - **High-Priority AD:** [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Peter's unilateral actions causing business disruption
@@ -282,7 +282,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-11** - Settlement agreement signed
 
-- **AD Reference:** AD 2.2.3
+- **AD Reference:** AD 2.2.3 / JR 2.2.3 / DR 2.2.3
 - **High-Priority AD:** [`PARA_8-8_3`](jax-dan-response/AD/2-High-Priority/PARA_8-8_3*.md), [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Agreement signed 8 days before interdict
@@ -290,7 +290,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-13** - Daniel asked "Has anything changed?"
 
-- **AD Reference:** AD 11.6
+- **AD Reference:** AD 11.6 / JR 11.6 / DR 11.6
 - **High-Priority AD:** [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Direct contradiction to Peter's claims of sudden changes
@@ -332,21 +332,21 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 | AD Paragraph | Topic | Evidence |
 |--------------|-------|----------|
-| AD 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
-| AD 2.3 | Purpose of Answering Affidavit | All evidence |
-| AD 3.3 | Responsible Person Role | JF-RP1 |
-| AD 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
-| AD 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
-| AD 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
-| AD 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
-| AD 7.7 | Peter's Unilateral Actions | JF-DWS1 |
-| AD 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
-| AD 7.8.5.2 | Daniel's R500K Withdrawal | JF-BS1 |
-| AD 7.8.5.3 | Peter's Own Withdrawals | JF-PA1, JF-PA2, JF-PA3, JF-PA4 |
-| AD 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
-| AD 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
-| AD 10.5 | Historical Business Model | JF-DLA series |
-| AD 11.6 | Daniel's Witness Statement | JF-DWS1 |
+| AD 2.2 / JR 2.2 / DR 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
+| AD 2.3 / JR 2.3 / DR 2.3 | Purpose of Answering Affidavit | All evidence |
+| AD 3.3 / JR 3.3 / DR 3.3 | Responsible Person Role | JF-RP1 |
+| AD 3.4 / JR 3.4 / DR 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
+| AD 3.5 / JR 3.5 / DR 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
+| AD 3.6 / JR 3.6 / DR 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
+| AD 3.7 / JR 3.7 / DR 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
+| AD 7.7 / JR 7.7 / DR 7.7 | Peter's Unilateral Actions | JF-DWS1 |
+| AD 7.8 / JR 7.8 / DR 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2 | Daniel's R500K Withdrawal | JF-BS1 |
+| AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 | Peter's Own Withdrawals | JF-PA1, JF-PA2, JF-PA3, JF-PA4 |
+| AD 7.9 / JR 7.9 / DR 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 7.10 / JR 7.10 / DR 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
+| AD 10.5 / JR 10.5 / DR 10.5 | Historical Business Model | JF-DLA series |
+| AD 11.6 / JR 11.6 / DR 11.6 | Daniel's Witness Statement | JF-DWS1 |
 
 ---
 
@@ -379,3 +379,68 @@ The following detailed response documents address Peter's allegations from Danie
 
 *Generated by Phase 1 Critical Evidence Chronological Narrative Generator*
 *Script: `scripts/generate-phase1-chronological-narrative.js`*
+
+
+### Commentary on AD 1
+
+Director Liability for Breach of Fiduciary Duty
+
+
+### Commentary on AD 2
+
+Company Business Conduct Requirements
+
+
+### Commentary on AD 3
+
+Court Order for Probation of Directors/Members
+
+
+### Commentary on AD 3.4
+
+Respondents - Son
+
+
+### Commentary on AD 3.6
+
+Fourth Respondent - Regim A WWD
+
+
+### Commentary on AD 3.6.1
+
+Fifth Respondent - Villa Via Arcadia No 2 CC
+
+
+### Commentary on AD 3.6.2
+
+Windeed Printout Evidence for Villa Via Arcadia
+
+
+### Commentary on AD 3.7
+
+Sixth Respondent - Strategic Logistics CC
+
+
+### Commentary on AD 7
+
+Urgency and Delay Considerations
+
+
+### Commentary on AD 7.1
+
+MATERIAL NON-DISCLOSURE MR BANTJIES MASSIVE CONFLICT OF INTEREST ON MULTIPLE FRONTS BECAUSE DAN AND I WERE BOTH FINALISING THE DISCREPANCIES AND REPORTS FIRST WEEK IN JUNE. PETER CLAIMED BANTJIES NOTICED A WEEK AFTER THE REPORTS HAD BEEN SENT TO BANTJIES, WHICH WAS WHEN BANTJIES CLAIMED TO BE GOING AWAY FOR 2 WEEKS. THIS IS PRECISELY WHEN BANTJIES SAID HE WOULD BE AWAY AND ONE WEEEK AFTER JACQUI AND DAN HAD ALREADY FINALISED THE REPORT REGARDING THE ANOMALIES WITH DAN REQUESTING AN URGENT AUDIT TWICE AND PROVIDING DOCUMENTS TO BANTJIES CONFIRMING THE MISALLOCATION OF FUNDS, SUSPICIOUS TRANSACTIONS AND REPORTING MURDER RELATED THEFT AS WELL AS TRANSFER PRICING (INTER-COMPANY TRANSACTIONS.
+
+
+### Commentary on AD 7.8
+
+Continuing Harm to Corporations
+
+
+### Commentary on AD 7.10
+
+Card Cancellations and Service Interruptions
+
+
+### Commentary on AD 11.6
+
+UK Branch Operations
