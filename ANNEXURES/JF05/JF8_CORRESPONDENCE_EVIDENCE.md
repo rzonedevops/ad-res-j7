@@ -506,9 +506,9 @@ Restricted Areas:
 ### 7.3 Cross-References to Affidavit Sections
 
 **Use this correspondence to respond to:**
-- **AD 7.2 / JR 7.2 / DR 7.2-7.5**: IT expenses "unexplained" (Email 10 provides full explanation)
-- **AD 7.7 / JR 7.7 / DR 7.7-7.8**: R500K payment "unauthorized" (Historical pattern documented)
-- **AD 8.2 / JR 8.2 / DR 8.2**: Peter's unilateral actions (Sections 3 & 6 document systematic obstruction)
+- **AD 7.2 (JR 7.2 / DR 7.2) / JR 7.2 / DR 7.2-7.5**: IT expenses "unexplained" (Email 10 provides full explanation)
+- **AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7-7.8**: R500K payment "unauthorized" (Historical pattern documented)
+- **AD 8.2 (JR 8.2 / DR 8.2) / JR 8.2 / DR 8.2**: Peter's unilateral actions (Sections 3 & 6 document systematic obstruction)
 - **Section 13B**: Peter's contradictory conduct (Full timeline of bad faith)
 
 ---
@@ -535,6 +535,6 @@ This correspondence record proves three critical facts:
 Urgency and Delay Considerations
 
 
-### Commentary on AD 7.2
+### Commentary on AD 7.2 (JR 7.2 / DR 7.2)
 
 PETER CLAIMED ONLY IN JULY TO NOTICE WHEN WE WERE TRYING TO RESOLVE WITH SARS AUDIT AND INTERNAL REPORTS INSERT REPORTS

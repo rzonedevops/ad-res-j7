@@ -17,7 +17,7 @@ The evidence is organized into **3 paragraphs**, ranked by influence on legal ar
 - **Weight:** 100/100
 - **Tasks:** 2 (Issues #2834, #2835)
 - **Evidence:** JF-RP1, JF-RP2
-- **AD References:** AD 3.3 / JR 3.3 / DR 3.3, AD 3.4 / JR 3.4 / DR 3.4, AD 3.5 / JR 3.5 / DR 3.5, AD 3.6 / JR 3.6 / DR 3.6, AD 3.7 / JR 3.7 / DR 3.7
+- **AD References:** AD 3.3 (JR 3.3 / DR 3.3) / JR 3.3 / DR 3.3, AD 3.4 (JR 3.4 / DR 3.4) / JR 3.4 / DR 3.4, AD 3.5 (JR 3.5 / DR 3.5) / JR 3.5 / DR 3.5, AD 3.6 (JR 3.6 / DR 3.6) / JR 3.6 / DR 3.6, AD 3.7 (JR 3.7 / DR 3.7) / JR 3.7 / DR 3.7
 
 Demonstrates Jacqueline Faucitt's designation as Responsible Person across 37 international jurisdictions and the immediate regulatory compliance crisis caused by the interdict.
 
@@ -26,7 +26,7 @@ Demonstrates Jacqueline Faucitt's designation as Responsible Person across 37 in
 - **Weight:** 95/100
 - **Tasks:** 3 (Issues #2836, #2837, #2838)
 - **Evidence:** JF-DLA1, JF-DLA2, JF-DLA3, JF-PA1-4, JF-BS1
-- **AD References:** AD 7.8 / JR 7.8 / DR 7.8, AD 7.9 / JR 7.9 / DR 7.9, AD 7.10 / JR 7.10 / DR 7.10, AD 7.11 / JR 7.11 / DR 7.11, AD 10.5 / JR 10.5 / DR 10.5
+- **AD References:** AD 7.8 (JR 7.8 / DR 7.8) / JR 7.8 / DR 7.8, AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9, AD 7.10 (JR 7.10 / DR 7.10) / JR 7.10 / DR 7.10, AD 7.11 (JR 7.11 / DR 7.11) / JR 7.11 / DR 7.11, AD 10.5 (JR 10.5 / DR 10.5) / JR 10.5 / DR 10.5
 
 Demonstrates director loan account practices, Peter's own withdrawals using identical informal processes, and the R500K payment that triggered the complaint.
 
@@ -35,7 +35,7 @@ Demonstrates director loan account practices, Peter's own withdrawals using iden
 - **Weight:** 90/100
 - **Tasks:** 2 (Issues #2839, #2840)
 - **Evidence:** JF-CMP1, JF-DWS1
-- **AD References:** AD 2.2 / JR 2.2 / DR 2.2, AD 7.7 / JR 7.7 / DR 7.7, AD 11.6 / JR 11.6 / DR 11.6
+- **AD References:** AD 2.2 (JR 2.2 / DR 2.2) / JR 2.2 / DR 2.2, AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7, AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6
 
 Demonstrates material non-disclosures in Peter's ex parte application and witness testimony contradicting Peter's claims.
 
@@ -125,21 +125,21 @@ All evidence files are located in `jax-dan-response/evidence-attachments/`:
 
 | AD Paragraph | Topic | Evidence |
 |--------------|-------|----------|
-| AD 2.2 / JR 2.2 / DR 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
-| AD 2.3 / JR 2.3 / DR 2.3 | Purpose of Answering Affidavit | All evidence |
-| AD 3.3 / JR 3.3 / DR 3.3 | Responsible Person Role | JF-RP1 |
-| AD 3.4 / JR 3.4 / DR 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
-| AD 3.5 / JR 3.5 / DR 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
-| AD 3.6 / JR 3.6 / DR 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
-| AD 3.7 / JR 3.7 / DR 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
-| AD 7.7 / JR 7.7 / DR 7.7 | Peter's Unilateral Actions | JF-DWS1 |
-| AD 7.8 / JR 7.8 / DR 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 2.2 (JR 2.2 / DR 2.2) / JR 2.2 / DR 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
+| AD 2.3 (JR 2.3 / DR 2.3) / JR 2.3 / DR 2.3 | Purpose of Answering Affidavit | All evidence |
+| AD 3.3 (JR 3.3 / DR 3.3) / JR 3.3 / DR 3.3 | Responsible Person Role | JF-RP1 |
+| AD 3.4 (JR 3.4 / DR 3.4) / JR 3.4 / DR 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
+| AD 3.5 (JR 3.5 / DR 3.5) / JR 3.5 / DR 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
+| AD 3.6 (JR 3.6 / DR 3.6) / JR 3.6 / DR 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
+| AD 3.7 (JR 3.7 / DR 3.7) / JR 3.7 / DR 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
+| AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7 | Peter's Unilateral Actions | JF-DWS1 |
+| AD 7.8 (JR 7.8 / DR 7.8) / JR 7.8 / DR 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
 | AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2 | Daniel's R500K Withdrawal | JF-BS1 |
 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 | Peter's Own Withdrawals | JF-PA1, JF-PA2, JF-PA3, JF-PA4 |
-| AD 7.9 / JR 7.9 / DR 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
-| AD 7.10 / JR 7.10 / DR 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
-| AD 10.5 / JR 10.5 / DR 10.5 | Historical Business Model | JF-DLA series |
-| AD 11.6 / JR 11.6 / DR 11.6 | Daniel's Witness Statement | JF-DWS1 |
+| AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 7.10 (JR 7.10 / DR 7.10) / JR 7.10 / DR 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
+| AD 10.5 (JR 10.5 / DR 10.5) / JR 10.5 / DR 10.5 | Historical Business Model | JF-DLA series |
+| AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6 | Daniel's Witness Statement | JF-DWS1 |
 
 ## Validation Tests
 
@@ -264,17 +264,17 @@ Company Business Conduct Requirements
 Court Order for Probation of Directors/Members
 
 
-### Commentary on AD 3.4
+### Commentary on AD 3.4 (JR 3.4 / DR 3.4)
 
 Respondents - Son
 
 
-### Commentary on AD 3.6
+### Commentary on AD 3.6 (JR 3.6 / DR 3.6)
 
 Fourth Respondent - Regim A WWD
 
 
-### Commentary on AD 3.7
+### Commentary on AD 3.7 (JR 3.7 / DR 3.7)
 
 Sixth Respondent - Strategic Logistics CC
 
@@ -284,21 +284,21 @@ Sixth Respondent - Strategic Logistics CC
 Urgency and Delay Considerations
 
 
-### Commentary on AD 7.1
+### Commentary on AD 7.1 (JR 7.1 / DR 7.1)
 
 MATERIAL NON-DISCLOSURE MR BANTJIES MASSIVE CONFLICT OF INTEREST ON MULTIPLE FRONTS BECAUSE DAN AND I WERE BOTH FINALISING THE DISCREPANCIES AND REPORTS FIRST WEEK IN JUNE. PETER CLAIMED BANTJIES NOTICED A WEEK AFTER THE REPORTS HAD BEEN SENT TO BANTJIES, WHICH WAS WHEN BANTJIES CLAIMED TO BE GOING AWAY FOR 2 WEEKS. THIS IS PRECISELY WHEN BANTJIES SAID HE WOULD BE AWAY AND ONE WEEEK AFTER JACQUI AND DAN HAD ALREADY FINALISED THE REPORT REGARDING THE ANOMALIES WITH DAN REQUESTING AN URGENT AUDIT TWICE AND PROVIDING DOCUMENTS TO BANTJIES CONFIRMING THE MISALLOCATION OF FUNDS, SUSPICIOUS TRANSACTIONS AND REPORTING MURDER RELATED THEFT AS WELL AS TRANSFER PRICING (INTER-COMPANY TRANSACTIONS.
 
 
-### Commentary on AD 7.8
+### Commentary on AD 7.8 (JR 7.8 / DR 7.8)
 
 Continuing Harm to Corporations
 
 
-### Commentary on AD 7.10
+### Commentary on AD 7.10 (JR 7.10 / DR 7.10)
 
 Card Cancellations and Service Interruptions
 
 
-### Commentary on AD 11.6
+### Commentary on AD 11.6 (JR 11.6 / DR 11.6)
 
 UK Branch Operations

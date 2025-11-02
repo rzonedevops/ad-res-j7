@@ -18,7 +18,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 - **Paragraph 3:** Document Comparison & Witness Statements (Rank 3, Weight 90/100)
 
 **Total Tasks:** 7
-**AD References:** Multiple paragraphs from AD 2.2 / JR 2.2 / DR 2.2 through AD 11.6 / JR 11.6 / DR 11.6
+**AD References:** Multiple paragraphs from AD 2.2 (JR 2.2 / DR 2.2) / JR 2.2 / DR 2.2 through AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6
 
 ---
 
@@ -26,7 +26,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 1 (1 = highest influence)
 **Weight:** 100/100
-**AD References:** AD 3.3 / JR 3.3 / DR 3.3, AD 3.4 / JR 3.4 / DR 3.4, AD 3.5 / JR 3.5 / DR 3.5, AD 3.6 / JR 3.6 / DR 3.6, AD 3.7 / JR 3.7 / DR 3.7
+**AD References:** AD 3.3 (JR 3.3 / DR 3.3) / JR 3.3 / DR 3.3, AD 3.4 (JR 3.4 / DR 3.4) / JR 3.4 / DR 3.4, AD 3.5 (JR 3.5 / DR 3.5) / JR 3.5 / DR 3.5, AD 3.6 (JR 3.6 / DR 3.6) / JR 3.6 / DR 3.6, AD 3.7 (JR 3.7 / DR 3.7) / JR 3.7 / DR 3.7
 **High-Priority AD Responses:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10_*.md), [`PARA_3_11-3_13`](jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_*.md)
 **Description:** Evidence demonstrating Jacqueline Faucitt's designation as Responsible Person across 37 jurisdictions
 
@@ -84,7 +84,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-19** - Interdict prevents RP duties performance
 
-- **AD Reference:** AD 3.6.1 / JR 3.6.1 / DR 3.6.1, AD 3.6.2 / JR 3.6.2 / DR 3.6.2, AD 3.6.3 / JR 3.6.3 / DR 3.6.3
+- **AD Reference:** AD 3.6.1 (JR 3.6.1 / DR 3.6.1) / JR 3.6.1 / DR 3.6.1, AD 3.6.2 (JR 3.6.2 / DR 3.6.2) / JR 3.6.2 / DR 3.6.2, AD 3.6.3 / JR 3.6.3 / DR 3.6.3
 - **High-Priority AD:** [`PARA_3-3_10`](jax-dan-response/AD/2-High-Priority/PARA_3-3_10*.md), [`PARA_13-13_1`](jax-dan-response/AD/2-High-Priority/PARA_13-13_1*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/JF-RP1_RESPONSIBLE_PERSON_DESIGNATION_DOCUMENTATION.md`
 - **Significance:** Immediate regulatory non-compliance in 37 jurisdictions
@@ -119,7 +119,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 2 (1 = highest influence)
 **Weight:** 95/100
-**AD References:** AD 7.8 / JR 7.8 / DR 7.8, AD 7.9 / JR 7.9 / DR 7.9, AD 7.10 / JR 7.10 / DR 7.10, AD 7.11 / JR 7.11 / DR 7.11, AD 10.5 / JR 10.5 / DR 10.5
+**AD References:** AD 7.8 (JR 7.8 / DR 7.8) / JR 7.8 / DR 7.8, AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9, AD 7.10 (JR 7.10 / DR 7.10) / JR 7.10 / DR 7.10, AD 7.11 (JR 7.11 / DR 7.11) / JR 7.11 / DR 7.11, AD 10.5 (JR 10.5 / DR 10.5) / JR 10.5 / DR 10.5
 **High-Priority AD Responses:** [`PARA_7_12-7_13`](jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_*.md), [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_*.md)
 **Description:** Evidence demonstrating director loan account practices and Peter's own withdrawals
 
@@ -133,7 +133,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2023-01-01** - Director loan account baseline - all directors
 
-- **AD Reference:** AD 7.9 / JR 7.9 / DR 7.9
+- **AD Reference:** AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9
 - **Evidence Files:**
   - `jax-dan-response/evidence-attachments/JF-DLA1_PETER_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
   - `jax-dan-response/evidence-attachments/JF-DLA2_JACQUELINE_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
@@ -143,7 +143,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-07-31** - July 2025 director loan account positions
 
-- **AD Reference:** AD 7.9 / JR 7.9 / DR 7.9, AD 7.10 / JR 7.10 / DR 7.10
+- **AD Reference:** AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9, AD 7.10 (JR 7.10 / DR 7.10) / JR 7.10 / DR 7.10
 - **Evidence Files:**
   - `jax-dan-response/evidence-attachments/JF-DLA1_PETER_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
   - `jax-dan-response/evidence-attachments/JF-DLA2_JACQUELINE_FAUCITT_DIRECTOR_LOAN_ACCOUNT.md`
@@ -229,7 +229,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **Rank:** 3 (1 = highest influence)
 **Weight:** 90/100
-**AD References:** AD 2.2 / JR 2.2 / DR 2.2, AD 7.7 / JR 7.7 / DR 7.7, AD 11.6 / JR 11.6 / DR 11.6
+**AD References:** AD 2.2 (JR 2.2 / DR 2.2) / JR 2.2 / DR 2.2, AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7, AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6
 **High-Priority AD Responses:** [`PARA_8-8_3`](jax-dan-response/AD/2-High-Priority/PARA_8-8_3_*.md), [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4_*.md), [`PARA_11-11_5`](jax-dan-response/AD/2-High-Priority/PARA_11-11_5_*.md)
 **Description:** Evidence showing material non-disclosures and witness testimony
 
@@ -259,7 +259,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-10-30** - Answering affidavit preparation
 
-- **AD Reference:** AD 2.3 / JR 2.3 / DR 2.3
+- **AD Reference:** AD 2.3 (JR 2.3 / DR 2.3) / JR 2.3 / DR 2.3
 - **Evidence File:** `jax-dan-response/evidence-attachments/COMPARISON_FOUNDING_VS_ANSWERING.md`
 - **Significance:** Comprehensive response revealing material non-disclosures
 - **Impact:** Demonstrates basis for setting aside ex parte interdict
@@ -274,7 +274,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-06-01** - Peter cancels all business cards
 
-- **AD Reference:** AD 7.7 / JR 7.7 / DR 7.7
+- **AD Reference:** AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7
 - **High-Priority AD:** [`PARA_7_14-7_15`](jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Peter's unilateral actions causing business disruption
@@ -290,7 +290,7 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 **2025-08-13** - Daniel asked "Has anything changed?"
 
-- **AD Reference:** AD 11.6 / JR 11.6 / DR 11.6
+- **AD Reference:** AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6
 - **High-Priority AD:** [`PARA_8_4`](jax-dan-response/AD/2-High-Priority/PARA_8_4*.md)
 - **Evidence File:** `jax-dan-response/evidence-attachments/DANIEL_FAUCITT_WITNESS_STATEMENT.md`
 - **Significance:** Direct contradiction to Peter's claims of sudden changes
@@ -332,21 +332,21 @@ This document provides a chronological narrative of Phase 1 Critical Evidence re
 
 | AD Paragraph | Topic | Evidence |
 |--------------|-------|----------|
-| AD 2.2 / JR 2.2 / DR 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
-| AD 2.3 / JR 2.3 / DR 2.3 | Purpose of Answering Affidavit | All evidence |
-| AD 3.3 / JR 3.3 / DR 3.3 | Responsible Person Role | JF-RP1 |
-| AD 3.4 / JR 3.4 / DR 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
-| AD 3.5 / JR 3.5 / DR 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
-| AD 3.6 / JR 3.6 / DR 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
-| AD 3.7 / JR 3.7 / DR 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
-| AD 7.7 / JR 7.7 / DR 7.7 | Peter's Unilateral Actions | JF-DWS1 |
-| AD 7.8 / JR 7.8 / DR 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 2.2 (JR 2.2 / DR 2.2) / JR 2.2 / DR 2.2 | Material Non-Disclosure in Ex Parte Application | JF-CMP1 |
+| AD 2.3 (JR 2.3 / DR 2.3) / JR 2.3 / DR 2.3 | Purpose of Answering Affidavit | All evidence |
+| AD 3.3 (JR 3.3 / DR 3.3) / JR 3.3 / DR 3.3 | Responsible Person Role | JF-RP1 |
+| AD 3.4 (JR 3.4 / DR 3.4) / JR 3.4 / DR 3.4 | Legal Responsibilities and Personal Liability | JF-RP1 |
+| AD 3.5 (JR 3.5 / DR 3.5) / JR 3.5 / DR 3.5 | Non-Delegable Nature of RP Role | JF-RP1 |
+| AD 3.6 (JR 3.6 / DR 3.6) / JR 3.6 / DR 3.6 | Direct Impact of Interdict | JF-RP1, JF-RP2 |
+| AD 3.7 (JR 3.7 / DR 3.7) / JR 3.7 / DR 3.7 | Material Non-Disclosure by Applicant | JF-RP1, JF-RP2 |
+| AD 7.7 (JR 7.7 / DR 7.7) / JR 7.7 / DR 7.7 | Peter's Unilateral Actions | JF-DWS1 |
+| AD 7.8 (JR 7.8 / DR 7.8) / JR 7.8 / DR 7.8 | Director Loan Account Structure | JF-DLA1, JF-DLA2, JF-DLA3 |
 | AD 7.8.5.2 / JR 7.8.5.2 / DR 7.8.5.2 | Daniel's R500K Withdrawal | JF-BS1 |
 | AD 7.8.5.3 / JR 7.8.5.3 / DR 7.8.5.3 | Peter's Own Withdrawals | JF-PA1, JF-PA2, JF-PA3, JF-PA4 |
-| AD 7.9 / JR 7.9 / DR 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
-| AD 7.10 / JR 7.10 / DR 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
-| AD 10.5 / JR 10.5 / DR 10.5 | Historical Business Model | JF-DLA series |
-| AD 11.6 / JR 11.6 / DR 11.6 | Daniel's Witness Statement | JF-DWS1 |
+| AD 7.9 (JR 7.9 / DR 7.9) / JR 7.9 / DR 7.9 | Director Loan Balances | JF-DLA1, JF-DLA2, JF-DLA3 |
+| AD 7.10 (JR 7.10 / DR 7.10) / JR 7.10 / DR 7.10 | Informal Practice Evidence | JF-BS1, JF-PA series |
+| AD 10.5 (JR 10.5 / DR 10.5) / JR 10.5 / DR 10.5 | Historical Business Model | JF-DLA series |
+| AD 11.6 (JR 11.6 / DR 11.6) / JR 11.6 / DR 11.6 | Daniel's Witness Statement | JF-DWS1 |
 
 ---
 
@@ -396,27 +396,27 @@ Company Business Conduct Requirements
 Court Order for Probation of Directors/Members
 
 
-### Commentary on AD 3.4
+### Commentary on AD 3.4 (JR 3.4 / DR 3.4)
 
 Respondents - Son
 
 
-### Commentary on AD 3.6
+### Commentary on AD 3.6 (JR 3.6 / DR 3.6)
 
 Fourth Respondent - Regim A WWD
 
 
-### Commentary on AD 3.6.1
+### Commentary on AD 3.6.1 (JR 3.6.1 / DR 3.6.1)
 
 Fifth Respondent - Villa Via Arcadia No 2 CC
 
 
-### Commentary on AD 3.6.2
+### Commentary on AD 3.6.2 (JR 3.6.2 / DR 3.6.2)
 
 Windeed Printout Evidence for Villa Via Arcadia
 
 
-### Commentary on AD 3.7
+### Commentary on AD 3.7 (JR 3.7 / DR 3.7)
 
 Sixth Respondent - Strategic Logistics CC
 
@@ -426,21 +426,21 @@ Sixth Respondent - Strategic Logistics CC
 Urgency and Delay Considerations
 
 
-### Commentary on AD 7.1
+### Commentary on AD 7.1 (JR 7.1 / DR 7.1)
 
 MATERIAL NON-DISCLOSURE MR BANTJIES MASSIVE CONFLICT OF INTEREST ON MULTIPLE FRONTS BECAUSE DAN AND I WERE BOTH FINALISING THE DISCREPANCIES AND REPORTS FIRST WEEK IN JUNE. PETER CLAIMED BANTJIES NOTICED A WEEK AFTER THE REPORTS HAD BEEN SENT TO BANTJIES, WHICH WAS WHEN BANTJIES CLAIMED TO BE GOING AWAY FOR 2 WEEKS. THIS IS PRECISELY WHEN BANTJIES SAID HE WOULD BE AWAY AND ONE WEEEK AFTER JACQUI AND DAN HAD ALREADY FINALISED THE REPORT REGARDING THE ANOMALIES WITH DAN REQUESTING AN URGENT AUDIT TWICE AND PROVIDING DOCUMENTS TO BANTJIES CONFIRMING THE MISALLOCATION OF FUNDS, SUSPICIOUS TRANSACTIONS AND REPORTING MURDER RELATED THEFT AS WELL AS TRANSFER PRICING (INTER-COMPANY TRANSACTIONS.
 
 
-### Commentary on AD 7.8
+### Commentary on AD 7.8 (JR 7.8 / DR 7.8)
 
 Continuing Harm to Corporations
 
 
-### Commentary on AD 7.10
+### Commentary on AD 7.10 (JR 7.10 / DR 7.10)
 
 Card Cancellations and Service Interruptions
 
 
-### Commentary on AD 11.6
+### Commentary on AD 11.6 (JR 11.6 / DR 11.6)
 
 UK Branch Operations
