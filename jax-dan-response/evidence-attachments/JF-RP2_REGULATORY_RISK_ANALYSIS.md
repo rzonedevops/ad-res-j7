@@ -17,7 +17,7 @@ This regulatory risk analysis quantifies the immediate and escalating compliance
 - UK: £5,000 - £20,000 per instance
 - Switzerland: CHF 10,000 - CHF 40,000 per instance
 - Australia: AUD 13,320 - AUD 66,600 per instance
-- Canada: CAD 5,000 - CAD 50,000 per instance
+- Canada: CAD 5 / JR 5 / DR 5,000 - CAD 50 / JR 50 / DR 50,000 per instance
 - UAE: AED 50,000 - AED 500,000 per instance
 - Singapore: SGD 5,000 - SGD 50,000 per instance
 
@@ -237,3 +237,7 @@ The interdict creates an immediate regulatory compliance crisis with quantifiabl
 - **Annexure JF-RP2-C**: Criminal prosecution precedents
 - **Annexure JF-RP2-D**: Market withdrawal cost analysis
 - **Annexure JF-RP2-E**: Expert regulatory opinion
+
+### Commentary on AD 50
+
+Registered Address Details

@@ -48,7 +48,7 @@ This analysis demonstrates that the interim interdict granted to the Applicant (
 
 **Legal Authorities:**
 
-**Setlogelo v Setlogelo 1914 AD 221**
+**Setlogelo v Setlogelo 1914 AD 221 / JR 221 / DR 221**
 - Interdictory relief must not cause greater harm than it prevents
 - Court must balance competing interests and harms
 - Relief must be proportionate to the mischief sought to be remedied
@@ -570,3 +570,13 @@ The interdict fails the proportionality test under:
 *Annexure: JF-DISPROP*  
 *Date: 2025-10-15*
 
+
+
+### Commentary on AD 2
+
+Company Business Conduct Requirements
+
+
+### Commentary on AD 22
+
+Additional Party Information

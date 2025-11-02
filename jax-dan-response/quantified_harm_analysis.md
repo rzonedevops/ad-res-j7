@@ -336,7 +336,7 @@ R68,277,000 ÷ R500,000 = **136.5:1**
    - Court emphasized proportionality in interim relief
    - Harm must be balanced between parties
 
-2. **Setlogelo v Setlogelo** [1914] AD 221
+2. **Setlogelo v Setlogelo** [1914] AD 221 / JR 221 / DR 221
    - Interdict causing severe harm requires exceptional justification
    - Balance of convenience heavily weighted
 
@@ -579,7 +579,7 @@ R68,277,000 ÷ R500,000 = **136.5:1**
 
 **Legal Authorities:**
 - National Treasury v Opposition to Urban Tolling Alliance [2012] ZACC 18
-- Setlogelo v Setlogelo [1914] AD 221
+- Setlogelo v Setlogelo [1914] AD 221 / JR 221 / DR 221
 - Webster v Mitchell [1948] 1 SA 1186 (W)
 - EU Regulation 1223/2009
 
@@ -596,3 +596,13 @@ R68,277,000 ÷ R500,000 = **136.5:1**
 
 ### Jacqueline's Legal Perspective:
 See complementary legal analysis in jax-response/AD directory for related paragraph responses.
+
+
+### Commentary on AD 2
+
+Company Business Conduct Requirements
+
+
+### Commentary on AD 22
+
+Additional Party Information
