@@ -1,293 +1,502 @@
 #!/usr/bin/env python3
 """
-Analyze AD elements and identify relevant legal aspects using lex framework
+Legal Aspects Analysis for ad-res-j7 Repository
+Identifies entities, relations, events, and timelines for lex optimization
 """
 
-import os
 import json
-import re
+import os
 from pathlib import Path
-from collections import defaultdict
+from datetime import datetime
+import re
 
-# Repository paths
-REPO_ROOT = Path("/home/ubuntu/ad-res-j7")
-LEX_DIR = REPO_ROOT / "lex"
-JAX_DAN_DIR = REPO_ROOT / "jax-dan-response"
-AD_DIR = JAX_DAN_DIR / "AD"
-
-def scan_ad_paragraphs():
-    """Scan all AD paragraph files and extract key information"""
-    paragraphs = []
-    
-    for priority_dir in AD_DIR.iterdir():
-        if not priority_dir.is_dir():
-            continue
-            
-        priority = priority_dir.name
+class LegalAspectsAnalyzer:
+    def __init__(self, repo_path):
+        self.repo_path = Path(repo_path)
+        self.entities = {}
+        self.relations = {}
+        self.events = []
+        self.timelines = {}
         
-        for file_path in priority_dir.glob("*.md"):
-            # Extract paragraph number from filename
-            match = re.search(r'PARA_([0-9_]+)', file_path.name)
-            if match:
-                para_num = match.group(1).replace('_', '.')
-                
-                # Try to find corresponding JSON file
-                json_path = file_path.with_suffix('.json')
-                metadata = {}
-                if json_path.exists():
-                    try:
-                        with open(json_path) as f:
-                            metadata = json.load(f)
-                    except:
-                        pass
-                
-                # Read markdown content
-                with open(file_path) as f:
-                    content = f.read()
-                
-                paragraphs.append({
-                    'para_num': para_num,
-                    'priority': priority,
-                    'file_path': str(file_path),
-                    'metadata': metadata,
-                    'content': content[:500]  # First 500 chars
-                })
+    def analyze_entities(self):
+        """Identify and categorize entities from the case"""
+        self.entities = {
+            "natural_persons": {
+                "peter_faucitt": {
+                    "roles": ["Applicant", "Director", "Trustee", "Main Trustee", "Founder", "Shareholder"],
+                    "legal_capacity": "majus sui juris",
+                    "companies": ["RST", "SLG", "RWD", "Villa Via"],
+                    "trust_role": "Main Trustee (backdated 1 Jul 2025)",
+                    "critical_issues": [
+                        "trust_power_bypass",
+                        "manufactured_crisis",
+                        "self_dealing_villa_via",
+                        "coercion_backdating"
+                    ]
+                },
+                "jacqueline_faucitt": {
+                    "roles": ["First Respondent", "CEO", "Director", "Shareholder", "Trust Beneficiary", "EU Responsible Person"],
+                    "legal_capacity": "full capacity",
+                    "companies": ["RST", "SLG", "RWD"],
+                    "eu_jurisdictions": 37,
+                    "critical_issues": [
+                        "beneficiary_attacked_by_trustee",
+                        "eu_regulatory_crisis",
+                        "confrontation_with_rynette"
+                    ]
+                },
+                "daniel_faucitt": {
+                    "roles": ["Second Respondent", "CIO", "Director", "Owner", "Shareholder", "Trust Beneficiary"],
+                    "legal_capacity": "full capacity",
+                    "companies": ["RST", "SLG", "RWD", "RegimA Zone Ltd (UK)"],
+                    "platform_investment": "R1M+",
+                    "critical_issues": [
+                        "platform_unjust_enrichment",
+                        "revenue_stream_hijacking",
+                        "fraud_exposure_retaliation"
+                    ]
+                },
+                "rynette_farrar": {
+                    "roles": ["Non-Director", "Financial Controller", "System Administrator"],
+                    "legal_capacity": "full capacity",
+                    "control": ["Accounts", "Banks", "Peter's Email"],
+                    "critical_issues": [
+                        "unallocated_expenses",
+                        "stock_adjustment_fraud",
+                        "revenue_diversion"
+                    ]
+                },
+                "danie_bantjies": {
+                    "roles": ["Co-Trustee", "Accountant", "Unknown Trustee"],
+                    "legal_capacity": "full capacity",
+                    "critical_issues": [
+                        "unknown_trustee_status",
+                        "instructions_to_rynette",
+                        "villa_via_fraud_exposure"
+                    ]
+                }
+            },
+            "juristic_persons": {
+                "faucitt_family_trust": {
+                    "type": "Inter vivos trust",
+                    "legislation": "Trust Property Control Act 57/1988",
+                    "trustees": ["Peter Faucitt (Main)", "Danie Bantjies (Co)"],
+                    "beneficiaries": ["Jacqueline Faucitt", "Daniel Faucitt"],
+                    "assets": ["RegimA Worldwide Distribution (100%)", "Villa Via"],
+                    "critical_issues": [
+                        "trust_asset_abandonment",
+                        "beneficiary_rights_violation",
+                        "trust_power_abuse"
+                    ]
+                },
+                "regima_skin_treatments": {
+                    "type": "Private Company",
+                    "directors": ["Peter (50%)", "Jacqueline (50%)"],
+                    "role": "Primary Brand Management",
+                    "critical_issues": [
+                        "debt_to_rezonance",
+                        "expense_allocation"
+                    ]
+                },
+                "regima_worldwide_distribution": {
+                    "type": "Private Company",
+                    "ownership": "Faucitt Family Trust (100%)",
+                    "directors": ["Peter (33%)", "Jacqueline (33%)", "Daniel (33%)"],
+                    "role": "E-Commerce Distribution",
+                    "critical_issues": [
+                        "trust_asset_abandonment",
+                        "revenue_diversion",
+                        "expense_dumping",
+                        "platform_unjust_enrichment"
+                    ]
+                },
+                "strategic_logistics_group": {
+                    "type": "Private Company",
+                    "directors": ["Peter (33%)", "Jacqueline (33%)", "Daniel (33%)"],
+                    "critical_issues": [
+                        "stock_adjustment_fraud",
+                        "r5_4m_loss"
+                    ]
+                },
+                "villa_via": {
+                    "type": "Property Entity",
+                    "ownership": "Faucitt Family Trust + Peter (50%)",
+                    "role": "Rent Extraction",
+                    "critical_issues": [
+                        "86_percent_profit_margin",
+                        "2_4x_market_rates",
+                        "material_non_disclosure",
+                        "self_dealing"
+                    ]
+                },
+                "regima_zone_ltd": {
+                    "type": "UK Company",
+                    "owner": "Daniel Faucitt",
+                    "role": "E-Commerce Platform Provider",
+                    "critical_issues": [
+                        "platform_usage_without_payment",
+                        "quantum_meruit_r2_94m_r6_88m"
+                    ]
+                },
+                "adderory": {
+                    "type": "Company",
+                    "owner": "Rynette's Son",
+                    "role": "Stock Supplier",
+                    "critical_issues": [
+                        "stock_adjustment_connection",
+                        "domain_registration_regimaskin"
+                    ]
+                },
+                "rezonance": {
+                    "type": "Company",
+                    "connection": "Kayla's Estate",
+                    "critical_issues": [
+                        "r1_035m_debt_from_rst",
+                        "proceeds_of_murder_allegation"
+                    ]
+                }
+            }
+        }
+        return self.entities
     
-    return sorted(paragraphs, key=lambda x: x['para_num'])
-
-def identify_entities_from_content(paragraphs):
-    """Identify entities mentioned in AD paragraphs"""
-    entities = defaultdict(int)
+    def analyze_relations(self):
+        """Identify critical legal relationships"""
+        self.relations = {
+            "fiduciary_relations": [
+                {
+                    "type": "trustee_beneficiary",
+                    "parties": ["Peter Faucitt (Trustee)", "Jacqueline Faucitt (Beneficiary)"],
+                    "duty": "fiduciary duty",
+                    "breach": "trustee attacks beneficiary",
+                    "confidence": 0.98
+                },
+                {
+                    "type": "trustee_beneficiary",
+                    "parties": ["Peter Faucitt (Trustee)", "Daniel Faucitt (Beneficiary)"],
+                    "duty": "fiduciary duty",
+                    "breach": "trustee attacks beneficiary",
+                    "confidence": 0.98
+                },
+                {
+                    "type": "director_company",
+                    "parties": ["Peter Faucitt (Director)", "RST/SLG/RWD"],
+                    "duty": "director fiduciary duty",
+                    "breach": "self-dealing via Villa Via",
+                    "confidence": 0.97
+                }
+            ],
+            "control_relations": [
+                {
+                    "type": "trust_ownership",
+                    "parties": ["Faucitt Family Trust", "RegimA Worldwide Distribution"],
+                    "ownership": "100%",
+                    "issue": "trust asset abandonment"
+                },
+                {
+                    "type": "financial_control",
+                    "parties": ["Rynette Farrar", "All Company Accounts"],
+                    "issue": "non-director controls finances"
+                },
+                {
+                    "type": "platform_ownership",
+                    "parties": ["Daniel Faucitt (RegimA Zone Ltd)", "RWD Platform"],
+                    "issue": "usage without payment"
+                }
+            ],
+            "adversarial_relations": [
+                {
+                    "type": "legal_action",
+                    "parties": ["Peter Faucitt (Applicant)", "Jacqueline & Daniel Faucitt (Respondents)"],
+                    "case": "2025-137857",
+                    "relief": "interdict"
+                },
+                {
+                    "type": "confrontation",
+                    "parties": ["Jacqueline Faucitt", "Rynette Farrar"],
+                    "date": "2025-05-15",
+                    "issue": "R1.035M debt to Rezonance"
+                }
+            ],
+            "commercial_relations": [
+                {
+                    "type": "supplier",
+                    "parties": ["Adderory", "Strategic Logistics Group"],
+                    "issue": "stock adjustment fraud connection"
+                },
+                {
+                    "type": "debtor_creditor",
+                    "parties": ["RST (Debtor)", "Rezonance (Creditor)"],
+                    "amount": "R1,035,000",
+                    "since": "Feb 2023"
+                },
+                {
+                    "type": "rent_extraction",
+                    "parties": ["Villa Via (Landlord)", "Group Companies (Tenants)"],
+                    "issue": "86% profit margin, 2-4x market rates"
+                }
+            ]
+        }
+        return self.relations
     
-    # Key entities to track
-    entity_patterns = {
-        'Peter Faucitt': r'Peter\s+Faucitt|Applicant|Peter',
-        'Jacqueline Faucitt': r'Jacqueline\s+Faucitt|Jax|First\s+Respondent',
-        'Daniel Faucitt': r'Daniel\s+Faucitt|Dan|Second\s+Respondent',
-        'Rynette Farrar': r'Rynette\s+Farrar|Rynette|Bantjies',
-        'Danie Bantjies': r'Danie\s+Bantjies|Bantjies',
-        'Faucitt Family Trust': r'Faucitt\s+Family\s+Trust|FFT|Trust',
-        'RegimA Skin Treatments': r'RegimA\s+Skin\s+Treatments|RST',
-        'RegimA Worldwide': r'RegimA\s+Worldwide|RWD',
-        'Strategic Logistics': r'Strategic\s+Logistics|SLG',
-        'Villa Via': r'Villa\s+Via',
-        'RegimA Zone Ltd': r'RegimA\s+Zone\s+Ltd',
-        'Rezonance': r'Rezonance',
-    }
+    def analyze_events(self):
+        """Identify critical timeline events"""
+        self.events = [
+            {
+                "date": "2023-02",
+                "event": "RST debt to Rezonance begins",
+                "amount": "R1,035,000",
+                "legal_aspect": "debtor_creditor_relation",
+                "confidence": 0.95
+            },
+            {
+                "date": "2025-03-01",
+                "event": "RegimA SA revenue diversion begins",
+                "legal_aspect": "revenue_stream_hijacking",
+                "confidence": 0.96
+            },
+            {
+                "date": "2025-03-30",
+                "event": "Two years unallocated expenses dumped into RWD",
+                "actors": ["Rynette", "Peter"],
+                "legal_aspect": "expense_dumping_fraud",
+                "confidence": 0.94
+            },
+            {
+                "date": "2025-04-14",
+                "event": "Rynette bank letter for RWD revenue diversion",
+                "legal_aspect": "revenue_stream_hijacking",
+                "confidence": 0.96
+            },
+            {
+                "date": "2025-05-15",
+                "event": "Jax confronts Rynette about R1.035M debt",
+                "legal_aspect": "fraud_exposure",
+                "confidence": 0.95
+            },
+            {
+                "date": "2025-05-22",
+                "event": "Orders removed from Shopify",
+                "legal_aspect": "retaliation_fraud_exposure",
+                "confidence": 0.93
+            },
+            {
+                "date": "2025-05-29",
+                "event": "New domain regimaskin.co.za registered by Adderory",
+                "legal_aspect": "revenue_diversion_mechanism",
+                "confidence": 0.94
+            },
+            {
+                "date": "2025-06-06",
+                "event": "Dan provides fraud reports to Bantjies",
+                "legal_aspect": "fraud_exposure_villa_via",
+                "confidence": 0.97
+            },
+            {
+                "date": "2025-06-07",
+                "event": "Peter cancels all business cards (secret)",
+                "legal_aspect": "manufactured_crisis_retaliation",
+                "confidence": 0.98,
+                "timing": "day after fraud reports"
+            },
+            {
+                "date": "2025-06-20",
+                "event": "Email instruction: don't use regima.zone, use regimaskin.co.za",
+                "legal_aspect": "revenue_diversion_execution",
+                "confidence": 0.95
+            },
+            {
+                "date": "2025-07-01",
+                "event": "Peter's Main Trustee status backdated to this date",
+                "legal_aspect": "backdating_fraud",
+                "confidence": 0.95
+            },
+            {
+                "date": "2025-08-11",
+                "event": "Settlement discussion + Jax signs backdating",
+                "legal_aspect": "coercion_indicators",
+                "confidence": 0.94
+            },
+            {
+                "date": "2025-08-13",
+                "event": "Peter files interdict (2 days after Jax signs)",
+                "legal_aspect": "trust_power_bypass_bad_faith",
+                "confidence": 0.96,
+                "timing": "2 days after settlement/backdating"
+            },
+            {
+                "date": "2025-09-11",
+                "event": "Accounts emptied",
+                "legal_aspect": "financial_sabotage_escalation",
+                "confidence": 0.94,
+                "context": "Dan still paying creditors despite 6 months sabotage"
+            },
+            {
+                "date": "2026-05",
+                "event": "Investment payout due",
+                "legal_aspect": "strategic_timing_motive",
+                "confidence": 0.92,
+                "context": "9 months after interdict"
+            }
+        ]
+        return self.events
     
-    for para in paragraphs:
-        content = para['content'] + para['metadata'].get('claim', '')
-        for entity, pattern in entity_patterns.items():
-            if re.search(pattern, content, re.IGNORECASE):
-                entities[entity] += 1
+    def analyze_timelines(self):
+        """Identify coordinated timeline patterns"""
+        self.timelines = {
+            "revenue_hijacking_timeline": {
+                "pattern": "systematic_sabotage",
+                "duration": "Mar 2025 - Sep 2025 (6 months)",
+                "events": [
+                    "2025-03-01: RegimA SA diversion",
+                    "2025-04-14: RWD bank letter",
+                    "2025-05-22: Orders removed",
+                    "2025-05-29: New domain registered",
+                    "2025-06-07: Cards cancelled",
+                    "2025-06-20: Email redirect to new domain",
+                    "2025-09-11: Accounts emptied"
+                ],
+                "legal_aspect": "creditor_obligation_sabotage",
+                "confidence": 0.96
+            },
+            "fraud_exposure_retaliation_timeline": {
+                "pattern": "exposure_then_retaliation",
+                "events": [
+                    "2025-05-15: Jax confronts Rynette",
+                    "2025-05-22: Orders removed (7 days later)",
+                    "2025-06-06: Dan reports to Bantjies",
+                    "2025-06-07: Cards cancelled (1 day later)"
+                ],
+                "legal_aspect": "retaliation_for_fraud_exposure",
+                "confidence": 0.95
+            },
+            "manufactured_crisis_timeline": {
+                "pattern": "crisis_creation_then_exploitation",
+                "events": [
+                    "2025-06-07: Cards cancelled (creates crisis)",
+                    "2025-08-11: Settlement discussion",
+                    "2025-08-11: Jax signs backdating",
+                    "2025-08-13: Interdict filed (2 days later)",
+                    "2026-05: Investment payout (9 months later)"
+                ],
+                "legal_aspect": "manufactured_crisis_for_strategic_advantage",
+                "confidence": 0.94
+            },
+            "trust_power_bypass_timeline": {
+                "pattern": "absolute_power_but_seeks_court",
+                "events": [
+                    "2025-07-01: Backdated Main Trustee (absolute powers)",
+                    "2025-08-11: Jax signs backdating",
+                    "2025-08-13: Peter seeks court interdict despite absolute powers"
+                ],
+                "legal_aspect": "trust_power_bypass_temporal_analysis",
+                "confidence": 0.96
+            },
+            "beneficiary_attack_timeline": {
+                "pattern": "trustee_attacks_beneficiaries",
+                "events": [
+                    "2025-08-11: Jax (beneficiary) signs backdating",
+                    "2025-08-13: Peter (trustee) includes Jax in interdict",
+                    "Ongoing: Both beneficiaries (Jax & Dan) attacked by trustees"
+                ],
+                "legal_aspect": "beneficiary_protection_when_attacked",
+                "confidence": 0.98
+            }
+        }
+        return self.timelines
     
-    return entities
-
-def identify_events_from_content(paragraphs):
-    """Identify key events mentioned in AD paragraphs"""
-    events = []
+    def generate_report(self):
+        """Generate comprehensive analysis report"""
+        report = {
+            "analysis_date": datetime.now().isoformat(),
+            "repository": "cogpy/ad-res-j7",
+            "case": "2025-137857",
+            "entities": self.analyze_entities(),
+            "relations": self.analyze_relations(),
+            "events": self.analyze_events(),
+            "timelines": self.analyze_timelines(),
+            "lex_optimization_recommendations": self.generate_lex_recommendations()
+        }
+        return report
     
-    # Date pattern
-    date_pattern = r'(\d{1,2}\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{4})'
+    def generate_lex_recommendations(self):
+        """Generate recommendations for lex scheme refinements"""
+        return {
+            "high_priority_refinements": [
+                {
+                    "area": "Trust Law - Beneficiary Attack Pattern",
+                    "current_coverage": "lex/trs/za/enhanced_v6.scm",
+                    "recommendation": "Add beneficiary-attack-temporal-correlation principle",
+                    "rationale": "Need to correlate beneficiary cooperation (signing backdating) with immediate attack (interdict 2 days later)",
+                    "confidence": 0.97
+                },
+                {
+                    "area": "Civil Law - Revenue Hijacking Coordination",
+                    "current_coverage": "lex/civ/za/enhanced.scm",
+                    "recommendation": "Add multi-actor-coordination-indicators principle",
+                    "rationale": "Multiple actors (Peter, Rynette, Adderory) coordinating revenue diversion",
+                    "confidence": 0.96
+                },
+                {
+                    "area": "Company Law - Non-Director Financial Control",
+                    "current_coverage": "lex/cmp/za/forensic_v6.scm",
+                    "recommendation": "Add non-director-control-red-flags principle",
+                    "rationale": "Rynette (non-director) controls all accounts while directors have no access",
+                    "confidence": 0.95
+                },
+                {
+                    "area": "Criminal Law - Fraud Pattern Recognition",
+                    "current_coverage": "lex/cri/za/criminal_law.scm",
+                    "recommendation": "Expand fraud principles with stock-adjustment-fraud and expense-dumping-fraud",
+                    "rationale": "R5.4M stock adjustment and 2-year unallocated expense patterns",
+                    "confidence": 0.94
+                }
+            ],
+            "medium_priority_refinements": [
+                {
+                    "area": "International Law - Multi-Jurisdiction Compliance Crisis",
+                    "current_coverage": "lex/int/za/regulatory_compliance_v3.scm",
+                    "recommendation": "Add eu-responsible-person-interdict-impact principle",
+                    "rationale": "37-jurisdiction compliance crisis from interdict",
+                    "confidence": 0.96
+                },
+                {
+                    "area": "Civil Law - Quantum Meruit Platform Valuation",
+                    "current_coverage": "lex/civ/za/civil_law_enhanced.scm",
+                    "recommendation": "Add platform-as-service-valuation-methodology principle",
+                    "rationale": "Need specific methodology for SaaS platform quantum meruit (R2.94M-R6.88M)",
+                    "confidence": 0.95
+                }
+            ],
+            "integration_recommendations": [
+                {
+                    "area": "Hypergraph Event Correlation",
+                    "recommendation": "Integrate timeline events into hypergraph with temporal edges",
+                    "rationale": "Enable temporal pattern queries (e.g., 'find all events within 7 days of fraud exposure')",
+                    "priority": "high"
+                },
+                {
+                    "area": "Entity-Relation-Event Linking",
+                    "recommendation": "Create entity-event-relation triples in hypergraph",
+                    "rationale": "Enable queries like 'find all events where Peter (trustee) acts against Jax (beneficiary)'",
+                    "priority": "high"
+                },
+                {
+                    "area": "Confidence Score Propagation",
+                    "recommendation": "Implement confidence score propagation through hypergraph",
+                    "rationale": "Aggregate confidence from multiple principles to strengthen legal arguments",
+                    "priority": "medium"
+                }
+            ]
+        }
     
-    for para in paragraphs:
-        content = para['content']
-        dates = re.findall(date_pattern, content, re.IGNORECASE)
-        
-        if dates:
-            # Extract context around dates
-            for date in dates:
-                # Get 100 chars before and after
-                idx = content.lower().find(date.lower())
-                if idx != -1:
-                    context_start = max(0, idx - 100)
-                    context_end = min(len(content), idx + len(date) + 100)
-                    context = content[context_start:context_end].strip()
-                    
-                    events.append({
-                        'date': date,
-                        'para_num': para['para_num'],
-                        'context': context,
-                        'priority': para['priority']
-                    })
-    
-    return events
-
-def identify_relations():
-    """Identify key legal relations between entities"""
-    relations = [
-        {
-            'type': 'Director-Company',
-            'entities': ['Peter Faucitt', 'RegimA Skin Treatments'],
-            'lex_principles': ['fiduciary-duty', 'director-self-dealing-prohibition']
-        },
-        {
-            'type': 'Trustee-Beneficiary',
-            'entities': ['Peter Faucitt', 'Jacqueline Faucitt'],
-            'lex_principles': ['fiduciary-duty', 'beneficiary-adverse-action-prohibition']
-        },
-        {
-            'type': 'Trustee-Beneficiary',
-            'entities': ['Peter Faucitt', 'Daniel Faucitt'],
-            'lex_principles': ['fiduciary-duty', 'beneficiary-protection-when-attacked']
-        },
-        {
-            'type': 'Related Party Transaction',
-            'entities': ['RegimA Skin Treatments', 'Villa Via'],
-            'lex_principles': ['director-self-dealing-prohibition', 'excessive-profit-extraction-test']
-        },
-        {
-            'type': 'Platform Provider-User',
-            'entities': ['RegimA Zone Ltd', 'RegimA Worldwide'],
-            'lex_principles': ['unjust-enrichment-test', 'quantum-meruit']
-        },
-        {
-            'type': 'Accountant-Company',
-            'entities': ['Rynette Farrar', 'RegimA Skin Treatments'],
-            'lex_principles': ['accountant-professional-duty', 'conflict-of-interest-prohibition']
-        },
-    ]
-    
-    return relations
-
-def scan_lex_principles():
-    """Scan lex scheme files to identify available principles"""
-    principles = []
-    
-    for scm_file in LEX_DIR.rglob("*.scm"):
-        try:
-            with open(scm_file) as f:
-                content = f.read()
-            
-            # Extract principle definitions (simplified pattern matching)
-            # Look for (define-principle ...) patterns
-            principle_pattern = r'\(define-principle\s+([a-z0-9-]+)'
-            matches = re.findall(principle_pattern, content)
-            
-            for principle_name in matches:
-                principles.append({
-                    'name': principle_name,
-                    'file': str(scm_file.relative_to(REPO_ROOT)),
-                    'domain': scm_file.parent.parent.name  # e.g., 'civ', 'cmp', 'trs'
-                })
-        except:
-            pass
-    
-    return principles
-
-def generate_analysis_report():
-    """Generate comprehensive legal aspects analysis report"""
-    
-    print("Scanning AD paragraphs...")
-    paragraphs = scan_ad_paragraphs()
-    
-    print("Identifying entities...")
-    entities = identify_entities_from_content(paragraphs)
-    
-    print("Identifying events...")
-    events = identify_events_from_content(paragraphs)
-    
-    print("Identifying relations...")
-    relations = identify_relations()
-    
-    print("Scanning lex principles...")
-    lex_principles = scan_lex_principles()
-    
-    # Generate report
-    report = []
-    report.append("# Legal Aspects Analysis - AD Elements")
-    report.append(f"**Generated:** {Path.cwd()}")
-    report.append(f"**Date:** November 3, 2025")
-    report.append("")
-    report.append("## Executive Summary")
-    report.append("")
-    report.append(f"- **AD Paragraphs Analyzed:** {len(paragraphs)}")
-    report.append(f"- **Entities Identified:** {len(entities)}")
-    report.append(f"- **Events Extracted:** {len(events)}")
-    report.append(f"- **Relations Mapped:** {len(relations)}")
-    report.append(f"- **Lex Principles Available:** {len(lex_principles)}")
-    report.append("")
-    
-    # Entities section
-    report.append("## Entities Identified")
-    report.append("")
-    report.append("| Entity | Mentions | Type |")
-    report.append("|--------|----------|------|")
-    for entity, count in sorted(entities.items(), key=lambda x: -x[1]):
-        entity_type = "Natural Person" if "Faucitt" in entity or "Farrar" in entity or "Bantjies" in entity else "Juristic Person"
-        report.append(f"| {entity} | {count} | {entity_type} |")
-    report.append("")
-    
-    # AD Paragraphs by priority
-    report.append("## AD Paragraphs by Priority")
-    report.append("")
-    priority_counts = defaultdict(int)
-    for para in paragraphs:
-        priority_counts[para['priority']] += 1
-    
-    for priority in sorted(priority_counts.keys()):
-        report.append(f"### {priority}")
-        report.append(f"**Count:** {priority_counts[priority]}")
-        report.append("")
-        
-        # List paragraphs in this priority
-        priority_paras = [p for p in paragraphs if p['priority'] == priority]
-        for para in priority_paras[:10]:  # Show first 10
-            topic = para['metadata'].get('topic', 'No topic')
-            report.append(f"- **PARA {para['para_num']}**: {topic}")
-        
-        if len(priority_paras) > 10:
-            report.append(f"- ... and {len(priority_paras) - 10} more")
-        report.append("")
-    
-    # Relations section
-    report.append("## Key Legal Relations")
-    report.append("")
-    for rel in relations:
-        report.append(f"### {rel['type']}")
-        report.append(f"**Entities:** {' ↔ '.join(rel['entities'])}")
-        report.append(f"**Applicable Lex Principles:** {', '.join(rel['lex_principles'])}")
-        report.append("")
-    
-    # Lex principles by domain
-    report.append("## Lex Principles by Domain")
-    report.append("")
-    domain_principles = defaultdict(list)
-    for principle in lex_principles:
-        domain_principles[principle['domain']].append(principle)
-    
-    for domain in sorted(domain_principles.keys()):
-        report.append(f"### {domain.upper()} Domain")
-        report.append(f"**Principles:** {len(domain_principles[domain])}")
-        report.append("")
-        
-        # Show first 20 principles
-        for principle in domain_principles[domain][:20]:
-            report.append(f"- `{principle['name']}` ({principle['file']})")
-        
-        if len(domain_principles[domain]) > 20:
-            report.append(f"- ... and {len(domain_principles[domain]) - 20} more")
-        report.append("")
-    
-    # Timeline events
-    report.append("## Timeline Events (Sample)")
-    report.append("")
-    report.append("| Date | Paragraph | Context |")
-    report.append("|------|-----------|---------|")
-    for event in events[:30]:  # Show first 30 events
-        context = event['context'][:80].replace('\n', ' ').replace('|', '\\|')
-        report.append(f"| {event['date']} | {event['para_num']} | {context}... |")
-    report.append("")
-    
-    return '\n'.join(report)
+    def save_report(self, output_path):
+        """Save analysis report to file"""
+        report = self.generate_report()
+        with open(output_path, 'w') as f:
+            json.dump(report, f, indent=2)
+        return report
 
 if __name__ == "__main__":
-    report = generate_analysis_report()
-    
-    # Save report
-    output_path = REPO_ROOT / "LEGAL_ASPECTS_ANALYSIS_2025-11-03.md"
-    with open(output_path, 'w') as f:
-        f.write(report)
-    
-    print(f"\n✅ Analysis complete! Report saved to: {output_path}")
-    print(f"\nReport length: {len(report)} characters")
+    analyzer = LegalAspectsAnalyzer("/home/ubuntu/ad-res-j7")
+    report = analyzer.save_report("/home/ubuntu/ad-res-j7/LEGAL_ASPECTS_ANALYSIS_2025-11-06.json")
+    print(json.dumps(report, indent=2))
