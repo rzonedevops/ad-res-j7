@@ -1,0 +1,850 @@
+(*
+  Z++ Formal Specification: Data Model
+  System: AD-RES-J7 Legal Reasoning Platform
+  Case: 2025-137857 (Jacqueline & Daniel Faucitt vs Peter Faucitt)
+  Version: 1.0
+  Date: 2025-11-07
+  
+  This specification formalizes the data persistence layer of the AD-RES-J7 system,
+  including all database schemas and their invariants.
+*)
+
+(* ============================================================================ *)
+(* BASIC TYPES *)
+(* ============================================================================ *)
+
+given [IDENTIFIER, STRING, TEXT, TIMESTAMP, JSON]
+
+IDENTIFIER == ℕ₁  (* Positive natural numbers for IDs *)
+STRING == seq CHAR  (* Bounded string type *)
+TEXT == seq CHAR  (* Unbounded text type *)
+TIMESTAMP == ℕ  (* Unix timestamp *)
+JSON == seq CHAR  (* JSON-encoded data *)
+
+(* Enumerated types *)
+STATUS ::= open | closed | in_progress | completed
+PRIORITY ::= low | medium | high | critical
+ISSUE_TYPE ::= feature | task | bug | enhancement
+EVIDENCE_TYPE ::= bank_record | email | document | shopify_data | contract
+LINK_TYPE ::= proves | disproves | supports | contradicts | analyzes | references
+NODE_TYPE ::= document | person | issue | evidence | event | argument | arena | agent
+EDGE_TYPE ::= supports | contradicts | references | timeline | causation | liability
+DIRECTION ::= directed | undirected | bidirectional
+LEGAL_STATUS ::= applicant | respondent | witness | trustee | defendant
+AGENT_TYPE ::= person | corporation | trust | system
+ARENA_TYPE ::= legal | business | temporal | informational
+EVENT_TYPE ::= action | omission | state_change | harm
+GUILT_TYPE ::= culpable | negligent | strict | vicarious
+BURDEN_STANDARD ::= civil | criminal | mathematical
+
+(* ============================================================================ *)
+(* BASE SCHEMA: CASE DOCUMENTS *)
+(* ============================================================================ *)
+
+(*
+  Case documents represent legal filings, evidence documents, and supporting materials.
+  Invariants:
+  - case_number must follow format "YYYY-NNNNNN"
+  - file_path must be a valid relative or absolute path
+  - metadata is stored as JSON for flexibility
+*)
+
+schema CaseDocument
+  id: IDENTIFIER
+  case_number: STRING
+  document_type: STRING
+  title: STRING
+  content: TEXT
+  file_path: STRING
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Case number format validation *)
+  #case_number = 11 ∧ 
+  case_number(1..4) ∈ {'2', '0', '2', '5'} ∧
+  case_number(5) = '-'
+  
+  (* Non-empty required fields *)
+  #document_type > 0
+  #title > 0
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+schema CaseDocumentSet
+  documents: ℙ CaseDocument
+where
+  (* Unique IDs *)
+  ∀ d₁, d₂: documents • d₁.id = d₂.id ⇒ d₁ = d₂
+  
+  (* Case number consistency *)
+  ∀ d: documents • d.case_number = "2025-137857"
+end
+
+(* ============================================================================ *)
+(* BASE SCHEMA: EVIDENCE RECORDS *)
+(* ============================================================================ *)
+
+(*
+  Evidence records track all evidential materials with metadata and provenance.
+  Invariants:
+  - Evidence must have a source and collection date
+  - Evidence codes follow format "JF##" where ## is 01-99
+  - Amounts (if present) must be non-negative
+*)
+
+schema EvidenceRecord
+  id: IDENTIFIER
+  case_number: STRING
+  evidence_type: EVIDENCE_TYPE
+  evidence_code: STRING
+  description: TEXT
+  file_path: STRING
+  source: STRING
+  date_collected: TIMESTAMP
+  amount: ℝ⁺  (* Non-negative real for financial amounts *)
+  responsible_party: STRING
+  metadata: JSON
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Evidence code format: "JF##" *)
+  #evidence_code ≥ 4 ∧
+  evidence_code(1..2) = "JF"
+  
+  (* Non-empty required fields *)
+  #source > 0
+  
+  (* Amount is non-negative *)
+  amount ≥ 0
+  
+  (* Temporal consistency *)
+  date_collected ≤ created_at
+end
+
+schema EvidenceRecordSet
+  evidence: ℙ EvidenceRecord
+  total_damages: ℝ⁺
+where
+  (* Unique IDs *)
+  ∀ e₁, e₂: evidence • e₁.id = e₂.id ⇒ e₁ = e₂
+  
+  (* Unique evidence codes *)
+  ∀ e₁, e₂: evidence • e₁.evidence_code = e₂.evidence_code ⇒ e₁ = e₂
+  
+  (* Total damages calculation *)
+  total_damages = (Σ e: evidence • e.amount)
+  
+  (* Case-specific constraint: damages exceed R10M *)
+  total_damages ≥ 10227000
+end
+
+(* ============================================================================ *)
+(* BASE SCHEMA: ISSUES *)
+(* ============================================================================ *)
+
+(*
+  Issues represent work items in the case, organized hierarchically.
+  Features contain paragraphs, paragraphs contain tasks.
+  Invariants:
+  - Rank order starts at 1 (highest priority)
+  - Weight ranges from 0-100
+  - Tasks must reference a parent feature
+*)
+
+schema Issue
+  id: IDENTIFIER
+  issue_number: ℕ  (* GitHub issue number *)
+  title: STRING
+  description: TEXT
+  priority: PRIORITY
+  status: STATUS
+  labels: ℙ STRING
+  assignee: STRING
+  issue_type: ISSUE_TYPE
+  parent_issue_id: IDENTIFIER ∪ {null}
+  rank_order: ℕ₁
+  weight: 0..100
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+  completed_at: TIMESTAMP ∪ {null}
+where
+  (* ID and issue number uniqueness *)
+  id > 0
+  issue_number > 0
+  
+  (* Non-empty title *)
+  #title > 0
+  
+  (* Rank ordering starts at 1 *)
+  rank_order ≥ 1
+  
+  (* Weight bounded *)
+  0 ≤ weight ≤ 100
+  
+  (* Type-specific constraints *)
+  issue_type = task ⇒ parent_issue_id ≠ null
+  issue_type = feature ⇒ parent_issue_id = null
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+  completed_at ≠ null ⇒ completed_at ≥ created_at
+  status = completed ⇔ completed_at ≠ null
+end
+
+schema IssueSet
+  issues: ℙ Issue
+where
+  (* Unique IDs *)
+  ∀ i₁, i₂: issues • i₁.id = i₂.id ⇒ i₁ = i₂
+  
+  (* Unique issue numbers *)
+  ∀ i₁, i₂: issues • i₁.issue_number = i₂.issue_number ⇒ i₁ = i₂
+  
+  (* Parent-child consistency *)
+  ∀ i: issues • 
+    i.parent_issue_id ≠ null ⇒ 
+      (∃ p: issues • p.id = i.parent_issue_id ∧ p.issue_type = feature)
+  
+  (* No circular dependencies *)
+  ∀ i: issues • i.parent_issue_id ≠ i.id
+end
+
+(* ============================================================================ *)
+(* HIERARCHICAL SCHEMA: LEGAL ARGUMENTS *)
+(* ============================================================================ *)
+
+(*
+  Legal arguments represent top-level legal strategies.
+  Features prove or disprove arguments.
+  Invariants:
+  - Arguments must have a name and description
+  - Strategies are optional but recommended
+*)
+
+schema LegalArgument
+  id: IDENTIFIER
+  argument_name: STRING
+  description: TEXT
+  argument_type: STRING  (* offense, defense, counterclaim *)
+  strategy: TEXT
+  status: STATUS
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty required fields *)
+  #argument_name > 0
+  #description > 0
+  
+  (* Argument type validation *)
+  argument_type ∈ {"offense", "defense", "counterclaim", "rebuttal"}
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+schema LegalArgumentSet
+  arguments: ℙ LegalArgument
+where
+  (* Unique IDs *)
+  ∀ a₁, a₂: arguments • a₁.id = a₂.id ⇒ a₁ = a₂
+  
+  (* Unique names *)
+  ∀ a₁, a₂: arguments • a₁.argument_name = a₂.argument_name ⇒ a₁ = a₂
+end
+
+(* ============================================================================ *)
+(* HIERARCHICAL SCHEMA: PARAGRAPHS *)
+(* ============================================================================ *)
+
+(*
+  Paragraphs group related facts within a feature issue.
+  Rank-ordered by influence on the feature.
+  Invariants:
+  - Paragraph numbers start at 1
+  - Rank order determines sequence (1 = highest influence)
+  - Weight indicates influence strength (0-100)
+*)
+
+schema IssueParagraph
+  id: IDENTIFIER
+  feature_issue_id: IDENTIFIER
+  paragraph_number: ℕ₁
+  title: STRING
+  content: TEXT
+  rank_order: ℕ₁
+  weight: 0..100
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Feature reference *)
+  feature_issue_id > 0
+  
+  (* Paragraph numbering *)
+  paragraph_number ≥ 1
+  
+  (* Rank ordering *)
+  rank_order ≥ 1
+  
+  (* Weight bounded *)
+  0 ≤ weight ≤ 100
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+schema IssueParagraphSet
+  paragraphs: ℙ IssueParagraph
+  features: ℙ Issue
+where
+  (* Unique IDs *)
+  ∀ p₁, p₂: paragraphs • p₁.id = p₂.id ⇒ p₁ = p₂
+  
+  (* Feature reference integrity *)
+  ∀ p: paragraphs • 
+    (∃ f: features • f.id = p.feature_issue_id ∧ f.issue_type = feature)
+  
+  (* Unique paragraph numbers within feature *)
+  ∀ p₁, p₂: paragraphs • 
+    (p₁.feature_issue_id = p₂.feature_issue_id ∧ 
+     p₁.paragraph_number = p₂.paragraph_number) ⇒ p₁ = p₂
+  
+  (* Rank order uniqueness within feature *)
+  ∀ p₁, p₂: paragraphs • 
+    (p₁.feature_issue_id = p₂.feature_issue_id ∧ 
+     p₁.rank_order = p₂.rank_order) ⇒ p₁ = p₂
+end
+
+(* ============================================================================ *)
+(* HIERARCHICAL SCHEMA: LINKS *)
+(* ============================================================================ *)
+
+(*
+  Issue-Argument links connect features to legal arguments.
+  Paragraph-Issue links connect tasks to paragraphs.
+  Invariants:
+  - Link strength ranges from 0-100
+  - Each issue can link to multiple arguments
+  - Each task can belong to multiple paragraphs
+*)
+
+schema IssueArgumentLink
+  id: IDENTIFIER
+  issue_id: IDENTIFIER
+  argument_id: IDENTIFIER
+  link_type: LINK_TYPE
+  strength: 0..100
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Reference integrity *)
+  issue_id > 0
+  argument_id > 0
+  
+  (* Strength bounded *)
+  0 ≤ strength ≤ 100
+end
+
+schema ParagraphIssueLink
+  id: IDENTIFIER
+  paragraph_id: IDENTIFIER
+  issue_id: IDENTIFIER
+  rank_order: ℕ₁
+  weight: 0..100
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Reference integrity *)
+  paragraph_id > 0
+  issue_id > 0
+  
+  (* Rank ordering *)
+  rank_order ≥ 1
+  
+  (* Weight bounded *)
+  0 ≤ weight ≤ 100
+end
+
+schema CrossReference
+  id: IDENTIFIER
+  issue_id: IDENTIFIER
+  reference_type: STRING
+  reference_id: STRING
+  reference_path: STRING
+  reference_title: STRING
+  reference_section: STRING
+  relationship_type: LINK_TYPE
+  notes: TEXT
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Reference integrity *)
+  issue_id > 0
+  
+  (* Type validation *)
+  reference_type ∈ {"document", "evidence", "annexure", "paragraph", 
+                    "timeline_event", "analysis"}
+  
+  (* Non-empty reference ID *)
+  #reference_id > 0
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+(* ============================================================================ *)
+(* HYPERGRAPH SCHEMA: NODES *)
+(* ============================================================================ *)
+
+(*
+  Hypergraph nodes represent entities in the case.
+  Invariants:
+  - Each node has a unique ID
+  - Node type determines the entity category
+  - Entity ID links to actual entity (optional)
+*)
+
+schema HypergraphNode
+  id: IDENTIFIER
+  node_type: NODE_TYPE
+  entity_id: STRING
+  label: STRING
+  description: TEXT
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty label *)
+  #label > 0
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+schema HypergraphNodeSet
+  nodes: ℙ HypergraphNode
+where
+  (* Unique IDs *)
+  ∀ n₁, n₂: nodes • n₁.id = n₂.id ⇒ n₁ = n₂
+  
+  (* Unique entity references *)
+  ∀ n₁, n₂: nodes • 
+    (n₁.entity_id ≠ "" ∧ n₂.entity_id ≠ "" ∧ n₁.entity_id = n₂.entity_id) ⇒ n₁ = n₂
+end
+
+(* ============================================================================ *)
+(* HYPERGRAPH SCHEMA: EDGES *)
+(* ============================================================================ *)
+
+(*
+  Hypergraph edges represent multi-way relationships.
+  Invariants:
+  - Strength ranges from 0-100
+  - Direction determines relationship orientation
+  - Edges connect 2+ nodes via relations
+*)
+
+schema HypergraphEdge
+  id: IDENTIFIER
+  edge_type: EDGE_TYPE
+  label: STRING
+  description: TEXT
+  strength: 0..100
+  direction: DIRECTION
+  metadata: JSON
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Strength bounded *)
+  0 ≤ strength ≤ 100
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+end
+
+schema HypergraphRelation
+  id: IDENTIFIER
+  node_id: IDENTIFIER
+  edge_id: IDENTIFIER
+  role: STRING
+  position: ℕ
+  weight: 0..100
+  metadata: JSON
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Reference integrity *)
+  node_id > 0
+  edge_id > 0
+  
+  (* Position non-negative *)
+  position ≥ 0
+  
+  (* Weight bounded *)
+  0 ≤ weight ≤ 100
+end
+
+schema Hypergraph
+  nodes: HypergraphNodeSet
+  edges: ℙ HypergraphEdge
+  relations: ℙ HypergraphRelation
+where
+  (* Unique edge IDs *)
+  ∀ e₁, e₂: edges • e₁.id = e₂.id ⇒ e₁ = e₂
+  
+  (* Unique relation IDs *)
+  ∀ r₁, r₂: relations • r₁.id = r₂.id ⇒ r₁ = r₂
+  
+  (* Relation integrity: node exists *)
+  ∀ r: relations • (∃ n: nodes.nodes • n.id = r.node_id)
+  
+  (* Relation integrity: edge exists *)
+  ∀ r: relations • (∃ e: edges • e.id = r.edge_id)
+  
+  (* Each edge has at least 2 nodes *)
+  ∀ e: edges • #({r: relations | r.edge_id = e.id}) ≥ 2
+  
+  (* Position uniqueness within edge *)
+  ∀ r₁, r₂: relations • 
+    (r₁.edge_id = r₂.edge_id ∧ r₁.position = r₂.position) ⇒ r₁ = r₂
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE SCHEMA: AGENTS *)
+(* ============================================================================ *)
+
+(*
+  Agents represent entities that can perform actions.
+  Invariants:
+  - Agent type determines capabilities
+  - Legal status indicates role in case
+  - Attributes stored as JSON
+*)
+
+schema Agent
+  id: IDENTIFIER
+  agent_type: AGENT_TYPE
+  entity_id: STRING
+  name: STRING
+  attributes: JSON
+  legal_status: LEGAL_STATUS
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty name *)
+  #name > 0
+  
+  (* Unique entity ID *)
+  #entity_id > 0
+end
+
+schema AgentSet
+  agents: ℙ Agent
+where
+  (* Unique IDs *)
+  ∀ a₁, a₂: agents • a₁.id = a₂.id ⇒ a₁ = a₂
+  
+  (* Unique entity IDs *)
+  ∀ a₁, a₂: agents • a₁.entity_id = a₂.entity_id ⇒ a₁ = a₂
+  
+  (* Case-specific: applicants and respondents *)
+  (∃ jax, dan: agents • 
+    jax.name = "Jacqueline Faucitt" ∧ jax.legal_status = applicant ∧
+    dan.name = "Daniel James Faucitt" ∧ dan.legal_status = applicant) ∧
+  (∃ peter: agents • 
+    peter.name = "Peter Faucitt" ∧ peter.legal_status = respondent)
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE SCHEMA: ARENAS *)
+(* ============================================================================ *)
+
+(*
+  Arenas represent contextual spaces where events occur.
+  Invariants:
+  - Arena type categorizes the space
+  - Jurisdiction defines legal framework
+  - Constraints define rules and norms
+*)
+
+schema Arena
+  id: IDENTIFIER
+  arena_type: ARENA_TYPE
+  name: STRING
+  jurisdiction: STRING
+  constraints: JSON
+  boundary_conditions: JSON
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty name *)
+  #name > 0
+  
+  (* Case-specific: South African jurisdiction *)
+  jurisdiction = "South Africa"
+end
+
+schema ArenaSet
+  arenas: ℙ Arena
+where
+  (* Unique IDs *)
+  ∀ a₁, a₂: arenas • a₁.id = a₂.id ⇒ a₁ = a₂
+  
+  (* Case-specific: legal and business arenas *)
+  (∃ legal, business: arenas • 
+    legal.arena_type = legal ∧ business.arena_type = business)
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE SCHEMA: EVENTS *)
+(* ============================================================================ *)
+
+(*
+  Events represent occurrences in the possibility space.
+  Invariants:
+  - Event type determines categorization
+  - Temporal position is required
+  - Pre/post-conditions define state changes
+*)
+
+schema Event
+  id: IDENTIFIER
+  event_type: EVENT_TYPE
+  description: TEXT
+  temporal_position: TIMESTAMP
+  arena_id: IDENTIFIER
+  preconditions: JSON
+  postconditions: JSON
+  counterfactuals: JSON
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty description *)
+  #description > 0
+  
+  (* Arena reference *)
+  arena_id > 0
+  
+  (* Temporal ordering *)
+  temporal_position ≤ created_at
+end
+
+schema EventSet
+  events: ℙ Event
+  arenas: ArenaSet
+where
+  (* Unique IDs *)
+  ∀ e₁, e₂: events • e₁.id = e₂.id ⇒ e₁ = e₂
+  
+  (* Arena reference integrity *)
+  ∀ e: events • (∃ a: arenas.arenas • a.id = e.arena_id)
+  
+  (* Temporal ordering *)
+  ∀ e₁, e₂: events • 
+    e₁.temporal_position < e₂.temporal_position ⇒ e₁.id < e₂.id
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE SCHEMA: CONFIGURATIONS *)
+(* ============================================================================ *)
+
+(*
+  Configurations represent specific instantiations of agent-arena-event-horizon.
+  Invariants:
+  - Exactly one configuration is actual
+  - Possible configurations have probability > 0
+  - Probability ranges from 0-100
+*)
+
+schema Configuration
+  id: IDENTIFIER
+  configuration_name: STRING
+  agent_ids: ℙ IDENTIFIER
+  arena_ids: ℙ IDENTIFIER
+  event_ids: ℙ IDENTIFIER
+  horizon_ids: ℙ IDENTIFIER
+  is_possible: 𝔹
+  is_actual: 𝔹
+  probability: 0..100
+  world_state: JSON
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Non-empty sets *)
+  #agent_ids > 0
+  #arena_ids > 0
+  #event_ids > 0
+  
+  (* Probability constraints *)
+  is_possible ⇒ probability > 0
+  is_actual ⇒ (is_possible ∧ probability = 100)
+  
+  (* Impossibility *)
+  ¬is_possible ⇒ probability = 0
+end
+
+schema ConfigurationSet
+  configurations: ℙ Configuration
+where
+  (* Unique IDs *)
+  ∀ c₁, c₂: configurations • c₁.id = c₂.id ⇒ c₁ = c₂
+  
+  (* Exactly one actual configuration *)
+  #({c: configurations | c.is_actual}) = 1
+  
+  (* Probability sum ≤ 100 *)
+  (Σ c: configurations • c.probability) ≤ 100
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE SCHEMA: GUILT ASSIGNMENTS *)
+(* ============================================================================ *)
+
+(*
+  Guilt assignments attribute legal responsibility to agents.
+  Invariants:
+  - Guilt type determines culpability category
+  - Confidence ranges from 0-100
+  - Evidence chain must be non-empty
+*)
+
+schema GuiltAssignment
+  id: IDENTIFIER
+  configuration_id: IDENTIFIER
+  agent_id: IDENTIFIER
+  guilt_type: GUILT_TYPE
+  charge: STRING
+  evidence_chain: JSON
+  rule_applications: JSON
+  confidence: 0..100
+  burden_standard: BURDEN_STANDARD
+  created_at: TIMESTAMP
+where
+  (* ID uniqueness *)
+  id > 0
+  
+  (* Reference integrity *)
+  configuration_id > 0
+  agent_id > 0
+  
+  (* Non-empty charge *)
+  #charge > 0
+  
+  (* Confidence bounded *)
+  0 ≤ confidence ≤ 100
+  
+  (* Burden-specific confidence thresholds *)
+  burden_standard = civil ⇒ confidence > 50
+  burden_standard = criminal ⇒ confidence > 95
+  burden_standard = mathematical ⇒ confidence = 100
+end
+
+schema GuiltAssignmentSet
+  guilt_assignments: ℙ GuiltAssignment
+  agents: AgentSet
+  configurations: ConfigurationSet
+where
+  (* Unique IDs *)
+  ∀ g₁, g₂: guilt_assignments • g₁.id = g₂.id ⇒ g₁ = g₂
+  
+  (* Agent reference integrity *)
+  ∀ g: guilt_assignments • 
+    (∃ a: agents.agents • a.id = g.agent_id)
+  
+  (* Configuration reference integrity *)
+  ∀ g: guilt_assignments • 
+    (∃ c: configurations.configurations • c.id = g.configuration_id)
+  
+  (* Case-specific: Peter has guilt assignments *)
+  (∃ peter: agents.agents | peter.name = "Peter Faucitt" •
+    (∃ g: guilt_assignments • 
+      g.agent_id = peter.id ∧ g.confidence > 50))
+end
+
+(* ============================================================================ *)
+(* COMPOSITE SCHEMA: COMPLETE DATA MODEL *)
+(* ============================================================================ *)
+
+(*
+  The complete data model integrates all schemas.
+  Invariants:
+  - All referential integrity maintained
+  - Cross-schema consistency enforced
+  - Case-specific constraints satisfied
+*)
+
+schema CompleteDataModel
+  documents: CaseDocumentSet
+  evidence: EvidenceRecordSet
+  issues: IssueSet
+  arguments: LegalArgumentSet
+  paragraphs: IssueParagraphSet
+  hypergraph: Hypergraph
+  agents: AgentSet
+  arenas: ArenaSet
+  events: EventSet
+  configurations: ConfigurationSet
+  guilt_assignments: GuiltAssignmentSet
+where
+  (* Cross-schema integrity: hypergraph nodes reference issues *)
+  ∀ n: hypergraph.nodes.nodes | n.node_type = issue •
+    (∃ i: issues.issues • i.issue_number = n.entity_id)
+  
+  (* Cross-schema integrity: hypergraph nodes reference evidence *)
+  ∀ n: hypergraph.nodes.nodes | n.node_type = evidence •
+    (∃ e: evidence.evidence • e.evidence_code = n.entity_id)
+  
+  (* Cross-schema integrity: hypergraph nodes reference agents *)
+  ∀ n: hypergraph.nodes.nodes | n.node_type = person •
+    (∃ a: agents.agents • a.name = n.label)
+  
+  (* Case-specific: total damages match evidence *)
+  evidence.total_damages ≥ 10227000
+  
+  (* Case-specific: all case numbers match *)
+  ∀ d: documents.documents • d.case_number = "2025-137857"
+  ∀ e: evidence.evidence • e.case_number = "2025-137857"
+end
+
+(* ============================================================================ *)
+(* END OF DATA MODEL SPECIFICATION *)
+(* ============================================================================ *)

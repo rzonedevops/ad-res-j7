@@ -1,0 +1,815 @@
+(*
+  Z++ Formal Specification: External Integrations
+  System: AD-RES-J7 Legal Reasoning Platform
+  Case: 2025-137857 (Jacqueline & Daniel Faucitt vs Peter Faucitt)
+  Version: 1.0
+  Date: 2025-11-07
+  
+  This specification formalizes external system integrations, API contracts,
+  and integration boundaries for the AD-RES-J7 system.
+*)
+
+(* ============================================================================ *)
+(* IMPORTS *)
+(* ============================================================================ *)
+
+include "data_model.zpp"
+include "system_state.zpp"
+include "operations.zpp"
+
+(* ============================================================================ *)
+(* EXTERNAL SYSTEM TYPES *)
+(* ============================================================================ *)
+
+EXTERNAL_SYSTEM ::= github_api | document_storage | legal_database | 
+                     email_service | notification_service
+
+HTTP_METHOD ::= GET | POST | PUT | PATCH | DELETE
+HTTP_STATUS ::= ok_200 | created_201 | accepted_202 | bad_request_400 | 
+                unauthorized_401 | forbidden_403 | not_found_404 | 
+                internal_error_500
+
+schema APIEndpoint
+  system: EXTERNAL_SYSTEM
+  base_url: STRING
+  endpoint_path: STRING
+  method: HTTP_METHOD
+  requires_auth: 𝔹
+  rate_limit: ℕ  (* Requests per minute *)
+where
+  (* Non-empty URL *)
+  #base_url > 0
+  #endpoint_path > 0
+  
+  (* Reasonable rate limits *)
+  rate_limit > 0 ∧ rate_limit ≤ 5000
+end
+
+schema APIRequest
+  endpoint: APIEndpoint
+  headers: STRING → STRING
+  query_params: STRING → STRING
+  body: JSON
+  timeout_seconds: ℕ₁
+where
+  (* Authentication header if required *)
+  endpoint.requires_auth ⇒ 
+    "Authorization" ∈ dom headers
+  
+  (* Reasonable timeout *)
+  timeout_seconds ≥ 5 ∧ timeout_seconds ≤ 300
+end
+
+schema APIResponse
+  status: HTTP_STATUS
+  headers: STRING → STRING
+  body: JSON
+  response_time_ms: ℕ
+where
+  (* Content-Type header present *)
+  "Content-Type" ∈ dom headers
+  
+  (* Reasonable response time *)
+  response_time_ms ≥ 0 ∧ response_time_ms ≤ 60000
+end
+
+(* ============================================================================ *)
+(* GITHUB API INTEGRATION *)
+(* ============================================================================ *)
+
+(*
+  GitHub API integration for issue management and synchronization.
+  Invariants:
+  - All API calls are authenticated
+  - Rate limits are respected
+  - Issue numbers are synchronized
+*)
+
+GITHUB_ISSUE_STATE ::= open | closed
+GITHUB_LABEL == STRING
+
+schema GitHubIssue
+  number: ℕ₁
+  title: STRING
+  body: TEXT
+  state: GITHUB_ISSUE_STATE
+  labels: ℙ GITHUB_LABEL
+  assignee: STRING ∪ {null}
+  created_at: TIMESTAMP
+  updated_at: TIMESTAMP
+  closed_at: TIMESTAMP ∪ {null}
+where
+  (* Issue number uniqueness *)
+  number > 0
+  
+  (* Non-empty title *)
+  #title > 0
+  
+  (* Temporal consistency *)
+  created_at ≤ updated_at
+  closed_at ≠ null ⇒ closed_at ≥ created_at
+  state = closed ⇔ closed_at ≠ null
+end
+
+schema GitHubIssueCreate
+  APIRequest
+  title?: STRING
+  body?: TEXT
+  labels?: ℙ GITHUB_LABEL
+  assignee?: STRING
+  issue!: GitHubIssue
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = github_api
+  endpoint.method = POST
+  endpoint.endpoint_path = "/repos/{owner}/{repo}/issues"
+  #title? > 0
+  
+  (* Request body *)
+  body = JSON encoding of {title?, body?, labels?, assignee?}
+  
+  (* Postconditions: issue created *)
+  issue!.title = title?
+  issue!.body = body?
+  issue!.labels = labels?
+  issue!.assignee = assignee?
+  issue!.state = open
+  
+  (* Response *)
+  response!.status = created_201
+end
+
+schema GitHubIssueUpdate
+  APIRequest
+  issue_number?: ℕ₁
+  title?: STRING
+  body?: TEXT
+  state?: GITHUB_ISSUE_STATE
+  labels?: ℙ GITHUB_LABEL
+  issue!: GitHubIssue
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = github_api
+  endpoint.method = PATCH
+  endpoint.endpoint_path = "/repos/{owner}/{repo}/issues/{issue_number}"
+  issue_number? > 0
+  
+  (* Request body *)
+  body = JSON encoding of {title?, body?, state?, labels?}
+  
+  (* Postconditions: issue updated *)
+  issue!.number = issue_number?
+  title? ≠ "" ⇒ issue!.title = title?
+  body? ≠ "" ⇒ issue!.body = body?
+  state? ≠ null ⇒ issue!.state = state?
+  labels? ≠ ∅ ⇒ issue!.labels = labels?
+  
+  (* Response *)
+  response!.status = ok_200
+end
+
+schema GitHubIssueSync
+  ΔSystemState
+  github_issues?: ℙ GitHubIssue
+  synced_issues!: ℙ Issue
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #github_issues? > 0
+  
+  (* For each GitHub issue, create or update local issue *)
+  ∀ gh: github_issues? • 
+    (∃ local: synced_issues! • 
+      local.issue_number = gh.number ∧
+      local.title = gh.title ∧
+      local.description = gh.body ∧
+      (gh.state = open ⇒ local.status = open) ∧
+      (gh.state = closed ⇒ local.status = completed))
+  
+  (* Postconditions: issues updated in system *)
+  ∀ local: synced_issues! • 
+    local ∈ hierarchy_manager'.features.issues ∪ 
+            hierarchy_manager'.tasks.issues
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(* ============================================================================ *)
+(* DOCUMENT STORAGE INTEGRATION *)
+(* ============================================================================ *)
+
+(*
+  Document storage integration for evidence files and case documents.
+  Invariants:
+  - Files are stored with unique paths
+  - Checksums verify integrity
+  - Metadata is consistent
+*)
+
+schema DocumentMetadata
+  file_path: STRING
+  file_size: ℕ
+  mime_type: STRING
+  checksum: STRING
+  created_at: TIMESTAMP
+  last_modified: TIMESTAMP
+where
+  (* Non-empty path *)
+  #file_path > 0
+  
+  (* Valid MIME type *)
+  mime_type ∈ {"application/pdf", "image/jpeg", "image/png", 
+                "application/msword", "text/plain", "message/rfc822"}
+  
+  (* Checksum format (SHA-256) *)
+  #checksum = 64
+  
+  (* Temporal consistency *)
+  created_at ≤ last_modified
+end
+
+schema DocumentUpload
+  APIRequest
+  file_content?: seq CHAR  (* Binary file content *)
+  file_path?: STRING
+  metadata?: DocumentMetadata
+  uploaded_document!: DocumentMetadata
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = document_storage
+  endpoint.method = POST
+  #file_content? > 0
+  #file_path? > 0
+  
+  (* Path uniqueness check *)
+  file_path? = metadata?.file_path
+  
+  (* Postconditions: document uploaded *)
+  uploaded_document!.file_path = file_path?
+  uploaded_document!.file_size = #file_content?
+  uploaded_document!.mime_type = metadata?.mime_type
+  uploaded_document!.checksum = metadata?.checksum
+  
+  (* Response *)
+  response!.status = created_201
+end
+
+schema DocumentRetrieve
+  APIRequest
+  file_path?: STRING
+  file_content!: seq CHAR
+  metadata!: DocumentMetadata
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = document_storage
+  endpoint.method = GET
+  #file_path? > 0
+  
+  (* Postconditions: document retrieved *)
+  metadata!.file_path = file_path?
+  #file_content! = metadata!.file_size
+  
+  (* Checksum verification *)
+  (* sha256(file_content!) = metadata!.checksum *)
+  
+  (* Response *)
+  response!.status = ok_200
+end
+
+schema DocumentStorageSync
+  ΔSystemState
+  documents_to_sync?: ℙ DocumentMetadata
+  synced_documents!: ℙ CaseDocument
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #documents_to_sync? > 0
+  
+  (* For each document, create or update local record *)
+  ∀ doc: documents_to_sync? • 
+    (∃ local: synced_documents! • 
+      local.file_path = doc.file_path ∧
+      local.created_at = doc.created_at ∧
+      local.updated_at = doc.last_modified)
+  
+  (* Postconditions: documents updated in system *)
+  ∀ local: synced_documents! • 
+    local ∈ case_manager'.documents.documents
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+end
+
+(* ============================================================================ *)
+(* LEGAL DATABASE INTEGRATION *)
+(* ============================================================================ *)
+
+(*
+  Legal database integration for case law and statutory research.
+  Invariants:
+  - Citations are properly formatted
+  - Jurisdiction is specified
+  - Relevance scores are bounded
+*)
+
+JURISDICTION ::= south_africa | united_kingdom | international
+
+schema LegalCitation
+  citation_id: STRING
+  citation_text: STRING
+  jurisdiction: JURISDICTION
+  year: ℕ
+  court: STRING
+  parties: STRING
+  relevance_score: 0..100
+where
+  (* Non-empty citation *)
+  #citation_text > 0
+  
+  (* Valid year *)
+  year ≥ 1900 ∧ year ≤ 2100
+  
+  (* Relevance bounded *)
+  0 ≤ relevance_score ≤ 100
+end
+
+schema CaseLawSearch
+  APIRequest
+  query?: STRING
+  jurisdiction?: JURISDICTION
+  max_results?: ℕ₁
+  citations!: ℙ LegalCitation
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = legal_database
+  endpoint.method = GET
+  #query? > 0
+  max_results? ≤ 100
+  
+  (* Query parameters *)
+  query_params = {
+    "q" ↦ query?,
+    "jurisdiction" ↦ jurisdiction?,
+    "limit" ↦ max_results?
+  }
+  
+  (* Postconditions: citations returned *)
+  #citations! ≤ max_results?
+  ∀ c: citations! • c.jurisdiction = jurisdiction?
+  
+  (* Response *)
+  response!.status = ok_200
+end
+
+schema StatutoryProvision
+  provision_id: STRING
+  statute_name: STRING
+  section_number: STRING
+  provision_text: TEXT
+  jurisdiction: JURISDICTION
+  in_force_date: TIMESTAMP
+  repealed_date: TIMESTAMP ∪ {null}
+where
+  (* Non-empty fields *)
+  #statute_name > 0
+  #section_number > 0
+  #provision_text > 0
+  
+  (* Temporal validity *)
+  repealed_date ≠ null ⇒ repealed_date > in_force_date
+end
+
+schema StatutoryLookup
+  APIRequest
+  statute_name?: STRING
+  section_number?: STRING
+  provision!: StatutoryProvision
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = legal_database
+  endpoint.method = GET
+  #statute_name? > 0
+  #section_number? > 0
+  
+  (* Query parameters *)
+  query_params = {
+    "statute" ↦ statute_name?,
+    "section" ↦ section_number?
+  }
+  
+  (* Postconditions: provision found *)
+  provision!.statute_name = statute_name?
+  provision!.section_number = section_number?
+  
+  (* Response *)
+  response!.status = ok_200
+end
+
+schema LegalResearchIntegration
+  ΞSystemState
+  research_query?: STRING
+  jurisdiction?: JURISDICTION
+  citations!: ℙ LegalCitation
+  provisions!: ℙ StatutoryProvision
+  result!: OperationResult
+where
+  (* Execute search *)
+  #research_query? > 0
+  
+  (* Return relevant citations and provisions *)
+  ∀ c: citations! • c.jurisdiction = jurisdiction?
+  ∀ p: provisions! • p.jurisdiction = jurisdiction?
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* EMAIL AND NOTIFICATION INTEGRATION *)
+(* ============================================================================ *)
+
+(*
+  Email and notification services for case updates and alerts.
+  Invariants:
+  - Email addresses are valid
+  - Notifications are delivered reliably
+  - Priorities are respected
+*)
+
+NOTIFICATION_PRIORITY ::= low | normal | high | urgent
+NOTIFICATION_TYPE ::= email | sms | push | webhook
+
+schema EmailMessage
+  message_id: STRING
+  from_address: STRING
+  to_addresses: ℙ STRING
+  cc_addresses: ℙ STRING
+  bcc_addresses: ℙ STRING
+  subject: STRING
+  body: TEXT
+  attachments: ℙ STRING  (* File paths *)
+  sent_at: TIMESTAMP
+where
+  (* Valid email addresses (simplified) *)
+  #from_address > 0
+  #to_addresses > 0
+  
+  (* Non-empty subject and body *)
+  #subject > 0
+  #body > 0
+  
+  (* At least one recipient *)
+  #to_addresses + #cc_addresses + #bcc_addresses > 0
+end
+
+schema SendEmail
+  APIRequest
+  message?: EmailMessage
+  delivery_status!: STRING
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = email_service
+  endpoint.method = POST
+  
+  (* Request body *)
+  body = JSON encoding of message?
+  
+  (* Postconditions: email sent *)
+  delivery_status! ∈ {"sent", "queued", "failed"}
+  
+  (* Response *)
+  response!.status ∈ {ok_200, accepted_202}
+end
+
+schema Notification
+  notification_id: STRING
+  notification_type: NOTIFICATION_TYPE
+  priority: NOTIFICATION_PRIORITY
+  recipient: STRING
+  title: STRING
+  message: TEXT
+  metadata: JSON
+  created_at: TIMESTAMP
+  delivered_at: TIMESTAMP ∪ {null}
+where
+  (* Non-empty fields *)
+  #recipient > 0
+  #title > 0
+  #message > 0
+  
+  (* Delivery tracking *)
+  delivered_at ≠ null ⇒ delivered_at ≥ created_at
+end
+
+schema SendNotification
+  APIRequest
+  notification?: Notification
+  delivery_status!: STRING
+  response!: APIResponse
+where
+  (* Preconditions *)
+  endpoint.system = notification_service
+  endpoint.method = POST
+  
+  (* Request body *)
+  body = JSON encoding of notification?
+  
+  (* Postconditions: notification sent *)
+  delivery_status! ∈ {"delivered", "pending", "failed"}
+  
+  (* Response *)
+  response!.status ∈ {ok_200, accepted_202}
+end
+
+schema NotifyOnGuiltAssignment
+  ΔSystemState
+  guilt_assignment?: GuiltAssignment
+  notifications!: ℙ Notification
+  result!: OperationResult
+where
+  (* Create notifications for applicants *)
+  ∀ agent: lex_engine.agents.agents | 
+    agent.legal_status = applicant •
+      (∃ notif: notifications! • 
+        notif.recipient = agent.entity_id ∧
+        notif.notification_type = email ∧
+        notif.priority = high ∧
+        notif.title = "Guilt Assignment Updated" ∧
+        notif.message contains guilt_assignment?.charge)
+  
+  (* Postconditions: notifications sent *)
+  ∀ notif: notifications! • 
+    notif.delivered_at ≠ null
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions: state unchanged *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(* ============================================================================ *)
+(* INTEGRATION STATE AND MONITORING *)
+(* ============================================================================ *)
+
+(*
+  Integration state tracks external system connectivity and health.
+  Invariants:
+  - Health checks are periodic
+  - Failures are logged
+  - Retries are bounded
+*)
+
+CONNECTION_STATUS ::= connected | disconnected | degraded
+HEALTH_STATUS ::= healthy | unhealthy | unknown
+
+schema ExternalSystemConnection
+  system: EXTERNAL_SYSTEM
+  status: CONNECTION_STATUS
+  last_health_check: TIMESTAMP
+  health_status: HEALTH_STATUS
+  error_count: ℕ
+  last_error: STRING
+  retry_count: ℕ
+where
+  (* Health checks are recent *)
+  last_health_check > 0
+  
+  (* Error tracking *)
+  error_count ≥ 0
+  error_count > 0 ⇒ #last_error > 0
+  
+  (* Retry bounds *)
+  retry_count ≤ 5
+  
+  (* Status consistency *)
+  health_status = healthy ⇔ (status = connected ∧ error_count = 0)
+end
+
+schema IntegrationState
+  connections: EXTERNAL_SYSTEM → ExternalSystemConnection
+  rate_limit_remaining: EXTERNAL_SYSTEM → ℕ
+  api_call_count: EXTERNAL_SYSTEM → ℕ
+  last_sync: EXTERNAL_SYSTEM → TIMESTAMP
+where
+  (* All systems have connections *)
+  dom connections = {github_api, document_storage, legal_database, 
+                     email_service, notification_service}
+  
+  (* Rate limits tracked *)
+  dom rate_limit_remaining = dom connections
+  
+  (* API call counts tracked *)
+  dom api_call_count = dom connections
+  
+  (* Sync timestamps tracked *)
+  dom last_sync = dom connections
+  
+  (* Rate limit consistency *)
+  ∀ sys: dom rate_limit_remaining • 
+    rate_limit_remaining(sys) ≤ 
+      (connections(sys)).endpoint.rate_limit
+end
+
+schema CheckSystemHealth
+  ΔIntegrationState
+  system?: EXTERNAL_SYSTEM
+  health_status!: HEALTH_STATUS
+  result!: OperationResult
+where
+  (* Preconditions *)
+  system? ∈ dom connections
+  
+  (* Perform health check *)
+  let conn == connections(system?) •
+    health_status! = conn.health_status
+  
+  (* Update last health check time *)
+  connections'(system?).last_health_check = current_timestamp
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  ∀ sys: dom connections \ {system?} • 
+    connections'(sys) = connections(sys)
+end
+
+schema RetryFailedIntegration
+  ΔIntegrationState
+  system?: EXTERNAL_SYSTEM
+  retry_successful!: 𝔹
+  result!: OperationResult
+where
+  (* Preconditions *)
+  system? ∈ dom connections
+  connections(system?).status = disconnected
+  connections(system?).retry_count < 5
+  
+  (* Attempt reconnection *)
+  (* ... connection logic ... *)
+  
+  (* Postconditions: retry count incremented *)
+  connections'(system?).retry_count = 
+    connections(system?).retry_count + 1
+  
+  (* If successful, update status *)
+  retry_successful! ⇒ 
+    connections'(system?).status = connected ∧
+    connections'(system?).health_status = healthy ∧
+    connections'(system?).error_count = 0
+  
+  (* If failed, log error *)
+  ¬retry_successful! ⇒ 
+    connections'(system?).error_count = 
+      connections(system?).error_count + 1
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* INTEGRATION WORKFLOWS *)
+(* ============================================================================ *)
+
+(*
+  End-to-end integration workflows combining multiple external systems.
+*)
+
+schema SyncIssuesFromGitHub
+  ΔSystemState
+  ΔIntegrationState
+  repository_owner?: STRING
+  repository_name?: STRING
+  synced_count!: ℕ
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #repository_owner? > 0
+  #repository_name? > 0
+  connections(github_api).status = connected
+  
+  (* Fetch issues from GitHub *)
+  (* ... API calls ... *)
+  
+  (* Sync to local database *)
+  (* ... database operations ... *)
+  
+  (* Update sync timestamp *)
+  last_sync'(github_api) = current_timestamp
+  
+  (* Increment API call count *)
+  api_call_count'(github_api) = api_call_count(github_api) + 1
+  
+  (* Postconditions *)
+  synced_count! ≥ 0
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+schema NotifyStakeholders
+  ΞSystemState
+  ΔIntegrationState
+  event_type?: STRING
+  event_data?: JSON
+  notification_count!: ℕ
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #event_type? > 0
+  connections(email_service).status ∈ {connected, degraded}
+  
+  (* Identify stakeholders *)
+  let stakeholders == 
+    {a: lex_engine.agents.agents | 
+     a.legal_status ∈ {applicant, respondent}} •
+    notification_count! = #stakeholders
+  
+  (* Send notifications *)
+  (* ... notification API calls ... *)
+  
+  (* Update API call count *)
+  api_call_count'(email_service) = 
+    api_call_count(email_service) + notification_count!
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* INTEGRATION CONTRACTS SUMMARY *)
+(* ============================================================================ *)
+
+(*
+  Summary of all external integration contracts:
+  
+  1. GitHub API Integration:
+     - Issue creation and synchronization
+     - Label management
+     - Bidirectional sync with local database
+     - Rate limits: 5000 req/hour (authenticated)
+  
+  2. Document Storage Integration:
+     - File upload and retrieval
+     - Checksum verification
+     - Metadata synchronization
+     - Support for PDF, DOCX, images, emails
+  
+  3. Legal Database Integration:
+     - Case law search
+     - Statutory provision lookup
+     - Citation management
+     - Jurisdiction-specific queries
+  
+  4. Email and Notification Services:
+     - Email delivery with attachments
+     - Multi-channel notifications (email, SMS, push)
+     - Priority-based delivery
+     - Delivery tracking and confirmation
+  
+  5. Integration Monitoring:
+     - Health checks for all systems
+     - Error tracking and retry logic
+     - Rate limit monitoring
+     - Sync timestamp tracking
+*)
+
+(* ============================================================================ *)
+(* END OF INTEGRATIONS SPECIFICATION *)
+(* ============================================================================ *)

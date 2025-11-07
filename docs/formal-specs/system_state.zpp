@@ -1,0 +1,581 @@
+(*
+  Z++ Formal Specification: System State
+  System: AD-RES-J7 Legal Reasoning Platform
+  Case: 2025-137857 (Jacqueline & Daniel Faucitt vs Peter Faucitt)
+  Version: 1.0
+  Date: 2025-11-07
+  
+  This specification formalizes the complete runtime state of the AD-RES-J7 system,
+  including the legal reasoning engine state, case management state, and inference state.
+*)
+
+(* ============================================================================ *)
+(* IMPORTS *)
+(* ============================================================================ *)
+
+(* Import data model schemas *)
+include "data_model.zpp"
+
+(* ============================================================================ *)
+(* LEGAL ATTENTION ENGINE STATE *)
+(* ============================================================================ *)
+
+(*
+  The Legal Attention Engine maintains transformer state for legal reasoning.
+  Invariants:
+  - Model parameters are immutable after training
+  - Attention weights computed for each forward pass
+  - Embeddings maintain consistent dimensionality
+*)
+
+DIMENSION == ℕ₁  (* Model dimensionality *)
+VECTOR == seq ℝ  (* Real-valued vector *)
+MATRIX == seq (seq ℝ)  (* Real-valued matrix *)
+TENSOR == seq (seq (seq ℝ))  (* 3D tensor *)
+
+HEAD_NAME ::= causal | intentional | temporal | normative
+
+schema LegalEmbedding
+  event_embeddings: EVENT_TYPE → VECTOR
+  agent_embeddings: AGENT_TYPE → VECTOR
+  norm_embeddings: STRING → VECTOR
+  d_model: DIMENSION
+where
+  (* All embeddings have consistent dimensionality *)
+  ∀ v: ran event_embeddings • #v = d_model
+  ∀ v: ran agent_embeddings • #v = d_model
+  ∀ v: ran norm_embeddings • #v = d_model
+  
+  (* Standard model sizes *)
+  d_model ∈ {128, 256, 512, 1024}
+end
+
+schema PositionalEncoding
+  temporal_encoding: ℕ → VECTOR
+  causal_encoding: ℕ → VECTOR
+  epistemic_encoding: ℕ → VECTOR
+  deontic_encoding: ℕ → VECTOR
+  d_model: DIMENSION
+  max_positions: ℕ₁
+where
+  (* Dimension consistency *)
+  ∀ i: 0..max_positions • 
+    #(temporal_encoding(i)) = d_model ÷ 4
+  ∀ i: 0..max_positions • 
+    #(causal_encoding(i)) = d_model ÷ 4
+  ∀ i: 0..max_positions • 
+    #(epistemic_encoding(i)) = d_model ÷ 4
+  ∀ i: 0..max_positions • 
+    #(deontic_encoding(i)) = d_model - 3 * (d_model ÷ 4)
+  
+  (* Max positions reasonable *)
+  max_positions ≤ 10000
+end
+
+schema AttentionWeights
+  head_weights: HEAD_NAME → MATRIX
+  head_names: ℙ HEAD_NAME
+  sequence_length: ℕ₁
+where
+  (* All heads represented *)
+  head_names = {causal, intentional, temporal, normative}
+  
+  (* Weight matrices are square *)
+  ∀ h: head_names • 
+    #(head_weights(h)) = sequence_length ∧
+    (∀ row: head_weights(h) • #row = sequence_length)
+  
+  (* Weights are probabilities (sum to 1) *)
+  ∀ h: head_names • 
+    ∀ i: 1..sequence_length • 
+      (Σ j: 1..sequence_length • (head_weights(h))(i)(j)) = 1.0
+  
+  (* Weights are non-negative *)
+  ∀ h: head_names • 
+    ∀ i, j: 1..sequence_length • 
+      (head_weights(h))(i)(j) ≥ 0.0
+end
+
+schema LegalAttentionEngineState
+  embeddings: LegalEmbedding
+  positional_enc: PositionalEncoding
+  attention_weights: AttentionWeights
+  guilt_scores: IDENTIFIER → ℝ  (* Agent ID → Guilt probability *)
+  current_configuration: IDENTIFIER  (* Active configuration *)
+  is_trained: 𝔹
+where
+  (* Dimensionality consistency *)
+  embeddings.d_model = positional_enc.d_model
+  
+  (* Guilt scores are probabilities *)
+  ∀ agent_id: dom guilt_scores • 
+    0.0 ≤ guilt_scores(agent_id) ≤ 1.0
+  
+  (* Training requirement *)
+  attention_weights ≠ ∅ ⇒ is_trained
+end
+
+(* ============================================================================ *)
+(* BURDEN OF PROOF ANALYZER STATE *)
+(* ============================================================================ *)
+
+(*
+  The Burden of Proof Analyzer maintains proof requirements and strategies.
+  Invariants:
+  - Thresholds match burden standards
+  - Proof gaps identified for each element
+  - Strategies updated based on evidence
+*)
+
+PROOF_ELEMENT ::= causation | intent | knowledge | duty | breach | harm | 
+                   foreseeability | proximity
+
+schema ProofRequirement
+  element: PROOF_ELEMENT
+  standard: BURDEN_STANDARD
+  threshold: ℝ  (* Probability threshold *)
+  evidence_types: ℙ STRING
+  necessary_conditions: ℙ STRING
+  sufficient_conditions: ℙ (ℙ STRING)
+  defenses_to_counter: ℙ STRING
+where
+  (* Threshold matches standard *)
+  (standard = civil ⇒ threshold = 0.51) ∧
+  (standard = criminal ⇒ threshold = 0.95) ∧
+  (standard = mathematical ⇒ threshold = 1.0)
+  
+  (* Non-empty evidence requirements *)
+  #evidence_types > 0
+  #necessary_conditions > 0
+  #sufficient_conditions > 0
+end
+
+schema ProofGap
+  element: PROOF_ELEMENT
+  current_probability: ℝ
+  required_probability: ℝ
+  missing_evidence: ℙ STRING
+  recommended_actions: ℙ STRING
+where
+  (* Probability bounds *)
+  0.0 ≤ current_probability ≤ 1.0
+  0.0 ≤ required_probability ≤ 1.0
+  
+  (* Gap exists *)
+  current_probability < required_probability
+  
+  (* Non-empty recommendations *)
+  #recommended_actions > 0
+end
+
+schema GuiltAnalysis
+  agent_id: IDENTIFIER
+  agent_name: STRING
+  standard: BURDEN_STANDARD
+  overall_guilt_probability: ℝ
+  element_probabilities: PROOF_ELEMENT → ℝ
+  evidence_strength: STRING → ℝ
+  proof_gaps: ℙ ProofGap
+  recommended_strategy: ℙ STRING
+  counter_strategies: ℙ STRING
+where
+  (* Probability bounds *)
+  0.0 ≤ overall_guilt_probability ≤ 1.0
+  
+  (* Element probabilities *)
+  ∀ e: dom element_probabilities • 
+    0.0 ≤ element_probabilities(e) ≤ 1.0
+  
+  (* Evidence strength *)
+  ∀ ev: dom evidence_strength • 
+    0.0 ≤ evidence_strength(ev) ≤ 1.0
+  
+  (* Overall probability is minimum of elements *)
+  overall_guilt_probability = 
+    min({element_probabilities(e) | e: dom element_probabilities})
+  
+  (* Proof gaps for elements below threshold *)
+  ∀ g: proof_gaps • 
+    element_probabilities(g.element) < g.required_probability
+end
+
+schema BurdenOfProofAnalyzerState
+  proof_requirements: ℙ ProofRequirement
+  agent_analyses: IDENTIFIER → GuiltAnalysis
+  prosecution_agents: ℙ IDENTIFIER
+  defendant_agents: ℙ IDENTIFIER
+where
+  (* All standards covered *)
+  {r.standard | r: proof_requirements} = 
+    {civil, criminal, mathematical}
+  
+  (* All elements covered for each standard *)
+  ∀ s: BURDEN_STANDARD • 
+    {r.element | r: proof_requirements ∧ r.standard = s} = 
+      {causation, intent, knowledge, duty, breach, harm, 
+       foreseeability, proximity}
+  
+  (* Agent role consistency *)
+  prosecution_agents ∩ defendant_agents = ∅
+  
+  (* Analyses only for defendant agents *)
+  dom agent_analyses = defendant_agents
+end
+
+(* ============================================================================ *)
+(* HIERARCHICAL ISSUE MANAGER STATE *)
+(* ============================================================================ *)
+
+(*
+  The Hierarchical Issue Manager maintains the argument-feature-paragraph-task structure.
+  Invariants:
+  - Hierarchy is acyclic
+  - Strength calculations are consistent
+  - Consolidation opportunities tracked
+*)
+
+schema FeatureStrength
+  feature_id: IDENTIFIER
+  paragraph_strengths: IDENTIFIER → ℝ  (* Paragraph ID → Weighted strength *)
+  task_strengths: IDENTIFIER → ℝ  (* Task ID → Weighted strength *)
+  aggregate_strength: ℝ
+where
+  (* Feature exists *)
+  feature_id > 0
+  
+  (* Strength bounds *)
+  ∀ p: dom paragraph_strengths • 
+    0.0 ≤ paragraph_strengths(p) ≤ 100.0
+  ∀ t: dom task_strengths • 
+    0.0 ≤ task_strengths(t) ≤ 100.0
+  0.0 ≤ aggregate_strength ≤ 100.0
+  
+  (* Aggregate is weighted sum of paragraphs *)
+  aggregate_strength = 
+    (Σ p: dom paragraph_strengths • paragraph_strengths(p)) / 
+    #(dom paragraph_strengths)
+end
+
+schema ConsolidationOpportunity
+  reference_type: STRING
+  reference_id: STRING
+  issue_ids: ℙ IDENTIFIER
+  consolidation_status: STRING
+  recommended_action: STRING
+where
+  (* Multiple issues reference same entity *)
+  #issue_ids ≥ 2
+  
+  (* Status values *)
+  consolidation_status ∈ {"detected", "reviewed", "consolidated", "dismissed"}
+  
+  (* Non-empty recommendation *)
+  #recommended_action > 0
+end
+
+schema HierarchicalIssueManagerState
+  arguments: LegalArgumentSet
+  features: IssueSet
+  paragraphs: IssueParagraphSet
+  tasks: IssueSet
+  feature_strengths: IDENTIFIER → FeatureStrength
+  consolidation_opportunities: ℙ ConsolidationOpportunity
+where
+  (* Feature issues only *)
+  ∀ f: features.issues • f.issue_type = feature
+  
+  (* Task issues only *)
+  ∀ t: tasks.issues • t.issue_type = task
+  
+  (* All tasks have parent features *)
+  ∀ t: tasks.issues • 
+    (∃ f: features.issues • f.id = t.parent_issue_id)
+  
+  (* Strength calculated for all features *)
+  dom feature_strengths = {f.id | f: features.issues}
+  
+  (* Acyclic hierarchy *)
+  ∀ t: tasks.issues • t.parent_issue_id ≠ t.id
+  
+  (* 3×3 rule guidance: 1 feature ≈ 3 paragraphs ≈ 9 tasks *)
+  ∀ f: features.issues • 
+    let para_count == #({p: paragraphs.paragraphs | p.feature_issue_id = f.id}) •
+      para_count ≤ 5  (* Recommended max *)
+end
+
+(* ============================================================================ *)
+(* HYPERGRAPH MANAGER STATE *)
+(* ============================================================================ *)
+
+(*
+  The Hypergraph Manager maintains the multi-way relationship graph.
+  Invariants:
+  - Graph is connected
+  - Relationships are bidirectional where appropriate
+  - Node degrees are balanced
+*)
+
+schema HypergraphManagerState
+  hypergraph: Hypergraph
+  node_degrees: IDENTIFIER → ℕ  (* Node ID → Degree *)
+  edge_arities: IDENTIFIER → ℕ  (* Edge ID → Arity *)
+where
+  (* Degree calculation *)
+  ∀ n: hypergraph.nodes.nodes • 
+    node_degrees(n.id) = 
+      #({r: hypergraph.relations | r.node_id = n.id})
+  
+  (* Arity calculation *)
+  ∀ e: hypergraph.edges • 
+    edge_arities(e.id) = 
+      #({r: hypergraph.relations | r.edge_id = e.id})
+  
+  (* All edges have arity ≥ 2 *)
+  ∀ e: hypergraph.edges • edge_arities(e.id) ≥ 2
+  
+  (* No isolated nodes *)
+  ∀ n: hypergraph.nodes.nodes • node_degrees(n.id) > 0
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE ENGINE STATE *)
+(* ============================================================================ *)
+
+(*
+  The Lex Inference Engine maintains the formal legal reasoning state.
+  Invariants:
+  - Configurations are consistent
+  - Inference rules are sound
+  - Guilt assignments are justified
+*)
+
+schema LegalPrincipleSet
+  principles: ℙ STRING
+  confidence: STRING → ℝ
+where
+  (* All principles have confidence *)
+  dom confidence = principles
+  
+  (* Confidence is 1.0 for first-order principles *)
+  ∀ p: principles • confidence(p) = 1.0
+  
+  (* Case-specific: 60+ principles *)
+  #principles ≥ 60
+end
+
+schema InferenceRule
+  rule_id: IDENTIFIER
+  rule_name: STRING
+  rule_type: STRING
+  legal_basis: STRING
+  conditions: JSON
+  conclusion: JSON
+  strength: 0..100
+  priority: ℕ₁
+where
+  (* ID uniqueness *)
+  rule_id > 0
+  
+  (* Non-empty fields *)
+  #rule_name > 0
+  #legal_basis > 0
+  
+  (* Rule types *)
+  rule_type ∈ {"causation", "duty", "negligence", "intent", "strict_liability"}
+  
+  (* Strength bounded *)
+  0 ≤ strength ≤ 100
+  
+  (* Priority ordering *)
+  priority ≥ 1
+end
+
+schema LexInferenceEngineState
+  agents: AgentSet
+  arenas: ArenaSet
+  events: EventSet
+  configurations: ConfigurationSet
+  guilt_assignments: GuiltAssignmentSet
+  legal_principles: LegalPrincipleSet
+  inference_rules: ℙ InferenceRule
+  actual_configuration: IDENTIFIER
+where
+  (* Unique rule IDs *)
+  ∀ r₁, r₂: inference_rules • r₁.rule_id = r₂.rule_id ⇒ r₁ = r₂
+  
+  (* Actual configuration exists *)
+  (∃ c: configurations.configurations • 
+    c.id = actual_configuration ∧ c.is_actual)
+  
+  (* All guilt assignments reference actual config *)
+  ∀ g: guilt_assignments.guilt_assignments • 
+    g.configuration_id = actual_configuration
+  
+  (* Guilt justified by inference rules *)
+  ∀ g: guilt_assignments.guilt_assignments • 
+    g.evidence_chain ≠ "" ∧ g.rule_applications ≠ ""
+end
+
+(* ============================================================================ *)
+(* CASE MANAGER STATE *)
+(* ============================================================================ *)
+
+(*
+  The Case Manager maintains the current case state and evidence.
+  Invariants:
+  - All evidence is indexed
+  - Documents are versioned
+  - Timeline is consistent
+*)
+
+schema CaseManagerState
+  case_number: STRING
+  documents: CaseDocumentSet
+  evidence: EvidenceRecordSet
+  timeline: seq Event
+  total_damages: ℝ⁺
+  case_status: STATUS
+where
+  (* Case number *)
+  case_number = "2025-137857"
+  
+  (* Damages calculation *)
+  total_damages = evidence.total_damages
+  
+  (* Timeline ordering *)
+  ∀ i, j: 1..#timeline • 
+    i < j ⇒ timeline(i).temporal_position ≤ timeline(j).temporal_position
+  
+  (* Case-specific constraints *)
+  total_damages ≥ 10227000
+  case_status ∈ {open, in_progress}
+end
+
+(* ============================================================================ *)
+(* COMPLETE SYSTEM STATE *)
+(* ============================================================================ *)
+
+(*
+  The complete system state integrates all component states.
+  Invariants:
+  - Cross-component consistency maintained
+  - State transitions are valid
+  - All analyses are current
+*)
+
+schema SystemState
+  attention_engine: LegalAttentionEngineState
+  burden_analyzer: BurdenOfProofAnalyzerState
+  hierarchy_manager: HierarchicalIssueManagerState
+  hypergraph_manager: HypergraphManagerState
+  lex_engine: LexInferenceEngineState
+  case_manager: CaseManagerState
+  data_model: CompleteDataModel
+  last_update: TIMESTAMP
+where
+  (* Data consistency: agents *)
+  attention_engine.current_configuration ∈ 
+    {c.id | c: lex_engine.configurations.configurations}
+  
+  (* Data consistency: guilt assignments *)
+  dom attention_engine.guilt_scores ⊆ 
+    {a.id | a: lex_engine.agents.agents}
+  
+  (* Data consistency: burden analysis *)
+  burden_analyzer.defendant_agents = 
+    {a.id | a: lex_engine.agents.agents ∧ 
+     a.legal_status ∈ {respondent, defendant}}
+  
+  burden_analyzer.prosecution_agents = 
+    {a.id | a: lex_engine.agents.agents ∧ 
+     a.legal_status = applicant}
+  
+  (* Data consistency: hierarchical issues *)
+  hierarchy_manager.features.issues ⊆ data_model.issues.issues
+  hierarchy_manager.tasks.issues ⊆ data_model.issues.issues
+  
+  (* Data consistency: hypergraph *)
+  hypergraph_manager.hypergraph = data_model.hypergraph
+  
+  (* Data consistency: case *)
+  case_manager.documents = data_model.documents
+  case_manager.evidence = data_model.evidence
+  
+  (* Case-specific: Peter is guilty *)
+  (∃ peter: lex_engine.agents.agents | 
+    peter.name = "Peter Faucitt" ∧ peter.legal_status = respondent •
+      (∃ g: lex_engine.guilt_assignments.guilt_assignments • 
+        g.agent_id = peter.id ∧ 
+        g.confidence > 50 ∧
+        g.burden_standard ∈ {civil, criminal}))
+  
+  (* Case-specific: Total damages exceed R10M *)
+  case_manager.total_damages ≥ 10227000
+end
+
+(* ============================================================================ *)
+(* INITIALIZATION STATE *)
+(* ============================================================================ *)
+
+(*
+  The initial state when the system starts.
+  Invariants:
+  - Database is connected
+  - Legal principles are loaded
+  - No analyses have been performed yet
+*)
+
+schema InitialSystemState
+  SystemState
+where
+  (* No guilt scores yet *)
+  attention_engine.guilt_scores = ∅
+  
+  (* No analyses yet *)
+  burden_analyzer.agent_analyses = ∅
+  
+  (* Attention engine not trained *)
+  ¬attention_engine.is_trained
+  
+  (* Legal principles loaded *)
+  #lex_engine.legal_principles.principles ≥ 60
+  
+  (* Case data loaded *)
+  #case_manager.documents.documents > 0
+  #case_manager.evidence.evidence > 0
+end
+
+(* ============================================================================ *)
+(* INVARIANTS *)
+(* ============================================================================ *)
+
+(*
+  Global system invariants that must hold at all times.
+*)
+
+schema SystemInvariants
+  SystemState
+where
+  (* Referential integrity *)
+  ∀ f: hierarchy_manager.features.issues • 
+    (∃ a: data_model.arguments.arguments • 
+      (∃ l: data_model.issues.issues • 
+        l.id = f.id ∧ 
+        (∃ link • link.issue_id = f.id ∧ link.argument_id = a.id)))
+  
+  (* Temporal consistency *)
+  last_update ≥ case_manager.documents.documents.created_at
+  
+  (* Data completeness *)
+  #case_manager.documents.documents > 0
+  #case_manager.evidence.evidence > 0
+  #lex_engine.agents.agents ≥ 3  (* Jax, Dan, Peter minimum *)
+  
+  (* Case-specific invariants *)
+  case_manager.case_number = "2025-137857"
+  case_manager.total_damages ≥ 10227000
+end
+
+(* ============================================================================ *)
+(* END OF SYSTEM STATE SPECIFICATION *)
+(* ============================================================================ *)

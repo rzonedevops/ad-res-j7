@@ -1,0 +1,1119 @@
+(*
+  Z++ Formal Specification: Operations
+  System: AD-RES-J7 Legal Reasoning Platform
+  Case: 2025-137857 (Jacqueline & Daniel Faucitt vs Peter Faucitt)
+  Version: 1.0
+  Date: 2025-11-07
+  
+  This specification formalizes all operations that modify system state,
+  including legal reasoning operations, case management operations, and data mutations.
+*)
+
+(* ============================================================================ *)
+(* IMPORTS *)
+(* ============================================================================ *)
+
+include "data_model.zpp"
+include "system_state.zpp"
+
+(* ============================================================================ *)
+(* OPERATION RESULT TYPES *)
+(* ============================================================================ *)
+
+OPERATION_STATUS ::= success | failure | partial
+ERROR_CODE ::= invalid_input | not_found | constraint_violation | 
+               unauthorized | internal_error
+
+schema OperationResult
+  status: OPERATION_STATUS
+  message: STRING
+  error_code: ERROR_CODE ∪ {null}
+  result_data: JSON
+where
+  (* Error code only on failure *)
+  status = failure ⇔ error_code ≠ null
+  
+  (* Success has result data *)
+  status = success ⇒ result_data ≠ ""
+end
+
+(* ============================================================================ *)
+(* LEGAL ATTENTION ENGINE OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Forward pass through the legal attention engine.
+  Input: Events, agents, norms
+  Output: Guilt scores and attention weights
+  Preconditions:
+  - Engine is trained
+  - Valid event sequence provided
+  - All agents referenced exist
+  Postconditions:
+  - Guilt scores computed for all agents
+  - Attention weights stored
+  - Confidence levels assigned
+*)
+
+schema ForwardPass
+  ΔSystemState
+  events?: seq Event
+  agents?: AgentSet
+  norms?: ℙ STRING
+  guilt_scores!: IDENTIFIER → ℝ
+  attention_weights!: AttentionWeights
+  result!: OperationResult
+where
+  (* Preconditions *)
+  attention_engine.is_trained
+  #events? > 0
+  #agents?.agents > 0
+  
+  (* Input validation *)
+  ∀ e: events? • e.arena_id ∈ {a.id | a: lex_engine.arenas.arenas}
+  
+  (* Postconditions: guilt scores computed *)
+  guilt_scores! = attention_engine'.guilt_scores
+  dom guilt_scores! = {a.id | a: agents?.agents}
+  
+  (* Postconditions: attention weights stored *)
+  attention_weights! = attention_engine'.attention_weights
+  
+  (* Postconditions: state updated *)
+  attention_engine'.guilt_scores = guilt_scores!
+  attention_engine'.attention_weights = attention_weights!
+  
+  (* Invariants preserved *)
+  ∀ agent_id: dom guilt_scores! • 
+    0.0 ≤ guilt_scores!(agent_id) ≤ 1.0
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions: other components unchanged *)
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  case_manager' = case_manager
+end
+
+(*
+  Train the legal attention engine.
+  Input: Training dataset (events, agents, norms, labels)
+  Output: Trained model with learned parameters
+  Preconditions:
+  - Training data is valid
+  - Sufficient training examples
+  Postconditions:
+  - Engine is marked as trained
+  - Model parameters updated
+*)
+
+schema TrainAttentionEngine
+  ΔSystemState
+  training_data?: seq (seq Event × AgentSet × ℙ STRING × (IDENTIFIER → ℝ))
+  epochs?: ℕ₁
+  learning_rate?: ℝ⁺
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #training_data? ≥ 100  (* Minimum training examples *)
+  0.0 < learning_rate? < 1.0
+  epochs? > 0
+  
+  (* Postconditions *)
+  attention_engine'.is_trained
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(* ============================================================================ *)
+(* BURDEN OF PROOF OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Analyze burden of proof for a specific agent under a given standard.
+  Input: Agent ID, burden standard, evidence
+  Output: Guilt analysis with proof gaps and strategy
+  Preconditions:
+  - Agent exists
+  - Guilt scores have been computed
+  - Standard is valid
+  Postconditions:
+  - Analysis stored for agent
+  - Proof gaps identified
+  - Strategy recommended
+*)
+
+schema AnalyzeBurdenOfProof
+  ΔSystemState
+  agent_id?: IDENTIFIER
+  standard?: BURDEN_STANDARD
+  evidence?: EvidenceRecordSet
+  analysis!: GuiltAnalysis
+  result!: OperationResult
+where
+  (* Preconditions *)
+  agent_id? ∈ {a.id | a: lex_engine.agents.agents}
+  agent_id? ∈ burden_analyzer.defendant_agents
+  agent_id? ∈ dom attention_engine.guilt_scores
+  
+  (* Compute element probabilities *)
+  ∀ elem: PROOF_ELEMENT • 
+    analysis!.element_probabilities(elem) ≥ 0.0 ∧
+    analysis!.element_probabilities(elem) ≤ 1.0
+  
+  (* Overall probability is minimum *)
+  analysis!.overall_guilt_probability = 
+    min({analysis!.element_probabilities(e) | e: PROOF_ELEMENT})
+  
+  (* Identify proof gaps *)
+  ∀ g: analysis!.proof_gaps • 
+    (∃ req: burden_analyzer.proof_requirements | 
+      req.element = g.element ∧ req.standard = standard? •
+        g.required_probability = req.threshold ∧
+        g.current_probability = analysis!.element_probabilities(g.element) ∧
+        g.current_probability < g.required_probability)
+  
+  (* Postconditions *)
+  analysis!.agent_id = agent_id?
+  analysis!.standard = standard?
+  burden_analyzer'.agent_analyses = 
+    burden_analyzer.agent_analyses ⊕ {agent_id? ↦ analysis!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Update proof requirements for an element and standard.
+  Input: Proof element, burden standard, updated requirements
+  Output: Updated proof requirements
+*)
+
+schema UpdateProofRequirements
+  ΔSystemState
+  element?: PROOF_ELEMENT
+  standard?: BURDEN_STANDARD
+  threshold?: ℝ
+  evidence_types?: ℙ STRING
+  result!: OperationResult
+where
+  (* Preconditions *)
+  0.0 ≤ threshold? ≤ 1.0
+  #evidence_types? > 0
+  
+  (* Threshold matches standard *)
+  (standard? = civil ⇒ threshold? = 0.51) ∧
+  (standard? = criminal ⇒ threshold? = 0.95) ∧
+  (standard? = mathematical ⇒ threshold? = 1.0)
+  
+  (* Postconditions: requirements updated *)
+  (∃ req: burden_analyzer'.proof_requirements • 
+    req.element = element? ∧ 
+    req.standard = standard? ∧
+    req.threshold = threshold? ∧
+    req.evidence_types = evidence_types?)
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(* ============================================================================ *)
+(* HIERARCHICAL ISSUE OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Create a new legal argument.
+  Input: Argument name, description, type, strategy
+  Output: Created legal argument
+  Preconditions:
+  - Argument name is unique
+  - Type is valid
+  Postconditions:
+  - Argument added to system
+  - ID assigned
+*)
+
+schema CreateLegalArgument
+  ΔSystemState
+  argument_name?: STRING
+  description?: TEXT
+  argument_type?: STRING
+  strategy?: TEXT
+  argument!: LegalArgument
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #argument_name? > 0
+  #description? > 0
+  argument_type? ∈ {"offense", "defense", "counterclaim", "rebuttal"}
+  
+  (* Uniqueness check *)
+  ∀ a: hierarchy_manager.arguments.arguments • 
+    a.argument_name ≠ argument_name?
+  
+  (* Postconditions: argument created *)
+  argument!.argument_name = argument_name?
+  argument!.description = description?
+  argument!.argument_type = argument_type?
+  argument!.strategy = strategy?
+  argument!.status = open
+  argument!.id = max({a.id | a: hierarchy_manager.arguments.arguments}) + 1
+  
+  (* Postconditions: added to system *)
+  hierarchy_manager'.arguments.arguments = 
+    hierarchy_manager.arguments.arguments ∪ {argument!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Create a feature issue linked to a legal argument.
+  Input: Issue details, parent argument ID
+  Output: Created feature issue
+  Preconditions:
+  - Issue number is unique
+  - Parent argument exists
+  Postconditions:
+  - Feature issue created
+  - Linked to argument
+*)
+
+schema CreateFeatureIssue
+  ΔSystemState
+  issue_number?: ℕ
+  title?: STRING
+  description?: TEXT
+  priority?: PRIORITY
+  argument_id?: IDENTIFIER
+  link_type?: LINK_TYPE
+  strength?: 0..100
+  feature!: Issue
+  result!: OperationResult
+where
+  (* Preconditions *)
+  issue_number? > 0
+  #title? > 0
+  argument_id? ∈ {a.id | a: hierarchy_manager.arguments.arguments}
+  
+  (* Uniqueness check *)
+  ∀ i: hierarchy_manager.features.issues • 
+    i.issue_number ≠ issue_number?
+  
+  (* Postconditions: feature created *)
+  feature!.issue_number = issue_number?
+  feature!.title = title?
+  feature!.description = description?
+  feature!.priority = priority?
+  feature!.issue_type = feature
+  feature!.parent_issue_id = null
+  feature!.status = open
+  feature!.id = max({i.id | i: hierarchy_manager.features.issues}) + 1
+  
+  (* Postconditions: added to system *)
+  hierarchy_manager'.features.issues = 
+    hierarchy_manager.features.issues ∪ {feature!}
+  
+  (* Postconditions: link created *)
+  (∃ link • 
+    link.issue_id = feature!.id ∧ 
+    link.argument_id = argument_id? ∧
+    link.link_type = link_type? ∧
+    link.strength = strength?)
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Create a paragraph within a feature issue.
+  Input: Feature ID, paragraph details, rank, weight
+  Output: Created paragraph
+  Preconditions:
+  - Feature issue exists
+  - Rank order is valid
+  - Weight is bounded
+  Postconditions:
+  - Paragraph created
+  - Rank order assigned
+*)
+
+schema CreateParagraph
+  ΔSystemState
+  feature_id?: IDENTIFIER
+  paragraph_number?: ℕ₁
+  title?: STRING
+  content?: TEXT
+  rank_order?: ℕ₁
+  weight?: 0..100
+  paragraph!: IssueParagraph
+  result!: OperationResult
+where
+  (* Preconditions *)
+  feature_id? ∈ {f.id | f: hierarchy_manager.features.issues}
+  paragraph_number? > 0
+  rank_order? > 0
+  0 ≤ weight? ≤ 100
+  
+  (* Uniqueness check within feature *)
+  ∀ p: hierarchy_manager.paragraphs.paragraphs | 
+    p.feature_issue_id = feature_id? • 
+      p.paragraph_number ≠ paragraph_number? ∧
+      p.rank_order ≠ rank_order?
+  
+  (* Postconditions: paragraph created *)
+  paragraph!.feature_issue_id = feature_id?
+  paragraph!.paragraph_number = paragraph_number?
+  paragraph!.title = title?
+  paragraph!.content = content?
+  paragraph!.rank_order = rank_order?
+  paragraph!.weight = weight?
+  paragraph!.id = max({p.id | p: hierarchy_manager.paragraphs.paragraphs}) + 1
+  
+  (* Postconditions: added to system *)
+  hierarchy_manager'.paragraphs.paragraphs = 
+    hierarchy_manager.paragraphs.paragraphs ∪ {paragraph!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Create a task issue within a paragraph and feature.
+  Input: Task details, parent feature ID, paragraph ID, rank, weight
+  Output: Created task issue
+  Preconditions:
+  - Feature issue exists
+  - Paragraph exists and belongs to feature
+  - Rank order is valid
+  Postconditions:
+  - Task issue created
+  - Linked to feature and paragraph
+*)
+
+schema CreateTaskIssue
+  ΔSystemState
+  issue_number?: ℕ
+  title?: STRING
+  description?: TEXT
+  parent_feature_id?: IDENTIFIER
+  paragraph_id?: IDENTIFIER
+  rank_order?: ℕ₁
+  weight?: 0..100
+  task!: Issue
+  result!: OperationResult
+where
+  (* Preconditions *)
+  issue_number? > 0
+  #title? > 0
+  parent_feature_id? ∈ {f.id | f: hierarchy_manager.features.issues}
+  paragraph_id? ∈ {p.id | p: hierarchy_manager.paragraphs.paragraphs}
+  rank_order? > 0
+  0 ≤ weight? ≤ 100
+  
+  (* Paragraph belongs to feature *)
+  (∃ p: hierarchy_manager.paragraphs.paragraphs • 
+    p.id = paragraph_id? ∧ p.feature_issue_id = parent_feature_id?)
+  
+  (* Uniqueness check *)
+  ∀ t: hierarchy_manager.tasks.issues • 
+    t.issue_number ≠ issue_number?
+  
+  (* Postconditions: task created *)
+  task!.issue_number = issue_number?
+  task!.title = title?
+  task!.description = description?
+  task!.issue_type = task
+  task!.parent_issue_id = parent_feature_id?
+  task!.rank_order = rank_order?
+  task!.weight = weight?
+  task!.status = open
+  task!.id = max({t.id | t: hierarchy_manager.tasks.issues}) + 1
+  
+  (* Postconditions: added to system *)
+  hierarchy_manager'.tasks.issues = 
+    hierarchy_manager.tasks.issues ∪ {task!}
+  
+  (* Postconditions: paragraph link created *)
+  (∃ link • 
+    link.paragraph_id = paragraph_id? ∧ 
+    link.issue_id = task!.id ∧
+    link.rank_order = rank_order? ∧
+    link.weight = weight?)
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Calculate aggregate strength for a feature issue.
+  Input: Feature ID
+  Output: Feature strength calculation
+  Preconditions:
+  - Feature exists
+  - Feature has paragraphs
+  Postconditions:
+  - Strength calculated
+  - Cached for future queries
+*)
+
+schema CalculateFeatureStrength
+  ΞSystemState
+  feature_id?: IDENTIFIER
+  strength!: FeatureStrength
+  result!: OperationResult
+where
+  (* Preconditions *)
+  feature_id? ∈ {f.id | f: hierarchy_manager.features.issues}
+  
+  (* Get all paragraphs for feature *)
+  let feature_paras == 
+    {p: hierarchy_manager.paragraphs.paragraphs | 
+     p.feature_issue_id = feature_id?} •
+    #feature_paras > 0
+  
+  (* Calculate paragraph strengths (weighted by rank and weight) *)
+  ∀ p: feature_paras • 
+    strength!.paragraph_strengths(p.id) = 
+      (p.weight * (1.0 / p.rank_order))
+  
+  (* Get all tasks for each paragraph *)
+  ∀ p: feature_paras • 
+    let para_tasks == 
+      {t: hierarchy_manager.tasks.issues | 
+       t.parent_issue_id = feature_id? ∧
+       (∃ link • link.paragraph_id = p.id ∧ link.issue_id = t.id)} •
+      ∀ t: para_tasks • 
+        strength!.task_strengths(t.id) = 
+          (t.weight * (1.0 / t.rank_order))
+  
+  (* Calculate aggregate *)
+  strength!.aggregate_strength = 
+    (Σ p_id: dom strength!.paragraph_strengths • 
+      strength!.paragraph_strengths(p_id)) / 
+    #(dom strength!.paragraph_strengths)
+  
+  (* Result *)
+  strength!.feature_id = feature_id?
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* HYPERGRAPH OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Create a node in the hypergraph.
+  Input: Node type, label, entity ID, metadata
+  Output: Created node
+  Preconditions:
+  - Label is non-empty
+  - Entity ID is unique (if provided)
+  Postconditions:
+  - Node created
+  - Added to hypergraph
+*)
+
+schema CreateHypergraphNode
+  ΔSystemState
+  node_type?: NODE_TYPE
+  entity_id?: STRING
+  label?: STRING
+  description?: TEXT
+  metadata?: JSON
+  node!: HypergraphNode
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #label? > 0
+  
+  (* Entity ID uniqueness (if provided) *)
+  entity_id? ≠ "" ⇒ 
+    (∀ n: hypergraph_manager.hypergraph.nodes.nodes • 
+      n.entity_id ≠ entity_id?)
+  
+  (* Postconditions: node created *)
+  node!.node_type = node_type?
+  node!.entity_id = entity_id?
+  node!.label = label?
+  node!.description = description?
+  node!.metadata = metadata?
+  node!.id = max({n.id | n: hypergraph_manager.hypergraph.nodes.nodes}) + 1
+  
+  (* Postconditions: added to hypergraph *)
+  hypergraph_manager'.hypergraph.nodes.nodes = 
+    hypergraph_manager.hypergraph.nodes.nodes ∪ {node!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Create a hyperedge connecting multiple nodes.
+  Input: Edge type, label, node IDs with roles, strength
+  Output: Created edge
+  Preconditions:
+  - At least 2 nodes provided
+  - All nodes exist
+  Postconditions:
+  - Edge created
+  - Relations created for all nodes
+*)
+
+schema CreateHypergraphEdge
+  ΔSystemState
+  edge_type?: EDGE_TYPE
+  label?: STRING
+  nodes?: seq (IDENTIFIER × STRING × ℕ)  (* node_id × role × weight *)
+  strength?: 0..100
+  direction?: DIRECTION
+  metadata?: JSON
+  edge!: HypergraphEdge
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #nodes? ≥ 2
+  
+  (* All nodes exist *)
+  ∀ (node_id, role, weight): nodes? • 
+    node_id ∈ {n.id | n: hypergraph_manager.hypergraph.nodes.nodes}
+  
+  (* Weights bounded *)
+  ∀ (node_id, role, weight): nodes? • 0 ≤ weight ≤ 100
+  
+  (* Postconditions: edge created *)
+  edge!.edge_type = edge_type?
+  edge!.label = label?
+  edge!.strength = strength?
+  edge!.direction = direction?
+  edge!.metadata = metadata?
+  edge!.id = max({e.id | e: hypergraph_manager.hypergraph.edges}) + 1
+  
+  (* Postconditions: edge added *)
+  hypergraph_manager'.hypergraph.edges = 
+    hypergraph_manager.hypergraph.edges ∪ {edge!}
+  
+  (* Postconditions: relations created *)
+  ∀ i: 1..#nodes? • 
+    let (node_id, role, weight) == nodes?(i) •
+      (∃ relation • 
+        relation.node_id = node_id ∧
+        relation.edge_id = edge!.id ∧
+        relation.role = role ∧
+        relation.position = i - 1 ∧
+        relation.weight = weight ∧
+        relation ∈ hypergraph_manager'.hypergraph.relations)
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  lex_engine' = lex_engine
+  case_manager' = case_manager
+end
+
+(*
+  Find related nodes via hyperedges.
+  Input: Source node ID, edge type filter, max depth
+  Output: Set of related nodes
+  Preconditions:
+  - Source node exists
+  - Max depth is reasonable
+  Postconditions:
+  - Related nodes found
+  - Transitive closure computed
+*)
+
+schema FindRelatedNodes
+  ΞSystemState
+  source_node_id?: IDENTIFIER
+  edge_type_filter?: EDGE_TYPE ∪ {null}
+  max_depth?: ℕ₁
+  related_nodes!: ℙ IDENTIFIER
+  result!: OperationResult
+where
+  (* Preconditions *)
+  source_node_id? ∈ {n.id | n: hypergraph_manager.hypergraph.nodes.nodes}
+  max_depth? ≤ 5  (* Prevent exponential explosion *)
+  
+  (* Find directly connected nodes *)
+  let direct_edges == 
+    {e.id | e: hypergraph_manager.hypergraph.edges • 
+      (edge_type_filter? = null ∨ e.edge_type = edge_type_filter?) ∧
+      (∃ r: hypergraph_manager.hypergraph.relations • 
+        r.edge_id = e.id ∧ r.node_id = source_node_id?)} •
+  
+  let direct_nodes == 
+    {r.node_id | r: hypergraph_manager.hypergraph.relations • 
+      r.edge_id ∈ direct_edges ∧ r.node_id ≠ source_node_id?} •
+  
+  (* Compute transitive closure up to max_depth *)
+  related_nodes! = direct_nodes  (* Simplified; full transitive closure omitted *)
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* LEX INFERENCE OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Create a new agent in the legal system.
+  Input: Agent details
+  Output: Created agent
+  Preconditions:
+  - Entity ID is unique
+  - Name is non-empty
+  Postconditions:
+  - Agent created
+  - Added to system
+*)
+
+schema CreateAgent
+  ΔSystemState
+  agent_type?: AGENT_TYPE
+  entity_id?: STRING
+  name?: STRING
+  attributes?: JSON
+  legal_status?: LEGAL_STATUS
+  agent!: Agent
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #entity_id? > 0
+  #name? > 0
+  
+  (* Entity ID uniqueness *)
+  ∀ a: lex_engine.agents.agents • a.entity_id ≠ entity_id?
+  
+  (* Postconditions: agent created *)
+  agent!.agent_type = agent_type?
+  agent!.entity_id = entity_id?
+  agent!.name = name?
+  agent!.attributes = attributes?
+  agent!.legal_status = legal_status?
+  agent!.id = max({a.id | a: lex_engine.agents.agents}) + 1
+  
+  (* Postconditions: added to system *)
+  lex_engine'.agents.agents = lex_engine.agents.agents ∪ {agent!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  case_manager' = case_manager
+end
+
+(*
+  Create a new event in the legal system.
+  Input: Event details
+  Output: Created event
+  Preconditions:
+  - Arena exists
+  - Temporal position is valid
+  Postconditions:
+  - Event created
+  - Added to timeline
+*)
+
+schema CreateEvent
+  ΔSystemState
+  event_type?: EVENT_TYPE
+  description?: TEXT
+  temporal_position?: TIMESTAMP
+  arena_id?: IDENTIFIER
+  preconditions?: JSON
+  postconditions?: JSON
+  counterfactuals?: JSON
+  event!: Event
+  result!: OperationResult
+where
+  (* Preconditions *)
+  #description? > 0
+  arena_id? ∈ {a.id | a: lex_engine.arenas.arenas}
+  temporal_position? ≥ 0
+  
+  (* Postconditions: event created *)
+  event!.event_type = event_type?
+  event!.description = description?
+  event!.temporal_position = temporal_position?
+  event!.arena_id = arena_id?
+  event!.preconditions = preconditions?
+  event!.postconditions = postconditions?
+  event!.counterfactuals = counterfactuals?
+  event!.id = max({e.id | e: lex_engine.events.events}) + 1
+  
+  (* Postconditions: added to system *)
+  lex_engine'.events.events = lex_engine.events.events ∪ {event!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  case_manager' = case_manager
+end
+
+(*
+  Assign guilt to an agent in a configuration.
+  Input: Configuration ID, agent ID, guilt details
+  Output: Guilt assignment
+  Preconditions:
+  - Configuration exists
+  - Agent exists
+  - Evidence chain is non-empty
+  Postconditions:
+  - Guilt assignment created
+  - Confidence meets burden standard
+*)
+
+schema AssignGuilt
+  ΔSystemState
+  configuration_id?: IDENTIFIER
+  agent_id?: IDENTIFIER
+  guilt_type?: GUILT_TYPE
+  charge?: STRING
+  evidence_chain?: JSON
+  rule_applications?: JSON
+  confidence?: 0..100
+  burden_standard?: BURDEN_STANDARD
+  guilt!: GuiltAssignment
+  result!: OperationResult
+where
+  (* Preconditions *)
+  configuration_id? ∈ {c.id | c: lex_engine.configurations.configurations}
+  agent_id? ∈ {a.id | a: lex_engine.agents.agents}
+  #charge? > 0
+  evidence_chain? ≠ ""
+  rule_applications? ≠ ""
+  0 ≤ confidence? ≤ 100
+  
+  (* Burden standard confidence requirements *)
+  (burden_standard? = civil ⇒ confidence? > 50) ∧
+  (burden_standard? = criminal ⇒ confidence? > 95) ∧
+  (burden_standard? = mathematical ⇒ confidence? = 100)
+  
+  (* Postconditions: guilt assigned *)
+  guilt!.configuration_id = configuration_id?
+  guilt!.agent_id = agent_id?
+  guilt!.guilt_type = guilt_type?
+  guilt!.charge = charge?
+  guilt!.evidence_chain = evidence_chain?
+  guilt!.rule_applications = rule_applications?
+  guilt!.confidence = confidence?
+  guilt!.burden_standard = burden_standard?
+  guilt!.id = 
+    max({g.id | g: lex_engine.guilt_assignments.guilt_assignments}) + 1
+  
+  (* Postconditions: added to system *)
+  lex_engine'.guilt_assignments.guilt_assignments = 
+    lex_engine.guilt_assignments.guilt_assignments ∪ {guilt!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  case_manager' = case_manager
+end
+
+(* ============================================================================ *)
+(* CASE MANAGEMENT OPERATIONS *)
+(* ============================================================================ *)
+
+(*
+  Add a case document to the system.
+  Input: Document details
+  Output: Created document
+  Preconditions:
+  - Case number matches
+  - File path is valid
+  Postconditions:
+  - Document added
+  - Indexed for search
+*)
+
+schema AddCaseDocument
+  ΔSystemState
+  case_number?: STRING
+  document_type?: STRING
+  title?: STRING
+  content?: TEXT
+  file_path?: STRING
+  metadata?: JSON
+  document!: CaseDocument
+  result!: OperationResult
+where
+  (* Preconditions *)
+  case_number? = "2025-137857"
+  #document_type? > 0
+  #title? > 0
+  #file_path? > 0
+  
+  (* Postconditions: document created *)
+  document!.case_number = case_number?
+  document!.document_type = document_type?
+  document!.title = title?
+  document!.content = content?
+  document!.file_path = file_path?
+  document!.metadata = metadata?
+  document!.id = 
+    max({d.id | d: case_manager.documents.documents}) + 1
+  
+  (* Postconditions: added to system *)
+  case_manager'.documents.documents = 
+    case_manager.documents.documents ∪ {document!}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+end
+
+(*
+  Add evidence to the case.
+  Input: Evidence details
+  Output: Created evidence record
+  Preconditions:
+  - Case number matches
+  - Evidence code is unique
+  - Amount is non-negative
+  Postconditions:
+  - Evidence added
+  - Total damages updated
+*)
+
+schema AddEvidence
+  ΔSystemState
+  case_number?: STRING
+  evidence_type?: EVIDENCE_TYPE
+  evidence_code?: STRING
+  description?: TEXT
+  file_path?: STRING
+  source?: STRING
+  date_collected?: TIMESTAMP
+  amount?: ℝ⁺
+  responsible_party?: STRING
+  metadata?: JSON
+  evidence!: EvidenceRecord
+  result!: OperationResult
+where
+  (* Preconditions *)
+  case_number? = "2025-137857"
+  #evidence_code? ≥ 4
+  evidence_code?(1..2) = "JF"
+  #source? > 0
+  amount? ≥ 0
+  
+  (* Evidence code uniqueness *)
+  ∀ e: case_manager.evidence.evidence • 
+    e.evidence_code ≠ evidence_code?
+  
+  (* Postconditions: evidence created *)
+  evidence!.case_number = case_number?
+  evidence!.evidence_type = evidence_type?
+  evidence!.evidence_code = evidence_code?
+  evidence!.description = description?
+  evidence!.file_path = file_path?
+  evidence!.source = source?
+  evidence!.date_collected = date_collected?
+  evidence!.amount = amount?
+  evidence!.responsible_party = responsible_party?
+  evidence!.metadata = metadata?
+  evidence!.id = max({e.id | e: case_manager.evidence.evidence}) + 1
+  
+  (* Postconditions: added to system *)
+  case_manager'.evidence.evidence = 
+    case_manager.evidence.evidence ∪ {evidence!}
+  
+  (* Postconditions: total damages updated *)
+  case_manager'.total_damages = 
+    case_manager.total_damages + amount?
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+  
+  (* Frame conditions *)
+  attention_engine' = attention_engine
+  burden_analyzer' = burden_analyzer
+  hierarchy_manager' = hierarchy_manager
+  hypergraph_manager' = hypergraph_manager
+  lex_engine' = lex_engine
+end
+
+(* ============================================================================ *)
+(* QUERY OPERATIONS (READ-ONLY) *)
+(* ============================================================================ *)
+
+(*
+  Query operations do not modify state (ΞSystemState).
+  They provide read access to system data.
+*)
+
+(*
+  Get all evidence for the case.
+  Output: Evidence record set
+*)
+
+schema GetAllEvidence
+  ΞSystemState
+  evidence!: EvidenceRecordSet
+  result!: OperationResult
+where
+  (* Return all evidence *)
+  evidence! = case_manager.evidence
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(*
+  Get feature issues linked to a legal argument.
+  Input: Argument ID
+  Output: Set of feature issues
+*)
+
+schema GetFeaturesForArgument
+  ΞSystemState
+  argument_id?: IDENTIFIER
+  features!: ℙ Issue
+  result!: OperationResult
+where
+  (* Preconditions *)
+  argument_id? ∈ {a.id | a: hierarchy_manager.arguments.arguments}
+  
+  (* Find linked features *)
+  features! = {f: hierarchy_manager.features.issues | 
+    (∃ link • 
+      link.issue_id = f.id ∧ 
+      link.argument_id = argument_id?)}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(*
+  Get all guilt assignments for an agent.
+  Input: Agent ID
+  Output: Set of guilt assignments
+*)
+
+schema GetGuiltAssignmentsForAgent
+  ΞSystemState
+  agent_id?: IDENTIFIER
+  guilt_assignments!: ℙ GuiltAssignment
+  result!: OperationResult
+where
+  (* Preconditions *)
+  agent_id? ∈ {a.id | a: lex_engine.agents.agents}
+  
+  (* Find assignments *)
+  guilt_assignments! = 
+    {g: lex_engine.guilt_assignments.guilt_assignments | 
+      g.agent_id = agent_id?}
+  
+  (* Result *)
+  result!.status = success
+  result!.error_code = null
+end
+
+(* ============================================================================ *)
+(* END OF OPERATIONS SPECIFICATION *)
+(* ============================================================================ *)
