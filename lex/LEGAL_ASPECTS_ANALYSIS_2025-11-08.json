@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-08T02:06:13.115326",
+  "timestamp": "2025-11-08T07:16:42.339340",
   "analyses": [
     {
       "file": "jax-dan-response/AD/1-Critical/PARA_10_5-10_10_23_DAN_FINANCIAL.md",
@@ -618,19 +618,19 @@
     "total_paragraphs": 25,
     "entities": {
       "natural_persons": [
-        "Daniel Faucitt",
-        "Jax",
         "Jacqueline Faucitt",
-        "Dan",
         "Rynette Farrar",
-        "Peter Faucitt"
+        "Peter Faucitt",
+        "Jax",
+        "Daniel Faucitt",
+        "Dan"
       ],
       "juristic_persons": [
-        "RegimA Worldwide Distribution",
-        "RWD",
-        "Faucitt Family Trust",
-        "RegimA Skin Treatments",
         "RST",
+        "Faucitt Family Trust",
+        "RWD",
+        "RegimA Worldwide Distribution",
+        "RegimA Skin Treatments",
         "RegimA Zone Ltd"
       ]
     },
