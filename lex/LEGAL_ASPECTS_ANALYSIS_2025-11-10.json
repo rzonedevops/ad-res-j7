@@ -1,0 +1,676 @@
+{
+  "timestamp": "2025-11-10T02:03:27.270750",
+  "analyses": [
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_10_5-10_10_23_DAN_FINANCIAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "Detailed Financial Allegations - CIO and Financial Systems Analysis",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "unjust enrichment",
+        "bad faith"
+      ],
+      "content_length": 20375
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "IT Expense Discrepancies - CIO Technical Justification",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "19 August 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach",
+        "fraud",
+        "bad faith",
+        "manufactured crisis"
+      ],
+      "content_length": 28829
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "R500K Payment - Director Loan Account System Architecture",
+      "entities": {
+        "natural_persons": [
+          "Peter Faucitt",
+          "Jacqueline Faucitt",
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RegimA Worldwide Distribution",
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "16 July 2025",
+        "15 Mar 2025",
+        "20 Jul 2025",
+        "12 Jan 2023",
+        "15 Feb 2023",
+        "16 July 2025",
+        "16 July 2025",
+        "16 July 2025",
+        "5 August 2025",
+        "14 August 2025",
+        "16 July 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach",
+        "unjust enrichment",
+        "bad faith"
+      ],
+      "content_length": 21376
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_7-7_8_DAN_PAYMENT_DETAILS.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "R500K Payment Details - Technical Payment Processing Perspective",
+      "entities": {
+        "natural_persons": [
+          "Jacqueline Faucitt",
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RWD"
+        ]
+      },
+      "dates": [
+        "16 July 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [],
+      "content_length": 15026
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_9-7_11_DAN_JUSTIFICATION.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "Payment Justification - Platform Ownership and Unjust Enrichment",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RegimA Skin Treatments",
+          "RST",
+          "RegimA Worldwide Distribution",
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "15 Mar 2025",
+        "20 Jul 2025",
+        "12 Jan 2023",
+        "15 Feb 2023",
+        "16 July 2025",
+        "14 August 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "fraud",
+        "unjust enrichment",
+        "bad faith"
+      ],
+      "content_length": 22211
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_11-11_5_DAN_URGENCY.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Urgency - Operational Continuity and Timing Analysis",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust"
+        ]
+      },
+      "dates": [
+        "14 August 2025",
+        "19 August 2025",
+        "19 August 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach",
+        "fraud",
+        "bad faith"
+      ],
+      "content_length": 18105
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_13-13_1_DAN_INTERIM_RELIEF.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Interim Relief - Technical Impossibility of Business Operations",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "fraud"
+      ],
+      "content_length": 16238
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_3-3_10_RESPONSIBLE_PERSON.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Respondent Identification & Responsible Person Role",
+      "entities": {
+        "natural_persons": [
+          "Jacqueline Faucitt",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "2025-10-15"
+      ],
+      "legal_issues": [
+        "bad faith",
+        "manufactured crisis"
+      ],
+      "content_length": 7249
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_3_11-3_13_DAN_JAX_ROLE.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Jax's Role in Companies - Critical Technical Infrastructure Dependencies",
+      "entities": {
+        "natural_persons": [
+          "Jacqueline Faucitt",
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [
+        "2021-03-15",
+        "2022-07-22",
+        "2023-11-10",
+        "2024-05-18",
+        "2025-01-14",
+        "2024-08-19",
+        "2024-08-19",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach"
+      ],
+      "content_length": 17554
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_7_12-7_13_DAN_ACCOUNTANT.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Accountant Concerns - Dan's Direct Liaison and Documentation Provision",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan",
+          "Rynette Farrar"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [
+        "20 June 2025",
+        "20 June 2025",
+        "25 August 2025",
+        "29 August 2025",
+        "10 June 2025",
+        "10 June 2025",
+        "14 August 2025",
+        "29 August 2025",
+        "10 June 2025",
+        "10 June 2025",
+        "10 June 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "fraud"
+      ],
+      "content_length": 19839
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_7_14-7_15_DAN_DOCUMENTATION.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Documentation Requests - Technical Access and System Constraints",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RWD"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "bad faith"
+      ],
+      "content_length": 16185
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_8-8_3_DAN_DISCOVERY.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Peter's Discovery - Technical Timeline and System Access Evidence",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [
+        "2025-01-15",
+        "2025-02-22",
+        "2025-03-18",
+        "2025-04-10",
+        "2025-05-14",
+        "2025-06-20",
+        "2025-07-16",
+        "2025-07-25",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "manufactured crisis"
+      ],
+      "content_length": 14320
+    },
+    {
+      "file": "jax-dan-response/AD/2-High-Priority/PARA_8_4_DAN_CONFRONTATION.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Confrontation - First-Hand Witness Account and Technical Context",
+      "entities": {
+        "natural_persons": [
+          "Peter Faucitt",
+          "Jacqueline Faucitt",
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "coercion"
+      ],
+      "content_length": 14451
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_10-10_3_DAN_FINANCIAL_DETAILS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Financial Details",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2639
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_10_4_DAN_SPECIFIC_TRANSACTIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Specific Transactions",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2199
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_11_6-11_9_DAN_BUSINESS_OPERATIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Business Operations",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2381
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12-12_1_DAN_CORPORATE_GOVERNANCE.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Corporate Governance",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [
+        "fraud"
+      ],
+      "content_length": 2368
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12_2_DAN_INVESTIGATION_CLAIMS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Investigation Claims",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2425
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_12_3_DAN_SETTLEMENT_TIMING.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Settlement and Timing",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2480
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_13_2-13_2_2_DAN_CONFIRMATORY_AFFIDAVITS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Confirmatory Affidavits",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2607
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_13_3_DAN_ADDITIONAL_FINANCIAL_CLAIMS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Additional Financial Claims",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2406
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_14-14_2_DAN_BACKGROUND_CONTEXT.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Background and Context",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2588
+    },
+    {
+      "file": "jax-dan-response/AD/3-Medium-Priority/PARA_16-16_5_DAN_MISCELLANEOUS_ALLEGATIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Miscellaneous Allegations",
+      "entities": {
+        "natural_persons": [
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 2275
+    },
+    {
+      "file": "jax-dan-response/AD/4-Low-Priority/PARA_1-1_3_DAN_INTRODUCTION.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Introduction",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 690
+    },
+    {
+      "file": "jax-dan-response/AD/5-Meaningless/PARA_15_DAN_MEANINGLESS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Meaningless Allegations",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Dan"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [],
+      "content_length": 713
+    }
+  ],
+  "aggregates": {
+    "total_paragraphs": 25,
+    "entities": {
+      "natural_persons": [
+        "Daniel Faucitt",
+        "Peter Faucitt",
+        "Rynette Farrar",
+        "Dan",
+        "Jacqueline Faucitt",
+        "Jax"
+      ],
+      "juristic_persons": [
+        "Faucitt Family Trust",
+        "RWD",
+        "RST",
+        "RegimA Worldwide Distribution",
+        "RegimA Skin Treatments",
+        "RegimA Zone Ltd"
+      ]
+    },
+    "dates": [
+      "10 June 2025",
+      "12 Jan 2023",
+      "14 August 2025",
+      "15 Feb 2023",
+      "15 Mar 2025",
+      "16 July 2025",
+      "19 August 2025",
+      "20 Jul 2025",
+      "20 June 2025",
+      "2021-03-15",
+      "2022-07-22",
+      "2023-11-10",
+      "2024-05-18",
+      "2024-08-19",
+      "2025-01-14",
+      "2025-01-15",
+      "2025-02-22",
+      "2025-03-18",
+      "2025-04-10",
+      "2025-05-14",
+      "2025-06-20",
+      "2025-07-16",
+      "2025-07-25",
+      "2025-10-15",
+      "2025-10-16",
+      "25 August 2025",
+      "29 August 2025",
+      "5 August 2025"
+    ],
+    "legal_issues": {
+      "unjust enrichment": 3,
+      "bad faith": 7,
+      "breach": 4,
+      "fraud": 6,
+      "manufactured crisis": 3,
+      "coercion": 1
+    }
+  }
+}
