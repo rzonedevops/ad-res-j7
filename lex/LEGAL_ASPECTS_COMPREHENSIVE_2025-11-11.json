@@ -1,0 +1,343 @@
+{
+  "timestamp": "2025-11-11T02:06:35.058058",
+  "repository": "cogpy/ad-res-j7",
+  "case": "2025-137857 (Peter Faucitt v. Jacqueline & Daniel Faucitt)",
+  "entities": {
+    "natural_persons": [
+      "Dan",
+      "Daniel Faucitt",
+      "Jacqueline Faucitt",
+      "Jax",
+      "Peter Faucitt",
+      "Rynette Farrar"
+    ],
+    "juristic_persons": [
+      "Faucitt Family Trust",
+      "RST",
+      "RWD",
+      "RegimA Skin Treatments",
+      "RegimA Worldwide Distribution",
+      "RegimA Zone Ltd"
+    ],
+    "total_natural": 6,
+    "total_juristic": 6
+  },
+  "relations": {
+    "total": 16,
+    "by_type": {
+      "trust_relationship": 6,
+      "corporate_relationship": 5,
+      "professional_relationship": 2,
+      "creditor_debtor": 1,
+      "ownership": 1,
+      "service_provider": 1
+    },
+    "conflicts_identified": [
+      {
+        "entity": "Peter Faucitt",
+        "conflict_type": "founder_trustee_power_concentration",
+        "roles": [
+          "Trustee",
+          "Faucitt Family Trust"
+        ]
+      },
+      {
+        "entity": "Rynette Farrar",
+        "conflict_type": "accountant_trustee_conflict",
+        "roles": [
+          "Accountant",
+          "RegimA Skin Treatments"
+        ]
+      },
+      {
+        "entity": "Rynette Farrar",
+        "conflict_type": "accountant_trustee_conflict",
+        "roles": [
+          "Trustee",
+          "Faucitt Family Trust"
+        ]
+      },
+      {
+        "entity": "Rynette Farrar",
+        "conflict_type": "creditor_accountant_conflict",
+        "roles": [
+          "Director",
+          "Rezonance"
+        ]
+      },
+      {
+        "entity": "Rezonance",
+        "conflict_type": "creditor_control_conflict",
+        "roles": [
+          "Creditor",
+          "RegimA Skin Treatments"
+        ]
+      },
+      {
+        "entity": "Daniel Bantjies",
+        "conflict_type": "accountant_trustee_conflict",
+        "roles": [
+          "Accountant",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      {
+        "entity": "Daniel Bantjies",
+        "conflict_type": "accountant_trustee_conflict",
+        "roles": [
+          "Trustee",
+          "Faucitt Family Trust"
+        ]
+      },
+      {
+        "entity": "RegimA Zone Ltd",
+        "conflict_type": "platform_usage_without_payment",
+        "roles": [
+          "Platform Owner",
+          "RegimA Worldwide Distribution"
+        ]
+      }
+    ],
+    "details": [
+      {
+        "entity": "Peter Faucitt",
+        "role": "Founder",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "fiduciary_duty"
+      },
+      {
+        "entity": "Peter Faucitt",
+        "role": "Trustee",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "fiduciary_duty",
+        "conflict": "founder_trustee_power_concentration"
+      },
+      {
+        "entity": "Peter Faucitt",
+        "role": "Director",
+        "target": "RegimA Worldwide Distribution",
+        "type": "corporate_relationship",
+        "legal_aspect": "director_duties"
+      },
+      {
+        "entity": "Jacqueline Faucitt",
+        "role": "CEO",
+        "target": "RegimA Skin Treatments",
+        "type": "corporate_relationship",
+        "legal_aspect": "executive_duties"
+      },
+      {
+        "entity": "Jacqueline Faucitt",
+        "role": "Beneficiary",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "beneficiary_rights"
+      },
+      {
+        "entity": "Daniel Faucitt",
+        "role": "CIO",
+        "target": "RegimA Skin Treatments",
+        "type": "corporate_relationship",
+        "legal_aspect": "executive_duties"
+      },
+      {
+        "entity": "Daniel Faucitt",
+        "role": "Owner",
+        "target": "RegimA Zone Ltd",
+        "type": "corporate_relationship",
+        "legal_aspect": "ownership_rights"
+      },
+      {
+        "entity": "Daniel Faucitt",
+        "role": "Beneficiary",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "beneficiary_rights"
+      },
+      {
+        "entity": "Rynette Farrar",
+        "role": "Accountant",
+        "target": "RegimA Skin Treatments",
+        "type": "professional_relationship",
+        "legal_aspect": "professional_duty",
+        "conflict": "accountant_trustee_conflict"
+      },
+      {
+        "entity": "Rynette Farrar",
+        "role": "Trustee",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "fiduciary_duty",
+        "conflict": "accountant_trustee_conflict"
+      },
+      {
+        "entity": "Rynette Farrar",
+        "role": "Director",
+        "target": "Rezonance",
+        "type": "corporate_relationship",
+        "legal_aspect": "director_duties",
+        "conflict": "creditor_accountant_conflict"
+      },
+      {
+        "entity": "Rezonance",
+        "role": "Creditor",
+        "target": "RegimA Skin Treatments",
+        "type": "creditor_debtor",
+        "legal_aspect": "debt_obligation",
+        "amount": "R1,035,000",
+        "conflict": "creditor_control_conflict"
+      },
+      {
+        "entity": "Daniel Bantjies",
+        "role": "Accountant",
+        "target": "RegimA Worldwide Distribution",
+        "type": "professional_relationship",
+        "legal_aspect": "professional_duty",
+        "conflict": "accountant_trustee_conflict"
+      },
+      {
+        "entity": "Daniel Bantjies",
+        "role": "Trustee",
+        "target": "Faucitt Family Trust",
+        "type": "trust_relationship",
+        "legal_aspect": "fiduciary_duty",
+        "conflict": "accountant_trustee_conflict"
+      },
+      {
+        "entity": "Faucitt Family Trust",
+        "role": "Owner",
+        "target": "RegimA Worldwide Distribution",
+        "type": "ownership",
+        "legal_aspect": "trust_asset"
+      },
+      {
+        "entity": "RegimA Zone Ltd",
+        "role": "Platform Owner",
+        "target": "RegimA Worldwide Distribution",
+        "type": "service_provider",
+        "legal_aspect": "unjust_enrichment",
+        "conflict": "platform_usage_without_payment"
+      }
+    ]
+  },
+  "events": {
+    "total": 7,
+    "critical_events": [
+      {
+        "date": "2021-01-15",
+        "event": "Business operations commence",
+        "entities": [
+          "RegimA Skin Treatments",
+          "RegimA Worldwide Distribution"
+        ],
+        "legal_aspect": "contract_formation"
+      },
+      {
+        "date": "2025-06-06",
+        "event": "Fraud report submission",
+        "entities": [
+          "Peter Faucitt"
+        ],
+        "legal_aspect": "fraud_allegation",
+        "significance": "Triggers subsequent actions"
+      },
+      {
+        "date": "2025-06-07",
+        "event": "Card cancellation (1 day after fraud report)",
+        "entities": [
+          "Peter Faucitt",
+          "Daniel Faucitt"
+        ],
+        "legal_aspect": "power_abuse",
+        "significance": "Temporal correlation suggests bad faith",
+        "temporal_pattern": "immediate_retaliation"
+      },
+      {
+        "date": "2025-07-16",
+        "event": "R500K payment to Jax",
+        "entities": [
+          "Jacqueline Faucitt",
+          "RegimA Skin Treatments"
+        ],
+        "legal_aspect": "trust_distribution",
+        "disputed": true
+      },
+      {
+        "date": "2025-08-14",
+        "event": "Confrontation event",
+        "entities": [
+          "Peter Faucitt",
+          "Jacqueline Faucitt",
+          "Daniel Faucitt"
+        ],
+        "legal_aspect": "coercion",
+        "significance": "Witness accounts available"
+      },
+      {
+        "date": "2025-08-19",
+        "event": "Interdict filing",
+        "entities": [
+          "Peter Faucitt"
+        ],
+        "legal_aspect": "litigation_as_weapon",
+        "significance": "Despite having absolute trust powers"
+      },
+      {
+        "date": "2025-09-11",
+        "event": "Account emptying",
+        "entities": [
+          "Peter Faucitt",
+          "RegimA Worldwide Distribution"
+        ],
+        "legal_aspect": "power_abuse",
+        "significance": "Financial harm to beneficiaries"
+      }
+    ],
+    "temporal_patterns": [
+      {
+        "pattern": "immediate_retaliation",
+        "events": [
+          "Fraud report (2025-06-06)",
+          "Card cancellation (2025-06-07)"
+        ],
+        "interval": "1 day",
+        "significance": "Suggests premeditated response"
+      },
+      {
+        "pattern": "crisis_manufacturing",
+        "period": "May-August 2025",
+        "events": [
+          "Multiple coordinated actions"
+        ],
+        "significance": "Concentrated period of adverse actions"
+      }
+    ]
+  },
+  "timeline": {
+    "total_dates": 61,
+    "date_range": {
+      "earliest": "10 June 2025",
+      "latest": "5 August 2025"
+    },
+    "concentration_periods": [
+      {
+        "period": "May-August 2025",
+        "description": "Crisis manufacturing period",
+        "event_count": "High"
+      }
+    ]
+  },
+  "legal_issues": {
+    "by_frequency": {
+      "bad faith": 7,
+      "fraud": 6,
+      "breach": 4,
+      "unjust enrichment": 3,
+      "manufactured crisis": 3,
+      "coercion": 1
+    },
+    "total_unique": 6
+  }
+}
