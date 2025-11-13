@@ -1,0 +1,1859 @@
+{
+  "timestamp": "2025-11-13T02:06:10.057748",
+  "analyses": [
+    {
+      "file": "DAN_BUSINESS_CONTINUITY_IMPACT.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Business Continuity Impact Analysis",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancellation of the",
+          "value": "the"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 18402
+    },
+    {
+      "file": "DAN_IT_ARCHITECTURE.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** IT Architecture Overview",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust"
+        ]
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [
+        "breach"
+      ],
+      "events": [
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 21963
+    },
+    {
+      "file": "DAN_SYSTEM_ACCESS_AUDIT.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** System Access Audit",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [
+        "bad faith",
+        "breach"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancellation of the",
+          "value": "the"
+        },
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        }
+      ],
+      "content_length": 14369
+    },
+    {
+      "file": "DAN_TECHNICAL_TIMELINE_ANALYSIS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Technical Timeline Analysis",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [
+        "breach",
+        "manufactured crisis",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancelled by",
+          "value": "by"
+        },
+        {
+          "type": "confrontation",
+          "text": "CONFRONTATION",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 11810
+    },
+    {
+      "file": "PARA_10_5-10_10_23_DAN_FINANCIAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "Detailed Financial Allegations - CIO and Financial Systems Analysis",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust",
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "bad faith",
+        "conflict of interest",
+        "sabotage",
+        "unjust enrichment"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled payment",
+          "value": "payment"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled payment",
+          "value": "payment"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        }
+      ],
+      "content_length": 20375
+    },
+    {
+      "file": "PARA_7_2-7_5_DAN_TECHNICAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "IT Expense Discrepancies - CIO Technical Justification",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "19 Aug 2025",
+        "2025-10-16"
+      ],
+      "relations": [
+        {
+          "type": "cio_of",
+          "text": "CIO of RegimA"
+        }
+      ],
+      "legal_issues": [
+        "bad faith",
+        "breach",
+        "fraud",
+        "manufactured crisis",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled payment",
+          "value": "payment"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation impact",
+          "value": "impact"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation evidence",
+          "value": "evidence"
+        },
+        {
+          "type": "cancellation",
+          "text": "Cancelled payment",
+          "value": "payment"
+        },
+        {
+          "type": "discovery",
+          "text": "Discovery and",
+          "value": "and"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        }
+      ],
+      "content_length": 28829
+    },
+    {
+      "file": "PARA_7_6_DAN_DIRECTOR_LOAN.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "R500K Payment - Director Loan Account System Architecture",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "12 Jan 2023",
+        "14 Aug 2025",
+        "15 Feb 2023",
+        "15 Mar 2025",
+        "16 Jul 2025",
+        "20 Jul 2025",
+        "2025-10-16",
+        "5 Aug 2025"
+      ],
+      "relations": [
+        {
+          "type": "owner_of",
+          "text": "owns and"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns platform"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns platform"
+        },
+        {
+          "type": "cio_of",
+          "text": "CIO of RegimA"
+        }
+      ],
+      "legal_issues": [
+        "bad faith",
+        "breach",
+        "unjust enrichment"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "Cancelled cards",
+          "value": "cards"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        }
+      ],
+      "content_length": 21376
+    },
+    {
+      "file": "PARA_7_7-7_8_DAN_PAYMENT_DETAILS.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "R500K Payment Details - Technical Payment Processing Perspective",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "16 Jul 2025",
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [],
+      "events": [
+        {
+          "type": "payment",
+          "text": "payment 20",
+          "value": "20"
+        },
+        {
+          "type": "payment",
+          "text": "payment 20",
+          "value": "20"
+        },
+        {
+          "type": "cancellation",
+          "text": "Cancelled company",
+          "value": "company"
+        },
+        {
+          "type": "diversion",
+          "text": "Diverted funds",
+          "value": "funds"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 15026
+    },
+    {
+      "file": "PARA_7_9-7_11_DAN_JUSTIFICATION.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "Payment Justification - Platform Ownership and Unjust Enrichment",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Skin Treatments",
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "12 Jan 2023",
+        "14 Aug 2025",
+        "15 Feb 2023",
+        "15 Mar 2025",
+        "16 Jul 2025",
+        "20 Jul 2025",
+        "2025-10-16"
+      ],
+      "relations": [
+        {
+          "type": "owner_of",
+          "text": "owns and"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns platform"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns Shopify"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns RegimA"
+        },
+        {
+          "type": "owner_of",
+          "text": "owns Shopify"
+        }
+      ],
+      "legal_issues": [
+        "bad faith",
+        "fraud",
+        "unjust enrichment"
+      ],
+      "events": [
+        {
+          "type": "payment",
+          "text": "payment of R4",
+          "value": "4"
+        },
+        {
+          "type": "payment",
+          "text": "Payment\n\n1",
+          "value": "1"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 22211
+    },
+    {
+      "file": "PARA_11-11_5_DAN_URGENCY.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Urgency - Operational Continuity and Timing Analysis",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt",
+          "Rynette Farrar"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust"
+        ]
+      },
+      "dates": [
+        "14 Aug 2025",
+        "19 Aug 2025",
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "bad faith",
+        "fraud",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "Cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation timeline",
+          "value": "timeline"
+        },
+        {
+          "type": "discovery",
+          "text": "Discovery and",
+          "value": "and"
+        },
+        {
+          "type": "discovery",
+          "text": "discovery and",
+          "value": "and"
+        },
+        {
+          "type": "discovery",
+          "text": "discovery and",
+          "value": "and"
+        },
+        {
+          "type": "discovery",
+          "text": "discovery to",
+          "value": "to"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        }
+      ],
+      "content_length": 18105
+    },
+    {
+      "file": "PARA_13-13_1_DAN_INTERIM_RELIEF.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Interim Relief - Technical Impossibility of Business Operations",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "fraud",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "INTERDICT",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 16238
+    },
+    {
+      "file": "PARA_3-3_10_RESPONSIBLE_PERSON.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Respondent Identification & Responsible Person Role",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "2025-10-15"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "bad faith",
+        "manufactured crisis"
+      ],
+      "events": [
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 7249
+    },
+    {
+      "file": "PARA_3_11-3_13_DAN_JAX_ROLE.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Jax's Role in Companies - Critical Technical Infrastructure Dependencies",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "2021-03-15",
+        "2022-07-22",
+        "2023-11-10",
+        "2024-05-18",
+        "2024-08-19",
+        "2025-01-14",
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 17554
+    },
+    {
+      "file": "PARA_7_12-7_13_DAN_ACCOUNTANT.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Accountant Concerns - Dan's Direct Liaison and Documentation Provision",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt",
+          "Rynette Farrar"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "10 Jun 2025",
+        "14 Aug 2025",
+        "20 Jun 2025",
+        "2025-10-16",
+        "25 Aug 2025",
+        "29 Aug 2025"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "conflict of interest",
+        "fraud",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "cancelled all",
+          "value": "all"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancelled cards",
+          "value": "cards"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation impact",
+          "value": "impact"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 19839
+    },
+    {
+      "file": "PARA_7_14-7_15_DAN_DOCUMENTATION.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Documentation Requests - Technical Access and System Constraints",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Gee",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust",
+          "RegimA Skin Treatments",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "bad faith"
+      ],
+      "events": [
+        {
+          "type": "cancellation",
+          "text": "Cancelled company",
+          "value": "company"
+        },
+        {
+          "type": "cancellation",
+          "text": "Cancelled payment",
+          "value": "payment"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation notices",
+          "value": "notices"
+        },
+        {
+          "type": "cancellation",
+          "text": "cancellation of company",
+          "value": "company"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "Interdict",
+          "value": null
+        }
+      ],
+      "content_length": 16185
+    },
+    {
+      "file": "PARA_8-8_3_DAN_DISCOVERY.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Peter's Discovery - Technical Timeline and System Access Evidence",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Gee",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "2025-01-15",
+        "2025-02-22",
+        "2025-03-18",
+        "2025-04-10",
+        "2025-05-14",
+        "2025-06-20",
+        "2025-07-16",
+        "2025-07-25",
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "manufactured crisis"
+      ],
+      "events": [
+        {
+          "type": "discovery",
+          "text": "discovered irregularities",
+          "value": "irregularities"
+        },
+        {
+          "type": "discovery",
+          "text": "Discovery timed",
+          "value": "timed"
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 14320
+    },
+    {
+      "file": "PARA_8_4_DAN_CONFRONTATION.md",
+      "priority": [
+        "2",
+        "High"
+      ],
+      "topic": "Confrontation - First-Hand Witness Account and Technical Context",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "relations": [],
+      "legal_issues": [
+        "coercion",
+        "sabotage"
+      ],
+      "events": [
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confronted",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "Confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "confrontation",
+          "text": "confrontation",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        },
+        {
+          "type": "interdict",
+          "text": "interdict",
+          "value": null
+        }
+      ],
+      "content_length": 14451
+    },
+    {
+      "file": "PARA_10-10_3_DAN_FINANCIAL_DETAILS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Financial Details",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2639
+    },
+    {
+      "file": "PARA_10_4_DAN_SPECIFIC_TRANSACTIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Specific Transactions",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2199
+    },
+    {
+      "file": "PARA_11_6-11_9_DAN_BUSINESS_OPERATIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Business Operations",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2381
+    },
+    {
+      "file": "PARA_12-12_1_DAN_CORPORATE_GOVERNANCE.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Corporate Governance",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [
+        "fraud"
+      ],
+      "events": [],
+      "content_length": 2368
+    },
+    {
+      "file": "PARA_12_2_DAN_INVESTIGATION_CLAIMS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Investigation Claims",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2425
+    },
+    {
+      "file": "PARA_12_3_DAN_SETTLEMENT_TIMING.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Settlement and Timing",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2480
+    },
+    {
+      "file": "PARA_13_2-13_2_2_DAN_CONFIRMATORY_AFFIDAVITS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Confirmatory Affidavits",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2607
+    },
+    {
+      "file": "PARA_13_3_DAN_ADDITIONAL_FINANCIAL_CLAIMS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Additional Financial Claims",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2406
+    },
+    {
+      "file": "PARA_14-14_2_DAN_BACKGROUND_CONTEXT.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Background and Context",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2588
+    },
+    {
+      "file": "PARA_16-16_5_DAN_MISCELLANEOUS_ALLEGATIONS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Miscellaneous Allegations",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 2275
+    },
+    {
+      "file": "PARA_1-1_3_DAN_INTRODUCTION.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Introduction",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 690
+    },
+    {
+      "file": "PARA_15_DAN_MEANINGLESS.md",
+      "priority": [
+        null,
+        null
+      ],
+      "topic": "** Meaningless Allegations",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "relations": [],
+      "legal_issues": [],
+      "events": [],
+      "content_length": 713
+    }
+  ],
+  "summary": {
+    "total_files": 29,
+    "natural_persons": [
+      "Daniel Bantjies",
+      "Daniel Faucitt",
+      "Gee",
+      "Jacqueline Faucitt",
+      "Peter Faucitt",
+      "Rynette Farrar"
+    ],
+    "juristic_persons": [
+      "Faucitt Family Trust",
+      "RegimA Skin Treatments",
+      "RegimA Worldwide Distribution",
+      "RegimA Zone Ltd"
+    ],
+    "legal_issues": {
+      "sabotage": 9,
+      "breach": 5,
+      "bad faith": 8,
+      "manufactured crisis": 4,
+      "conflict of interest": 2,
+      "unjust enrichment": 3,
+      "fraud": 6,
+      "coercion": 1
+    },
+    "total_dates": 49,
+    "total_relations": 10,
+    "total_events": 203
+  }
+}
