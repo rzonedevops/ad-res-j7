@@ -1,0 +1,99 @@
+  "timestamp": "2025-11-08T02:06:13.115326",
+  "analyses": [
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_10_5-10_10_23_DAN_FINANCIAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "Detailed Financial Allegations - CIO and Financial Systems Analysis",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "unjust enrichment",
+        "bad faith"
+      ],
+      "content_length": 20375
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_2-7_5_DAN_TECHNICAL.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "IT Expense Discrepancies - CIO Technical Justification",
+      "entities": {
+        "natural_persons": [
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "19 August 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach",
+        "fraud",
+        "bad faith",
+        "manufactured crisis"
+      ],
+      "content_length": 28829
+    },
+    {
+      "file": "jax-dan-response/AD/1-Critical/PARA_7_6_DAN_DIRECTOR_LOAN.md",
+      "priority": [
+        "1",
+        "Critical"
+      ],
+      "topic": "R500K Payment - Director Loan Account System Architecture",
+      "entities": {
+        "natural_persons": [
+          "Peter Faucitt",
+          "Jacqueline Faucitt",
+          "Jax",
+          "Daniel Faucitt",
+          "Dan"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RegimA Worldwide Distribution",
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "16 July 2025",
+        "15 Mar 2025",
+        "20 Jul 2025",
+        "12 Jan 2023",
+        "15 Feb 2023",
+        "16 July 2025",
+        "16 July 2025",
+        "16 July 2025",
+        "5 August 2025",
+        "14 August 2025",
+        "16 July 2025",
+        "2025-10-16"
+      ],
+      "legal_issues": [
+        "breach",
+        "unjust enrichment",
+        "bad faith"
