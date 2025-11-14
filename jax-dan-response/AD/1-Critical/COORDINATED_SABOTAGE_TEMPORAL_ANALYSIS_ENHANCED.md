@@ -61,11 +61,11 @@ This document provides comprehensive temporal analysis of coordinated sabotage e
 
 #### Event 4: Jacqui's Confrontation with Rynette
 **Date**: 15 May 2025  
-**Action**: Jacqui confronts Rynette about R1,035,000 debt to Rezonance  
-**Context**: Debt owed by RegimA Skin Treatments since February 2023  
+**Action**: Jacqui confronts Rynette about R1,035,000 misallocated payments appearing as owed to Rezonance  
+**Context**: Misallocated payments in accounts (NOT a true debt) showing since February 2023  
 **Statement**: "These funds are part of Kayla's estate; keeping them would be profiting from proceeds of murder"  
-**Impact**: Exposed financial irregularities and Rynette's conflict of interest  
-**Evidence**: Witness testimony (Jacqui), financial records  
+**Impact**: Exposed accounting irregularities and Rynette's control of financial systems  
+**Evidence**: Witness testimony (Jacqui), accounting records showing misallocation  
 **Confidence**: 0.98
 
 **Significance**: This confrontation triggered immediate retaliation (Events 5-6).

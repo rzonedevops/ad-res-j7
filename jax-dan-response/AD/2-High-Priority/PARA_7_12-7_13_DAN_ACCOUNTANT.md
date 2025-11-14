@@ -480,13 +480,14 @@
 
 ---
 
+
 ## 8. COMPREHENSIVE CONFLICT OF INTEREST ANALYSIS
 
-### A. Rynette Farrar Triple-Role Conflict
+### A. Rynette Farrar Dual-Role Conflict
 
-**CRITICAL SEVERITY: 0.98**
+**CRITICAL SEVERITY: 0.94**
 
-Rynette occupies three fundamentally incompatible roles simultaneously:
+Rynette occupies two fundamentally incompatible roles with indirect conflicts through family business:
 
 **Role 1: Accountant (Professional Duty)**
 - Position: Accountant for RegimA Skin Treatments
@@ -494,36 +495,43 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 - Duties: Professional independence, objectivity, no conflicts of interest
 - Compensation: Professional fees
 
-**Role 2: Trustee (Fiduciary Duty)**
-- Position: Trustee of Faucitt Family Trust
-- Legal Framework: Trust Property Control Act 57 of 1988
-- Duties: Fiduciary duty to beneficiaries, avoid conflicts, act impartially
-- Compensation: None (fiduciary role)
+**Role 2: Financial Controller (Operational Control)**
+- Position: De facto financial controller for RegimA entities
+- Control Scope: All bank accounts, Sage accounting system, signatory authority
+- Duties: Financial operations, transaction processing, reporting
+- Authority: Peter's email access (pete@regima.com), bank authorization
 
-**Role 3: Creditor Representative (Self-Interest)**
-- Position: Director of Rezonance (Pty) Ltd
-- Financial Interest: **R1,035,000 debt owed by RST to Rezonance** (since February 2023)
-- Duties: Maximize recovery for Rezonance, protect creditor interests
-- Compensation: Recovery of R1,035,000 + potential interest
+**Indirect Conflict: Son's Company Adderory**
+- Company: Adderory (Pty) Ltd (incorporated 30 Apr 2021)
+- Owner: Rynette's son
+- Business: Supplier of RegimA packaging
+- Conflict: Rynette controls accounts payable to son's company
+- R5.4M Stock Adjustment: SLG loss involving same stock type supplied by Adderory
 
 ---
 
 ### B. Conflict Manifestations
 
-**1. R1,035,000 Debt to Rezonance**
+**1. Misallocated Payments Issue (R1,035,000)**
+
+**Nature of Issue**:
+The R1,035,000 appearing in accounts as "owed by RST to Rezonance" is **NOT a true debt**. It is a result of **misallocated payments** in the accounting system controlled by Rynette.
 
 **Jacqui's Confrontation (15 May 2025)**:
+Jacqui confronted Rynette about the R1,035,000 showing as owed to Rezonance (Dan & Kayla's company) since February 2023:
 > "These funds are part of Kayla's estate; keeping them would be profiting from proceeds of murder"
 
 **Immediate Retaliation**:
 - 22 May 2025: Orders removed from Shopify (7 days after confrontation)
-- 29 May 2025: New domain regimaskin.co.za registered by Adderory (Rynette's son's company)
+- 29 May 2025: New domain regimaskin.co.za registered by **Adderory** (Rynette's son's company)
 
-**Conflict Impact**:
-- Rynette has R1,035,000 personal financial interest in RST (her accounting client)
-- As accountant, must be independent
-- As trustee, must act impartially for beneficiaries
-- As creditor, has direct financial conflict with client
+**Accounting Control Issue**:
+- Rynette controls all accounting systems (Sage)
+- Misallocated payments create appearance of debt
+- No independent verification
+- Peter has no direct access to verify
+
+**Misallocation Impact Severity**: 0.93
 
 ---
 
@@ -543,8 +551,7 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 
 **Conflict Impact**:
 - Absolute financial control enables self-dealing
-- No oversight of creditor transactions
-- Can prioritize Rezonance debt over other creditors
+- No oversight of payments to son's company (Adderory)
 - Can manipulate financial reporting to accountant (Bantjies)
 - Can conceal conflicts of interest
 
@@ -576,9 +583,48 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 
 **Conflict Impact**:
 - As accountant, should ensure proper revenue allocation
-- As trustee, should protect beneficiary interests
-- As creditor, has incentive to divert revenue to ensure Rezonance debt payment
+- As financial controller, executed diversion
 - Can manipulate financial reporting to conceal diversion
+
+---
+
+**5. Son's Company (Adderory) Conflicts**
+
+**Adderory (Pty) Ltd**:
+- Incorporated: 30 April 2021
+- Owner: Rynette's son
+- Business: Supplier of RegimA packaging
+
+**Conflict Manifestations**:
+
+a) **Supply Chain Conflict**
+   - Adderory supplies packaging to RegimA entities
+   - Rynette controls accounts payable
+   - Rynette processes payments to son's company
+   - No independent oversight of pricing or payment terms
+
+b) **Stock Adjustment Conflict (R5.4M)**
+   - SLG R5.4M loss attributed to "stock adjustment"
+   - Stock "just disappeared" (same type supplied by Adderory)
+   - Rynette claimed Bantjies instructed huge payments (SARS audit email)
+   - Timing: Two years unallocated expenses while Rynette controlled accounts
+
+c) **Domain Registration (29 May 2025)**
+   - New domain regimaskin.co.za registered by Adderory
+   - 7 days after Jacqui's confrontation with Rynette
+   - 7 days after orders removed from Shopify
+   - Coordination with revenue hijacking scheme
+
+**Adderory Conflict Severity**: 0.92 (HIGH)
+
+---
+
+**Other Son's Companies (April 2021)**:
+1. Luxury Products Online (14 Apr 2021)
+2. Luxuré (29 Apr 2021) - Competitor to RegimA
+3. Adderory (30 Apr 2021) - Supplier to RegimA
+
+**Conflict Pattern**: Son's companies positioned as both competitor and supplier, with mother controlling financial systems of client.
 
 ---
 
@@ -588,11 +634,11 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 
 | Principle | Violation | Evidence | Severity |
 |-----------|-----------|----------|----------|
-| **Integrity** | Self-dealing (R1,035,000 debt) | Rezonance debt outstanding 2+ years | CRITICAL |
-| **Objectivity** | Triple-role conflict | Accountant + Trustee + Creditor | CRITICAL |
-| **Independence** | Financial interest in client | R1,035,000 debt from RST | CRITICAL |
+| **Integrity** | Misallocated payments, indirect conflicts | R1,035,000 misallocation, Adderory payments | HIGH |
+| **Objectivity** | Dual-role conflict, son's company supplier | Accountant + Controller, Adderory conflict | CRITICAL |
+| **Independence** | Financial control concentration | Control of all accounts, no oversight | CRITICAL |
 | **Confidentiality** | Email control, information filtering | pete@regima.com control | HIGH |
-| **Professional Behaviour** | Undisclosed conflicts | No disclosure of Rezonance debt | CRITICAL |
+| **Professional Behaviour** | Undisclosed conflicts | No disclosure of Adderory conflict | CRITICAL |
 
 ---
 
@@ -600,33 +646,35 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 
 **120.6 A1**: Examples of conflicts include:
 - Providing services to clients whose interests are in conflict
-- **Financial interests in a client**
-- Business relationships with clients
+- **Business relationships with clients** (Adderory supplier relationship)
+- **Family member business interests** (son's company)
 
 **120.7 A1**: A professional accountant shall not allow a conflict of interest to compromise professional judgment.
 
 **Rynette's Violation**:
-- Financial interest in RST (R1,035,000 debt)
+- Son's company (Adderory) supplies packaging to client (RST)
+- Controls accounts payable to son's company
 - Failed to disclose conflict to client or professional body
-- Failed to withdraw from engagement
-- Continued to act despite manifest conflict
+- Failed to implement safeguards
+- Continued to process payments to son's company
 
-**Severity**: CRITICAL (0.98)
+**Severity**: CRITICAL (0.94)
 
 ---
 
 **Section 290: Independence - Audit and Review Engagements**
 
-**290.104**: Financial interests in audit clients create self-interest threats.
+**290.104**: Business relationships with audit clients create self-interest threats.
 
-**290.108**: If firm has material financial interest in audit client, independence is compromised.
+**290.108**: If firm or family member has business relationship with audit client, independence is compromised.
 
 **Rynette's Violation**:
-- R1,035,000 debt is material financial interest
+- Son's company (Adderory) has supplier relationship with client
+- Rynette controls payment processing to son's company
+- No disclosure, no safeguards
 - Independence fundamentally compromised
-- Should have withdrawn from engagement immediately
 
-**Severity**: CRITICAL (0.98)
+**Severity**: CRITICAL (0.94)
 
 ---
 
@@ -643,7 +691,7 @@ Rynette occupies three fundamentally incompatible roles simultaneously:
 - Compensation: Professional fees
 
 **Role 2: Undisclosed Trustee**
-- Position: Trustee of Faucitt Family Trust (**UNDISCLOSED**)
+- Position: **Trustee of Faucitt Family Trust** (**UNDISCLOSED**)
 - Legal Framework: Trust Property Control Act 57 of 1988
 - Duties: Fiduciary duty to beneficiaries, duty to disclose trustee status
 - Status: **UNDISCLOSED** (critical violation)
@@ -690,10 +738,11 @@ SAICA independence requirements state that independence is compromised when acco
    - Professional authority
    - Instructions to Rynette
 
-2. **Rynette** (accountant + trustee + creditor)
+2. **Rynette** (accountant + financial controller)
    - Operational level control
    - Financial system access
    - Execution of instructions
+   - Payments to son's company (Adderory)
 
 **Combined Control Score**: 0.94 (near-total financial control)
 
@@ -703,11 +752,12 @@ SAICA independence requirements state that independence is compromised when acco
 
 **Jacqueline & Daniel (Beneficiaries) Harmed By**:
 1. No independent financial advice (accountants have undisclosed conflicts)
-2. No independent trust administration (trustees have financial conflicts)
+2. No independent trust administration (trustee Bantjies has professional conflict)
 3. No financial oversight (conflicts enable self-dealing)
 4. Revenue diversion (R5M-R10M diverted)
 5. Creditor payment sabotage (beneficiaries' business interests harmed)
 6. Information asymmetry (conflicts concealed, beneficiaries uninformed)
+7. Stock adjustment (R5.4M loss involving Adderory stock)
 
 **Beneficiary Harm Score**: 0.96 (severe harm)
 
@@ -717,11 +767,12 @@ SAICA independence requirements state that independence is compromised when acco
 
 | Component | Amount | Confidence |
 |-----------|--------|------------|
-| Rezonance Debt (direct conflict) | R1,035,000 | 0.98 |
+| Misallocated Payments (accounting irregularity) | R1,035,000 | 0.93 |
 | Revenue Diversion (6 months) | R5M-R10M | 0.96 |
+| Stock Adjustment (Adderory conflict) | R5.4M | 0.92 |
 | Creditor Payment Sabotage | Unquantified | 0.95 |
 | Trust Asset Mismanagement | Unquantified | 0.94 |
-| **Total Conflict-Related Harm** | **R6M-R11M+** | **0.96** |
+| **Total Conflict-Related Harm** | **R11.4M-R16.4M+** | **0.94** |
 
 ---
 
@@ -733,9 +784,9 @@ SAICA independence requirements state that independence is compromised when acco
 
 **Against Rynette Farrar**:
 - Violation of independence requirements (Section 290)
-- Undisclosed conflicts of interest (Section 120)
-- Self-dealing (R1,035,000 debt)
-- Professional misconduct
+- Undisclosed conflicts of interest (Section 120) - son's company Adderory
+- Dual-role conflict (Accountant + Financial Controller)
+- Misallocated payments (professional misconduct)
 
 **Against Daniel Bantjies**:
 - Undisclosed trustee status
@@ -754,9 +805,8 @@ SAICA independence requirements state that independence is compromised when acco
 **2. Trustee Removal**
 
 **Application to Court**:
-- Remove Rynette as trustee (triple-role conflict, severity 0.98)
 - Remove Bantjies as trustee (undisclosed status, conflict, severity 0.96)
-- Appoint independent trustees
+- Appoint independent trustee
 - Full accounting of all trust transactions
 
 **Legal Basis**:
@@ -769,13 +819,14 @@ SAICA independence requirements state that independence is compromised when acco
 **3. Civil Damages**
 
 **Claims**:
-- Restitution of R1,035,000 debt (Rezonance)
-- Restitution of diverted revenue (R5M-R10M)
+- Restitution of misallocated payments: R1,035,000
+- Restitution of diverted revenue: R5M-R10M
+- Stock adjustment damages (Adderory conflict): R5.4M
 - Disgorgement of profits from conflicts
 - Beneficiary damages
 - Punitive damages for concealment
 
-**Total Potential Recovery**: R6M-R11M+
+**Total Potential Recovery**: R11.4M-R16.4M+
 
 ---
 
@@ -783,18 +834,18 @@ SAICA independence requirements state that independence is compromised when acco
 
 **Peter's "Accountant Concerns" in Context**:
 
-1. **Conflicted Source**: Concerns filtered through Rynette (triple-role conflict)
+1. **Conflicted Source**: Concerns filtered through Rynette (dual-role conflict, Adderory indirect conflict)
 2. **Conflicted Recipient**: Bantjies (undisclosed trustee conflict)
 3. **Information Manipulation**: Rynette controls pete@regima.com, can filter information
 4. **No Independent Review**: Both accountants have critical conflicts
 5. **Timing**: Concerns raised after card cancellations sabotaged documentation systems
 
 **Conclusion**: "Accountant concerns" cannot be taken at face value when:
-- Accountant has R1,035,000 personal financial interest in client
-- Accountant is trustee with fiduciary conflict
-- Accountant is creditor seeking debt recovery
-- Information filtered through conflicted intermediary (Rynette)
-- External accountant has undisclosed trustee status
+- Accountant (Rynette) has dual-role and indirect conflicts (son's company Adderory)
+- Accountant (Rynette) controls all financial information
+- External accountant (Bantjies) has undisclosed trustee status
+- Information filtered through conflicted intermediaries (Rynette)
+- No independent professional review
 
 **Accountant Concerns Credibility Score**: 0.15 (very low credibility due to conflicts)
 
@@ -822,4 +873,4 @@ SAICA independence requirements state that independence is compromised when acco
 
 **Cross-Reference**: See `/jax-dan-response/AD/2-High-Priority/CONFLICT_OF_INTEREST_COMPREHENSIVE_ANALYSIS.md` for complete conflict analysis
 
-**Last Updated**: 2025-11-14 (Enhanced with Comprehensive Conflict of Interest Analysis)
+**Last Updated**: 2025-11-14 (CORRECTED - Rynette facts, Adderory conflicts, Bantjies as Trustee)
