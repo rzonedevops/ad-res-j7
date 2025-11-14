@@ -1,0 +1,628 @@
+{
+  "timestamp": "2025-11-14T02:06:54.869885",
+  "statistics": {
+    "total_files": 29,
+    "natural_persons": [
+      "Daniel Bantjies",
+      "Daniel Faucitt",
+      "Jacqueline Faucitt",
+      "Peter Faucitt",
+      "Rynette Farrar"
+    ],
+    "juristic_persons": [
+      "Faucitt Family Trust",
+      "RST",
+      "RWD",
+      "RegimA Skin Treatments",
+      "RegimA Worldwide Distribution",
+      "RegimA Zone Ltd"
+    ],
+    "dates": [
+      "10 June 2025",
+      "12 Jan 2023",
+      "14 August 2025",
+      "15 Feb 2023",
+      "15 Mar 2025",
+      "16 July 2025",
+      "19 August 2025",
+      "20 Jul 2025",
+      "20 June 2025",
+      "25 August 2025",
+      "29 August 2025",
+      "5 August 2025"
+    ],
+    "legal_issues": {
+      "sabotage": 13,
+      "fraud": 11,
+      "temporal_bad_faith": 11,
+      "bad_faith": 8,
+      "manufactured_crisis": 5,
+      "unjust_enrichment": 4,
+      "breach": 1,
+      "coercion": 1
+    },
+    "files_by_priority": {
+      "1-Critical": 9,
+      "2-High-Priority": 8,
+      "3-Medium-Priority": 10,
+      "4-Low-Priority": 1,
+      "5-Meaningless": 1
+    }
+  },
+  "recommendations": [
+    {
+      "type": "entity_modeling",
+      "priority": "high",
+      "description": "Create agent-based entity models for all identified persons",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt",
+          "Rynette Farrar"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust",
+          "RST",
+          "RWD",
+          "RegimA Skin Treatments",
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "implementation": "Extend south_african_civil_law_case_2025_137857_optimized.scm with complete agent definitions"
+    },
+    {
+      "type": "legal_frameworks",
+      "priority": "critical",
+      "description": "Implement resolution frameworks for all identified legal issues",
+      "legal_issues": [
+        "sabotage",
+        "fraud",
+        "temporal_bad_faith",
+        "bad_faith",
+        "manufactured_crisis",
+        "unjust_enrichment",
+        "breach",
+        "coercion"
+      ],
+      "implementation": "Create resolve-* functions for each legal issue with evidence mapping"
+    },
+    {
+      "type": "temporal_analysis",
+      "priority": "high",
+      "description": "Implement temporal pattern detection for all timeline dates",
+      "date_count": 12,
+      "implementation": "Enhance temporal analysis functions to detect retaliation patterns"
+    },
+    {
+      "type": "evidence_mapping",
+      "priority": "high",
+      "description": "Map evidence to legal principles for each AD paragraph",
+      "implementation": "Create evidence-strength calculation functions"
+    }
+  ],
+  "detailed_analyses": [
+    {
+      "file": "DAN_BUSINESS_CONTINUITY_IMPACT.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "sabotage"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "DAN_IT_ARCHITECTURE.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "DAN_SYSTEM_ACCESS_AUDIT.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "bad_faith",
+        "sabotage"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "DAN_TECHNICAL_TIMELINE_ANALYSIS.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "fraud",
+        "manufactured_crisis",
+        "sabotage",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_10_5-10_10_23_DAN_FINANCIAL.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": [
+          "RWD",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [
+        "bad_faith",
+        "sabotage",
+        "temporal_bad_faith",
+        "unjust_enrichment"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_7_2-7_5_DAN_TECHNICAL.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [
+        "19 August 2025"
+      ],
+      "legal_issues": [
+        "bad_faith",
+        "fraud",
+        "manufactured_crisis",
+        "sabotage",
+        "temporal_bad_faith",
+        "unjust_enrichment"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_7_6_DAN_DIRECTOR_LOAN.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": [
+          "RWD",
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "12 Jan 2023",
+        "14 August 2025",
+        "15 Feb 2023",
+        "15 Mar 2025",
+        "16 July 2025",
+        "20 Jul 2025",
+        "5 August 2025"
+      ],
+      "legal_issues": [
+        "bad_faith",
+        "breach",
+        "fraud",
+        "sabotage",
+        "temporal_bad_faith",
+        "unjust_enrichment"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_7_7-7_8_DAN_PAYMENT_DETAILS.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt"
+        ],
+        "juristic_persons": [
+          "RWD"
+        ]
+      },
+      "dates": [
+        "16 July 2025"
+      ],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_7_9-7_11_DAN_JUSTIFICATION.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": [
+          "RWD",
+          "RegimA Skin Treatments",
+          "RegimA Worldwide Distribution",
+          "RegimA Zone Ltd"
+        ]
+      },
+      "dates": [
+        "12 Jan 2023",
+        "14 August 2025",
+        "15 Feb 2023",
+        "15 Mar 2025",
+        "16 July 2025",
+        "20 Jul 2025"
+      ],
+      "legal_issues": [
+        "bad_faith",
+        "fraud",
+        "sabotage",
+        "temporal_bad_faith",
+        "unjust_enrichment"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "1-Critical"
+    },
+    {
+      "file": "PARA_11-11_5_DAN_URGENCY.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": [
+          "Faucitt Family Trust"
+        ]
+      },
+      "dates": [
+        "14 August 2025",
+        "19 August 2025"
+      ],
+      "legal_issues": [
+        "bad_faith",
+        "fraud",
+        "sabotage",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_13-13_1_DAN_INTERIM_RELIEF.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "fraud",
+        "sabotage"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_3-3_10_RESPONSIBLE_PERSON.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt"
+        ],
+        "juristic_persons": [
+          "RegimA Worldwide Distribution"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [
+        "bad_faith",
+        "manufactured_crisis",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_3_11-3_13_DAN_JAX_ROLE.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "fraud",
+        "sabotage"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_7_12-7_13_DAN_ACCOUNTANT.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Bantjies",
+          "Daniel Faucitt",
+          "Rynette Farrar"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [
+        "10 June 2025",
+        "14 August 2025",
+        "20 June 2025",
+        "25 August 2025",
+        "29 August 2025"
+      ],
+      "legal_issues": [
+        "fraud",
+        "manufactured_crisis",
+        "sabotage",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_7_14-7_15_DAN_DOCUMENTATION.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": [
+          "RST",
+          "RWD"
+        ]
+      },
+      "dates": [],
+      "legal_issues": [
+        "bad_faith",
+        "fraud",
+        "sabotage"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_8-8_3_DAN_DISCOVERY.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "manufactured_crisis",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_8_4_DAN_CONFRONTATION.md",
+      "entities": {
+        "natural_persons": [
+          "Daniel Faucitt",
+          "Jacqueline Faucitt",
+          "Peter Faucitt"
+        ],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "coercion",
+        "fraud",
+        "sabotage",
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "2-High-Priority"
+    },
+    {
+      "file": "PARA_10-10_3_DAN_FINANCIAL_DETAILS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_10_4_DAN_SPECIFIC_TRANSACTIONS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_11_6-11_9_DAN_BUSINESS_OPERATIONS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_12-12_1_DAN_CORPORATE_GOVERNANCE.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "fraud"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_12_2_DAN_INVESTIGATION_CLAIMS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_12_3_DAN_SETTLEMENT_TIMING.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [
+        "temporal_bad_faith"
+      ],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_13_2-13_2_2_DAN_CONFIRMATORY_AFFIDAVITS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_13_3_DAN_ADDITIONAL_FINANCIAL_CLAIMS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_14-14_2_DAN_BACKGROUND_CONTEXT.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_16-16_5_DAN_MISCELLANEOUS_ALLEGATIONS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "3-Medium-Priority"
+    },
+    {
+      "file": "PARA_1-1_3_DAN_INTRODUCTION.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "4-Low-Priority"
+    },
+    {
+      "file": "PARA_15_DAN_MEANINGLESS.md",
+      "entities": {
+        "natural_persons": [],
+        "juristic_persons": []
+      },
+      "dates": [],
+      "legal_issues": [],
+      "events": [],
+      "relations": [],
+      "priority": "5-Meaningless"
+    }
+  ]
+}
