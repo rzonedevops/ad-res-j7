@@ -219,31 +219,42 @@
 (define faucitt-family-trust-agent
   '((id . "faucitt-family-trust")
     (type . "juristic-person")
-    (roles . ("trust-entity" "owner-rwd" "owner-villa-via"))
+    (legal-structure . "family-trust")
+    (founder . "peter-faucitt")
+    (trustees . (("main-trustee" . "peter-faucitt" (backdated . "2025-07-01"))))
+    (beneficiaries . ("jacqueline-faucitt" "daniel-faucitt"))
+    (roles . ("trust-entity" "owner-rwd" "owner-rst" "owner-slg"))
     (legal-aspects . (
       "trust-law"
       "fiduciary-duty"
-      "beneficiary-protection"
-      "trust-asset-protection"
-      "unusual-trustee-powers"
-      "absence-of-beneficiary-powers"
       "trust-weaponization"
+      "fiduciary-breach"
+      "power-concentration"
+      "beneficiary-rights-violation"
+      "backdating"
     ))
+    (controlled-entities . ("regima-worldwide-distribution" "regima-skin-treatments" "strategic-logistics-group"))
     (conflicts . (
-      ((type . "trustee-power-imbalance")
-       (severity . 0.94)
+      ((type . "trustee-beneficiary-antagonism")
+       (severity . 0.98)
        (priority . "critical")
-       (description . "Unusual trustee powers with absence of beneficiary protections"))
+       (description . "Trustee using trust assets to attack beneficiaries"))
+      ((type . "founder-trustee-concentration")
+       (severity . 0.96)
+       (priority . "critical")
+       (description . "Unchecked authority through dual founder+trustee role"))
       ((type . "trust-weaponization")
-       (severity . 0.91)
-       (priority . "high")
-       (description . "Trust structure used as weapon against beneficiaries"))
+       (severity . 0.97)
+       (priority . "critical")
+       (description . "Trust structure weaponized for litigation against beneficiaries"))
     ))
     (temporal-patterns . (
       "trust-asset-manipulation"
       "beneficiary-attack"
+      "litigation-funding"
+      "backdating-for-advantage"
     ))
-    (confidence . 0.96)))
+    (confidence . 0.98)))
 
 (define regima-skin-treatments-agent
   '((id . "regima-skin-treatments")
@@ -265,34 +276,63 @@
 (define regima-worldwide-distribution-agent
   '((id . "regima-worldwide-distribution")
     (type . "juristic-person")
-    (roles . ("trust-owned-company" "distribution-entity"))
+    (legal-structure . "private-company")
+    (ownership . (("faucitt-family-trust" . 1.0)))
+    (directors . ("peter-faucitt" "jacqueline-faucitt" "daniel-faucitt"))
+    (key-officers . (("cio" . "daniel-faucitt") ("ceo" . "jacqueline-faucitt")))
+    (roles . ("trust-owned-company" "distribution-entity" "e-commerce-operator"))
     (legal-aspects . (
       "company-law"
       "trust-asset"
-      "director-loan-system"
-      "financial-manipulation"
+      "director-loan-account-system"
+      "unjust-enrichment-victim"
+      "sabotage-victim"
+      "revenue-hijacking-victim"
+      "regulatory-compliance-crisis"
+    ))
+    (systems . (
+      "sage-accounting"
+      "regima-zone-platform"
+      "shopify-ecommerce"
+      "eu-responsible-person-compliance"
     ))
     (conflicts . (
       ((type . "trust-ownership-control")
        (severity . 0.88)
        (priority . "high")
        (description . "Trust ownership enables trustee control over company"))
+      ((type . "director-sabotage")
+       (severity . 0.95)
+       (priority . "critical")
+       (description . "Co-director sabotaging company operations"))
     ))
     (temporal-patterns . (
       "financial-manipulation"
       "director-loan-weaponization"
+      "operational-sabotage"
+      "card-cancellation-disruption"
     ))
     (confidence . 0.96)))
 
 (define regima-zone-ltd-agent
   '((id . "regima-zone-ltd")
     (type . "juristic-person")
-    (roles . ("uk-company" "platform-owner" "investor"))
+    (legal-structure . "uk-limited-company")
+    (ownership . (("daniel-faucitt" . 1.0)))
+    (roles . ("uk-company" "platform-owner" "technology-provider"))
     (legal-aspects . (
-      "ownership-rights"
-      "intellectual-property"
-      "unjust-enrichment-victim"
-      "investment-protection"
+      "platform-ownership"
+      "intellectual-property-rights"
+      "unjust-enrichment-claim"
+      "ownership-rights-violation"
+    ))
+    (valuation . (
+      (platform-usage-fees . (3680000 8190000))
+      (confidence . 0.93)
+    ))
+    (relations . (
+      ((type . "platform-user") (entity . "regima-worldwide-distribution") (compensation . 0))
+      ((type . "platform-user") (entity . "regima-skin-treatments") (compensation . 0))
     ))
     (conflicts . ())
     (temporal-patterns . (
