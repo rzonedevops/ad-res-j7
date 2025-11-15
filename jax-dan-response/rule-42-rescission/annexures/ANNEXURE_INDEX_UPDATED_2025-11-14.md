@@ -71,10 +71,19 @@ This updated annexure index incorporates **8 new annexures (DF14-DF21)** from Ev
 - **Status:** ⏳ To be obtained
 
 ### DF10: Notice of Withdrawal (September 22, 2025)
-- **Description:** Daniel's withdrawal from settlement agreements due to fundamental breach
-- **Pages:** [TO BE DETERMINED]
-- **Relevance:** Para 45a (Fundamental breach context)
-- **Status:** ✅ Available (evidence/2025-11-14-batch/2025-09-22_-_Notice_of_Withdrawal.pdf)
+- **Description:** Formal notice withdrawing from settlement agreements due to fundamental breach
+- **Pages:** 5
+- **Relevance:** Para 45a (Fundamental breach context), demonstrates Peter's bad faith
+- **Status:** ✅ Complete (jax-dan-response/rule-42-rescission/annexures/ANNEXURE_DF10_Notice_of_Withdrawal_2025-09-22.md)
+- **Key Contents:**
+  - 2.1: Immediate fundamental breach by Peter (Sept 19)
+  - 2.2: Material non-disclosure (June 10 fraud report, Sept 11 account emptying)
+  - 2.3: Duress and coercion ("bound until 2029", mandatory medical testing)
+  - 2.4: Absence of legitimate disputes
+  - 2.5: Impossible and uncertain terms
+  - 2.6: Procedural irregularities
+  - 2.7: Illegality and public policy
+- **Legal Position:** Agreements are void ab initio, voidable, terminated, and unenforceable
 
 ### DF11: Second Application (October 3, 2025)
 - **Description:** Peter's second interdict application with medical testing provisions
@@ -241,7 +250,7 @@ This updated annexure index incorporates **8 new annexures (DF14-DF21)** from Ev
 | DF7 | Adderory Domain (May 29) | TBD | ✅ | 0.94 | Revenue diversion |
 | DF8 | Email to Staff (Jun 20) | TBD | ⏳ | 0.92 | Revenue diversion |
 | DF9 | Settlement Agreements (Sep 18) | TBD | ⏳ | 0.96 | Breach context |
-| DF10 | Notice of Withdrawal (Sep 22) | TBD | ✅ | 0.98 | Breach response |
+| DF10 | Notice of Withdrawal (Sep 22) | 5 | ✅ | 0.98 | Breach response |
 | DF11 | Second Application (Oct 3) | TBD | ✅ | 0.96 | Escalation pattern |
 | DF12 | POPIA Violation Notice (Jul 8) | TBD | ✅ | 0.94 | Bad faith evidence |
 | DF13 | Trademark Registration | TBD | ✅ | 0.96 | Unjust enrichment |
@@ -255,7 +264,7 @@ This updated annexure index incorporates **8 new annexures (DF14-DF21)** from Ev
 | **DF21** | **Adderory Enhanced (SF5)** | **TBD** | **✅** | **0.94** | **R9M context** |
 
 **Total Annexures:** 21  
-**Available:** 14 (67%)  
+**Available:** 15 (71%)  
 **To Be Obtained:** 7 (33%)  
 **Average Confidence:** 0.95 (Very High)  
 **Total Documented Financial Impact:** R17,035,361+ (minimum)
@@ -266,6 +275,7 @@ This updated annexure index incorporates **8 new annexures (DF14-DF21)** from Ev
 
 ### Immediate (Within 24 hours)
 
+- [x] DF10 Complete (Notice of Withdrawal)
 - [ ] Extract DF18 (SARS audit email) from SF3/SF4
 - [ ] Extract DF8 (email to staff) from evidence batch
 - [ ] Create DF5 (timeline) from existing evidence
@@ -301,7 +311,7 @@ This updated annexure index incorporates **8 new annexures (DF14-DF21)** from Ev
 
 **Overall Assessment:**
 
-- **Completeness:** 67% (14 of 21 annexures available)
+- **Completeness:** 71% (15 of 21 annexures available)
 - **Strength:** Very High (average confidence 0.95)
 - **Materiality:** Extremely High (R17M+ concealed)
 - **Readiness:** 3-5 days to complete preparation
