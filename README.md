@@ -2,6 +2,42 @@
 
 This repository contains comprehensive legal documentation for case 2025-137857 and implements a transformer-based system that uses attention mechanisms to perform legal reasoning and guilt determination. The key insight is that **attention IS the lex inference engine** - guilt emerges from learned relational patterns in attention weights, not from explicit rules.
 
+---
+
+## 🚀 Quick Navigation: Optimal Grip System
+
+**Three parallel features for integrated understanding:**
+
+### 📚 **ARENA** (Legal Framework - Rules & Principles)
+> [**ARENA_INDEX.md**](ARENA_INDEX.md) - 60+ legal principles mapped to all 3 cases
+- First-order principles (lex/lv1/known_laws.scm)
+- 8 legal branches (civil, criminal, trust, etc.)
+- Case-specific applications
+
+### 📂 **AGENT** (Evidence Base - Facts & Documents)
+> [**AGENT_INDEX.md**](AGENT_INDEX.md) - 100+ evidence files mapped to all 3 cases
+- 12 main annexures (JF01-JF12) + 8 supporting (SF1-SF8)
+- Evidence packages and court documents
+- Case-specific evidence support
+
+### 🔗 **RELATIONS** (Arena ↔ Agent Connections)
+> [**RELATIONS_INDEX.md**](RELATIONS_INDEX.md) - Complete arena-agent mapping
+- How legal principles connect to evidence
+- Three cases: Civil Response, Criminal Case, External Validation
+- Integrated navigation between arena and agent
+
+### ⚙️ **GRIP** (How to Use the System)
+> [**GRIP_WORKFLOW.md**](GRIP_WORKFLOW.md) - Workflows for optimal understanding
+- Four ways of knowing (propositional, procedural, perspectival, participatory)
+- Database operations and validation
+- Navigation patterns and workflows
+
+---
+
+**Start Here**: Read [RELATIONS_INDEX.md](RELATIONS_INDEX.md) for master overview, then navigate to specific cases/evidence as needed.
+
+---
+
 ## 🧬 NEW: Grip Optimization System
 
 **Ontogenesis-inspired self-optimization for legal attention mechanisms**
