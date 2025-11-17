@@ -4,7 +4,7 @@ Legal Attention Transform
 
 Implements transformer-style attention mechanism for legal inference as specified:
 
-**Legal Attention Transform**: Attention(Q,K,V) = softmax(QK^T/√d)V
+**Legal Attention Transform**: Attention(Q,K,V) = softmax(QK^T/sqrt(d))V
 
 Where:
 - Q (Queries): The guilt hypotheses being evaluated
@@ -29,6 +29,7 @@ import math
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
+"""
 Legal Attention Transform - Advanced Causation Analysis
 
 Implements a sophisticated attention mechanism for legal reasoning that computes
@@ -46,7 +47,7 @@ Integration with existing lex-inference-engine:
 - Enhances LexInferenceEngine with transformer-based reasoning
 - Provides mathematical backing for causation determinations
 
-Based on transformer attention mechanism: Attention(Q,K,V) = softmax(QK^T/√d)V
+Based on transformer attention mechanism: Attention(Q,K,V) = softmax(QK^T/sqrt(d))V
 """
 
 import numpy as np
@@ -223,7 +224,7 @@ class LegalAttentionTransform:
     def scaled_dot_product_attention(self, Q: np.ndarray, K: np.ndarray, V: np.ndarray, 
                                    mask: Optional[np.ndarray] = None) -> Tuple[np.ndarray, np.ndarray]:
         """
-        Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/√d)V
+        Scaled Dot-Product Attention: Attention(Q,K,V) = softmax(QK^T/sqrt(d))V
         
         Args:
             Q: Query matrix [seq_len, d_k]
@@ -237,7 +238,7 @@ class LegalAttentionTransform:
         """
         d_k = Q.shape[-1]
         
-        # Compute attention scores: QK^T/√d
+        # Compute attention scores: QK^T/sqrt(d)
         scores = np.matmul(Q, K.T) / math.sqrt(d_k)
         
         # Apply mask if provided
@@ -250,7 +251,7 @@ class LegalAttentionTransform:
         # Apply dropout (simplified - in practice would be during training)
         # attention_weights = self.dropout(attention_weights)
         
-        # Compute attention output: softmax(QK^T/√d)V
+        # Compute attention output: softmax(QK^T/sqrt(d))V
         attention_output = np.matmul(attention_weights, V)
         
         return attention_output, attention_weights

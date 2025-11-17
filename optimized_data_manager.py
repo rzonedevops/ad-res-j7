@@ -308,8 +308,9 @@ class OptimizedDataManager:
         
         # Pre-populate graph with edges
         for edge_data in data.get('hyperedges', []):
-            for i, from_node in enumerate(edge_data.get('nodes', [])):
-                for to_node in edge_data.get('nodes', [i+1:], []):
+            nodes = edge_data.get('nodes', [])
+            for i, from_node in enumerate(nodes):
+                for to_node in nodes[i+1:]:
                     self.graph.add_edge(from_node, to_node, edge_data.get('weight', 1.0))
         
         return data

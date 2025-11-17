@@ -64,6 +64,3 @@ class EventHorizon(Enum):
     QUANTUM = auto()         # Superposition collapse points
     SOCIAL = auto()          # Social contract boundaries
     LEGAL = auto()           # Jurisdictional boundaries
-
-
-@
