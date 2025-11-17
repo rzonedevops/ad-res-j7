@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-11-14",
+  "analysis_date": "2025-11-17T02:03:31.446665",
   "repository": "cogpy/ad-res-j7",
   "case": "2025-137857",
   "entities": {
@@ -354,44 +354,5 @@
     "total_events": 14,
     "total_correlations": 4,
     "total_relations": 6
-  },
-  "evidence_batch": "2025-11-14-batch",
-  "overall_confidence": 0.99,
-  "evidence_sources": [
-    {
-      "file": "Screenshot-2025-06-20-Sage-Account-RegimA-Worldwide-Distribution.jpg",
-      "date": "2025-06-20",
-      "type": "system_evidence",
-      "significance": "Rynette controlled pete@regima.com, 67% access concentration",
-      "confidence": 0.99
-    },
-    {
-      "file": "Screenshot-2025-08-25-Sage-Account-RegimA-Worldwide-Distribution.jpg",
-      "date": "2025-08-25",
-      "type": "system_evidence",
-      "significance": "Sage expired, Rynette subscription owner, access lockout",
-      "confidence": 1.0
-    },
-    {
-      "file": "TRUSTEEFw_CopyofyourID-DanielFaucitt-Outlook.pdf",
-      "date": "2024-07-01",
-      "type": "documentary_evidence",
-      "significance": "Bantjies appointed as trustee, document signed pp Peter by Rynette",
-      "confidence": 0.98
-    },
-    {
-      "file": "2025-09-22_-_Notice_of_Withdrawal.pdf",
-      "date": "2025-09-22",
-      "type": "documentary_evidence",
-      "significance": "Valid withdrawal from unconscionable settlement agreements",
-      "confidence": 0.97
-    },
-    {
-      "file": "POPIAViolationNotice-SenttoPeteon8July2025-DanielFaucitt-Outlook.pdf",
-      "date": "2025-07-08",
-      "type": "documentary_evidence",
-      "significance": "Daniels formal notice about criminal instructions",
-      "confidence": 0.96
-    }
-  ]
+  }
 }
