@@ -2,6 +2,35 @@
 
 This repository contains comprehensive legal documentation for case 2025-137857 and implements a transformer-based system that uses attention mechanisms to perform legal reasoning and guilt determination. The key insight is that **attention IS the lex inference engine** - guilt emerges from learned relational patterns in attention weights, not from explicit rules.
 
+## 🧬 NEW: Grip Optimization System
+
+**Ontogenesis-inspired self-optimization for legal attention mechanisms**
+
+Achieve optimal "grip" on case material through continuous measurement and evolutionary improvement of legal reasoning quality.
+
+**Quick Start:**
+```bash
+npm run db:grip:setup    # Setup grip metrics tables
+npm run db:grip:demo     # See it in action
+npm run db:grip:stats    # Check current grip quality
+```
+
+**Key Features:**
+- 📊 **12-dimensional grip measurement** (completeness, invariance, coherence, etc.)
+- 🧬 **Self-optimizing attention patterns** via gradient ascent + genetic algorithms
+- 🔍 **Automatic evidence gap detection** with priority recommendations
+- 📈 **Invariance tracking** for strengthening necessary guilt properties
+- ⏱️ **Evolution timeline** tracking fitness improvements across generations
+
+**Target Fitness:** ≥ 0.90 (optimal grip on lex context and case content)
+
+**Documentation:**
+- 📖 [Complete Guide](GRIP_OPTIMIZATION_GUIDE.md) - Full API and workflows
+- ⚡ [Quick Reference](GRIP_OPTIMIZATION_QUICKSTART.md) - Common commands and tips
+- 🧪 [Tests](tests/grip-optimization.test.js) - Validation suite
+
+---
+
 ## 📁 Repository Structure
 
 All documentation has been organized into a comprehensive structure for easy navigation and reference:
