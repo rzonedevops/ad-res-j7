@@ -16,11 +16,6 @@
 
 const fs = require('fs');
 const path = require('path');
-// Special Characters Workflow Test
-// Tests the todo-to-issues workflow with various special characters, unicode, and formatting
-
-const fs = require('fs');
-const path = require('path');
 const TestResultArchiver = require('./test-result-archiver');
 
 class SpecialCharactersWorkflowTest {
@@ -31,8 +26,6 @@ class SpecialCharactersWorkflowTest {
     this.startTime = Date.now();
   }
 
-  }
-
   // Test helper function
   assert(condition, message) {
     const result = {
@@ -40,7 +33,6 @@ class SpecialCharactersWorkflowTest {
       passed: condition,
       timestamp: new Date().toISOString(),
       suite: 'special-characters'
-      timestamp: new Date().toISOString()
     };
     
     this.testResults.push(result);
@@ -592,6 +584,8 @@ class SpecialCharactersWorkflowTest {
     } finally {
       this.cleanup();
     }
+  }
+
   // Create a test todo file with special characters
   createSpecialCharactersTodoFile() {
     const specialCharacterContent = `# Special Characters Workflow Test
@@ -1059,10 +1053,6 @@ This file tests the workflow's ability to handle various special characters, uni
 // Run tests if this file is executed directly
 if (require.main === module) {
   const tester = new SpecialCharactersWorkflowTest();
-  tester.runAllTests();
-}
-
-module.exports = SpecialCharactersWorkflowTest;
   const success = tester.runAllTests();
   process.exit(success ? 0 : 1);
 }
