@@ -47,7 +47,10 @@ class OCRFileConverter {
         currentContent = [];
 
         if (level === 2) {
-          // New main section
+          // New main section - push any pending subsection first
+          if (currentSubsection && currentSection) {
+            currentSection.subsections.push(currentSubsection);
+          }
           if (currentSection) {
             result.sections.push(currentSection);
           }
