@@ -100,3 +100,12 @@ reports/sample-*.json
 reports/test-*.json
 reports/test-*.html
 evidence_completeness_validation_report.json
+
+# Generated reports and validation results
+*-validation-results.json
+*-validation-report.json
+*-verification-report.json
+*-status-report.json
+docs/reports/*.json
+docs/reports/validation/*.json
+test-data/archives/*-results_*.json
