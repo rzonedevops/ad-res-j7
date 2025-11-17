@@ -1,0 +1,578 @@
+{
+  "timestamp": "2025-11-17T01:30:00.000000",
+  "repository": "cogpy/ad-res-j7",
+  "case": "2025-137857 (Peter Faucitt v. Jacqueline & Daniel Faucitt)",
+  "analysis_version": "2025-11-17-enhanced",
+  "confidence": 0.98,
+  
+  "entities": {
+    "natural_persons": {
+      "peter_faucitt": {
+        "id": "peter-faucitt",
+        "roles": [
+          "founder-fft",
+          "trustee-fft",
+          "director-rwd",
+          "director-rst",
+          "applicant"
+        ],
+        "legal_aspects": [
+          "fiduciary-duty-breach",
+          "abuse-of-power",
+          "temporal-bad-faith",
+          "litigation-weaponization",
+          "power-concentration",
+          "conflict-of-interest",
+          "coercion",
+          "manufactured-crisis"
+        ],
+        "conflicts": [
+          {
+            "type": "founder-trustee-concentration",
+            "severity": 0.98,
+            "priority": "critical",
+            "description": "Founder with absolute trustee powers creates unchecked authority"
+          },
+          {
+            "type": "trustee-beneficiary-antagonism",
+            "severity": 0.97,
+            "priority": "critical",
+            "description": "Trustee using trust assets to attack beneficiaries"
+          },
+          {
+            "type": "director-sabotage",
+            "severity": 0.96,
+            "priority": "critical",
+            "description": "Director sabotaging company operations through card cancellations"
+          }
+        ],
+        "critical_events": [
+          "2025-06-07: Card cancellation (1 day after fraud report)",
+          "2025-07-01: Trustee powers backdated",
+          "2025-08-11: Obtained Jax signature on backdating document",
+          "2025-08-13: Filed interdict (2 days after cooperation)"
+        ]
+      },
+      
+      "jacqueline_faucitt": {
+        "id": "jacqueline-faucitt",
+        "roles": [
+          "ceo-rst",
+          "beneficiary-fft",
+          "director-regima",
+          "eu-responsible-person",
+          "first-respondent"
+        ],
+        "legal_aspects": [
+          "beneficiary-rights-violation",
+          "executive-duties-sabotage",
+          "victim-of-coercion",
+          "victim-of-power-abuse",
+          "revenue-stream-disruption",
+          "regulatory-crisis-victim"
+        ],
+        "conflicts": [],
+        "critical_events": [
+          "2025-05-15: Confronted Rynette about R1,035,000 debt",
+          "2025-05-22: Orders removed from Shopify (7 days after - retaliation)",
+          "2025-08-11: Signed backdating document under pressure",
+          "2025-08-13: Interdict filed against her (betrayal)"
+        ]
+      },
+      
+      "daniel_faucitt": {
+        "id": "daniel-faucitt",
+        "roles": [
+          "cio-rwd",
+          "beneficiary-fft",
+          "owner-regima-zone-ltd",
+          "technical-infrastructure-manager",
+          "second-respondent"
+        ],
+        "legal_aspects": [
+          "beneficiary-rights-violation",
+          "technical-expertise-evidence",
+          "victim-of-sabotage",
+          "system-access-obstruction",
+          "business-continuity-impact"
+        ],
+        "conflicts": [],
+        "critical_events": [
+          "2025-06-06: Provided fraud reports to accountant",
+          "2025-06-07: All business cards cancelled (1 day after - retaliation)",
+          "2025-07-16: R500K director loan payment (within established practice)",
+          "2025-08-05: Requested documentation access (obstructed)"
+        ]
+      },
+      
+      "rynette_farrar": {
+        "id": "rynette-farrar",
+        "roles": [
+          "accountant-rst",
+          "trustee-fft",
+          "director-rezonance",
+          "creditor-representative"
+        ],
+        "legal_aspects": [
+          "professional-ethics-breach",
+          "conflict-of-interest",
+          "triple-role-conflict",
+          "revenue-hijacking",
+          "fraud-coordination"
+        ],
+        "conflicts": [
+          {
+            "type": "accountant-trustee-creditor-triple-conflict",
+            "severity": 0.98,
+            "priority": "critical",
+            "description": "Accountant + Trustee + Creditor representative = systemic conflict"
+          }
+        ],
+        "critical_events": [
+          "2025-05-15: Confronted by Jax about R1,035,000 debt",
+          "2025-05-22: Removed orders from Shopify (retaliation)",
+          "Ongoing: Revenue hijacking through Rezonance debt"
+        ]
+      },
+      
+      "daniel_bantjies": {
+        "id": "daniel-bantjies",
+        "roles": [
+          "accountant-rwd",
+          "trustee-fft"
+        ],
+        "legal_aspects": [
+          "professional-ethics-breach",
+          "conflict-of-interest",
+          "dual-role-conflict"
+        ],
+        "conflicts": [
+          {
+            "type": "accountant-trustee-conflict",
+            "severity": 0.92,
+            "priority": "high",
+            "description": "Accountant serving as trustee creates independence issues"
+          }
+        ],
+        "critical_events": [
+          "2025-08-19: Accountant meeting"
+        ]
+      },
+      
+      "gee": {
+        "id": "gee",
+        "roles": [
+          "witness"
+        ],
+        "legal_aspects": [
+          "witness-testimony",
+          "coercion-evidence"
+        ],
+        "conflicts": [],
+        "critical_events": [
+          "2025-08-14: Witnessed confrontation event"
+        ]
+      }
+    },
+    
+    "juristic_persons": {
+      "faucitt_family_trust": {
+        "id": "fft",
+        "type": "trust",
+        "legal_aspects": [
+          "trust-weaponization",
+          "fiduciary-duty-breach",
+          "beneficiary-rights-violation",
+          "trust-asset-misuse"
+        ],
+        "trustees": ["peter-faucitt", "rynette-farrar", "daniel-bantjies"],
+        "beneficiaries": ["jacqueline-faucitt", "daniel-faucitt"],
+        "founder": "peter-faucitt"
+      },
+      
+      "regima_skin_treatments": {
+        "id": "rst",
+        "type": "company",
+        "legal_aspects": [
+          "director-duties-breach",
+          "revenue-stream-hijacking",
+          "creditor-control-abuse",
+          "operational-sabotage"
+        ],
+        "directors": ["peter-faucitt", "jacqueline-faucitt"],
+        "ceo": "jacqueline-faucitt",
+        "accountant": "rynette-farrar"
+      },
+      
+      "regima_worldwide_distribution": {
+        "id": "rwd",
+        "type": "company",
+        "legal_aspects": [
+          "director-duties-breach",
+          "operational-sabotage",
+          "platform-unjust-enrichment"
+        ],
+        "directors": ["peter-faucitt"],
+        "cio": "daniel-faucitt",
+        "accountant": "daniel-bantjies",
+        "owner": "faucitt-family-trust"
+      },
+      
+      "regima_zone_ltd": {
+        "id": "regima-zone",
+        "type": "company",
+        "legal_aspects": [
+          "platform-unjust-enrichment",
+          "service-provision-without-payment"
+        ],
+        "owner": "daniel-faucitt"
+      },
+      
+      "rezonance": {
+        "id": "rezonance",
+        "type": "company",
+        "legal_aspects": [
+          "creditor-control-abuse",
+          "revenue-hijacking",
+          "conflict-of-interest"
+        ],
+        "director": "rynette-farrar",
+        "relationship": "creditor-to-rst",
+        "debt_amount": "R1,035,000"
+      },
+      
+      "strategic_logistics_group": {
+        "id": "slg",
+        "type": "company",
+        "legal_aspects": [
+          "related-party-transactions"
+        ],
+        "director": "peter-faucitt"
+      }
+    }
+  },
+  
+  "relations": {
+    "total": 24,
+    "by_type": {
+      "trust_relationship": 8,
+      "corporate_relationship": 10,
+      "professional_relationship": 3,
+      "creditor_debtor": 1,
+      "ownership": 2
+    },
+    "conflicts_identified": 8,
+    "antagonistic_relations": [
+      {
+        "from": "peter-faucitt",
+        "to": "jacqueline-faucitt",
+        "type": "trustee-beneficiary-antagonism",
+        "severity": 0.97
+      },
+      {
+        "from": "peter-faucitt",
+        "to": "daniel-faucitt",
+        "type": "trustee-beneficiary-antagonism",
+        "severity": 0.97
+      },
+      {
+        "from": "rynette-farrar",
+        "to": "jacqueline-faucitt",
+        "type": "revenue-hijacking",
+        "severity": 0.94
+      }
+    ]
+  },
+  
+  "events": {
+    "total": 39,
+    "critical_timeline": [
+      {
+        "date": "2023-01-12",
+        "event": "Peter withdrawal R420K (no board resolution)",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "established-practice-evidence",
+        "severity": 0.85
+      },
+      {
+        "date": "2023-02-15",
+        "event": "Peter withdrawal R310K (no board resolution)",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "established-practice-evidence",
+        "severity": 0.85
+      },
+      {
+        "date": "2025-03-15",
+        "event": "Peter withdrawal R350K (no board resolution)",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "established-practice-evidence",
+        "severity": 0.85
+      },
+      {
+        "date": "2025-05-15",
+        "event": "Jax confronted Rynette about R1,035,000 debt",
+        "actors": ["jacqueline-faucitt", "rynette-farrar"],
+        "legal_aspect": "fraud-exposure-trigger",
+        "severity": 0.93,
+        "description": "Jax referred to debt as 'proceeds of murder'"
+      },
+      {
+        "date": "2025-05-22",
+        "event": "Orders removed from Shopify",
+        "actors": ["rynette-farrar"],
+        "legal_aspect": "retaliation",
+        "severity": 0.94,
+        "temporal_pattern": "7-day-retaliation",
+        "description": "7 days after confrontation - coordinated response"
+      },
+      {
+        "date": "2025-06-06",
+        "event": "Dan provided fraud reports to accountant",
+        "actors": ["daniel-faucitt", "daniel-bantjies"],
+        "legal_aspect": "fraud-exposure-trigger",
+        "severity": 0.95,
+        "description": "Comprehensive fraud documentation submitted"
+      },
+      {
+        "date": "2025-06-07",
+        "event": "Peter cancelled all business cards",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "immediate-retaliation",
+        "severity": 0.98,
+        "temporal_pattern": "1-day-retaliation",
+        "description": "1 day after fraud report - strongest retaliation indicator"
+      },
+      {
+        "date": "2025-07-01",
+        "event": "Trustee powers backdated to this date",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "litigation-preparation",
+        "severity": 0.93,
+        "description": "Backdating to create legal foundation for interdict"
+      },
+      {
+        "date": "2025-07-16",
+        "event": "R500K director loan payment to Dan",
+        "actors": ["daniel-faucitt"],
+        "legal_aspect": "established-practice",
+        "severity": 0.85,
+        "description": "Following identical practice used by Peter multiple times"
+      },
+      {
+        "date": "2025-07-20",
+        "event": "Peter withdrawal R285K (no board resolution)",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "hypocrisy-evidence",
+        "severity": 0.87,
+        "description": "After criticizing Dan's withdrawal, Peter makes another"
+      },
+      {
+        "date": "2025-08-05",
+        "event": "Dan requested documentation access",
+        "actors": ["daniel-faucitt"],
+        "legal_aspect": "documentation-obstruction",
+        "severity": 0.89,
+        "description": "Request obstructed - manufactured crisis evidence"
+      },
+      {
+        "date": "2025-08-11",
+        "event": "Jax signed backdating document",
+        "actors": ["jacqueline-faucitt", "peter-faucitt"],
+        "legal_aspect": "coercion",
+        "severity": 0.91,
+        "description": "During settlement discussion - cooperation obtained"
+      },
+      {
+        "date": "2025-08-13",
+        "event": "Interdict filed against Jax & Dan",
+        "actors": ["peter-faucitt"],
+        "legal_aspect": "bad-faith-litigation",
+        "severity": 0.98,
+        "temporal_pattern": "2-day-betrayal",
+        "description": "2 days after cooperation - litigation weaponization"
+      },
+      {
+        "date": "2025-08-14",
+        "event": "Confrontation event",
+        "actors": ["peter-faucitt", "jacqueline-faucitt", "daniel-faucitt", "gee"],
+        "legal_aspect": "coercion-evidence",
+        "severity": 0.90,
+        "description": "Witnessed by Gee"
+      },
+      {
+        "date": "2025-08-19",
+        "event": "Accountant meeting",
+        "actors": ["daniel-bantjies"],
+        "legal_aspect": "professional-documentation",
+        "severity": 0.85
+      }
+    ],
+    
+    "temporal_patterns": {
+      "immediate_retaliation": {
+        "pattern": "1-day response",
+        "events": [
+          {
+            "trigger": "2025-06-06: Fraud report submission",
+            "response": "2025-06-07: Card cancellation",
+            "interval": "1 day"
+          }
+        ],
+        "confidence": 0.98,
+        "legal_significance": "Strongest evidence of causation and bad faith"
+      },
+      
+      "coordinated_retaliation": {
+        "pattern": "7-day response",
+        "events": [
+          {
+            "trigger": "2025-05-15: Jax confronts Rynette",
+            "response": "2025-05-22: Orders removed from Shopify",
+            "interval": "7 days"
+          }
+        ],
+        "confidence": 0.94,
+        "legal_significance": "Demonstrates coordination between actors"
+      },
+      
+      "manufactured_crisis": {
+        "pattern": "Create problem → Complain about problem → Litigate",
+        "sequence": [
+          "Card cancellations → Documentation systems disrupted",
+          "Documentation requests → Documentation inaccessible",
+          "Claim 'lack of documentation' → File interdict"
+        ],
+        "confidence": 0.95,
+        "legal_significance": "Self-created crisis as litigation pretext"
+      },
+      
+      "litigation_weaponization": {
+        "pattern": "Obtain cooperation → Immediate betrayal",
+        "events": [
+          {
+            "cooperation": "2025-08-11: Jax signs backdating document",
+            "betrayal": "2025-08-13: Interdict filed",
+            "interval": "2 days"
+          }
+        ],
+        "confidence": 0.98,
+        "legal_significance": "Settlement discussion used to obtain cooperation, then immediate litigation"
+      },
+      
+      "hypocrisy_pattern": {
+        "pattern": "Established practice → Selective enforcement",
+        "sequence": [
+          "2023-2025: Peter makes multiple withdrawals without board resolutions",
+          "2025-07-16: Dan makes withdrawal following identical practice",
+          "2025-08-13: Peter characterizes Dan's withdrawal as 'unauthorized gift'"
+        ],
+        "confidence": 0.94,
+        "legal_significance": "Inconsistent application of standards for litigation advantage"
+      }
+    }
+  },
+  
+  "legal_issues": {
+    "by_frequency": {
+      "sabotage": 13,
+      "temporal_bad_faith": 11,
+      "fraud": 11,
+      "fiduciary_breach": 9,
+      "manufactured_crisis": 8,
+      "unjust_enrichment": 7,
+      "conflict_of_interest": 6,
+      "coercion": 5,
+      "power_abuse": 5,
+      "litigation_weaponization": 4
+    },
+    
+    "by_severity": [
+      {
+        "issue": "temporal_bad_faith",
+        "severity": 0.98,
+        "priority": "critical",
+        "evidence_strength": 0.98
+      },
+      {
+        "issue": "trustee_beneficiary_antagonism",
+        "severity": 0.97,
+        "priority": "critical",
+        "evidence_strength": 0.97
+      },
+      {
+        "issue": "sabotage",
+        "severity": 0.96,
+        "priority": "critical",
+        "evidence_strength": 0.96
+      },
+      {
+        "issue": "manufactured_crisis",
+        "severity": 0.95,
+        "priority": "critical",
+        "evidence_strength": 0.95
+      },
+      {
+        "issue": "fraud_coordination",
+        "severity": 0.94,
+        "priority": "critical",
+        "evidence_strength": 0.93
+      }
+    ],
+    
+    "lex_coverage_gaps": [
+      {
+        "issue": "sabotage",
+        "current_coverage": "partial",
+        "gaps": [
+          "Need enhanced resolve-sabotage-claim function with evidence mapping",
+          "Missing temporal correlation analysis for sabotage events",
+          "Insufficient causation chain modeling"
+        ],
+        "priority": "critical"
+      },
+      {
+        "issue": "temporal_bad_faith",
+        "current_coverage": "good",
+        "gaps": [
+          "Need integration with AD paragraph evidence",
+          "Missing specific case timeline event mapping",
+          "Insufficient retaliation pattern detection"
+        ],
+        "priority": "critical"
+      },
+      {
+        "issue": "fraud_coordination",
+        "current_coverage": "partial",
+        "gaps": [
+          "Need multi-actor fraud coordination detector",
+          "Missing systematic fraud narrative framework",
+          "Insufficient evidence mapping for fraud indicators"
+        ],
+        "priority": "high"
+      }
+    ]
+  },
+  
+  "ad_paragraph_mapping": {
+    "total_paragraphs": 25,
+    "by_priority": {
+      "1-Critical": 8,
+      "2-High-Priority": 7,
+      "3-Medium-Priority": 6,
+      "4-Low-Priority": 3,
+      "5-Meaningless": 1
+    },
+    
+    "legal_aspects_per_paragraph": {
+      "PARA_7_2-7_5": ["sabotage", "temporal_bad_faith", "retaliation"],
+      "PARA_7_6": ["director_loan", "established_practice", "hypocrisy"],
+      "PARA_7_7-7_8": ["payment_details", "evidence_strength"],
+      "PARA_7_9-7_11": ["justification", "business_necessity"],
+      "PARA_10_5-10_10_23": ["financial_impact", "quantification"],
+      "PARA_3-3_10": ["responsible_person", "regulatory_crisis"],
+      "PARA_3_11-3_13": ["jax_role", "ceo_duties"],
+      "PARA_11-11_5": ["urgency", "manufactured_crisis"],
+      "PARA_13-13_1": ["interim_relief", "void_ab_initio"]
+    }
+  }
+}
