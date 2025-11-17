@@ -1,4 +1,3 @@
-
 #!/usr/bin/env node
 
 const LegalAttentionTransformer = require('./legal-attention-transformer');

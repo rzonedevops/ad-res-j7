@@ -141,6 +141,7 @@ class OptimalEvidenceCollector {
     }
     return this._criticalEvidence;
   }
+  }
 
   /**
    * Scan existing evidence files and update status
