@@ -62,49 +62,157 @@ do hereby make oath and state that:
 
 2.1 The purpose of this affidavit is to respond to the Applicant's founding affidavit and to place before this Honourable Court material facts that were not disclosed in the ex parte application that resulted in the interdict granted on 19 August 2025.
 
-2.2 **Material Non-Disclosure in Ex Parte Application:**
+### 2.2 Material Non-Disclosure in Ex Parte Application
 
-2.2.1 The Applicant obtained the ex parte interdict by failing to make full and frank disclosure of material facts that would have caused this Honourable Court to refuse the relief sought or to craft substantially different relief.
+#### 2.2.1 Legal Framework: Duty of Utmost Good Faith (Uberrima Fides)
 
-2.2.2 The duty of utmost good faith (*uberrima fides*) in ex parte applications requires an applicant to disclose all material facts, including those that may be adverse to the application.
+The Applicant obtained the ex parte interdict by failing to make full and frank disclosure of material facts that would have caused this Honourable Court to refuse the relief sought or to craft substantially different relief.
 
-2.2.3 The Applicant failed to disclose the following material facts:
+**The Duty of Full Disclosure:**
+
+The principle of full disclosure is paramount in ex parte applications, where orders are granted without notice to the affected parties. This principle is deeply rooted in South African jurisprudence and is crucial to maintaining the integrity of the judicial process.
+
+In ex parte applications, the applicant has a "heavy responsibility" to present all material facts to the court, ensuring that the court can make an informed decision based on a complete understanding of the situation.
+
+The duty of full disclosure is encapsulated in the concept of **uberrima fides**, or utmost good faith. This duty requires the applicant to disclose not only the facts that support their application but also any facts that might reasonably be expected to influence the court's decision.
+
+**Case Law Authority:**
+
+In **Schlesinger v Schlesinger 1979 (4) SA 342 (W)**, the court outlined the essential elements of this duty of full disclosure in ex parte applications.
+
+This principle was further elaborated and affirmed by the Supreme Court of Appeal in **Recycling and Economic Development Initiative of South Africa v Minister of Environmental Affairs; Kusaga Taka Consulting (Pty) Ltd v Minister of Environmental Affairs 2019 (3) SA 251 (SCA)**. The Supreme Court of Appeal emphasised that:
+
+1. The utmost good faith must be observed in ex parte proceedings;
+2. All material facts must be disclosed;
+3. **The withholding or suppression of material facts entitles a court to set aside an order, even if the non-disclosure was not wilful or mala fide.**
+
+**Rationale for Strict Duty:**
+
+Ex parte proceedings are a significant departure from the **audi alteram partem rule**, a fundamental principle of justice that requires all parties to have the opportunity to be heard. In the absence of the respondent, the applicant must effectively "speak for the absent party", presenting all relevant information, including potential defences.
+
+The duty of full disclosure is not merely a procedural formality but a substantive obligation that ensures fairness and justice.
+
+**Consequence of Material Non-Disclosure:**
+
+Failure to disclose material facts can result in:
+1. **Rescission of the order** (regardless of whether the non-disclosure was wilful or inadvertent)
+2. **Declaration that the order is void ab initio** (void from the beginning)
+3. **Costs on attorney-client scale** as a mark of the court's disapproval
+
+#### 2.2.2 The Applicant's Material Non-Disclosures
+
+The Applicant failed to disclose the following material facts:
 
 **(a) My Role as Legally Designated Responsible Person:**
 
-The Applicant failed to disclose that I serve as the legally designated "Responsible Person" for RegimA products in 37 international jurisdictions under EU Regulation 1223/2009 and equivalent laws, and that the interdict would prevent me from performing non-delegable legal duties, creating immediate regulatory non-compliance and exposing the businesses to substantial penalties, product recalls, and loss of market access.
+The Applicant failed to disclose that I serve as the legally designated "Responsible Person" for RegimA products in 37 international jurisdictions under **EU Regulation 1223/2009, Article 4** and equivalent laws, and that the interdict would prevent me from performing non-delegable legal duties, creating immediate regulatory non-compliance and exposing the businesses to substantial penalties, product recalls, and loss of market access.
+
+**Why This is Material:**
+- The interdict prevents me from accessing systems and documentation required to perform mandatory legal duties
+- This creates immediate regulatory non-compliance in 37 jurisdictions
+- The consequences include market exclusion, penalties up to €1M+ per violation, and potential criminal liability
+- Had the Court been aware of this, the Court would have refused the relief or crafted substantially different relief that preserved my ability to perform non-delegable legal duties
+
+**Legal Authority:**
+EU Regulation 1223/2009, Article 4 establishes the Responsible Person role as a mandatory legal requirement with personal liability. The role cannot be delegated or transferred without formal regulatory approval in each jurisdiction.
 
 **(b) Settlement Agreement Signed 8 Days Before Interdict:**
 
-The Applicant failed to disclose that he and I signed a settlement agreement on or about 11 August 2025, and that he filed this interdict application merely 2 days later (13 August 2025), suggesting the interdict is part of a coordinated strategy rather than a genuine response to urgent financial misconduct.
+The Applicant failed to disclose that he and I signed a settlement agreement on or about **11 August 2025**, and that he filed this interdict application merely **2 days later (13 August 2025)**, suggesting the interdict is part of a coordinated strategy rather than a genuine response to urgent financial misconduct.
+
+**Why This is Material:**
+- The timing demonstrates lack of genuine urgency
+- It suggests the interdict is part of a strategic plan rather than a response to discovered misconduct
+- It raises questions about the Applicant's good faith
+- Had the Court been aware of this, the Court would have questioned the urgency and good faith of the application
 
 **(c) Upcoming Investment Payout in 9 Months:**
 
-The Applicant failed to disclose that a significant investment payout is due to mature in approximately May 2026 (9 months from the August 2025 interdict), suggesting a financial motive for gaining control of the businesses before this major financial event.
+The Applicant failed to disclose that a significant investment payout is due to mature in approximately **May 2026 (9 months from the August 2025 interdict)**, suggesting a financial motive for gaining control of the businesses before this major financial event.
+
+**Why This is Material:**
+- It provides a clear ulterior motive for the interdict (gain control before investment payout)
+- It suggests the interdict is not about protecting the businesses but about gaining financial advantage
+- Had the Court been aware of this, the Court would have questioned the true purpose of the application
 
 **(d) Applicant's Transfer of Control to Non-Director Bookkeeper:**
 
 The Applicant failed to disclose that he has systematically granted Ms. Rynette Farrar (a non-director bookkeeper) unprecedented access and authority, including: access to all bank accounts, all of his passwords and login credentials, signatory authority on multiple accounts, and ability to transact unilaterally without director approval.
 
+**Why This is Material:**
+- The Applicant transferred control to a non-director while alleging that directors are unfit
+- This is fundamentally inconsistent with the allegations of financial misconduct
+- It demonstrates that the Applicant's true concern is not financial control but exclusion of specific individuals
+- Had the Court been aware of this, the Court would have questioned the consistency and good faith of the application
+
 **(e) Applicant's Own Unilateral Actions Causing Business Disruption:**
 
-The Applicant failed to disclose that he unilaterally cancelled all business cards in June 2025, restricted director access to systems, characterized director oversight as "interference", and excluded the First and Second Respondents from decision-making.
+The Applicant failed to disclose that he unilaterally cancelled all business cards in **June 2025**, restricted director access to systems, characterized director oversight as "interference", and excluded the First and Second Respondents from decision-making.
+
+**Why This is Material:**
+- The Applicant's own actions caused the business disruption he now attributes to the Respondents
+- This is a classic case of self-created problem estoppel
+- The Applicant cannot benefit from problems he himself created
+- Had the Court been aware of this, the Court would have applied the principle that a party cannot rely on self-created problems
 
 **(f) Historical Collaborative Business Model:**
 
-The Applicant failed to disclose that the RegimA businesses operated for [X] years with an informal, trust-based, collaborative model in which directors drew from loan accounts without formal board resolutions, and that the Applicant participated in and benefited from this model throughout its history.
+The Applicant failed to disclose that the RegimA businesses operated for many years with an informal, trust-based, collaborative model in which directors drew from loan accounts without formal board resolutions, and that the Applicant participated in and benefited from this model throughout its history.
+
+**Why This is Material:**
+- The Applicant's current objections are fundamentally inconsistent with historical practice
+- The Applicant participated in and benefited from the same practices he now characterizes as misconduct
+- This demonstrates that the allegations are pretextual
+- Had the Court been aware of this, the Court would have questioned whether the alleged conduct was actually improper
 
 **(g) Director Loan Account Structure:**
 
 The Applicant failed to disclose that directors maintain loan accounts with credit balances of several million rand, that companies owe directors substantial sums at all times, and that the Applicant himself has received similar payments without formal board resolutions on numerous occasions.
 
+**Why This is Material:**
+- The R500,000 payment that forms the basis of the application is consistent with historical practice
+- The companies owe directors substantially more than the R500,000 in question
+- The Applicant himself has received similar payments
+- Had the Court been aware of this, the Court would have questioned whether the R500,000 payment was actually improper
+
 **(h) Quantified Disproportionate Harm from Interdict:**
 
-The Applicant failed to disclose that the interdict would cause quantifiable harm **at minimum 36 times greater** than the alleged misconduct: while alleging concerns of approximately R500,000, the interdict has caused documented losses of R18,141,647.70+, regulatory exposure of R50,000,000+ across 37 jurisdictions, and complete business destruction—demonstrating that the remedy creates exponentially more harm than the alleged disease.
+The Applicant failed to disclose that the interdict would cause quantifiable harm **at minimum 36 times greater** than the alleged misconduct: while alleging concerns of approximately R500,000, the interdict has caused documented losses of **R18,141,647.70+**, regulatory exposure of **R50,000,000+** across 37 jurisdictions, and complete business destruction—demonstrating that the remedy creates exponentially more harm than the alleged disease.
 
-2.2.4 Had this Honourable Court been aware of these material facts, the Court would likely have:
-- Refused to grant the ex parte interdict; or
-- Crafted substantially different relief that preserved my ability to perform non-delegable legal duties and that did not reward the Applicant's own misconduct.
+**Why This is Material:**
+- The harm caused by the interdict (R18M+) is 36 times greater than the alleged misconduct (R500K)
+- The regulatory exposure (R50M+) is 100 times greater than the alleged misconduct
+- This demonstrates gross disproportionality
+- No court would grant relief that causes such disproportionate harm
+- Had the Court been aware of this, the Court would have refused the relief
+
+#### 2.2.3 Legal Consequences of Material Non-Disclosure
+
+**Application of Legal Principles:**
+
+The Applicant's material non-disclosures, as outlined above, constitute a fundamental breach of the duty of uberrima fides. Under the authority of **Recycling and Economic Development Initiative 2019 (3) SA 251 (SCA)**, the withholding or suppression of material facts entitles this Honourable Court to set aside the order, even if the non-disclosure was not wilful or mala fide.
+
+**Relief Sought:**
+
+Based on the Applicant's material non-disclosures, I respectfully submit that this Honourable Court should:
+
+1. **Declare the ex parte interdict void ab initio** (void from the beginning) due to material non-disclosure;
+2. **Alternatively, rescind the ex parte interdict** granted on 19 August 2025;
+3. **Award costs on attorney-client scale** as a mark of the Court's disapproval of the material non-disclosures;
+4. **Grant such further and/or alternative relief** as the Court deems fit.
+
+#### 2.2.4 Had the Court Been Aware
+
+Had this Honourable Court been aware of these material facts, the Court would likely have:
+
+1. **Refused to grant the ex parte interdict**; or
+2. **Crafted substantially different relief** that:
+   - Preserved my ability to perform non-delegable legal duties as Responsible Person
+   - Did not reward the Applicant's own misconduct (card cancellations, system restrictions, transfer of control to Rynette)
+   - Did not cause disproportionate harm (36:1 ratio)
+   - Addressed the Applicant's ulterior motives (investment payout, trust power bypass)
+   - Recognized the historical collaborative business model
+   - Acknowledged the director loan account structure
 
 2.3 I will demonstrate in this affidavit that:
 
@@ -119,6 +227,84 @@ The Applicant failed to disclose that the interdict would cause quantifiable har
 2.3.5 The systematic transfer of business control to Ms. Rynette Farrar represents a departure from the collaborative business model that operated successfully for [X] years and is the actual cause of any business disruption;
 
 2.3.6 **The interdict creates quantifiable harm that is at minimum 36 times greater than the alleged misconduct**: the Applicant alleges R500,000 in concerns while the interdict has caused R18M+ in documented losses, R50M+ in regulatory exposure, and complete business destruction—demonstrating gross disproportionality.
+
+### 2.4 The True Power Structure & The Role of Danie Bantjies
+
+2.4.1 The Applicant has further failed to disclose the true power structure behind the management of the RegimA businesses, and the central role of Mr. Danie Bantjies, a trustee of the Faucitt Family Trust, in orchestrating the events leading to this litigation.
+
+2.4.2 The evidence will show that the Applicant is a mere figurehead, and that Mr. Bantjies is the ultimate controller, acting through Ms. Rynette Farrar.
+
+### 2.5 The Systematic Information Blackout
+
+2.5.1 The Applicant has also failed to disclose that the events leading to this litigation are not isolated incidents, but part of a systematic information blackout designed to conceal massive historical fraud and to facilitate a final exit via curatorship fraud.
+
+2.5.2 This systematic information blackout was achieved through the creation of four parallel systems:
+
+*   **8 Secret ABSA Bank Accounts:** To hide transaction flows.
+*   **Stolen Server:** To move orders off Shopify and hide the order history.
+*   **Secret Pastel Accounting:** A parallel accounting system to hide the true financials.
+*   **New Domain & Email Addresses:** To hide staff communications and the coordination of the fraud.
+
+**The True Motive:**
+
+The creation of these parallel systems was not about seizing control of the business, but about preventing the Second Respondent and me from discovering a catastrophic event that had already occurred, such as:
+
+*   Massive historical fraud (far beyond the R9.4M annual wealth extraction).
+*   Criminal liability that would result in imprisonment.
+*   Irreversible damage that cannot be undone.
+*   Evidence destruction to prevent prosecution.
+*   Preparation for a final exit (curatorship fraud, beneficiary elimination).
+
+**Recommended Addition to Affidavit:**
+
+> "The actions of the Applicant and his co-conspirators were not aimed at business control, but at creating a total information blackout. They established four parallel systems—secret bank accounts, a stolen server for orders, a secret accounting system, and a new email domain—for the sole purpose of preventing us from seeing any part of the business operations. This systematic blackout was designed to hide massive historical fraud and to prepare for a final exit via curatorship fraud, a plan to have the Second Respondent declared incapacitated to prevent the discovery and prosecution of their crimes."
+
+### 2.6 The Six-Month Systematic Sabotage Pattern
+
+2.6.1 The Applicant has also failed to disclose that the warehouse sabotage and other actions are not isolated incidents, but part of a six-month systematic pattern of financial sabotage designed to destroy the Second Respondent's ability to pay creditors while leaving him responsible for the debts.
+
+**The Four Phases of Sabotage:**
+
+*   **Phase 1: Revenue Diversion (1 Mar - 20 Jun 2025):** The hijacking of revenue streams through various means.
+*   **Phase 2: System Access Sabotage (6-7 Jun 2025):** The unilateral cancellation of business cards to create a manufactured crisis.
+*   **Phase 3: Warehouse Sabotage (post-7 Jun 2025):** The fraudulent use of the interdict to stop the supply of Shopify orders.
+*   **Phase 4: Account Emptying (11 Sep 2025):** The final blow to ensure the business's failure.
+
+**Recommended Addition to Affidavit:**
+
+> "The warehouse sabotage was not an isolated incident but the culmination of a six-month systematic pattern of financial sabotage. Beginning 1 March 2025, revenue streams were systematically hijacked. On 7 June 2025, the day after the Second Respondent cooperated by providing reports to the accountant, the Applicant unilaterally cancelled business cards, creating a manufactured crisis. The warehouse was then instructed to stop supplying Shopify orders, ostensibly under an interdict that did not apply to the Shopify platform-owning companies. This six-month pattern left the Second Respondent responsible for creditor payments while systematically destroying his ability to pay, culminating in the emptying of the accounts on 11 September 2025."
+
+### 2.7 Perjury and Conspiracy
+
+2.7.1 The Applicant and his co-conspirators have committed perjury on multiple occasions. Their claim that 'UK entities owe money to South African operations' is a material falsehood, as the evidence irrefutably shows that the Second Respondent's UK entity has been funding the SA Shopify operations for years.
+
+**UK Funding Perjury:**
+
+The claim that "UK owes money to SA operations" is demonstrably false. The evidence shows that the Second Respondent's UK entity has been funding the SA Shopify operations.
+
+**Conspiracy to Commit Perjury:**
+
+The evidence suggests a conspiracy between Mr. Bantjies, Ms. Farrar, and the Applicant to commit perjury. Mr. Bantjies directed Ms. Farrar to make the false claims, and Ms. Farrar used the Applicant's name and email to do so.
+
+**Recommended Addition to Affidavit:**
+
+> "The Applicant and his co-conspirators have committed perjury on multiple occasions. Their claim that 'UK entities owe money to South African operations' is a material falsehood, as the evidence irrefutably shows that my UK entity has been funding the SA Shopify operations for years. This was not a mistake, but a coordinated conspiracy to commit perjury, directed by Danie Bantjies, executed by Rynette Farrar, and given a veneer of legitimacy by the Applicant."
+
+**The Real Power Structure:**
+
+*   **Level 1: Danie Bantjies (Ultimate Controller):** An undisclosed trustee of the Faucitt Family Trust, the accountant for the RegimA companies, and a creditor of the trust with significant leverage over the Applicant.
+*   **Level 2: Rynette Farrar (Executor):** Controlled the Applicant's email, the Sage accounting system, and all company accounts, taking instructions from Mr. Bantjies.
+*   **Level 3: Peter Faucitt (Figurehead):** The Applicant, who had no access to accounts, banks, or email, and was used as a puppet to advance the interests of Mr. Bantjies.
+
+**Bantjies-Related Perjury and Conflicts:**
+
+*   **Undisclosed Conflicts of Interest:** Mr. Bantjies served as Trustee, debtor, and accountant, creating a web of undisclosed conflicts of interest.
+*   **Perjury Evidence:** Ms. Farrar has admitted in an email that Mr. Bantjies instructed her to make huge payments, including the R5.4M stock adjustment that is a subject of this litigation. This is a critical piece of evidence demonstrating Mr. Bantjies' control.
+*   **Conspiracy:** The evidence points to a conspiracy between Mr. Bantjies, Ms. Farrar, and the Applicant to commit fraud and perjury.
+
+**Recommended Addition to Affidavit:**
+
+> "A critical undisclosed conflict exists: Mr. Danie Bantjies served as both Trustee of the Faucitt Family Trust and a debtor with an outstanding investment payout schedule. His trustee status was never disclosed to beneficiaries, constituting material non-disclosure under the Trust Property Control Act. Moreover, emails evidence that Rynette Farrar, the accountant who controlled all financial systems using the Applicant's email address (pete@regima.com), claimed to be acting under Bantjies' instructions when making multi-million rand transfers, including the R5.4 million stock adjustment in Strategic Logistics. This creates an impermissible conflict: a trustee-debtor directing financial transactions while having a personal financial interest in the outcomes."
 
 ---
 
@@ -582,6 +768,60 @@ The IT expenses cited by the Applicant must be understood in the context of my r
 
 8.10 The Applicant's characterization of this as evidence of misconduct is misleading and unsupported. An international cosmetics business with regulatory obligations in 37 jurisdictions cannot operate without substantial foreign payments, and these payments are entirely normal, necessary, and properly documented.
 
+### 8.11 Technical Infrastructure Affidavit
+
+8.11.1 The Second Respondent, Daniel Faucitt, in his capacity as Chief Information Officer (CIO) of RegimA Worldwide Distribution, has provided a comprehensive Technical Infrastructure Affidavit (**Annexure DF1**) which provides detailed technical justification for all IT expenses alleged by the Applicant to be "unexplained".
+
+8.11.2 **Detailed Technical Architecture:**
+
+The Technical Infrastructure Affidavit provides comprehensive documentation of:
+
+(a) E-commerce platform architecture (Shopify Plus multi-store configuration, payment gateways, CDN infrastructure);
+
+(b) International compliance systems (GDPR, PCI-DSS Level 1, product safety databases across 37 jurisdictions);
+
+(c) Business automation platform (order management, inventory synchronization, CRM, financial reporting);
+
+(d) Security and risk management infrastructure (cybersecurity, encryption, backup systems, disaster recovery);
+
+(e) Cost justification with industry benchmarks demonstrating IT spend of 5-10% of revenue is standard for international e-commerce operations, with up to 12% for multi-jurisdiction operations.
+
+8.11.3 **Industry Benchmark Validation:**
+
+The Technical Infrastructure Affidavit demonstrates that the IT expenses complained of by the Applicant:
+
+(a) Fall within industry-standard ranges for international e-commerce businesses (typically 5-10% of revenue, up to 12% for multi-jurisdiction operations);
+
+(b) Are essential for regulatory compliance across 37 jurisdictions;
+
+(c) Are necessary for business continuity and customer data protection;
+
+(d) Are fully justified by the technical requirements of operating an international distribution business.
+
+8.11.4 **Peter's Creation of Documentation Gap:**
+
+The Technical Infrastructure Affidavit further demonstrates how the Applicant's own actions in June 2025 (cancelling access cards and restricting system access) created the very documentation gaps he now complains about, including:
+
+(a) Disruption of cloud storage and backup systems;
+
+(b) Suspension of accounting software access;
+
+(c) Termination of email services and domain registrations;
+
+(d) Forced emergency restoration using personal funds (R50,000-R75,000) to prevent business collapse.
+
+8.11.5 **Expert Technical Opinion:**
+
+As a qualified CIO with over 20 years of experience in information technology and international business operations, the Second Respondent's Technical Infrastructure Affidavit provides expert technical opinion on:
+
+(a) The necessity and appropriateness of each category of IT expense;
+
+(b) Industry benchmarks for comparable international e-commerce businesses;
+
+(c) The technical impossibility of operating the business without the infrastructure complained of;
+
+(d) The devastating operational and compliance impact of the interdict on IT infrastructure.
+
 ---
 
 ## 9. RESPONSE TO ALLEGATIONS OF FINANCIAL MISCONDUCT
@@ -1029,6 +1269,9 @@ The final agreement contains **two separate clauses** stating that parties "will
 - **JF-FSL1:** Financial system logs
 - **JF-CORR1:** Correspondence showing Daniel provided documentation
 
+### Technical Infrastructure
+- **DF1:** Daniel Faucitt Technical Infrastructure Affidavit (comprehensive technical justification for IT expenses)
+
 ### Historical Collaborative Model
 - **JF-HIST1:** Historical emails showing collaboration
 - **JF-HIST2:** Examples of consultative decisions
@@ -1070,7 +1313,8 @@ COMMISSIONER OF OATHS
 2. **Section 3 (Responsible Person):** Extensively detailed regulatory role and compliance crisis
 3. **Section 7.2 (IT Expenses):** Added international operations context and Peter's restriction of access
 4. **Section 7.8 (R500K Payment):** Added director loan account structure and Peter's inconsistency
-5. **Section 12 (Breakdown):** Added historical collaborative model and Rynette's expanding access
+5. **Section 8.11 (Technical Infrastructure):** Added Daniel Faucitt's Technical Infrastructure Affidavit with expert technical opinion on IT expenses (Annexure DF1)
+6. **Section 12 (Breakdown):** Added historical collaborative model and Rynette's expanding access
 
 ### Strategic Focus:
 
