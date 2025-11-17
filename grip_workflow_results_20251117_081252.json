@@ -1,0 +1,9 @@
+{
+  "case_id": "case_2025_137857",
+  "generations": 6,
+  "initial_fitness": 0.5575000000000001,
+  "final_fitness": 0.6400000000000001,
+  "improvement": 0.08250000000000002,
+  "gaps_identified": 2,
+  "target_reached": false
+}
