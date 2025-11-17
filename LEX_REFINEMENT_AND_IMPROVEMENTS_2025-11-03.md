@@ -67,7 +67,7 @@ Indicators of unauthorized email control combined with financial authority abuse
 > Rynette Farrar controlled Peter's email (pete@regima.com) as evidenced by Sage screenshots from June and August 2025. Rynette may have opened 8 ABSA accounts using Daniel's stolen card. Peter had no access to company accounts or banks. Rynette claimed to act under Bantjies' instructions (unknown trustee at the time). Two years of unallocated expenses in the system controlled by Rynette using Peter's email.
 
 **Legal Implications:**
-- Breach of fiduciary duty (accountant)
+- Breach of professional duty (bookkeeper)
 - Fraud indicators (unauthorized financial authority)
 - Unauthorized agent liability
 - Voidable transactions

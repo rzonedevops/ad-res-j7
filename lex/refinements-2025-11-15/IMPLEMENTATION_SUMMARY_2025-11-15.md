@@ -34,7 +34,7 @@ This implementation summary documents the comprehensive analysis, refinement, an
 - Recommendations for JAX-DAN response improvements
 
 **Key Findings:**
-- **Triple-role conflict** (Rynette: accountant + trustee + creditor) - Severity: 0.98
+- **Dual-role conflict** (Rynette: bookkeeper + creditor interest) - Severity: 0.95
 - **Undisclosed trustee conflict** (Bantjies: accountant + undisclosed trustee) - Severity: 0.96
 - **Founder-trustee power concentration** (Peter: founder + main trustee) - Severity: 0.98
 - **Immediate retaliation pattern** (1-day response) - Confidence: 0.96

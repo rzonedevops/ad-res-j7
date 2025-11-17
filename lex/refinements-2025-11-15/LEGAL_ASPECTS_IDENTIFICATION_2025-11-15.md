@@ -379,7 +379,7 @@ This document provides a comprehensive identification of legal aspects across en
 - Tax Number: 9132219271
 - Founder: Peter Faucitt
 - Main Trustee: Peter Faucitt (backdated to 1 July 2025, actual: 11 Aug 2025)
-- Trustees: Jacqueline Faucitt, Rynette Farrar, Daniel Bantjies (timing unclear)
+- Trustees: Peter Faucitt (Main Trustee), Jacqueline Faucitt, Daniel Bantjies (undisclosed)
 - Beneficiaries: Jacqueline Faucitt, Daniel Faucitt
 
 **Legal Aspects Identified:**
@@ -949,7 +949,7 @@ This document provides a comprehensive identification of legal aspects across en
 **Legal Aspects:**
 - **Debt Accumulation:** R1,035,000+ unpaid
 - **False Payment Claims:** R1,235,361.34 in fraudulent claims
-- **Conflict of Interest:** Rynette as director, accountant, trustee
+- **Conflict of Interest:** Rynette as bookkeeper with creditor interest
 
 **Severity:** 0.93
 **Confidence:** 0.93
@@ -1014,7 +1014,7 @@ This document provides a comprehensive identification of legal aspects across en
 **Recommended Enhancements:**
 
 1. **Multi-Role Conflict Detection**
-   - Implement triple-role conflict analyzer for Rynette (accountant + trustee + creditor)
+   - Implement dual-role conflict analyzer for Rynette (bookkeeper + creditor interest)
    - Undisclosed trustee conflict detector for Bantjies
    - Founder-trustee power concentration analyzer for Peter
 

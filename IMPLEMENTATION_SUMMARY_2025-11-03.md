@@ -168,7 +168,7 @@ Danie Bantjies was an unknown trustee of the Faucitt Family Trust. Beneficiaries
    - Key Issues: Beneficiary attacked by trustee, EU compliance crisis, confrontation with Rynette
 
 4. **Rynette Farrar** - 1 mention
-   - Roles: Accountant, Email controller (pete@regima.com), Financial system controller
+   - Roles: Bookkeeper, Email controller (pete@regima.com), Financial system controller
    - Key Issues: Unauthorized email control, financial authority abuse, conflicting interests
 
 **Juristic Persons:**

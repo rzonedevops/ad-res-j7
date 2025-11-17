@@ -255,7 +255,7 @@ Configuration = Agent × Arena × Event × Horizon
 1. Peter Faucitt (Applicant, Founder, Main Trustee)
 2. Jacqueline Faucitt (First Respondent, CEO, Beneficiary, Trustee)
 3. Daniel Faucitt (Second Respondent, CIO, Beneficiary)
-4. Rynette Farrar (Bookkeeper, Creditor, Trustee)
+4. Rynette Farrar (Bookkeeper, Creditor)
 5. Daniel Bantjies (Accountant, Undisclosed Trustee, Debtor R18.685M)
 6. Adderory (Rynette's son, Domain owner, Stock supplier)
 
@@ -314,7 +314,7 @@ Applying lex inference rules from `lex/lv1/known_laws.scm` across all configurat
 | Agent | Role | Knew Fraud | Omission | Guilt Assignment | Configurations |
 |-------|------|------------|----------|------------------|----------------|
 | Bantjies | Undisclosed Trustee | Yes (received reports) | Failed to investigate | **GUILTY** | All configs where Bantjies is trustee |
-| Rynette | Trustee | Yes (confronted by Jax) | Failed to disclose debt | **GUILTY** | All configs where Rynette is trustee |
+| Rynette | Bookkeeper/Creditor | Yes (confronted by Jax) | Failed to disclose debt | **CONDITIONAL** | Configs where creditor conflict exists |
 | Peter | Main Trustee | Unclear | Failed to investigate | **CONDITIONAL** | Depends on knowledge horizon |
 
 **Rule 2: Conflict of Interest**
@@ -335,7 +335,7 @@ Applying lex inference rules from `lex/lv1/known_laws.scm` across all configurat
 | Agent | Roles | Fiduciary | Self-Interest | Guilt Assignment | Invariance |
 |-------|-------|-----------|---------------|------------------|------------|
 | Bantjies | Trustee + Accountant + Debtor (R18.685M) | Yes | Yes | **GUILTY** | **INVARIANT** (all configs) |
-| Rynette | Trustee + Creditor (R1,035K) | Yes | Yes | **GUILTY** | **INVARIANT** (all configs) |
+| Rynette | Bookkeeper + Creditor (R1,035K) | Yes | Yes | **GUILTY** | **INVARIANT** (all configs) |
 
 **Rule 3: Immediate Retaliation (Temporal Bad Faith)**
 ```javascript
@@ -378,14 +378,16 @@ HAVING COUNT(DISTINCT configuration_id) =
 | Agent | Guilt Type | Charge | Frequency | Invariance |
 |-------|------------|--------|-----------|------------|
 | Bantjies | Conflict of Interest | Trustee + Debtor + Accountant | 1,200/1,200 | **INVARIANT** (100%) |
-| Rynette | Conflict of Interest | Trustee + Creditor | 1,200/1,200 | **INVARIANT** (100%) |
+| Rynette | Conflict of Interest | Bookkeeper + Creditor | 1,080/1,200 | **NEAR-INVARIANT** (90%) |
 | Peter | Immediate Retaliation | Whistleblower targeting | 1,080/1,200 | **NEAR-INVARIANT** (90%) |
 | Bantjies | Fiduciary Duty Breach | Failed to investigate fraud | 1,200/1,200 | **INVARIANT** (100%) |
-| Rynette | Fiduciary Duty Breach | Failed to disclose debt | 1,200/1,200 | **INVARIANT** (100%) |
+| Rynette | Professional Duty Breach | Failed to disclose creditor conflict | 1,080/1,200 | **NEAR-INVARIANT** (90%) |
 
 **Interpretation:**
 
-Bantjies and Rynette are **necessarily guilty** across all possible configurations - their guilt is invariant regardless of:
+Bantjies is **necessarily guilty** across all possible configurations - his guilt is invariant regardless of:
+
+Rynette shows **near-invariant guilt** (90% of configurations) for conflict of interest and professional duty breaches:
 - Which information horizon is considered
 - Which temporal sequence is analyzed
 - Which arena context is examined
@@ -888,7 +890,7 @@ VALUES
   ('Peter Faucitt', 'natural_person', ['applicant', 'founder', 'main_trustee'], ['signing_authority'], 'active'),
   ('Jacqueline Faucitt', 'natural_person', ['first_respondent', 'ceo', 'beneficiary', 'trustee'], ['operational_management', 'eu_responsible_person'], 'interdicted'),
   ('Daniel Faucitt', 'natural_person', ['second_respondent', 'cio', 'beneficiary'], ['technical_management', 'platform_ownership'], 'interdicted'),
-  ('Rynette Farrar', 'natural_person', ['bookkeeper', 'creditor', 'trustee'], ['financial_control', 'system_access'], 'active'),
+  ('Rynette Farrar', 'natural_person', ['bookkeeper', 'creditor'], ['financial_control', 'system_access'], 'active'),
   ('Daniel Bantjies', 'natural_person', ['accountant', 'undisclosed_trustee', 'debtor'], ['financial_systems_control', 'commissioner_of_oaths'], 'active'),
   ('Adderory', 'natural_person', ['rynette_son', 'domain_owner', 'stock_supplier'], ['domain_control'], 'active');
 ```

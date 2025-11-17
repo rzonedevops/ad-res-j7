@@ -10,7 +10,7 @@
 ;; based on comprehensive entity analysis from the ad-res-j7 repository.
 ;;
 ;; KEY ENHANCEMENTS:
-;; - Triple-role conflict detection (Rynette: accountant + trustee + creditor)
+;; - Dual-role conflict detection (Rynette: bookkeeper + creditor interest)
 ;; - Undisclosed trustee conflict detection (Bantjies: accountant + undisclosed trustee)
 ;; - Founder-trustee power concentration (Peter: founder + main trustee)
 ;; - Professional independence violation detection
@@ -115,14 +115,14 @@
          (has-director (member "director" roles)))
     
     (cond
-      ;; Triple-role: Accountant + Trustee + Creditor (Rynette case)
-      ((and has-accountant has-trustee has-creditor)
+      ;; Dual-role: Bookkeeper + Creditor Interest (Rynette case)
+      ((and has-bookkeeper has-creditor)
        (make-conflict-report
-        'type "triple-role-conflict"
-        'roles '("accountant" "trustee" "creditor")
-        'severity 0.98
-        'priority "critical"
-        'description "Accountant + Trustee + Creditor creates irreconcilable conflicts"
+        'type "dual-role-conflict"
+        'roles '("bookkeeper" "creditor")
+        'severity 0.95
+        'priority "high"
+        'description "Bookkeeper with creditor interest creates conflict"
         'conflicting-duties '(
           ("accountant-independence" . "trustee-loyalty")
           ("accountant-objectivity" . "creditor-self-interest")

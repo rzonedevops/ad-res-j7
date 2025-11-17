@@ -44,9 +44,8 @@ Comprehensive analysis and refinement of the ad-res-j7 repository completed succ
    - Confidence: 0.96
 
 2. **Rynette Farrar Agent Enhanced**
-   - **Triple-Role Conflict (Severity: 0.98)**
-     - Accountant (professional duty)
-     - Trustee (fiduciary duty)
+   - **Dual-Role Conflict (Severity: 0.95)**
+     - Bookkeeper (professional duty)
      - Creditor representative (R1,035,000 debt)
    - SAICA Code Violations: Sections 100, 120, 290
    - Control concentration: 100% accounts, banks, email
@@ -171,7 +170,7 @@ Comprehensive analysis and refinement of the ad-res-j7 repository completed succ
 | **Peter Faucitt** | Trustee, Director, Founder | Fiduciary duty breach, Bad faith, Litigation weaponization | 0.98 |
 | **Jacqueline Faucitt** | CEO, Beneficiary, Director | Victim of coercion, Power abuse, Revenue sabotage | 0.97 |
 | **Daniel Faucitt** | CIO, Owner (RZL), Beneficiary | Unjust enrichment claim, Whistleblower, Sabotage victim | 0.98 |
-| **Rynette Farrar** | Accountant, Trustee, Creditor | Triple-role conflict (0.98), SAICA violations, Sabotage | 0.97 |
+| **Rynette Farrar** | Bookkeeper, Creditor | Financial control, SAICA violations, Sabotage | 0.97 |
 | **Danie Bantjies** | Accountant, Trustee | Undisclosed trustee conflict (0.96), Ultimate control | 0.94 |
 
 ---
@@ -282,22 +281,21 @@ Comprehensive analysis and refinement of the ad-res-j7 repository completed succ
 
 ---
 
-### 3. Triple-Role Conflict (CRITICAL)
+### 3. Dual-Role Conflict (HIGH)
 
-**Finding:** Rynette Farrar serves three incompatible roles simultaneously.
+**Finding:** Rynette Farrar serves two incompatible roles simultaneously.
 
-**Three Roles:**
-1. **Accountant** (professional duty to client RST)
-2. **Trustee** (fiduciary duty to beneficiaries)
-3. **Creditor Representative** (self-interest: R1,035,000 debt owed by RST to Rezonance)
+**Two Roles:**
+1. **Bookkeeper** (professional duty to client RST)
+2. **Creditor Representative** (self-interest: R1,035,000 debt owed by RST to Rezonance)
 
 **SAICA Code Violations:**
 - Section 100: Integrity (self-dealing)
-- Section 100: Objectivity (triple-role conflict)
+- Section 100: Objectivity (dual-role conflict)
 - Section 120: Conflicts of interest
 - Section 290: Independence (material financial interest)
 
-**Conflict Severity:** 0.98 (CRITICAL)  
+**Conflict Severity:** 0.95 (HIGH)  
 **Confidence:** 0.97
 
 ---
