@@ -1,0 +1,225 @@
+Received: from securemail-pl-mx37.synaq.com ([196.35.198.178] helo=securemail-pl-mx25.synaq.com)
+	by securemail-pl-ix25.synaq.com with esmtps (Exim 4.95)
+	(envelope-from <cipcnoreply@cipc.co.za>)
+	id 1ubbj0-000C2W-Gz;
+	Tue, 15 Jul 2025 11:13:10 +0200
+Received: from [196.35.198.178] (helo=securemail-pl-mx25.synaq.com)
+	by mta10-dc01.cm.synaq.com with esmtps (Exim 4.95)
+	(envelope-from <cipcnoreply@cipc.co.za>)
+	id 1ubbkp-0000cz-CE
+	for clare.cma@mwebbiz.co.za;
+	Tue, 15 Jul 2025 11:15:15 +0200
+Received: from za-smtp-delivery-147.mimecast.co.za ([41.74.201.147])
+	by securemail-pl-mx25.synaq.com with esmtps  (TLS1.3) tls TLS_AES_256_GCM_SHA384
+	(Exim 4.95)
+	(envelope-from <cipcnoreply@cipc.co.za>)
+	id 1ubbj3-000ByA-CJ
+	for clare.cma@mwebbiz.co.za;
+	Tue, 15 Jul 2025 11:13:10 +0200
+Received: from DPMHUB03 (10.21.132.229) by DPMHUB03.CIPROZA.int (10.21.132.61)
+ with Microsoft SMTP Server id 15.2.1748.10; Tue, 15 Jul 2025 11:12:48 +0200
+Received: from DPMHUB03.CIPROZA.int (tc-mxscan1.cipc.co.za [196.30.47.186])
+ by relay.mimecast.com with ESMTP with STARTTLS (version=TLSv1.2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ za-mta-49-gOK9wfN6OHWO0bM-K_arNg-8; Tue, 15 Jul 2025 11:13:05 +0200
+Received: from 10.1.11.20 (LHLO mta10-dc01.cm.synaq.com) (10.1.11.20) by
+ store388-dc01.cm.synaq.com with LMTP; Tue, 15 Jul 2025 11:15:15 +0200
+ (SAST)
+Reply-To: <CIPCNoReply@cipc.co.za>
+From: <CIPCNoReply@cipc.co.za>
+To: <CLARE.CMA@MWEBBIZ.CO.ZA>
+Subject: Ref to REGIMA ZONE (Pty) Ltd (2017/110437/07)
+Date: Tue, 15 Jul 2025 13:12:48 +0200
+Message-ID: <bc6e4bcd-6e3e-4c04-9692-9171c2f1ef58@DPMHUB03.CIPROZA.int>
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0000_01DBF62B.9A10A3D0"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQINwmixwQtMPtiuW2hZp7d4bJyWeA==
+Authentication-Results: none;
+	iprev=pass (za-smtp-delivery-147.mimecast.co.za) smtp.remote-ip=41.74.201.147;
+	spf=pass smtp.mailfrom=cipc.co.za;
+	dkim=pass header.d=cipc.co.za header.s=mimecast20220706 header.a=rsa-sha256;
+	dmarc=skipped dmarc.action=none
+Authentication-Results: synaq.com;
+	iprev=pass (za-smtp-delivery-147.mimecast.co.za) smtp.remote-ip=41.74.201.147;
+	spf=pass smtp.mailfrom=cipc.co.za;
+	dkim=pass header.d=cipc.co.za header.s=mimecast20220706 header.a=rsa-sha256;
+	dmarc=skipped;
+	arc=none
+X-MC-Unique: gOK9wfN6OHWO0bM-K_arNg-8
+X-Mimecast-MFC-AGG-ID: gOK9wfN6OHWO0bM-K_arNg_1752570785
+X-Mimecast-Spam-Score: 0
+X-Mimecast-MFC-PROC-ID: w4xCEmgYjMM_INGCgOno8JWpm2nvlV9jJcn-0Aw8_Vk_1752570785
+X-Mimecast-Originator: cipc.co.za
+X-IS-SYNAQ-MX: za-smtp-delivery-147.mimecast.co.za ([41.74.201.147])
+X-SYNAQ-Pinpoint-Information: Please contact MWEB for more information
+X-SYNAQ-Pinpoint-ID: 1ubbj0-000C2W-Gz
+X-SYNAQ-Pinpoint: No virus infections found
+X-Pinpoint-From: cipcnoreply@cipc.co.za
+X-Spam-Flag: NO
+MIME-Version: 1.0
+
+------=_NextPart_000_0000_01DBF62B.9A10A3D0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-length: 3663
+
+Dear Directors/Members,
+
+RE- Final reminder to file Beneficial Ownership and Securities Register dec=
+larations
+
+Since 24 May 2023, it has been mandatory in terms of the Companies Act (as =
+amended) for all companies, external companies and close corporations to fi=
+le their Beneficial Ownership/Securities Register information or declaratio=
+ns annually with their annual return submission, or as and when it changes.
+The Commission urges all non-compliant companies to file their BO informati=
+on and not to wait for the filing of the annual returns anniversary period.=
+ Newly registered entities must file BO information and securities register=
+s within 10 (ten) business days after the date of incorporation.
+
+In August and September 2024, the Commission issued your company an email n=
+otification requesting you to file BO information within 7 (seven) business=
+ days respectively. If your company has not filed to date, your company is =
+non-compliant with the Companies Act, and will be issued with a compliance =
+notice upon expiry of the 7 business days referred to above . Once you rece=
+ive the compliance notice , you have 15 (fifteen) business days to comply, =
+to avoid endorsement of your disclosure certificate where your BO non-compl=
+iance will be visible to third parties. Failure to comply may also lead to =
+a court sanctioned administrative fine and/or criminal prosecution.
+
+Please ignore this notification if you have already filed your BO informati=
+on.
+
+The filing of Beneficial Ownership declarations can be done independently o=
+n e-services and non-compliant entities should therefore not wait until the=
+ir annual return submissions are due to file the outstanding BO information.
+
+For guidance on how to file the BO declaration, please visit the website fo=
+r step-by-step guides: https://urldefense.proofpoint.com/v2/url?u=3Dhttps-3=
+A__www.cipc.co.za_-3Fpage-5Fid-3D4447&d=3DDwIFaQ&c=3DeuGZstcaTDllvimEN8b7jX=
+rwqOf-v5A_CdpgnVfiiMM&r=3D7ZULBZmD5L4dM8U3nU-5WA&m=3D8F8nbKGfbATRjbQBYtJt6S=
+BPCAtSPRA-NjKJIbLp_EIvNbdp6KjbZDbyWA8gtBVC&s=3DnSaYkz4d-Fuc_Nd4M6Ed3LJeXlmk=
+qq353Xo3ARwY6iE&e=3D
+
+Kind Regards,
+
+Corporate Compliance and Disclosure Regulation Unit, obo.
+Adv RW Voller
+Commissioner: CIPC.
+NB: In instances where one email address is used for multiple directors, ea=
+ch director will receive an individually addressed letter to the same email=
+ address.
+
+
+Please do not reply to this email address for any queries. Contact the CIPC=
+ Call Centre at 086 100 2472.
+
+
+
+
+
+Disclaimer
+
+This message and its attachments is intended for the exclusive use of the n=
+amed recipients hereof and may contain information that is privileged or co=
+nfidential or otherwise restricted from disclosure wider than the named rec=
+ipients. If you are not the named recipient, you are not authorized to read=
+, use, transmit, print, retain, copy or disseminate this message or any par=
+t thereof, or the attachments thereto. If you have received this message in=
+ error, please notify the sender immediately via e-mail and discard (de-ide=
+ntify) any paper copies and delete all electronic files of the message.
+
+This email has been scanned for viruses and malware, and may have been auto=
+matically archived by Mimecast, a leader in email security and cyber resili=
+ence. Mimecast integrates email defenses with brand protection, security aw=
+areness training, web security, compliance and other essential capabilities=
+. Mimecast helps protect large and small organizations from malicious activ=
+ity, human error and technology failure; and to lead the movement toward bu=
+ilding a more resilient world. To find out more, visit our website.
+
+
+------=_NextPart_000_0000_01DBF62B.9A10A3D0
+Content-Type: text/html; boundary="MCBoundary=_12507151113092571";
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-length: 4125
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle type=3D"text/css">.style1 {font-family: "Times New Roman";}</style></h=
+ead><body>Dear Directors/Members,<br>
+<br>
+RE- Final reminder to file Beneficial Ownership  and Securities Register de=
+clarations<br>
+<br>
+Since 24 May 2023, it has been mandatory in terms of the Companies Act (as =
+amended) for all companies, external companies and close corporations to fi=
+le their Beneficial Ownership/Securities Register information or declaratio=
+ns annually with their annual return submission, or as and when it changes.=
+<br>
+The Commission urges all non-compliant companies to file their BO informati=
+on and not to wait for the filing of the annual returns anniversary period.=
+  Newly registered entities must file BO information and securities registe=
+rs within 10 (ten) business days after the date of incorporation.<br>
+<br>
+In August and September 2024, the Commission issued your company an email n=
+otification requesting you to file BO information within 7 (seven)  busines=
+s days respectively. If your company has not filed to date, your company is=
+ non-compliant with the Companies Act, and will be issued with a compliance=
+ notice upon expiry of the 7 business days referred to above . Once you rec=
+eive the compliance notice , you have 15 (fifteen) business days to comply,=
+  to avoid endorsement of your disclosure certificate where your BO non-com=
+pliance will be visible to third parties.  Failure to comply may also lead =
+to a court sanctioned administrative fine and/or criminal prosecution.<br>
+<br>
+Please ignore this notification if you have already filed your BO informati=
+on.<br>
+<br>
+The filing of Beneficial Ownership declarations can be done independently o=
+n e-services and non-compliant entities should therefore not wait until the=
+ir annual return submissions are due to file the outstanding BO information=
+.<br>
+<br>
+For guidance on how to file the BO declaration, please visit the website fo=
+r step-by-step guides: <a href=3D"https://urldefense.proofpoint.com/v2/url?=
+u=3Dhttps-3A__www.cipc.co.za_-3Fpage-5Fid-3D4447&amp;d=3DDwMFaQ&amp;c=3DeuG=
+ZstcaTDllvimEN8b7jXrwqOf-v5A_CdpgnVfiiMM&amp;r=3D7ZULBZmD5L4dM8U3nU-5WA&amp=
+;m=3D8F8nbKGfbATRjbQBYtJt6SBPCAtSPRA-NjKJIbLp_EIvNbdp6KjbZDbyWA8gtBVC&amp;s=
+=3DnSaYkz4d-Fuc_Nd4M6Ed3LJeXlmkqq353Xo3ARwY6iE&amp;e=3D" target=3D"_blank">=
+https://www.cipc.co.za/?page_id=3D4447</a><br>
+<br>
+Kind Regards,<br>
+<br>
+Corporate Compliance and Disclosure Regulation Unit, obo.<br>
+Adv RW Voller<br>
+Commissioner: CIPC.<br>
+NB: In instances where one email address is used for multiple directors,  e=
+ach director will receive an individually addressed letter to the same emai=
+l address.<br>
+<br>
+<br>
+Please do not reply to this email address for any queries. Contact the CIPC=
+ Call Centre at 086 100 2472.<br>
+<br>
+
+<br><br><p style=3D"font-family: Verdana; font-size:10pt; color:#666666;"><=
+b>Disclaimer</b></p><p style=3D"font-family: Verdana; font-size:8pt; color:=
+#666666;">This message and its attachments is intended for the exclusive us=
+e of the named recipients hereof and may contain information that is privil=
+eged or confidential or otherwise restricted from disclosure wider than the=
+ named recipients. If you are not the named recipient, you are not authoriz=
+ed to read, use, transmit, print, retain, copy or disseminate this message =
+or any part thereof, or the attachments thereto. If you have received this =
+message in error, please notify the sender immediately via e-mail and disca=
+rd (de-identify) any paper copies and delete all electronic files of the me=
+ssage.<br><br>This email has been scanned for viruses and malware, and may =
+have been automatically archived by Mimecast, a leader in email security an=
+d cyber resilience. Mimecast integrates email defenses with brand protectio=
+n, security awareness training, web security, compliance and other essentia=
+l capabilities. Mimecast helps protect large and small organizations from m=
+alicious activity, human error and technology failure; and to lead the move=
+ment toward building a more resilient world. To find out more, visit our we=
+bsite.</p></body></html>
+
+------=_NextPart_000_0000_01DBF62B.9A10A3D0--
