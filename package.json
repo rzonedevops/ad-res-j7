@@ -61,6 +61,7 @@
     "check:jax-dan-contradictions-report": "node scripts/check-jax-dan-contradictions.js --output jax-dan-contradiction-report.json",
     "validate-affidavit-v3-annexures": "python3 scripts/verify_affidavit_v3_annexures.py",
     "validate-annexure-numbering": "node scripts/check-annexure-numbering.js",
+    "validate-yaml-frontmatter": "node scripts/validate-yaml-frontmatter.js .",
     "fix-file-paths": "node scripts/fix_file_paths.js file-path-validation-report.json",
     "hypergraph:example": "node docs/models/hypergnn/case-hypergraph.js",
     "validate-workflows": "node tests/run-all-tests.js",
