@@ -1,5 +1,3 @@
----
-
 # HyperGNN Analysis Framework - Frontend
 
 This is the frontend interface for the **HyperGNN Analysis Framework**, a modern, interactive web application built with React, D3.js, and other cutting-edge web technologies. It provides a comprehensive suite of tools for case analysis, data visualization, and reporting, all powered by the HyperGNN framework.
