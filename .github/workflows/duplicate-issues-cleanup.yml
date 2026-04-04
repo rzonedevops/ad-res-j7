@@ -170,10 +170,10 @@ jobs:
             analysis_params="$analysis_params --include-closed"
           fi
           
-          echo "Running: node scripts/cleanup-duplicate-issues.js $analysis_params"
+          echo "Running: node 06-tools/scripts/cleanup-duplicate-issues.js $analysis_params"
           
           # Run the duplicate cleanup script
-          if node scripts/cleanup-duplicate-issues.js $analysis_params; then
+          if node 06-tools/scripts/cleanup-duplicate-issues.js $analysis_params; then
             echo "analysis_success=true" >> $GITHUB_OUTPUT
             echo "✅ Duplicate analysis completed successfully"
           else

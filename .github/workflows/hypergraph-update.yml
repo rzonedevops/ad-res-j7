@@ -3,8 +3,8 @@ name: Update Hypergraph
 on:
   push:
     paths:
-      - 'evidence/**'
-      - 'jax-response/**'
+      - '02-evidence/**'
+      - '04-response/jax/**'
 
 jobs:
   update-hypergraph:
@@ -20,11 +20,11 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: node scripts/rebuild-hypergraph.js
+      - run: node 06-tools/scripts/rebuild-hypergraph.js
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "chore: update hypergraph data"
-          file_pattern: "docs/models/hypergnn/*.json"
+          file_pattern: "07-docs/models/hypergnn/*.json"
       
       - name: Report workflow failures
         if: failure()

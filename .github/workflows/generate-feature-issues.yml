@@ -38,7 +38,7 @@ jobs:
         id: parse
         run: |
           echo "📄 Parsing need-classification.md..."
-          node scripts/parse-need-classification.js todo/need-classification.md parsed-features.json
+          node 06-tools/scripts/parse-need-classification.js todo/need-classification.md parsed-features.json
           
           # Get statistics
           TOTAL_FEATURES=$(jq '.metadata.total_features' parsed-features.json)
@@ -64,7 +64,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Create only the labels needed for this workflow
-          ./scripts/ensure-labels.sh \
+          ./06-tools/scripts/ensure-labels.sh \
             "feature:0052CC:Feature request" \
             "needs-triage:FFCC00:Requires triage"
       
@@ -75,10 +75,10 @@ jobs:
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             echo "🔍 DRY RUN MODE - No issues will be created"
-            node scripts/generate-feature-issues.js parsed-features.json --dry-run --output=feature-issues-report.json
+            node 06-tools/scripts/generate-feature-issues.js parsed-features.json --dry-run --output=feature-issues-report.json
           else
             echo "🚀 LIVE MODE - Creating feature issues"
-            node scripts/generate-feature-issues.js parsed-features.json --output=feature-issues-report.json
+            node 06-tools/scripts/generate-feature-issues.js parsed-features.json --output=feature-issues-report.json
           fi
       
       - name: Generate summary

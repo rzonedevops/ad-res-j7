@@ -82,15 +82,15 @@ jobs:
           # Run appropriate action
           case "$INPUT_ACTION" in
             report)
-              node scripts/consolidate-issues-to-hierarchy.js report
+              node 06-tools/scripts/consolidate-issues-to-hierarchy.js report
               ;;
             dry-run)
-              node scripts/consolidate-issues-to-hierarchy.js dry-run
+              node 06-tools/scripts/consolidate-issues-to-hierarchy.js dry-run
               ;;
             execute)
               # Create confirmation file for script
               echo "I confirm closing auto-generated issues" > CONFIRM_CLOSE_ISSUES.txt
-              node scripts/consolidate-issues-to-hierarchy.js execute
+              node 06-tools/scripts/consolidate-issues-to-hierarchy.js execute
               ;;
           esac
       

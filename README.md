@@ -1,559 +1,307 @@
-# AD-RES-J7: Legal Case Repository & Attention Inference Engine
+# AD-RES-J7: Forensic Case Analysis Corpus
 
-This repository contains comprehensive legal documentation for case 2025-137857 and implements a transformer-based system that uses attention mechanisms to perform legal reasoning and guilt determination. The key insight is that **attention IS the lex inference engine** - guilt emerges from learned relational patterns in attention weights, not from explicit rules.
-
----
-
-## 🚀 Quick Navigation: Optimal Grip System
-
-**Three parallel features for integrated understanding:**
-
-### 📚 **ARENA** (Legal Framework - Rules & Principles)
-> [**ARENA_INDEX.md**](ARENA_INDEX.md) - 60+ legal principles mapped to all 3 cases
-- First-order principles (lex/lv1/known_laws.scm)
-- 8 legal branches (civil, criminal, trust, etc.)
-- Case-specific applications
-
-### 📂 **AGENT** (Evidence Base - Facts & Documents)
-> [**AGENT_INDEX.md**](AGENT_INDEX.md) - 100+ evidence files mapped to all 3 cases
-- 12 main annexures (JF01-JF12) + 8 supporting (SF1-SF8)
-- Evidence packages and court documents
-- Case-specific evidence support
-
-### 🔗 **RELATIONS** (Arena ↔ Agent Connections)
-> [**RELATIONS_INDEX.md**](RELATIONS_INDEX.md) - Complete arena-agent mapping
-- How legal principles connect to evidence
-- Three cases: Civil Response, Criminal Case, External Validation
-- Integrated navigation between arena and agent
-
-### ⚙️ **GRIP** (How to Use the System)
-> [**GRIP_WORKFLOW.md**](GRIP_WORKFLOW.md) - Workflows for optimal understanding
-- Four ways of knowing (propositional, procedural, perspectival, participatory)
-- Database operations and validation
-- Navigation patterns and workflows
+**Case 2025-137857** | Gauteng High Court | Revenue Stream Hijacking, Perjury & Weaponized Litigation
 
 ---
 
-**Start Here**: Read [RELATIONS_INDEX.md](RELATIONS_INDEX.md) for master overview, then navigate to specific cases/evidence as needed.
+## Repository Structure
 
----
+This corpus is organized into seven numbered sections for clear forensic navigation:
 
-## 🧬 NEW: Grip Optimization System
-
-**Ontogenesis-inspired self-optimization for legal attention mechanisms**
-
-Achieve optimal "grip" on case material through continuous measurement and evolutionary improvement of legal reasoning quality.
-
-**Quick Start:**
-```bash
-npm run db:grip:setup    # Setup grip metrics tables
-npm run db:grip:demo     # See it in action
-npm run db:grip:stats    # Check current grip quality
+```
+ad-res-j7/
+├── 01-case/              Court filings, affidavits, legal proceedings
+├── 02-evidence/          Primary source materials & annexures
+├── 03-analysis/          Analytical work product & findings
+├── 04-response/          Jax & Daniel response materials
+├── 05-legal-framework/   LEX Scheme files (legal principles)
+├── 06-tools/             Scripts, database layer, engines
+├── 07-docs/              Documentation, reports, guides
+├── tests/                Test suite (40+ files)
+├── archive/              Superseded & historical materials
+└── CASE_SUMMARY_2025_137857.md   Executive summary
 ```
 
-**Key Features:**
-- 📊 **12-dimensional grip measurement** (completeness, invariance, coherence, etc.)
-- 🧬 **Self-optimizing attention patterns** via gradient ascent + genetic algorithms
-- 🔍 **Automatic evidence gap detection** with priority recommendations
-- 📈 **Invariance tracking** for strengthening necessary guilt properties
-- ⏱️ **Evolution timeline** tracking fitness improvements across generations
+---
 
-**Target Fitness:** ≥ 0.90 (optimal grip on lex context and case content)
+## Quick Start
 
-**Documentation:**
-- 📖 [Complete Guide](GRIP_OPTIMIZATION_GUIDE.md) - Full API and workflows
-- ⚡ [Quick Reference](GRIP_OPTIMIZATION_QUICKSTART.md) - Common commands and tips
-- 🧪 [Tests](tests/grip-optimization.test.js) - Validation suite
+**Read first:** [`CASE_SUMMARY_2025_137857.md`](CASE_SUMMARY_2025_137857.md) — comprehensive summary of what happened, who did it, and when.
+
+### By Role
+
+| You are... | Start here |
+|------------|-----------|
+| **Attorney / Legal** | [`01-case/`](01-case/) → court documents & affidavits |
+| **Forensic Analyst** | [`02-evidence/`](02-evidence/) → primary evidence & annexures |
+| **Investigator** | [`03-analysis/`](03-analysis/) → foreknowledge scoring, timelines, entity analysis |
+| **Respondent Team** | [`04-response/`](04-response/) → defense materials for Jax & Daniel |
+| **Technical / Developer** | [`06-tools/`](06-tools/) → database, scripts, inference engine |
 
 ---
 
-## 📁 Repository Structure
+## 01-case/ — Court Filings & Legal Proceedings
 
-All documentation has been organized into a comprehensive structure for easy navigation and reference:
+The case record: court documents, affidavits, and legal proceedings organized by track.
 
-### 📋 **Comprehensive Evidence Index** - `COMPREHENSIVE_EVIDENCE_INDEX.md`
-**Complete mapping of all 1,700+ files in the repository with categorization, metadata, and evidence code cross-references**
-
-### 📋 **Documentation Catalog** - `/docs/README.md`
-**Master index of all 888+ legal documents, properly categorized and cross-referenced**
-
-### 📚 **Organized Documentation Structure**
-- **Legal Documents** (`/docs/legal/`) - Affidavits, evidence, analysis, and annexures
-- **Technical Documentation** (`/docs/technical/`) - Implementation guides, workflows, and system docs  
-- **Strategic Analysis** (`/docs/strategic/`) - Burden of proof strategies and legal arguments
-- **Reports & Status** (`/docs/reports/`) - Completion, verification, and validation reports
-- **Evidence Collections** (`/evidence/`, `/ANNEXURES/`) - Organized evidence packages and supporting materials
-
-### 🎯 **Quick Navigation**
-- **Repository Overview**: Start with [📋 Comprehensive Evidence Index](COMPREHENSIVE_EVIDENCE_INDEX.md)
-- **Legal Team**: Browse [📋 Documentation Catalog](/docs/README.md)
-- **Case Materials**: See [📁 Legal Annexures](/docs/legal/annexures/ANNEXURES_INDEX.md)
-- **⭐ Annexures Quick Reference**: See [🔑 All 60+ Annexures Linked to Core Revelation](ANNEXURES_QUICK_REFERENCE_GUIDE.md)
-- **Technical Team**: Reference [⚙️ Technical Documentation](/docs/technical/)
-- **Evidence**: Browse [📂 Evidence Collections](/evidence/)
-- **Directory Consolidation**: See [📖 Jax Response Consolidation Guide](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
-
-### 📂 **Jax Response Directory** - `/jax-response/`
-
-**Consolidated response materials for both respondents** (Jacqueline and Daniel Faucitt)
-
-This directory represents a **consolidation** of the former `jax-response` and `jax-dan-response` directories into a unified structure. All original content has been preserved with clear attribution.
-
-**Key Information:**
-- **Consolidation Date:** October 19, 2025
-- **Original Directories Backed Up To:** `/backups/pre-consolidation/`
-- **Comprehensive Guide:** [JAX Response Directory Consolidation Documentation](/docs/JAX_RESPONSE_DIRECTORY_CONSOLIDATION.md)
-
-The consolidated structure includes:
-- Jacqueline's legal and business perspective
-- Daniel's technical and infrastructure perspective
-- Unified evidence collection
-- Forensic analyses (R10.227M+ documented losses)
-- Multiple affidavit versions with tracked changes
-
----
-
-## 📅 **RECENT COMPLETIONS**
-
-**October 30, 2025** - Critical milestone completions:
-
-### ✅ Legal Review Preparation (Task 126)
-- **Documents Created:**
-  - `LEGAL_REVIEW_PREPARATION_COMPLETE.md` (15.5KB) - Comprehensive attorney handoff package
-  - `LEGAL_REVIEW_PREPARATION_TASK_126_COMPLETE.md` (9.4KB) - Task completion summary
-- **Key Features:**
-  - Four-phase legal review checklist (5-8 hours total attorney time)
-  - Automated validation tools and scripts
-  - Readiness metrics: 17/21 checks passed (81%)
-  - Quality checks completed (cross-references, dates, evidence, financials)
-- **Status:** ✅ READY FOR ATTORNEY HANDOFF
-
-### ✅ Damage Calculation Methodology
-- **Document Created:** `docs/legal/analysis/DAMAGE_CALCULATION_METHODOLOGY.md` (21KB)
-- **Total Documented Damages:** R10,269,727.90+
-- **Key Features:**
-  - Three damage categories: Revenue Theft (R3.141M+), Financial Flows (R4.276M+), Family Trust (R2.851M+)
-  - UK payment structure revelation as foundational basis
-  - Complete evidentiary support and legal framework
-  - Court submission format and one-paragraph summary
-- **Status:** 430 lines, comprehensive methodology, ready for court submission
-
-### ✅ Evidence Cross-Reference Testing
-- **Verification Date:** October 30, 2025
-- **Result:** All 24 tests passed (3 test suites)
-- **Report:** `tests/EVIDENCE_CROSS_REFERENCE_TEST_VERIFICATION.md`
-
----
-
-## 🔍 **CRITICAL EVIDENCE: Payment Structure Analysis**
-
-**NEW: October 23, 2025** - Complete documentation addressing the R1,000,000 vs R1,000 admin fee structure
-
-### Quick Access
-- **Quick Answer**: [PAYMENT_STRUCTURE_QUICK_ANSWER.md](PAYMENT_STRUCTURE_QUICK_ANSWER.md) - Is 99.9% giveaway fraud? (NO - it's normal business practice)
-- **Full Analysis**: [PAYMENT_STRUCTURE_CLARIFICATION.md](PAYMENT_STRUCTURE_CLARIFICATION.md) - Comprehensive legal and business analysis
-- **Visual Guide**: [PAYMENT_STRUCTURE_VISUAL_DIAGRAM.md](PAYMENT_STRUCTURE_VISUAL_DIAGRAM.md) - Diagrams and flow charts
-- **Navigation**: [PAYMENT_STRUCTURE_INDEX.md](PAYMENT_STRUCTURE_INDEX.md) - Complete document index
-
-### Key Finding
-The revelation that RegimA Zone Ltd (UK) invested R1,000,000 in ZA operations while charging only R1,000 (0.1%) admin fee:
-- ✅ **PROVES legitimate investment** by Dan & Jax (not profiteering)
-- ✅ **PROVES proper business structure** (tax compliant transfer pricing)
-- ✅ **STRENGTHENS case** against Peter (he stole what he never funded)
-- ✅ **EXPOSES fraud** - Peter appropriated R1M investment he never made
-
-This is **CASE-WINNING** evidence documented across 37,000+ characters of comprehensive analysis.
-
----
-
-## Core Insight
-
-In transformers, attention computes relevance scores between all elements. For legal inference, this becomes:
-
-- **Q (Queries)**: The guilt hypotheses being evaluated
-- **K (Keys)**: All facts, actions, and agent states in the possibility space  
-- **V (Values)**: The legal/causal significance of each element
-
-The attention weights naturally encode **which facts matter for which determinations** - creating a "juridical heat map" that shows legal salience.
-
-## Key Features
-
-### 1. Multi-Head Legal Attention
-Different attention heads represent different legal lenses:
-- **Causal head**: Attends to cause-effect chains
-- **Intentionality head**: Focuses on mental states and knowledge
-- **Temporal head**: Weighs sequence and timing
-- **Normative head**: Attends to rule violations
-
-### 2. Specialized Positional Encodings
-Legal reasoning requires special positional encodings:
-- Temporal position (when did it happen)
-- Causal depth (how many steps from action to harm)
-- Epistemic position (what did the agent know at this point)
-- Deontic position (what obligations were active)
-
-### 3. Cross-Attention for Counterfactuals
-Cross-attention between actual and possible worlds handles counterfactual reasoning:
-- Attend from "what happened" to "what could have happened"
-- Learn the delta between worlds where guilt changes
-- Measures the **necessity and sufficiency** of actions for outcomes
-
-### 4. Emergent Guilt Determination
-The "guilty party is always guilty" property emerges because attention learns invariant patterns across all possible configurations. The mechanism discovers guilt as a stable attractor in the attention landscape.
-
-## Architecture
-
-```python
-class LegalAttentionEngine:
-    def forward(self, events, agents, norms):
-        # Embed all elements in shared legal space
-        embeddings = self.embed(events, agents, norms)
-        
-        # Add legal positional encodings
-        embeddings += self.positional_encoding(
-            temporal_pos, causal_depth, 
-            epistemic_pos, deontic_pos
-        )
-        
-        # Self-attention finds relational structure
-        for layer in self.transformer_layers:
-            embeddings, attention_weights = layer(embeddings)
-        
-        # These weights ARE the guilt determination
-        # High attention between agent and harm = guilt
-        
-        return guilt_scores, attention_weights
+```
+01-case/
+├── court-documents/       PDFs of court filings, orders, interdict applications
+├── affidavits/            Final answering affidavits (MD + DOCX), supporting affidavits
+├── civil-response/        Civil track: annexure index, supporting affidavits, rebuttal
+├── criminal-case/         Criminal track: arena/agent mapping
+├── external-validation/   Third-party verification package
+└── mediation/             Settlement & mediation materials
 ```
 
-## Setup
+**Key files:**
+- `court-documents/KF0019-UrgentApplication.pdf` — The urgent application
+- `affidavits/ANSWERING_AFFIDAVIT_JACQUELINE_FAUCITT.md` — Jax's answering affidavit
+- `affidavits/SUPPORTING_AFFIDAVIT_DANIEL_JAMES_FAUCITT.md` — Daniel's supporting affidavit
 
-### Prerequisites
+---
 
-- **Node.js** (v20 or higher)
-- **PostgreSQL** (v12 or higher)
-- **Python** (v3.8 or higher) - for legal attention engine
+## 02-evidence/ — Primary Source Materials
 
-### Quick Start
+All evidence organized by type, with 12 main annexure packages (JF01–JF12).
 
-1. **Clone the repository**
-   ```bash
-   # Clone this repository
-   git clone https://github.com/cogpy/ad-res-j7.git
-   cd ad-res-j7
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm ci
-   ```
-
-3. **Configure database** (see [db/README.md](db/README.md) for detailed instructions)
-   ```bash
-   # Copy example configuration
-   cp .env.example .env
-   
-   # Edit .env and set your PostgreSQL connection:
-   # DATABASE_URL=postgres://postgres:postgres@localhost:5432/ad_res_j7
-   ```
-
-4. **Setup database schema**
-   ```bash
-   npm run db:migrate
-   npm run db:hierarchy:setup    # Optional: for hierarchical issues
-   npm run db:hypergraph:setup   # Optional: for hypergraph schema
-   ```
-
-5. **Test connection**
-   ```bash
-   npm run db:test
-   ```
-
-For detailed database setup instructions, troubleshooting, and configuration options, see [**db/README.md**](db/README.md).
-
-## Usage
-
-```python
-from legal_attention_engine import LegalAttentionEngine, LegalEvent, Agent, Norm
-
-# Create engine
-engine = LegalAttentionEngine(d_model=256, n_heads=4, n_layers=4)
-
-# Define scenario
-events = [
-    LegalEvent(id="e1", event_type="action", agent_id="alice", 
-               description="Alice pulls lever", ...),
-    LegalEvent(id="e2", event_type="harm", agent_id="victim",
-               description="Person harmed", causal_parents=["e1"], ...)
-]
-
-agents = [
-    Agent(id="alice", name="Alice", capabilities=["pull_lever"], ...)
-]
-
-norms = [
-    Norm(id="n1", norm_type="prohibition", description="Do not harm", ...)
-]
-
-# Run inference
-results = engine(events, agents, norms)
-
-# Examine results
-guilt_scores = results["guilt_scores"]  # Agent guilt determinations
-attention_weights = results["attention_weights"]  # Juridical heat map
+```
+02-evidence/
+├── annexures/             JF01-JF12: main evidence packages (each with README)
+├── annexures-supporting/  Additional annexure materials
+├── bank-records/          Bank statements & transfer records
+├── bank-statements/       Additional bank documentation
+├── correspondence/        Email & letter evidence
+├── shopify_reports/       Shopify platform data & invoices
+├── witness-statements/    Witness statements & declarations
+├── legal-documents/       Legal correspondence & documents
+├── invoices/              Financial invoices
+├── identity-documents/    ID documents
+├── director_loan_accounts/ DLA records
+├── rezonance-misallocation/ ReZonance financial misallocation evidence
+├── business-operations/   Business operational evidence
+├── character-references/  Character reference letters
+├── computer-expenses/     IT & computing expense records
+├── property_unit9_southview_park/ Property evidence
+├── UK_tax_residency/      UK tax residency documentation
+├── 2025-11-14-batch*/     Evidence batches (4 batches)
+├── INDEX.md               Comprehensive evidence index
+└── INDEX.json             Machine-readable evidence index
 ```
 
-## Example Scenarios
+**Key annexures:**
+- `annexures/JF01/` — Shopify Plus email evidence (forensic time capsule)
+- `annexures/JF03/` — Financial records & revenue analysis
+- `annexures/JF06/` — Court documents & interdicts
+- `annexures/JF08/` — Comprehensive fraud package
 
-### 1. Trolley Problem
-Tests basic moral dilemmas and action/omission distinctions.
+---
 
-### 2. Poisoned Coffee
-Tests complex causation with multiple agents and concurrent causes.
+## 03-analysis/ — Analytical Work Product
 
-### 3. Autonomous Vehicle Dilemma
-Tests algorithmic decision-making and lesser evil reasoning.
+Forensic analysis, foreknowledge scoring, financial forensics, and entity relationship mapping.
 
-### 4. Corporate Negligence
-Tests hierarchical responsibility and systemic failures.
-
-## Visualization
-
-The system includes juridical heat map visualizations showing:
-- Which facts each agent's guilt determination depends on
-- Causal attention chains between events
-- Attention head specialization
-- Counterfactual impact analysis
-
-```python
-from legal_attention_visualization import JuridicalHeatMapVisualizer
-
-visualizer = JuridicalHeatMapVisualizer()
-fig = visualizer.plot_complete_analysis(results, events, agents, norms)
+```
+03-analysis/
+├── foreknowledge/         Provable foreknowledge analysis (placeholder for cross-repo)
+├── financial-forensics/   Fund flow analysis, anomaly detection
+├── revenue-hijacking/     Revenue stream hijacking evidence
+│   ├── court-package/     POPIA-compliant vs opaque system comparison
+│   └── evidence-collection/ Audit trails, domain evidence, Shopify platform
+├── burden-of-proof/       Legal burden analysis & strategy
+├── timeline/              Event timelines & visualizations
+├── entity-analysis/       Hypergraph entity mapping & relationships
+│   ├── hypergraph-mapping/
+│   ├── legal-hypergraphql/
+│   └── shared-hypergraphql-schema/
+├── ARENA_INDEX.md         60+ legal principles mapped to all 3 cases
+├── AGENT_INDEX.md         100+ evidence files mapped to all 3 cases
+└── RELATIONS_INDEX.md     Complete arena-agent mapping
 ```
 
-## Key Properties
+**Key navigation indexes:**
+- `ARENA_INDEX.md` — Legal framework (rules & principles)
+- `AGENT_INDEX.md` — Evidence base (facts & documents)
+- `RELATIONS_INDEX.md` — How legal principles connect to evidence
 
-1. **No Explicit Rules**: Guilt emerges from attention patterns, not hard-coded logic
-2. **Invariance**: The guilty party remains guilty across different configurations
-3. **Interpretability**: Attention weights explain why someone is guilty
-4. **Compositionality**: Complex scenarios decompose into attention relationships
-5. **Counterfactual Reasoning**: Cross-attention handles "what if" scenarios
+---
 
-## Testing
+## 04-response/ — Defense Materials
 
-### Evidence Completeness Validation
+Response materials for both respondents, organized by individual.
 
-**Phase 3 - Advanced QA Scripts** (from Repository_Status_and_Critical_Evidence_Collection.md line 150)
+```
+04-response/
+├── jax/                   Jacqueline Faucitt's response
+│   ├── AD/                Affidavit defense (priority-ranked 1-5)
+│   ├── evidence-attachments/
+│   ├── family-trust/      Trust breach evidence (chronological)
+│   ├── financial-flows/   Unauthorized transfers & diversions
+│   ├── revenue-theft/     Revenue hijacking evidence chain
+│   └── source-documents/
+└── dan/                   Daniel Faucitt's response
+    ├── AD/                Affidavit defense (priority-ranked 1-5)
+    ├── annexures/         DAN-DL, DAN-IT, DAN-LW, DAN-UE, JAX-RP
+    ├── criminal-complaint/
+    ├── rule-42-rescission/
+    └── source-documents/
+```
 
-Validate evidence completeness and link to the core revelation:
-- Dan & Kay Shopify platform was paid by Dan & Jax UK company RegimA Zone Ltd
-- RWD ZA actually has no revenue stream of its own
+---
+
+## 05-legal-framework/ — LEX Scheme Files
+
+Legal principles encoded in Scheme, organized by domain of law.
+
+```
+05-legal-framework/
+├── lv1/          First-order principles (known_laws.scm)
+├── civ/          Civil law (South African)
+├── cri/          Criminal law
+├── civ-proc/     Civil procedure
+├── trs/          Trust & estate law
+├── adm/          Administrative law
+├── cmp/          Company law
+├── cst/          Constitutional law
+├── evid/         Evidence law
+├── env/          Environmental law
+├── eth/          Ethics
+├── prof-eth/     Professional ethics
+├── frn/          Franchise law
+├── int/          International law
+├── lab/          Labour law
+└── hypergraph/   Hypergraph integration layer
+```
+
+---
+
+## 06-tools/ — Scripts, Database & Engines
+
+All technical tooling: database layer, automation scripts, analysis scripts, and the LEX inference engine.
+
+```
+06-tools/
+├── db/                    Database layer (managers, migrations, config)
+│   ├── config.js          Connection config (Neon/PostgreSQL)
+│   ├── *-migrate.js       Schema migrations (6 schemas)
+│   └── *-manager.js       Manager classes (7 managers)
+├── database/              Additional database resources (schema, docs, data)
+├── scripts/               Automation & validation scripts
+├── analysis-scripts/      Python & JS analysis scripts (moved from root)
+├── lex-engine/            LEX inference engine (transformer-based legal reasoning)
+├── lib/                   Shared utilities (JS + Python)
+├── grammars/              ANTLR/Flex/Bison grammar files
+├── implementation/        Implementation phase plans
+├── schema.graphql         GraphQL schema
+└── example_queries.graphql
+```
+
+### Database Setup
 
 ```bash
-# Run evidence completeness validation (JavaScript)
-npm run validate-evidence-completeness
-
-# Or use Python version
-npm run validate-evidence-completeness-py
-
-# Or run directly
-node scripts/validate-evidence-completeness.js
-python3 scripts/validate_evidence_completeness.py
+npm run db:migrate              # Base schema
+npm run db:hierarchy:setup      # Hierarchical issues
+npm run db:hypergraph:setup     # Hypergraph
+npm run db:xref:setup           # Cross-references
+npm run db:lex:setup            # LEX inference
+npm run db:grip:setup           # Grip metrics
 ```
 
-**Features:**
-- ✅ Validates Phase 1 Critical Evidence (80% threshold): 22 evidence items
-- ✅ Validates Phase 2 High Priority Evidence (60% threshold): 15 evidence items  
-- ✅ Validates Revenue Stream Evidence (100% threshold): Links to RegimA Zone Ltd revelation
-- 🔗 Checks linkage between evidence and core revenue stream revelation
-- 📊 Generates comprehensive JSON validation reports
-- 💡 Provides actionable recommendations for missing evidence
-
-**Current Status:** All validation checks passing at 100% completeness
-
-### Hierarchical Issue Structure
-
-**NEW: Hierarchical organization of legal issues by argument strength**
-
-Organize task-level issues under feature-level issues with paragraphs and rank-ordered weighting:
+### Key npm Scripts
 
 ```bash
-# Setup database tables
-npm run db:hierarchy:setup
-
-# Populate demo data (2 arguments, 3 features, 7 paragraphs, 13 tasks)
-npm run db:hierarchy:populate
-
-# View statistics
-npm run db:hierarchy:stats
-
-# Run tests
+# Testing
+npm test                        # Run all tests
 npm run test:hierarchical-issues
-```
-
-**Structure:**
-```
-Legal Argument (Strategy)
-├── Feature Issue (Proves/Disproves) 
-│   ├── Paragraph 1 (Rank 1, Weight 100)
-│   │   ├── Task 1 (Rank 1, Weight 100)
-│   │   └── Task 2 (Rank 2, Weight 90)
-│   └── Paragraph 2 (Rank 2, Weight 90)
-│       └── Task 3 (Rank 1, Weight 85)
-```
-
-**Documentation:**
-- [HIERARCHICAL_ISSUES_SUMMARY.md](HIERARCHICAL_ISSUES_SUMMARY.md) - Complete overview
-- [HIERARCHICAL_ISSUES_QUICKSTART.md](HIERARCHICAL_ISSUES_QUICKSTART.md) - Quick start guide
-- [db/HIERARCHICAL_ISSUES_GUIDE.md](db/HIERARCHICAL_ISSUES_GUIDE.md) - User guide and API
-
-### Cross-Reference Integration (Issue Consolidation)
-
-**NEW: Prevent issue combinatorial explosion through cross-reference integration**
-
-Link issues to evidence/documents/annexures to automatically detect consolidation opportunities and reduce 120+ issues to ~10-15 well-organized features:
-
-```bash
-# Setup cross-reference tables
-npm run db:xref:setup
-
-# View consolidation opportunities
-npm run db:xref:consolidations
-
-# Generate full consolidation report
-npm run db:xref:report
-
-# Check cross-reference coverage
-npm run db:xref:coverage
-
-# View cross-reference statistics
-npm run db:xref:stats
-
-# Run tests
 npm run test:cross-reference
+npm run test:evidence-completeness
+
+# Validation
+npm run validate-evidence-completeness
+npm run verify-all-cross-references
+npm run validate-dates
+
+# Analysis
+npm run db:lex:demo             # Legal inference demo
+npm run db:grip:stats           # Quality metrics
+npm run db:xref:consolidations  # Find duplicate issues
 ```
 
-**Key Features:**
-- **Automatic Consolidation Detection**: System detects when 2+ issues reference same evidence
-- **Evidence-Based Deduplication**: Group issues by shared references
-- **Consolidation Analytics**: Reports and recommendations for issue reduction
-- **Cross-Reference Tracking**: Link issues to documents, evidence, annexures, timelines
+---
 
-**Impact:**
-- 120+ issues → 10-15 feature issues (90% reduction)
-- Clear evidence mapping for each issue
-- No manual consolidation review needed
-- Evidence-based organization
+## 07-docs/ — Documentation & Guides
 
-**Documentation:**
-- [CROSS_REFERENCE_QUICKSTART.md](CROSS_REFERENCE_QUICKSTART.md) - Get started in 5 minutes
-- [db/CROSS_REFERENCE_GUIDE.md](db/CROSS_REFERENCE_GUIDE.md) - Complete guide with API reference
-- [HIERARCHICAL_ISSUES_SUMMARY.md](HIERARCHICAL_ISSUES_SUMMARY.md) - Integration with hierarchical structure
+Comprehensive documentation organized by purpose.
 
-**Example Usage:**
-```javascript
-const manager = new HierarchicalIssueManager();
-
-// Link issue to evidence
-await manager.addCrossReference(
-  taskId,
-  'evidence',
-  'BANK_TRANSFER_R1M_001',
-  'evidence/bank_records/transfer.pdf',
-  'Bank Transfer Evidence',
-  'Page 3',
-  'proves'
-);
-
-// Automatic consolidation detection when 2+ issues reference same evidence
-// View opportunities: npm run db:xref:consolidations
+```
+07-docs/
+├── legal/                 Legal documents, frameworks, analysis
+│   ├── frameworks/        8 legal branch frameworks
+│   ├── analysis/          Case analysis documents
+│   ├── evidence/          Evidence guides
+│   ├── annexures/         Annexure indexes
+│   └── affidavits/        Final affidavit documentation
+├── strategic/             Legal strategy & burden of proof
+│   ├── arguments/
+│   ├── assessments/
+│   └── burden-of-proof/
+├── technical/             Technical implementation guides
+├── reports/               Status, verification, completion reports
+├── quickstart/            Quick-start guides
+├── formal-specs/          Formal specifications
+├── visualizations/        Critical path & timeline visualizations
+├── GRIP_WORKFLOW.md       Optimal understanding workflows
+└── OPTIMIZATION_QUICKSTART.md
 ```
 
-### Test Suite
+---
+
+## archive/ — Superseded Materials
+
+Historical and superseded materials preserved for reference. Not part of the active corpus.
+
 ```
-Legal Argument (Strategy)
-  └─ Feature Issue (Proves/disproves argument)
-     └─ Paragraph (Fact grouping - ranked by influence)
-        └─ Task Issue (Individual work - ranked by influence)
+archive/
+├── analysis-main-snapshot/  18,600-file snapshot of analysis repo (UPDATED_DRAFTS)
+├── backups/                 Pre-consolidation backups
+├── lex-refinements/         Dated LEX analysis & refinement MDs
+├── legal-analysis-2025-11/  November 2025 legal analysis batch
+├── affidavit-work/          Working affidavit drafts
+├── historical/              Historical analysis
+├── superseded/              Superseded implementations
+└── [other archived materials]
 ```
 
-**Key Features:**
-- ✅ 4-level hierarchy: Argument → Feature → Paragraph → Task
-- ✅ Rank ordering (1 = highest importance)
-- ✅ Weighting system (0-100 = degree of influence)
-- ✅ Aggregate strength calculation for features
-- ✅ Integration with hypergraph for evidence linking
+---
 
-**Documentation:**
-- [Quick Start Guide](HIERARCHICAL_ISSUES_QUICKSTART.md)
-- [User Guide](db/HIERARCHICAL_ISSUES_GUIDE.md)
-- [Implementation Details](HIERARCHICAL_ISSUES_IMPLEMENTATION.md)
-- [Visual Diagrams](HIERARCHICAL_ISSUES_DIAGRAM.md)
+## Core Legal Insight
 
-### Test Suite
+**"Attention IS the lex inference engine"** — The system uses transformer attention mechanisms for legal reasoning. Guilt determination emerges from learned relational patterns in attention weights, not from explicit rules. Multi-head attention provides different legal lenses: causal, intentional, temporal, and normative.
 
-Run the comprehensive test suite:
+---
+
+## Prerequisites
+
+- **Node.js** v20+
+- **PostgreSQL** v12+ (or Neon serverless)
+- **Python** v3.8+
 
 ```bash
-# Run all tests
-npm test
-
-# Run specific test categories
-npm run test:evidence-completeness    # Evidence completeness validation tests
-npm run test:hierarchical-issues      # Hierarchical issue structure tests
-npm run test:cross-reference          # Cross-reference integration tests
-npm run test:validation                # Workflow validation tests
-npm run test:security                  # Security validation tests
-npm run test:json-validation          # JSON file validation
-npm run validate-dates                # Date consistency validation
-npm run validate-file-paths           # File path validation
+npm ci                    # Install JS dependencies
+pip install -r requirements.txt  # Install Python dependencies
+cp .env.example .env      # Configure database connection
 ```
 
-### Legal Attention Engine Tests
+---
 
-Run the legal attention inference tests:
+## Related Repositories
 
-```bash
-python test_legal_attention.py
-```
+| Repository | Purpose |
+|------------|---------|
+| `rzonedevops/analysis` | Provable foreknowledge analysis, forensic audit, routing analysis |
+| `rzonedevops/fincosys` | Financial ecosystem: 122K transactions, fund flow tracing |
+| `9cog/fincosys` | Hypergraph-based financial entity management prototype |
 
-This demonstrates:
-- Multi-head attention captures different legal reasoning modes
-- Guilt emerges from attention patterns, not explicit rules
-- Attention weights form interpretable 'juridical heat maps'
-- Cross-attention handles counterfactual reasoning
-- The system exhibits guilt invariance properties
-- 'Guilty party is always guilty' emerges naturally
+---
 
-## Theory
-
-The attention mechanism doesn't enumerate all possibilities explicitly - it learns a **compressed representation** of the guilt function that generalizes across configurations. This is why attention mechanisms naturally handle:
-
-1. **Variable-length sequences** (different numbers of agents/actions)
-2. **Long-range dependencies** (distant causes)
-3. **Compositional reasoning** (combining multiple factors)
-4. **Learned rather than programmed logic**
-
-The attention scores become a kind of **juridical heat map** - showing which facts are legally salient for which conclusions.
-
-## Files
-
-- `legal_attention_engine.py` - Core attention-based inference engine
-- `legal_scenarios.py` - Complex test scenarios  
-- `legal_attention_visualization.py` - Juridical heat map visualizations
-- `test_legal_attention.py` - Comprehensive test suite
-
-## Requirements
-
-```
-torch>=2.0.0
-numpy>=1.20.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-```
-
-## Citation
-
-This implementation demonstrates the theoretical insight that transformer attention mechanisms can encode legal reasoning, with guilt determination emerging from learned relational patterns rather than explicit rules.
-
-The key theoretical contribution is recognizing that **attention IS the lex inference engine** - the attention weights themselves encode the juridical relationships that determine guilt.
+*Case 2025-137857 | Restructured for optimal cognitive grip | Generated 2026-04-04*

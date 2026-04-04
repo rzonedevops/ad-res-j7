@@ -48,7 +48,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           
           # Run hierarchical parser
-          if node scripts/parse-todo-hierarchically.js todo structured-todo.json; then
+          if node 06-tools/scripts/parse-todo-hierarchically.js archive/todo structured-todo.json; then
             echo "✅ Hierarchical parsing completed successfully" >> $GITHUB_STEP_SUMMARY
             
             # Extract metadata
@@ -543,7 +543,7 @@ jobs:
           echo "🏗️  Generating hierarchical issues from structured TODO data..."
           
           # Run the hierarchical issue generator
-          if node scripts/generate-hierarchical-issues.js structured-todo.json todo-issues.json; then
+          if node 06-tools/scripts/generate-hierarchical-issues.js structured-todo.json todo-issues.json; then
             echo "✅ Hierarchical issue generation completed successfully"
           else
             echo "❌ Issue generator failed with exit code: $?"
@@ -717,7 +717,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Create labels used by this workflow
-          ./scripts/ensure-labels.sh \
+          ./06-tools/scripts/ensure-labels.sh \
             "todo:1d76db:To do items" \
             "enhancement:a2eeef:New feature or request" \
             "task:c5def5:Task item" \
