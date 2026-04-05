@@ -1,0 +1,582 @@
+{
+  "metadata": {
+    "description": "Cross-references between fincosys financial data, comcosys communications, and ad-res-j7 case entities",
+    "generated": "2026-03-19T07:12:57Z",
+    "fincosys_entities_total": 21,
+    "fincosys_accounts_total": 39,
+    "comcosys_records_scanned": 7723
+  },
+  "entity_cross_references": [
+    {
+      "fincosys_code": "AYM",
+      "fincosys_legal_name": "Aymac International",
+      "fincosys_entity_type": "CK",
+      "case_entity_id": null,
+      "case_entity_label": "Aymac International (not yet in ad-res-j7)",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "COR",
+      "fincosys_legal_name": "CORPCLO 2065",
+      "fincosys_entity_type": "CK",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "DJF",
+      "fincosys_legal_name": "Daniel J Faucitt",
+      "fincosys_entity_type": "Individual",
+      "case_entity_id": "PERSON_005",
+      "case_entity_label": "Daniel J Faucitt",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "JF",
+      "fincosys_legal_name": "Jacqui Faucitt",
+      "fincosys_entity_type": "Individual",
+      "case_entity_id": "PERSON_004",
+      "case_entity_label": "Jacqui Faucitt",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "PF",
+      "fincosys_legal_name": "Peter A Faucitt",
+      "fincosys_entity_type": "Individual",
+      "case_entity_id": "PERSON_001",
+      "case_entity_label": "Peter A Faucitt",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "REZ",
+      "fincosys_legal_name": "Rezonance (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": "ORG_008",
+      "case_entity_label": "Rezonance",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "RSA",
+      "fincosys_legal_name": "Regima SA (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "RST",
+      "fincosys_legal_name": "Regima Skin Treatments CC",
+      "fincosys_entity_type": "CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "RWD",
+      "fincosys_legal_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "RZA",
+      "fincosys_legal_name": "Regima Zone Academy (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "RZI",
+      "fincosys_legal_name": "Regima Zone Impact (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "SLG",
+      "fincosys_legal_name": "Strategic Logistics CC",
+      "fincosys_entity_type": "CC",
+      "case_entity_id": "ORG_004",
+      "case_entity_label": "Strategic Logistics CC",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "VVA",
+      "fincosys_legal_name": "Villa Via Arcadia No 2 CC",
+      "fincosys_entity_type": "CC",
+      "case_entity_id": "ORG_005",
+      "case_entity_label": "Villa Via Arcadia",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "PORT",
+      "fincosys_legal_name": "Portfolio Overview",
+      "fincosys_entity_type": "Virtual",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "FFT",
+      "fincosys_legal_name": "Faucitt Family Trust",
+      "fincosys_entity_type": "Trust",
+      "case_entity_id": "TRUST_001",
+      "case_entity_label": "Faucitt Family Trust",
+      "mapped": true
+    },
+    {
+      "fincosys_code": "RZN",
+      "fincosys_legal_name": "Regima Zone (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "RMD",
+      "fincosys_legal_name": "Regima Medic (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "RSZ",
+      "fincosys_legal_name": "Regima Spazone (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "RIS",
+      "fincosys_legal_name": "Regima International Skin Treatments CC",
+      "fincosys_entity_type": "CC",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "REG",
+      "fincosys_legal_name": "Regima (Pty) Ltd",
+      "fincosys_entity_type": "Pty Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "fincosys_code": "KIH",
+      "fincosys_legal_name": "Ketoni Investment Holdings (Pty) Ltd",
+      "fincosys_entity_type": "Pty",
+      "case_entity_id": "ORG_015",
+      "case_entity_label": "Ketoni Investment Holdings",
+      "mapped": true
+    }
+  ],
+  "account_cross_references": [
+    {
+      "account_number": "55270018789",
+      "account_name": "Pete Platinum Acct",
+      "account_type": "Platinum Cheque Account",
+      "fincosys_entity_code": "PF",
+      "fincosys_entity_name": "Peter A Faucitt",
+      "case_entity_id": "PERSON_001",
+      "case_entity_label": "Peter A Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "55270035642",
+      "account_name": "Regima Skin Treatments",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62012990132",
+      "account_name": "Aymac International",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "AYM",
+      "fincosys_entity_name": "Aymac International",
+      "case_entity_id": null,
+      "case_entity_label": "Aymac International (not yet in ad-res-j7)",
+      "mapped": true
+    },
+    {
+      "account_number": "62027933606",
+      "account_name": "Jacqui Platinum",
+      "account_type": "Platinum Cheque Account",
+      "fincosys_entity_code": "JF",
+      "fincosys_entity_name": "Jacqui Faucitt",
+      "case_entity_id": "PERSON_004",
+      "case_entity_label": "Jacqui Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "62060760404",
+      "account_name": "CORPCLO 2065",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "COR",
+      "fincosys_entity_name": "CORPCLO 2065",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "account_number": "62089474309",
+      "account_name": "Daniel J Faucitt",
+      "account_type": "Money On Call",
+      "fincosys_entity_code": "DJF",
+      "fincosys_entity_name": "Daniel J Faucitt",
+      "case_entity_id": "PERSON_005",
+      "case_entity_label": "Daniel J Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "62134839127",
+      "account_name": "Business Money Market",
+      "account_type": "Money On Call",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62323196362",
+      "account_name": "Regima Worldwide Distribution",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RWD",
+      "fincosys_entity_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "account_number": "62423540807",
+      "account_name": "Villa Via Arcadia",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "VVA",
+      "fincosys_entity_name": "Villa Via Arcadia No 2 CC",
+      "case_entity_id": "ORG_005",
+      "case_entity_label": "Villa Via Arcadia",
+      "mapped": true
+    },
+    {
+      "account_number": "62432501494",
+      "account_name": "Strategic Logistics",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "SLG",
+      "fincosys_entity_name": "Strategic Logistics CC",
+      "case_entity_id": "ORG_004",
+      "case_entity_label": "Strategic Logistics CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62462808290",
+      "account_name": "FNB Share Investing",
+      "account_type": "FNB Share Investing",
+      "fincosys_entity_code": "DJF",
+      "fincosys_entity_name": "Daniel J Faucitt",
+      "case_entity_id": "PERSON_005",
+      "case_entity_label": "Daniel J Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "62471764946",
+      "account_name": "FNB Fusion Pw Account",
+      "account_type": "FNB Fusion Pw Account",
+      "fincosys_entity_code": "DJF",
+      "fincosys_entity_name": "Daniel J Faucitt",
+      "case_entity_id": "PERSON_005",
+      "case_entity_label": "Daniel J Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "62593375829",
+      "account_name": "Strategic Savings",
+      "account_type": "Business Savings Account",
+      "fincosys_entity_code": "SLG",
+      "fincosys_entity_name": "Strategic Logistics CC",
+      "case_entity_id": "ORG_004",
+      "case_entity_label": "Strategic Logistics CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62707290003",
+      "account_name": "Regima Zone Impact",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RZI",
+      "fincosys_entity_name": "Regima Zone Impact (Pty) Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "account_number": "62707304606",
+      "account_name": "Regima Zone Academy",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RZA",
+      "fincosys_entity_name": "Regima Zone Academy (Pty) Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "account_number": "62707308252",
+      "account_name": "Regima SA",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "62707312310",
+      "account_name": "Rezonance",
+      "account_type": "Gold Business Account",
+      "fincosys_entity_code": "REZ",
+      "fincosys_entity_name": "Rezonance (Pty) Ltd",
+      "case_entity_id": "ORG_008",
+      "case_entity_label": "Rezonance",
+      "mapped": true
+    },
+    {
+      "account_number": "62742245617",
+      "account_name": "Money Maximiser",
+      "account_type": "Money Maximiser",
+      "fincosys_entity_code": "PF",
+      "fincosys_entity_name": "Peter A Faucitt",
+      "case_entity_id": "PERSON_001",
+      "case_entity_label": "Peter A Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "62812835744",
+      "account_name": "Money On Call",
+      "account_type": "Money On Call",
+      "fincosys_entity_code": "VVA",
+      "fincosys_entity_name": "Villa Via Arcadia No 2 CC",
+      "case_entity_id": "ORG_005",
+      "case_entity_label": "Villa Via Arcadia",
+      "mapped": true
+    },
+    {
+      "account_number": "62826022577",
+      "account_name": "Money On Call",
+      "account_type": "Money On Call",
+      "fincosys_entity_code": "REZ",
+      "fincosys_entity_name": "Rezonance (Pty) Ltd",
+      "case_entity_id": "ORG_008",
+      "case_entity_label": "Rezonance",
+      "mapped": true
+    },
+    {
+      "account_number": "62836164880",
+      "account_name": "Worldwide Savings",
+      "account_type": "Business Savings Account",
+      "fincosys_entity_code": "RWD",
+      "fincosys_entity_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "account_number": "62839603819",
+      "account_name": "Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62839603827",
+      "account_name": "Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62839603835",
+      "account_name": "Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "SLG",
+      "fincosys_entity_name": "Strategic Logistics CC",
+      "case_entity_id": "ORG_004",
+      "case_entity_label": "Strategic Logistics CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62839612323",
+      "account_name": "CFC Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RWD",
+      "fincosys_entity_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "account_number": "62839612331",
+      "account_name": "Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RWD",
+      "fincosys_entity_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "account_number": "62839612349",
+      "account_name": "Business Global Account",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RWD",
+      "fincosys_entity_name": "Regima Worldwide Distribution (Pty) Ltd",
+      "case_entity_id": "ORG_001",
+      "case_entity_label": "Regima Worldwide Distribution",
+      "mapped": true
+    },
+    {
+      "account_number": "62896473974",
+      "account_name": "Trust Account",
+      "account_type": "Trust Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "62896474972",
+      "account_name": "Business Call Account",
+      "account_type": "Business Call Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "80041151533",
+      "account_name": "eBucks For Business",
+      "account_type": "eBucks Rewards Account",
+      "fincosys_entity_code": "PORT",
+      "fincosys_entity_name": "Portfolio Overview",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "account_number": "62896474196",
+      "account_name": "RSA Current Account",
+      "account_type": "Platinum Business Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "62897307015",
+      "account_name": "RSA Trust Account 7015",
+      "account_type": "Trust Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "62897307031",
+      "account_name": "RSA Trust Account 7031",
+      "account_type": "Trust Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "62897307073",
+      "account_name": "RSA Trust Account 7073",
+      "account_type": "Trust Account",
+      "fincosys_entity_code": "RSA",
+      "fincosys_entity_name": "Regima SA (Pty) Ltd",
+      "case_entity_id": "ORG_006",
+      "case_entity_label": "Regima SA",
+      "mapped": true
+    },
+    {
+      "account_number": "63176874808",
+      "account_name": "Regima Zone Gold Business",
+      "account_type": "Gold Business Account",
+      "fincosys_entity_code": "RZN",
+      "fincosys_entity_name": "Regima Zone (Pty) Ltd",
+      "case_entity_id": null,
+      "case_entity_label": null,
+      "mapped": false
+    },
+    {
+      "account_number": "4483810003374006",
+      "account_name": "FNB Private Wealth Credit Card",
+      "account_type": "Credit Card",
+      "fincosys_entity_code": "PF",
+      "fincosys_entity_name": "Peter A Faucitt",
+      "case_entity_id": "PERSON_001",
+      "case_entity_label": "Peter A Faucitt",
+      "mapped": true
+    },
+    {
+      "account_number": "4790812427545003",
+      "account_name": "Business Gold Credit Card",
+      "account_type": "Credit Card",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "8812710044279003",
+      "account_name": "Business Credit Card",
+      "account_type": "Credit Card",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    },
+    {
+      "account_number": "62839609635",
+      "account_name": "Business Global Account (Old)",
+      "account_type": "Business Global Account",
+      "fincosys_entity_code": "RST",
+      "fincosys_entity_name": "Regima Skin Treatments CC",
+      "case_entity_id": "ORG_002",
+      "case_entity_label": "Regima Skin Treatments CC",
+      "mapped": true
+    }
+  ],
+  "comcosys_message_counts_by_entity": {
+    "PERSON_004": 1588,
+    "PERSON_005": 656,
+    "STAFF_TREV": 457,
+    "STAFF_EMMA": 244,
+    "PERSON_008": 191,
+    "PERSON_001": 164,
+    "PERSON_002": 98,
+    "PERSON_037": 93,
+    "PERSON_007": 68
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "title": "Case 2025-137857: Revenue Stream Hijacking & Corporate Fraud Analysis",
+    "created": 1768765833.2724469,
+    "last_updated": 1768766108.873599,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "trust_structure",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "corporate_ecosystem",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "revenue_hijacking",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "coordination_pattern",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "email_fraud",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "villa_via_extraction",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "evidence_classification",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "void_ab_initio",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "defense_strategy",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "timeline_events",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "conclusion",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "Case 2025-137857: Revenue Stream Hijacking & Corporate Fraud Analysis",
+      "summary": "Title slide introducing the case analysis with a professional legal/corporate theme.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "trust_structure",
+      "title": "Faucitt Family Trust: Unusual Power Structure Enables Control Without Accountability",
+      "summary": "Visualizes the Faucitt Family Trust structure, highlighting the unusual powers of Trustees and lack of powers for Beneficiaries.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "corporate_ecosystem",
+      "title": "RegimA Corporate Structure: Six Entities with Complex Ownership and Control Relationships",
+      "summary": "Network diagram showing the six interconnected entities in the RegimA ecosystem and their ownership/control relationships.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "revenue_hijacking",
+      "title": "Revenue Diversion Timeline: Systematic Hijacking of Income Streams Over 6 Months",
+      "summary": "Timeline visualization of the three-phase revenue stream hijacking pattern from March to August 2025.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "coordination_pattern",
+      "title": "Coordinated Fraud Pattern: Peter, Rynette, and Associates Acted in Synchronized Fashion",
+      "summary": "Diagram illustrating the multi-actor coordination between Peter, Rynette, and Bantjies, showing synchronized actions.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "email_fraud",
+      "title": "Email Control Fraud: Rynette's Control of pete@regima.com Enabled Systematic Hijacking",
+      "summary": "Visualizes the email impersonation scheme where Rynette controlled Peter's email to issue fraudulent directives.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "villa_via_extraction",
+      "title": "Villa Via Profit Extraction: 86% Rent Margins While \"Group\" Companies Bear All Expenses",
+      "summary": "Comparison diagram showing the deceptive \"Group\" framing used to extract profits via Villa Via while dumping expenses on RWW.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "evidence_classification",
+      "title": "Evidence Strength Analysis: 75 Points Across Three Categories of Proof",
+      "summary": "Pyramid diagram classifying evidence into Irrefutable Proof, Strong Evidence, and Circumstantial/Inferred categories.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "void_ab_initio",
+      "title": "Void Ab Initio: Documentary Evidence Proves False Statements in Founding Affidavit",
+      "summary": "Visual breakdown of four key false claims in the founding affidavit refuted by documentary evidence.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "defense_strategy",
+      "title": "Defense Strategy: Build on Irrefutable Proof, Avoid Speculation, Maintain Professional Tone",
+      "summary": "Strategic roadmap showing the defense approach based on irrefutable proof and neutral language.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "timeline_events",
+      "title": "Complete Timeline: From Trust Creation (2013) to Interdict Filing (2025)",
+      "summary": "Comprehensive vertical timeline showing key events from 2013 to 2025, highlighting the premeditated attack pattern.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "conclusion",
+      "title": "Summary: Documentary Evidence Proves Coordinated Revenue Hijacking and Fraud Upon Court",
+      "summary": "Summary dashboard presenting proven facts, legal implications, and the path forward.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

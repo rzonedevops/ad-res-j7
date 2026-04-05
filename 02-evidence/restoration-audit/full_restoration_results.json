@@ -1,0 +1,1918 @@
+{
+  "restored": [
+    {
+      "file": "docs/conspiracy_network.png",
+      "size": 174121
+    },
+    {
+      "file": "docs/data-model-analysis.md",
+      "size": 4272
+    },
+    {
+      "file": "docs/delinquent-director-application.md",
+      "size": 16640
+    },
+    {
+      "file": "docs/entities/BANK_ACCOUNT_001.md",
+      "size": 337
+    },
+    {
+      "file": "docs/entities/BANK_ACCOUNT_002.md",
+      "size": 337
+    },
+    {
+      "file": "docs/entities/BANK_ACCOUNT_003.md",
+      "size": 337
+    },
+    {
+      "file": "docs/entities/ORG_011.md",
+      "size": 800
+    },
+    {
+      "file": "docs/entities/PERSON_015.md",
+      "size": 746
+    },
+    {
+      "file": "docs/entities/README.md",
+      "size": 1006
+    },
+    {
+      "file": "docs/entities/organizations/ORG_001.md",
+      "size": 540
+    },
+    {
+      "file": "docs/entities/organizations/ORG_002.md",
+      "size": 513
+    },
+    {
+      "file": "docs/entities/organizations/ORG_003.md",
+      "size": 517
+    },
+    {
+      "file": "docs/entities/organizations/ORG_004.md",
+      "size": 516
+    },
+    {
+      "file": "docs/entities/organizations/ORG_005.md",
+      "size": 297
+    },
+    {
+      "file": "docs/entities/organizations/ORG_006.md",
+      "size": 408
+    },
+    {
+      "file": "docs/entities/organizations/ORG_007.md",
+      "size": 378
+    },
+    {
+      "file": "docs/entities/organizations/ORG_008.md",
+      "size": 484
+    },
+    {
+      "file": "docs/entities/organizations/ORG_009.md",
+      "size": 531
+    },
+    {
+      "file": "docs/entities/organizations/ORG_010.md",
+      "size": 395
+    },
+    {
+      "file": "docs/entities/organizations/ORG_011.md",
+      "size": 480
+    },
+    {
+      "file": "docs/entities/organizations/ORG_012.md",
+      "size": 462
+    },
+    {
+      "file": "docs/entities/organizations/ORG_013.md",
+      "size": 346
+    },
+    {
+      "file": "docs/entities/organizations/ORG_014.md",
+      "size": 344
+    },
+    {
+      "file": "docs/entities/organizations/ORG_015.md",
+      "size": 313
+    },
+    {
+      "file": "docs/entities/organizations/ORG_016.md",
+      "size": 308
+    },
+    {
+      "file": "docs/entities/organizations/README.md",
+      "size": 661
+    },
+    {
+      "file": "docs/entities/persons/PERSON_001.md",
+      "size": 1248
+    },
+    {
+      "file": "docs/entities/persons/PERSON_002.md",
+      "size": 967
+    },
+    {
+      "file": "docs/entities/persons/PERSON_003.md",
+      "size": 839
+    },
+    {
+      "file": "docs/entities/persons/PERSON_004.md",
+      "size": 624
+    },
+    {
+      "file": "docs/entities/persons/PERSON_005.md",
+      "size": 811
+    },
+    {
+      "file": "docs/entities/persons/PERSON_006.md",
+      "size": 357
+    },
+    {
+      "file": "docs/entities/persons/PERSON_007.md",
+      "size": 1447
+    },
+    {
+      "file": "docs/entities/persons/PERSON_008.md",
+      "size": 613
+    },
+    {
+      "file": "docs/entities/persons/PERSON_009.md",
+      "size": 524
+    },
+    {
+      "file": "docs/entities/persons/PERSON_010.md",
+      "size": 499
+    },
+    {
+      "file": "docs/entities/persons/PERSON_011.md",
+      "size": 446
+    },
+    {
+      "file": "docs/entities/persons/PERSON_012.md",
+      "size": 450
+    },
+    {
+      "file": "docs/entities/persons/PERSON_013.md",
+      "size": 536
+    },
+    {
+      "file": "docs/entities/persons/README.md",
+      "size": 502
+    },
+    {
+      "file": "docs/entity-profiles/bank_001-unknown-account.md",
+      "size": 1733
+    },
+    {
+      "file": "docs/entity-profiles/bank_account_001-regima-skin-savings-account.md",
+      "size": 2513
+    },
+    {
+      "file": "docs/entity-profiles/bank_account_002-villa-via-savings-acc.md",
+      "size": 2489
+    },
+    {
+      "file": "docs/entity-profiles/bank_account_003-strategic-savings-acc.md",
+      "size": 2489
+    },
+    {
+      "file": "docs/entity-profiles/index.md",
+      "size": 2488
+    },
+    {
+      "file": "docs/entity-profiles/org_001-regima-worldwide-distribution-pty-ltd.md",
+      "size": 7869
+    },
+    {
+      "file": "docs/entity-profiles/org_002-regima-skin-treatments-cc.md",
+      "size": 7442
+    },
+    {
+      "file": "docs/entity-profiles/org_003-regima-zone-ltd.md",
+      "size": 2391
+    },
+    {
+      "file": "docs/entity-profiles/org_004-strategic-logistics-group.md",
+      "size": 6153
+    },
+    {
+      "file": "docs/entity-profiles/org_005-villa-via.md",
+      "size": 4418
+    },
+    {
+      "file": "docs/entity-profiles/org_006-regima-sa.md",
+      "size": 3949
+    },
+    {
+      "file": "docs/entity-profiles/org_008-rezonance-pty-ltd.md",
+      "size": 6971
+    },
+    {
+      "file": "docs/entity-profiles/org_009-adderory-pty-ltd.md",
+      "size": 3574
+    },
+    {
+      "file": "docs/entity-profiles/org_010-adderory-skin-pty-ltd.md",
+      "size": 3111
+    },
+    {
+      "file": "docs/entity-profiles/person_001-peter-andrew-faucitt.md",
+      "size": 3868
+    },
+    {
+      "file": "docs/entity-profiles/person_002-rynette-farrar.md",
+      "size": 4231
+    },
+    {
+      "file": "docs/entity-profiles/person_004-jacqueline-faucitt.md",
+      "size": 3816
+    },
+    {
+      "file": "docs/entity-profiles/person_004-kent.md",
+      "size": 494
+    },
+    {
+      "file": "docs/entity-profiles/person_005-daniel-james-faucitt.md",
+      "size": 5970
+    },
+    {
+      "file": "docs/entity-profiles/person_005-eldridge-davids.md",
+      "size": 629
+    },
+    {
+      "file": "docs/entity-profiles/person_006-linda.md",
+      "size": 1493
+    },
+    {
+      "file": "docs/entity-profiles/person_007-danie-bantjies.md",
+      "size": 5921
+    },
+    {
+      "file": "docs/entity-profiles/person_008-kayla-pretorius.md",
+      "size": 2514
+    },
+    {
+      "file": "docs/entity-profiles/person_008-kayla.md",
+      "size": 1506
+    },
+    {
+      "file": "docs/entity-profiles/person_009-gee.md",
+      "size": 3347
+    },
+    {
+      "file": "docs/entity-profiles/person_010-bernadine-wright.md",
+      "size": 3655
+    },
+    {
+      "file": "docs/entity-profiles/person_011-chantal.md",
+      "size": 3229
+    },
+    {
+      "file": "docs/entity-profiles/person_012-jax.md",
+      "size": 3088
+    },
+    {
+      "file": "docs/entity-profiles/trust_001-family-trust.md",
+      "size": 4698
+    },
+    {
+      "file": "docs/events/EVENT_062.md",
+      "size": 85807
+    },
+    {
+      "file": "docs/events/EVENT_063.md",
+      "size": 41783
+    },
+    {
+      "file": "docs/events/EVENT_070.md",
+      "size": 2460
+    },
+    {
+      "file": "docs/events/EVENT_071.md",
+      "size": 2240
+    },
+    {
+      "file": "docs/events/EVENT_072.md",
+      "size": 2239
+    },
+    {
+      "file": "docs/events/EVENT_073.md",
+      "size": 2113
+    },
+    {
+      "file": "docs/events/EVENT_074.md",
+      "size": 2321
+    },
+    {
+      "file": "docs/events/EVENT_075.md",
+      "size": 2466
+    },
+    {
+      "file": "docs/events/EVENT_076.md",
+      "size": 2805
+    },
+    {
+      "file": "docs/events/EVENT_077.md",
+      "size": 2522
+    },
+    {
+      "file": "docs/events/EVENT_078.md",
+      "size": 1323
+    },
+    {
+      "file": "docs/events/EVENT_079.md",
+      "size": 1258
+    },
+    {
+      "file": "docs/events/EVENT_080.md",
+      "size": 1159
+    },
+    {
+      "file": "docs/events/EVENT_081.md",
+      "size": 1220
+    },
+    {
+      "file": "docs/events/EVENT_082.md",
+      "size": 1264
+    },
+    {
+      "file": "docs/events/EVENT_083.md",
+      "size": 1130
+    },
+    {
+      "file": "docs/events/EVENT_084.md",
+      "size": 1230
+    },
+    {
+      "file": "docs/events/EVENT_085.md",
+      "size": 1198
+    },
+    {
+      "file": "docs/events/EVT-063.md",
+      "size": 127990
+    },
+    {
+      "file": "docs/events/EVT-064.md",
+      "size": 90808
+    },
+    {
+      "file": "docs/events/EVT-065.md",
+      "size": 96980
+    },
+    {
+      "file": "docs/events/EVT-066.md",
+      "size": 109943
+    },
+    {
+      "file": "docs/events/EVT-067.md",
+      "size": 57025
+    },
+    {
+      "file": "docs/events/EVT-068.md",
+      "size": 83764
+    },
+    {
+      "file": "docs/events/EVT-069.md",
+      "size": 49560
+    },
+    {
+      "file": "docs/events/README.md",
+      "size": 1033
+    },
+    {
+      "file": "docs/events/timeline.md",
+      "size": 5119
+    },
+    {
+      "file": "docs/evidence-index-2025-12-19.md",
+      "size": 9267
+    },
+    {
+      "file": "docs/evidence-index-comprehensive-2025-12-23.md",
+      "size": 7653
+    },
+    {
+      "file": "docs/evidence-index-comprehensive.md",
+      "size": 4396
+    },
+    {
+      "file": "docs/evidence-index-generated.md",
+      "size": 226
+    },
+    {
+      "file": "docs/evidence-quick-reference.md",
+      "size": 6381
+    },
+    {
+      "file": "docs/evidence/README.md",
+      "size": 5305
+    },
+    {
+      "file": "docs/evidence/README.md.backup_2025_12_30",
+      "size": 4506
+    },
+    {
+      "file": "docs/evidence/README_ENHANCED_2025_12_30.md",
+      "size": 22566
+    },
+    {
+      "file": "docs/evidence/evidence_index.md",
+      "size": 3181
+    },
+    {
+      "file": "docs/evidence_destruction_timeline.mmd",
+      "size": 355
+    },
+    {
+      "file": "docs/evidence_destruction_timeline.png",
+      "size": 126765
+    },
+    {
+      "file": "docs/evidence_index.md",
+      "size": 2122
+    },
+    {
+      "file": "docs/filings/AFFIDAVIT_DRAFTS_COMPARISON.md",
+      "size": 16173
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size": 16582
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_09.md",
+      "size": 16819
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10.md",
+      "size": 17157
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 18403
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size": 18528
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_SF9_INTEGRATED_2025_12_09.md",
+      "size": 16811
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_STRUCTURE.md",
+      "size": 35090
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V2_FRAUD_FOCUS.md",
+      "size": 7178
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V3_COMPLETE.md",
+      "size": 14296
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V4_CORRECTED.md",
+      "size": 4155
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V5_FINAL.md",
+      "size": 12665
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V6_CURATORSHIP_CONSPIRACY.md",
+      "size": 18325
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V7_FINAL_COMPLETE.md",
+      "size": 15846
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V8_ENHANCED.md",
+      "size": 15846
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V8_EVIDENCE_ENHANCED.md",
+      "size": 15846
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V9_FINAL_2025_12_07.md",
+      "size": 16461
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_ENHANCED_2025_11_28.md",
+      "size": 10496
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_07.md",
+      "size": 17837
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size": 17366
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size": 17476
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_20251203.md",
+      "size": 10496
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_11_27.md",
+      "size": 5109
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_11_28.md",
+      "size": 10846
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_04.md",
+      "size": 15952
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_05.md",
+      "size": 17231
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_06.md",
+      "size": 17245
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10.md",
+      "size": 17951
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 19197
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size": 19322
+    },
+    {
+      "file": "docs/filings/CIPC_TIMELINE_VERIFIED.md",
+      "size": 8626
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size": 6942
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size": 7052
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10.md",
+      "size": 7599
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10_REFINED_20251213.md",
+      "size": 7717
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_05.md",
+      "size": 6821
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_06.md",
+      "size": 6821
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_ENHANCED_2025_12_07.md",
+      "size": 7417
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_REFINED_2025_11_28.md",
+      "size": 11616
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_SUMMARY_20251203.md",
+      "size": 14398
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_TORTURE_PERJURY_FRAUD.md",
+      "size": 11303
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_V2_ENHANCED.md",
+      "size": 11303
+    },
+    {
+      "file": "docs/filings/FILINGS_REFINEMENT_SUMMARY_20251217.json",
+      "size": 1235
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_05.md",
+      "size": 5557
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_06.md",
+      "size": 5557
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10.md",
+      "size": 5867
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 7529
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size": 7654
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_ENHANCED_2025_11_28.md",
+      "size": 11456
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_11_27.md",
+      "size": 5862
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_11_28.md",
+      "size": 11776
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_05.md",
+      "size": 13132
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_06.md",
+      "size": 13132
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10.md",
+      "size": 13510
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 14756
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size": 14881
+    },
+    {
+      "file": "docs/filings/civil/ANSWERING_AFFIDAVIT_REFINED_2025_12_10.md",
+      "size": 17495
+    },
+    {
+      "file": "docs/filings/civil/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 18741
+    },
+    {
+      "file": "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+      "size": 15758
+    },
+    {
+      "file": "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+      "size": 13284
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+      "size": 4839
+    },
+    {
+      "file": "docs/filings/criminal/popia_complaint.md",
+      "size": 6667
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+      "size": 5665
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 19197
+    },
+    {
+      "file": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 7529
+    },
+    {
+      "file": "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size": 15652
+    },
+    {
+      "file": "docs/filings/regulatory/regulatory_complaints.md",
+      "size": 15334
+    },
+    {
+      "file": "docs/financial_impact_summary.md",
+      "size": 1635
+    },
+    {
+      "file": "docs/gh_pages_analysis.md",
+      "size": 3381
+    },
+    {
+      "file": "docs/index.html",
+      "size": 12035
+    },
+    {
+      "file": "docs/index_2025_12_23.md",
+      "size": 6348
+    },
+    {
+      "file": "docs/index_improved.md",
+      "size": 8298
+    },
+    {
+      "file": "docs/index_improved_2025_12_25.md",
+      "size": 5722
+    },
+    {
+      "file": "docs/index_updated_2025_12_05.md",
+      "size": 9566
+    },
+    {
+      "file": "docs/legal-framework-evidence-based.md",
+      "size": 15124
+    },
+    {
+      "file": "docs/legal-framework.md",
+      "size": 14001
+    },
+    {
+      "file": "docs/letter-of-demand-refutation.md",
+      "size": 8762
+    },
+    {
+      "file": "docs/oppression-application.md",
+      "size": 15924
+    },
+    {
+      "file": "docs/s162-delinquent-director-application-evidence-based.md",
+      "size": 12776
+    },
+    {
+      "file": "docs/s162_delinquent_director_application_full_text.md",
+      "size": 12349
+    },
+    {
+      "file": "docs/s163-oppression-not-pursued.md",
+      "size": 4537
+    },
+    {
+      "file": "docs/strategic_position_slide_content.md",
+      "size": 10004
+    },
+    {
+      "file": "docs/timeline_enhanced_2025_12_05.md",
+      "size": 18539
+    }
+  ],
+  "exists": [
+    {
+      "file": "docs/BURDEN_OF_PROOF_ENHANCED_2025_12_04.json",
+      "size": 72818
+    },
+    {
+      "file": "docs/CHANGES_SUMMARY.md",
+      "size": 10323
+    },
+    {
+      "file": "docs/COMBINED_LEGAL_NARRATIVE.md",
+      "size": 6022
+    },
+    {
+      "file": "docs/CONSPIRACY_EVIDENCE_CROSS_REFERENCE_R18_75M_TIMELINE.md",
+      "size": 25527
+    },
+    {
+      "file": "docs/CORRECTION_AND_NEW_FINDINGS_2025-11-19.md",
+      "size": 19329
+    },
+    {
+      "file": "docs/EMAIL_ARCHIVE_EVIDENCE_REPORT_2025-11-19.md",
+      "size": 32120
+    },
+    {
+      "file": "docs/ENHANCEMENT_RECOMMENDATIONS.md",
+      "size": 5465
+    },
+    {
+      "file": "docs/EVIDENCE_DOCUMENTATION_REPORT.md",
+      "size": 9488
+    },
+    {
+      "file": "docs/EVIDENCE_INDEX_COMPREHENSIVE_2025_12_15.md",
+      "size": 10017
+    },
+    {
+      "file": "docs/EVIDENCE_MAPPING_LETTER_OF_DEMAND.md",
+      "size": 19520
+    },
+    {
+      "file": "docs/EVIDENCE_SUMMARY_FRAUD_INVESTIGATION.md",
+      "size": 10419
+    },
+    {
+      "file": "docs/EVIDENCE_SUMMARY_R500K_FABRICATION.md",
+      "size": 6134
+    },
+    {
+      "file": "docs/EVIDENCE_SUMMARY_R500K_FABRICATION_V2.md",
+      "size": 4889
+    },
+    {
+      "file": "docs/EXECUTIVE_SUMMARY.md",
+      "size": 15981
+    },
+    {
+      "file": "docs/EXECUTIVE_SUMMARY_2025-11-17.md",
+      "size": 7998
+    },
+    {
+      "file": "docs/EXECUTIVE_SUMMARY_2025_12_06.md",
+      "size": 18947
+    },
+    {
+      "file": "docs/FFT_KETONI_INVESTMENT_TIMELINE_V48.md",
+      "size": 8406
+    },
+    {
+      "file": "docs/FINANCIAL_IMPACT_SCHEMA_DESIGN.md",
+      "size": 18101
+    },
+    {
+      "file": "docs/FORENSIC_CAUSAL_MAP.md",
+      "size": 5331
+    },
+    {
+      "file": "docs/FRAUD_EVIDENCE_REPORT_2019_ACCOUNTS.md",
+      "size": 4019
+    },
+    {
+      "file": "docs/IMPLEMENTATION_SUMMARY.md",
+      "size": 10532
+    },
+    {
+      "file": "docs/IMPROVEMENTS_AND_RECOMMENDATIONS.md",
+      "size": 26086
+    },
+    {
+      "file": "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-14.md",
+      "size": 3374
+    },
+    {
+      "file": "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-15.md",
+      "size": 12627
+    },
+    {
+      "file": "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-17.md",
+      "size": 7701
+    },
+    {
+      "file": "docs/IMPROVEMENTS_REPORT.md",
+      "size": 3671
+    },
+    {
+      "file": "docs/LEGAL_FILINGS_IMPROVEMENTS_2025_12_04.md",
+      "size": 12229
+    },
+    {
+      "file": "docs/LEGAL_FILINGS_IMPROVEMENTS_2025_12_06.md",
+      "size": 2147
+    },
+    {
+      "file": "docs/LEGAL_FILINGS_STATUS_SUMMARY_2025_12_25.md",
+      "size": 7340
+    },
+    {
+      "file": "docs/LEGAL_FILINGS_SUMMARY_2025_12_10.md",
+      "size": 5380
+    },
+    {
+      "file": "docs/LEGAL_FILINGS_SUMMARY_2025_12_11.md",
+      "size": 8155
+    },
+    {
+      "file": "docs/NEW_EVIDENCE_INTEGRATION_SUMMARY_2025_12_08.md",
+      "size": 16717
+    },
+    {
+      "file": "docs/OPTIMIZATION_REPORT_2025_12_09.md",
+      "size": 12067
+    },
+    {
+      "file": "docs/OPTIMIZATION_SUMMARY_FINAL.md",
+      "size": 11273
+    },
+    {
+      "file": "docs/PAGES_README.md",
+      "size": 5300
+    },
+    {
+      "file": "docs/PHASE_2_COMPLETION_SUMMARY.md",
+      "size": 7950
+    },
+    {
+      "file": "docs/PHASE_3_COMPLETION_SUMMARY.md",
+      "size": 12596
+    },
+    {
+      "file": "docs/R18_75M_KETONI_PAYOUT_CENTRAL_MOTIVE_ANALYSIS.md",
+      "size": 13255
+    },
+    {
+      "file": "docs/README.md",
+      "size": 3230
+    },
+    {
+      "file": "docs/REFINED_DATA_MODELS_SUMMARY.md",
+      "size": 12025
+    },
+    {
+      "file": "docs/REFINEMENT_ANALYSIS_REPORT_2025_12_04.json",
+      "size": 641
+    },
+    {
+      "file": "docs/REFINEMENT_EXECUTIVE_REPORT.md",
+      "size": 13138
+    },
+    {
+      "file": "docs/REFINEMENT_EXECUTIVE_SUMMARY_2025-11-15.md",
+      "size": 9078
+    },
+    {
+      "file": "docs/REFINEMENT_EXECUTIVE_SUMMARY_2025_12_09.md",
+      "size": 12406
+    },
+    {
+      "file": "docs/REFINEMENT_REPORT_2025-11-13.md",
+      "size": 17000
+    },
+    {
+      "file": "docs/REFINEMENT_REPORT_2025_12_11.md",
+      "size": 14590
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY.md",
+      "size": 15830
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY_2025-11-14.md",
+      "size": 9026
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY_2025-11-16.md",
+      "size": 2144
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY_2025_12_06.md",
+      "size": 6582
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY_2025_12_08.md",
+      "size": 12866
+    },
+    {
+      "file": "docs/REFINEMENT_SUMMARY_2025_12_10.md",
+      "size": 7741
+    },
+    {
+      "file": "docs/REFUTATION_OF_DEMAND_LETTER_KL0034.md",
+      "size": 12262
+    },
+    {
+      "file": "docs/RELATIONS_UPDATE_2025_12_18.md",
+      "size": 4066
+    },
+    {
+      "file": "docs/RELATIONS_UPDATE_2025_12_19.md",
+      "size": 5965
+    },
+    {
+      "file": "docs/REVENUE_HIJACKING_NEW_INSIGHTS_V50.md",
+      "size": 15995
+    },
+    {
+      "file": "docs/STRATEGIC_RESPONSE_FRAMEWORK.md",
+      "size": 6119
+    },
+    {
+      "file": "docs/TRUST_CAPTURE_MAP.md",
+      "size": 4798
+    },
+    {
+      "file": "docs/UNKNOWN_TRANSACTIONS_SMOKING_GUN.md",
+      "size": 13797
+    },
+    {
+      "file": "docs/VERIFIED_ENTITY_SUMMARY_V47.md",
+      "size": 12934
+    },
+    {
+      "file": "docs/VERIFIED_EVENT_TIMELINE_V47.md",
+      "size": 7480
+    },
+    {
+      "file": "docs/_layouts/default.html",
+      "size": 338
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_AND_IMPROVEMENTS_REPORT_2025-11-16.md",
+      "size": 15202
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_AND_IMPROVEMENTS_REPORT_2025-11-19.md",
+      "size": 14549
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_AND_REFINEMENT_REPORT_2025_11_23.md",
+      "size": 12523
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_AND_REFINEMENT_REPORT_2025_11_24.md",
+      "size": 16298
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_REFINEMENTS.md",
+      "size": 16694
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_SUMMARY_2025_11_20.md",
+      "size": 11615
+    },
+    {
+      "file": "docs/analysis/ANALYSIS_SUMMARY_2025_11_24.md",
+      "size": 6574
+    },
+    {
+      "file": "docs/analysis/BANTJIES_DEBT_PAYMENT_SCHEDULE_ANALYSIS.md",
+      "size": 5529
+    },
+    {
+      "file": "docs/analysis/BURDEN_OF_PROOF_REPORT_2025_12_03.md",
+      "size": 3406
+    },
+    {
+      "file": "docs/analysis/COMPREHENSIVE_ANALYSIS_AND_IMPROVEMENTS_REPORT_2025_11_19.md",
+      "size": 22280
+    },
+    {
+      "file": "docs/analysis/COMPREHENSIVE_ANALYSIS_SUMMARY_2025_11_20.md",
+      "size": 11737
+    },
+    {
+      "file": "docs/analysis/CORRECTED_LEGAL_CORRESPONDENCE_ANALYSIS_2025_11_26.md",
+      "size": 10676
+    },
+    {
+      "file": "docs/analysis/CRITICAL_DOCUMENTS_ANALYSIS.md",
+      "size": 25401
+    },
+    {
+      "file": "docs/analysis/CROSS_REFERENCE_ANALYSIS.md",
+      "size": 9800
+    },
+    {
+      "file": "docs/analysis/CURATORSHIP_CONSPIRACY_ANALYSIS_REPORT.md",
+      "size": 8058
+    },
+    {
+      "file": "docs/analysis/CURATORSHIP_FINANCIAL_MOTIVE_ANALYSIS.md",
+      "size": 6783
+    },
+    {
+      "file": "docs/analysis/CURATORSHIP_SETUP_PATTERN_ANALYSIS.md",
+      "size": 5137
+    },
+    {
+      "file": "docs/analysis/CURRENT_DATA_MODEL_ANALYSIS.md",
+      "size": 7111
+    },
+    {
+      "file": "docs/analysis/CURRENT_MODEL_ANALYSIS_2025_11_19.md",
+      "size": 4750
+    },
+    {
+      "file": "docs/analysis/DATA_MODEL_ANALYSIS_2025_11_25.md",
+      "size": 3919
+    },
+    {
+      "file": "docs/analysis/EVIDENCE_COVERAGE_ANALYSIS.md",
+      "size": 495
+    },
+    {
+      "file": "docs/analysis/FINAL_ANALYSIS_REPORT_2025_11_20.md",
+      "size": 8637
+    },
+    {
+      "file": "docs/analysis/FRAUDULENT_SHELL_COMPANY_ANALYSIS.md",
+      "size": 6830
+    },
+    {
+      "file": "docs/analysis/HUMAN_RIGHTS_VIOLATIONS_ANALYSIS.md",
+      "size": 14446
+    },
+    {
+      "file": "docs/analysis/JURISTIC_TIMELINE_MATRIX.md",
+      "size": 5335
+    },
+    {
+      "file": "docs/analysis/LEGAL_FRAMEWORK_ANALYSIS_REPORT.md",
+      "size": 15618
+    },
+    {
+      "file": "docs/analysis/NETWORK_ANALYSIS.md",
+      "size": 12242
+    },
+    {
+      "file": "docs/analysis/NEW_EVIDENCE_ANALYSIS_2025_12_08.md",
+      "size": 13063
+    },
+    {
+      "file": "docs/analysis/NEW_LEGAL_CORRESPONDENCE_ANALYSIS_2025_11_26.md",
+      "size": 11330
+    },
+    {
+      "file": "docs/analysis/POWERPOINT_SALES_WORKFLOW_ANALYSIS_2025_12_08.md",
+      "size": 11080
+    },
+    {
+      "file": "docs/analysis/README.md",
+      "size": 1621
+    },
+    {
+      "file": "docs/analysis/REGIMASA_2019_FINANCIAL_STATEMENTS_ANALYSIS.md",
+      "size": 14483
+    },
+    {
+      "file": "docs/analysis/SEQUENTIAL_INTERDICTS_PATTERN_ANALYSIS.md",
+      "size": 16520
+    },
+    {
+      "file": "docs/analysis/SF9_ATTORNEY_LETTER_ANALYSIS_2025_12_08.md",
+      "size": 12931
+    },
+    {
+      "file": "docs/analysis/TIMELINE_IMPROVEMENTS_REPORT.md",
+      "size": 9114
+    },
+    {
+      "file": "docs/analysis/ZIP_CONTENTS_RELEVANCE_ANALYSIS.md",
+      "size": 6825
+    },
+    {
+      "file": "docs/analysis/index.md",
+      "size": 803
+    },
+    {
+      "file": "docs/application-1-evidence.md",
+      "size": 1274
+    },
+    {
+      "file": "docs/application-1.md",
+      "size": 19217
+    },
+    {
+      "file": "docs/application-2-evidence.md",
+      "size": 1276
+    },
+    {
+      "file": "docs/application-2.md",
+      "size": 19721
+    },
+    {
+      "file": "docs/application-3-evidence.md",
+      "size": 1295
+    },
+    {
+      "file": "docs/application-3.md",
+      "size": 23199
+    },
+    {
+      "file": "docs/applications.md",
+      "size": 20746
+    },
+    {
+      "file": "docs/archive/old_reports/AD_RES_J7_CROSS_REFERENCE_2025_11_25.md",
+      "size": 2533
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_19.md",
+      "size": 10814
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_20.md",
+      "size": 20740
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_25.md",
+      "size": 4747
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_27.md",
+      "size": 17610
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_SUMMARY_2025_11_28.md",
+      "size": 9671
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_11_25.md",
+      "size": 14312
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_12_05.md",
+      "size": 15487
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_19.md",
+      "size": 12801
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_28.md",
+      "size": 13674
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_12_19.md",
+      "size": 7713
+    },
+    {
+      "file": "docs/archive/old_reports/DATA_MODEL_ANALYSIS_2025_11_20.json",
+      "size": 4986
+    },
+    {
+      "file": "docs/archive/old_reports/DATA_MODEL_ANALYSIS_2025_11_21.json",
+      "size": 5293
+    },
+    {
+      "file": "docs/archive/old_reports/DATA_MODEL_UPDATES_2025_11_19.md",
+      "size": 1929
+    },
+    {
+      "file": "docs/archive/old_reports/EVENT_PATTERNS_2025_11_21.json",
+      "size": 8629
+    },
+    {
+      "file": "docs/archive/old_reports/EXECUTIVE_SUMMARY_2025_11_25.md",
+      "size": 8849
+    },
+    {
+      "file": "docs/archive/old_reports/EXECUTIVE_SUMMARY_2025_11_26.md",
+      "size": 7780
+    },
+    {
+      "file": "docs/archive/old_reports/EXECUTIVE_SUMMARY_FINAL_2025_11_25.md",
+      "size": 8740
+    },
+    {
+      "file": "docs/archive/old_reports/EXECUTIVE_SUMMARY_REFINEMENTS_2025_11_19.md",
+      "size": 11895
+    },
+    {
+      "file": "docs/archive/old_reports/FINAL_COMPREHENSIVE_IMPROVEMENTS_2025_11_19.md",
+      "size": 12562
+    },
+    {
+      "file": "docs/archive/old_reports/FIXED_LINKS_VERIFICATION_2025_11_20.md",
+      "size": 13340
+    },
+    {
+      "file": "docs/archive/old_reports/IMPROVEMENTS_2025_11_24.md",
+      "size": 4863
+    },
+    {
+      "file": "docs/archive/old_reports/IMPROVEMENTS_RECOMMENDATIONS_2025_11_19.md",
+      "size": 8701
+    },
+    {
+      "file": "docs/archive/old_reports/IMPROVEMENTS_REPORT_2025_11_20.md",
+      "size": 18627
+    },
+    {
+      "file": "docs/archive/old_reports/IMPROVEMENTS_REPORT_FINAL_2025_11_19.md",
+      "size": 6196
+    },
+    {
+      "file": "docs/archive/old_reports/IMPROVEMENTS_SUMMARY_2025_11_20.md",
+      "size": 8806
+    },
+    {
+      "file": "docs/archive/old_reports/LEGAL_CORRESPONDENCE_INTEGRATION_SUMMARY_2025_11_26.md",
+      "size": 9812
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENTS_LOG_2025_11_20.json",
+      "size": 3919
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_EXECUTIVE_SUMMARY_2025_11_18.md",
+      "size": 15463
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_REPORT_2025_11_26.md",
+      "size": 12419
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_19.md",
+      "size": 9785
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_21.md",
+      "size": 5098
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_22.md",
+      "size": 2486
+    },
+    {
+      "file": "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_25.md",
+      "size": 2184
+    },
+    {
+      "file": "docs/archive/old_reports/TIMELINE_IMPROVEMENTS_2025_11_20.json",
+      "size": 15729
+    },
+    {
+      "file": "docs/archive/old_reports/TIMELINE_IMPROVEMENTS_2025_11_21.json",
+      "size": 2412
+    },
+    {
+      "file": "docs/archive/old_reports/VALIDATION_REPORT_2025_11_21.json",
+      "size": 3014
+    },
+    {
+      "file": "docs/civil-evidence.html",
+      "size": 8796
+    },
+    {
+      "file": "docs/civil-evidence.md",
+      "size": 2760
+    },
+    {
+      "file": "docs/conspiracy_network.mmd",
+      "size": 841
+    },
+    {
+      "file": "docs/criminal-evidence.html",
+      "size": 7446
+    },
+    {
+      "file": "docs/criminal-evidence.md",
+      "size": 1324
+    },
+    {
+      "file": "docs/entities/BANK_001.md",
+      "size": 1084
+    },
+    {
+      "file": "docs/entities/DOMAIN_001.md",
+      "size": 910
+    },
+    {
+      "file": "docs/entities/DOMAIN_002.md",
+      "size": 1079
+    },
+    {
+      "file": "docs/entities/ORG_001.md",
+      "size": 1251
+    },
+    {
+      "file": "docs/entities/ORG_002.md",
+      "size": 995
+    },
+    {
+      "file": "docs/entities/ORG_003.md",
+      "size": 1373
+    },
+    {
+      "file": "docs/entities/ORG_004.md",
+      "size": 1617
+    },
+    {
+      "file": "docs/entities/ORG_005.md",
+      "size": 1465
+    },
+    {
+      "file": "docs/entities/ORG_006.md",
+      "size": 767
+    },
+    {
+      "file": "docs/entities/ORG_008.md",
+      "size": 2567
+    },
+    {
+      "file": "docs/entities/ORG_009.md",
+      "size": 1787
+    },
+    {
+      "file": "docs/entities/ORG_010.md",
+      "size": 1569
+    },
+    {
+      "file": "docs/entities/ORG_012.md",
+      "size": 1896
+    },
+    {
+      "file": "docs/entities/ORG_013.md",
+      "size": 1285
+    },
+    {
+      "file": "docs/entities/ORG_014.md",
+      "size": 951
+    },
+    {
+      "file": "docs/entities/ORG_015.md",
+      "size": 1127
+    },
+    {
+      "file": "docs/entities/PERSON_001.md",
+      "size": 2331
+    },
+    {
+      "file": "docs/entities/PERSON_002.md",
+      "size": 2348
+    },
+    {
+      "file": "docs/entities/PERSON_003.md",
+      "size": 1666
+    },
+    {
+      "file": "docs/entities/PERSON_004.md",
+      "size": 931
+    },
+    {
+      "file": "docs/entities/PERSON_005.md",
+      "size": 1291
+    },
+    {
+      "file": "docs/entities/PERSON_006.md",
+      "size": 842
+    },
+    {
+      "file": "docs/entities/PERSON_007.md",
+      "size": 4176
+    },
+    {
+      "file": "docs/entities/PERSON_008.md",
+      "size": 1188
+    },
+    {
+      "file": "docs/entities/PERSON_009.md",
+      "size": 1096
+    },
+    {
+      "file": "docs/entities/PERSON_010.md",
+      "size": 1138
+    },
+    {
+      "file": "docs/entities/PERSON_011.md",
+      "size": 1062
+    },
+    {
+      "file": "docs/entities/PERSON_012.md",
+      "size": 981
+    },
+    {
+      "file": "docs/entities/PERSON_013.md",
+      "size": 1317
+    },
+    {
+      "file": "docs/entities/PERSON_014.md",
+      "size": 996
+    },
+    {
+      "file": "docs/entities/PLATFORM_001.md",
+      "size": 1474
+    },
+    {
+      "file": "docs/entities/TRUST_001.md",
+      "size": 2017
+    },
+    {
+      "file": "docs/entities/index.md",
+      "size": 1942
+    },
+    {
+      "file": "docs/events/EVENT_001.md",
+      "size": 1282
+    },
+    {
+      "file": "docs/events/EVENT_002.md",
+      "size": 1362
+    },
+    {
+      "file": "docs/events/EVENT_003.md",
+      "size": 1988
+    },
+    {
+      "file": "docs/events/EVENT_004.md",
+      "size": 1909
+    },
+    {
+      "file": "docs/events/EVENT_005.md",
+      "size": 1886
+    },
+    {
+      "file": "docs/events/EVENT_006.md",
+      "size": 1495
+    },
+    {
+      "file": "docs/events/EVENT_007.md",
+      "size": 1954
+    },
+    {
+      "file": "docs/events/EVENT_008.md",
+      "size": 1987
+    },
+    {
+      "file": "docs/events/EVENT_009.md",
+      "size": 2520
+    },
+    {
+      "file": "docs/events/EVENT_010.md",
+      "size": 2003
+    },
+    {
+      "file": "docs/events/EVENT_011.md",
+      "size": 1131
+    },
+    {
+      "file": "docs/events/EVENT_012.md",
+      "size": 1464
+    },
+    {
+      "file": "docs/events/EVENT_013.md",
+      "size": 1378
+    },
+    {
+      "file": "docs/events/EVENT_014.md",
+      "size": 2381
+    },
+    {
+      "file": "docs/events/EVENT_015.md",
+      "size": 2098
+    },
+    {
+      "file": "docs/events/EVENT_016.md",
+      "size": 1842
+    },
+    {
+      "file": "docs/events/EVENT_017.md",
+      "size": 2071
+    },
+    {
+      "file": "docs/events/EVENT_018.md",
+      "size": 1414
+    },
+    {
+      "file": "docs/events/EVENT_019.md",
+      "size": 1330
+    },
+    {
+      "file": "docs/events/EVENT_020.md",
+      "size": 2161
+    },
+    {
+      "file": "docs/events/EVENT_021.md",
+      "size": 1398
+    },
+    {
+      "file": "docs/events/EVENT_022.md",
+      "size": 1425
+    },
+    {
+      "file": "docs/events/EVENT_023.md",
+      "size": 1965
+    },
+    {
+      "file": "docs/events/EVENT_024.md",
+      "size": 1845
+    },
+    {
+      "file": "docs/events/EVENT_025.md",
+      "size": 1714
+    },
+    {
+      "file": "docs/events/EVENT_026.md",
+      "size": 1415
+    },
+    {
+      "file": "docs/events/EVENT_027.md",
+      "size": 2079
+    },
+    {
+      "file": "docs/events/EVENT_028.md",
+      "size": 1731
+    },
+    {
+      "file": "docs/events/EVENT_029.md",
+      "size": 1404
+    },
+    {
+      "file": "docs/events/EVENT_047.md",
+      "size": 1498
+    },
+    {
+      "file": "docs/events/EVENT_048.md",
+      "size": 1465
+    },
+    {
+      "file": "docs/events/EVENT_049.md",
+      "size": 1505
+    },
+    {
+      "file": "docs/events/EVENT_050.md",
+      "size": 1731
+    },
+    {
+      "file": "docs/events/EVENT_051.md",
+      "size": 1516
+    },
+    {
+      "file": "docs/events/EVENT_052.md",
+      "size": 1156
+    },
+    {
+      "file": "docs/events/EVENT_053.md",
+      "size": 1236
+    },
+    {
+      "file": "docs/events/EVENT_054.md",
+      "size": 1304
+    },
+    {
+      "file": "docs/events/EVENT_055.md",
+      "size": 1359
+    },
+    {
+      "file": "docs/events/EVENT_056.md",
+      "size": 1301
+    },
+    {
+      "file": "docs/events/EVENT_057.md",
+      "size": 1352
+    },
+    {
+      "file": "docs/events/EVENT_058.md",
+      "size": 1647
+    },
+    {
+      "file": "docs/events/EVENT_059.md",
+      "size": 1265
+    },
+    {
+      "file": "docs/events/EVENT_060.md",
+      "size": 1335
+    },
+    {
+      "file": "docs/events/EVENT_061.md",
+      "size": 1295
+    },
+    {
+      "file": "docs/events/EVENT_086.md",
+      "size": 1791
+    },
+    {
+      "file": "docs/events/EVENT_087.md",
+      "size": 1722
+    },
+    {
+      "file": "docs/events/EVENT_088.md",
+      "size": 1138
+    },
+    {
+      "file": "docs/events/EVENT_D001.md",
+      "size": 1235
+    },
+    {
+      "file": "docs/events/EVENT_D002.md",
+      "size": 1150
+    },
+    {
+      "file": "docs/events/EVENT_D003.md",
+      "size": 1211
+    },
+    {
+      "file": "docs/events/EVENT_D004.md",
+      "size": 1273
+    },
+    {
+      "file": "docs/events/EVENT_D005.md",
+      "size": 1321
+    },
+    {
+      "file": "docs/events/EVENT_H001.md",
+      "size": 1199
+    },
+    {
+      "file": "docs/events/EVENT_H002.md",
+      "size": 1197
+    },
+    {
+      "file": "docs/events/EVENT_H003.md",
+      "size": 1284
+    },
+    {
+      "file": "docs/events/EVENT_H004.md",
+      "size": 1284
+    },
+    {
+      "file": "docs/events/EVENT_H005.md",
+      "size": 1622
+    },
+    {
+      "file": "docs/events/EVENT_H006.md",
+      "size": 1552
+    },
+    {
+      "file": "docs/events/EVENT_H007.md",
+      "size": 1316
+    },
+    {
+      "file": "docs/events/EVENT_H008.md",
+      "size": 1341
+    },
+    {
+      "file": "docs/events/EVENT_H009.md",
+      "size": 1785
+    },
+    {
+      "file": "docs/events/EVENT_H010.md",
+      "size": 1655
+    },
+    {
+      "file": "docs/events/EVENT_H018.md",
+      "size": 1488
+    },
+    {
+      "file": "docs/evidence-index.md",
+      "size": 1744
+    },
+    {
+      "file": "docs/evidence/index.md",
+      "size": 1249
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251214.md",
+      "size": 16473
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251216.md",
+      "size": 8249
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size": 16704
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+      "size": 19328
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size": 19804
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+      "size": 1290
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24.md",
+      "size": 8221
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24_UPDATED_20251226.md",
+      "size": 8757
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_SF9_INTEGRATED_2025_12_09.md",
+      "size": 17601
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251214.md",
+      "size": 7717
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size": 8193
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251216.md",
+      "size": 6355
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SF9_INTEGRATED_2025_12_09.md",
+      "size": 7171
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+      "size": 11337
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+      "size": 13083
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251214.md",
+      "size": 7654
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size": 8593
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251216.md",
+      "size": 772
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24.md",
+      "size": 5335
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24_UPDATED_20251226.md",
+      "size": 5871
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+      "size": 14883
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size": 15359
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+      "size": 937
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_24.md",
+      "size": 6141
+    },
+    {
+      "file": "docs/filings/README.md",
+      "size": 3100
+    },
+    {
+      "file": "docs/filings/civil/answering_affidavit.md",
+      "size": 5219
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+      "size": 14450
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_REFINED_2025_12_27.md",
+      "size": 1481
+    },
+    {
+      "file": "docs/filings/criminal/criminal_complaint.md",
+      "size": 23128
+    },
+    {
+      "file": "docs/filings/index.md",
+      "size": 2008
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+      "size": 14339
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_27.md",
+      "size": 3059
+    },
+    {
+      "file": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md",
+      "size": 14884
+    },
+    {
+      "file": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_27.md",
+      "size": 1325
+    },
+    {
+      "file": "docs/index.md",
+      "size": 10247
+    },
+    {
+      "file": "docs/regulatory-evidence.html",
+      "size": 6467
+    },
+    {
+      "file": "docs/regulatory-evidence.md",
+      "size": 960
+    },
+    {
+      "file": "docs/timeline.html",
+      "size": 3408
+    },
+    {
+      "file": "docs/timeline.md",
+      "size": 16112
+    }
+  ],
+  "not_found": [],
+  "empty": [
+    {
+      "file": "docs/entity-profiles/person_003-adderory-rynette's-son.md",
+      "size": 0
+    }
+  ],
+  "errors": []
+}

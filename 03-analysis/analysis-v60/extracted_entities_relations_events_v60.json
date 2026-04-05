@@ -1,0 +1,14 @@
+{
+  "entities": {},
+  "relations": {},
+  "events": {},
+  "agents": {},
+  "legal_aspects": {},
+  "statistics": {
+    "total_entities": 0,
+    "total_relations": 0,
+    "total_events": 0,
+    "total_agents": 0,
+    "total_legal_aspects": 0
+  }
+}

@@ -1,0 +1,821 @@
+{
+  "version": "60.0",
+  "date": "2026-01-06T02:10:22.007600",
+  "total_agents": 10,
+  "agents": {
+    "AGENT-NP-001-V60": {
+      "id": "AGENT-NP-001-V60",
+      "version": "60.0",
+      "name": "Peter Faucitt",
+      "type": "natural-person",
+      "roles": [
+        "trustee",
+        "beneficiary",
+        "applicant"
+      ],
+      "legal_status": "sole-trustee-faucitt-family-trust",
+      "knowledge_state": {
+        "domain_knowledge": [
+          "trust-law-principles",
+          "trustee-powers-and-duties",
+          "beneficiary-rights",
+          "ketoni-payout-structure"
+        ],
+        "situational_awareness": [
+          "ketoni-payout-r18.75m-may-2026",
+          "co-beneficiaries-jax-dan-entitled-to-share",
+          "trust-absolute-powers-to-resolve-disputes",
+          "family-court-curatorship-pathway"
+        ],
+        "information_access": [
+          "full-trust-documentation",
+          "full-financial-records",
+          "ketoni-payout-schedule",
+          "share-certificates"
+        ],
+        "knowledge_timeline": [
+          {
+            "date": "2024-05",
+            "event": "Ketoni transaction finalized, payout scheduled May 2026"
+          },
+          {
+            "date": "2025-08-19",
+            "event": "Filed ex parte interdict (T-9 months before payout)"
+          }
+        ]
+      },
+      "capability_state": {
+        "legal_capabilities": [
+          "file-legal-applications",
+          "exercise-trustee-powers",
+          "access-legal-counsel",
+          "initiate-court-proceedings"
+        ],
+        "financial_capabilities": [
+          "control-trust-distributions",
+          "access-trust-assets",
+          "authorize-trust-payments",
+          "capture-ketoni-payout"
+        ],
+        "operational_capabilities": [
+          "restrict-access-to-systems",
+          "cancel-payment-cards",
+          "disrupt-business-operations"
+        ],
+        "strategic_capabilities": [
+          "forum-selection",
+          "timing-optimization",
+          "ex-parte-application-strategy",
+          "curatorship-pathway-exploitation"
+        ]
+      },
+      "motive_state": {
+        "primary_motives": [
+          "capture-full-ketoni-payout-r18.75m",
+          "neutralize-co-beneficiaries-jax-dan",
+          "gain-control-before-may-2026-payout"
+        ],
+        "secondary_motives": [
+          "establish-curatorship-pathway",
+          "create-legal-precedent-for-control",
+          "disrupt-business-operations"
+        ],
+        "financial_incentives": [
+          {
+            "amount": "R18.75M",
+            "description": "Full Ketoni payout if co-beneficiaries neutralized"
+          },
+          {
+            "amount": "R9.375M",
+            "description": "Additional gain beyond 50% entitlement"
+          }
+        ],
+        "strategic_objectives": [
+          "file-interdict-t-9-months-before-payout",
+          "select-family-court-for-curatorship-jurisdiction",
+          "use-ex-parte-application-to-avoid-disclosure",
+          "weaponize-medical-testing-for-control"
+        ]
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [
+          {
+            "window": "T-9 months before payout",
+            "action": "File interdict before May 2026"
+          },
+          {
+            "window": "Ex parte application",
+            "action": "Avoid disclosure of payout motive"
+          }
+        ],
+        "structural_opportunities": [
+          {
+            "structure": "Sole trustee with absolute powers",
+            "exploitation": "No internal oversight"
+          },
+          {
+            "structure": "Family Court jurisdiction",
+            "exploitation": "Curatorship pathway available"
+          }
+        ],
+        "procedural_opportunities": [
+          {
+            "procedure": "Ex parte application",
+            "advantage": "No respondent present to challenge"
+          },
+          {
+            "procedure": "Medical testing weaponization",
+            "advantage": "Force compliance or declare incapacity"
+          }
+        ],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "very-high",
+        "legal_sophistication": [
+          "understands-ex-parte-procedure",
+          "knows-forum-selection-advantages",
+          "aware-of-curatorship-pathway",
+          "understands-timing-optimization"
+        ],
+        "strategic_legal_knowledge": [
+          "material-non-disclosure-ex-parte",
+          "forum-shopping-for-jurisdiction",
+          "weaponization-of-medical-testing",
+          "manufactured-urgency-tactics"
+        ],
+        "awareness_indicators": [
+          {
+            "indicator": "Precise timing (T-9 months)",
+            "confidence": 0.98
+          },
+          {
+            "indicator": "Family Court selection",
+            "confidence": 0.96
+          },
+          {
+            "indicator": "Ex parte strategy",
+            "confidence": 0.98
+          },
+          {
+            "indicator": "Medical testing inclusion",
+            "confidence": 0.94
+          }
+        ]
+      },
+      "actions": [
+        {
+          "action_id": "ACTION-001",
+          "date": "2025-08-19",
+          "action": "Filed ex parte interdict",
+          "legal_significance": "Initiated legal proceedings T-9 months before Ketoni payout",
+          "evidence": "Court filing documents",
+          "verification_level": 1
+        },
+        {
+          "action_id": "ACTION-002",
+          "date": "2025-08",
+          "action": "Selected Family Court jurisdiction",
+          "legal_significance": "Forum shopping for curatorship pathway",
+          "evidence": "Court selection in application",
+          "verification_level": 1
+        },
+        {
+          "action_id": "ACTION-003",
+          "date": "2025-08",
+          "action": "Cancelled payment cards",
+          "legal_significance": "Disrupted business operations",
+          "evidence": "Card cancellation records",
+          "verification_level": 3
+        }
+      ],
+      "strategic_patterns": [
+        {
+          "pattern_id": "PATTERN-001",
+          "pattern_type": "temporal-alignment",
+          "description": "Interdict filed T-9 months before Ketoni payout",
+          "confidence": 0.98
+        },
+        {
+          "pattern_id": "PATTERN-002",
+          "pattern_type": "forum-shopping",
+          "description": "Family Court selected for curatorship jurisdiction",
+          "confidence": 0.96
+        },
+        {
+          "pattern_id": "PATTERN-003",
+          "pattern_type": "ex-parte-strategy",
+          "description": "Ex parte application to avoid disclosure",
+          "confidence": 0.98
+        }
+      ],
+      "relationships": [
+        {
+          "relation_type": "trustee-beneficiary",
+          "target_agent": "AGENT-NP-002-V60",
+          "target_name": "Jacqueline Faucitt",
+          "nature": "fiduciary-duty-conflict"
+        },
+        {
+          "relation_type": "trustee-beneficiary",
+          "target_agent": "AGENT-NP-003-V60",
+          "target_name": "Daniel Faucitt",
+          "nature": "fiduciary-duty-conflict"
+        },
+        {
+          "relation_type": "trustee-trust",
+          "target_agent": "AGENT-LE-001-V60",
+          "target_name": "Faucitt Family Trust",
+          "nature": "control-relationship"
+        }
+      ],
+      "evidence_base": {
+        "primary_evidence": [
+          {
+            "type": "court-filing",
+            "description": "Ex parte interdict application",
+            "verification_level": 1
+          },
+          {
+            "type": "trust-deed",
+            "description": "Trust Deed 2013 showing sole trustee status",
+            "verification_level": 2
+          },
+          {
+            "type": "share-certificate",
+            "description": "Share Certificate J246 showing Ketoni payout",
+            "verification_level": 2
+          }
+        ],
+        "supporting_evidence": [
+          {
+            "type": "timeline-analysis",
+            "description": "T-9 months timing correlation",
+            "verification_level": 6
+          },
+          {
+            "type": "forum-analysis",
+            "description": "Family Court selection analysis",
+            "verification_level": 6
+          }
+        ],
+        "inference_evidence": []
+      },
+      "verification_level": 2,
+      "confidence": 0.98
+    },
+    "AGENT-NP-002-V60": {
+      "id": "AGENT-NP-002-V60",
+      "version": "60.0",
+      "name": "Jacqueline Faucitt",
+      "type": "natural-person",
+      "roles": [
+        "beneficiary",
+        "director",
+        "responsible-person",
+        "respondent"
+      ],
+      "legal_status": "co-beneficiary-faucitt-family-trust",
+      "knowledge_state": {
+        "domain_knowledge": [
+          "company-operations",
+          "regulatory-compliance",
+          "responsible-person-duties",
+          "business-administration"
+        ],
+        "situational_awareness": [
+          "co-beneficiary-status",
+          "entitled-to-share-of-ketoni-payout",
+          "peter-sole-trustee-with-absolute-powers",
+          "interdict-threatens-business-operations"
+        ],
+        "information_access": [
+          "company-financial-records",
+          "regulatory-documentation",
+          "business-correspondence",
+          "trust-deed-copy"
+        ],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [
+          "file-answering-affidavit",
+          "provide-evidence",
+          "challenge-interdict",
+          "assert-beneficiary-rights"
+        ],
+        "financial_capabilities": [
+          "access-company-records",
+          "document-financial-flows",
+          "demonstrate-legitimate-payments"
+        ],
+        "operational_capabilities": [
+          "maintain-regulatory-compliance",
+          "manage-business-operations",
+          "coordinate-with-daniel"
+        ],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [
+          "protect-beneficiary-rights",
+          "maintain-business-operations",
+          "defend-against-false-allegations"
+        ],
+        "secondary_motives": [
+          "expose-peters-strategic-timing",
+          "demonstrate-legitimate-business-practices",
+          "protect-regulatory-compliance"
+        ],
+        "financial_incentives": [
+          {
+            "amount": "R6.25M",
+            "description": "Entitled share of Ketoni payout (33.3%)"
+          }
+        ],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 2,
+      "confidence": 0.98
+    },
+    "AGENT-NP-003-V60": {
+      "id": "AGENT-NP-003-V60",
+      "version": "60.0",
+      "name": "Daniel Faucitt",
+      "type": "natural-person",
+      "roles": [
+        "beneficiary",
+        "cio",
+        "technical-director",
+        "respondent"
+      ],
+      "legal_status": "co-beneficiary-faucitt-family-trust",
+      "knowledge_state": {
+        "domain_knowledge": [
+          "technical-infrastructure",
+          "platform-architecture",
+          "uk-company-operations",
+          "investment-structure"
+        ],
+        "situational_awareness": [
+          "co-beneficiary-status",
+          "uk-company-invested-r1m-in-za-operations",
+          "platform-ownership-and-funding",
+          "interdict-disrupts-technical-operations"
+        ],
+        "information_access": [
+          "technical-infrastructure-documentation",
+          "uk-company-financial-records",
+          "platform-funding-evidence",
+          "investment-documentation"
+        ],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [
+          "file-answering-affidavit",
+          "provide-technical-evidence",
+          "document-uk-investment"
+        ],
+        "financial_capabilities": [
+          "access-uk-company-records",
+          "document-platform-funding",
+          "demonstrate-investment-structure"
+        ],
+        "operational_capabilities": [
+          "maintain-technical-infrastructure",
+          "document-platform-ownership",
+          "provide-technical-analysis"
+        ],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [
+          "protect-beneficiary-rights",
+          "recover-uk-investment-r1m",
+          "defend-technical-operations"
+        ],
+        "secondary_motives": [
+          "document-platform-ownership",
+          "demonstrate-legitimate-investment-structure",
+          "expose-revenue-hijacking"
+        ],
+        "financial_incentives": [
+          {
+            "amount": "R6.25M",
+            "description": "Entitled share of Ketoni payout (33.3%)"
+          },
+          {
+            "amount": "R1M+",
+            "description": "UK investment recovery"
+          }
+        ],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 2,
+      "confidence": 0.98
+    },
+    "AGENT-NP-004-V60": {
+      "id": "AGENT-NP-004-V60",
+      "version": "60.0",
+      "name": "Rynette Faucitt",
+      "type": "natural-person",
+      "roles": [
+        "family-member",
+        "trust-manipulator"
+      ],
+      "legal_status": "not-beneficiary-but-active-participant",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-NP-005-V60": {
+      "id": "AGENT-NP-005-V60",
+      "version": "60.0",
+      "name": "Bantjies",
+      "type": "natural-person",
+      "roles": [
+        "appointed-trustee",
+        "attorney"
+      ],
+      "legal_status": "trustee-appointed-july-2024",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-LE-001-V60": {
+      "id": "AGENT-LE-001-V60",
+      "version": "60.0",
+      "name": "Faucitt Family Trust",
+      "type": "legal-entity",
+      "roles": [
+        "trust",
+        "ketoni-payout-recipient"
+      ],
+      "legal_status": "registered-trust",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-LE-002-V60": {
+      "id": "AGENT-LE-002-V60",
+      "version": "60.0",
+      "name": "RegimA SA (Pty) Ltd",
+      "type": "legal-entity",
+      "roles": [
+        "operating-company",
+        "manufacturer"
+      ],
+      "legal_status": "registered-company-za",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-LE-003-V60": {
+      "id": "AGENT-LE-003-V60",
+      "version": "60.0",
+      "name": "RegimA Zone Ltd",
+      "type": "legal-entity",
+      "roles": [
+        "uk-holding-company",
+        "investor",
+        "platform-owner"
+      ],
+      "legal_status": "registered-company-uk",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-LE-004-V60": {
+      "id": "AGENT-LE-004-V60",
+      "version": "60.0",
+      "name": "RWD (Pty) Ltd",
+      "type": "legal-entity",
+      "roles": [
+        "distributor",
+        "revenue-collector"
+      ],
+      "legal_status": "registered-company-za",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    },
+    "AGENT-LE-005-V60": {
+      "id": "AGENT-LE-005-V60",
+      "version": "60.0",
+      "name": "Ketoni",
+      "type": "legal-entity",
+      "roles": [
+        "payout-obligor"
+      ],
+      "legal_status": "external-entity",
+      "knowledge_state": {
+        "domain_knowledge": [],
+        "situational_awareness": [],
+        "information_access": [],
+        "knowledge_timeline": []
+      },
+      "capability_state": {
+        "legal_capabilities": [],
+        "financial_capabilities": [],
+        "operational_capabilities": [],
+        "strategic_capabilities": []
+      },
+      "motive_state": {
+        "primary_motives": [],
+        "secondary_motives": [],
+        "financial_incentives": [],
+        "strategic_objectives": []
+      },
+      "opportunity_state": {
+        "temporal_opportunities": [],
+        "structural_opportunities": [],
+        "procedural_opportunities": [],
+        "coordination_opportunities": []
+      },
+      "legal_awareness_state": {
+        "awareness_level": "high",
+        "legal_sophistication": [],
+        "strategic_legal_knowledge": [],
+        "awareness_indicators": []
+      },
+      "actions": [],
+      "strategic_patterns": [],
+      "relationships": [],
+      "evidence_base": {
+        "primary_evidence": [],
+        "supporting_evidence": [],
+        "inference_evidence": []
+      },
+      "verification_level": 3,
+      "confidence": 0.92
+    }
+  },
+  "statistics": {
+    "natural_persons": 5,
+    "legal_entities": 5,
+    "high_confidence_agents": 3
+  }
+}
