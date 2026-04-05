@@ -219,6 +219,7 @@ T2 (Villa Via exposure) provoked the most coordinated response: 3 different acto
 | SF7 | Court Order | Kayla email seizure |
 | SF8 | Linda Employment Records | Employment documentation |
 
+
 ---
 
 ## LEGAL IMPLICATIONS
