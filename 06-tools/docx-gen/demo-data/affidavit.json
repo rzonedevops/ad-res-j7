@@ -1,0 +1,54 @@
+{
+  "title": "ANSWERING AFFIDAVIT OF THE FIRST RESPONDENT",
+  "caseNo": "2025-137857",
+  "date": "9 February 2026",
+  "division": "GAUTENG DIVISION, PRETORIA",
+  "applicant": {
+    "name": "Peter Andrew Faucitt",
+    "designation": "Applicant"
+  },
+  "respondents": [
+    { "name": "Jacqueline Faucitt", "designation": "First Respondent" },
+    { "name": "Daniel James Faucitt", "designation": "Second Respondent" },
+    { "name": "RegimA Worldwide Distribution (Pty) Ltd", "designation": "Third Respondent" },
+    { "name": "RegimA Skin Treatments CC", "designation": "Fourth Respondent" },
+    { "name": "Villa Via Arcadia No 2 CC", "designation": "Fifth Respondent" },
+    { "name": "Strategic Logistics CC", "designation": "Sixth Respondent" }
+  ],
+  "deponentName": "Jacqueline Faucitt",
+  "deponentDescription": "an adult female, South African citizen, with identity number 570807 0898 18 1, and the First Respondent in this matter.",
+  "parts": [
+    {
+      "title": "PRELIMINARY MATTERS",
+      "paragraphs": [
+        {
+          "number": "1.",
+          "text": "I am an adult female, South African citizen, with identity number 570807 0898 18 1, and the First Respondent in this matter.",
+          "subs": [
+            { "number": "1.1", "text": "I am married to the Applicant, Peter Andrew Faucitt." },
+            { "number": "1.2", "text": "I am the mother of the Second Respondent, Daniel James Faucitt." }
+          ]
+        },
+        {
+          "number": "2.",
+          "text": "The facts contained herein are within my personal knowledge and are both true and correct."
+        }
+      ]
+    },
+    {
+      "title": "THE INTERDICT IS VOID AB INITIO",
+      "paragraphs": [
+        {
+          "number": "3.",
+          "text": "The ex parte interdict granted on 19 August 2025 was obtained through material non-disclosure, perjury, fabrication of evidence, and fraud on the court."
+        }
+      ]
+    }
+  ],
+  "annexures": [
+    { "id": "JF01", "description": "Banking mandate documentation proving SOLE authority" },
+    { "id": "JF02", "description": "Company registration documents" },
+    { "id": "JF03", "description": "Evidence of financial sabotage" }
+  ],
+  "signaturePlace": "Pretoria"
+}

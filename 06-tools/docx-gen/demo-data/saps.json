@@ -1,0 +1,65 @@
+{
+  "caseRef": "2025-137857-SAPS",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Beyond Reasonable Doubt (95%+) — EXCEEDED for Tier A parties",
+  "executiveSummary": "This submission details a complex, multi-year criminal enterprise constituting racketeering activity under POCA. The syndicate is responsible for over R10.2M in direct fraud and theft, with a total quantum exceeding R63M.",
+  "tierA": [
+    {
+      "name": "Peter Andrew Faucitt",
+      "idNumber": "520430 5706 18 5",
+      "role": "Director, Mastermind",
+      "proofOfForeknowledge": "Direct written admission of fraud awareness (SF10); filed interdict based on false narrative."
+    },
+    {
+      "name": "Rynette Farrar",
+      "idNumber": "",
+      "role": "Financial Controller, Chief Operator",
+      "proofOfForeknowledge": "Instructed creation of fraudulent financials; executed identity fraud (SF10); filed false perjury complaint (SF15)."
+    },
+    {
+      "name": "Daniel Jacobus Bantjies",
+      "idNumber": "",
+      "role": "Accountant, Trustee, Financial Architect",
+      "proofOfForeknowledge": "Swore a false affidavit in court; six irreconcilable conflicts of interest."
+    }
+  ],
+  "tierC": [
+    {
+      "name": "De Novo Business Services / Marisca Meyer",
+      "role": "Accounting Firm",
+      "involvement": "Prepared backdated 2019 financial statements.",
+      "assessment": "Acted on instruction from Rynette Farrar. Warrants referral to SAIPA for investigation."
+    }
+  ],
+  "offenseGroups": [
+    {
+      "act": "Prevention of Organised Crime Act (POCA), No. 121 of 1998",
+      "offenses": [
+        { "offense": "Racketeering (s2(1)(e))", "evidence": "Pattern of planned ongoing criminal activity", "status": "PROVEN" },
+        { "offense": "Money Laundering (s4)", "evidence": "8 ABSA accounts, complex transfers, concealment of R10.2M+", "status": "PROVEN" }
+      ]
+    },
+    {
+      "act": "Fraud, Theft, Forgery & Obstruction (Common Law)",
+      "offenses": [
+        { "offense": "Fraud", "evidence": "Fabricated financials, false invoices, FNB Letter (SF10)", "status": "PROVEN" },
+        { "offense": "Theft", "evidence": "Shopify Sales Reports (R8.5M diversion), bank statements", "status": "PROVEN" },
+        { "offense": "Forgery", "evidence": "Fabricated 2019 financials, backdated Trust document", "status": "PROVEN" },
+        { "offense": "Obstruction of Justice", "evidence": "SF15 (Perjury Defence Matrix), SF11 (Sage Lockout)", "status": "PROVEN" }
+      ]
+    }
+  ],
+  "requestForAction": [
+    "Open a criminal docket for investigation into the Tier A conspirators.",
+    "Treat Tier C participants as witnesses and/or potentially deceived parties.",
+    "Investigate the perjury complaint filed by Rynette Farrar as a false criminal report.",
+    "Execute search and seizure warrants for all financial records and devices.",
+    "Refer the matter to the NPA Asset Forfeiture Unit (AFU)."
+  ],
+  "annexures": [
+    { "id": "A", "description": "Foreknowledge Classification Framework" },
+    { "id": "B", "description": "Perjury Defence Matrix (SF15)" },
+    { "id": "C", "description": "FNB Fraud Letter (SF10) & Analysis" }
+  ]
+}

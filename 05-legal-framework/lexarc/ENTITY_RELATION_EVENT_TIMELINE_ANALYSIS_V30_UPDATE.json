@@ -1,0 +1,154 @@
+{
+  "timestamp": "2025-12-17T04:15:00.000000",
+  "version": "v30",
+  "case": "2025-137857",
+  "update_type": "incremental",
+  "update_description": "Added Ketoni Investment Holdings (Pty) Ltd and Kevin Derrick based on share certificate evidence",
+  "new_entities": {
+    "juristic_persons": [
+      {
+        "name": "Ketoni Investment Holdings (Pty) Ltd",
+        "abbreviation": "KIH",
+        "company_number": "2023/562189/07",
+        "jurisdiction": "South Africa",
+        "legal_status": "active",
+        "registration_year": 2023,
+        "directors": [
+          {
+            "name": "Kevin Derrick",
+            "role": "Director",
+            "evidence": "2023-04-24_Trust_Share_Cert.jpg"
+          }
+        ],
+        "shareholders": [
+          {
+            "name": "Faucitt Family Trust",
+            "shares": 5000,
+            "share_class": "A Ordinary",
+            "certificate_number": 3,
+            "date": "2023-04-24"
+          }
+        ],
+        "legal_issues": [
+          "trust-asset-structure",
+          "potential-hidden-assets",
+          "investment-vehicle-analysis"
+        ],
+        "investigation_priority": "MEDIUM",
+        "evidence": "2023-04-24_Trust_Share_Cert.jpg"
+      }
+    ],
+    "natural_persons": [
+      {
+        "name": "Kevin Derrick",
+        "roles": [
+          {
+            "role": "Director",
+            "entity": "Ketoni Investment Holdings (Pty) Ltd",
+            "confidence": 0.99,
+            "statutory_basis": "Companies Act 71/2008",
+            "evidence": "2023-04-24_Trust_Share_Cert.jpg"
+          }
+        ],
+        "legal_issues": [
+          "director-network-analysis",
+          "relationship-to-faucitt-family"
+        ],
+        "investigation_priority": "MEDIUM"
+      }
+    ]
+  },
+  "new_relations": [
+    {
+      "type": "ownership",
+      "from_entity": "Faucitt Family Trust",
+      "to_entity": "Ketoni Investment Holdings (Pty) Ltd",
+      "ownership_type": "shareholder",
+      "shares": 5000,
+      "share_class": "A Ordinary",
+      "certificate_number": 3,
+      "date_established": "2023-04-24",
+      "confidence": 0.99,
+      "evidence": "2023-04-24_Trust_Share_Cert.jpg",
+      "legal_significance": "Trust asset structure - investment in holding company"
+    },
+    {
+      "type": "directorship",
+      "from_entity": "Kevin Derrick",
+      "to_entity": "Ketoni Investment Holdings (Pty) Ltd",
+      "role": "Director",
+      "date_confirmed": "2023-04-24",
+      "confidence": 0.99,
+      "evidence": "2023-04-24_Trust_Share_Cert.jpg",
+      "legal_significance": "Director network - requires investigation"
+    }
+  ],
+  "new_events": [
+    {
+      "date": "2023-04-24",
+      "event_type": "share-certificate-issuance",
+      "actors": ["Faucitt Family Trust", "Ketoni Investment Holdings (Pty) Ltd", "Kevin Derrick"],
+      "legal_aspect": "trust-asset-acquisition",
+      "confidence": 0.99,
+      "significance": "FFT acquires 5000 A-Ordinary shares in KIH (~3 months before Kayla murder)",
+      "evidence": "2023-04-24_Trust_Share_Cert.jpg"
+    }
+  ],
+  "timeline_integration": {
+    "event_date": "2023-04-24",
+    "event_description": "Faucitt Family Trust receives Share Certificate No. 3 for 5000 A-Ordinary shares in Ketoni Investment Holdings (Pty) Ltd",
+    "timeline_context": {
+      "days_before_kayla_murder": 80,
+      "kayla_murder_date": "2023-07-13",
+      "significance": "Trust investment activity ~3 months before Kayla Pretorius murder"
+    }
+  },
+  "investigation_questions": [
+    {
+      "question": "What assets does Ketoni Investment Holdings hold?",
+      "priority": "HIGH",
+      "action": "CIPC search on company 2023/562189/07"
+    },
+    {
+      "question": "Who holds Share Certificates 1 and 2?",
+      "priority": "HIGH",
+      "action": "Request shareholder register from CIPC"
+    },
+    {
+      "question": "What is Kevin Derrick's relationship to Faucitt family?",
+      "priority": "MEDIUM",
+      "action": "Background research on Kevin Derrick"
+    },
+    {
+      "question": "Is there any connection between KIH and RegimA entities?",
+      "priority": "MEDIUM",
+      "action": "Cross-reference director and shareholder networks"
+    },
+    {
+      "question": "What was the consideration paid for these shares?",
+      "priority": "LOW",
+      "action": "Review Trust financial records"
+    }
+  ],
+  "evidence_chain": {
+    "primary_evidence": "2023-04-24_Trust_Share_Cert.jpg",
+    "evidence_type": "Share Certificate",
+    "statutory_basis": "Section 49 of the Companies Act 2008",
+    "key_facts": [
+      "Certificate Number: 3",
+      "Company: Ketoni Investment Holdings (Pty) Ltd",
+      "Company Number: 2023/562189/07",
+      "Shareholder: Faucitt Family Trust",
+      "Address: 20 River Rd, Morninghill",
+      "Shares: 5000 A-Ordinary",
+      "Director: Kevin Derrick",
+      "Date: 24 April 2023"
+    ]
+  },
+  "metadata": {
+    "analysis_date": "2025-12-17",
+    "analyst": "Automated Analysis",
+    "repository": "cogpy/ad-res-j7",
+    "case_reference": "2025-137857"
+  }
+}

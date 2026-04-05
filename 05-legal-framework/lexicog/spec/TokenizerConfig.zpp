@@ -1,0 +1,401 @@
+/**
+ * TokenizerConfig.zpp - Tokenizer Configuration State and Invariants
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the configuration state, invariants, and
+ * validation contracts for the lexicog tokenizer.
+ */
+
+import Types.*
+
+// ============================================================================
+// SECTION 1: TOKENIZER CONFIGURATION STATE
+// ============================================================================
+
+/**
+ * Core Tokenizer Configuration
+ */
+state TokenizerConfig {
+    // Vocabulary Configuration
+    vocabSize: VocabSize,
+    lexVocabSize: VocabSize,
+    totalVocabSize: VocabSize,
+    
+    // Special Token Configuration
+    padToken: Token,
+    padTokenId: TokenId,
+    unkToken: Token,
+    unkTokenId: TokenId,
+    bosToken: Token,
+    bosTokenId: TokenId,
+    eosToken: Token,
+    eosTokenId: TokenId,
+    sepToken: Token,
+    sepTokenId: TokenId,
+    clsToken: Token,
+    clsTokenId: TokenId,
+    maskToken: Token,
+    maskTokenId: TokenId,
+    
+    // Legal Domain Special Tokens
+    entityStartToken: Token,
+    entityStartTokenId: TokenId,
+    entityEndToken: Token,
+    entityEndTokenId: TokenId,
+    relationStartToken: Token,
+    relationStartTokenId: TokenId,
+    relationEndToken: Token,
+    relationEndTokenId: TokenId,
+    principleStartToken: Token,
+    principleStartTokenId: TokenId,
+    principleEndToken: Token,
+    principleEndTokenId: TokenId,
+    eventStartToken: Token,
+    eventStartTokenId: TokenId,
+    eventEndToken: Token,
+    eventEndTokenId: TokenId,
+    agentStartToken: Token,
+    agentStartTokenId: TokenId,
+    agentEndToken: Token,
+    agentEndTokenId: TokenId,
+    temporalStartToken: Token,
+    temporalStartTokenId: TokenId,
+    temporalEndToken: Token,
+    temporalEndTokenId: TokenId,
+    
+    // Processing Configuration
+    maxLength: SeqLen,
+    truncation: Boolean,
+    padding: PaddingStrategy,
+    addSpecialTokens: Boolean,
+    returnAttentionMask: Boolean,
+    returnTokenTypeIds: Boolean,
+    
+    // Normalization Configuration
+    doLowerCase: Boolean,
+    stripAccents: Boolean,
+    cleanUpTokenizationSpaces: Boolean,
+    
+    // Subword Configuration
+    modelType: TokenizerModelType,
+    mergesFile: Option<String>,
+    vocabFile: String,
+    
+    // Legal Vocabulary Extension
+    lexVocabFile: Option<String>,
+    entityVocab: Map<EntityId, TokenId>,
+    relationVocab: Map<RelationId, TokenId>,
+    principleVocab: Map<PrincipleId, TokenId>
+}
+
+/**
+ * Padding Strategy Enumeration
+ */
+enum PaddingStrategy {
+    DO_NOT_PAD,
+    LONGEST,
+    MAX_LENGTH
+}
+
+/**
+ * Tokenizer Model Type
+ */
+enum TokenizerModelType {
+    BPE,                                    // Byte-Pair Encoding
+    WORDPIECE,                              // WordPiece
+    UNIGRAM,                                // Unigram Language Model
+    SENTENCEPIECE,                          // SentencePiece
+    CHARACTER                               // Character-level
+}
+
+// ============================================================================
+// SECTION 2: SPECIAL TOKENS MAP
+// ============================================================================
+
+/**
+ * Special Tokens Map Configuration
+ */
+state SpecialTokensMap {
+    // Standard Special Tokens
+    padToken: SpecialTokenEntry,
+    unkToken: SpecialTokenEntry,
+    bosToken: SpecialTokenEntry,
+    eosToken: SpecialTokenEntry,
+    sepToken: SpecialTokenEntry,
+    clsToken: SpecialTokenEntry,
+    maskToken: SpecialTokenEntry,
+    
+    // Additional Special Tokens (Legal Domain)
+    additionalSpecialTokens: Array<SpecialTokenEntry>
+}
+
+/**
+ * Special Token Entry
+ */
+record SpecialTokenEntry {
+    content: Token,
+    lstrip: Boolean,
+    normalized: Boolean,
+    rstrip: Boolean,
+    singleWord: Boolean
+}
+
+// ============================================================================
+// SECTION 3: TOKENIZER CONFIG INVARIANTS
+// ============================================================================
+
+/**
+ * Vocabulary Size Consistency
+ */
+invariant VocabSizeConsistency:
+    ∀ cfg: TokenizerConfig •
+        cfg.totalVocabSize = cfg.vocabSize + cfg.lexVocabSize
+
+/**
+ * Special Token ID Uniqueness
+ */
+invariant SpecialTokenIdUniqueness:
+    ∀ cfg: TokenizerConfig •
+        distinct([
+            cfg.padTokenId,
+            cfg.unkTokenId,
+            cfg.bosTokenId,
+            cfg.eosTokenId,
+            cfg.sepTokenId,
+            cfg.clsTokenId,
+            cfg.maskTokenId,
+            cfg.entityStartTokenId,
+            cfg.entityEndTokenId,
+            cfg.relationStartTokenId,
+            cfg.relationEndTokenId,
+            cfg.principleStartTokenId,
+            cfg.principleEndTokenId,
+            cfg.eventStartTokenId,
+            cfg.eventEndTokenId,
+            cfg.agentStartTokenId,
+            cfg.agentEndTokenId,
+            cfg.temporalStartTokenId,
+            cfg.temporalEndTokenId
+        ])
+
+/**
+ * Special Token String Uniqueness
+ */
+invariant SpecialTokenStringUniqueness:
+    ∀ cfg: TokenizerConfig •
+        distinct([
+            cfg.padToken,
+            cfg.unkToken,
+            cfg.bosToken,
+            cfg.eosToken,
+            cfg.sepToken,
+            cfg.clsToken,
+            cfg.maskToken,
+            cfg.entityStartToken,
+            cfg.entityEndToken,
+            cfg.relationStartToken,
+            cfg.relationEndToken,
+            cfg.principleStartToken,
+            cfg.principleEndToken,
+            cfg.eventStartToken,
+            cfg.eventEndToken,
+            cfg.agentStartToken,
+            cfg.agentEndToken,
+            cfg.temporalStartToken,
+            cfg.temporalEndToken
+        ])
+
+/**
+ * Token ID Bounds
+ */
+invariant TokenIdBounds:
+    ∀ cfg: TokenizerConfig •
+        cfg.padTokenId < cfg.totalVocabSize ∧
+        cfg.unkTokenId < cfg.totalVocabSize ∧
+        cfg.bosTokenId < cfg.totalVocabSize ∧
+        cfg.eosTokenId < cfg.totalVocabSize ∧
+        cfg.sepTokenId < cfg.totalVocabSize ∧
+        cfg.clsTokenId < cfg.totalVocabSize ∧
+        cfg.maskTokenId < cfg.totalVocabSize
+
+/**
+ * Max Length Positive
+ */
+invariant MaxLengthPositive:
+    ∀ cfg: TokenizerConfig •
+        cfg.maxLength > 0
+
+/**
+ * Padding Token Required for Padding
+ */
+invariant PaddingTokenRequired:
+    ∀ cfg: TokenizerConfig •
+        cfg.padding ≠ DO_NOT_PAD ⟹ cfg.padToken ≠ ""
+
+/**
+ * Entity Vocab Consistency
+ */
+invariant EntityVocabConsistency:
+    ∀ cfg: TokenizerConfig •
+        ∀ (eid, tid) ∈ cfg.entityVocab •
+            tid < cfg.totalVocabSize ∧
+            tid ≥ cfg.vocabSize  // Legal vocab starts after base vocab
+
+/**
+ * Relation Vocab Consistency
+ */
+invariant RelationVocabConsistency:
+    ∀ cfg: TokenizerConfig •
+        ∀ (rid, tid) ∈ cfg.relationVocab •
+            tid < cfg.totalVocabSize ∧
+            tid ≥ cfg.vocabSize
+
+/**
+ * Principle Vocab Consistency
+ */
+invariant PrincipleVocabConsistency:
+    ∀ cfg: TokenizerConfig •
+        ∀ (pid, tid) ∈ cfg.principleVocab •
+            tid < cfg.totalVocabSize ∧
+            tid ≥ cfg.vocabSize
+
+// ============================================================================
+// SECTION 4: DEFAULT CONFIGURATION
+// ============================================================================
+
+/**
+ * Default Tokenizer Configuration
+ */
+const DEFAULT_TOKENIZER_CONFIG: TokenizerConfig = {
+    vocabSize: VOCAB_SIZE,
+    lexVocabSize: LEX_VOCAB_SIZE,
+    totalVocabSize: TOTAL_VOCAB_SIZE,
+    
+    padToken: PAD_TOKEN,
+    padTokenId: PAD_TOKEN_ID,
+    unkToken: UNK_TOKEN,
+    unkTokenId: UNK_TOKEN_ID,
+    bosToken: BOS_TOKEN,
+    bosTokenId: BOS_TOKEN_ID,
+    eosToken: EOS_TOKEN,
+    eosTokenId: EOS_TOKEN_ID,
+    sepToken: SEP_TOKEN,
+    sepTokenId: SEP_TOKEN_ID,
+    clsToken: CLS_TOKEN,
+    clsTokenId: CLS_TOKEN_ID,
+    maskToken: MASK_TOKEN,
+    maskTokenId: MASK_TOKEN_ID,
+    
+    entityStartToken: ENTITY_START,
+    entityStartTokenId: ENTITY_START_ID,
+    entityEndToken: ENTITY_END,
+    entityEndTokenId: ENTITY_END_ID,
+    relationStartToken: RELATION_START,
+    relationStartTokenId: RELATION_START_ID,
+    relationEndToken: RELATION_END,
+    relationEndTokenId: RELATION_END_ID,
+    principleStartToken: PRINCIPLE_START,
+    principleStartTokenId: PRINCIPLE_START_ID,
+    principleEndToken: PRINCIPLE_END,
+    principleEndTokenId: PRINCIPLE_END_ID,
+    eventStartToken: EVENT_START,
+    eventStartTokenId: EVENT_START_ID,
+    eventEndToken: EVENT_END,
+    eventEndTokenId: EVENT_END_ID,
+    agentStartToken: AGENT_START,
+    agentStartTokenId: AGENT_START_ID,
+    agentEndToken: AGENT_END,
+    agentEndTokenId: AGENT_END_ID,
+    temporalStartToken: TEMPORAL_START,
+    temporalStartTokenId: TEMPORAL_START_ID,
+    temporalEndToken: TEMPORAL_END,
+    temporalEndTokenId: TEMPORAL_END_ID,
+    
+    maxLength: DEFAULT_MAX_SEQ_LEN,
+    truncation: true,
+    padding: MAX_LENGTH,
+    addSpecialTokens: true,
+    returnAttentionMask: true,
+    returnTokenTypeIds: false,
+    
+    doLowerCase: false,
+    stripAccents: false,
+    cleanUpTokenizationSpaces: true,
+    
+    modelType: BPE,
+    mergesFile: None,
+    vocabFile: "vocab.json",
+    
+    lexVocabFile: Some("lex_vocab.json"),
+    entityVocab: {},
+    relationVocab: {},
+    principleVocab: {}
+}
+
+/**
+ * Default Special Tokens Map
+ */
+const DEFAULT_SPECIAL_TOKENS_MAP: SpecialTokensMap = {
+    padToken: { content: PAD_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    unkToken: { content: UNK_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    bosToken: { content: BOS_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    eosToken: { content: EOS_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    sepToken: { content: SEP_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    clsToken: { content: CLS_TOKEN, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+    maskToken: { content: MASK_TOKEN, lstrip: true, normalized: false, rstrip: false, singleWord: false },
+    additionalSpecialTokens: [
+        { content: ENTITY_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: ENTITY_END, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: RELATION_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: RELATION_END, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: PRINCIPLE_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: PRINCIPLE_END, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: EVENT_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: EVENT_END, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: AGENT_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: AGENT_END, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: TEMPORAL_START, lstrip: false, normalized: false, rstrip: false, singleWord: false },
+        { content: TEMPORAL_END, lstrip: false, normalized: false, rstrip: false, singleWord: false }
+    ]
+}
+
+// ============================================================================
+// SECTION 5: CONFIGURATION VALIDATION
+// ============================================================================
+
+/**
+ * Validate Tokenizer Configuration
+ */
+contract validateTokenizerConfig(cfg: TokenizerConfig): Result<Unit, String>
+    requires cfg.vocabSize > 0
+    requires cfg.maxLength > 0
+    ensures result = Ok(()) ⟺ 
+        VocabSizeConsistency(cfg) ∧
+        SpecialTokenIdUniqueness(cfg) ∧
+        SpecialTokenStringUniqueness(cfg) ∧
+        TokenIdBounds(cfg) ∧
+        MaxLengthPositive(cfg) ∧
+        PaddingTokenRequired(cfg)
+
+/**
+ * Validate Special Tokens Map
+ */
+contract validateSpecialTokensMap(stm: SpecialTokensMap): Result<Unit, String>
+    requires stm.padToken.content ≠ ""
+    requires stm.unkToken.content ≠ ""
+    ensures result = Ok(()) ⟺
+        stm.padToken.content ≠ stm.unkToken.content ∧
+        stm.bosToken.content ≠ stm.eosToken.content
+
+/**
+ * Merge Configurations
+ */
+contract mergeConfigs(base: TokenizerConfig, override: Partial<TokenizerConfig>): TokenizerConfig
+    ensures result.vocabSize = override.vocabSize ?? base.vocabSize
+    ensures result.maxLength = override.maxLength ?? base.maxLength
+    ensures validateTokenizerConfig(result) = Ok(())
+
+// ============================================================================
+// END OF TOKENIZERCONFIG.ZPP
+// ============================================================================

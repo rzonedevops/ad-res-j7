@@ -1,0 +1,512 @@
+/**
+ * ModelConfig.zpp - Model Configuration State and Invariants
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the model architecture configuration,
+ * state invariants, and validation contracts for the lexicog model.
+ */
+
+import Types.*
+import TokenizerConfig.*
+
+// ============================================================================
+// SECTION 1: MODEL CONFIGURATION STATE
+// ============================================================================
+
+/**
+ * Core Model Configuration
+ */
+state ModelConfig {
+    // Model Identity
+    modelType: String,
+    modelName: String,
+    modelVersion: String,
+    
+    // Architecture Parameters
+    vocabSize: VocabSize,
+    hiddenSize: HiddenDim,
+    intermediateSize: HiddenDim,
+    numHiddenLayers: NumLayers,
+    numAttentionHeads: NumHeads,
+    maxPositionEmbeddings: SeqLen,
+    
+    // Multi-Agent Attention Configuration
+    numAgentHeads: NumHeads,
+    numCrossAttentionHeads: NumHeads,
+    numSelfAttentionHeads: NumHeads,
+    agentPoolSize: ℕ₊,
+    
+    // Activation and Normalization
+    hiddenAct: ActivationType,
+    hiddenDropoutProb: ℝ[0,1],
+    attentionProbsDropoutProb: ℝ[0,1],
+    layerNormEps: ℝ₊,
+    
+    // Embedding Configuration
+    typeVocabSize: ℕ₊,
+    initializerRange: ℝ₊,
+    useCache: Boolean,
+    
+    // Legal Reasoning Configuration
+    lexConfig: LexReasoningConfig,
+    
+    // Generation Configuration
+    generationConfig: GenerationConfig,
+    
+    // Quantization Configuration
+    quantizationConfig: Option<QuantizationConfig>,
+    
+    // Training Configuration
+    torchDtype: DType,
+    useBfloat16: Boolean
+}
+
+/**
+ * Legal Reasoning Configuration
+ */
+state LexReasoningConfig {
+    // Entity Processing
+    maxEntities: ℕ₊,
+    entityEmbedDim: EmbedDim,
+    entityPooling: PoolingType,
+    
+    // Relation Processing
+    maxRelations: ℕ₊,
+    relationEmbedDim: EmbedDim,
+    relationAttentionHeads: NumHeads,
+    
+    // Event/Timeline Processing
+    maxEvents: ℕ₊,
+    temporalEmbedDim: EmbedDim,
+    temporalEncodingType: TemporalEncodingType,
+    
+    // Principle Processing
+    maxPrinciples: ℕ₊,
+    principleEmbedDim: EmbedDim,
+    principleHierarchyDepth: ℕ₊,
+    
+    // Hypergraph Configuration
+    hypergraphEnabled: Boolean,
+    maxHyperedges: ℕ₊,
+    hyperedgeAggregation: AggregationType,
+    
+    // N-Tuple Configuration
+    maxTupleSize: ℕ₊,
+    tupleEmbedDim: EmbedDim,
+    
+    // Inference Configuration
+    inferenceTypes: Array<InferenceType>,
+    confidenceThreshold: Confidence
+}
+
+/**
+ * Generation Configuration
+ */
+state GenerationConfig {
+    // Length Control
+    maxLength: SeqLen,
+    maxNewTokens: Option<SeqLen>,
+    minLength: SeqLen,
+    
+    // Sampling Parameters
+    doSample: Boolean,
+    temperature: Temperature,
+    topK: ℕ₊,
+    topP: ℝ[0,1],
+    typicalP: ℝ[0,1],
+    repetitionPenalty: ℝ₊,
+    
+    // Beam Search
+    numBeams: ℕ₊,
+    numBeamGroups: ℕ₊,
+    diversityPenalty: ℝ,
+    lengthPenalty: ℝ,
+    earlyStopping: Boolean,
+    
+    // Special Tokens
+    padTokenId: TokenId,
+    bosTokenId: TokenId,
+    eosTokenId: TokenId,
+    
+    // Output Control
+    numReturnSequences: ℕ₊,
+    outputScores: Boolean,
+    outputAttentions: Boolean,
+    outputHiddenStates: Boolean,
+    returnDictInGenerate: Boolean
+}
+
+/**
+ * Quantization Configuration
+ */
+state QuantizationConfig {
+    quantMethod: QuantizationMethod,
+    bits: ℕ₊,
+    groupSize: ℕ₊,
+    descAct: Boolean,
+    symm: Boolean
+}
+
+// ============================================================================
+// SECTION 2: ENUMERATED TYPES
+// ============================================================================
+
+/**
+ * Activation Function Types
+ */
+enum ActivationType {
+    GELU,
+    GELU_NEW,
+    RELU,
+    SILU,
+    SWISH,
+    TANH,
+    QUICK_GELU
+}
+
+/**
+ * Pooling Types
+ */
+enum PoolingType {
+    MEAN,
+    MAX,
+    CLS,
+    ATTENTION,
+    WEIGHTED_MEAN
+}
+
+/**
+ * Temporal Encoding Types
+ */
+enum TemporalEncodingType {
+    SINUSOIDAL,
+    LEARNED,
+    ROTARY,
+    ALIBI,
+    RELATIVE
+}
+
+/**
+ * Aggregation Types for Hypergraph
+ */
+enum AggregationType {
+    SUM,
+    MEAN,
+    MAX,
+    ATTENTION,
+    GATED
+}
+
+/**
+ * Data Types
+ */
+enum DType {
+    FLOAT32,
+    FLOAT16,
+    BFLOAT16,
+    INT8,
+    INT4
+}
+
+/**
+ * Quantization Methods
+ */
+enum QuantizationMethod {
+    GPTQ,
+    AWQ,
+    GGUF,
+    BITSANDBYTES,
+    NONE
+}
+
+// ============================================================================
+// SECTION 3: MODEL CONFIG INVARIANTS
+// ============================================================================
+
+/**
+ * Hidden Size Divisibility
+ */
+invariant HiddenSizeDivisibility:
+    ∀ cfg: ModelConfig •
+        cfg.hiddenSize mod cfg.numAttentionHeads = 0
+
+/**
+ * Attention Head Sum
+ */
+invariant AttentionHeadSum:
+    ∀ cfg: ModelConfig •
+        cfg.numAgentHeads + cfg.numCrossAttentionHeads + cfg.numSelfAttentionHeads ≤ cfg.numAttentionHeads
+
+/**
+ * Intermediate Size Ratio
+ */
+invariant IntermediateSizeRatio:
+    ∀ cfg: ModelConfig •
+        cfg.intermediateSize ≥ cfg.hiddenSize
+
+/**
+ * Dropout Bounds
+ */
+invariant DropoutBounds:
+    ∀ cfg: ModelConfig •
+        0 ≤ cfg.hiddenDropoutProb ≤ 1 ∧
+        0 ≤ cfg.attentionProbsDropoutProb ≤ 1
+
+/**
+ * Layer Norm Epsilon Positive
+ */
+invariant LayerNormEpsPositive:
+    ∀ cfg: ModelConfig •
+        cfg.layerNormEps > 0
+
+/**
+ * Vocab Size Consistency
+ */
+invariant VocabSizeConsistency:
+    ∀ cfg: ModelConfig •
+        cfg.vocabSize = TOTAL_VOCAB_SIZE
+
+/**
+ * Max Position Embeddings
+ */
+invariant MaxPositionEmbeddings:
+    ∀ cfg: ModelConfig •
+        cfg.maxPositionEmbeddings > 0
+
+/**
+ * Agent Pool Size
+ */
+invariant AgentPoolSize:
+    ∀ cfg: ModelConfig •
+        cfg.agentPoolSize ≤ MAX_ENTITIES
+
+/**
+ * Legal Config Bounds
+ */
+invariant LexConfigBounds:
+    ∀ cfg: ModelConfig •
+        cfg.lexConfig.maxEntities ≤ MAX_ENTITIES ∧
+        cfg.lexConfig.maxRelations ≤ MAX_RELATIONS ∧
+        cfg.lexConfig.maxEvents ≤ MAX_EVENTS ∧
+        cfg.lexConfig.maxPrinciples ≤ MAX_PRINCIPLES ∧
+        cfg.lexConfig.maxTupleSize ≤ MAX_TUPLE_SIZE
+
+/**
+ * Generation Config Consistency
+ */
+invariant GenerationConfigConsistency:
+    ∀ cfg: ModelConfig •
+        cfg.generationConfig.minLength ≤ cfg.generationConfig.maxLength ∧
+        cfg.generationConfig.numReturnSequences ≤ cfg.generationConfig.numBeams
+
+/**
+ * Temperature Positive
+ */
+invariant TemperaturePositive:
+    ∀ cfg: ModelConfig •
+        cfg.generationConfig.temperature > 0
+
+/**
+ * Top-K Positive
+ */
+invariant TopKPositive:
+    ∀ cfg: ModelConfig •
+        cfg.generationConfig.topK > 0
+
+/**
+ * Top-P Bounds
+ */
+invariant TopPBounds:
+    ∀ cfg: ModelConfig •
+        0 < cfg.generationConfig.topP ≤ 1
+
+// ============================================================================
+// SECTION 4: DEFAULT CONFIGURATION
+// ============================================================================
+
+/**
+ * Default Model Configuration
+ */
+const DEFAULT_MODEL_CONFIG: ModelConfig = {
+    modelType: "lexicog-transformer",
+    modelName: "ad-res-j7",
+    modelVersion: "1.0.0",
+    
+    vocabSize: TOTAL_VOCAB_SIZE,
+    hiddenSize: DEFAULT_EMBED_DIM,
+    intermediateSize: DEFAULT_HIDDEN_DIM,
+    numHiddenLayers: DEFAULT_NUM_LAYERS,
+    numAttentionHeads: DEFAULT_NUM_HEADS,
+    maxPositionEmbeddings: DEFAULT_MAX_SEQ_LEN,
+    
+    numAgentHeads: NUM_AGENT_HEADS,
+    numCrossAttentionHeads: CROSS_ATTENTION_HEADS,
+    numSelfAttentionHeads: SELF_ATTENTION_HEADS,
+    agentPoolSize: MAX_ENTITIES,
+    
+    hiddenAct: GELU_NEW,
+    hiddenDropoutProb: DEFAULT_DROPOUT,
+    attentionProbsDropoutProb: DEFAULT_DROPOUT,
+    layerNormEps: 1e-12,
+    
+    typeVocabSize: 2,
+    initializerRange: 0.02,
+    useCache: true,
+    
+    lexConfig: DEFAULT_LEX_REASONING_CONFIG,
+    generationConfig: DEFAULT_GENERATION_CONFIG,
+    quantizationConfig: None,
+    
+    torchDtype: BFLOAT16,
+    useBfloat16: true
+}
+
+/**
+ * Default Legal Reasoning Configuration
+ */
+const DEFAULT_LEX_REASONING_CONFIG: LexReasoningConfig = {
+    maxEntities: MAX_ENTITIES,
+    entityEmbedDim: DEFAULT_EMBED_DIM,
+    entityPooling: ATTENTION,
+    
+    maxRelations: MAX_RELATIONS,
+    relationEmbedDim: DEFAULT_EMBED_DIM,
+    relationAttentionHeads: 4,
+    
+    maxEvents: MAX_EVENTS,
+    temporalEmbedDim: DEFAULT_EMBED_DIM,
+    temporalEncodingType: ROTARY,
+    
+    maxPrinciples: MAX_PRINCIPLES,
+    principleEmbedDim: DEFAULT_EMBED_DIM,
+    principleHierarchyDepth: 5,
+    
+    hypergraphEnabled: true,
+    maxHyperedges: 512,
+    hyperedgeAggregation: ATTENTION,
+    
+    maxTupleSize: MAX_TUPLE_SIZE,
+    tupleEmbedDim: DEFAULT_EMBED_DIM,
+    
+    inferenceTypes: [DEDUCTIVE, INDUCTIVE, ABDUCTIVE, ANALOGICAL, PROBABILISTIC],
+    confidenceThreshold: 0.7
+}
+
+/**
+ * Default Generation Configuration
+ */
+const DEFAULT_GENERATION_CONFIG: GenerationConfig = {
+    maxLength: DEFAULT_MAX_SEQ_LEN,
+    maxNewTokens: None,
+    minLength: 1,
+    
+    doSample: true,
+    temperature: 0.7,
+    topK: 50,
+    topP: 0.95,
+    typicalP: 1.0,
+    repetitionPenalty: 1.1,
+    
+    numBeams: 1,
+    numBeamGroups: 1,
+    diversityPenalty: 0.0,
+    lengthPenalty: 1.0,
+    earlyStopping: false,
+    
+    padTokenId: PAD_TOKEN_ID,
+    bosTokenId: BOS_TOKEN_ID,
+    eosTokenId: EOS_TOKEN_ID,
+    
+    numReturnSequences: 1,
+    outputScores: false,
+    outputAttentions: false,
+    outputHiddenStates: false,
+    returnDictInGenerate: false
+}
+
+// ============================================================================
+// SECTION 5: CONFIGURATION VALIDATION
+// ============================================================================
+
+/**
+ * Validate Model Configuration
+ */
+contract validateModelConfig(cfg: ModelConfig): Result<Unit, String>
+    requires cfg.vocabSize > 0
+    requires cfg.hiddenSize > 0
+    requires cfg.numHiddenLayers > 0
+    requires cfg.numAttentionHeads > 0
+    ensures result = Ok(()) ⟺
+        HiddenSizeDivisibility(cfg) ∧
+        AttentionHeadSum(cfg) ∧
+        IntermediateSizeRatio(cfg) ∧
+        DropoutBounds(cfg) ∧
+        LayerNormEpsPositive(cfg) ∧
+        VocabSizeConsistency(cfg) ∧
+        MaxPositionEmbeddings(cfg) ∧
+        AgentPoolSize(cfg) ∧
+        LexConfigBounds(cfg) ∧
+        GenerationConfigConsistency(cfg) ∧
+        TemperaturePositive(cfg) ∧
+        TopKPositive(cfg) ∧
+        TopPBounds(cfg)
+
+/**
+ * Validate Legal Reasoning Configuration
+ */
+contract validateLexConfig(cfg: LexReasoningConfig): Result<Unit, String>
+    requires cfg.maxEntities > 0
+    requires cfg.maxRelations > 0
+    requires cfg.maxEvents > 0
+    ensures result = Ok(()) ⟺
+        cfg.maxEntities ≤ MAX_ENTITIES ∧
+        cfg.maxRelations ≤ MAX_RELATIONS ∧
+        cfg.maxEvents ≤ MAX_EVENTS ∧
+        cfg.maxPrinciples ≤ MAX_PRINCIPLES ∧
+        cfg.maxTupleSize ≤ MAX_TUPLE_SIZE ∧
+        cfg.confidenceThreshold ∈ [0, 1]
+
+/**
+ * Validate Generation Configuration
+ */
+contract validateGenerationConfig(cfg: GenerationConfig): Result<Unit, String>
+    requires cfg.maxLength > 0
+    requires cfg.temperature > 0
+    ensures result = Ok(()) ⟺
+        cfg.minLength ≤ cfg.maxLength ∧
+        cfg.numReturnSequences ≤ cfg.numBeams ∧
+        cfg.topP ∈ (0, 1] ∧
+        cfg.topK > 0
+
+/**
+ * Compute Head Dimension
+ */
+contract computeHeadDim(cfg: ModelConfig): ℕ₊
+    requires HiddenSizeDivisibility(cfg)
+    ensures result = cfg.hiddenSize / cfg.numAttentionHeads
+
+/**
+ * Compute Total Parameters
+ */
+contract computeTotalParams(cfg: ModelConfig): ℕ₊
+    ensures result = 
+        // Embedding parameters
+        cfg.vocabSize * cfg.hiddenSize +
+        cfg.maxPositionEmbeddings * cfg.hiddenSize +
+        cfg.typeVocabSize * cfg.hiddenSize +
+        // Transformer layer parameters (per layer)
+        cfg.numHiddenLayers * (
+            // Self-attention
+            4 * cfg.hiddenSize * cfg.hiddenSize +
+            // FFN
+            2 * cfg.hiddenSize * cfg.intermediateSize +
+            // Layer norms
+            4 * cfg.hiddenSize
+        ) +
+        // Output layer
+        cfg.vocabSize * cfg.hiddenSize
+
+// ============================================================================
+// END OF MODELCONFIG.ZPP
+// ============================================================================

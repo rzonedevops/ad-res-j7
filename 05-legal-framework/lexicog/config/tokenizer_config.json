@@ -1,0 +1,164 @@
+{
+  "_lexicog_spec_version": "1.0.0",
+  "_zpp_spec_file": "spec/TokenizerConfig.zpp",
+  "_zpp_state": "TokenizerConfig",
+  
+  "tokenizer_class": "LexicogTokenizer",
+  "model_type": "lexicog-transformer",
+  
+  "vocab_size": 32000,
+  "lex_vocab_size": 8192,
+  "total_vocab_size": 40192,
+  
+  "pad_token": "[PAD]",
+  "pad_token_id": 0,
+  "unk_token": "[UNK]",
+  "unk_token_id": 3,
+  "bos_token": "[BOS]",
+  "bos_token_id": 1,
+  "eos_token": "[EOS]",
+  "eos_token_id": 2,
+  "sep_token": "[SEP]",
+  "sep_token_id": 4,
+  "cls_token": "[CLS]",
+  "cls_token_id": 5,
+  "mask_token": "[MASK]",
+  "mask_token_id": 6,
+  
+  "entity_start_token": "[ENT]",
+  "entity_start_token_id": 100,
+  "entity_end_token": "[/ENT]",
+  "entity_end_token_id": 101,
+  "relation_start_token": "[REL]",
+  "relation_start_token_id": 102,
+  "relation_end_token": "[/REL]",
+  "relation_end_token_id": 103,
+  "principle_start_token": "[PRIN]",
+  "principle_start_token_id": 104,
+  "principle_end_token": "[/PRIN]",
+  "principle_end_token_id": 105,
+  "event_start_token": "[EVT]",
+  "event_start_token_id": 106,
+  "event_end_token": "[/EVT]",
+  "event_end_token_id": 107,
+  "agent_start_token": "[AGT]",
+  "agent_start_token_id": 108,
+  "agent_end_token": "[/AGT]",
+  "agent_end_token_id": 109,
+  "temporal_start_token": "[TIME]",
+  "temporal_start_token_id": 110,
+  "temporal_end_token": "[/TIME]",
+  "temporal_end_token_id": 111,
+  
+  "max_length": 4096,
+  "truncation": true,
+  "padding": "max_length",
+  "add_special_tokens": true,
+  "return_attention_mask": true,
+  "return_token_type_ids": false,
+  
+  "do_lower_case": false,
+  "strip_accents": false,
+  "clean_up_tokenization_spaces": true,
+  
+  "model_type_tokenizer": "bpe",
+  "merges_file": null,
+  "vocab_file": "vocab.json",
+  
+  "lex_vocab_file": "lex_vocab.json",
+  
+  "entity_vocab": {
+    "_description": "Maps entity IDs to token IDs (populated at runtime)",
+    "_zpp_invariant": "EntityVocabConsistency"
+  },
+  
+  "relation_vocab": {
+    "_description": "Maps relation IDs to token IDs (populated at runtime)",
+    "_zpp_invariant": "RelationVocabConsistency"
+  },
+  
+  "principle_vocab": {
+    "_description": "Maps principle IDs to token IDs (populated at runtime)",
+    "_zpp_invariant": "PrincipleVocabConsistency"
+  },
+  
+  "legal_token_ranges": {
+    "entity_tokens": {
+      "start": 32000,
+      "end": 34000,
+      "description": "Token IDs reserved for entity embeddings"
+    },
+    "relation_tokens": {
+      "start": 34000,
+      "end": 36000,
+      "description": "Token IDs reserved for relation embeddings"
+    },
+    "principle_tokens": {
+      "start": 36000,
+      "end": 38000,
+      "description": "Token IDs reserved for legal principle embeddings"
+    },
+    "event_tokens": {
+      "start": 38000,
+      "end": 39000,
+      "description": "Token IDs reserved for event embeddings"
+    },
+    "temporal_tokens": {
+      "start": 39000,
+      "end": 40000,
+      "description": "Token IDs reserved for temporal embeddings"
+    },
+    "reserved": {
+      "start": 40000,
+      "end": 40192,
+      "description": "Reserved for future expansion"
+    }
+  },
+  
+  "case_2025_137857_entities": {
+    "_description": "Pre-defined entity tokens for Case 2025-137857",
+    "daniel-faucitt": 32001,
+    "jacqueline-faucitt": 32002,
+    "peter-faucitt": 32003,
+    "rynette-farrar": 32004,
+    "bantjies": 32005,
+    "regima-skin-treatments": 32006,
+    "regima-worldwide": 32007,
+    "regima-zone-ltd": 32008,
+    "faucitt-family-trust": 32009,
+    "villa-via": 32010,
+    "resonance": 32011
+  },
+  
+  "case_2025_137857_relations": {
+    "_description": "Pre-defined relation tokens for Case 2025-137857",
+    "co-respondent": 34001,
+    "spouse": 34002,
+    "parent-child": 34003,
+    "bookkeeper": 34004,
+    "trustee": 34005,
+    "beneficiary": 34006,
+    "director": 34007,
+    "shareholder": 34008,
+    "adversarial": 34009,
+    "coordination": 34010
+  },
+  
+  "_zpp_invariants": [
+    "VocabSizeConsistency",
+    "SpecialTokenIdUniqueness",
+    "SpecialTokenStringUniqueness",
+    "TokenIdBounds",
+    "MaxLengthPositive",
+    "PaddingTokenRequired",
+    "EntityVocabConsistency",
+    "RelationVocabConsistency",
+    "PrincipleVocabConsistency"
+  ],
+  
+  "_zpp_contracts": [
+    "validateTokenizerConfig",
+    "validateSpecialTokensMap",
+    "mergeConfigs"
+  ]
+}

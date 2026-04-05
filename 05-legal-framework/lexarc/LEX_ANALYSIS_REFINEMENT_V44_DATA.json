@@ -1,0 +1,414 @@
+{
+  "timestamp": "2025-12-25T02:08:20.483250",
+  "total_schemes": 130,
+  "legal_domains": {
+    "civ": {
+      "name": "Civil Law",
+      "files": [
+        "civ/za/ad_element_integration_v39.scm",
+        "civ/za/confrontation_event_analysis_v37.scm",
+        "civ/za/multi_actor_coordination_detection_v36.scm",
+        "civ/za/multi_actor_coordination_detection_v38.scm",
+        "civ/za/south_african_civil_law.scm",
+        "civ/za/south_african_civil_law_agent_based_conflict_resolution.scm",
+        "civ/za/south_african_civil_law_agent_based_conflict_resolution_v2.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_optimized.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v10.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v11.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v14.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v17.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v18.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v19.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v20.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v27.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v28.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v29.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v30.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v31.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v34.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v4.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v5.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v6.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v7.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v8.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v9.scm",
+        "civ/za/south_african_civil_law_case_enhanced.scm",
+        "civ/za/south_african_civil_law_coercion.scm",
+        "civ/za/south_african_civil_law_documentation_obstruction.scm",
+        "civ/za/south_african_civil_law_enhanced.scm",
+        "civ/za/south_african_civil_law_entity_relationship_analysis.scm",
+        "civ/za/south_african_civil_law_entity_relationship_conflict_enhanced.scm",
+        "civ/za/south_african_civil_law_manufactured_crisis.scm",
+        "civ/za/south_african_civil_law_manufactured_crisis_detection.scm",
+        "civ/za/south_african_civil_law_medical_testing_weaponization.scm",
+        "civ/za/south_african_civil_law_multi_actor_coordination.scm",
+        "civ/za/south_african_civil_law_platform_unjust_enrichment.scm",
+        "civ/za/south_african_civil_law_retaliation.scm",
+        "civ/za/south_african_civil_law_revenue_hijacking_creditor_sabotage.scm",
+        "civ/za/south_african_civil_law_temporal_bad_faith.scm",
+        "civ/za/south_african_civil_law_temporal_bad_faith_v2.scm",
+        "civ/za/south_african_civil_law_temporal_bad_faith_v3.scm",
+        "civ/za/south_african_civil_law_temporal_causation_v24.scm",
+        "civ/za/south_african_civil_law_timeline_event_integration.scm",
+        "civ/za/south_african_civil_law_timing_analysis_v2.scm",
+        "civ/za/south_african_civil_law_unjust_enrichment.scm",
+        "civ/za/south_african_civil_procedure_ex_parte_fraud_rescission.scm"
+      ],
+      "principles": []
+    },
+    "cri": {
+      "name": "Criminal Law",
+      "files": [
+        "cri/za/south_african_criminal_law.scm"
+      ],
+      "principles": []
+    },
+    "cmp": {
+      "name": "Company Law",
+      "files": [
+        "cmp/za/investigation_legitimacy_assessment_v37.scm",
+        "cmp/za/juristic_person_agent_modeling_v36.scm",
+        "cmp/za/south_african_ceo_operational_discretion_v22.scm",
+        "cmp/za/south_african_cio_technical_expense_justification.scm",
+        "cmp/za/south_african_company_law.scm",
+        "cmp/za/south_african_company_law_director_collective_action.scm",
+        "cmp/za/south_african_company_law_director_loan_accounts.scm",
+        "cmp/za/south_african_company_law_enhanced.scm",
+        "cmp/za/south_african_company_law_forensic_accounting.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced_v2.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced_v3.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced_v4.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced_v5.scm",
+        "cmp/za/south_african_company_law_forensic_accounting_enhanced_v6.scm",
+        "cmp/za/south_african_company_law_non_director_control.scm",
+        "cmp/za/south_african_company_law_regulatory_compliance.scm",
+        "cmp/za/south_african_company_law_regulatory_compliance_enhanced.scm",
+        "cmp/za/south_african_company_law_regulatory_compliance_enhanced_v2.scm",
+        "cmp/za/south_african_company_law_self_dealing_detection.scm",
+        "cmp/za/south_african_platform_ownership_defense_v22.scm"
+      ],
+      "principles": []
+    },
+    "trs": {
+      "name": "Trust Law",
+      "files": [
+        "trs/fiduciary_duty_refinement.scm",
+        "trs/za/south_african_trust_law.scm",
+        "trs/za/south_african_trust_law_enhanced.scm",
+        "trs/za/south_african_trust_law_enhanced_v2.scm",
+        "trs/za/south_african_trust_law_enhanced_v3.scm",
+        "trs/za/south_african_trust_law_enhanced_v4.scm",
+        "trs/za/south_african_trust_law_enhanced_v5.scm",
+        "trs/za/south_african_trust_law_enhanced_v6.scm",
+        "trs/za/south_african_trust_law_enhanced_v7.scm",
+        "trs/za/south_african_trust_law_enhanced_v8.scm",
+        "trs/za/south_african_trust_law_temporal_analysis.scm",
+        "trs/za/south_african_trust_law_trustee_beneficiary_conflicts.scm",
+        "trs/za/south_african_trust_power_bypass_analysis_v22.scm"
+      ],
+      "principles": []
+    },
+    "lab": {
+      "name": "Labour Law",
+      "files": [
+        "lab/za/immediate_retaliation_detection_v36.scm",
+        "lab/za/immediate_retaliation_detection_v38.scm",
+        "lab/za/south_african_labour_law.scm",
+        "lab/za/whistleblower_retaliation_immediate_proximity_v25.scm"
+      ],
+      "principles": []
+    },
+    "civ-proc": {
+      "name": "Civil Procedure",
+      "files": [
+        "civ-proc/za/south_african_abuse_of_process_v22.scm",
+        "civ-proc/za/south_african_civil_procedure_ex_parte_fraud.scm",
+        "civ-proc/za/urgency_test_interdict_v37.scm"
+      ],
+      "principles": []
+    },
+    "evid": {
+      "name": "Evidence Law",
+      "files": [
+        "evid/za/evidence_principle_mapping_v6.scm",
+        "evid/za/south_african_evidence_case_2025_137857.scm",
+        "evid/za/south_african_evidence_systematic_fraud_patterns.scm"
+      ],
+      "principles": []
+    },
+    "prof-eth": {
+      "name": "Professional Ethics",
+      "files": [
+        "prof-eth/za/cio_professional_standard_industry_benchmark_v25.scm",
+        "prof-eth/za/south_african_cio_professional_standards_v22.scm",
+        "prof-eth/za/south_african_cio_professional_standards_v24.scm",
+        "prof-eth/za/south_african_professional_ethics_multi_party_conflicts.scm"
+      ],
+      "principles": []
+    },
+    "adm": {
+      "name": "Administrative Law",
+      "files": [
+        "adm/za/south_african_administrative_law.scm"
+      ],
+      "principles": []
+    },
+    "cst": {
+      "name": "Construction Law",
+      "files": [
+        "cst/za/south_african_construction_law.scm"
+      ],
+      "principles": []
+    },
+    "env": {
+      "name": "Environmental Law",
+      "files": [
+        "env/za/south_african_environmental_law.scm",
+        "env/za/south_african_regulatory_compliance_cost_justification_v22.scm"
+      ],
+      "principles": []
+    },
+    "int": {
+      "name": "International Law",
+      "files": [
+        "int/za/south_african_international_law.scm",
+        "int/za/south_african_international_regulatory_compliance.scm",
+        "int/za/south_african_international_regulatory_compliance_enhanced_v3.scm"
+      ],
+      "principles": []
+    },
+    "frn": {
+      "name": "Forensic Analysis",
+      "files": [
+        "frn/za/south_african_forensic_analysis_systematic_fraud_narrative.scm"
+      ],
+      "principles": []
+    }
+  },
+  "entity_models": {
+    "peter-faucitt": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 2
+    },
+    "jacqueline-faucitt": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 2
+    },
+    "daniel-faucitt": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 2
+    },
+    "rynette-farrar": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 2
+    },
+    "rst": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 1
+    },
+    "faucitt-family-trust": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 2
+    },
+    "natural-person-agent": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 1
+    },
+    "juristic-person-agent": {
+      "source_file": "entity_relation_framework_v3_comprehensive.scm",
+      "occurrences": 1
+    },
+    "bantjies": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "rwd-pty-ltd": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "rst-pty-ltd": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "rzl-ltd": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "slg-pty-ltd": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "villa-via": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "natural-person-agent-v43": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    },
+    "juristic-person-agent-v43": {
+      "source_file": "entity_relation_framework_v43_comprehensive.scm",
+      "occurrences": 1
+    }
+  },
+  "relation_models": {},
+  "event_models": {},
+  "legal_aspects": {},
+  "optimization_opportunities": [
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "Peter-Faucitt",
+      "recommendation": "Create comprehensive agent model for Peter-Faucitt with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "Jacqueline-Faucitt",
+      "recommendation": "Create comprehensive agent model for Jacqueline-Faucitt with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "Daniel-Faucitt",
+      "recommendation": "Create comprehensive agent model for Daniel-Faucitt with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "Bantjies",
+      "recommendation": "Create comprehensive agent model for Bantjies with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "Rynette-Farrar",
+      "recommendation": "Create comprehensive agent model for Rynette-Farrar with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "RWD",
+      "recommendation": "Create comprehensive agent model for RWD with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "RST",
+      "recommendation": "Create comprehensive agent model for RST with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "SLG",
+      "recommendation": "Create comprehensive agent model for SLG with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "FFT",
+      "recommendation": "Create comprehensive agent model for FFT with verified attributes"
+    },
+    {
+      "priority": "HIGH",
+      "type": "missing_entity",
+      "entity": "RZL",
+      "recommendation": "Create comprehensive agent model for RZL with verified attributes"
+    }
+  ],
+  "refinement_recommendations": [
+    {
+      "id": "R44-001",
+      "priority": "CRITICAL",
+      "category": "Entity Verification",
+      "title": "Implement rigorous entity attribute verification with confidence scoring",
+      "description": "All entity attributes must be verified against statutory basis and evidence chains with confidence scores >= 0.95",
+      "implementation": [
+        "Add verification-evidence-v43 records for each attribute",
+        "Implement statutory basis verification per Trust Property Control Act 57/1988",
+        "Add evidence chain verification with completeness scoring",
+        "Cross-check all attributes against annexure evidence"
+      ],
+      "affected_files": [
+        "entity_relation_framework_v43_comprehensive.scm",
+        "case_2025_137857_entity_data_v43_verified.scm"
+      ]
+    },
+    {
+      "id": "R44-002",
+      "priority": "CRITICAL",
+      "category": "Control Hierarchy",
+      "title": "Model three-level control hierarchy (Bantjies \u2192 Rynette \u2192 Peter)",
+      "description": "Explicit modeling of control hierarchy with evidence of Peter's lack of actual control",
+      "implementation": [
+        "Create control-hierarchy-v44 record type",
+        "Map Level 1 (Bantjies) as ultimate controller via trustee role",
+        "Map Level 2 (Rynette) as operational executor via financial controller",
+        "Map Level 3 (Peter) as nominal applicant without actual control",
+        "Add evidence: account access logs, email metadata, instruction chains"
+      ],
+      "affected_files": [
+        "entity_relation_framework_v43_comprehensive.scm",
+        "cmp/za/juristic_person_agent_modeling_v36.scm"
+      ]
+    },
+    {
+      "id": "R44-003",
+      "priority": "HIGH",
+      "category": "Temporal Analysis",
+      "title": "Enhance temporal causation chains for manufactured crisis detection",
+      "description": "Comprehensive temporal analysis of retaliation patterns and multi-actor coordination",
+      "implementation": [
+        "Add immediate retaliation detection (<24h: June 6-7, 2025)",
+        "Add extended retaliation pattern (64-73 days: August 13-14, 2025)",
+        "Model settlement trojan horse pattern (165-day precision)",
+        "Detect multi-stage coordination evidence",
+        "Calculate temporal synchronization confidence scores"
+      ],
+      "affected_files": [
+        "civ/za/south_african_civil_law_temporal_causation_v24.scm",
+        "lab/za/immediate_retaliation_detection_v38.scm"
+      ]
+    },
+    {
+      "id": "R44-004",
+      "priority": "HIGH",
+      "category": "Legal Aspect Mapping",
+      "title": "Map all entities, relations, and events to relevant legal aspects",
+      "description": "Comprehensive mapping of case elements to legal principles for optimal resolution",
+      "implementation": [
+        "Map each entity to applicable legal principles",
+        "Map each relation to fiduciary duties, control patterns, coordination",
+        "Map each event to causation chains, bad faith indicators, retaliation",
+        "Identify optimal legal resolution pathways per AD paragraph",
+        "Generate jax-response and dan-response framework integration"
+      ],
+      "affected_files": [
+        "entity_relation_framework_v43_comprehensive.scm",
+        "lv1/legal_aspects_taxonomy_v17.scm"
+      ]
+    },
+    {
+      "id": "R44-005",
+      "priority": "HIGH",
+      "category": "AD Integration",
+      "title": "Map AD paragraphs to entities, relations, events with priority classification",
+      "description": "Complete AD paragraph taxonomy with entity-relation-event mapping",
+      "implementation": [
+        "Classify all AD paragraphs by priority (Critical, High, Medium, Low, Meaningless)",
+        "Map each AD paragraph to relevant entities",
+        "Map each AD paragraph to relevant relations",
+        "Map each AD paragraph to relevant events",
+        "Generate response framework for jax-response and dan-response",
+        "Identify synergy opportunities between JR and DR responses"
+      ],
+      "affected_files": [
+        "entity_relation_framework_v43_comprehensive.scm",
+        "JAX_DAN_RESPONSE_IMPROVEMENTS_V43_COMPREHENSIVE.md"
+      ]
+    }
+  ]
+}

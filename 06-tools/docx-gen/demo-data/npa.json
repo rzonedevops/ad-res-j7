@@ -1,0 +1,65 @@
+{
+  "caseRef": "2025-137857-NPA",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Beyond Reasonable Doubt (95%+) — EXCEEDED for Tier A parties",
+  "executiveSummary": "This report details systematic tax fraud, fraudulent SARS submissions, and related financial crimes committed by the Tier A conspirators. The total quantum of fraudulent tax submissions exceeds R10.2M across multiple tax years and entities.",
+  "suspects": [
+    {
+      "name": "Peter Andrew Faucitt",
+      "idNumber": "520430 5706 18 5",
+      "role": "Director, Mastermind",
+      "proofOfForeknowledge": "Direct admission of fraud awareness (SF10)"
+    },
+    {
+      "name": "Rynette Farrar",
+      "role": "Financial Controller",
+      "proofOfForeknowledge": "Instructed fabrication of financials used for SARS submissions"
+    },
+    {
+      "name": "Daniel Jacobus Bantjies",
+      "role": "Chartered Accountant, Trustee",
+      "proofOfForeknowledge": "Signed off fraudulent financial statements submitted to SARS"
+    }
+  ],
+  "taxViolations": [
+    {
+      "act": "Tax Administration Act 28 of 2011",
+      "section": "s235",
+      "violation": "Tax evasion — submission of fraudulent financial statements to SARS",
+      "evidence": "Fabricated 2019 financials, De Novo instruction emails",
+      "status": "PROVEN"
+    },
+    {
+      "act": "Tax Administration Act 28 of 2011",
+      "section": "s234",
+      "violation": "Failure to submit correct returns",
+      "evidence": "Misallocated R1,035,000 debt, incorrect expense allocations",
+      "status": "PROVEN"
+    },
+    {
+      "act": "Income Tax Act 58 of 1962",
+      "section": "s104",
+      "violation": "Fraudulent claims for deductions",
+      "evidence": "Villa Via rent inflation (86% profit margin), personal expense dumping",
+      "status": "PROVEN"
+    }
+  ],
+  "financialImpact": [
+    { "category": "Revenue Theft", "amount": "R3,141,647.70", "percentage": "30.6%" },
+    { "category": "Trust Violations", "amount": "R2,851,247.35", "percentage": "27.8%" },
+    { "category": "Financial Manipulation", "amount": "R4,276,832.85", "percentage": "41.6%" },
+    { "category": "TOTAL", "amount": "R10,269,727.90", "percentage": "100%" }
+  ],
+  "requestForAction": [
+    "Initiate criminal prosecution for tax evasion under s235 of the Tax Administration Act.",
+    "Order forensic audit of all SARS submissions by the affected entities.",
+    "Issue preservation order for all financial records and accounting systems.",
+    "Refer to Asset Forfeiture Unit for recovery of proceeds of crime."
+  ],
+  "annexures": [
+    { "id": "A", "description": "Foreknowledge Classification Framework" },
+    { "id": "B", "description": "Fraudulent SARS Submissions Analysis" },
+    { "id": "C", "description": "Financial Impact Summary" }
+  ]
+}

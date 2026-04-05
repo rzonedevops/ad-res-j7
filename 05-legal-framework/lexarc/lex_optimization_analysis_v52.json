@@ -1,0 +1,4831 @@
+{
+  "total_files": 143,
+  "by_category": {
+    "root": [
+      "ENHANCED_HEADER_TEMPLATE.scm",
+      "ad_paragraph_comprehensive_mapping_v45.scm",
+      "agent_based_model_v48_ketoni_integrated.scm",
+      "case_2025_137857_entity_data_v43_verified.scm",
+      "case_2025_137857_entity_data_v44_verified.scm",
+      "case_2025_137857_entity_relation_data_v1.scm",
+      "entity_agent_modeling_v1.scm",
+      "entity_agent_modeling_v2_enhanced.scm",
+      "entity_relation_framework_v3_comprehensive.scm",
+      "entity_relation_framework_v43_comprehensive.scm",
+      "entity_relation_framework_v44_enhanced.scm",
+      "entity_relation_framework_v45_ad_integrated.scm",
+      "entity_relation_framework_v46_ketoni_corrected.scm",
+      "entity_relation_framework_v47_verified.scm",
+      "entity_relation_framework_v48_ketoni_payout_integrated.scm",
+      "entity_relation_framework_v49_motive_integrated.scm",
+      "entity_relation_framework_v50_high_resolution_agents.scm",
+      "entity_relation_framework_v51_verified_enhanced.scm",
+      "relation_tracking_temporal_v1.scm",
+      "relationship_query_analysis_v1.scm"
+    ],
+    "adm": [
+      "south_african_administrative_law.scm"
+    ],
+    "civ-proc": [
+      "south_african_abuse_of_process_v22.scm",
+      "south_african_civil_procedure_ex_parte_fraud.scm",
+      "urgency_test_interdict_v37.scm"
+    ],
+    "civ": [
+      "ad_element_integration_v39.scm",
+      "confrontation_event_analysis_v37.scm",
+      "multi_actor_coordination_detection_v36.scm",
+      "multi_actor_coordination_detection_v38.scm",
+      "south_african_civil_law.scm",
+      "south_african_civil_law_agent_based_conflict_resolution.scm",
+      "south_african_civil_law_agent_based_conflict_resolution_v2.scm",
+      "south_african_civil_law_case_2025_137857_optimized.scm",
+      "south_african_civil_law_case_2025_137857_refined_v10.scm",
+      "south_african_civil_law_case_2025_137857_refined_v11.scm",
+      "south_african_civil_law_case_2025_137857_refined_v14.scm",
+      "south_african_civil_law_case_2025_137857_refined_v17.scm",
+      "south_african_civil_law_case_2025_137857_refined_v18.scm",
+      "south_african_civil_law_case_2025_137857_refined_v19.scm",
+      "south_african_civil_law_case_2025_137857_refined_v2.scm",
+      "south_african_civil_law_case_2025_137857_refined_v20.scm",
+      "south_african_civil_law_case_2025_137857_refined_v27.scm",
+      "south_african_civil_law_case_2025_137857_refined_v28.scm",
+      "south_african_civil_law_case_2025_137857_refined_v29.scm",
+      "south_african_civil_law_case_2025_137857_refined_v3.scm",
+      "south_african_civil_law_case_2025_137857_refined_v30.scm",
+      "south_african_civil_law_case_2025_137857_refined_v31.scm",
+      "south_african_civil_law_case_2025_137857_refined_v34.scm",
+      "south_african_civil_law_case_2025_137857_refined_v4.scm",
+      "south_african_civil_law_case_2025_137857_refined_v5.scm",
+      "south_african_civil_law_case_2025_137857_refined_v6.scm",
+      "south_african_civil_law_case_2025_137857_refined_v7.scm",
+      "south_african_civil_law_case_2025_137857_refined_v8.scm",
+      "south_african_civil_law_case_2025_137857_refined_v9.scm",
+      "south_african_civil_law_case_enhanced.scm",
+      "south_african_civil_law_coercion.scm",
+      "south_african_civil_law_documentation_obstruction.scm",
+      "south_african_civil_law_enhanced.scm",
+      "south_african_civil_law_entity_relationship_analysis.scm",
+      "south_african_civil_law_entity_relationship_conflict_enhanced.scm",
+      "south_african_civil_law_manufactured_crisis.scm",
+      "south_african_civil_law_manufactured_crisis_detection.scm",
+      "south_african_civil_law_medical_testing_weaponization.scm",
+      "south_african_civil_law_multi_actor_coordination.scm",
+      "south_african_civil_law_platform_unjust_enrichment.scm",
+      "south_african_civil_law_retaliation.scm",
+      "south_african_civil_law_revenue_hijacking_creditor_sabotage.scm",
+      "south_african_civil_law_temporal_bad_faith.scm",
+      "south_african_civil_law_temporal_bad_faith_v2.scm",
+      "south_african_civil_law_temporal_bad_faith_v3.scm",
+      "south_african_civil_law_temporal_causation_v24.scm",
+      "south_african_civil_law_timeline_event_integration.scm",
+      "south_african_civil_law_timing_analysis_v2.scm",
+      "south_african_civil_law_unjust_enrichment.scm",
+      "south_african_civil_procedure_ex_parte_fraud_rescission.scm"
+    ],
+    "cmp": [
+      "investigation_legitimacy_assessment_v37.scm",
+      "juristic_person_agent_modeling_v36.scm",
+      "south_african_ceo_operational_discretion_v22.scm",
+      "south_african_cio_technical_expense_justification.scm",
+      "south_african_company_law.scm",
+      "south_african_company_law_director_collective_action.scm",
+      "south_african_company_law_director_loan_accounts.scm",
+      "south_african_company_law_enhanced.scm",
+      "south_african_company_law_forensic_accounting.scm",
+      "south_african_company_law_forensic_accounting_enhanced.scm",
+      "south_african_company_law_forensic_accounting_enhanced_v2.scm",
+      "south_african_company_law_forensic_accounting_enhanced_v3.scm",
+      "south_african_company_law_forensic_accounting_enhanced_v4.scm",
+      "south_african_company_law_forensic_accounting_enhanced_v5.scm",
+      "south_african_company_law_forensic_accounting_enhanced_v6.scm",
+      "south_african_company_law_non_director_control.scm",
+      "south_african_company_law_regulatory_compliance.scm",
+      "south_african_company_law_regulatory_compliance_enhanced.scm",
+      "south_african_company_law_regulatory_compliance_enhanced_v2.scm",
+      "south_african_company_law_self_dealing_detection.scm",
+      "south_african_platform_ownership_defense_v22.scm"
+    ],
+    "core": [
+      "entity_relation_model.scm",
+      "legislative_model_framework_core.scm",
+      "legislative_model_framework_layers.scm",
+      "v43_integration.scm"
+    ],
+    "cri": [
+      "south_african_criminal_law.scm"
+    ],
+    "cst": [
+      "south_african_construction_law.scm"
+    ],
+    "env": [
+      "south_african_environmental_law.scm",
+      "south_african_regulatory_compliance_cost_justification_v22.scm"
+    ],
+    "eth": [
+      "south_african_professional_ethics_multi_party_conflicts.scm"
+    ],
+    "evid": [
+      "evidence_principle_mapping_v6.scm",
+      "south_african_evidence_case_2025_137857.scm",
+      "south_african_evidence_systematic_fraud_patterns.scm"
+    ],
+    "frn": [
+      "south_african_forensic_analysis_systematic_fraud_narrative.scm"
+    ],
+    "int": [
+      "south_african_international_law.scm",
+      "south_african_international_regulatory_compliance.scm",
+      "south_african_international_regulatory_compliance_enhanced_v3.scm"
+    ],
+    "lab": [
+      "immediate_retaliation_detection_v36.scm",
+      "immediate_retaliation_detection_v38.scm",
+      "south_african_labour_law.scm",
+      "whistleblower_retaliation_immediate_proximity_v25.scm"
+    ],
+    "lv1": [
+      "known_laws.scm",
+      "known_laws_enhanced.scm",
+      "known_laws_module_header.scm",
+      "legal_aspects_taxonomy_v12.scm",
+      "legal_aspects_taxonomy_v13.scm",
+      "legal_aspects_taxonomy_v14.scm",
+      "legal_aspects_taxonomy_v15.scm",
+      "legal_aspects_taxonomy_v16.scm",
+      "legal_aspects_taxonomy_v17.scm",
+      "legal_aspects_taxonomy_v18_verified.scm"
+    ],
+    "prof-eth": [
+      "cio_professional_standard_industry_benchmark_v25.scm",
+      "south_african_cio_professional_standards_v22.scm",
+      "south_african_cio_professional_standards_v24.scm",
+      "south_african_professional_ethics_multi_party_conflicts.scm"
+    ],
+    "trs": [
+      "fiduciary_duty_refinement.scm",
+      "south_african_trust_law.scm",
+      "south_african_trust_law_enhanced.scm",
+      "south_african_trust_law_enhanced_v2.scm",
+      "south_african_trust_law_enhanced_v3.scm",
+      "south_african_trust_law_enhanced_v4.scm",
+      "south_african_trust_law_enhanced_v5.scm",
+      "south_african_trust_law_enhanced_v6.scm",
+      "south_african_trust_law_enhanced_v7.scm",
+      "south_african_trust_law_enhanced_v8.scm",
+      "south_african_trust_law_enhanced_v9_ketoni_payout.scm",
+      "south_african_trust_law_temporal_analysis.scm",
+      "south_african_trust_law_trustee_beneficiary_conflicts.scm",
+      "south_african_trust_power_bypass_analysis_v22.scm"
+    ]
+  },
+  "optimization_summary": {
+    "add-verification-metadata": 140,
+    "add-confidence-scoring": 130,
+    "add-temporal-analysis": 36,
+    "add-entity-relation-links": 36,
+    "version-outdated-check-for-updates": 42
+  },
+  "verification_status": {
+    "with_verification": 3,
+    "without_verification": 140
+  },
+  "confidence_status": {
+    "with_confidence": 13,
+    "without_confidence": 130
+  },
+  "files": [
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/ENHANCED_HEADER_TEMPLATE.scm",
+      "size": 4769,
+      "lines": 117,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/ad_paragraph_comprehensive_mapping_v45.scm",
+      "size": 14149,
+      "lines": 332,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.96,
+        0.95,
+        0.97,
+        0.98,
+        0.95,
+        0.93,
+        0.98,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/agent_based_model_v48_ketoni_integrated.scm",
+      "size": 34739,
+      "lines": 938,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "agent",
+          "name": "agent-peter-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "agent-jacqueline-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "agent-daniel-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "agent-daniel-bantjies"
+        },
+        {
+          "type": "agent",
+          "name": "agent-kevin-derrick"
+        },
+        {
+          "type": "agent",
+          "name": "agent-rynette"
+        },
+        {
+          "type": "agent",
+          "name": "agent-ketoni-investment-holdings"
+        },
+        {
+          "type": "agent",
+          "name": "agent-faucitt-family-trust"
+        },
+        {
+          "type": "agent",
+          "name": "agent-rezonance"
+        },
+        {
+          "type": "network",
+          "name": "ketoni-payout-agent-network"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.95,
+        0.95,
+        0.97,
+        0.94,
+        0.9,
+        0.93,
+        0.95,
+        0.9,
+        0.97,
+        0.96,
+        0.92,
+        0.93,
+        0.97,
+        0.94,
+        0.91,
+        0.9,
+        0.94,
+        0.95,
+        0.97,
+        0.95,
+        0.96,
+        0.9,
+        0.97,
+        0.95,
+        0.97,
+        0.97,
+        0.95,
+        0.95,
+        0.94,
+        0.97,
+        0.94,
+        0.92,
+        0.97,
+        0.95,
+        0.96,
+        0.94,
+        0.97,
+        0.93,
+        0.95,
+        0.95,
+        0.9,
+        0.91,
+        0.9,
+        0.93,
+        0.91,
+        0.92,
+        0.9,
+        0.93,
+        0.91,
+        0.9,
+        0.93,
+        0.92,
+        0.91,
+        0.95,
+        0.9,
+        0.9,
+        0.9,
+        0.95,
+        0.9,
+        0.9,
+        0.95,
+        0.95,
+        0.92,
+        0.9,
+        0.92,
+        0.95,
+        0.95,
+        0.93,
+        0.92,
+        0.95,
+        0.93,
+        0.93,
+        0.9,
+        0.95,
+        1.0,
+        0.9,
+        0.95,
+        0.9,
+        0.9,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.95,
+        1.0,
+        1.0,
+        0.95,
+        0.95
+      ],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/case_2025_137857_entity_data_v43_verified.scm",
+      "size": 39043,
+      "lines": 834,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/case_2025_137857_entity_data_v44_verified.scm",
+      "size": 24603,
+      "lines": 567,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/case_2025_137857_entity_relation_data_v1.scm",
+      "size": 24082,
+      "lines": 683,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_agent_modeling_v1.scm",
+      "size": 22252,
+      "lines": 762,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_agent_modeling_v2_enhanced.scm",
+      "size": 29007,
+      "lines": 681,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v3_comprehensive.scm",
+      "size": 43923,
+      "lines": 1348,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v43_comprehensive.scm",
+      "size": 25164,
+      "lines": 671,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v44_enhanced.scm",
+      "size": 32798,
+      "lines": 622,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.98,
+        0.94,
+        0.95
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v45_ad_integrated.scm",
+      "size": 22848,
+      "lines": 526,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v46_ketoni_corrected.scm",
+      "size": 28218,
+      "lines": 583,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v47_verified.scm",
+      "size": 24799,
+      "lines": 693,
+      "definitions": [
+        {
+          "type": "entity",
+          "name": "faucitt-family-trust"
+        },
+        {
+          "type": "entity",
+          "name": "peter-andrew-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "jacqueline-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "daniel-james-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "daniel-jacobus-bantjes"
+        },
+        {
+          "type": "entity",
+          "name": "regima-worldwide-distribution"
+        },
+        {
+          "type": "entity",
+          "name": "villa-via-arcadia-no-2"
+        },
+        {
+          "type": "entity",
+          "name": "strategic-logistics"
+        },
+        {
+          "type": "entity",
+          "name": "rezonance"
+        },
+        {
+          "type": "entity",
+          "name": "ketoni-investment-holdings"
+        },
+        {
+          "type": "timeline",
+          "name": "verified-events"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v48_ketoni_payout_integrated.scm",
+      "size": 46354,
+      "lines": 1130,
+      "definitions": [
+        {
+          "type": "entity",
+          "name": "ketoni-investment-holdings"
+        },
+        {
+          "type": "entity",
+          "name": "faucitt-family-trust"
+        },
+        {
+          "type": "entity",
+          "name": "peter-andrew-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "jacqueline-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "daniel-james-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "daniel-jacobus-bantjes"
+        },
+        {
+          "type": "entity",
+          "name": "rezonance"
+        },
+        {
+          "type": "entity",
+          "name": "regima-worldwide-distribution"
+        },
+        {
+          "type": "entity",
+          "name": "villa-via-arcadia-no-2"
+        },
+        {
+          "type": "entity",
+          "name": "regima-skin-treatments"
+        },
+        {
+          "type": "entity",
+          "name": "kevin-michael-derrick"
+        },
+        {
+          "type": "relation",
+          "name": "controls-trust-before-payout"
+        },
+        {
+          "type": "relation",
+          "name": "entitled-to-beneficiary-share"
+        },
+        {
+          "type": "relation",
+          "name": "interdicted-before-payout"
+        },
+        {
+          "type": "relation",
+          "name": "appointed-trustee-before-payout"
+        },
+        {
+          "type": "relation",
+          "name": "owes-payout-to-trust"
+        },
+        {
+          "type": "relation",
+          "name": "invested-while-owing-debt"
+        },
+        {
+          "type": "relation",
+          "name": "murdered-after-investment"
+        },
+        {
+          "type": "relation",
+          "name": "colleague-connection-ketoni"
+        },
+        {
+          "type": "timeline",
+          "name": "ketoni-payout-control-timeline"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v49_motive_integrated.scm",
+      "size": 15278,
+      "lines": 428,
+      "definitions": [
+        {
+          "type": "motive",
+          "name": "ketoni-payout-capture"
+        },
+        {
+          "type": "entity",
+          "name": "peter-andrew-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "jacqueline-faucitt"
+        },
+        {
+          "type": "entity",
+          "name": "daniel-jacobus-bantjes"
+        },
+        {
+          "type": "entity",
+          "name": "rynette-farrar"
+        },
+        {
+          "type": "entity",
+          "name": "kevin-michael-derrick"
+        },
+        {
+          "type": "entity",
+          "name": "kayla-pretorius"
+        },
+        {
+          "type": "entity",
+          "name": "faucitt-family-trust"
+        },
+        {
+          "type": "entity",
+          "name": "ketoni-investment-holdings"
+        },
+        {
+          "type": "entity",
+          "name": "rezonance"
+        },
+        {
+          "type": "relation",
+          "name": "ketoni-debt-to-fft"
+        },
+        {
+          "type": "relation",
+          "name": "bantjes-appointment"
+        },
+        {
+          "type": "relation",
+          "name": "peter-jax-interdict"
+        },
+        {
+          "type": "relation",
+          "name": "medical-testing-demand"
+        },
+        {
+          "type": "relation",
+          "name": "rezonance-dissolution-pressure"
+        },
+        {
+          "type": "event",
+          "name": "ketoni-incorporation"
+        },
+        {
+          "type": "event",
+          "name": "fft-ketoni-investment"
+        },
+        {
+          "type": "event",
+          "name": "kayla-murder"
+        },
+        {
+          "type": "event",
+          "name": "card-expiry-except-rwd"
+        },
+        {
+          "type": "event",
+          "name": "sage-admin-seizure"
+        },
+        {
+          "type": "event",
+          "name": "rezonance-dissolution-meeting"
+        },
+        {
+          "type": "event",
+          "name": "bantjes-trustee-appointment"
+        },
+        {
+          "type": "event",
+          "name": "settlement-agreement"
+        },
+        {
+          "type": "event",
+          "name": "interdict-filing"
+        },
+        {
+          "type": "scheme",
+          "name": "curatorship-fraud-for-payout-capture"
+        },
+        {
+          "type": "insight",
+          "name": "central-revelation"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.9,
+        0.98,
+        0.98,
+        0.9,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.98,
+        0.98,
+        0.9,
+        0.9,
+        0.95,
+        0.95,
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.98
+      ],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v50_high_resolution_agents.scm",
+      "size": 56721,
+      "lines": 1838,
+      "definitions": [
+        {
+          "type": "motive",
+          "name": "ketoni-payout-capture"
+        },
+        {
+          "type": "agent",
+          "name": "peter-andrew-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "jacqueline-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "daniel-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "daniel-jacobus-bantjes"
+        },
+        {
+          "type": "agent",
+          "name": "rynette-farrar"
+        },
+        {
+          "type": "agent",
+          "name": "kevin-michael-derrick"
+        },
+        {
+          "type": "agent",
+          "name": "kayla-pretorius"
+        },
+        {
+          "type": "agent",
+          "name": "faucitt-family-trust"
+        },
+        {
+          "type": "agent",
+          "name": "ketoni-investment-holdings"
+        },
+        {
+          "type": "agent",
+          "name": "rezonance"
+        },
+        {
+          "type": "agent",
+          "name": "regima-skin-treatments"
+        },
+        {
+          "type": "agent",
+          "name": "strategic-logistics-group"
+        },
+        {
+          "type": "agent",
+          "name": "regima-worldwide-distribution"
+        },
+        {
+          "type": "agent",
+          "name": "regima-zone-ltd"
+        },
+        {
+          "type": "agent",
+          "name": "villa-via"
+        },
+        {
+          "type": "relation",
+          "name": "ketoni-debt-to-fft"
+        },
+        {
+          "type": "relation",
+          "name": "bantjes-appointment"
+        },
+        {
+          "type": "relation",
+          "name": "peter-jax-interdict"
+        },
+        {
+          "type": "relation",
+          "name": "medical-testing-demand"
+        },
+        {
+          "type": "relation",
+          "name": "rezonance-dissolution-pressure"
+        },
+        {
+          "type": "relation",
+          "name": "peter-rynette-coordination"
+        },
+        {
+          "type": "relation",
+          "name": "daniel-whistleblower-retaliation"
+        },
+        {
+          "type": "relation",
+          "name": "jax-dan-co-respondent"
+        },
+        {
+          "type": "relation",
+          "name": "bantjes-kevin-derrick-network"
+        },
+        {
+          "type": "event",
+          "name": "ketoni-incorporation"
+        },
+        {
+          "type": "event",
+          "name": "fft-ketoni-investment"
+        },
+        {
+          "type": "event",
+          "name": "kayla-murder"
+        },
+        {
+          "type": "event",
+          "name": "card-expiry-except-rwd"
+        },
+        {
+          "type": "event",
+          "name": "sage-admin-seizure"
+        },
+        {
+          "type": "event",
+          "name": "rezonance-dissolution-meeting"
+        },
+        {
+          "type": "event",
+          "name": "bantjes-trustee-appointment"
+        },
+        {
+          "type": "event",
+          "name": "two-year-expense-dump"
+        },
+        {
+          "type": "event",
+          "name": "daniel-fraud-report"
+        },
+        {
+          "type": "event",
+          "name": "immediate-card-cancellation"
+        },
+        {
+          "type": "event",
+          "name": "settlement-agreement"
+        },
+        {
+          "type": "event",
+          "name": "interdict-filing"
+        },
+        {
+          "type": "event",
+          "name": "coordinated-card-cancellation"
+        },
+        {
+          "type": "event",
+          "name": "interdict-order"
+        },
+        {
+          "type": "event",
+          "name": "account-emptying"
+        }
+      ],
+      "legal_principles": [
+        "misrepresentation",
+        "fraud",
+        "bad-faith-litigation",
+        "bad-faith-conduct",
+        "abuse-of-process",
+        "unjust-enrichment",
+        "Protected Disclosures Act 26 of 2000",
+        "Trust Property Control Act 57/1988",
+        "fiduciary-duty",
+        "Companies Act 71 of 2008",
+        "company-law-forensic-accounting",
+        "abuse-of-process"
+      ],
+      "case_references": [],
+      "verification_level": "present",
+      "confidence_scores": [
+        0.98,
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.95,
+        0.95,
+        0.98,
+        0.98,
+        1.0,
+        0.98,
+        0.98,
+        0.95,
+        0.96,
+        0.95,
+        0.98,
+        0.98,
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.9,
+        0.95,
+        0.95,
+        0.9,
+        1.0,
+        0.95,
+        0.95,
+        0.95,
+        0.9,
+        0.95,
+        0.94,
+        0.94,
+        0.95,
+        0.95,
+        0.95,
+        0.94,
+        0.94,
+        0.95,
+        0.95,
+        0.9,
+        0.9,
+        0.9,
+        0.9,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.9,
+        0.9,
+        0.95,
+        0.9,
+        0.9,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.96,
+        0.95,
+        0.96,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.94,
+        0.98,
+        1.0,
+        0.9,
+        0.95,
+        0.98,
+        0.98,
+        0.9,
+        0.9,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.98,
+        0.94,
+        1.0,
+        0.95,
+        0.98,
+        0.98,
+        0.94,
+        1.0,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.98,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.94,
+        0.94,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.98,
+        0.95,
+        0.94,
+        0.98,
+        0.98,
+        0.94,
+        0.95,
+        1.0,
+        0.95,
+        0.9,
+        0.98
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/entity_relation_framework_v51_verified_enhanced.scm",
+      "size": 32952,
+      "lines": 966,
+      "definitions": [
+        {
+          "type": "motive",
+          "name": "ketoni-payout-capture-v51"
+        },
+        {
+          "type": "agent",
+          "name": "peter-andrew-faucitt-v51"
+        },
+        {
+          "type": "agent",
+          "name": "jacqueline-faucitt-v51"
+        },
+        {
+          "type": "agent",
+          "name": "daniel-faucitt-v51"
+        },
+        {
+          "type": "agent",
+          "name": "faucitt-family-trust-v51"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": "present",
+      "confidence_scores": [
+        0.98,
+        0.98,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.98,
+        0.98,
+        0.95,
+        0.94,
+        0.98,
+        0.95,
+        0.95,
+        0.98,
+        0.96,
+        0.98,
+        1.0,
+        0.98,
+        0.98,
+        0.97,
+        0.95,
+        0.95,
+        0.95,
+        0.96,
+        0.95,
+        0.98,
+        0.98,
+        0.98,
+        0.99,
+        0.96,
+        0.95,
+        0.99,
+        0.98,
+        0.98,
+        0.99,
+        0.96,
+        0.97,
+        0.95,
+        0.95,
+        0.98,
+        0.94,
+        0.92,
+        0.94,
+        0.93,
+        0.92,
+        0.98,
+        0.98,
+        0.95,
+        0.95,
+        0.96
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/relation_tracking_temporal_v1.scm",
+      "size": 25222,
+      "lines": 798,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/relationship_query_analysis_v1.scm",
+      "size": 30736,
+      "lines": 872,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/adm/za/south_african_administrative_law.scm",
+      "size": 32388,
+      "lines": 912,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ-proc/za/south_african_abuse_of_process_v22.scm",
+      "size": 23592,
+      "lines": 622,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "abuse-of-process-detection-framework"
+        },
+        {
+          "type": "principle",
+          "name": "ex-parte-fraud-detection-framework"
+        },
+        {
+          "type": "principle",
+          "name": "manufactured-crisis-detection-framework"
+        },
+        {
+          "type": "principle",
+          "name": "material-non-disclosure-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "temporal-causation-analysis"
+        },
+        {
+          "type": "public",
+          "name": "abuse-of-process-detection-framework"
+        },
+        {
+          "type": "public",
+          "name": "ex-parte-fraud-detection-framework"
+        },
+        {
+          "type": "public",
+          "name": "manufactured-crisis-detection-framework"
+        },
+        {
+          "type": "public",
+          "name": "material-non-disclosure-analysis"
+        },
+        {
+          "type": "public",
+          "name": "temporal-causation-analysis"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ-proc/za/south_african_civil_procedure_ex_parte_fraud.scm",
+      "size": 47219,
+      "lines": 1084,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "ex-parte-duty-uberrimae-fidei"
+        },
+        {
+          "type": "principle",
+          "name": "material-non-disclosure-ex-parte"
+        },
+        {
+          "type": "principle",
+          "name": "perjury-founding-affidavit-nullification"
+        },
+        {
+          "type": "principle",
+          "name": "fraud-vitiates-everything"
+        },
+        {
+          "type": "principle",
+          "name": "void-ab-initio-doctrine"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ-proc/za/urgency_test_interdict_v37.scm",
+      "size": 18745,
+      "lines": 394,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/ad_element_integration_v39.scm",
+      "size": 26784,
+      "lines": 693,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [
+        " ((legal-elements (extract-ad-legal-elements para-content))\n         (lex-principles (map-ad-to-lex-principles legal-elements))\n         (severity (calculate-ad-allegation-severity para-content legal-elements))\n         (priority (determine-ad-priority para-id)))\n    \n    `((para-id . ,para-id)\n      (legal-elements . ,legal-elements)\n      (lex-principles . ,lex-principles)\n      (severity . ,severity)\n      (priority . ,priority)\n      (requires-technical-response . ,(requires-technical-response? legal-elements))\n      (requires-legal-response . ,(requires-legal-response? legal-elements))\n      (coordination-pattern . ,(detect-coordination-pattern para-content))\n      (retaliation-pattern . ,(detect-retaliation-pattern para-content)))))\n\n(define (extract-ad-legal-elements para-content)\n  \"Extract legal elements from AD paragraph content.\n   \n   Legal elements include:\n   - Allegations (fraud, breach of duty, reckless spending)\n   - Claims (financial, operational, reputational)\n   - Demands (interim relief, disclosure, access)\n   - Factual assertions (dates, amounts, events)\n   \n   Parameters:\n   - para-content: Paragraph content string\n   \n   Returns: List of legal element records\"\n  \n  (let ((elements '()))\n    \n    ;; Detect fraud allegations\n    (when (string-contains para-content \"fraud\")\n      (set! elements (cons '((type . \"allegation\")\n                             (category . \"fraud\")\n                             (severity . 0.95)\n                             (lex-principle . \"fraud-detection\")) \n                          elements)))\n    \n    ;; Detect breach of fiduciary duty\n    (when (or (string-contains para-content \"breach\")\n              (string-contains para-content \"fiduciary\"))\n      (set! elements (cons '((type . \"allegation\")\n                             (category . \"breach-of-duty\")\n                             (severity . 0.90)\n                             (lex-principle . \"fiduciary-duty-analysis\")) \n                          elements)))\n    \n    ;; Detect excessive/reckless spending claims\n    (when (or (string-contains para-content \"excessive\")\n              (string-contains para-content \"reckless\")\n              (string-contains para-content \"unnecessary\"))\n      (set! elements (cons '((type . \"allegation\")\n                             (category . \"reckless-spending\")\n                             (severity . 0.85)\n                             (lex-principle . \"business-judgment-rule\")) \n                          elements)))\n    \n    ;; Detect financial claims\n    (when (or (string-contains para-content \"R500\")\n              (string-contains para-content \"R1,000\")\n              (string-contains para-content \"payment\"))\n      (set! elements (cons '((type . \"claim\")\n                             (category . \"financial\")\n                             (severity . 0.80)\n                             (lex-principle . \"unjust-enrichment\")) \n                          elements)))\n    \n    ;; Detect urgency/interim relief demands\n    (when (or (string-contains para-content \"urgent\")\n              (string-contains para-content \"interim relief\")\n              (string-contains para-content \"interdict\"))\n      (set! elements (cons '((type . \"demand\")\n                             (category . \"interim-relief\")\n                             (severity . 0.92)\n                             (lex-principle . \"urgency-test\")) \n                          elements)))\n    \n    ;; Detect documentation/disclosure demands\n    (when (or (string-contains para-content \"documentation\")\n              (string-contains para-content \"disclosure\")\n              (string-contains para-content \"access\"))\n      (set! elements (cons '((type . \"demand\")\n                             (category . \"disclosure\")\n                             (severity . 0.70)\n                             (lex-principle . \"discovery-rules\")) \n                          elements)))\n    \n    elements))\n\n(define (map-ad-to-lex-principles legal-elements)\n  \"Map AD legal elements to lex principles.\n   \n   Parameters:\n   - legal-elements: List of legal element records\n   \n   Returns: List of applicable lex principles with confidence scores\"\n  \n  (let ((principles '()))\n    \n    (for-each\n      (lambda (element)\n        (let ((lex-principle (assoc-ref element 'lex-principle))\n              (severity (assoc-ref element 'severity)))\n          \n          (cond\n            ;; Fraud allegations -> fraud detection + bad faith\n            ((equal? lex-principle \"fraud-detection\")\n             (set! principles (cons `((principle . \"fraud-detection\")\n                                     (confidence . ,severity)\n                                     (module . \"lex.civ.za.fraud-analysis\"))\n                                   principles))\n             (set! principles (cons `((principle . \"bad-faith-litigation\")\n                                     (confidence . 0.98)\n                                     (module . \"lex.civ-proc.za.abuse-of-process\"))\n                                   principles)))\n            \n            ;; Breach of duty -> fiduciary analysis + business judgment\n            ((equal? lex-principle \"fiduciary-duty-analysis\")\n             (set! principles (cons `((principle . \"fiduciary-duty-analysis\")\n                                     (confidence . ,severity)\n                                     (module . \"lex.trs.za.trust-law\"))\n                                   principles))\n             (set! principles (cons `((principle . \"business-judgment-rule\")\n                                     (confidence . 0.92)\n                                     (module . \"lex.cmp.za.company-law\"))\n                                   principles)))\n            \n            ;; Reckless spending -> CIO standards + technical necessity\n            ((equal? lex-principle \"business-judgment-rule\")\n             (set! principles (cons `((principle . \"cio-technical-expense-justification\")\n                                     (confidence . 0.96)\n                                     (module . \"lex.prof-eth.za.cio-standards\"))\n                                   principles))\n             (set! principles (cons `((principle . \"technical-necessity-defense\")\n                                     (confidence . 0.94)\n                                     (module . \"lex.civ.za.civil-law\"))\n                                   principles)))\n            \n            ;; Financial claims -> unjust enrichment + platform ownership\n            ((equal? lex-principle \"unjust-enrichment\")\n             (set! principles (cons `((principle . \"unjust-enrichment-defense\")\n                                     (confidence . 0.95)\n                                     (module . \"lex.civ.za.civil-law\"))\n                                   principles))\n             (set! principles (cons `((principle . \"platform-ownership-proof\")\n                                     (confidence . 0.98)\n                                     (module . \"lex.civ.za.property-law\"))\n                                   principles)))\n            \n            ;; Urgency demands -> urgency test + manufactured crisis\n            ((equal? lex-principle \"urgency-test\")\n             (set! principles (cons `((principle . \"urgency-test-analysis\")\n                                     (confidence . 0.99)\n                                     (module . \"lex.civ-proc.za.urgency-test\"))\n                                   principles))\n             (set! principles (cons `((principle . \"manufactured-crisis-detection\")\n                                     (confidence . 0.97)\n                                     (module . \"lex.civ-proc.za.abuse-of-process\"))\n                                   principles)))\n            \n            ;; Disclosure demands -> discovery rules + material non-disclosure\n            ((equal? lex-principle \"discovery-rules\")\n             (set! principles (cons `((principle . \"discovery-obligations\")\n                                     (confidence . ,severity)\n                                     (module . \"lex.evid.za.evidence-law\"))\n                                   principles))\n             (set! principles (cons `((principle . \"material-non-disclosure\")\n                                     (confidence . 0.99)\n                                     (module . \"lex.civ-proc.za.ex-parte-fraud\"))\n                                   principles))))))\n      \n      legal-elements)\n    \n    ;; Remove duplicates and sort by confidence\n    (sort (delete-duplicates principles equal?)\n          (lambda (a b) (> (assoc-ref a 'confidence) \n                          (assoc-ref b 'confidence))))))\n\n(define (calculate-ad-allegation-severity para-content legal-elements)\n  \"Calculate overall severity of AD paragraph allegations.\n   \n   Severity scale:\n   - 0.95-1.00: Critical (fraud, criminal conduct)\n   - 0.85-0.94: High (breach of duty, reckless conduct)\n   - 0.70-0.84: Medium (financial disputes, disclosure)\n   - 0.50-0.69: Low (procedural, background)\n   - 0.00-0.49: Minimal (neutral statements)\n   \n   Parameters:\n   - para-content: Paragraph content\n   - legal-elements: Extracted legal elements\n   \n   Returns: Severity score (0.0-1.0)\"\n  \n  (if (null? legal-elements)\n      0.0\n      (let ((max-severity (apply max (map (lambda (e) (assoc-ref e 'severity)) \n                                         legal-elements)))\n            (element-count (length legal-elements)))\n        \n        ;; Boost severity if multiple serious allegations\n        (if (and (> element-count 2) (> max-severity 0.85))\n            (min 1.0 (+ max-severity 0.05))\n            max-severity))))\n\n(define (determine-ad-priority para-id)\n  \"Determine priority level of AD paragraph.\n   \n   Parameters:\n   - para-id: Paragraph identifier\n   \n   Returns: Priority level (critical, high, medium, low)\"\n  \n  (cond\n    ((or (string-prefix? \"7.2\" para-id)\n         (string-prefix? \"7.6\" para-id)\n         (string-prefix? \"10.5\" para-id))\n     'critical)\n    \n    ((or (string-prefix? \"3.11\" para-id)\n         (string-prefix? \"7.12\" para-id)\n         (string-prefix? \"8.\" para-id)\n         (string-prefix? \"11.11\" para-id)\n         (string-prefix? \"13.13\" para-id))\n     'high)\n    \n    ((or (string-prefix? \"10.\" para-id)\n         (string-prefix? \"11.6\" para-id)\n         (string-prefix? \"12.\" para-id)\n         (string-prefix? \"13.2\" para-id)\n         (string-prefix? \"14.\" para-id))\n     'medium)\n    \n    (else 'low)))\n\n;;;\n;;; RESPONSE OPTIMIZATION\n;;;\n\n(define (optimize-jax-dan-response ad-para jr-response dr-response)\n  \"Optimize Jax-Dan response for maximum synergy and evidence support.\n   \n   Parameters:\n   - ad-para: AD paragraph analysis\n   - jr-response: Jacqueline's response (JR)\n   - dr-response: Daniel's response (DR)\n   \n   Returns: Optimization recommendations\"\n  \n  (let"
+      ],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/confrontation_event_analysis_v37.scm",
+      "size": 18136,
+      "lines": 388,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/multi_actor_coordination_detection_v36.scm",
+      "size": 5082,
+      "lines": 147,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/multi_actor_coordination_detection_v38.scm",
+      "size": 13724,
+      "lines": 437,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law.scm",
+      "size": 67680,
+      "lines": 1838,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_agent_based_conflict_resolution.scm",
+      "size": 16846,
+      "lines": 468,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "agent",
+          "name": "id"
+        },
+        {
+          "type": "agent",
+          "name": "'peter-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "'jacqueline-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "'daniel-faucitt"
+        },
+        {
+          "type": "agent",
+          "name": "'rynette-farrar"
+        },
+        {
+          "type": "agent",
+          "name": "'daniel-bantjies"
+        },
+        {
+          "type": "agent",
+          "name": "'faucitt-family-trust"
+        },
+        {
+          "type": "agent",
+          "name": "'regima-skin-treatments"
+        },
+        {
+          "type": "agent",
+          "name": "'regima-worldwide-distribution"
+        },
+        {
+          "type": "agent",
+          "name": "'regima-zone-ltd"
+        },
+        {
+          "type": "agent",
+          "name": "'rezonance"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_agent_based_conflict_resolution_v2.scm",
+      "size": 22734,
+      "lines": 526,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_optimized.scm",
+      "size": 42667,
+      "lines": 1230,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v10.scm",
+      "size": 45722,
+      "lines": 1110,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v11.scm",
+      "size": 31649,
+      "lines": 786,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v14.scm",
+      "size": 33196,
+      "lines": 791,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v17.scm",
+      "size": 40604,
+      "lines": 1075,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v18.scm",
+      "size": 52239,
+      "lines": 900,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v19.scm",
+      "size": 26300,
+      "lines": 477,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm",
+      "size": 27402,
+      "lines": 681,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v20.scm",
+      "size": 44865,
+      "lines": 843,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v27.scm",
+      "size": 44410,
+      "lines": 1026,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v28.scm",
+      "size": 35038,
+      "lines": 838,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v29.scm",
+      "size": 33285,
+      "lines": 800,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm",
+      "size": 29901,
+      "lines": 758,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [
+        "-\n;;; SOUTH AFRICAN CIVIL LAW - CASE 2025-137857 REFINED RESOLUTION FRAMEWORK V3\n;;; ============================================================================\n;;; File: south_african_civil_law_case_2025_137857_refined_v3.scm\n;;; Purpose: Enhanced legal resolution framework for Peter Faucitt v. Jacqueline & Daniel Faucitt\n;;; Date: 2025-11-17\n;;; Confidence: 0.98\n;;; \n;;; This framework provides case-specific legal resolution optimized for the\n;;; identified entities, relations, events, and timelines in Case 2025-137857.\n;;;\n;;; ENHANCEMENTS IN V3:\n;;; - Enhanced temporal pattern detection with retaliation analysis\n;;; - Improved evidence mapping to AD paragraphs\n;;; - Multi-actor coordination detection\n;;; - Strengthened causation chain modeling\n;;; - Direct integration with jax-dan-response structure\n;;;\n;;; KEY CASE ELEMENTS:\n;;; - 6 Natural Persons: Peter, Jacqueline, Daniel Faucitt, Rynette Farrar, Daniel Bantjies, Gee\n;;; - 6 Juristic Persons: FFT, RST, RWD, RegimA Zone Ltd, Rezonance, SLG\n;;; - 39+ Timeline Events with temporal correlation patterns\n;;; - 10 Primary Legal Issues with severity scoring\n;;; - 25 AD Paragraphs mapped to legal principles\n;;; ============================================================================\n\n(define-module (lex civ za case-2025-137857-refined-v3)\n  #:use-module (lex lv1 known-laws)\n  #:use-module (lex civ za south-african-civil-law)\n  #:use-module (lex cmp za south-african-company-law)\n  #:use-module (lex trs za south-african-trust-law)\n  #:use-module (lex civ-proc za south-african-civil-procedure)\n  #:export (\n    ;; Entity Definitions\n    define-case-entity\n    define-case-relation\n    get-entity-conflicts\n    \n    ;; Agent-Based Analysis\n    analyze-agent-conflicts\n    calculate-conflict-severity\n    detect-multi-role-conflicts\n    \n    ;; Temporal Pattern Detection\n    detect-temporal-patterns\n    detect-retaliation-patterns\n    calculate-temporal-proximity\n    analyze-temporal-sequence\n    \n    ;; Legal Issue Resolution\n    resolve-sabotage-claim\n    resolve-temporal-bad-faith-claim\n    resolve-fraud-coordination-claim\n    resolve-fiduciary-breach-claim\n    resolve-manufactured-crisis-claim\n    resolve-unjust-enrichment-claim\n    resolve-conflict-of-interest-claim\n    resolve-coercion-claim\n    resolve-litigation-weaponization-claim\n    \n    ;; Evidence Mapping\n    map-evidence-to-legal-principle\n    map-ad-paragraph-to-legal-aspects\n    calculate-evidence-strength\n    generate-burden-of-proof-analysis\n    \n    ;; Multi-Actor Coordination\n    detect-multi-actor-coordination\n    analyze-coordination-patterns\n    calculate-coordination-confidence\n    \n    ;; Case-Specific Analysis\n    analyze-director-loan-hypocrisy\n    analyze-revenue-hijacking-pattern\n    analyze-trust-weaponization\n    analyze-manufactured-urgency\n    analyze-regulatory-crisis-impact\n  ))\n\n;;; ============================================================================\n;;; PART 1: ENTITY AND RELATION DEFINITIONS WITH ENHANCED CONFLICT DETECTION\n;;; ============================================================================\n\n;;; ----------------------------------------------------------------------------\n;;; 1.1 Natural Person Entities with Multi-Role Conflict Analysis\n;;; ----------------------------------------------------------------------------\n\n(define peter-faucitt-agent\n  '((id . \"peter-faucitt\")\n    (type . \"natural-person\")\n    (roles . (\"founder-fft\" \"trustee-fft\" \"director-rwd\" \"director-rst\" \"applicant\"))\n    (legal-aspects . (\n      \"fiduciary-duty-breach\"\n      \"abuse-of-power\"\n      \"temporal-bad-faith\"\n      \"litigation-weaponization\"\n      \"power-concentration\"\n      \"conflict-of-interest\"\n      \"coercion\"\n      \"manufactured-crisis\"\n    ))\n    (conflicts . (\n      ((type . \"founder-trustee-concentration\")\n       (severity . 0.98)\n       (priority . \"critical\")\n       (legal-principles . (\"fiduciary-duty\" \"power-concentration\" \"checks-and-balances\"))\n       (description . \"Founder with absolute trustee powers creates unchecked authority\")\n       (resolution-required . #t))\n      ((type . \"trustee-beneficiary-antagonism\")\n       (severity . 0.97)\n       (priority . \"critical\")\n       (legal-principles . (\"fiduciary-duty\" \"trust-law\" \"beneficiary-rights\"))\n       (description . \"Trustee using trust assets to attack beneficiaries\")\n       (resolution-required . #t))\n      ((type . \"director-sabotage\")\n       (severity . 0.96)\n       (priority . \"critical\")\n       (legal-principles . (\"fiduciary-duty\" \"company-law\" \"director-duties\"))\n       (description . \"Director sabotaging company operations through card cancellations\")\n       (resolution-required . #t))\n    ))\n    (critical-events . (\n      \"2025-06-07: Card cancellation (1 day after fraud report)\"\n      \"2025-07-01: Trustee powers backdated\"\n      \"2025-08-11: Obtained Jax signature on backdating document\"\n      \"2025-08-13: Filed interdict (2 days after cooperation)\"\n    ))\n    (temporal-patterns . (\n      \"immediate-retaliation\"\n      \"manufactured-crisis\"\n      \"litigation-weaponization\"\n      \"hypocrisy-pattern\"\n    ))\n  ))\n\n(define jacqueline-faucitt-agent\n  '((id . \"jacqueline-faucitt\")\n    (type . \"natural-person\")\n    (roles . (\"ceo-rst\" \"beneficiary-fft\" \"director-regima\" \"eu-responsible-person\" \"first-respondent\"))\n    (legal-aspects . (\n      \"beneficiary-rights-violation\"\n      \"executive-duties-sabotage\"\n      \"victim-of-coercion\"\n      \"victim-of-power-abuse\"\n      \"revenue-stream-disruption\"\n      \"regulatory-crisis-victim\"\n    ))\n    (conflicts . ())\n    (critical-events . (\n      \"2025-05-15: Confronted Rynette about R1,035,000 debt\"\n      \"2025-05-22: Orders removed from Shopify (7 days after - retaliation)\"\n      \"2025-08-11: Signed backdating document under pressure\"\n      \"2025-08-13: Interdict filed against her (betrayal)\"\n    ))\n    (temporal-patterns . (\n      \"defensive-response\"\n      \"evidence-preservation\"\n      \"regulatory-compliance-focus\"\n    ))\n  ))\n\n(define daniel-faucitt-agent\n  '((id . \"daniel-faucitt\")\n    (type . \"natural-person\")\n    (roles . (\"cio-rwd\" \"beneficiary-fft\" \"owner-regima-zone-ltd\" \"technical-infrastructure-manager\" \"second-respondent\"))\n    (legal-aspects . (\n      \"beneficiary-rights-violation\"\n      \"technical-expertise-evidence\"\n      \"victim-of-sabotage\"\n      \"system-access-obstruction\"\n      \"business-continuity-impact\"\n    ))\n    (conflicts . ())\n    (critical-events . (\n      \"2025-06-06: Provided fraud reports to accountant\"\n      \"2025-06-07: All business cards cancelled (1 day after - retaliation)\"\n      \"2025-07-16: R500K director loan payment (within established practice)\"\n      \"2025-08-05: Requested documentation access (obstructed)\"\n    ))\n    (temporal-patterns . (\n      \"fraud-exposure\"\n      \"immediate-retaliation-victim\"\n      \"documentation-obstruction-victim\"\n    ))\n  ))\n\n(define rynette-farrar-agent\n  '((id . \"rynette-farrar\")\n    (type . \"natural-person\")\n    (roles . (\"accountant-rst\" \"trustee-fft\" \"director-rezonance\" \"creditor-representative\"))\n    (legal-aspects . (\n      \"professional-ethics-breach\"\n      \"conflict-of-interest\"\n      \"triple-role-conflict\"\n      \"revenue-hijacking\"\n      \"fraud-coordination\"\n    ))\n    (conflicts . (\n      ((type . \"accountant-trustee-creditor-triple-conflict\")\n       (severity . 0.98)\n       (priority . \"critical\")\n       (legal-principles . (\"professional-ethics\" \"conflict-of-interest\" \"independence\"))\n       (description . \"Accountant + Trustee + Creditor representative = systemic conflict\")\n       (resolution-required . #t))\n    ))\n    (critical-events . (\n      \"2025-05-15: Confronted by Jax about R1,035,000 debt\"\n      \"2025-05-22: Removed orders from Shopify (retaliation)\"\n      \"Ongoing: Revenue hijacking through Rezonance debt\"\n    ))\n    (temporal-patterns . (\n      \"coordinated-retaliation\"\n      \"revenue-hijacking\"\n    ))\n  ))\n\n(define daniel-bantjies-agent\n  '((id . \"daniel-bantjies\")\n    (type . \"natural-person\")\n    (roles . (\"accountant-rwd\" \"trustee-fft\"))\n    (legal-aspects . (\n      \"professional-ethics-breach\"\n      \"conflict-of-interest\"\n      \"dual-role-conflict\"\n    ))\n    (conflicts . (\n      ((type . \"accountant-trustee-conflict\")\n       (severity . 0.92)\n       (priority . \"high\")\n       (legal-principles . (\"professional-ethics\" \"independence\"))\n       (description . \"Accountant serving as trustee creates independence issues\")\n       (resolution-required . #t))\n    ))\n  ))\n\n(define gee-agent\n  '((id . \"gee\")\n    (type . \"natural-person\")\n    (roles . (\"witness\"))\n    (legal-aspects . (\n      \"witness-testimony\"\n      \"coercion-evidence\"\n    ))\n    (conflicts . ())\n    (critical-events . (\n      \"2025-08-14: Witnessed confrontation event\"\n    ))\n  ))\n\n;;; ----------------------------------------------------------------------------\n;;; 1.2 Juristic Person Entities\n;;; ----------------------------------------------------------------------------\n\n(define faucitt-family-trust\n  '((id . \"fft\")\n    (type . \"trust\")\n    (legal-aspects . (\n      \"trust-weaponization\"\n      \"fiduciary-duty-breach\"\n      \"beneficiary-rights-violation\"\n      \"trust-asset-misuse\"\n    ))\n    (trustees . (\"peter-faucitt\" \"rynette-farrar\" \"daniel-bantjies\"))\n    (beneficiaries . (\"jacqueline-faucitt\" \"daniel-faucitt\"))\n    (founder . \"peter-faucitt\")\n  ))\n\n(define regima-skin-treatments\n  '((id . \"rst\")\n    (type . \"company\")\n    (legal-aspects . (\n      \"director-duties-breach\"\n      \"revenue-stream-hijacking\"\n      \"creditor-control-abuse\"\n      \"operational-sabotage\"\n    ))\n    (directors . (\"peter-faucitt\" \"jacqueline-faucitt\"))\n    (ceo . \"jacqueline-faucitt\")\n    (accountant . \"rynette-farrar\")\n  ))\n\n(define regima-worldwide-distribution\n  '((id . \"rwd\")\n    (type . \"company\")\n    (legal-aspects . (\n      \"director-duties-breach\"\n      \"operational-sabotage\"\n      \"platform-unjust-enrichment\"\n    ))\n    (directors . (\"peter-faucitt\"))\n    (cio . \"daniel-faucitt\")\n    (accountant . \"daniel-bantjies\")\n    (owner . \"faucitt-family-trust\")\n  ))\n\n;;; ============================================================================\n;;; PART 2: TEMPORAL PATTERN DETECTION WITH ENHANCED RETALIATION ANALYSIS\n;;; ============================================================================\n\n(define (detect-retaliation-patterns events)\n  \"Detect retaliation patterns in timeline events with confidence scoring\"\n  (let ((patterns '()))\n    \n    ;; Pattern 1: Immediate Retaliation (1-day response)\n    (let ((fraud-report (find-event events \"2025-06-06\" \"fraud-report\"))\n          (card-cancel (find-event events \"2025-06-07\" \"card-cancellation\")))\n      (when (and fraud-report card-cancel)\n        (set! patterns (cons\n          '((pattern . \"immediate-retaliation\")\n            (trigger . \"2025-06-06: Fraud report submission\")\n            (response . \"2025-06-07: Card cancellation\")\n            (interval . \"1 day\")\n            (confidence . 0.98)\n            (severity . 0.98)\n            (legal-significance . \"Strongest evidence of causation and bad faith\")\n            (ad-paragraphs . (\"PARA_7_2-7_5\"))\n            (evidence-type . \"temporal-proximity\"))\n          patterns))))\n    \n    ;; Pattern 2: Coordinated Retaliation (7-day response)\n    (let ((confrontation (find-event events \"2025-05-15\" \"rynette-confrontation\"))\n          (shopify-removal (find-event events \"2025-05-22\" \"shopify-orders-removed\")))\n      (when (and confrontation shopify-removal)\n        (set! patterns (cons\n          '((pattern . \"coordinated-retaliation\")\n            (trigger . \"2025-05-15: Jax confronts Rynette\")\n            (response . \"2025-05-22: Orders removed from Shopify\")\n            (interval . \"7 days\")\n            (confidence . 0.94)\n            (severity . 0.94)\n            (legal-significance . \"Demonstrates coordination between actors\")\n            (actors . (\"rynette-farrar\"))\n            (evidence-type . \"multi-actor-coordination\"))\n          patterns))))\n    \n    ;; Pattern 3: Litigation Weaponization (2-day betrayal)\n    (let ((cooperation (find-event events \"2025-08-11\" \"backdating-signature\"))\n          (interdict (find-event events \"2025-08-13\" \"interdict-filing\")))\n      (when (and cooperation interdict)\n        (set! patterns (cons\n          '((pattern . \"litigation-weaponization\")\n            (cooperation . \"2025-08-11: Jax signs backdating document\")\n            (betrayal . \"2025-08-13: Interdict filed\")\n            (interval . \"2 days\")\n            (confidence . 0.98)\n            (severity . 0.98)\n            (legal-significance . \"Settlement discussion used to obtain cooperation, then immediate litigation\")\n            (ad-paragraphs . (\"PARA_11-11_5\" \"PARA_13-13_1\"))\n            (evidence-type . \"bad-faith-litigation\"))\n          patterns))))\n    \n    patterns))\n\n(define (calculate-temporal-proximity event1 event2)\n  \"Calculate temporal proximity between two events and return confidence score\"\n  (let"
+      ],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v30.scm",
+      "size": 54787,
+      "lines": 1307,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v31.scm",
+      "size": 39735,
+      "lines": 879,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v34.scm",
+      "size": 30404,
+      "lines": 678,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.98
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v4.scm",
+      "size": 29531,
+      "lines": 804,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "resolve-ad-paragraph-legal-aspects"
+        },
+        {
+          "type": "principle",
+          "name": "detect-advanced-temporal-patterns"
+        },
+        {
+          "type": "principle",
+          "name": "calculate-multi-factor-evidence-strength"
+        },
+        {
+          "type": "principle",
+          "name": "analyze-jax-dan-response-optimization"
+        },
+        {
+          "type": "principle",
+          "name": "generate-evidence-annexure-recommendations"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v5.scm",
+      "size": 39431,
+      "lines": 1095,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "resolve-ad-paragraph-legal-aspects-v5"
+        },
+        {
+          "type": "principle",
+          "name": "detect-advanced-temporal-patterns-v5"
+        },
+        {
+          "type": "principle",
+          "name": "calculate-multi-factor-evidence-strength-v5"
+        },
+        {
+          "type": "principle",
+          "name": "analyze-jax-dan-response-optimization-v5"
+        },
+        {
+          "type": "principle",
+          "name": "generate-evidence-annexure-recommendations-v5"
+        },
+        {
+          "type": "principle",
+          "name": "compute-legal-resolution-confidence"
+        },
+        {
+          "type": "principle",
+          "name": "identify-cross-paragraph-patterns"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v6.scm",
+      "size": 64643,
+      "lines": 1875,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "resolve-ad-paragraph-legal-aspects-v6"
+        },
+        {
+          "type": "principle",
+          "name": "detect-systemic-patterns-v6"
+        },
+        {
+          "type": "principle",
+          "name": "calculate-integrated-evidence-strength-v6"
+        },
+        {
+          "type": "principle",
+          "name": "generate-comprehensive-annexure-map-v6"
+        },
+        {
+          "type": "principle",
+          "name": "compute-legal-resolution-confidence-v6"
+        },
+        {
+          "type": "principle",
+          "name": "identify-material-non-disclosures-v6"
+        },
+        {
+          "type": "principle",
+          "name": "analyze-temporal-causation-chains-v6"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v7.scm",
+      "size": 42879,
+      "lines": 1205,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v8.scm",
+      "size": 44120,
+      "lines": 1154,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_2025_137857_refined_v9.scm",
+      "size": 29659,
+      "lines": 785,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_case_enhanced.scm",
+      "size": 23620,
+      "lines": 566,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_coercion.scm",
+      "size": 10560,
+      "lines": 221,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_documentation_obstruction.scm",
+      "size": 27771,
+      "lines": 685,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "documentation-obstruction-causation-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "but-for-causation-documentation-obstruction"
+        },
+        {
+          "type": "principle",
+          "name": "venire-contra-factum-proprium-application"
+        },
+        {
+          "type": "principle",
+          "name": "documentation-access-denial-pattern-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "documentation-obstruction-bad-faith-indicators"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_enhanced.scm",
+      "size": 15074,
+      "lines": 399,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(civ"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_entity_relationship_analysis.scm",
+      "size": 22021,
+      "lines": 484,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "entity-role-conflict-detection"
+        },
+        {
+          "type": "principle",
+          "name": "fiduciary-relationship-breach-severity"
+        },
+        {
+          "type": "principle",
+          "name": "creditor-debtor-power-imbalance-abuse"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_entity_relationship_conflict_enhanced.scm",
+      "size": 27385,
+      "lines": 675,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_manufactured_crisis.scm",
+      "size": 9007,
+      "lines": 187,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_manufactured_crisis_detection.scm",
+      "size": 26071,
+      "lines": 661,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "manufactured-crisis-temporal-correlation-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "timing-analysis-bad-faith-1-day-interval"
+        },
+        {
+          "type": "principle",
+          "name": "documentation-obstruction-causation-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "manufactured-urgency-ex-parte-relief-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "settlement-negotiation-bad-faith-escalation"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_medical_testing_weaponization.scm",
+      "size": 11323,
+      "lines": 256,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "medical-testing-weaponization-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "settlement-trojan-horse-pattern"
+        },
+        {
+          "type": "principle",
+          "name": "fiat-lux-clause-abuse"
+        },
+        {
+          "type": "principle",
+          "name": "mental-health-coercion-mechanism"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.97,
+        0.96,
+        0.95,
+        0.96,
+        0.97,
+        0.96,
+        0.88
+      ],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_multi_actor_coordination.scm",
+      "size": 15102,
+      "lines": 378,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "multi-actor-coordination-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "coordinated-revenue-diversion-pattern"
+        },
+        {
+          "type": "principle",
+          "name": "actor-network-analysis"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_platform_unjust_enrichment.scm",
+      "size": 18004,
+      "lines": 475,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "platform-unjust-enrichment-test"
+        },
+        {
+          "type": "principle",
+          "name": "platform-valuation-quantum-meruit"
+        },
+        {
+          "type": "principle",
+          "name": "platform-ownership-compensation-duty"
+        },
+        {
+          "type": "principle",
+          "name": "cross-border-platform-usage-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "revenue-attribution-to-platform-test"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_retaliation.scm",
+      "size": 10131,
+      "lines": 215,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_revenue_hijacking_creditor_sabotage.scm",
+      "size": 23096,
+      "lines": 588,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "revenue-stream-hijacking-pattern-test"
+        },
+        {
+          "type": "principle",
+          "name": "creditor-obligation-sabotage-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "systematic-revenue-diversion-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "multi-actor-revenue-hijacking-coordination"
+        },
+        {
+          "type": "principle",
+          "name": "temporal-correlation-fraud-exposure-to-sabotage"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_temporal_bad_faith.scm",
+      "size": 11997,
+      "lines": 249,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_temporal_bad_faith_v2.scm",
+      "size": 15463,
+      "lines": 334,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_temporal_bad_faith_v3.scm",
+      "size": 14643,
+      "lines": 312,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "temporal-bad-faith-pattern-recognition-enhanced"
+        },
+        {
+          "type": "principle",
+          "name": "manufactured-crisis-escalation-pattern-analysis"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_temporal_causation_v24.scm",
+      "size": 17713,
+      "lines": 414,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_timeline_event_integration.scm",
+      "size": 39626,
+      "lines": 923,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_timing_analysis_v2.scm",
+      "size": 10467,
+      "lines": 227,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_law_unjust_enrichment.scm",
+      "size": 25573,
+      "lines": 596,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/civ/za/south_african_civil_procedure_ex_parte_fraud_rescission.scm",
+      "size": 19964,
+      "lines": 445,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "south-african-civil-procedure-ex-parte-fraud-rescission"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/investigation_legitimacy_assessment_v37.scm",
+      "size": 20172,
+      "lines": 411,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/juristic_person_agent_modeling_v36.scm",
+      "size": 8582,
+      "lines": 223,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_ceo_operational_discretion_v22.scm",
+      "size": 20823,
+      "lines": 587,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "ceo-operational-discretion-framework"
+        },
+        {
+          "type": "principle",
+          "name": "business-judgment-rule-application"
+        },
+        {
+          "type": "principle",
+          "name": "ceo-decision-authority-doctrine"
+        },
+        {
+          "type": "principle",
+          "name": "ceo-fiduciary-duty-balance"
+        },
+        {
+          "type": "principle",
+          "name": "ceo-decision-reasonableness-test"
+        },
+        {
+          "type": "public",
+          "name": "ceo-operational-discretion-framework"
+        },
+        {
+          "type": "public",
+          "name": "business-judgment-rule-application"
+        },
+        {
+          "type": "public",
+          "name": "ceo-decision-authority-doctrine"
+        },
+        {
+          "type": "public",
+          "name": "ceo-fiduciary-duty-balance"
+        },
+        {
+          "type": "public",
+          "name": "ceo-decision-reasonableness-test"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_cio_technical_expense_justification.scm",
+      "size": 2828,
+      "lines": 37,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law.scm",
+      "size": 23335,
+      "lines": 563,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_director_collective_action.scm",
+      "size": 22892,
+      "lines": 557,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "director-collective-action-requirement"
+        },
+        {
+          "type": "principle",
+          "name": "board-resolution-necessity-significant-actions"
+        },
+        {
+          "type": "principle",
+          "name": "unilateral-director-action-invalidity-test"
+        },
+        {
+          "type": "principle",
+          "name": "director-action-authorization-documentation"
+        },
+        {
+          "type": "principle",
+          "name": "director-collective-action-breach-remedies"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_director_loan_accounts.scm",
+      "size": 19662,
+      "lines": 496,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "director-loan-account-legitimacy-test"
+        },
+        {
+          "type": "principle",
+          "name": "director-creditor-rights-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "director-withdrawal-authorization-test"
+        },
+        {
+          "type": "principle",
+          "name": "informal-director-loan-account-recognition"
+        },
+        {
+          "type": "principle",
+          "name": "director-loan-vs-shareholder-loan-distinction"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_enhanced.scm",
+      "size": 34584,
+      "lines": 766,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting.scm",
+      "size": 20194,
+      "lines": 445,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced.scm",
+      "size": 24623,
+      "lines": 502,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced_v2.scm",
+      "size": 22373,
+      "lines": 473,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced_v3.scm",
+      "size": 13568,
+      "lines": 277,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced_v4.scm",
+      "size": 21346,
+      "lines": 447,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced_v5.scm",
+      "size": 11720,
+      "lines": 236,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "email-control-financial-authority-abuse"
+        },
+        {
+          "type": "principle",
+          "name": "stock-adjustment-fraud-pattern-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "creditor-obligation-sabotage-timeline-correlation"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_forensic_accounting_enhanced_v6.scm",
+      "size": 16241,
+      "lines": 302,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "multi-actor-coordination-pattern-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "related-party-network-mapping-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "email-control-forensic-timeline-analysis"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_non_director_control.scm",
+      "size": 13812,
+      "lines": 325,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "non-director-control-red-flags"
+        },
+        {
+          "type": "principle",
+          "name": "director-exclusion-from-financial-systems"
+        },
+        {
+          "type": "principle",
+          "name": "inverted-control-structure-indicators"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_regulatory_compliance.scm",
+      "size": 20253,
+      "lines": 416,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_regulatory_compliance_enhanced.scm",
+      "size": 20335,
+      "lines": 406,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_regulatory_compliance_enhanced_v2.scm",
+      "size": 19852,
+      "lines": 414,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_company_law_self_dealing_detection.scm",
+      "size": 23155,
+      "lines": 605,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "director-self-dealing-excessive-profit-test"
+        },
+        {
+          "type": "principle",
+          "name": "related-party-rent-fair-market-value-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "profit-margin-reasonableness-self-dealing-context"
+        },
+        {
+          "type": "principle",
+          "name": "related-party-transaction-excessive-profit-test"
+        },
+        {
+          "type": "principle",
+          "name": "self-dealing-disclosure-requirement-breach"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cmp/za/south_african_platform_ownership_defense_v22.scm",
+      "size": 21201,
+      "lines": 588,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "platform-ownership-defense-framework"
+        },
+        {
+          "type": "principle",
+          "name": "legitimate-corporate-ownership-doctrine"
+        },
+        {
+          "type": "principle",
+          "name": "unjust-enrichment-preclusion-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "platform-investment-documentation-framework"
+        },
+        {
+          "type": "principle",
+          "name": "corporate-asset-protection-doctrine"
+        },
+        {
+          "type": "public",
+          "name": "platform-ownership-defense-framework"
+        },
+        {
+          "type": "public",
+          "name": "legitimate-corporate-ownership-doctrine"
+        },
+        {
+          "type": "public",
+          "name": "unjust-enrichment-preclusion-analysis"
+        },
+        {
+          "type": "public",
+          "name": "platform-investment-documentation-framework"
+        },
+        {
+          "type": "public",
+          "name": "corporate-asset-protection-doctrine"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/core/entity_relation_model.scm",
+      "size": 43659,
+      "lines": 1103,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/core/legislative_model_framework_core.scm",
+      "size": 53673,
+      "lines": 1391,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/core/legislative_model_framework_layers.scm",
+      "size": 67270,
+      "lines": 1702,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/core/v43_integration.scm",
+      "size": 33321,
+      "lines": 918,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [
+        "(make-legal-relation",
+        "(hash-ref"
+      ],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cri/za/south_african_criminal_law.scm",
+      "size": 42343,
+      "lines": 1336,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/cst/za/south_african_construction_law.scm",
+      "size": 56409,
+      "lines": 1588,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/env/za/south_african_environmental_law.scm",
+      "size": 52061,
+      "lines": 1410,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/env/za/south_african_regulatory_compliance_cost_justification_v22.scm",
+      "size": 24037,
+      "lines": 586,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "regulatory-compliance-cost-benefit-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "eu-responsible-person-compliance-cost-framework"
+        },
+        {
+          "type": "principle",
+          "name": "compliance-cost-reasonableness-test"
+        },
+        {
+          "type": "principle",
+          "name": "regulatory-infrastructure-necessity-assessment"
+        },
+        {
+          "type": "principle",
+          "name": "compliance-cost-industry-benchmark-comparison"
+        },
+        {
+          "type": "public",
+          "name": "regulatory-compliance-cost-benefit-analysis"
+        },
+        {
+          "type": "public",
+          "name": "eu-responsible-person-compliance-cost-framework"
+        },
+        {
+          "type": "public",
+          "name": "compliance-cost-reasonableness-test"
+        },
+        {
+          "type": "public",
+          "name": "regulatory-infrastructure-necessity-assessment"
+        },
+        {
+          "type": "public",
+          "name": "compliance-cost-industry-benchmark-comparison"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/eth/za/south_african_professional_ethics_multi_party_conflicts.scm",
+      "size": 18548,
+      "lines": 417,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "south-african-professional-ethics-multi-party-conflicts"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/evid/za/evidence_principle_mapping_v6.scm",
+      "size": 23792,
+      "lines": 608,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/evid/za/south_african_evidence_case_2025_137857.scm",
+      "size": 23384,
+      "lines": 539,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/evid/za/south_african_evidence_systematic_fraud_patterns.scm",
+      "size": 26473,
+      "lines": 671,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "integrated-narrative-framework"
+        },
+        {
+          "type": "principle",
+          "name": "gradual-revelation-technique"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.92
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/frn/za/south_african_forensic_analysis_systematic_fraud_narrative.scm",
+      "size": 19322,
+      "lines": 377,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "south-african-forensic-analysis-systematic-fraud-narrative"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/int/za/south_african_international_law.scm",
+      "size": 56516,
+      "lines": 1578,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/int/za/south_african_international_regulatory_compliance.scm",
+      "size": 8340,
+      "lines": 181,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/int/za/south_african_international_regulatory_compliance_enhanced_v3.scm",
+      "size": 10052,
+      "lines": 204,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "multi-jurisdiction-compliance-crisis-quantification"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lab/za/immediate_retaliation_detection_v36.scm",
+      "size": 6446,
+      "lines": 182,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lab/za/immediate_retaliation_detection_v38.scm",
+      "size": 17633,
+      "lines": 523,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lab/za/south_african_labour_law.scm",
+      "size": 55331,
+      "lines": 1554,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lab/za/whistleblower_retaliation_immediate_proximity_v25.scm",
+      "size": 8395,
+      "lines": 206,
+      "definitions": [
+        {
+          "type": "principle",
+          "name": "whistleblower-retaliation-immediate-proximity-v25"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.98
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/known_laws.scm",
+      "size": 40435,
+      "lines": 1092,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/known_laws_enhanced.scm",
+      "size": 11593,
+      "lines": 310,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lv1"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/known_laws_module_header.scm",
+      "size": 844,
+      "lines": 22,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "...)"
+        },
+        {
+          "type": "module",
+          "name": "(lv1"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v12.scm",
+      "size": 13351,
+      "lines": 410,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v13.scm",
+      "size": 21794,
+      "lines": 627,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v14.scm",
+      "size": 28307,
+      "lines": 858,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v15.scm",
+      "size": 43277,
+      "lines": 1315,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-entity-relation-links",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v16.scm",
+      "size": 26414,
+      "lines": 723,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v17.scm",
+      "size": 18767,
+      "lines": 526,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/lv1/legal_aspects_taxonomy_v18_verified.scm",
+      "size": 20150,
+      "lines": 539,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": "present",
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/prof-eth/za/cio_professional_standard_industry_benchmark_v25.scm",
+      "size": 8438,
+      "lines": 199,
+      "definitions": [
+        {
+          "type": "principle",
+          "name": "cio-professional-standard-industry-benchmark-v25"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.94
+      ],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/prof-eth/za/south_african_cio_professional_standards_v22.scm",
+      "size": 23623,
+      "lines": 586,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "cio-professional-standard-industry-benchmark"
+        },
+        {
+          "type": "principle",
+          "name": "cio-role-definition-and-authority"
+        },
+        {
+          "type": "principle",
+          "name": "cio-infrastructure-investment-justification"
+        },
+        {
+          "type": "principle",
+          "name": "cio-technical-necessity-assessment"
+        },
+        {
+          "type": "principle",
+          "name": "cio-industry-standard-compliance"
+        },
+        {
+          "type": "public",
+          "name": "cio-professional-standard-industry-benchmark"
+        },
+        {
+          "type": "public",
+          "name": "cio-role-definition-and-authority"
+        },
+        {
+          "type": "public",
+          "name": "cio-infrastructure-investment-justification"
+        },
+        {
+          "type": "public",
+          "name": "cio-technical-necessity-assessment"
+        },
+        {
+          "type": "public",
+          "name": "cio-industry-standard-compliance"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/prof-eth/za/south_african_cio_professional_standards_v24.scm",
+      "size": 23948,
+      "lines": 492,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/prof-eth/za/south_african_professional_ethics_multi_party_conflicts.scm",
+      "size": 32446,
+      "lines": 831,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "multi-party-triple-conflict-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "commissioner-oaths-conflict-invalidation"
+        },
+        {
+          "type": "principle",
+          "name": "undisclosed-trustee-participation-fraud"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/fiduciary_duty_refinement.scm",
+      "size": 4195,
+      "lines": 99,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law.scm",
+      "size": 21953,
+      "lines": 537,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced.scm",
+      "size": 33703,
+      "lines": 766,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v2.scm",
+      "size": 12218,
+      "lines": 263,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v3.scm",
+      "size": 8607,
+      "lines": 165,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v4.scm",
+      "size": 24729,
+      "lines": 471,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v5.scm",
+      "size": 4354,
+      "lines": 91,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "undisclosed-trustee-triple-conflict-indicators"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v6.scm",
+      "size": 15624,
+      "lines": 265,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "trust-asset-abandonment-quantification-methodology"
+        },
+        {
+          "type": "principle",
+          "name": "beneficiary-rights-violation-quantification"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v7.scm",
+      "size": 12896,
+      "lines": 316,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "beneficiary-attack-temporal-correlation"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-coercion-then-attack-pattern"
+        },
+        {
+          "type": "principle",
+          "name": "beneficiary-cooperation-exploitation"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.97
+      ],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v8.scm",
+      "size": 12761,
+      "lines": 309,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "curatorship-fraud-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "absolute-power-bypass-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "medical-testing-trust-control-linkage"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [
+        0.96,
+        0.97,
+        0.95,
+        0.9,
+        0.93,
+        0.97,
+        0.96,
+        0.97,
+        0.96,
+        0.95
+      ],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_enhanced_v9_ketoni_payout.scm",
+      "size": 34340,
+      "lines": 823,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "ketoni-payout-motive-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "financial-control-fraud-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "beneficiary-share-control-mechanisms"
+        },
+        {
+          "type": "principle",
+          "name": "family-court-forum-shopping-motive"
+        },
+        {
+          "type": "principle",
+          "name": "curatorship-fraud-financial-motive"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-appointment-timing-analysis"
+        },
+        {
+          "type": "integration",
+          "name": "ketoni-payout-integration"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_temporal_analysis.scm",
+      "size": 12339,
+      "lines": 255,
+      "definitions": [],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [
+        "present"
+      ],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_law_trustee_beneficiary_conflicts.scm",
+      "size": 25439,
+      "lines": 562,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-beneficiary-adverse-action-prohibition"
+        },
+        {
+          "type": "principle",
+          "name": "trust-power-bypass-ulterior-motive-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-conflict-of-interest-indicators"
+        },
+        {
+          "type": "principle",
+          "name": "trust-asset-abandonment-fiduciary-breach"
+        },
+        {
+          "type": "principle",
+          "name": "trust-beneficiary-distribution-rights-protection"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [
+        ":\n     - If adverse action + conflict + no justification = BREACH\n     - Trustee prohibited from taking adverse action against beneficiary\n     - Beneficiary entitled to protection and remedies\n     - Court may reverse action and award costs\"\n  \n  #:red-flags '(\n    (trustee-seeking-interdict-against-beneficiary 0.98 \"Trustee seeking court order against beneficiary\")\n    (trustee-personal-interest-in-outcome 0.97 \"Trustee has personal financial interest in adverse action\")\n    (no-trust-administration-justification 0.96 \"No legitimate trust administration reason for action\")\n    (beneficiary-harm-from-action 0.95 \"Beneficiary suffers financial or operational harm\")\n    (timing-coincides-with-conflict 0.94 \"Action timing coincides with trustee-beneficiary conflict\")\n    (trustee-bypassing-trust-powers 0.96 \"Trustee seeks court order despite having trust powers\")\n    (trustee-self-dealing-pattern 0.95 \"Trustee has pattern of self-dealing transactions\")\n    (beneficiary-distribution-blocked 0.97 \"Trustee action blocks beneficiary's trust distribution\")\n  )\n  \n  #:case-application\n  \"Faucitt Family Trust - Peter (Trustee) v. Jax (Beneficiary):\n  \n  "
+      ],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis"
+      ]
+    },
+    {
+      "filepath": "/home/ubuntu/ad-res-j7/lex/trs/za/south_african_trust_power_bypass_analysis_v22.scm",
+      "size": 22959,
+      "lines": 600,
+      "definitions": [
+        {
+          "type": "module",
+          "name": "(lex"
+        },
+        {
+          "type": "principle",
+          "name": "trust-power-bypass-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-absolute-power-doctrine"
+        },
+        {
+          "type": "principle",
+          "name": "ulterior-motive-detection-framework"
+        },
+        {
+          "type": "principle",
+          "name": "trust-power-abuse-pattern-analysis"
+        },
+        {
+          "type": "principle",
+          "name": "trustee-bad-faith-inference-framework"
+        },
+        {
+          "type": "public",
+          "name": "trust-power-bypass-analysis"
+        },
+        {
+          "type": "public",
+          "name": "trustee-absolute-power-doctrine"
+        },
+        {
+          "type": "public",
+          "name": "ulterior-motive-detection-framework"
+        },
+        {
+          "type": "public",
+          "name": "trust-power-abuse-pattern-analysis"
+        },
+        {
+          "type": "public",
+          "name": "trustee-bad-faith-inference-framework"
+        }
+      ],
+      "legal_principles": [],
+      "case_references": [],
+      "verification_level": null,
+      "confidence_scores": [],
+      "entity_relations": [],
+      "temporal_chains": [],
+      "optimization_opportunities": [
+        "add-verification-metadata",
+        "add-confidence-scoring",
+        "add-temporal-analysis",
+        "version-outdated-check-for-updates"
+      ]
+    }
+  ]
+}

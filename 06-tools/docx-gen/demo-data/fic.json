@@ -1,0 +1,34 @@
+{
+  "caseRef": "2025-137857-FIC",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Balance of Probabilities (50%+) — EXCEEDED",
+  "executiveSummary": "This suspicious transaction report details a pattern of financial activity consistent with money laundering, involving the opening of multiple unauthorized bank accounts, systematic revenue diversion, and asset concealment exceeding R10.2M.",
+  "suspects": [
+    { "name": "Peter Andrew Faucitt", "role": "Director, Account holder", "involvement": "Authorized account openings; beneficiary of diverted revenue." },
+    { "name": "Rynette Farrar", "role": "Financial Controller", "involvement": "Opened 8 ABSA accounts using stolen card details; executed revenue diversion." },
+    { "name": "Daniel Jacobus Bantjies", "role": "Trustee, CFO", "involvement": "Facilitated trust-to-company fund flows; concealed R5.4M stock disappearance." }
+  ],
+  "suspiciousTransactions": [
+    { "date": "2025-04-01", "description": "First unauthorized ABSA account opened", "amount": "N/A", "accounts": "ABSA Account 1", "indicator": "Account opened using stolen card details" },
+    { "date": "2025-05-22", "description": "Shopify revenue stream diverted to new accounts", "amount": "R1,000,000+/mo", "accounts": "Multiple ABSA accounts", "indicator": "100% revenue diversion" },
+    { "date": "2025-09-02", "description": "R10.6M extracted post-interdict", "amount": "R10,624,131.18", "accounts": "Company accounts", "indicator": "99.8% asset strip within days of court order" }
+  ],
+  "moneyLaunderingIndicators": [
+    { "indicator": "Multiple account openings in short period", "evidence": "8 ABSA accounts opened using Daniel's stolen card", "status": "CONFIRMED" },
+    { "indicator": "Revenue stream redirection", "evidence": "Shopify sales diverted from legitimate accounts", "status": "CONFIRMED" },
+    { "indicator": "Complex inter-company transfers", "evidence": "Trust-to-company fund movements via Ketoni", "status": "CONFIRMED" },
+    { "indicator": "Rapid asset depletion post-court order", "evidence": "99.8% of company funds extracted within days", "status": "CONFIRMED" }
+  ],
+  "requestForAction": [
+    "Investigate all ABSA accounts opened by Rynette Farrar for suspicious activity.",
+    "Freeze accounts pending investigation under s26 of the FIC Act.",
+    "Issue section 27 report to all accountable institutions involved.",
+    "Refer to SAPS for criminal investigation under POCA."
+  ],
+  "annexures": [
+    { "id": "A", "description": "Bank Account Opening Analysis" },
+    { "id": "B", "description": "Transaction Flow Diagrams" },
+    { "id": "C", "description": "Suspicious Transaction Timeline" }
+  ]
+}

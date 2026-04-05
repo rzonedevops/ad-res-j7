@@ -1,0 +1,599 @@
+/**
+ * Model.zpp - Parameter Shapes and Forward/Sampling Contracts
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the model architecture, parameter shapes,
+ * forward pass contracts, and sampling operations for the lexicog model.
+ */
+
+import Types.*
+import TokenizerConfig.*
+import ModelConfig.*
+
+// ============================================================================
+// SECTION 1: MODEL STATE
+// ============================================================================
+
+/**
+ * Model Instance State
+ */
+state Model {
+    config: ModelConfig,
+    
+    // Embedding Layers
+    wordEmbeddings: Tensor<[VocabSize, EmbedDim]>,
+    positionEmbeddings: Tensor<[SeqLen, EmbedDim]>,
+    tokenTypeEmbeddings: Tensor<[ℕ₊, EmbedDim]>,
+    embeddingLayerNorm: LayerNorm,
+    embeddingDropout: Dropout,
+    
+    // Transformer Layers
+    layers: Array<TransformerLayer>,
+    
+    // Multi-Agent Attention Components
+    agentEmbeddings: Tensor<[ℕ₊, EmbedDim]>,
+    agentAttention: MultiAgentAttention,
+    
+    // Legal Reasoning Components
+    entityEncoder: EntityEncoder,
+    relationEncoder: RelationEncoder,
+    principleEncoder: PrincipleEncoder,
+    temporalEncoder: TemporalEncoder,
+    hypergraphEncoder: Option<HypergraphEncoder>,
+    
+    // Output Layers
+    outputLayerNorm: LayerNorm,
+    lmHead: Linear<[EmbedDim, VocabSize]>,
+    
+    // State
+    isTraining: Boolean,
+    device: Device
+}
+
+/**
+ * Transformer Layer
+ */
+state TransformerLayer {
+    selfAttention: MultiHeadAttention,
+    crossAttention: Option<MultiHeadAttention>,
+    agentAttention: Option<AgentAttentionHead>,
+    feedForward: FeedForward,
+    layerNorm1: LayerNorm,
+    layerNorm2: LayerNorm,
+    layerNorm3: Option<LayerNorm>,
+    dropout: Dropout
+}
+
+/**
+ * Multi-Head Attention
+ */
+state MultiHeadAttention {
+    queryProj: Linear<[EmbedDim, EmbedDim]>,
+    keyProj: Linear<[EmbedDim, EmbedDim]>,
+    valueProj: Linear<[EmbedDim, EmbedDim]>,
+    outputProj: Linear<[EmbedDim, EmbedDim]>,
+    numHeads: NumHeads,
+    headDim: ℕ₊,
+    dropout: Dropout,
+    scale: ℝ₊
+}
+
+/**
+ * Multi-Agent Attention
+ */
+state MultiAgentAttention {
+    selfAttentionHeads: Array<AgentAttentionHead>,
+    crossAttentionHeads: Array<AgentAttentionHead>,
+    agentPooling: AgentPooling,
+    numAgents: ℕ₊
+}
+
+/**
+ * Agent Attention Head
+ */
+state AgentAttentionHead {
+    queryProj: Linear<[EmbedDim, EmbedDim]>,
+    keyProj: Linear<[EmbedDim, EmbedDim]>,
+    valueProj: Linear<[EmbedDim, EmbedDim]>,
+    agentGate: Linear<[EmbedDim, 1]>,
+    perspectiveProj: Linear<[EmbedDim, EmbedDim]>
+}
+
+/**
+ * Feed Forward Network
+ */
+state FeedForward {
+    linear1: Linear<[EmbedDim, HiddenDim]>,
+    linear2: Linear<[HiddenDim, EmbedDim]>,
+    activation: Activation,
+    dropout: Dropout
+}
+
+/**
+ * Layer Normalization
+ */
+state LayerNorm {
+    weight: Tensor<[EmbedDim]>,
+    bias: Tensor<[EmbedDim]>,
+    eps: ℝ₊
+}
+
+/**
+ * Linear Layer
+ */
+state Linear<Shape: [ℕ₊, ℕ₊]> {
+    weight: Tensor<Shape>,
+    bias: Option<Tensor<[Shape[1]]>>
+}
+
+/**
+ * Dropout
+ */
+state Dropout {
+    p: ℝ[0,1],
+    training: Boolean
+}
+
+/**
+ * Activation Function
+ */
+state Activation {
+    type: ActivationType
+}
+
+// ============================================================================
+// SECTION 2: LEGAL REASONING ENCODERS
+// ============================================================================
+
+/**
+ * Entity Encoder
+ */
+state EntityEncoder {
+    entityEmbedding: Linear<[ℕ₊, EmbedDim]>,
+    typeEmbedding: Embedding<[|EntityType|, EmbedDim]>,
+    attributeEncoder: AttributeEncoder,
+    pooling: PoolingLayer
+}
+
+/**
+ * Relation Encoder
+ */
+state RelationEncoder {
+    relationEmbedding: Linear<[ℕ₊, EmbedDim]>,
+    categoryEmbedding: Embedding<[|RelationCategory|, EmbedDim]>,
+    sourceTargetAttention: MultiHeadAttention,
+    confidenceProjection: Linear<[EmbedDim, 1]>
+}
+
+/**
+ * Principle Encoder
+ */
+state PrincipleEncoder {
+    principleEmbedding: Linear<[ℕ₊, EmbedDim]>,
+    domainEmbedding: Embedding<[|LegalDomain|, EmbedDim]>,
+    hierarchyEncoder: HierarchyEncoder,
+    inferenceTypeEmbedding: Embedding<[|InferenceType|, EmbedDim]>
+}
+
+/**
+ * Temporal Encoder
+ */
+state TemporalEncoder {
+    positionEncoding: PositionEncoding,
+    eventEmbedding: Linear<[ℕ₊, EmbedDim]>,
+    causalAttention: CausalAttention,
+    temporalPooling: TemporalPooling
+}
+
+/**
+ * Hypergraph Encoder
+ */
+state HypergraphEncoder {
+    nodeEncoder: Linear<[EmbedDim, EmbedDim]>,
+    hyperedgeEncoder: Linear<[EmbedDim, EmbedDim]>,
+    messagePassingLayers: Array<HGNNLayer>,
+    aggregation: AggregationType
+}
+
+/**
+ * HGNN Layer
+ */
+state HGNNLayer {
+    nodeToHyperedge: Linear<[EmbedDim, EmbedDim]>,
+    hyperedgeToNode: Linear<[EmbedDim, EmbedDim]>,
+    layerNorm: LayerNorm,
+    dropout: Dropout
+}
+
+// ============================================================================
+// SECTION 3: MODEL OUTPUT TYPES
+// ============================================================================
+
+/**
+ * Model Output
+ */
+record ModelOutput {
+    logits: Tensor<[BatchSize, SeqLen, VocabSize]>,
+    lastHiddenState: Tensor<[BatchSize, SeqLen, EmbedDim]>,
+    hiddenStates: Option<Array<Tensor<[BatchSize, SeqLen, EmbedDim]>>>,
+    attentions: Option<Array<Tensor<[BatchSize, NumHeads, SeqLen, SeqLen]>>>,
+    
+    // Multi-Agent Outputs
+    agentStates: Option<Map<EntityId, AgentState>>,
+    crossAttentionWeights: Option<Tensor<[BatchSize, NumHeads, SeqLen, SeqLen]>>,
+    
+    // Legal Reasoning Outputs
+    entityRepresentations: Option<Tensor<[BatchSize, ℕ₊, EmbedDim]>>,
+    relationRepresentations: Option<Tensor<[BatchSize, ℕ₊, EmbedDim]>>,
+    principleRepresentations: Option<Tensor<[BatchSize, ℕ₊, EmbedDim]>>,
+    temporalRepresentations: Option<Tensor<[BatchSize, ℕ₊, EmbedDim]>>,
+    hypergraphRepresentation: Option<Tensor<[BatchSize, EmbedDim]>>
+}
+
+/**
+ * Generation Output
+ */
+record GenerationOutput {
+    sequences: Tensor<[BatchSize, SeqLen]>,
+    scores: Option<Array<Tensor<[BatchSize, VocabSize]>>>,
+    attentions: Option<Array<Tensor<[BatchSize, NumHeads, SeqLen, SeqLen]>>>,
+    hiddenStates: Option<Array<Tensor<[BatchSize, SeqLen, EmbedDim]>>>,
+    
+    // Generation Metadata
+    sequenceLengths: Array<SeqLen>,
+    finishedSequences: Array<Boolean>,
+    
+    // Multi-Agent Generation
+    agentContributions: Option<Map<EntityId, Array<Confidence>>>
+}
+
+/**
+ * Sampling Output
+ */
+record SamplingOutput {
+    tokenId: TokenId,
+    logProb: LogProb,
+    probability: Probability,
+    alternativeTokens: Array<Tuple<TokenId, Probability>>
+}
+
+// ============================================================================
+// SECTION 4: MODEL INVARIANTS
+// ============================================================================
+
+/**
+ * Embedding Dimension Consistency
+ */
+invariant EmbeddingDimConsistency:
+    ∀ model: Model •
+        shape(model.wordEmbeddings)[1] = model.config.hiddenSize ∧
+        shape(model.positionEmbeddings)[1] = model.config.hiddenSize ∧
+        shape(model.tokenTypeEmbeddings)[1] = model.config.hiddenSize
+
+/**
+ * Layer Count Consistency
+ */
+invariant LayerCountConsistency:
+    ∀ model: Model •
+        |model.layers| = model.config.numHiddenLayers
+
+/**
+ * Attention Head Dimension
+ */
+invariant AttentionHeadDimension:
+    ∀ model: Model, layer ∈ model.layers •
+        layer.selfAttention.headDim = model.config.hiddenSize / model.config.numAttentionHeads
+
+/**
+ * Output Shape Consistency
+ */
+invariant OutputShapeConsistency:
+    ∀ model: Model •
+        shape(model.lmHead.weight)[1] = model.config.vocabSize ∧
+        shape(model.lmHead.weight)[0] = model.config.hiddenSize
+
+/**
+ * Logits Shape
+ */
+invariant LogitsShape:
+    ∀ output: ModelOutput •
+        shape(output.logits)[2] = TOTAL_VOCAB_SIZE
+
+/**
+ * Hidden State Shape
+ */
+invariant HiddenStateShape:
+    ∀ output: ModelOutput •
+        shape(output.lastHiddenState)[2] = DEFAULT_EMBED_DIM
+
+/**
+ * Probability Distribution
+ */
+invariant ProbabilityDistribution:
+    ∀ output: ModelOutput •
+        ∀ b ∈ [0, shape(output.logits)[0]), s ∈ [0, shape(output.logits)[1]) •
+            sum(softmax(output.logits[b, s, :])) ≈ 1.0
+
+// ============================================================================
+// SECTION 5: FORWARD PASS CONTRACTS
+// ============================================================================
+
+/**
+ * Initialize Model
+ */
+contract initModel(config: ModelConfig): Result<Model, String>
+    requires validateModelConfig(config) = Ok(())
+    ensures result = Ok(model) ⟹
+        model.config = config ∧
+        EmbeddingDimConsistency(model) ∧
+        LayerCountConsistency(model) ∧
+        AttentionHeadDimension(model) ∧
+        OutputShapeConsistency(model)
+
+/**
+ * Forward Pass
+ */
+contract forward(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    attentionMask: Option<Tensor<[BatchSize, SeqLen]>>,
+    tokenTypeIds: Option<Tensor<[BatchSize, SeqLen]>>,
+    positionIds: Option<Tensor<[BatchSize, SeqLen]>>,
+    pastKeyValues: Option<Array<Tuple<Tensor, Tensor>>>,
+    outputAttentions: Boolean,
+    outputHiddenStates: Boolean
+): ModelOutput
+    requires shape(inputIds)[1] ≤ model.config.maxPositionEmbeddings
+    requires attentionMask = None ∨ shape(attentionMask!) = shape(inputIds)
+    requires tokenTypeIds = None ∨ shape(tokenTypeIds!) = shape(inputIds)
+    requires positionIds = None ∨ shape(positionIds!) = shape(inputIds)
+    ensures shape(result.logits) = [shape(inputIds)[0], shape(inputIds)[1], model.config.vocabSize]
+    ensures shape(result.lastHiddenState) = [shape(inputIds)[0], shape(inputIds)[1], model.config.hiddenSize]
+    ensures outputHiddenStates ⟹ result.hiddenStates ≠ None ∧ |result.hiddenStates!| = model.config.numHiddenLayers + 1
+    ensures outputAttentions ⟹ result.attentions ≠ None ∧ |result.attentions!| = model.config.numHiddenLayers
+    ensures LogitsShape(result)
+    ensures HiddenStateShape(result)
+
+/**
+ * Forward with Legal Context
+ */
+contract forwardWithContext(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    attentionMask: Option<Tensor<[BatchSize, SeqLen]>>,
+    context: Context,
+    outputAgentStates: Boolean
+): ModelOutput
+    requires shape(inputIds)[1] ≤ model.config.maxPositionEmbeddings
+    requires |context.entities| ≤ model.config.lexConfig.maxEntities
+    requires |context.relations| ≤ model.config.lexConfig.maxRelations
+    requires |context.events| ≤ model.config.lexConfig.maxEvents
+    ensures shape(result.logits) = [shape(inputIds)[0], shape(inputIds)[1], model.config.vocabSize]
+    ensures outputAgentStates ⟹ result.agentStates ≠ None
+    ensures result.entityRepresentations ≠ None ⟺ |context.entities| > 0
+    ensures result.relationRepresentations ≠ None ⟺ |context.relations| > 0
+
+/**
+ * Compute Embeddings
+ */
+contract computeEmbeddings(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    tokenTypeIds: Option<Tensor<[BatchSize, SeqLen]>>,
+    positionIds: Option<Tensor<[BatchSize, SeqLen]>>
+): Tensor<[BatchSize, SeqLen, EmbedDim]>
+    requires ∀ b, s • inputIds[b, s] < model.config.vocabSize
+    ensures shape(result) = [shape(inputIds)[0], shape(inputIds)[1], model.config.hiddenSize]
+
+/**
+ * Apply Transformer Layer
+ */
+contract applyTransformerLayer(
+    layer: TransformerLayer,
+    hiddenStates: Tensor<[BatchSize, SeqLen, EmbedDim]>,
+    attentionMask: Option<Tensor<[BatchSize, SeqLen]>>,
+    outputAttentions: Boolean
+): Tuple<Tensor<[BatchSize, SeqLen, EmbedDim]>, Option<Tensor>>
+    ensures shape(result.0) = shape(hiddenStates)
+    ensures outputAttentions ⟹ result.1 ≠ None
+
+/**
+ * Apply Multi-Agent Attention
+ */
+contract applyMultiAgentAttention(
+    attention: MultiAgentAttention,
+    hiddenStates: Tensor<[BatchSize, SeqLen, EmbedDim]>,
+    agentMask: Tensor<[BatchSize, ℕ₊]>,
+    context: Context
+): Tuple<Tensor<[BatchSize, SeqLen, EmbedDim]>, Map<EntityId, AgentState>>
+    requires |context.entities| ≤ attention.numAgents
+    ensures shape(result.0) = shape(hiddenStates)
+    ensures |result.1| = |context.entities|
+
+// ============================================================================
+// SECTION 6: SAMPLING CONTRACTS
+// ============================================================================
+
+/**
+ * Sample Next Token (Greedy)
+ */
+contract sampleGreedy(
+    logits: Tensor<[VocabSize]>
+): SamplingOutput
+    ensures result.tokenId = argmax(logits)
+    ensures result.probability = softmax(logits)[result.tokenId]
+    ensures result.logProb = log(result.probability)
+
+/**
+ * Sample Next Token (Temperature)
+ */
+contract sampleWithTemperature(
+    logits: Tensor<[VocabSize]>,
+    temperature: Temperature
+): SamplingOutput
+    requires temperature > 0
+    ensures result.probability ∈ (0, 1]
+    ensures result.logProb = log(result.probability)
+
+/**
+ * Sample Next Token (Top-K)
+ */
+contract sampleTopK(
+    logits: Tensor<[VocabSize]>,
+    k: ℕ₊,
+    temperature: Temperature
+): SamplingOutput
+    requires k > 0
+    requires temperature > 0
+    ensures result.tokenId ∈ topKIndices(logits, k)
+    ensures |result.alternativeTokens| ≤ k
+
+/**
+ * Sample Next Token (Top-P / Nucleus)
+ */
+contract sampleTopP(
+    logits: Tensor<[VocabSize]>,
+    p: ℝ[0,1],
+    temperature: Temperature
+): SamplingOutput
+    requires p > 0 ∧ p ≤ 1
+    requires temperature > 0
+    ensures result.tokenId ∈ nucleusIndices(logits, p)
+
+/**
+ * Sample Next Token (Combined)
+ */
+contract sample(
+    logits: Tensor<[VocabSize]>,
+    config: GenerationConfig
+): SamplingOutput
+    requires config.temperature > 0
+    requires config.topK > 0
+    requires config.topP > 0 ∧ config.topP ≤ 1
+    ensures config.doSample = false ⟹ result.tokenId = argmax(logits)
+    ensures result.probability ∈ (0, 1]
+
+/**
+ * Apply Repetition Penalty
+ */
+contract applyRepetitionPenalty(
+    logits: Tensor<[VocabSize]>,
+    generatedTokens: Array<TokenId>,
+    penalty: ℝ₊
+): Tensor<[VocabSize]>
+    requires penalty > 0
+    ensures ∀ tid ∈ generatedTokens •
+        result[tid] = logits[tid] / penalty (if logits[tid] > 0)
+        result[tid] = logits[tid] * penalty (if logits[tid] < 0)
+
+/**
+ * Apply Length Penalty (Beam Search)
+ */
+contract applyLengthPenalty(
+    score: ℝ,
+    length: SeqLen,
+    penalty: ℝ
+): ℝ
+    ensures result = score / (length ^ penalty)
+
+// ============================================================================
+// SECTION 7: GENERATION CONTRACTS
+// ============================================================================
+
+/**
+ * Generate Sequences
+ */
+contract generate(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    config: GenerationConfig,
+    attentionMask: Option<Tensor<[BatchSize, SeqLen]>>
+): GenerationOutput
+    requires shape(inputIds)[1] < config.maxLength
+    requires validateGenerationConfig(config) = Ok(())
+    ensures shape(result.sequences)[0] = shape(inputIds)[0] * config.numReturnSequences
+    ensures ∀ seq ∈ result.sequences •
+        |seq| ≤ config.maxLength
+    ensures ∀ i ∈ [0, |result.finishedSequences|) •
+        result.finishedSequences[i] ⟹
+            result.sequences[i][result.sequenceLengths[i] - 1] = config.eosTokenId
+
+/**
+ * Generate with Legal Context
+ */
+contract generateWithContext(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    config: GenerationConfig,
+    context: Context
+): GenerationOutput
+    requires shape(inputIds)[1] < config.maxLength
+    requires |context.entities| ≤ model.config.lexConfig.maxEntities
+    ensures shape(result.sequences)[0] = shape(inputIds)[0] * config.numReturnSequences
+    ensures result.agentContributions ≠ None ⟺ |context.entities| > 0
+
+/**
+ * Beam Search
+ */
+contract beamSearch(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    config: GenerationConfig
+): GenerationOutput
+    requires config.numBeams > 1
+    ensures |result.sequences| = shape(inputIds)[0] * config.numReturnSequences
+
+/**
+ * Greedy Decoding
+ */
+contract greedyDecode(
+    model: Model,
+    inputIds: Tensor<[BatchSize, SeqLen]>,
+    config: GenerationConfig
+): GenerationOutput
+    requires config.doSample = false
+    requires config.numBeams = 1
+    ensures ∀ i, j • result.sequences[i][j] = argmax(forwardStep(model, prefix[i][..j]).logits)
+
+// ============================================================================
+// SECTION 8: HELPER FUNCTIONS
+// ============================================================================
+
+/**
+ * Softmax Function
+ */
+function softmax(logits: Tensor<[VocabSize]>): Tensor<[VocabSize]>
+    ensures sum(result) ≈ 1.0
+    ensures ∀ i • result[i] ≥ 0
+
+/**
+ * Log Softmax Function
+ */
+function logSoftmax(logits: Tensor<[VocabSize]>): Tensor<[VocabSize]>
+    ensures ∀ i • result[i] ≤ 0
+    ensures logsumexp(result) ≈ 0
+
+/**
+ * Argmax Function
+ */
+function argmax(logits: Tensor<[VocabSize]>): TokenId
+    ensures ∀ i • logits[result] ≥ logits[i]
+
+/**
+ * Top-K Indices
+ */
+function topKIndices(logits: Tensor<[VocabSize]>, k: ℕ₊): Set<TokenId>
+    ensures |result| = min(k, TOTAL_VOCAB_SIZE)
+    ensures ∀ i ∈ result, j ∉ result • logits[i] ≥ logits[j]
+
+/**
+ * Nucleus (Top-P) Indices
+ */
+function nucleusIndices(logits: Tensor<[VocabSize]>, p: ℝ[0,1]): Set<TokenId>
+    ensures sum({ softmax(logits)[i] | i ∈ result }) ≥ p
+    ensures ∀ proper subset S ⊂ result • sum({ softmax(logits)[i] | i ∈ S }) < p
+
+// ============================================================================
+// END OF MODEL.ZPP
+// ============================================================================

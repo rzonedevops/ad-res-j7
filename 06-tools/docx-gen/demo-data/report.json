@@ -1,0 +1,56 @@
+{
+  "title": "FOREKNOWLEDGE CLASSIFICATION ANALYSIS",
+  "caseRef": "2025-137857",
+  "date": "2026-02-08",
+  "version": "v3.0",
+  "burdenOfProof": "Tiered — see framework below",
+  "executiveSummary": "This report establishes a four-tier foreknowledge classification framework for distinguishing premeditated conspirators from potentially innocent participants. The framework is critical for case integrity and avoidance of defamation exposure.",
+  "sections": [
+    {
+      "title": "CLASSIFICATION FRAMEWORK",
+      "paragraphs": [
+        "The system uses a four-tier classification to distinguish premeditated conspirators from potentially innocent participants."
+      ],
+      "table": {
+        "headers": ["Tier", "Classification", "Criteria", "Legal Standard"],
+        "rows": [
+          ["A", "Premeditated Conspirator", "Multiple independent documentary proofs of actual knowledge", "Beyond Reasonable Doubt (95%+)"],
+          ["B", "Active Participant with Proven Knowledge", "At least one direct documentary proof of awareness", "Clear and Convincing (75%+)"],
+          ["C", "Participant — Knowledge Unproven", "Participated but no proof of knowledge", "Below Balance of Probabilities (<50%)"],
+          ["D", "Structural Connection Only", "Connected via corporate structure only", "No Evidence of Knowledge"]
+        ]
+      }
+    },
+    {
+      "title": "TIER A ASSESSMENTS",
+      "paragraphs": [
+        "Three individuals meet the Tier A threshold with multiple independent documentary proofs."
+      ],
+      "table": {
+        "headers": ["Agent", "Proven Events", "Key Evidence", "Confidence"],
+        "rows": [
+          ["Peter Andrew Faucitt", "10", "SF10 FNB Letter, Sage accounts, Shopify organogram", "100%"],
+          ["Rynette Farrar", "12", "SF10 identity fraud, De Novo email, Sage lockout, SF15 false report", "100%"],
+          ["Daniel Jacobus Bantjies", "8", "False affidavit, Commissioner impossibility, 6 conflicts", "100%"]
+        ]
+      }
+    },
+    {
+      "title": "FINANCIAL IMPACT SUMMARY",
+      "table": {
+        "headers": ["Category", "Amount (ZAR)", "Percentage"],
+        "rows": [
+          ["Revenue Theft", "R3,141,647.70", "30.6%"],
+          ["Trust Violations", "R2,851,247.35", "27.8%"],
+          ["Financial Manipulation", "R4,276,832.85", "41.6%"],
+          ["TOTAL", "R10,269,727.90", "100%"]
+        ]
+      }
+    }
+  ],
+  "annexures": [
+    { "id": "A", "description": "Per-Agent Audit Trail" },
+    { "id": "B", "description": "Knowledge Matrix" },
+    { "id": "C", "description": "Foreknowledge Timeline" }
+  ]
+}

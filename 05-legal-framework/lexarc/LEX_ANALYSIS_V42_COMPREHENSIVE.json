@@ -1,0 +1,544 @@
+{
+  "timestamp": "2025-12-22T18:16:13.698699",
+  "entities": {
+    "valid-state-transitions": {
+      "id": "valid-state-transitions",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/relation_tracking_temporal_v1.scm"
+    },
+    "critical-events-timeline": {
+      "id": "critical-events-timeline",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_agent_based_conflict_resolution_v2.scm"
+    },
+    "peter-faucitt-agent": {
+      "id": "peter-faucitt-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "jacqueline-faucitt-agent": {
+      "id": "jacqueline-faucitt-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "daniel-faucitt-agent": {
+      "id": "daniel-faucitt-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "rynette-farrar-agent": {
+      "id": "rynette-farrar-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "daniel-bantjies-agent": {
+      "id": "daniel-bantjies-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "faucitt-family-trust-agent": {
+      "id": "faucitt-family-trust-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_optimized.scm"
+    },
+    "regima-skin-treatments-agent": {
+      "id": "regima-skin-treatments-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_optimized.scm"
+    },
+    "regima-worldwide-distribution-agent": {
+      "id": "regima-worldwide-distribution-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_optimized.scm"
+    },
+    "regima-zone-ltd-agent": {
+      "id": "regima-zone-ltd-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_optimized.scm"
+    },
+    "peter-faucitt-agent-v2": {
+      "id": "peter-faucitt-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "jacqueline-faucitt-agent-v2": {
+      "id": "jacqueline-faucitt-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "daniel-faucitt-agent-v2": {
+      "id": "daniel-faucitt-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "rynette-farrar-agent-v2": {
+      "id": "rynette-farrar-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "daniel-bantjies-agent-v2": {
+      "id": "daniel-bantjies-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "faucitt-family-trust-agent-v2": {
+      "id": "faucitt-family-trust-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "regima-skin-treatments-agent-v2": {
+      "id": "regima-skin-treatments-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "regima-worldwide-distribution-agent-v2": {
+      "id": "regima-worldwide-distribution-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "regima-zone-ltd-agent-v2": {
+      "id": "regima-zone-ltd-agent-v2",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm"
+    },
+    "gee-agent": {
+      "id": "gee-agent",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "faucitt-family-trust": {
+      "id": "faucitt-family-trust",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "regima-skin-treatments": {
+      "id": "regima-skin-treatments",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "regima-worldwide-distribution": {
+      "id": "regima-worldwide-distribution",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm"
+    },
+    "temporal-proximity-thresholds-v24": {
+      "id": "temporal-proximity-thresholds-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_temporal_causation_v24.scm"
+    },
+    "causation-strength-classification-v24": {
+      "id": "causation-strength-classification-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/civ/za/south_african_civil_law_temporal_causation_v24.scm"
+    },
+    "para-7-6-evidence": {
+      "id": "para-7-6-evidence",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/evid/za/south_african_evidence_case_2025_137857.scm"
+    },
+    "para-7-2-7-5-evidence": {
+      "id": "para-7-2-7-5-evidence",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/evid/za/south_african_evidence_case_2025_137857.scm"
+    },
+    "para-8-11-8-13-evidence": {
+      "id": "para-8-11-8-13-evidence",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/evid/za/south_african_evidence_case_2025_137857.scm"
+    },
+    "para-3-3-10-evidence": {
+      "id": "para-3-3-10-evidence",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/evid/za/south_african_evidence_case_2025_137857.scm"
+    },
+    "para-10-5-10-10-evidence": {
+      "id": "para-10-5-10-10-evidence",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/evid/za/south_african_evidence_case_2025_137857.scm"
+    },
+    "daniel-fraud-report-2025-06-06": {
+      "id": "daniel-fraud-report-2025-06-06",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/lab/za/immediate_retaliation_detection_v36.scm"
+    },
+    "peter-immediate-retaliation-2025-06-07": {
+      "id": "peter-immediate-retaliation-2025-06-07",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/lab/za/immediate_retaliation_detection_v36.scm"
+    },
+    "industry-benchmark-frameworks-v24": {
+      "id": "industry-benchmark-frameworks-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/prof-eth/za/south_african_cio_professional_standards_v24.scm"
+    },
+    "cio-role-scope-components-v24": {
+      "id": "cio-role-scope-components-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/prof-eth/za/south_african_cio_professional_standards_v24.scm"
+    },
+    "dan-it-investment-profile-v24": {
+      "id": "dan-it-investment-profile-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/prof-eth/za/south_african_cio_professional_standards_v24.scm"
+    },
+    "regima-industry-context-v24": {
+      "id": "regima-industry-context-v24",
+      "type": "unknown",
+      "roles": [],
+      "confidences": {},
+      "source_file": "lex/prof-eth/za/south_african_cio_professional_standards_v24.scm"
+    }
+  },
+  "relations": {},
+  "events": {},
+  "timelines": {},
+  "legal_aspects": {},
+  "evidence_gaps": [
+    {
+      "type": "entity_evidence",
+      "entity": "valid-state-transitions",
+      "priority": "HIGH",
+      "description": "Entity valid-state-transitions lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "critical-events-timeline",
+      "priority": "HIGH",
+      "description": "Entity critical-events-timeline lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "peter-faucitt-agent",
+      "priority": "HIGH",
+      "description": "Entity peter-faucitt-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "jacqueline-faucitt-agent",
+      "priority": "HIGH",
+      "description": "Entity jacqueline-faucitt-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "daniel-faucitt-agent",
+      "priority": "HIGH",
+      "description": "Entity daniel-faucitt-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "rynette-farrar-agent",
+      "priority": "HIGH",
+      "description": "Entity rynette-farrar-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "daniel-bantjies-agent",
+      "priority": "HIGH",
+      "description": "Entity daniel-bantjies-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "faucitt-family-trust-agent",
+      "priority": "HIGH",
+      "description": "Entity faucitt-family-trust-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-skin-treatments-agent",
+      "priority": "HIGH",
+      "description": "Entity regima-skin-treatments-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-worldwide-distribution-agent",
+      "priority": "HIGH",
+      "description": "Entity regima-worldwide-distribution-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-zone-ltd-agent",
+      "priority": "HIGH",
+      "description": "Entity regima-zone-ltd-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "peter-faucitt-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity peter-faucitt-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "jacqueline-faucitt-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity jacqueline-faucitt-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "daniel-faucitt-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity daniel-faucitt-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "rynette-farrar-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity rynette-farrar-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "daniel-bantjies-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity daniel-bantjies-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "faucitt-family-trust-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity faucitt-family-trust-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-skin-treatments-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity regima-skin-treatments-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-worldwide-distribution-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity regima-worldwide-distribution-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-zone-ltd-agent-v2",
+      "priority": "HIGH",
+      "description": "Entity regima-zone-ltd-agent-v2 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "gee-agent",
+      "priority": "HIGH",
+      "description": "Entity gee-agent lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "faucitt-family-trust",
+      "priority": "HIGH",
+      "description": "Entity faucitt-family-trust lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-skin-treatments",
+      "priority": "HIGH",
+      "description": "Entity regima-skin-treatments lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-worldwide-distribution",
+      "priority": "HIGH",
+      "description": "Entity regima-worldwide-distribution lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "temporal-proximity-thresholds-v24",
+      "priority": "HIGH",
+      "description": "Entity temporal-proximity-thresholds-v24 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "causation-strength-classification-v24",
+      "priority": "HIGH",
+      "description": "Entity causation-strength-classification-v24 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "para-7-6-evidence",
+      "priority": "HIGH",
+      "description": "Entity para-7-6-evidence lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "para-7-2-7-5-evidence",
+      "priority": "HIGH",
+      "description": "Entity para-7-2-7-5-evidence lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "para-8-11-8-13-evidence",
+      "priority": "HIGH",
+      "description": "Entity para-8-11-8-13-evidence lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "para-3-3-10-evidence",
+      "priority": "HIGH",
+      "description": "Entity para-3-3-10-evidence lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "para-10-5-10-10-evidence",
+      "priority": "HIGH",
+      "description": "Entity para-10-5-10-10-evidence lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "daniel-fraud-report-2025-06-06",
+      "priority": "HIGH",
+      "description": "Entity daniel-fraud-report-2025-06-06 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "peter-immediate-retaliation-2025-06-07",
+      "priority": "HIGH",
+      "description": "Entity peter-immediate-retaliation-2025-06-07 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "industry-benchmark-frameworks-v24",
+      "priority": "HIGH",
+      "description": "Entity industry-benchmark-frameworks-v24 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "cio-role-scope-components-v24",
+      "priority": "HIGH",
+      "description": "Entity cio-role-scope-components-v24 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "dan-it-investment-profile-v24",
+      "priority": "HIGH",
+      "description": "Entity dan-it-investment-profile-v24 lacks evidence support"
+    },
+    {
+      "type": "entity_evidence",
+      "entity": "regima-industry-context-v24",
+      "priority": "HIGH",
+      "description": "Entity regima-industry-context-v24 lacks evidence support"
+    }
+  ],
+  "improvements": [
+    {
+      "category": "entity_verification",
+      "priority": "CRITICAL",
+      "description": "Verify all entity roles against statutory basis and evidence",
+      "action_items": [
+        "Cross-check Rynette role (NOT trustee)",
+        "Verify Bantjies trustee status (Trust Property Control Act 57/1988)",
+        "Confirm all entity confidence scores with evidence"
+      ]
+    },
+    {
+      "category": "relation_enhancement",
+      "priority": "HIGH",
+      "description": "Enhance all relations with temporal causation and confidence scores",
+      "action_items": [
+        "Add temporal markers to all relations",
+        "Calculate confidence scores based on evidence",
+        "Identify causal chains (e.g., Bantjies → Rynette → Peter)"
+      ]
+    },
+    {
+      "category": "legal_aspect_mapping",
+      "priority": "HIGH",
+      "description": "Map all AD paragraphs to legal principles and evidence",
+      "action_items": [
+        "Create comprehensive AD paragraph mapping",
+        "Link each principle to supporting evidence",
+        "Identify gaps in legal coverage"
+      ]
+    },
+    {
+      "category": "evidence_integration",
+      "priority": "CRITICAL",
+      "description": "Integrate all evidence with entity-relation framework",
+      "action_items": [
+        "Link Sage screenshots to email control evidence",
+        "Connect account access logs to financial control",
+        "Map timeline events to evidence sources"
+      ]
+    },
+    {
+      "category": "jr_dr_synergy",
+      "priority": "HIGH",
+      "description": "Optimize jax-response and dan-response complementarity",
+      "action_items": [
+        "Generate missing JR responses (PARA 7.2-7.5, 7.6, 7.7-7.8, 7.9-7.11, 10.5-10.10.23)",
+        "Ensure JR-DR complementarity score ≥ 0.96",
+        "Cross-reference all JR-DR pairs with evidence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,817 @@
+/**
+ * InferencePipe.zpp - End-to-End Generation Contract
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the complete inference pipeline from
+ * raw text input to generated legal analysis output, including
+ * multi-agent reasoning and hypergraph integration.
+ */
+
+import Types.*
+import TokenizerConfig.*
+import ModelConfig.*
+import Tokenizer.*
+import Model.*
+
+// ============================================================================
+// SECTION 1: PIPELINE STATE
+// ============================================================================
+
+/**
+ * Inference Pipeline State
+ */
+state InferencePipeline {
+    tokenizer: Tokenizer,
+    model: Model,
+    
+    // Legal Context Loaders
+    entityLoader: EntityLoader,
+    relationLoader: RelationLoader,
+    principleLoader: PrincipleLoader,
+    eventLoader: EventLoader,
+    
+    // Hypergraph Components
+    hypergraph: Option<Hypergraph>,
+    tupleStore: TupleStore,
+    
+    // Multi-Agent System
+    agentPool: AgentPool,
+    perspectiveEngine: PerspectiveEngine,
+    
+    // Caching
+    kvCache: Option<KVCache>,
+    embeddingCache: Option<EmbeddingCache>,
+    
+    // Configuration
+    config: PipelineConfig,
+    device: Device
+}
+
+/**
+ * Pipeline Configuration
+ */
+state PipelineConfig {
+    // Processing Options
+    batchSize: ℕ₊,
+    maxConcurrentRequests: ℕ₊,
+    
+    // Generation Options
+    generationConfig: GenerationConfig,
+    
+    // Legal Reasoning Options
+    enableMultiAgentReasoning: Boolean,
+    enableHypergraphIntegration: Boolean,
+    enableTemporalAnalysis: Boolean,
+    
+    // Output Options
+    outputFormat: OutputFormat,
+    includeConfidenceScores: Boolean,
+    includeEvidenceLinks: Boolean,
+    
+    // Performance Options
+    useKVCache: Boolean,
+    useEmbeddingCache: Boolean,
+    quantization: Option<QuantizationConfig>
+}
+
+/**
+ * Output Format
+ */
+enum OutputFormat {
+    TEXT,
+    STRUCTURED_JSON,
+    LEGAL_DOCUMENT,
+    ANALYSIS_REPORT
+}
+
+// ============================================================================
+// SECTION 2: PIPELINE INPUT/OUTPUT TYPES
+// ============================================================================
+
+/**
+ * Pipeline Input
+ */
+record PipelineInput {
+    // Text Input
+    query: Text,
+    context: Option<Text>,
+    
+    // Structured Input
+    entities: Option<Array<Entity>>,
+    relations: Option<Array<Relation>>,
+    events: Option<Array<Event>>,
+    principles: Option<Array<LegalPrinciple>>,
+    
+    // N-Tuple Input
+    tuples: Option<Array<NTuple>>,
+    
+    // Agent Perspective
+    perspectiveAgent: Option<EntityId>,
+    targetAgents: Option<Array<EntityId>>,
+    
+    // Generation Parameters
+    generationOverrides: Option<Partial<GenerationConfig>>
+}
+
+/**
+ * Pipeline Output
+ */
+record PipelineOutput {
+    // Generated Content
+    generatedText: Text,
+    tokenIds: Array<TokenId>,
+    
+    // Analysis Results
+    analysis: Option<LegalAnalysis>,
+    
+    // Multi-Agent Results
+    agentPerspectives: Option<Map<EntityId, AgentPerspective>>,
+    crossAttentionInsights: Option<Array<CrossAttentionInsight>>,
+    
+    // Confidence and Evidence
+    overallConfidence: Confidence,
+    evidenceLinks: Option<Array<EvidenceLink>>,
+    
+    // Metadata
+    processingTime: Duration,
+    tokenCount: ℕ₊,
+    modelVersion: String
+}
+
+/**
+ * Legal Analysis Result
+ */
+record LegalAnalysis {
+    // Entity Analysis
+    entityAnalysis: Array<EntityAnalysisResult>,
+    
+    // Relation Analysis
+    relationAnalysis: Array<RelationAnalysisResult>,
+    
+    // Pattern Detection
+    detectedPatterns: Array<PatternDetection>,
+    
+    // Temporal Analysis
+    temporalAnalysis: Option<TemporalAnalysisResult>,
+    
+    // Principle Application
+    appliedPrinciples: Array<PrincipleApplication>,
+    
+    // Inference Chain
+    inferenceChain: Array<InferenceStep>,
+    
+    // Confidence Breakdown
+    confidenceBreakdown: Map<String, Confidence>
+}
+
+/**
+ * Agent Perspective
+ */
+record AgentPerspective {
+    agentId: EntityId,
+    agentName: String,
+    
+    // Self-Attention Results
+    selfState: AgentState,
+    
+    // Cross-Attention Results
+    perceivedStates: Map<EntityId, PerceivedState>,
+    
+    // Perspective-Specific Analysis
+    perspectiveAnalysis: Text,
+    
+    // Confidence
+    perspectiveConfidence: Confidence
+}
+
+/**
+ * Cross-Attention Insight
+ */
+record CrossAttentionInsight {
+    sourceAgent: EntityId,
+    targetAgent: EntityId,
+    insightType: InsightType,
+    description: Text,
+    confidence: Confidence,
+    evidenceSupport: Array<EvidenceLink>
+}
+
+/**
+ * Insight Type
+ */
+enum InsightType {
+    COORDINATION,
+    CONFLICT,
+    DEPENDENCY,
+    INFLUENCE,
+    CAUSATION,
+    TEMPORAL_PROXIMITY
+}
+
+/**
+ * Evidence Link
+ */
+record EvidenceLink {
+    evidenceId: String,
+    evidenceType: EvidenceType,
+    description: Text,
+    sourceLocation: String,
+    relevanceScore: Confidence,
+    annexureRef: Option<String>
+}
+
+/**
+ * Evidence Type
+ */
+enum EvidenceType {
+    DOCUMENT,
+    TESTIMONY,
+    FINANCIAL_RECORD,
+    COMMUNICATION,
+    TIMESTAMP,
+    WITNESS_STATEMENT
+}
+
+// ============================================================================
+// SECTION 3: PIPELINE INVARIANTS
+// ============================================================================
+
+/**
+ * Pipeline Consistency
+ */
+invariant PipelineConsistency:
+    ∀ pipe: InferencePipeline •
+        pipe.tokenizer.config.totalVocabSize = pipe.model.config.vocabSize
+
+/**
+ * Agent Pool Consistency
+ */
+invariant AgentPoolConsistency:
+    ∀ pipe: InferencePipeline •
+        |pipe.agentPool.agents| ≤ pipe.model.config.agentPoolSize
+
+/**
+ * Output Confidence Bounds
+ */
+invariant OutputConfidenceBounds:
+    ∀ output: PipelineOutput •
+        output.overallConfidence ∈ [0, 1]
+
+/**
+ * Evidence Link Validity
+ */
+invariant EvidenceLinkValidity:
+    ∀ output: PipelineOutput •
+        output.evidenceLinks ≠ None ⟹
+            ∀ link ∈ output.evidenceLinks! •
+                link.relevanceScore ∈ [0, 1]
+
+/**
+ * Inference Chain Validity
+ */
+invariant InferenceChainValidity:
+    ∀ analysis: LegalAnalysis •
+        ∀ i ∈ [1, |analysis.inferenceChain|) •
+            analysis.inferenceChain[i].premises ⊆ 
+                { step.conclusion | step ∈ analysis.inferenceChain[..i] }
+
+// ============================================================================
+// SECTION 4: PIPELINE INITIALIZATION
+// ============================================================================
+
+/**
+ * Initialize Pipeline
+ */
+contract initPipeline(
+    tokenizerConfig: TokenizerConfig,
+    modelConfig: ModelConfig,
+    pipelineConfig: PipelineConfig
+): Result<InferencePipeline, String>
+    requires validateTokenizerConfig(tokenizerConfig) = Ok(())
+    requires validateModelConfig(modelConfig) = Ok(())
+    ensures result = Ok(pipe) ⟹
+        PipelineConsistency(pipe) ∧
+        AgentPoolConsistency(pipe)
+
+/**
+ * Load Legal Context
+ */
+contract loadLegalContext(
+    pipe: InferencePipeline,
+    contextPath: String
+): Result<InferencePipeline, String>
+    ensures result = Ok(pipe') ⟹
+        |pipe'.entityLoader.entities| > 0 ∧
+        |pipe'.principleLoader.principles| > 0
+
+/**
+ * Load Hypergraph
+ */
+contract loadHypergraph(
+    pipe: InferencePipeline,
+    hypergraphPath: String
+): Result<InferencePipeline, String>
+    requires pipe.config.enableHypergraphIntegration
+    ensures result = Ok(pipe') ⟹
+        pipe'.hypergraph ≠ None
+
+/**
+ * Initialize Agent Pool
+ */
+contract initAgentPool(
+    pipe: InferencePipeline,
+    entities: Array<Entity>
+): Result<InferencePipeline, String>
+    requires pipe.config.enableMultiAgentReasoning
+    requires |entities| ≤ pipe.model.config.agentPoolSize
+    ensures result = Ok(pipe') ⟹
+        |pipe'.agentPool.agents| = |entities|
+
+// ============================================================================
+// SECTION 5: END-TO-END INFERENCE CONTRACTS
+// ============================================================================
+
+/**
+ * Run Inference Pipeline
+ */
+contract runInference(
+    pipe: InferencePipeline,
+    input: PipelineInput
+): PipelineOutput
+    requires input.query ≠ ""
+    ensures result.generatedText ≠ ""
+    ensures result.overallConfidence ∈ [0, 1]
+    ensures result.tokenCount > 0
+    ensures pipe.config.includeEvidenceLinks ⟹ result.evidenceLinks ≠ None
+    ensures pipe.config.enableMultiAgentReasoning ∧ input.perspectiveAgent ≠ None ⟹
+        result.agentPerspectives ≠ None
+
+/**
+ * Run Batch Inference
+ */
+contract runBatchInference(
+    pipe: InferencePipeline,
+    inputs: Array<PipelineInput>
+): Array<PipelineOutput>
+    requires |inputs| > 0
+    requires |inputs| ≤ pipe.config.batchSize
+    ensures |result| = |inputs|
+    ensures ∀ i ∈ [0, |inputs|) •
+        result[i].overallConfidence ∈ [0, 1]
+
+/**
+ * Run Streaming Inference
+ */
+contract runStreamingInference(
+    pipe: InferencePipeline,
+    input: PipelineInput,
+    callback: (StreamChunk) → Unit
+): PipelineOutput
+    requires input.query ≠ ""
+    ensures result.generatedText ≠ ""
+
+/**
+ * Stream Chunk
+ */
+record StreamChunk {
+    tokenId: TokenId,
+    token: Token,
+    logProb: LogProb,
+    isFinished: Boolean,
+    partialAnalysis: Option<Partial<LegalAnalysis>>
+}
+
+// ============================================================================
+// SECTION 6: PREPROCESSING CONTRACTS
+// ============================================================================
+
+/**
+ * Preprocess Input
+ */
+contract preprocessInput(
+    pipe: InferencePipeline,
+    input: PipelineInput
+): PreprocessedInput
+    requires input.query ≠ ""
+    ensures result.tokenizedQuery.length > 0
+    ensures result.tokenizedQuery.length ≤ pipe.model.config.maxPositionEmbeddings
+
+/**
+ * Preprocessed Input
+ */
+record PreprocessedInput {
+    tokenizedQuery: TokenizerOutput,
+    contextEmbeddings: Option<Tensor<[ℕ₊, EmbedDim]>>,
+    entityMask: Option<Tensor<[ℕ₊]>>,
+    relationMask: Option<Tensor<[ℕ₊]>>,
+    temporalPositions: Option<Tensor<[ℕ₊]>>,
+    agentMask: Option<Tensor<[ℕ₊]>>
+}
+
+/**
+ * Build Legal Context
+ */
+contract buildLegalContext(
+    pipe: InferencePipeline,
+    input: PipelineInput
+): Context
+    ensures |result.entities| ≤ pipe.model.config.lexConfig.maxEntities
+    ensures |result.relations| ≤ pipe.model.config.lexConfig.maxRelations
+    ensures |result.events| ≤ pipe.model.config.lexConfig.maxEvents
+
+/**
+ * Encode Entities
+ */
+contract encodeEntities(
+    pipe: InferencePipeline,
+    entities: Array<Entity>
+): Tensor<[ℕ₊, EmbedDim]>
+    requires |entities| ≤ pipe.model.config.lexConfig.maxEntities
+    ensures shape(result)[0] = |entities|
+    ensures shape(result)[1] = pipe.model.config.hiddenSize
+
+/**
+ * Encode Relations
+ */
+contract encodeRelations(
+    pipe: InferencePipeline,
+    relations: Array<Relation>
+): Tensor<[ℕ₊, EmbedDim]>
+    requires |relations| ≤ pipe.model.config.lexConfig.maxRelations
+    ensures shape(result)[0] = |relations|
+    ensures shape(result)[1] = pipe.model.config.hiddenSize
+
+/**
+ * Encode Events with Temporal Positions
+ */
+contract encodeEvents(
+    pipe: InferencePipeline,
+    events: Array<Event>
+): Tuple<Tensor<[ℕ₊, EmbedDim]>, Tensor<[ℕ₊]>>
+    requires |events| ≤ pipe.model.config.lexConfig.maxEvents
+    ensures shape(result.0)[0] = |events|
+    ensures shape(result.1)[0] = |events|
+
+// ============================================================================
+// SECTION 7: MULTI-AGENT REASONING CONTRACTS
+// ============================================================================
+
+/**
+ * Run Multi-Agent Reasoning
+ */
+contract runMultiAgentReasoning(
+    pipe: InferencePipeline,
+    hiddenStates: Tensor<[BatchSize, SeqLen, EmbedDim]>,
+    context: Context,
+    perspectiveAgent: Option<EntityId>
+): MultiAgentOutput
+    requires pipe.config.enableMultiAgentReasoning
+    requires |context.entities| ≤ pipe.agentPool.maxAgents
+    ensures |result.agentStates| = |context.entities|
+    ensures perspectiveAgent ≠ None ⟹
+        result.primaryPerspective = perspectiveAgent!
+
+/**
+ * Multi-Agent Output
+ */
+record MultiAgentOutput {
+    agentStates: Map<EntityId, AgentState>,
+    crossAttentionMatrix: Tensor<[ℕ₊, ℕ₊]>,
+    primaryPerspective: Option<EntityId>,
+    perspectiveWeights: Map<EntityId, ℝ[0,1]>
+}
+
+/**
+ * Compute Agent Self-Attention
+ */
+contract computeAgentSelfAttention(
+    pipe: InferencePipeline,
+    agentId: EntityId,
+    hiddenStates: Tensor<[SeqLen, EmbedDim]>,
+    agentContext: AgentContext
+): AgentState
+    ensures result.agentId = agentId
+    ensures result.psychologicalState ≠ None
+
+/**
+ * Compute Agent Cross-Attention
+ */
+contract computeAgentCrossAttention(
+    pipe: InferencePipeline,
+    sourceAgent: EntityId,
+    targetAgent: EntityId,
+    sourceState: AgentState,
+    targetState: AgentState
+): CrossAttentionResult
+    ensures result.sourceAgent = sourceAgent
+    ensures result.targetAgent = targetAgent
+    ensures result.attentionWeight ∈ [0, 1]
+
+/**
+ * Cross-Attention Result
+ */
+record CrossAttentionResult {
+    sourceAgent: EntityId,
+    targetAgent: EntityId,
+    attentionWeight: ℝ[0,1],
+    perceivedState: PerceivedState,
+    influenceVector: Tensor<[EmbedDim]>
+}
+
+/**
+ * Aggregate Agent Perspectives
+ */
+contract aggregateAgentPerspectives(
+    pipe: InferencePipeline,
+    agentStates: Map<EntityId, AgentState>,
+    crossAttentionResults: Array<CrossAttentionResult>
+): Map<EntityId, AgentPerspective>
+    ensures |result| = |agentStates|
+    ensures ∀ (id, perspective) ∈ result •
+        perspective.agentId = id ∧
+        perspective.perspectiveConfidence ∈ [0, 1]
+
+// ============================================================================
+// SECTION 8: HYPERGRAPH INTEGRATION CONTRACTS
+// ============================================================================
+
+/**
+ * Integrate Hypergraph
+ */
+contract integrateHypergraph(
+    pipe: InferencePipeline,
+    hiddenStates: Tensor<[BatchSize, SeqLen, EmbedDim]>,
+    context: Context
+): HypergraphOutput
+    requires pipe.config.enableHypergraphIntegration
+    requires pipe.hypergraph ≠ None
+    ensures shape(result.nodeEmbeddings)[0] = |context.entities|
+    ensures shape(result.hyperedgeEmbeddings)[0] ≤ pipe.model.config.lexConfig.maxHyperedges
+
+/**
+ * Hypergraph Output
+ */
+record HypergraphOutput {
+    nodeEmbeddings: Tensor<[ℕ₊, EmbedDim]>,
+    hyperedgeEmbeddings: Tensor<[ℕ₊, EmbedDim]>,
+    graphEmbedding: Tensor<[EmbedDim]>,
+    messagePassingIterations: ℕ₊
+}
+
+/**
+ * Query N-Tuples
+ */
+contract queryNTuples(
+    pipe: InferencePipeline,
+    entityIds: Array<EntityId>,
+    tupleSize: Option<ℕ₊>
+): Array<NTuple>
+    ensures ∀ tuple ∈ result •
+        (tupleSize = None ∨ |tuple.elements| = tupleSize!) ∧
+        ∀ eid ∈ entityIds • eid ∈ tuple.elements
+
+/**
+ * Compute Tuple Embeddings
+ */
+contract computeTupleEmbeddings(
+    pipe: InferencePipeline,
+    tuples: Array<NTuple>
+): Tensor<[ℕ₊, EmbedDim]>
+    ensures shape(result)[0] = |tuples|
+    ensures shape(result)[1] = pipe.model.config.hiddenSize
+
+// ============================================================================
+// SECTION 9: TEMPORAL ANALYSIS CONTRACTS
+// ============================================================================
+
+/**
+ * Run Temporal Analysis
+ */
+contract runTemporalAnalysis(
+    pipe: InferencePipeline,
+    events: Array<Event>,
+    context: Context
+): TemporalAnalysisResult
+    requires pipe.config.enableTemporalAnalysis
+    requires |events| > 0
+    ensures |result.eventSequence| = |events|
+    ensures result.causalChains ≠ None ⟹
+        ∀ chain ∈ result.causalChains! •
+            isValidCausalChain(chain, events)
+
+/**
+ * Temporal Analysis Result
+ */
+record TemporalAnalysisResult {
+    eventSequence: Array<EventNode>,
+    causalChains: Option<Array<CausalChain>>,
+    temporalPatterns: Array<TemporalPattern>,
+    criticalEvents: Array<CriticalEvent>,
+    timelineVisualization: Option<TimelineData>
+}
+
+/**
+ * Event Node
+ */
+record EventNode {
+    event: Event,
+    temporalPosition: ℕ₀,
+    causalPredecessors: Array<EventId>,
+    causalSuccessors: Array<EventId>,
+    temporalProximity: Map<EventId, Duration>
+}
+
+/**
+ * Causal Chain
+ */
+record CausalChain {
+    events: Array<EventId>,
+    causalStrength: Confidence,
+    temporalSpan: Duration,
+    chainType: CausalChainType
+}
+
+/**
+ * Causal Chain Type
+ */
+enum CausalChainType {
+    IMMEDIATE_RETALIATION,      // <24 hours
+    COORDINATED_ACTION,         // 1-7 days
+    SEQUENTIAL_ESCALATION,      // Progressive pattern
+    PARALLEL_COORDINATION       // Simultaneous actions
+}
+
+/**
+ * Critical Event
+ */
+record CriticalEvent {
+    event: Event,
+    criticalityScore: Confidence,
+    criticalityReason: String,
+    impactedEntities: Array<EntityId>,
+    evidenceStrength: Confidence
+}
+
+/**
+ * Detect Immediate Retaliation Pattern
+ */
+contract detectImmediateRetaliation(
+    pipe: InferencePipeline,
+    events: Array<Event>,
+    threshold: Duration
+): Array<RetaliationPattern>
+    requires threshold > 0
+    ensures ∀ pattern ∈ result •
+        pattern.temporalGap ≤ threshold ∧
+        pattern.confidence ∈ [0, 1]
+
+/**
+ * Retaliation Pattern
+ */
+record RetaliationPattern {
+    triggerEvent: Event,
+    retaliationEvent: Event,
+    temporalGap: Duration,
+    confidence: Confidence,
+    involvedEntities: Array<EntityId>
+}
+
+// ============================================================================
+// SECTION 10: POSTPROCESSING CONTRACTS
+// ============================================================================
+
+/**
+ * Postprocess Output
+ */
+contract postprocessOutput(
+    pipe: InferencePipeline,
+    modelOutput: ModelOutput,
+    generatedTokens: Array<TokenId>,
+    analysis: Option<LegalAnalysis>
+): PipelineOutput
+    ensures result.generatedText = pipe.tokenizer.decode(generatedTokens, true, true)
+    ensures result.tokenCount = |generatedTokens|
+    ensures result.overallConfidence ∈ [0, 1]
+
+/**
+ * Compute Overall Confidence
+ */
+contract computeOverallConfidence(
+    analysis: LegalAnalysis,
+    agentPerspectives: Option<Map<EntityId, AgentPerspective>>
+): Confidence
+    ensures result ∈ [0, 1]
+    ensures result = weightedAverage(
+        analysis.confidenceBreakdown,
+        agentPerspectives?.map(p => p.perspectiveConfidence) ?? []
+    )
+
+/**
+ * Link Evidence
+ */
+contract linkEvidence(
+    pipe: InferencePipeline,
+    analysis: LegalAnalysis,
+    context: Context
+): Array<EvidenceLink>
+    requires pipe.config.includeEvidenceLinks
+    ensures ∀ link ∈ result •
+        link.relevanceScore ∈ [0, 1]
+
+/**
+ * Format Output
+ */
+contract formatOutput(
+    pipe: InferencePipeline,
+    output: PipelineOutput
+): FormattedOutput
+    ensures pipe.config.outputFormat = TEXT ⟹
+        result.format = "text/plain"
+    ensures pipe.config.outputFormat = STRUCTURED_JSON ⟹
+        result.format = "application/json"
+    ensures pipe.config.outputFormat = LEGAL_DOCUMENT ⟹
+        result.format = "text/markdown"
+
+/**
+ * Formatted Output
+ */
+record FormattedOutput {
+    content: String,
+    format: String,
+    metadata: Map<String, String>
+}
+
+// ============================================================================
+// SECTION 11: PIPELINE PROPERTIES
+// ============================================================================
+
+/**
+ * Deterministic Inference (Greedy)
+ */
+property DeterministicInference:
+    ∀ pipe: InferencePipeline, input: PipelineInput •
+        let config = pipe.config.generationConfig in
+        config.doSample = false ∧ config.numBeams = 1 ⟹
+            runInference(pipe, input) = runInference(pipe, input)
+
+/**
+ * Confidence Monotonicity
+ */
+property ConfidenceMonotonicity:
+    ∀ pipe: InferencePipeline, input1: PipelineInput, input2: PipelineInput •
+        input1.entities ⊂ input2.entities ∧
+        input1.relations ⊂ input2.relations ⟹
+            runInference(pipe, input1).overallConfidence ≤
+            runInference(pipe, input2).overallConfidence
+
+/**
+ * Evidence Completeness
+ */
+property EvidenceCompleteness:
+    ∀ pipe: InferencePipeline, input: PipelineInput •
+        pipe.config.includeEvidenceLinks ⟹
+            let output = runInference(pipe, input) in
+            ∀ pattern ∈ output.analysis!.detectedPatterns •
+                ∃ link ∈ output.evidenceLinks! •
+                    link.evidenceId ∈ pattern.supportingEvidence
+
+/**
+ * Temporal Consistency
+ */
+property TemporalConsistency:
+    ∀ pipe: InferencePipeline, input: PipelineInput •
+        pipe.config.enableTemporalAnalysis ∧ input.events ≠ None ⟹
+            let output = runInference(pipe, input) in
+            let temporal = output.analysis!.temporalAnalysis! in
+            ∀ chain ∈ temporal.causalChains! •
+                isTemporallyOrdered(chain.events, input.events!)
+
+// ============================================================================
+// SECTION 12: HELPER FUNCTIONS
+// ============================================================================
+
+/**
+ * Check Valid Causal Chain
+ */
+function isValidCausalChain(chain: CausalChain, events: Array<Event>): Boolean
+    // All events in chain exist and are temporally ordered
+
+/**
+ * Check Temporal Ordering
+ */
+function isTemporallyOrdered(eventIds: Array<EventId>, events: Array<Event>): Boolean
+    // Events are in chronological order
+
+/**
+ * Weighted Average
+ */
+function weightedAverage(
+    breakdown: Map<String, Confidence>,
+    perspectives: Array<Confidence>
+): Confidence
+    ensures result ∈ [0, 1]
+
+// ============================================================================
+// END OF INFERENCEPIPE.ZPP
+// ============================================================================

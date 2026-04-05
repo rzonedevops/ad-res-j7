@@ -1,0 +1,328 @@
+{
+  "_lexicog_spec_version": "1.0.0",
+  "_zpp_spec_file": "spec/TokenizerConfig.zpp",
+  "_zpp_state": "SpecialTokensMap",
+  
+  "pad_token": {
+    "content": "[PAD]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "unk_token": {
+    "content": "[UNK]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "bos_token": {
+    "content": "[BOS]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "eos_token": {
+    "content": "[EOS]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "sep_token": {
+    "content": "[SEP]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "cls_token": {
+    "content": "[CLS]",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "mask_token": {
+    "content": "[MASK]",
+    "lstrip": true,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  
+  "additional_special_tokens": [
+    {
+      "content": "[ENT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Entity start marker",
+      "_zpp_constant": "ENTITY_START"
+    },
+    {
+      "content": "[/ENT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Entity end marker",
+      "_zpp_constant": "ENTITY_END"
+    },
+    {
+      "content": "[REL]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Relation start marker",
+      "_zpp_constant": "RELATION_START"
+    },
+    {
+      "content": "[/REL]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Relation end marker",
+      "_zpp_constant": "RELATION_END"
+    },
+    {
+      "content": "[PRIN]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Legal principle start marker",
+      "_zpp_constant": "PRINCIPLE_START"
+    },
+    {
+      "content": "[/PRIN]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Legal principle end marker",
+      "_zpp_constant": "PRINCIPLE_END"
+    },
+    {
+      "content": "[EVT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Event start marker",
+      "_zpp_constant": "EVENT_START"
+    },
+    {
+      "content": "[/EVT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Event end marker",
+      "_zpp_constant": "EVENT_END"
+    },
+    {
+      "content": "[AGT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Agent start marker",
+      "_zpp_constant": "AGENT_START"
+    },
+    {
+      "content": "[/AGT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Agent end marker",
+      "_zpp_constant": "AGENT_END"
+    },
+    {
+      "content": "[TIME]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Temporal expression start marker",
+      "_zpp_constant": "TEMPORAL_START"
+    },
+    {
+      "content": "[/TIME]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Temporal expression end marker",
+      "_zpp_constant": "TEMPORAL_END"
+    },
+    {
+      "content": "[CAUSE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Causal relation marker"
+    },
+    {
+      "content": "[EFFECT]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Effect relation marker"
+    },
+    {
+      "content": "[EVIDENCE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Evidence reference marker"
+    },
+    {
+      "content": "[/EVIDENCE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Evidence reference end marker"
+    },
+    {
+      "content": "[ANNEXURE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Annexure reference marker"
+    },
+    {
+      "content": "[CONFIDENCE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Confidence score marker"
+    },
+    {
+      "content": "[INFERENCE]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Inference type marker"
+    },
+    {
+      "content": "[PATTERN]",
+      "lstrip": false,
+      "normalized": false,
+      "rstrip": false,
+      "single_word": false,
+      "_description": "Pattern detection marker"
+    }
+  ],
+  
+  "legal_domain_tokens": {
+    "_description": "Domain-specific special tokens for South African law",
+    "civil_law": "[CIVIL]",
+    "criminal_law": "[CRIMINAL]",
+    "trust_law": "[TRUST]",
+    "company_law": "[COMPANY]",
+    "labour_law": "[LABOUR]",
+    "evidence_law": "[EVIDENCE_LAW]",
+    "constitutional_law": "[CONSTITUTIONAL]",
+    "administrative_law": "[ADMIN]",
+    "contract_law": "[CONTRACT]",
+    "delict_law": "[DELICT]",
+    "family_law": "[FAMILY]",
+    "insolvency_law": "[INSOLVENCY]"
+  },
+  
+  "inference_type_tokens": {
+    "_description": "Tokens for marking inference types",
+    "deductive": "[DEDUCTIVE]",
+    "inductive": "[INDUCTIVE]",
+    "abductive": "[ABDUCTIVE]",
+    "analogical": "[ANALOGICAL]",
+    "probabilistic": "[PROBABILISTIC]"
+  },
+  
+  "pattern_type_tokens": {
+    "_description": "Tokens for marking detected patterns",
+    "coordination": "[COORD_PATTERN]",
+    "retaliation": "[RETAL_PATTERN]",
+    "conflict": "[CONFLICT_PATTERN]",
+    "control": "[CONTROL_PATTERN]",
+    "influence": "[INFLUENCE_PATTERN]"
+  },
+  
+  "agent_perspective_tokens": {
+    "_description": "Tokens for multi-agent perspective analysis",
+    "self_attention": "[SELF_ATT]",
+    "cross_attention": "[CROSS_ATT]",
+    "perceived_state": "[PERCEIVED]",
+    "psychological_state": "[PSYCH_STATE]"
+  },
+  
+  "temporal_relation_tokens": {
+    "_description": "Tokens for temporal relations",
+    "before": "[BEFORE]",
+    "after": "[AFTER]",
+    "during": "[DURING]",
+    "simultaneous": "[SIMUL]",
+    "causes": "[CAUSES]",
+    "caused_by": "[CAUSED_BY]"
+  },
+  
+  "_zpp_invariants": [
+    "SpecialTokenIdUniqueness",
+    "SpecialTokenStringUniqueness"
+  ],
+  
+  "_zpp_contracts": [
+    "validateSpecialTokensMap"
+  ],
+  
+  "_token_id_mapping": {
+    "_description": "Token ID assignments for special tokens",
+    "[PAD]": 0,
+    "[BOS]": 1,
+    "[EOS]": 2,
+    "[UNK]": 3,
+    "[SEP]": 4,
+    "[CLS]": 5,
+    "[MASK]": 6,
+    "[ENT]": 100,
+    "[/ENT]": 101,
+    "[REL]": 102,
+    "[/REL]": 103,
+    "[PRIN]": 104,
+    "[/PRIN]": 105,
+    "[EVT]": 106,
+    "[/EVT]": 107,
+    "[AGT]": 108,
+    "[/AGT]": 109,
+    "[TIME]": 110,
+    "[/TIME]": 111,
+    "[CAUSE]": 112,
+    "[EFFECT]": 113,
+    "[EVIDENCE]": 114,
+    "[/EVIDENCE]": 115,
+    "[ANNEXURE]": 116,
+    "[CONFIDENCE]": 117,
+    "[INFERENCE]": 118,
+    "[PATTERN]": 119
+  }
+}
