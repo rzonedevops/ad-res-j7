@@ -202,9 +202,9 @@ T2 (Villa Via exposure) provoked the most coordinated response: 3 different acto
 | JF07 | Financial Transactions — Payment records, transfers |
 | JF08 | Comprehensive Fraud Package |
 | JF09 | Timeline Analysis — Cross-referenced chronology |
-| JF14 | CIPC Historical (2021) |
-| JF15 | CIPC Historical (2021) — Additional records |
-| JF16 | Distributor Evidence |
+| JF10 | Director Loan Account Records — Accounting records, loan allocation |
+| JF11 | Medical Coercion Evidence |
+| JF12 | Criminal Matter Safety Guide |
 
 ### Supporting Files (SF Series)
 
@@ -218,7 +218,6 @@ T2 (Villa Via exposure) provoked the most coordinated response: 3 different acto
 | SF6 | Kayla Pretorius Estate | Death 80 days after Ketoni investment |
 | SF7 | Court Order | Kayla email seizure |
 | SF8 | Linda Employment Records | Employment documentation |
-| SF9 | Ian Levitt Demand Letter | R63M (ignored) |
 
 ---
 
