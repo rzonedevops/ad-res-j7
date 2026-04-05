@@ -1,0 +1,5450 @@
+{
+  "metadata": {
+    "caseNumber": "2025-137857",
+    "generatedAt": "2026-03-20T18:23:33.422Z",
+    "generator": "EcosystemEvidenceBridge v1.0",
+    "repos": {
+      "revstream1": {
+        "role": "data_truth",
+        "available": true
+      },
+      "fincosys": {
+        "role": "financial_analysis",
+        "available": true
+      },
+      "comcosys": {
+        "role": "comms_forensics",
+        "available": true
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "PERSON_001",
+      "type": "entity",
+      "label": "Peter Andrew Faucitt",
+      "source": "revstream1",
+      "attributes": {
+        "role": "primary_perpetrator",
+        "agentType": "antagonist",
+        "evidenceStrength": "conclusive",
+        "criminalThreshold": "95%_exceeded",
+        "evidenceCodes": [
+          "JF01 - Shopify Plus email evidence",
+          "JF04 - CIPC company records",
+          "JF07 - Financial transaction records",
+          "JF08 - Email correspondence and fraud evidence",
+          "JF09 - Court order timeline cross-reference",
+          "SF9 - Ian Levitt R63M demand letter",
+          "347975701_REGIMA_SA_K201708793507.Pdf - CIPC record showing director status",
+          "FORMAL NOTICE - CESSATION OF CRIMINAL INSTRUCTIONS.pdf",
+          "POPIA_VIOLATION_NOTICE_&_RETALIATION_TIMELINE.pdf",
+          "62707308252 2024-10-07.pdf - Bank statement showing healthy business"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_002",
+      "type": "entity",
+      "label": "Rynette Farrar",
+      "source": "revstream1",
+      "attributes": {
+        "role": "co_conspirator",
+        "agentType": "antagonist",
+        "evidenceStrength": "conclusive",
+        "criminalThreshold": "95%_likely",
+        "evidenceCodes": [
+          "JF05 - Sage accounting system control evidence",
+          "JF07 - Payment redirection documentation",
+          "JF08 - Email impersonation evidence",
+          "JF09 - Domain registration fraud evidence",
+          "Trial Balance Email 2020-08-13 - Financial access evidence",
+          "Trial Balance Email 2020-08-13 - Financial access evidence",
+          "2025-06-18 - Rynette & De Novo - RegimA SA Payments.pdf",
+          "Power point - how sales work.pdf (11 Apr 2025)"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_004",
+      "type": "entity",
+      "label": "Jacqueline Faucitt",
+      "source": "revstream1",
+      "attributes": {
+        "role": "first_respondent",
+        "agentType": "victim",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF01 - Shopify platform operator evidence",
+          "JF02 - Business operations documentation",
+          "1-CIVIL-RESPONSE - Answering affidavit",
+          "SF9 - Ian Levitt Attorney Memo (MAT4719)"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_005",
+      "type": "entity",
+      "label": "Daniel James Faucitt",
+      "source": "revstream1",
+      "attributes": {
+        "role": "second_respondent",
+        "agentType": "victim",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF01 - Shopify Plus subscription ownership",
+          "JF02 - RegimA Zone Ltd company documentation",
+          "JF06 - Platform investment evidence",
+          "1-CIVIL-RESPONSE - Answering affidavit",
+          "SF9 - Ian Levitt Attorney Memo (MAT4719)"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_006",
+      "type": "entity",
+      "label": "Linda",
+      "source": "revstream1",
+      "attributes": {
+        "role": "bookkeeper",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "SF8 - Linda Employment Records",
+          "Employment documentation"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_007",
+      "type": "entity",
+      "label": "Danie Bantjies",
+      "source": "revstream1",
+      "attributes": {
+        "role": "cfo_george_group_and_trustee_fft",
+        "agentType": "antagonist",
+        "evidenceStrength": "strong",
+        "criminalThreshold": "95%_likely",
+        "evidenceCodes": [
+          "JF03 - Trial balance email August 13, 2020",
+          "JF04 - Trust documentation showing unknown trustee status",
+          "JF07 - Financial records showing R18.685M debt",
+          "JF08 - June 10, 2025 audit dismissal email",
+          "Ketoni Shareholder Agreement (Signed 24 April 2023)",
+          "Ketoni AFS 2024 (Note 2)"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_008",
+      "type": "entity",
+      "label": "Kayla",
+      "source": "revstream1",
+      "attributes": {
+        "role": "estate_creditor",
+        "agentType": "victim",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF08 - Email evidence",
+          "JF13 - Recent correspondence"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_009",
+      "type": "entity",
+      "label": "Gee",
+      "source": "revstream1",
+      "attributes": {
+        "role": "email_sender_witness",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "SF1 - Ketoni R18.75M Payout to FFT Documentation",
+          "JF10 - Accounting records"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_010",
+      "type": "entity",
+      "label": "Bernadine Wright",
+      "source": "revstream1",
+      "attributes": {
+        "role": "financial_professional",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "SF6 - Kayla estate documentation",
+          "JF08 - Evidence packages"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_003",
+      "type": "entity",
+      "label": "Adderory (Rynette's Son)",
+      "source": "revstream1",
+      "attributes": {
+        "role": "co_conspirator_family_member",
+        "agentType": "accomplice",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF08 - Domain registration using Daniel's identity",
+          "JF09 - Identity fraud documentation"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_011",
+      "type": "entity",
+      "label": "Chantal",
+      "source": "revstream1",
+      "attributes": {
+        "role": "estate_related_party",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF08 - Witness evidence",
+          "JF11 - Medical coercion evidence"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_012",
+      "type": "entity",
+      "label": "Jax",
+      "source": "revstream1",
+      "attributes": {
+        "role": "witness_and_victim",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF10 - Accounting records",
+          "JF13 - Recent correspondence"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_039",
+      "type": "entity",
+      "label": "Marisca Meyer",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Professional Accountant (SA)",
+        "agentType": "neutral",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF10 - Accounting records",
+          "JF13 - Recent correspondence"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_013",
+      "type": "entity",
+      "label": "Kayla Pretorius",
+      "source": "revstream1",
+      "attributes": {
+        "role": "estate_executor_email_account_holder",
+        "agentType": "neutral",
+        "evidenceStrength": "conclusive",
+        "evidenceCodes": [
+          "SF6 - Kayla Pretorius Estate Documentation",
+          "SF7 - Court Order for Kayla Email Account Seizure"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_015",
+      "type": "entity",
+      "label": "Alan Peter Louw",
+      "source": "revstream1",
+      "attributes": {
+        "role": "external_director",
+        "agentType": "unknown",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293350197 - Director search",
+          "CIPC WinDeed Report 293350058 - ALOECO company",
+          "CIPC WinDeed Report 293351580 - Marlouw Group",
+          "CIPC WinDeed Report 293351589 - Big Business 301"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_016",
+      "type": "entity",
+      "label": "Martin Carlo Rizzotto",
+      "source": "revstream1",
+      "attributes": {
+        "role": "external_director",
+        "agentType": "unknown",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293350204 - Director search",
+          "CIPC WinDeed Report 293350058 - ALOECO company"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_017",
+      "type": "entity",
+      "label": "Christian Gouws",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_director",
+        "agentType": "neutral",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293348688 - RWD company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_018",
+      "type": "entity",
+      "label": "Lisa Clare Frost",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_member",
+        "agentType": "neutral",
+        "evidenceStrength": "weak",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293349762 - Strategic Logistics company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_019",
+      "type": "entity",
+      "label": "Trevor David Stidston",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_member",
+        "agentType": "neutral",
+        "evidenceStrength": "weak",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293349762 - Strategic Logistics company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_020",
+      "type": "entity",
+      "label": "Kerry-Anne Zwicky",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_member",
+        "agentType": "neutral",
+        "evidenceStrength": "weak",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293349762 - Strategic Logistics company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_021",
+      "type": "entity",
+      "label": "Guillaume Jordaan",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_director",
+        "agentType": "neutral",
+        "evidenceStrength": "weak",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293351589 - Big Business 301 company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_022",
+      "type": "entity",
+      "label": "Gary Ian Cay",
+      "source": "revstream1",
+      "attributes": {
+        "role": "resigned_member",
+        "agentType": "neutral",
+        "evidenceStrength": "weak",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293351595 - Art of Buzztec company record"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_023",
+      "type": "entity",
+      "label": "Dennis Jacobus Bishop",
+      "source": "revstream1",
+      "attributes": {
+        "role": "shelf_company_director",
+        "agentType": "neutral",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "PERSON_025",
+      "type": "entity",
+      "label": "John Leslie Knowlton",
+      "source": "revstream1",
+      "attributes": {
+        "role": "director",
+        "agentType": "neutral",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "PERSON_026",
+      "type": "entity",
+      "label": "Vanessa Claire Rizzotto",
+      "source": "revstream1",
+      "attributes": {
+        "role": "spouse",
+        "agentType": "neutral",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "PERSON_027",
+      "type": "entity",
+      "label": "Andrew J Fraser",
+      "source": "revstream1",
+      "attributes": {
+        "role": "accounting_officer",
+        "agentType": "neutral",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "PERSON_29",
+      "type": "entity",
+      "label": "Barend Thomas Nortje",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Distributor",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293338023-Director-BarendNortje.Pdf",
+          "293337582-Company-DermalSkinTreatmentsCapeTown.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_30",
+      "type": "entity",
+      "label": "Sharon Nortje",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Distributor",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293338030-Director-SharonNortje.Pdf",
+          "293337582-Company-DermalSkinTreatmentsCapeTown.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_31",
+      "type": "entity",
+      "label": "Karen Patricia Avnit",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Distributor",
+        "evidenceStrength": "conclusive",
+        "evidenceCodes": [
+          "293340515-Director-KarenAvnit.Pdf",
+          "293344692-Property-KarenAvnit.Pdf",
+          "293340322-Company-KachanMarketingandDistribution.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_32",
+      "type": "entity",
+      "label": "Chané Auriele Todd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Distributor",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293342496-Director-ChaneTodd.Pdf",
+          "293342245-Company-DandelionSA.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_33",
+      "type": "entity",
+      "label": "Kirby Rae Van Der Stelt",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Former Distributor",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293342504-Director-KirbyRaeVanDerStelt.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_34",
+      "type": "entity",
+      "label": "Dante Bertani",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Distributor",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293343017-Director-DanteBertani.Pdf",
+          "293342878-Company-BertaniInternationalGlobal.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_35",
+      "type": "entity",
+      "label": "Anna Gertruida Johanna du Toit",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Former Distributor",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293332765-Company-GeorgeEndermologieClinic.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_36",
+      "type": "entity",
+      "label": "Adrian Dominic De Fay",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Investment Manager",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293338928-Company-DeFayFundManagement.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_DERRICK_001",
+      "type": "entity",
+      "label": "Kevin Michael Derrick",
+      "source": "revstream1",
+      "attributes": {
+        "role": "ketoni_director",
+        "agentType": "neutral",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "PERSON_TB_002",
+      "type": "entity",
+      "label": "Danie Bantjes",
+      "source": "revstream1",
+      "attributes": {
+        "role": "external_accountant",
+        "agentType": "key_witness",
+        "evidenceCodes": [
+          "Email 2020-08-13",
+          "Trial balance AJE documentation"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_037",
+      "type": "entity",
+      "label": "Kent (Unknown Surname)",
+      "source": "revstream1",
+      "attributes": {
+        "role": "sales_order_processor",
+        "agentType": "operational_staff",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Rynette Organogram 2025-04-12 - How Sales Work",
+          "Screenshot-2025-06-20-Sage-Account-RegimA-Worldwide-Distribution.md - kent@regima.zone user",
+          "POPIA violation letters sent to Kent"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_038",
+      "type": "entity",
+      "label": "EL (Unknown Surname)",
+      "source": "revstream1",
+      "attributes": {
+        "role": "sales_order_processor",
+        "agentType": "operational_staff",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Rynette Organogram 2025-04-12 - How Sales Work",
+          "Screenshot-2025-06-20-Sage-Account-RegimA-Worldwide-Distribution.json - el@regimazone user"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_039",
+      "type": "entity",
+      "label": "Marisca Meyer",
+      "source": "revstream1",
+      "attributes": {
+        "role": "complicit_accountant",
+        "agentType": "antagonist",
+        "evidenceStrength": "conclusive",
+        "criminalThreshold": "95%_likely",
+        "evidenceCodes": [
+          "2025-06-18 - Rynette & De Novo - RegimA SA Payments.pdf - Email recipient",
+          "Regima SA (Pty) Ltd - 2019 - Financial statements - SME.pdf - Listed as Preparer"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_040",
+      "type": "entity",
+      "label": "Nadine Van Greunen",
+      "source": "revstream1",
+      "attributes": {
+        "role": "complicit_accountant",
+        "agentType": "antagonist",
+        "evidenceCodes": [
+          "2025-06-18 - Rynette & De Novo - RegimA SA Payments.pdf - Email participant"
+        ]
+      }
+    },
+    {
+      "id": "PERSON_041",
+      "type": "entity",
+      "label": "Gayane Williams",
+      "source": "revstream1",
+      "attributes": {
+        "role": "employee_bookkeeper",
+        "agentType": "witness",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_001",
+      "type": "entity",
+      "label": "Regima Worldwide Distribution (PTY) LTD",
+      "source": "revstream1",
+      "attributes": {
+        "role": "third_respondent",
+        "agentType": "instrument_of_fraud",
+        "evidenceStrength": "conclusive",
+        "evidenceCodes": [
+          "JF04 - CIPC company records",
+          "JF05 - Sage subscription evidence",
+          "JF07 - Financial records"
+        ]
+      }
+    },
+    {
+      "id": "ORG_002",
+      "type": "entity",
+      "label": "Regima Skin Treatments CC",
+      "source": "revstream1",
+      "attributes": {
+        "role": "fourth_respondent",
+        "agentType": "affected_entity",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF04 - CIPC company records",
+          "JF07 - Financial records showing revenue hijacking"
+        ]
+      }
+    },
+    {
+      "id": "ORG_003",
+      "type": "entity",
+      "label": "RegimA Zone Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "infrastructure_owner",
+        "agentType": "legitimate_business",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF01 - Shopify Plus subscription ownership",
+          "JF02 - UK company registration",
+          "JF06 - Platform payment records"
+        ]
+      }
+    },
+    {
+      "id": "ORG_004",
+      "type": "entity",
+      "label": "Strategic Logistics Group",
+      "source": "revstream1",
+      "attributes": {
+        "role": "trust_owned_warehouse_and_logistics",
+        "agentType": "victim_entity",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF03 - Financial records",
+          "JF02 - Sales reports",
+          "CIPC company records"
+        ]
+      }
+    },
+    {
+      "id": "ORG_005",
+      "type": "entity",
+      "label": "Villa Via",
+      "source": "revstream1",
+      "attributes": {
+        "role": "rental_property_company_wealth_extraction",
+        "agentType": "instrument_of_wealth_transfer",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "SF3 - Stock adjustment evidence",
+          "JF03 - Financial records",
+          "CIPC company records"
+        ]
+      }
+    },
+    {
+      "id": "ORG_006",
+      "type": "entity",
+      "label": "RegimA SA",
+      "source": "revstream1",
+      "attributes": {
+        "role": "revenue_stream_victim",
+        "agentType": "victim_entity",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF03 - Financial records",
+          "CIPC company records",
+          "SF2 - Sage system evidence"
+        ]
+      }
+    },
+    {
+      "id": "ORG_008",
+      "type": "entity",
+      "label": "ReZonance (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "it_services_provider_and_creditor",
+        "agentType": "victim",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "JF03 - Financial records showing rent charges",
+          "CIPC company records"
+        ]
+      }
+    },
+    {
+      "id": "ORG_009",
+      "type": "entity",
+      "label": "Adderory (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "competing_business_fraud_vehicle",
+        "agentType": "accomplice",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "SF5 - Adderory company registration",
+          "CIPC records",
+          "JF03 - Financial transactions"
+        ]
+      }
+    },
+    {
+      "id": "ORG_010",
+      "type": "entity",
+      "label": "Adderory Skin (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "competing_business_fraud_vehicle",
+        "agentType": "accomplice",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC company registration records",
+          "JF04 - Company documentation"
+        ]
+      }
+    },
+    {
+      "id": "ORG_012",
+      "type": "entity",
+      "label": "RegimaSA (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Shell company / Related party entity",
+        "agentType": "instrument",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "RegimaSA(Pty)Ltd-2019-Financialstatements-SME.pdf",
+          "CIPC registration 2017/087935/07"
+        ]
+      }
+    },
+    {
+      "id": "ORG_013",
+      "type": "entity",
+      "label": "Unicorn Dynamics (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Related party entity",
+        "agentType": "unknown",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "RegimaSA(Pty)Ltd-2019-Financialstatements-SME.pdf",
+          "ad-res-j7 CIPC warning reference"
+        ]
+      }
+    },
+    {
+      "id": "ORG_014",
+      "type": "entity",
+      "label": "RegimA SA (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "RegimA Group entity",
+        "agentType": "unknown",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Sage screenshot 2025-06-20 - Control User Access",
+          "User correction: RegimA SA didn't exist until 2021"
+        ]
+      }
+    },
+    {
+      "id": "ORG_015",
+      "type": "entity",
+      "label": "SARS (South African Revenue Service)",
+      "source": "revstream1",
+      "attributes": {
+        "role": "tax_authority",
+        "agentType": "regulatory",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "SF4 - SARS Audit Email"
+        ]
+      }
+    },
+    {
+      "id": "ORG_007",
+      "type": "entity",
+      "label": "Ian Levitt Attorneys",
+      "source": "revstream1",
+      "attributes": {
+        "role": "legal_representative",
+        "agentType": "neutral_third_party",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "SF9 - Ian Levitt demand letter dated 2025-10-23"
+        ]
+      }
+    },
+    {
+      "id": "ORG_042",
+      "type": "entity",
+      "label": "ALOECO (SA)",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293350028 - Company list",
+          "CIPC WinDeed Report 293350058 - Company details"
+        ]
+      }
+    },
+    {
+      "id": "ORG_016",
+      "type": "entity",
+      "label": "Marlouw Group",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293351580 - Company details"
+        ]
+      }
+    },
+    {
+      "id": "ORG_017",
+      "type": "entity",
+      "label": "Big Business 301",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293351589 - Company details"
+        ]
+      }
+    },
+    {
+      "id": "ORG_018",
+      "type": "entity",
+      "label": "Art of Buzztec (SA)",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "CIPC WinDeed Report 293351595 - Company details"
+        ]
+      }
+    },
+    {
+      "id": "ORG_019",
+      "type": "entity",
+      "label": "Rezonance",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_020",
+      "type": "entity",
+      "label": "RegimA Medic",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_021",
+      "type": "entity",
+      "label": "S A Logistic Services",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_022",
+      "type": "entity",
+      "label": "ALOECO (SA) - Original 1982",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_023",
+      "type": "entity",
+      "label": "ALOECO (SA) - CC 2006",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_024",
+      "type": "entity",
+      "label": "LMS Logistic Services",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_025",
+      "type": "entity",
+      "label": "UFO Express",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_026",
+      "type": "entity",
+      "label": "Nanini 262",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_027",
+      "type": "entity",
+      "label": "East Coast Logistics",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_028",
+      "type": "entity",
+      "label": "L'IMAGE",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_029",
+      "type": "entity",
+      "label": "Shaneprop",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_030",
+      "type": "entity",
+      "label": "RegimA International Skin Treatments CC",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_031",
+      "type": "entity",
+      "label": "Glendower Golf Estate Home Owners Association",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_32",
+      "type": "entity",
+      "label": "Dermal Skin Treatments Cape Town",
+      "source": "revstream1",
+      "attributes": {
+        "role": "RegimA Distributor - Cape Town",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293337582-Company-DermalSkinTreatmentsCapeTown.Pdf",
+          "293337425-List-DermalSkinTreatmentsCapeTown.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_33",
+      "type": "entity",
+      "label": "Kachan Marketing and Distribution",
+      "source": "revstream1",
+      "attributes": {
+        "role": "RegimA Distributor - Gauteng",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293340322-Company-KachanMarketingandDistribution.Pdf",
+          "293340240-List-KachanMarketingandDistribution.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_34",
+      "type": "entity",
+      "label": "Dandelion SA",
+      "source": "revstream1",
+      "attributes": {
+        "role": "RegimA Distributor",
+        "evidenceStrength": "strong",
+        "evidenceCodes": [
+          "293342245-Company-DandelionSA.Pdf",
+          "293342189-List-DandelionSA.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_35",
+      "type": "entity",
+      "label": "Bertani International Global",
+      "source": "revstream1",
+      "attributes": {
+        "role": "RegimA Distributor",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293342878-Company-BertaniInternationalGlobal.Pdf",
+          "293342834-List-BertaniInternationalGlobal.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_36",
+      "type": "entity",
+      "label": "George Endermologie Clinic",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Former RegimA Distributor - George",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293332765-Company-GeorgeEndermologieClinic.Pdf",
+          "293330249-List-GeorgeEndermologieClinic.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_37",
+      "type": "entity",
+      "label": "De Fay Fund Management",
+      "source": "revstream1",
+      "attributes": {
+        "role": "Investment Fund - Nortje Connection",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "293338928-Company-DeFayFundManagement.Pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_KETONI_001",
+      "type": "entity",
+      "label": "Ketoni Investment Holdings Proprietary Limited",
+      "source": "revstream1",
+      "attributes": {
+        "role": "pass_through_investment_vehicle",
+        "evidenceStrength": "conclusive",
+        "criminalThreshold": "95%_exceeded",
+        "evidenceCodes": [
+          "JF10 - Trust Documents (FFT share certificate)",
+          "Ketoni Investment Holdings AFS 2024 - Signed.pdf (16 pages)",
+          "Exchange email 0863_20250129 - AFS sent to Rynette not beneficiaries",
+          "CIPC registration 2023/562189/07",
+          "Share Certificate #3 - 5,000 A-Ordinary shares (2023-04-24)"
+        ]
+      }
+    },
+    {
+      "id": "ORG_TB_001",
+      "type": "entity",
+      "label": "DERM",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Knowledge base references",
+          "Cost allocation patterns"
+        ]
+      }
+    },
+    {
+      "id": "ORG_TB_002",
+      "type": "entity",
+      "label": "RSA",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Cost of sales structure analysis"
+        ]
+      }
+    },
+    {
+      "id": "ORG_TB_003",
+      "type": "entity",
+      "label": "REU",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "Shopify payment hierarchy analysis"
+        ]
+      }
+    },
+    {
+      "id": "PLATFORM_001",
+      "type": "entity",
+      "label": "Shopify Plus Platform",
+      "source": "revstream1",
+      "attributes": {
+        "role": "sales_platform",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": [
+          "JF01 - Shopify Plus email evidence"
+        ]
+      }
+    },
+    {
+      "id": "DOMAIN_001",
+      "type": "entity",
+      "label": "regima.zone Domain",
+      "source": "revstream1",
+      "attributes": {
+        "role": "legitimate_domain",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "DOMAIN_002",
+      "type": "entity",
+      "label": "regimaskin.co.za Domain",
+      "source": "revstream1",
+      "attributes": {
+        "role": "fraudulent_domain",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "TRUST_001",
+      "type": "entity",
+      "label": "Faucitt Family Trust",
+      "source": "revstream1",
+      "attributes": {
+        "role": "central_asset_holder",
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "SYS_BANK_ACCOUNTS",
+      "type": "entity",
+      "label": "Bank Accounts",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "SYS_ACCOUNTS",
+      "type": "entity",
+      "label": "Accounting System",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "SYS_STOCK",
+      "type": "entity",
+      "label": "Stock/Inventory",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "SYS_REGIMA_GROUP",
+      "type": "entity",
+      "label": "RegimA Group",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "SYS_FINANCIAL_RECORDS",
+      "type": "entity",
+      "label": "Financial Records",
+      "source": "revstream1",
+      "attributes": {
+        "evidenceStrength": "moderate",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "id": "ORG_GEORGE_GROUP",
+      "type": "entity",
+      "label": "The George Group Proprietary Limited",
+      "source": "revstream1",
+      "attributes": {
+        "role": "revenue_generator_for_ketoni",
+        "evidenceStrength": "conclusive",
+        "evidenceCodes": [
+          "Ketoni Shareholder Agreement (Signed 24 April 2023)",
+          "Ketoni AFS 2024"
+        ]
+      }
+    },
+    {
+      "id": "ORG_DE_NOVO",
+      "type": "entity",
+      "label": "De Novo Business Services (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "role": "complicit_accountant",
+        "agentType": "antagonist",
+        "evidenceStrength": "conclusive",
+        "criminalThreshold": "95%_exceeded",
+        "evidenceCodes": [
+          "2025-06-18 - Rynette & De Novo - RegimA SA Payments.pdf",
+          "Regima SA (Pty) Ltd - 2019 - Financial statements - SME.pdf"
+        ]
+      }
+    },
+    {
+      "id": "ORG_053",
+      "type": "entity",
+      "label": "Elliott Attorneys Inc.",
+      "source": "revstream1",
+      "attributes": {
+        "role": "attorney_for_applicant_peter_faucitt",
+        "agentType": "legal_representative_applicant",
+        "evidenceCodes": []
+      }
+    },
+    {
+      "type": "event",
+      "label": "Legal Analysis: The \"Circular Trap\" and Abuse of Process",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "RegimA SA Revenue Diversion Started (EVENT_001)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-03-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Trust Structure Establishment (EVENT_002)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-03-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Two Years Unallocated Expenses Dumped (EVENT_003)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-03-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Payment Redirection Scheme (EVENT_004)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-04-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bank Account Change Letter for RegimA Worldwide (EVENT_005)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-04-14"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Unauthorized Beneficiary Changes (EVENT_006)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-02"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Jacqui Confronts Rynette About R1,035,000 Debt (EVENT_007)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Unauthorized Transfers (R850K+) (EVENT_008)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Shopify Audit Trail Hijacking (EVENT_009)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-22"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Domain Registration (Identity Fraud) (EVENT_010)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-29"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Daniel Finalizes Fraud Reports (EVENT_011)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-06"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Secret Card Cancellations (EVENT_012)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-07"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Systematic Trust Violations (EVENT_013)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-18"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Email Impersonation Pattern and Domain Switch Instruction (EVENT_014)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Coordinated Fund Diversions (EVENT_015)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Sage System Sabotage and Admin Takeover (EVENT_015)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-07-08 to 2024-07-12"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Warehouse POPI Violations (EVENT_016)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-08"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Notice of Withdrawal from Settlement Agreements (EVENT_016)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-09-22"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Account Manipulation (EVENT_017)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-12"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rezonance Debt Manipulation (EVENT_017)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-02-28 to 2025-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Trust Asset Misappropriation (EVENT_018)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-25"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Xenophontos Advises Peter on Ketoni Agreement (EVENT_018)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-01-24"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Trust Breach Evidence (EVENT_019)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Financial Evidence Concealment (EVENT_020)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Accounts Emptied (EVENT_021)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-09-11"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R900,000 Unauthorized Transfers from RegimA SA (EVENT_022)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-02-14"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies Dismisses Audit Request (EVENT_023)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R5.4M Stock Disappears from Strategic Logistics (EVENT_024)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-03-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R5.4M Stock Adjustment Processed Without Investigation (EVENT_025)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-03-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Gee Email Explaining Domain Switch Instruction (EVENT_026)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Domain Switch Email Instruction (EVENT_027)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R5.2M SLG Stock Missing & Large Invoice (EVENT_028)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-02-25"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Cloud IT Systems Removal Order (EVENT_029)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-04-22"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_047 (EVENT_047)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_048 (EVENT_048)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-08-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_049 (EVENT_049)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_050 (EVENT_050)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_051 (EVENT_051)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_052 (EVENT_052)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_053 (EVENT_053)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-04-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Chantal Delivers Letter About Kayla Estate Finalization (EVENT_054)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-01-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Peter Orders Cloud IT Systems Removal (EVENT_055)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-04-22"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Server Missing from Office (EVENT_056)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-04-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Daniel Sends Comprehensive Reports to Bantjies (EVENT_057)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-06"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies Learns of Criminal Matters (EVENT_058)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Settlement Agreement Signed / Main Trustee Coordination (EVENT_059)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-11"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Peter Files Founding Affidavit with Material Non-Disclosures (EVENT_060)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "ENS Africa Acknowledges Criminal Matters Then Suppresses (EVENT_061)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-29"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies Learns of Criminal Matters (EVENT_062)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Gee Email Explaining Domain Switch Instruction (EVENT_063)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_064 (EVENT_064)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-25"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_065 (EVENT_065)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-23"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_066 (EVENT_066)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_067 (EVENT_067)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2022-07-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Evidence Suppression Pattern Identified (EVENT_070)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-09-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Early Business Relationship Establishment (EVENT_071)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2017-01-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Initial Service Agreement Framework (EVENT_072)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2017-06-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Debt Accumulation Pattern Begins (EVENT_073)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-01-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Application 3 Dismissed by Court (EVENT_074)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-11-25"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Farrar Retains Legal Counsel (EVENT_075)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-11-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Letter of Demand Issued (Defamation) (EVENT_076)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-11-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Ongoing Interdict Violations Reported (EVENT_077)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-11-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies documents R18.68M debt structure",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Farrar demonstrates Sage system control",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-08-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Strategic Logistics stock adjustment manipulation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-06-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "SARS audit notification email",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2021-03-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Adderory company registration and stock supply arrangement",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2019-11-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Kayla Pretorius estate documentation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2021-09-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Court order for Kayla email account seizure",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2021-10-05"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Linda employment records documentation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-01-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Kayla Pretorius Estate Documentation Initiated (EVENT_086)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-08-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Court Order for Kayla Pretorius Email Account Seizure (EVENT_087)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-09-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "SARS Tax Audit Notification (EVENT_088)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2021-03-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies R18.75M (Ketoni debt to FFT) Debt to Faucitt Family Trust (EVENT_089)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Farrar Demonstrates Sage System Control (EVENT_090)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-08-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Adderory Company Registration and Stock Supply Arrangement (EVENT_091)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2019-11-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_092: Peter blocks Jacqui's card on his birthday",
+      "source": "revstream1",
+      "attributes": {
+        "date": "June 12, 2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_093: Peter writes fraud letter to FNB",
+      "source": "revstream1",
+      "attributes": {
+        "date": "June 17, 2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_094: FNB correctly refuses Peter's attempt to weaponize bank against directors",
+      "source": "revstream1",
+      "attributes": {
+        "date": "June 18, 2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_095: Mediation Between Parties",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_096: Notice of Withdrawal from Settlement Agreements (Signed Under Duress)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_097: Second Urgent Application (Variation) Dismissed",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_098: Jacqueline Blocks Stock Removal from Storage (Contempt Act 1)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_099: Attorney Correspondence - Stock Contempt Demand (PF15/PF16)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_100: Ongoing Contempt - Bank Cards Not Surrendered & Phone Removal",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_101: Contempt of Court Application Filed",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_102: Void Ab Initio Evidence Submitted to Pottas Attorneys",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-04"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Forges \"pp Peter\" Signature on Trust Amendment (EVENT_103)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-06-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Emails Backdated \"Main Trustee\" Appointment to Bantjies (EVENT_104)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-11"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EA-18: Coordinated Trust/Sage Takeover — 10-Day Window (EVENT_105)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_106: Villa Via Wrong Company Registration Number Since 2014",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2022-01-12 (discovery) / 2014 onwards (error period)"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_107: Rynette Logs Into SARS eFiling as Bantjies",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-04-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_108: Faucitt Trust Meeting Coordination — Rynette as Gatekeeper",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-05-03 to 2023-05-31"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_109",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-16"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_110: Sage API Breakage & Framing Setup",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-07-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_111: SARS eFiling Impersonation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-04-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_112: CIPC Erasure Campaign",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-11-02 to 2025-07-16"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_113: Stylometric Analysis Reveals Identity Impersonation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2018-07-09 to 2025-07-06"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_114: Anton Hechter Removal from VAT Portal",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_115: Rynette Obtains VAT Portal Login Credentials",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_116: Bantjies Negotiates Ketoni SHA/MOI via George Group",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_117: Ketoni Payment Allocated to Pete's Shareholder Loan Account",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_118: Bantjies Raises Beneficial Ownership of Trusts",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_119: Bantjies Admits \"Manufacturing\" SARS Answer — SMOKING GUN",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_120: Rynette Provides Proof of Address for Bantjies Trustee Appointment",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_121: Discovery of 100+ Banking Detail Change Emails",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-18 to 2025-07-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "RST Pays Aymac International Expenses",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Farrar Closes Aymac Bank Account",
+      "source": "revstream1",
+      "attributes": {
+        "date": "12 March 2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "TWO Separate Entities Under Same Base Number: Villa Via Arcadia No 2 CC AND Kaylovest Three (Pty) Ltd",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_125: Peter's R10.6M Post-Interdict Extraction",
+      "source": "revstream1",
+      "attributes": {
+        "date": "September 2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_126: Bantjies \"Manufacture\" Admission",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-06"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_127: Elliott Attorneys Protect Non-Party Rynette",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-11-26"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_128: Sage Registration Expires — System Lockout",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-23"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Contempt of Court Application Filed (EVENT_129)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-05"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Entity Answering Affidavit — Void Ab Initio (EVENT_130)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-19"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Formal POPIA Notice Filed (EVENT_131)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-19"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rule 7(1) and Rule 30/30A Notices Filed (EVENT_132)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-03-03"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Cover Letter and Draft Affidavit to Elliott Attorneys (EVENT_133)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-02-19"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Jacqueline Prevents Stock Removal at Warehouse (EVENT_134)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-01-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R10.9M Mass Extraction from Entity Accounts (EVENT_135)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-09-03 to 2025-09-11"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rule 30/30A Deadline Expires (EVENT_136)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-03-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_137: Bantjies Secretly Forwards Family Communication to Rynette",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-05-26 13:07:29"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_174: SARS eFiling Audit Logs Confirm Unauthorized Access",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-07-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_175: Stock2Shop API Access Records Confirm Severance Timeline",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-07-08"
+      }
+    },
+    {
+      "type": "event",
+      "label": "ReZonance Opening Balance Debt (EVENT_D001)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2022-03-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "First Structured Payment to ReZonance (EVENT_D002)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2022-07-11"
+      }
+    },
+    {
+      "type": "event",
+      "label": "ReZonance Final Balance Persistent Debt (EVENT_D003)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "False Payment Claim #1 to ReZonance (EVENT_D004)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-03-15"
+      }
+    },
+    {
+      "type": "event",
+      "label": "False Payment Claim #2 to ReZonance (EVENT_D005)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-09-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_EML_001: Forensic EML Evidence Extraction from Exchange Database",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_FNB001: Peter's FNB Fraud Letter",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-17"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_FNB002: FNB Response - Bank Mandate Confirmation",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-18"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_GWS_AUDIT_001: Google Workspace Forensic Audit Skill Created",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "First ReZonance Invoice to RST (EVENT_H001)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2017-06-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "ReZonance Service Expansion (EVENT_H002)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2017-09-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Financial Year Commencement RST/SLG (EVENT_H003)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2019-03-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Financial Year Commencement Villa Via (EVENT_H004)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2019-05-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Multiple Adjusting Journal Entries (EVENT_H005)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Year-End Adjustments and Interest Payment (EVENT_H006)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Villa Via Year-End Profit Extraction (EVENT_H007)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-04-30"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies Trial Balance Email Distribution (EVENT_H008)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-08-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Adderory Companies Registration - Pre-Planning Phase (EVENT_H009)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2021-04-01"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Kayla Pretorius Murder (EVENT_H010)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-07-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_H011 (EVENT_H011)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2017-02-24"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_H012 (EVENT_H012)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2019-02-28"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjies Sends Trial Balance Email to Bernadine Wright (EVENT_H018)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2020-08-13"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Events Index Update — 2026-03-07",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Faucitt Family Trust Invests in Ketoni Investment Holdings (EVENT_K001)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2023-04-24"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Dual Account Access Discovered (EVENT_SF2A)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-20"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Sage Subscription Expired - Access Obstruction (EVENT_SF2B)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-23"
+      }
+    },
+    {
+      "type": "event",
+      "label": "R63M Formal Demand by Ian Levitt Attorneys (EVENT_SF9)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-10-23"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_SIM_001: LEX-SIM-NN Differentiable Legal Simulation Executed",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVENT_XPLAT_AUDIT_001: Cross-Platform Forensic Transport Audit",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Bantjes Email: R10M Decline and Computer Expense Analysis (EVT-063)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Daniel's Comprehensive 26-Point Response to Bantjes (EVT-064)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-06-10"
+      }
+    },
+    {
+      "type": "event",
+      "label": "POPIA Violation Notice Sent to Pete (EVT-065)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-08"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Sage Accounting System Expires - Rynette Controls Reactivation (EVT-066)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-07-23"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Daniel Forwards Sage Evidence to Lawyer (EVT-067)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2025-08-29"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Rynette Makes R1M+ Debt to ReZonance 'Disappear' (EVT-068)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Pete and Rynette Attempt Unauthorized Banking Changes (EVT-069)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2024-2025"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-070: Email Domain Migration — @regima.zone to @regimaskin.co.za",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-071: Jacqui Forwards Domain Migration Email to ENS Attorneys",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-072: Villa Via Arcadia Pays ZAR 300,000 to ENS Attorneys",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-073: RegimA Skin Treatments Pays ~ZAR 90,000 to Elliot Attorneys",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-074: All Company Current Accounts Emptied (~ZAR 10 Million)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-075: Hidden R5 Million Transfer to Undocumented Account",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-076: Missing Bank Statements — 16-Month Black Hole (Nov 2022 – Apr 2024)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-077: Supporting Evidence Sent to Jacqui Re Account Balances & Activity",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "EVT-078: Identity Impersonation — pete@regima.com → pete@regimaskin.co.za",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Evidence Analysis: KF0019 Urgent Contempt Application",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "KF0019 Analysis — Urgent Contempt Application (17 March 2026)",
+      "source": "revstream1",
+      "attributes": {
+        "date": "25/02/2026"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Litigant in Person Guide: Defending Against the Circular Trap",
+      "source": "revstream1",
+      "attributes": {
+        "date": "2026-03-09"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Multi-Entity Correspondent Framework",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "type": "event",
+      "label": "Events & Timeline",
+      "source": "revstream1",
+      "attributes": {
+        "date": "Unknown"
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_55270018789",
+      "type": "financial_account",
+      "label": "Pete Platinum Acct (PF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "55270018789",
+        "accountType": "Platinum Cheque Account",
+        "entityCode": "PF",
+        "caseEntityId": "PERSON_001",
+        "statementCount": 33
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_55270035642",
+      "type": "financial_account",
+      "label": "Regima Skin Treatments (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "55270035642",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 24
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62012990132",
+      "type": "financial_account",
+      "label": "Aymac International (AYM)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62012990132",
+        "accountType": "Platinum Business Account",
+        "entityCode": "AYM",
+        "statementCount": 32
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62027933606",
+      "type": "financial_account",
+      "label": "Jacqui Platinum (JF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62027933606",
+        "accountType": "Platinum Cheque Account",
+        "entityCode": "JF",
+        "caseEntityId": "PERSON_004",
+        "statementCount": 27
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62060760404",
+      "type": "financial_account",
+      "label": "CORPCLO 2065 (COR)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62060760404",
+        "accountType": "Platinum Business Account",
+        "entityCode": "COR",
+        "statementCount": 12
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62089474309",
+      "type": "financial_account",
+      "label": "Daniel J Faucitt (DJF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62089474309",
+        "accountType": "Money On Call",
+        "entityCode": "DJF",
+        "caseEntityId": "PERSON_005",
+        "statementCount": 2
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62134839127",
+      "type": "financial_account",
+      "label": "Business Money Market (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62134839127",
+        "accountType": "Money On Call",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 35
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62323196362",
+      "type": "financial_account",
+      "label": "Regima Worldwide Distribution (RWD)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62323196362",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RWD",
+        "caseEntityId": "ORG_001",
+        "statementCount": 38
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62423540807",
+      "type": "financial_account",
+      "label": "Villa Via Arcadia (VVA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62423540807",
+        "accountType": "Platinum Business Account",
+        "entityCode": "VVA",
+        "caseEntityId": "ORG_005",
+        "statementCount": 42
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62432501494",
+      "type": "financial_account",
+      "label": "Strategic Logistics (SLG)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62432501494",
+        "accountType": "Platinum Business Account",
+        "entityCode": "SLG",
+        "caseEntityId": "ORG_004",
+        "statementCount": 59
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62462808290",
+      "type": "financial_account",
+      "label": "FNB Share Investing (DJF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62462808290",
+        "accountType": "FNB Share Investing",
+        "entityCode": "DJF",
+        "caseEntityId": "PERSON_005",
+        "statementCount": 4
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62471764946",
+      "type": "financial_account",
+      "label": "FNB Fusion Pw Account (DJF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62471764946",
+        "accountType": "FNB Fusion Pw Account",
+        "entityCode": "DJF",
+        "caseEntityId": "PERSON_005",
+        "statementCount": 10
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62593375829",
+      "type": "financial_account",
+      "label": "Strategic Savings (SLG)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62593375829",
+        "accountType": "Business Savings Account",
+        "entityCode": "SLG",
+        "caseEntityId": "ORG_004",
+        "statementCount": 9
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62707290003",
+      "type": "financial_account",
+      "label": "Regima Zone Impact (RZI)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62707290003",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RZI",
+        "statementCount": 10
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62707304606",
+      "type": "financial_account",
+      "label": "Regima Zone Academy (RZA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62707304606",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RZA",
+        "statementCount": 10
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62707308252",
+      "type": "financial_account",
+      "label": "Regima SA (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62707308252",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 26
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62707312310",
+      "type": "financial_account",
+      "label": "Rezonance (REZ)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62707312310",
+        "accountType": "Gold Business Account",
+        "entityCode": "REZ",
+        "caseEntityId": "ORG_008",
+        "statementCount": 10
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62742245617",
+      "type": "financial_account",
+      "label": "Money Maximiser (PF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62742245617",
+        "accountType": "Money Maximiser",
+        "entityCode": "PF",
+        "caseEntityId": "PERSON_001",
+        "statementCount": 1
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62812835744",
+      "type": "financial_account",
+      "label": "Money On Call (VVA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62812835744",
+        "accountType": "Money On Call",
+        "entityCode": "VVA",
+        "caseEntityId": "ORG_005",
+        "statementCount": 13
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62826022577",
+      "type": "financial_account",
+      "label": "Money On Call (REZ)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62826022577",
+        "accountType": "Money On Call",
+        "entityCode": "REZ",
+        "caseEntityId": "ORG_008",
+        "statementCount": 4
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62836164880",
+      "type": "financial_account",
+      "label": "Worldwide Savings (RWD)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62836164880",
+        "accountType": "Business Savings Account",
+        "entityCode": "RWD",
+        "caseEntityId": "ORG_001",
+        "statementCount": 5
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839603819",
+      "type": "financial_account",
+      "label": "Business Global Account (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839603819",
+        "accountType": "Business Global Account",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 5
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839603827",
+      "type": "financial_account",
+      "label": "Business Global Account (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839603827",
+        "accountType": "Business Global Account",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 4
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839603835",
+      "type": "financial_account",
+      "label": "Business Global Account (SLG)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839603835",
+        "accountType": "Business Global Account",
+        "entityCode": "SLG",
+        "caseEntityId": "ORG_004",
+        "statementCount": 13
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839612323",
+      "type": "financial_account",
+      "label": "CFC Business Global Account (RWD)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839612323",
+        "accountType": "Business Global Account",
+        "entityCode": "RWD",
+        "caseEntityId": "ORG_001",
+        "statementCount": 42
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839612331",
+      "type": "financial_account",
+      "label": "Business Global Account (RWD)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839612331",
+        "accountType": "Business Global Account",
+        "entityCode": "RWD",
+        "caseEntityId": "ORG_001",
+        "statementCount": 4
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839612349",
+      "type": "financial_account",
+      "label": "Business Global Account (RWD)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839612349",
+        "accountType": "Business Global Account",
+        "entityCode": "RWD",
+        "caseEntityId": "ORG_001",
+        "statementCount": 3
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62896473974",
+      "type": "financial_account",
+      "label": "Trust Account (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62896473974",
+        "accountType": "Trust Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 46
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62896474972",
+      "type": "financial_account",
+      "label": "Business Call Account (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62896474972",
+        "accountType": "Business Call Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 15
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_80041151533",
+      "type": "financial_account",
+      "label": "eBucks For Business (PORT)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "80041151533",
+        "accountType": "eBucks Rewards Account",
+        "entityCode": "PORT",
+        "statementCount": 2
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62896474196",
+      "type": "financial_account",
+      "label": "RSA Current Account (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62896474196",
+        "accountType": "Platinum Business Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 81
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62897307015",
+      "type": "financial_account",
+      "label": "RSA Trust Account 7015 (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62897307015",
+        "accountType": "Trust Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 18
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62897307031",
+      "type": "financial_account",
+      "label": "RSA Trust Account 7031 (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62897307031",
+        "accountType": "Trust Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 8
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62897307073",
+      "type": "financial_account",
+      "label": "RSA Trust Account 7073 (RSA)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62897307073",
+        "accountType": "Trust Account",
+        "entityCode": "RSA",
+        "caseEntityId": "ORG_006",
+        "statementCount": 8
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_63176874808",
+      "type": "financial_account",
+      "label": "Regima Zone Gold Business (RZN)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "63176874808",
+        "accountType": "Gold Business Account",
+        "entityCode": "RZN",
+        "caseEntityId": "ORG_003",
+        "statementCount": 3
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_4483810003374006",
+      "type": "financial_account",
+      "label": "FNB Private Wealth Credit Card (PF)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "4483810003374006",
+        "accountType": "Credit Card",
+        "entityCode": "PF",
+        "caseEntityId": "PERSON_001",
+        "statementCount": 1
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_4790812427545003",
+      "type": "financial_account",
+      "label": "Business Gold Credit Card (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "4790812427545003",
+        "accountType": "Credit Card",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 1
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_8812710044279003",
+      "type": "financial_account",
+      "label": "Business Credit Card (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "8812710044279003",
+        "accountType": "Credit Card",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 1
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_62839609635",
+      "type": "financial_account",
+      "label": "Business Global Account (Old) (RST)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "62839609635",
+        "accountType": "Business Global Account",
+        "entityCode": "RST",
+        "caseEntityId": "ORG_002",
+        "statementCount": 1
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_UNKNOWN_2339",
+      "type": "financial_account",
+      "label": "Unicorn Dynamics Cheque (UNI)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "UNKNOWN_2339",
+        "accountType": "Cheque Account",
+        "entityCode": "UNI",
+        "statementCount": 0
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_UNKNOWN_2347",
+      "type": "financial_account",
+      "label": "Unicorn Dynamics Stash (UNI)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "UNKNOWN_2347",
+        "accountType": "Savings Account",
+        "entityCode": "UNI",
+        "statementCount": 0
+      }
+    },
+    {
+      "id": "FINCOSYS_ACCT_UNKNOWN_0781",
+      "type": "financial_account",
+      "label": "Unicorn Dynamics eBucks (UNI)",
+      "source": "fincosys",
+      "attributes": {
+        "accountNumber": "UNKNOWN_0781",
+        "accountType": "eBucks Rewards Account",
+        "entityCode": "UNI",
+        "statementCount": 0
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_jax_regima_zone",
+      "type": "email_account",
+      "label": "jax@regima.zone (Jacqueline Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "jax@regima.zone",
+        "caseEntityId": "PERSON_004",
+        "messageAppearances": 856
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_jax_regima_com",
+      "type": "email_account",
+      "label": "jax@regima.com (Jacqueline Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "jax@regima.com",
+        "caseEntityId": "PERSON_004",
+        "messageAppearances": 732
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_trev_regima_com",
+      "type": "email_account",
+      "label": "trev@regima.com (Trevor (staff))",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "trev@regima.com",
+        "caseEntityId": "STAFF_TREV",
+        "messageAppearances": 457
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_dan_regima_com",
+      "type": "email_account",
+      "label": "dan@regima.com (Daniel Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "dan@regima.com",
+        "caseEntityId": "PERSON_005",
+        "messageAppearances": 375
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_dan_regima_zone",
+      "type": "email_account",
+      "label": "dan@regima.zone (Daniel Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "dan@regima.zone",
+        "caseEntityId": "PERSON_005",
+        "messageAppearances": 281
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_emma_regima_com",
+      "type": "email_account",
+      "label": "emma@regima.com (Emma (staff))",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "emma@regima.com",
+        "caseEntityId": "STAFF_EMMA",
+        "messageAppearances": 244
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_pete_regima_com",
+      "type": "email_account",
+      "label": "pete@regima.com (Peter Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "pete@regima.com",
+        "caseEntityId": "PERSON_001",
+        "messageAppearances": 158
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_kay_regima_com",
+      "type": "email_account",
+      "label": "kay@regima.com (Kayla)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "kay@regima.com",
+        "caseEntityId": "PERSON_008",
+        "messageAppearances": 131
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_rynette_regima_zone",
+      "type": "email_account",
+      "label": "rynette@regima.zone (Rynette Farrar)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "rynette@regima.zone",
+        "caseEntityId": "PERSON_002",
+        "messageAppearances": 98
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_kent_regima_zone",
+      "type": "email_account",
+      "label": "kent@regima.zone (Kent)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "kent@regima.zone",
+        "caseEntityId": "PERSON_037",
+        "messageAppearances": 93
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_danie_bantjes_gmail_com",
+      "type": "email_account",
+      "label": "danie.bantjes@gmail.com (Daniel Jacobus Bantjies)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "danie.bantjes@gmail.com",
+        "caseEntityId": "PERSON_007",
+        "messageAppearances": 68
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_kayla_regima_zone",
+      "type": "email_account",
+      "label": "kayla@regima.zone (Kayla)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "kayla@regima.zone",
+        "caseEntityId": "PERSON_008",
+        "messageAppearances": 60
+      }
+    },
+    {
+      "id": "COMCOSYS_EMAIL_pete_regima_zone",
+      "type": "email_account",
+      "label": "pete@regima.zone (Peter Faucitt)",
+      "source": "comcosys",
+      "attributes": {
+        "emailAddress": "pete@regima.zone",
+        "caseEntityId": "PERSON_001",
+        "messageAppearances": 6
+      }
+    }
+  ],
+  "edges": [
+    {
+      "type": "holds_account",
+      "source": "PERSON_001",
+      "target": "FINCOSYS_ACCT_55270018789",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_55270035642",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_004",
+      "target": "FINCOSYS_ACCT_62027933606",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_005",
+      "target": "FINCOSYS_ACCT_62089474309",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_62134839127",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_001",
+      "target": "FINCOSYS_ACCT_62323196362",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_005",
+      "target": "FINCOSYS_ACCT_62423540807",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_004",
+      "target": "FINCOSYS_ACCT_62432501494",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_005",
+      "target": "FINCOSYS_ACCT_62462808290",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_005",
+      "target": "FINCOSYS_ACCT_62471764946",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_004",
+      "target": "FINCOSYS_ACCT_62593375829",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62707308252",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_008",
+      "target": "FINCOSYS_ACCT_62707312310",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_001",
+      "target": "FINCOSYS_ACCT_62742245617",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_005",
+      "target": "FINCOSYS_ACCT_62812835744",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_008",
+      "target": "FINCOSYS_ACCT_62826022577",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_001",
+      "target": "FINCOSYS_ACCT_62836164880",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_62839603819",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_62839603827",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_004",
+      "target": "FINCOSYS_ACCT_62839603835",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_001",
+      "target": "FINCOSYS_ACCT_62839612323",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_001",
+      "target": "FINCOSYS_ACCT_62839612331",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_001",
+      "target": "FINCOSYS_ACCT_62839612349",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62896473974",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62896474972",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62896474196",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62897307015",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62897307031",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_006",
+      "target": "FINCOSYS_ACCT_62897307073",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_003",
+      "target": "FINCOSYS_ACCT_63176874808",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "PERSON_001",
+      "target": "FINCOSYS_ACCT_4483810003374006",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_4790812427545003",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_8812710044279003",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "holds_account",
+      "source": "ORG_002",
+      "target": "FINCOSYS_ACCT_62839609635",
+      "sourceRepo": "fincosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_004",
+      "target": "COMCOSYS_EMAIL_jax_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_004",
+      "target": "COMCOSYS_EMAIL_jax_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "STAFF_TREV",
+      "target": "COMCOSYS_EMAIL_trev_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_005",
+      "target": "COMCOSYS_EMAIL_dan_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_005",
+      "target": "COMCOSYS_EMAIL_dan_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "STAFF_EMMA",
+      "target": "COMCOSYS_EMAIL_emma_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_001",
+      "target": "COMCOSYS_EMAIL_pete_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_008",
+      "target": "COMCOSYS_EMAIL_kay_regima_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_002",
+      "target": "COMCOSYS_EMAIL_rynette_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_037",
+      "target": "COMCOSYS_EMAIL_kent_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_007",
+      "target": "COMCOSYS_EMAIL_danie_bantjes_gmail_com",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_008",
+      "target": "COMCOSYS_EMAIL_kayla_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communicates_via",
+      "source": "PERSON_001",
+      "target": "COMCOSYS_EMAIL_pete_regima_zone",
+      "sourceRepo": "comcosys",
+      "strength": 1
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 1,
+      "attributes": {
+        "messageCount": 241,
+        "sampleSubjects": [
+          "Re: Read: FW: failure notice CMS BELLA",
+          "Re: Read: FW: failure notice CMS BELLA",
+          "RE: RegimA ANNUAL PRICE INCREASE - 1ST AUGUST 2019"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "PERSON_007",
+      "sourceRepo": "comcosys",
+      "strength": 0.45,
+      "attributes": {
+        "messageCount": 45,
+        "sampleSubjects": [
+          "RE: SARS verification letter",
+          "Fwd: FW: Regima June 2020 TERS",
+          "Re: Provisional Tax"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_001",
+      "target": "PERSON_007",
+      "sourceRepo": "comcosys",
+      "strength": 0.31,
+      "attributes": {
+        "messageCount": 31,
+        "sampleSubjects": [
+          "Fwd: FW: Regima June 2020 TERS",
+          "Re: Provisional Tax",
+          "Re: Provisional Tax"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_002",
+      "target": "PERSON_007",
+      "sourceRepo": "comcosys",
+      "strength": 0.29,
+      "attributes": {
+        "messageCount": 29,
+        "sampleSubjects": [
+          "My invoice",
+          "Fwd: FW: Regima June 2020 TERS",
+          "Re: Provisional Tax"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "PERSON_008",
+      "sourceRepo": "comcosys",
+      "strength": 0.19,
+      "attributes": {
+        "messageCount": 19,
+        "sampleSubjects": [
+          "Fw: client consent",
+          "Fw: client consent",
+          "Re: Updated Images"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_002",
+      "target": "PERSON_004",
+      "sourceRepo": "comcosys",
+      "strength": 0.14,
+      "attributes": {
+        "messageCount": 14,
+        "sampleSubjects": [
+          "RE: SARS verification letter",
+          "RE: Provisional Tax",
+          "FW: SALARIES - SEPTEMBER 2020"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_008",
+      "target": "PERSON_037",
+      "sourceRepo": "comcosys",
+      "strength": 0.14,
+      "attributes": {
+        "messageCount": 14,
+        "sampleSubjects": [
+          "Complimentary Derma Zest for Perfect Touch ",
+          "Fw: client consent",
+          "Re: Updated Images"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_005",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 0.1,
+      "attributes": {
+        "messageCount": 10,
+        "sampleSubjects": [
+          "The 8 Fundamentals of Extreme Achievement",
+          "Please Phone Jennie from Goringe Accountants",
+          "FW: New Creative Cloud for teams licenses have been added"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "PERSON_037",
+      "sourceRepo": "comcosys",
+      "strength": 0.07,
+      "attributes": {
+        "messageCount": 7,
+        "sampleSubjects": [
+          "Read: order please",
+          "RE: Sensorial Daily Protection/Daily Ultra Protection",
+          "Read:  RegimA ANNUAL PRICE INCREASE - 1ST AUGUST 2019"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_001",
+      "target": "PERSON_004",
+      "sourceRepo": "comcosys",
+      "strength": 0.06,
+      "attributes": {
+        "messageCount": 6,
+        "sampleSubjects": [
+          "RE: SARS verification letter",
+          "RE: Provisional Tax",
+          "RE: LETTER FOR FNB - FOR FOREX - CHANGE OF DETAILS FOR CONTACT PERSON - REGIMA SKIN TREATMENTS etc - [External Email]"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_001",
+      "target": "PERSON_002",
+      "sourceRepo": "comcosys",
+      "strength": 0.06,
+      "attributes": {
+        "messageCount": 6,
+        "sampleSubjects": [
+          "FW: FNB Account Statement",
+          "FW: FNB Account Statement",
+          "FW: FNB Account Statement"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_005",
+      "target": "STAFF_EMMA",
+      "sourceRepo": "comcosys",
+      "strength": 0.06,
+      "attributes": {
+        "messageCount": 6,
+        "sampleSubjects": [
+          "Get Paid with Payoneer",
+          "The 8 Fundamentals of Extreme Achievement",
+          "Get Paid with Payoneer"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "STAFF_TREV",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 0.05,
+      "attributes": {
+        "messageCount": 5,
+        "sampleSubjects": [
+          "RegimA A4 Pro Beauty Advert",
+          "RégimA Packaging Tape",
+          "Microsoft Outlook Test Message"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_001",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 0.04,
+      "attributes": {
+        "messageCount": 4,
+        "sampleSubjects": [
+          "FW: Pete Message SARS",
+          "RE: RegimA ANNUAL PRICE INCREASE - 1ST AUGUST 2019",
+          "RegimA Birthday Gifts"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_001",
+      "target": "PERSON_037",
+      "sourceRepo": "comcosys",
+      "strength": 0.04,
+      "attributes": {
+        "messageCount": 4,
+        "sampleSubjects": [
+          "Read: order please",
+          "RE: RegimA ANNUAL PRICE INCREASE - 1ST AUGUST 2019",
+          "Read: RegimA ANNUAL PRICE INCREASE - 1ST AUGUST 2019"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_007",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 0.03,
+      "attributes": {
+        "messageCount": 3,
+        "sampleSubjects": [
+          "Re: FW: Pete Message SARS",
+          "Re: FW: Pete Message SARS",
+          "Re: FW: Pete Message SARS"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_037",
+      "target": "STAFF_TREV",
+      "sourceRepo": "comcosys",
+      "strength": 0.02,
+      "attributes": {
+        "messageCount": 2,
+        "sampleSubjects": [
+          "Re: Read: FW: failure notice CMS BELLA",
+          "Re: PB Oveprints"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "PERSON_005",
+      "sourceRepo": "comcosys",
+      "strength": 0.02,
+      "attributes": {
+        "messageCount": 2,
+        "sampleSubjects": [
+          "RE: travel size and install the Apps",
+          "The 8 Fundamentals of Extreme Achievement"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_007",
+      "target": "PERSON_007",
+      "sourceRepo": "comcosys",
+      "strength": 0.01,
+      "attributes": {
+        "messageCount": 1,
+        "sampleSubjects": [
+          "FW: meeting with Danie Bantjies regarding year end financials"
+        ]
+      }
+    },
+    {
+      "type": "communication_pattern",
+      "source": "PERSON_004",
+      "target": "PERSON_004",
+      "sourceRepo": "comcosys",
+      "strength": 0.01,
+      "attributes": {
+        "messageCount": 1,
+        "sampleSubjects": [
+          "LETTER FOR FNB - FOR FOREX - CHANGE OF DETAILS FOR CONTACT PERSON - REGIMA SKIN TREATMENTS etc"
+        ]
+      }
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "PF",
+      "toId": "PERSON_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "JF",
+      "toId": "PERSON_004",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "DJF",
+      "toId": "PERSON_005",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RWD",
+      "toId": "ORG_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "VVA",
+      "toId": "ORG_005",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "SLG",
+      "toId": "ORG_004",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "DJF",
+      "toId": "PERSON_005",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "DJF",
+      "toId": "PERSON_005",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "SLG",
+      "toId": "ORG_004",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "REZ",
+      "toId": "ORG_008",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "PF",
+      "toId": "PERSON_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "VVA",
+      "toId": "ORG_005",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "REZ",
+      "toId": "ORG_008",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RWD",
+      "toId": "ORG_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "SLG",
+      "toId": "ORG_004",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RWD",
+      "toId": "ORG_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RWD",
+      "toId": "ORG_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RWD",
+      "toId": "ORG_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RSA",
+      "toId": "ORG_006",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RZN",
+      "toId": "ORG_003",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "PF",
+      "toId": "PERSON_001",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "fincosys",
+      "toRepo": "revstream1",
+      "fromId": "RST",
+      "toId": "ORG_002",
+      "type": "entity_mapping"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "jax@regima.zone",
+      "toId": "PERSON_004",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "jax@regima.com",
+      "toId": "PERSON_004",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "trev@regima.com",
+      "toId": "STAFF_TREV",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "dan@regima.com",
+      "toId": "PERSON_005",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "dan@regima.zone",
+      "toId": "PERSON_005",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "emma@regima.com",
+      "toId": "STAFF_EMMA",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "pete@regima.com",
+      "toId": "PERSON_001",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "kay@regima.com",
+      "toId": "PERSON_008",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "rynette@regima.zone",
+      "toId": "PERSON_002",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "kent@regima.zone",
+      "toId": "PERSON_037",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "danie.bantjes@gmail.com",
+      "toId": "PERSON_007",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "kayla@regima.zone",
+      "toId": "PERSON_008",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "comcosys",
+      "toRepo": "revstream1",
+      "fromId": "pete@regima.zone",
+      "toId": "PERSON_001",
+      "type": "email_to_entity"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "ANNEXURES/JF01 - Shopify Plus email showing business structure",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "ANNEXURES/JF04 - CIPC company registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "ANNEXURES/JF06 - Court applications and filings",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Comprehensive fraud timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "1-CIVIL-RESPONSE - Answering affidavit documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "SF2_Sage_Screenshots_Rynette_Control.md - System control evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "SF6_Kayla_Pretorius_Estate_Documentation.md - Trigger event for appropriation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "SF9_Ian_Levitt_Demand_Letter.md - R63M formal demand (ignored)",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "KETONI_PAYOUT_INTEGRATION_SUMMARY_V48-49.md - Central financial motive",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_001",
+      "toId": "evidence/FFT_KETONI_INVESTMENT_TIMELINE_V49.md - Comprehensive timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "SF2_Sage_Screenshots_Rynette_Control.md - Dual account access evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "ANNEXURES/JF01 - Email impersonation patterns",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "ANNEXURES/JF07 - Sage system screenshots showing control",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "SF9_Ian_Levitt_Demand_Letter.md - Implicated in revenue theft scheme",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "ANNEXURES/SF2_Sage_Screenshots_Rynette_Control.md - System control proof",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012/README.md - Payment redirection evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_002",
+      "toId": "revenue-stream-hijacking-rynette/ - Dedicated evidence folder",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_004",
+      "toId": "ANNEXURES/JF05 - Correspondence evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_004",
+      "toId": "ANNEXURES/JF06 - Court documents and filings",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_004",
+      "toId": "ANNEXURES/JF08 - Evidence packages",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_004",
+      "toId": "1-CIVIL-RESPONSE - Answering affidavit",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_004",
+      "toId": "archive/legal-analysis-nov2025/attorney_correspondence/IanLevittAttorneysMemo_2025-11-09.txt",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_005",
+      "toId": "ANNEXURES/JF01 - Shopify Plus email (THE FORENSIC TIME CAPSULE)",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_005",
+      "toId": "ANNEXURES/SF6_Kayla_Pretorius_Estate_Documentation.md - CRITICAL: Death and estate",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_005",
+      "toId": "ANNEXURES/SF7_Court_Order_Kayla_Email_Seizure.md - Email seizure order",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_005",
+      "toId": "ANNEXURES/JF02 - Shopify sales reports under her management",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_005",
+      "toId": "archive/legal-analysis-nov2025/attorney_correspondence/IanLevittAttorneysMemo_2025-11-09.txt",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_006",
+      "toId": "ANNEXURES/SF8_Linda_Employment_Records.md - Employment documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_006",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Comprehensive fraud timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_006",
+      "toId": "1-CIVIL-RESPONSE/RESCISSION_AFFIDAVIT_JACQUELINE_FAUCITT.md - Witness testimony",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_007",
+      "toId": "ANNEXURES/SF1_Ketoni_Debt_FFT_Documentation.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_007",
+      "toId": "KETONI_PAYOUT_INTEGRATION_SUMMARY_V48-49.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_007",
+      "toId": "evidence/FFT_KETONI_INVESTMENT_TIMELINE_V49.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_008",
+      "toId": "ANNEXURES/JF08 - Email correspondence evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_008",
+      "toId": "ANNEXURES/JF13 - Recent correspondence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_008",
+      "toId": "ANNEXURES/SF6_Kayla_Pretorius_Estate_Documentation.md - Death and estate documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_008",
+      "toId": "ANNEXURES/SF7_Court_Order_Kayla_Email_Seizure.md - Email seizure court order",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_009",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Business relationship documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_009",
+      "toId": "ANNEXURES/JF03 - Financial records showing interactions",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_009",
+      "toId": "1-CIVIL-RESPONSE - Civil case documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_010",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Professional relationship evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_010",
+      "toId": "ANNEXURES/JF06 - Court documents and filings",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_010",
+      "toId": "1-CIVIL-RESPONSE - Civil case documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_003",
+      "toId": "ANNEXURES/JF01 - Shopify Plus onboarding email (kayp@rzo.io)",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_003",
+      "toId": "SF6_Kayla_Pretorius_Estate_Documentation.md - Estate documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_003",
+      "toId": "SF7_Court_Order_Kayla_Email_Seizure.md - Email account seizure order",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_003",
+      "toId": "ANNEXURES/JF08 - Evidence of independent business operations",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_011",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Business operations evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_011",
+      "toId": "ANNEXURES/JF03 - Financial records",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_011",
+      "toId": "1-CIVIL-RESPONSE - Civil case documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_012",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Comprehensive fraud timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_012",
+      "toId": "ANNEXURES/JF06 - Court documents and filings",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_012",
+      "toId": "1-CIVIL-RESPONSE/RESCISSION_AFFIDAVIT_JACQUELINE_FAUCITT.md - Witness testimony",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_039",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Comprehensive fraud timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_039",
+      "toId": "ANNEXURES/JF06 - Court documents and filings",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_039",
+      "toId": "1-CIVIL-RESPONSE/RESCISSION_AFFIDAVIT_JACQUELINE_FAUCITT.md - Witness testimony",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_013",
+      "toId": "ANNEXURES/JF01 - Shopify Plus email (26 July 2017) - CRITICAL EVIDENCE",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_013",
+      "toId": "ANNEXURES/SF6_Kayla_Pretorius_Estate_Documentation.md - Estate documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_013",
+      "toId": "ANNEXURES/SF7_Court_Order_Kayla_Email_Seizure.md - Court order evidence",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_013",
+      "toId": "ANNEXURES/JF08/evidence_package_20251012 - Comprehensive fraud timeline",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_013",
+      "toId": "1-CIVIL-RESPONSE - Civil case documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_015",
+      "toId": "evidence/cipc/293350197.pdf - Director search Alan Peter Louw",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_015",
+      "toId": "evidence/cipc/293350058.pdf - ALOECO (SA) company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_016",
+      "toId": "evidence/cipc/293350204.pdf - Director search Martin Carlo Rizzotto",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_017",
+      "toId": "evidence/cipc/293348688.pdf - RegimA Worldwide Distribution company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_DERRICK_001",
+      "toId": "KETONI_PAYOUT_INTEGRATION_SUMMARY_V48-49.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_DERRICK_001",
+      "toId": "lex/agent_based_model_v48_ketoni_integrated.scm",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_037",
+      "toId": "ANNEXURES/JF07/Screenshot-2025-06-20-Sage-Account-RegimA-Worldwide-Distribution.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_037",
+      "toId": "ANNEXURES/JF09/APR-SEP-2025.md - POPIA letters to Kent",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_037",
+      "toId": "evidence_analysis/rynette_organogram_2025-04-12.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_038",
+      "toId": "ANNEXURES/JF07/Screenshot-2025-06-20-Sage-Account-RegimA-Worldwide-Distribution.json",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "PERSON_038",
+      "toId": "evidence_analysis/rynette_organogram_2025-04-12.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_001",
+      "toId": "ANNEXURES/JF04 - CIPC company registration",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_001",
+      "toId": "ANNEXURES/JF07 - Sage accounting screenshots",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_001",
+      "toId": "1-CIVIL-RESPONSE/financial-flows - Revenue hijacking documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_002",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_002",
+      "toId": "SF3_Strategic_Logistics_Stock_Adjustment.md - Inter-company transactions",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_002",
+      "toId": "1-CIVIL-RESPONSE/financial-flows - Beneficiary of hijacked revenue",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_003",
+      "toId": "ANNEXURES/JF01 - Shopify Plus email proving ownership",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_003",
+      "toId": "ANNEXURES/JF02 - Shopify sales reports",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_003",
+      "toId": "1-CIVIL-RESPONSE - UK company documentation and payment records",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_004",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_004",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_004",
+      "toId": "ANNEXURES/JF02 - Shopify sales reports",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_005",
+      "toId": "ANNEXURES/SF3_Strategic_Logistics_Stock_Adjustment.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_005",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_005",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_006",
+      "toId": "ANNEXURES/JF02 - Shopify sales reports for RegimA SA",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_006",
+      "toId": "ANNEXURES/JF07 - Sage screenshots showing fraudulent records",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_006",
+      "toId": "SF2_Sage_Screenshots_Rynette_Control.md - Victim of revenue hijacking",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_008",
+      "toId": "SF1_Ketoni_Debt_FFT_Documentation.md - Business relationship and debt",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_008",
+      "toId": "1-CIVIL-RESPONSE/financial-flows - Service provider documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_009",
+      "toId": "ANNEXURES/SF5_Adderory_Company_Registration.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_009",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_009",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_010",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_012",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_012",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_013",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_013",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_014",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_014",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_015",
+      "toId": "ANNEXURES/SF4_SARS_Audit_Email.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_007",
+      "toId": "SF9_Ian_Levitt_Demand_Letter.md - Formal demand documentation",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_042",
+      "toId": "evidence/cipc/293350058.pdf - ALOECO (SA) company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_016",
+      "toId": "evidence/cipc/293351580.pdf - Marlouw Group company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_017",
+      "toId": "evidence/cipc/293351589.pdf - Big Business 301 company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_018",
+      "toId": "evidence/cipc/293351595.pdf - Art of Buzztec company record",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_019",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_019",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_020",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_020",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_021",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_021",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_022",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_022",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_023",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_023",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_024",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_024",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_025",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_025",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_026",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_026",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_027",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_027",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_028",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_028",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_029",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_029",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_030",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_030",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_031",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_031",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_32",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_32",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_33",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_33",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_34",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_34",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_35",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_35",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_36",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_36",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_37",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_37",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "evidence/financial-analysis/ketoni_investment_holdings_afs_2024.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "KETONI_PAYOUT_INTEGRATION_SUMMARY_V48-49.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "evidence/FFT_KETONI_INVESTMENT_TIMELINE_V49.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "lex/entity_relation_framework_v48_ketoni_payout_integrated.scm",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "lex/agent_based_model_v48_ketoni_integrated.scm",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "docs/exchange-evidence/ketoni_motive.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "ketoni_correction_2026_01_28/KETONI_RELATIONSHIP_CORRECTION_2026_01_28.md",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_KETONI_001",
+      "toId": "ANNEXURES/JF10/",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_001",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_001",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_002",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_002",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_003",
+      "toId": "ANNEXURES/JF04 - CIPC registration documents",
+      "type": "evidence_reference"
+    },
+    {
+      "fromRepo": "revstream1",
+      "toRepo": "ad-res-j7",
+      "fromId": "ORG_TB_003",
+      "toId": "ANNEXURES/JF03 - Financial records and analysis",
+      "type": "evidence_reference"
+    }
+  ]
+}

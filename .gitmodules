@@ -1,0 +1,3 @@
+[submodule "vendor/ggnumlcash"]
+	path = vendor/ggnumlcash
+	url = https://github.com/o9nn/ggnumlcash.cpp.git
