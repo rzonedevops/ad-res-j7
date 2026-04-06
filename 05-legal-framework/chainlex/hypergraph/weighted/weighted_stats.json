@@ -1,0 +1,12 @@
+{
+  "nodes": 2306,
+  "edges": 80,
+  "original_edges": 80,
+  "reduction_ratio": 1.0,
+  "weight_statistics": {
+    "min": 0.9,
+    "max": 0.95,
+    "mean": 0.913125,
+    "median": 0.9
+  }
+}

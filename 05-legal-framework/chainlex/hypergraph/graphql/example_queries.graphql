@@ -1,0 +1,104 @@
+
+# Lex-HyperGraph-Neural-Net-QL Example Queries
+
+## 1. Get a specific legal node
+query {
+  node(id: "pacta-sunt-servanda") {
+    id
+    name
+    nodeType
+    level
+    confidence
+    domain
+    provenance
+    embedding
+  }
+}
+
+## 2. Find all principles
+query {
+  nodesByType(nodeType: "principle") {
+    id
+    name
+    confidence
+    domain
+  }
+}
+
+## 3. Find all contract law nodes
+query {
+  nodesByDomain(domain: "contract") {
+    id
+    name
+    nodeType
+    confidence
+  }
+}
+
+## 4. Get edges from a node
+query {
+  edgesFromNode(nodeId: "pacta-sunt-servanda") {
+    source
+    target
+    edgeType
+    weight
+    repetitionCount
+    avgConfidence
+  }
+}
+
+## 5. Find inference chain
+query {
+  inferenceChain(source: "pacta-sunt-servanda", target: "contract-valid?") {
+    source
+    target
+    path
+    confidence
+    reasoningSteps
+    gnnScore
+  }
+}
+
+## 6. Find similar nodes (GNN-powered)
+query {
+  similarNodes(nodeId: "pacta-sunt-servanda", limit: 5) {
+    id
+    name
+    nodeType
+    reasoningScore
+  }
+}
+
+## 7. Predict confidence (GNN-powered)
+query {
+  predictConfidence(nodeId: "some-rule-id")
+}
+
+## 8. Compute reasoning score between nodes (GNN-powered)
+query {
+  reasoningScore(source: "principle-id", target: "rule-id")
+}
+
+## 9. Complex query combining multiple features
+query {
+  contractLawPrinciples: nodesByDomain(domain: "contract") {
+    id
+    name
+    confidence
+    derivedRules: edgesFromNode(nodeId: id) {
+      target
+      weight
+    }
+  }
+}
+
+## 10. Find all South African rules
+query {
+  nodesByJurisdiction(jurisdiction: "ZA") {
+    id
+    name
+    nodeType
+    domain
+    confidence
+  }
+}
