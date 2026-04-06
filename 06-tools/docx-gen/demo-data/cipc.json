@@ -1,0 +1,72 @@
+{
+  "caseRef": "2025-137857-CIPC",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Balance of Probabilities (50%+) — EXCEEDED",
+  "executiveSummary": "This complaint details systematic breaches of the Companies Act and Trust Property Control Act by a syndicate of knowing conspirators. The primary conspirators are classified as Tier A Conspirators based on documentary proof of premeditated intent (mens rea).",
+  "complainants": {
+    "names": "Jacqueline Faucitt and Daniel James Faucitt",
+    "capacity": "Directors, Shareholders, Oppressed Parties, and Trust Beneficiaries"
+  },
+  "tierA": [
+    {
+      "name": "Peter Andrew Faucitt",
+      "idNumber": "520430 5706 18 5",
+      "role": "Director, Mastermind",
+      "proofOfForeknowledge": "Direct written admission of fraud awareness (SF10); authorized Rynette's system access."
+    },
+    {
+      "name": "Rynette Farrar",
+      "idNumber": "",
+      "role": "Financial Controller, Chief Operator",
+      "proofOfForeknowledge": "Instructed creation of fraudulent financials; executed identity fraud (SF10)."
+    },
+    {
+      "name": "Daniel Jacobus Bantjies",
+      "idNumber": "",
+      "role": "Accountant, Trustee, Financial Architect",
+      "proofOfForeknowledge": "Swore a false affidavit in court; six irreconcilable conflicts of interest."
+    }
+  ],
+  "tierC": [
+    {
+      "name": "De Novo Business Services / Marisca Meyer",
+      "role": "Accounting Firm",
+      "involvement": "Prepared backdated 2019 financial statements.",
+      "assessment": "Acted on instruction from Rynette Farrar. No evidence of foreknowledge."
+    }
+  ],
+  "centralMotive": "The scheme constitutes a racketeering enterprise under POCA, aimed at seizing the ZAR 18.685 million payout from Ketoni Investment Holdings to the Faucitt Family Trust.",
+  "violations": [
+    {
+      "section": "s76 & s77",
+      "violation": "Failed to act with care, skill and diligence",
+      "evidence": "JF03, SF10, De Novo Fraud",
+      "status": "CONCLUSIVE"
+    },
+    {
+      "section": "s162",
+      "violation": "Delinquent Director — gross abuse of position",
+      "evidence": "JF07, JF08, Shopify Diversion",
+      "status": "CONCLUSIVE"
+    },
+    {
+      "section": "s22",
+      "violation": "Reckless Trading with intent to defraud",
+      "evidence": "Full financial record analysis",
+      "status": "CONCLUSIVE"
+    }
+  ],
+  "reliefSought": [
+    "Declare Peter Andrew Faucitt a delinquent director under Section 162.",
+    "Refer criminal conduct to NPA and SAPS Commercial Crime Unit.",
+    "Initiate investigation into Tier C participants.",
+    "Order a forensic audit of all affected companies and the Faucitt Family Trust.",
+    "Impose administrative penalties under Section 171."
+  ],
+  "annexures": [
+    { "id": "A", "description": "Foreknowledge Classification Framework" },
+    { "id": "B", "description": "Consolidated Evidence Index" },
+    { "id": "C", "description": "FNB Fraud Letter (SF10) & Analysis" }
+  ]
+}

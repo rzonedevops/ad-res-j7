@@ -1,0 +1,521 @@
+/**
+ * Tokenizer.zpp - Tokenization and Detokenization Contracts
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the contracts for tokenization, detokenization,
+ * and legal domain token handling operations.
+ */
+
+import Types.*
+import TokenizerConfig.*
+
+// ============================================================================
+// SECTION 1: TOKENIZER STATE
+// ============================================================================
+
+/**
+ * Tokenizer Instance State
+ */
+state Tokenizer {
+    config: TokenizerConfig,
+    vocab: Map<Token, TokenId>,
+    inverseVocab: Map<TokenId, Token>,
+    merges: Option<Array<Tuple<Token, Token>>>,
+    specialTokens: Set<Token>,
+    specialTokenIds: Set<TokenId>,
+    
+    // Legal Domain Extensions
+    entityTokens: Map<EntityId, TokenId>,
+    relationTokens: Map<RelationId, TokenId>,
+    principleTokens: Map<PrincipleId, TokenId>,
+    
+    // Cached Patterns
+    entityPattern: Regex,
+    relationPattern: Regex,
+    principlePattern: Regex,
+    temporalPattern: Regex
+}
+
+/**
+ * Tokenization Output
+ */
+record TokenizerOutput {
+    inputIds: Array<TokenId>,
+    attentionMask: Array<{0, 1}>,
+    tokenTypeIds: Option<Array<ℕ₀>>,
+    specialTokensMask: Array<{0, 1}>,
+    length: SeqLen,
+    
+    // Legal Domain Annotations
+    entitySpans: Array<Span>,
+    relationSpans: Array<Span>,
+    principleSpans: Array<Span>,
+    eventSpans: Array<Span>,
+    agentSpans: Array<Span>,
+    temporalSpans: Array<Span>
+}
+
+/**
+ * Span Annotation
+ */
+record Span {
+    start: ℕ₀,
+    end: ℕ₀,
+    label: String,
+    entityId: Option<EntityId>
+}
+
+/**
+ * Batch Tokenization Output
+ */
+record BatchTokenizerOutput {
+    inputIds: Array<Array<TokenId>>,
+    attentionMask: Array<Array<{0, 1}>>,
+    tokenTypeIds: Option<Array<Array<ℕ₀>>>,
+    lengths: Array<SeqLen>,
+    
+    // Batch-level Legal Annotations
+    entitySpans: Array<Array<Span>>,
+    relationSpans: Array<Array<Span>>,
+    principleSpans: Array<Array<Span>>
+}
+
+// ============================================================================
+// SECTION 2: TOKENIZER INVARIANTS
+// ============================================================================
+
+/**
+ * Vocabulary Bijection
+ */
+invariant VocabBijection:
+    ∀ tok: Tokenizer •
+        ∀ (t, id) ∈ tok.vocab •
+            tok.inverseVocab[id] = t
+
+/**
+ * Special Tokens in Vocabulary
+ */
+invariant SpecialTokensInVocab:
+    ∀ tok: Tokenizer •
+        tok.specialTokens ⊆ dom(tok.vocab)
+
+/**
+ * Special Token IDs Consistency
+ */
+invariant SpecialTokenIdsConsistency:
+    ∀ tok: Tokenizer •
+        tok.specialTokenIds = { tok.vocab[t] | t ∈ tok.specialTokens }
+
+/**
+ * Output Length Consistency
+ */
+invariant OutputLengthConsistency:
+    ∀ out: TokenizerOutput •
+        |out.inputIds| = out.length ∧
+        |out.attentionMask| = out.length ∧
+        (out.tokenTypeIds ≠ None ⟹ |out.tokenTypeIds!| = out.length) ∧
+        |out.specialTokensMask| = out.length
+
+/**
+ * Span Bounds
+ */
+invariant SpanBounds:
+    ∀ out: TokenizerOutput •
+        ∀ span ∈ out.entitySpans ∪ out.relationSpans ∪ out.principleSpans •
+            span.start < span.end ∧ span.end ≤ out.length
+
+/**
+ * Attention Mask Validity
+ */
+invariant AttentionMaskValidity:
+    ∀ out: TokenizerOutput •
+        ∀ i ∈ [0, out.length) •
+            out.attentionMask[i] = 1 ⟺ out.inputIds[i] ≠ PAD_TOKEN_ID
+
+// ============================================================================
+// SECTION 3: TOKENIZATION CONTRACTS
+// ============================================================================
+
+/**
+ * Initialize Tokenizer
+ */
+contract initTokenizer(config: TokenizerConfig): Result<Tokenizer, String>
+    requires validateTokenizerConfig(config) = Ok(())
+    ensures result = Ok(tok) ⟹
+        tok.config = config ∧
+        |tok.vocab| = config.totalVocabSize ∧
+        VocabBijection(tok) ∧
+        SpecialTokensInVocab(tok)
+
+/**
+ * Tokenize Single Text
+ */
+contract tokenize(
+    tok: Tokenizer,
+    text: Text,
+    addSpecialTokens: Boolean,
+    maxLength: Option<SeqLen>,
+    truncation: Boolean,
+    padding: PaddingStrategy
+): TokenizerOutput
+    requires text ≠ ""
+    requires maxLength = None ∨ maxLength! > 0
+    ensures result.length > 0
+    ensures result.length ≤ (maxLength ?? tok.config.maxLength)
+    ensures addSpecialTokens ⟹ 
+        result.inputIds[0] = tok.config.bosTokenId ∧
+        result.inputIds[result.length - 1] = tok.config.eosTokenId
+    ensures OutputLengthConsistency(result)
+    ensures AttentionMaskValidity(result)
+    ensures SpanBounds(result)
+
+/**
+ * Tokenize with Legal Context
+ */
+contract tokenizeWithContext(
+    tok: Tokenizer,
+    text: Text,
+    context: Context,
+    addSpecialTokens: Boolean
+): TokenizerOutput
+    requires text ≠ ""
+    ensures result.length > 0
+    ensures ∀ ent ∈ context.entities •
+        ent.id ∈ text ⟹ ∃ span ∈ result.entitySpans • span.entityId = Some(ent.id)
+    ensures OutputLengthConsistency(result)
+
+/**
+ * Batch Tokenize
+ */
+contract batchTokenize(
+    tok: Tokenizer,
+    texts: Array<Text>,
+    addSpecialTokens: Boolean,
+    maxLength: Option<SeqLen>,
+    truncation: Boolean,
+    padding: PaddingStrategy
+): BatchTokenizerOutput
+    requires |texts| > 0
+    requires ∀ t ∈ texts • t ≠ ""
+    ensures |result.inputIds| = |texts|
+    ensures |result.attentionMask| = |texts|
+    ensures |result.lengths| = |texts|
+    ensures padding = MAX_LENGTH ⟹
+        ∀ i, j ∈ [0, |texts|) • |result.inputIds[i]| = |result.inputIds[j]|
+
+/**
+ * Encode to Token IDs
+ */
+contract encode(
+    tok: Tokenizer,
+    text: Text,
+    addSpecialTokens: Boolean
+): Array<TokenId>
+    requires text ≠ ""
+    ensures |result| > 0
+    ensures ∀ tid ∈ result • tid < tok.config.totalVocabSize
+    ensures addSpecialTokens ⟹
+        result[0] = tok.config.bosTokenId ∧
+        result[|result| - 1] = tok.config.eosTokenId
+
+/**
+ * Encode Entity
+ */
+contract encodeEntity(
+    tok: Tokenizer,
+    entity: Entity
+): Array<TokenId>
+    ensures result[0] = tok.config.entityStartTokenId
+    ensures result[|result| - 1] = tok.config.entityEndTokenId
+    ensures |result| ≥ 3  // At least [ENT] + content + [/ENT]
+
+/**
+ * Encode Relation
+ */
+contract encodeRelation(
+    tok: Tokenizer,
+    relation: Relation
+): Array<TokenId>
+    ensures result[0] = tok.config.relationStartTokenId
+    ensures result[|result| - 1] = tok.config.relationEndTokenId
+    ensures |result| ≥ 3
+
+/**
+ * Encode Principle
+ */
+contract encodePrinciple(
+    tok: Tokenizer,
+    principle: LegalPrinciple
+): Array<TokenId>
+    ensures result[0] = tok.config.principleStartTokenId
+    ensures result[|result| - 1] = tok.config.principleEndTokenId
+    ensures |result| ≥ 3
+
+/**
+ * Encode Event
+ */
+contract encodeEvent(
+    tok: Tokenizer,
+    event: Event
+): Array<TokenId>
+    ensures result[0] = tok.config.eventStartTokenId
+    ensures result[|result| - 1] = tok.config.eventEndTokenId
+    ensures |result| ≥ 3
+
+/**
+ * Encode Temporal Expression
+ */
+contract encodeTemporal(
+    tok: Tokenizer,
+    timestamp: Timestamp
+): Array<TokenId>
+    ensures result[0] = tok.config.temporalStartTokenId
+    ensures result[|result| - 1] = tok.config.temporalEndTokenId
+    ensures |result| ≥ 3
+
+// ============================================================================
+// SECTION 4: DETOKENIZATION CONTRACTS
+// ============================================================================
+
+/**
+ * Decode Token IDs to Text
+ */
+contract decode(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>,
+    skipSpecialTokens: Boolean,
+    cleanUpTokenizationSpaces: Boolean
+): Text
+    requires |tokenIds| > 0
+    requires ∀ tid ∈ tokenIds • tid < tok.config.totalVocabSize
+    ensures result ≠ "" ∨ (skipSpecialTokens ∧ ∀ tid ∈ tokenIds • tid ∈ tok.specialTokenIds)
+
+/**
+ * Batch Decode
+ */
+contract batchDecode(
+    tok: Tokenizer,
+    batchTokenIds: Array<Array<TokenId>>,
+    skipSpecialTokens: Boolean,
+    cleanUpTokenizationSpaces: Boolean
+): Array<Text>
+    requires |batchTokenIds| > 0
+    ensures |result| = |batchTokenIds|
+
+/**
+ * Convert Token ID to Token
+ */
+contract idToToken(tok: Tokenizer, tokenId: TokenId): Option<Token>
+    requires tokenId < tok.config.totalVocabSize
+    ensures result = Some(tok.inverseVocab[tokenId]) ⟺ tokenId ∈ dom(tok.inverseVocab)
+
+/**
+ * Convert Token to Token ID
+ */
+contract tokenToId(tok: Tokenizer, token: Token): Option<TokenId>
+    ensures result = Some(tok.vocab[token]) ⟺ token ∈ dom(tok.vocab)
+    ensures result = None ⟹ tokenToId(tok, UNK_TOKEN) = Some(UNK_TOKEN_ID)
+
+/**
+ * Convert IDs to Tokens
+ */
+contract idsToTokens(tok: Tokenizer, tokenIds: Array<TokenId>): Array<Token>
+    requires ∀ tid ∈ tokenIds • tid < tok.config.totalVocabSize
+    ensures |result| = |tokenIds|
+    ensures ∀ i ∈ [0, |tokenIds|) •
+        result[i] = tok.inverseVocab[tokenIds[i]] ?? UNK_TOKEN
+
+/**
+ * Convert Tokens to IDs
+ */
+contract tokensToIds(tok: Tokenizer, tokens: Array<Token>): Array<TokenId>
+    ensures |result| = |tokens|
+    ensures ∀ i ∈ [0, |tokens|) •
+        result[i] = tok.vocab[tokens[i]] ?? UNK_TOKEN_ID
+
+// ============================================================================
+// SECTION 5: SPECIAL TOKEN OPERATIONS
+// ============================================================================
+
+/**
+ * Add Special Tokens to Sequence
+ */
+contract addSpecialTokens(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<TokenId>
+    ensures result[0] = tok.config.bosTokenId
+    ensures result[|result| - 1] = tok.config.eosTokenId
+    ensures |result| = |tokenIds| + 2
+
+/**
+ * Remove Special Tokens from Sequence
+ */
+contract removeSpecialTokens(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<TokenId>
+    ensures ∀ tid ∈ result • tid ∉ tok.specialTokenIds
+    ensures |result| ≤ |tokenIds|
+
+/**
+ * Get Special Tokens Mask
+ */
+contract getSpecialTokensMask(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<{0, 1}>
+    ensures |result| = |tokenIds|
+    ensures ∀ i ∈ [0, |tokenIds|) •
+        result[i] = 1 ⟺ tokenIds[i] ∈ tok.specialTokenIds
+
+/**
+ * Check if Token is Special
+ */
+contract isSpecialToken(tok: Tokenizer, tokenId: TokenId): Boolean
+    ensures result = (tokenId ∈ tok.specialTokenIds)
+
+// ============================================================================
+// SECTION 6: PADDING AND TRUNCATION
+// ============================================================================
+
+/**
+ * Pad Sequence
+ */
+contract padSequence(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>,
+    maxLength: SeqLen,
+    paddingSide: PaddingSide
+): Array<TokenId>
+    requires maxLength ≥ |tokenIds|
+    ensures |result| = maxLength
+    ensures paddingSide = LEFT ⟹
+        result[maxLength - |tokenIds|..] = tokenIds
+    ensures paddingSide = RIGHT ⟹
+        result[..|tokenIds|] = tokenIds
+    ensures ∀ i ∈ [0, maxLength - |tokenIds|) •
+        (paddingSide = LEFT ⟹ result[i] = tok.config.padTokenId) ∧
+        (paddingSide = RIGHT ⟹ result[|tokenIds| + i] = tok.config.padTokenId)
+
+/**
+ * Truncate Sequence
+ */
+contract truncateSequence(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>,
+    maxLength: SeqLen,
+    truncationSide: TruncationSide
+): Array<TokenId>
+    requires maxLength > 0
+    ensures |result| = min(|tokenIds|, maxLength)
+    ensures truncationSide = LEFT ⟹
+        result = tokenIds[|tokenIds| - |result|..]
+    ensures truncationSide = RIGHT ⟹
+        result = tokenIds[..|result|]
+
+/**
+ * Padding Side Enumeration
+ */
+enum PaddingSide {
+    LEFT,
+    RIGHT
+}
+
+/**
+ * Truncation Side Enumeration
+ */
+enum TruncationSide {
+    LEFT,
+    RIGHT
+}
+
+// ============================================================================
+// SECTION 7: LEGAL DOMAIN EXTRACTION
+// ============================================================================
+
+/**
+ * Extract Entity Spans from Tokenized Output
+ */
+contract extractEntitySpans(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<Span>
+    ensures ∀ span ∈ result •
+        tokenIds[span.start] = tok.config.entityStartTokenId ∧
+        tokenIds[span.end - 1] = tok.config.entityEndTokenId
+
+/**
+ * Extract Relation Spans from Tokenized Output
+ */
+contract extractRelationSpans(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<Span>
+    ensures ∀ span ∈ result •
+        tokenIds[span.start] = tok.config.relationStartTokenId ∧
+        tokenIds[span.end - 1] = tok.config.relationEndTokenId
+
+/**
+ * Extract Principle Spans from Tokenized Output
+ */
+contract extractPrincipleSpans(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<Span>
+    ensures ∀ span ∈ result •
+        tokenIds[span.start] = tok.config.principleStartTokenId ∧
+        tokenIds[span.end - 1] = tok.config.principleEndTokenId
+
+/**
+ * Extract Temporal Spans from Tokenized Output
+ */
+contract extractTemporalSpans(
+    tok: Tokenizer,
+    tokenIds: Array<TokenId>
+): Array<Span>
+    ensures ∀ span ∈ result •
+        tokenIds[span.start] = tok.config.temporalStartTokenId ∧
+        tokenIds[span.end - 1] = tok.config.temporalEndTokenId
+
+// ============================================================================
+// SECTION 8: ROUNDTRIP PROPERTIES
+// ============================================================================
+
+/**
+ * Encode-Decode Roundtrip (without special tokens)
+ */
+property EncodeDecodeRoundtrip:
+    ∀ tok: Tokenizer, text: Text •
+        let encoded = encode(tok, text, false) in
+        let decoded = decode(tok, encoded, false, true) in
+        normalize(decoded) = normalize(text)
+
+/**
+ * Tokenize-Detokenize Roundtrip
+ */
+property TokenizeDetokenizeRoundtrip:
+    ∀ tok: Tokenizer, text: Text •
+        let output = tokenize(tok, text, false, None, false, DO_NOT_PAD) in
+        let decoded = decode(tok, output.inputIds, false, true) in
+        normalize(decoded) = normalize(text)
+
+/**
+ * ID-Token Bijection
+ */
+property IdTokenBijection:
+    ∀ tok: Tokenizer, tid: TokenId •
+        tid < tok.config.totalVocabSize ⟹
+        let token = idToToken(tok, tid) in
+        token ≠ None ⟹ tokenToId(tok, token!) = Some(tid)
+
+/**
+ * Normalization Helper
+ */
+function normalize(text: Text): Text
+    // Normalize whitespace and casing for comparison
+
+// ============================================================================
+// END OF TOKENIZER.ZPP
+// ============================================================================

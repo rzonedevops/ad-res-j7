@@ -1,0 +1,44 @@
+{
+  "caseRef": "2025-137857-SAICA",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Balance of Probabilities (50%+) — EXCEEDED",
+  "professionalBody": "SAICA",
+  "executiveSummary": "This complaint details serious professional misconduct by a chartered accountant who operated under six irreconcilable conflicts of interest, swore a false affidavit, acted as Commissioner of Oaths for his own affidavit, and concealed a R5.4M stock disappearance.",
+  "complainants": {
+    "names": "Jacqueline Faucitt and Daniel James Faucitt",
+    "capacity": "Trust Beneficiaries and Company Directors"
+  },
+  "respondent": {
+    "name": "Daniel Jacobus Bantjies",
+    "membershipNumber": "To be confirmed",
+    "designation": "Chartered Accountant CA(SA)",
+    "firm": "George Group / Self-employed"
+  },
+  "conflictsOfInterest": [
+    { "conflict": "Trustee of Faucitt Family Trust AND Commissioner of Oaths for own affidavit", "evidence": "Court documents, affidavit", "status": "PROVEN" },
+    { "conflict": "CFO of George Group AND Trustee of FFT (opposing interests)", "evidence": "CIPC records, Trust deed", "status": "PROVEN" },
+    { "conflict": "Affidavit witness AND interested party in Trust assets", "evidence": "Sworn affidavit, Trust beneficiary records", "status": "PROVEN" },
+    { "conflict": "Ketoni insider AND FFT Trustee (R18.685M transaction)", "evidence": "Ketoni/FFT records", "status": "PROVEN" },
+    { "conflict": "Distribution controller AND beneficiary of distribution scheme", "evidence": "Financial records", "status": "PROVEN" },
+    { "conflict": "Auditor role AND active participant in scheme", "evidence": "Dismissed Daniel's audit requests", "status": "PROVEN" }
+  ],
+  "breaches": [
+    { "code": "SAICA Code", "rule": "Independence", "breach": "Six irreconcilable conflicts of interest while acting in professional capacity", "evidence": "CIPC records, Trust deed, court filings", "status": "PROVEN" },
+    { "code": "SAICA Code", "rule": "Integrity", "breach": "Swore a false supporting affidavit to the High Court", "evidence": "Court records, contradicting evidence", "status": "PROVEN" },
+    { "code": "SAICA Code", "rule": "Professional Competence", "breach": "Acted as Commissioner of Oaths for own affidavit (procedural impossibility)", "evidence": "Affidavit bearing his signature as both deponent and commissioner", "status": "PROVEN" },
+    { "code": "SAICA Code", "rule": "Professional Behaviour", "breach": "Concealed R5.4M stock disappearance from audit", "evidence": "SLG financial records", "status": "PROVEN" }
+  ],
+  "reliefSought": [
+    "Investigate the respondent's conduct and conflicts of interest.",
+    "Suspend the respondent's membership pending outcome of investigation.",
+    "Refer the matter for formal disciplinary hearing.",
+    "Report findings to the Independent Regulatory Board for Auditors (IRBA).",
+    "Notify all entities for which the respondent acts in a professional capacity."
+  ],
+  "annexures": [
+    { "id": "A", "description": "Conflict of Interest Analysis" },
+    { "id": "B", "description": "False Affidavit Evidence" },
+    { "id": "C", "description": "Commissioner of Oaths Procedural Analysis" }
+  ]
+}

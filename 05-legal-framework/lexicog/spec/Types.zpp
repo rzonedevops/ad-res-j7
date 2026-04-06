@@ -1,0 +1,442 @@
+/**
+ * Types.zpp - Global Constants and Type Aliases
+ * Lexicog Core / Ad-Res-J7 Model Package
+ * Z++ Formal Specification v1.0
+ * 
+ * This specification defines the foundational types, constants, and aliases
+ * used throughout the lexicog legal reasoning system.
+ */
+
+// ============================================================================
+// SECTION 1: PRIMITIVE TYPE ALIASES
+// ============================================================================
+
+/**
+ * Basic numeric types with precision guarantees
+ */
+type TokenId = ℕ₀                           // Non-negative integer token identifier
+type VocabSize = ℕ₊                         // Positive integer vocabulary size
+type SeqLen = ℕ₀                            // Sequence length (0 for empty)
+type BatchSize = ℕ₊                         // Positive batch size
+type EmbedDim = ℕ₊                          // Embedding dimension
+type HiddenDim = ℕ₊                         // Hidden layer dimension
+type NumHeads = ℕ₊                          // Number of attention heads
+type NumLayers = ℕ₊                         // Number of transformer layers
+type Confidence = ℝ[0,1]                    // Confidence score in [0,1]
+type Probability = ℝ[0,1]                   // Probability value in [0,1]
+type LogProb = ℝ[-∞,0]                      // Log probability (≤ 0)
+type Temperature = ℝ₊                       // Sampling temperature (> 0)
+
+/**
+ * String and text types
+ */
+type Token = String                         // Raw token string
+type Text = String                          // Input/output text
+type EntityId = String                      // Entity identifier
+type RelationId = String                    // Relation identifier
+type PrincipleId = String                   // Legal principle identifier
+type DomainId = String                      // Legal domain identifier
+
+// ============================================================================
+// SECTION 2: GLOBAL CONSTANTS - LEXICOG CORE
+// ============================================================================
+
+/**
+ * Lexicog Framework Version Constants
+ */
+const LEX_FRAMEWORK_VERSION: String = "2.1"
+const LEX_SPEC_VERSION: String = "1.0.0"
+const MODEL_PACKAGE: String = "ad-res-j7"
+
+/**
+ * Vocabulary Constants
+ */
+const VOCAB_SIZE: VocabSize = 32000         // Base vocabulary size
+const LEX_VOCAB_SIZE: VocabSize = 8192      // Legal domain vocabulary extension
+const TOTAL_VOCAB_SIZE: VocabSize = VOCAB_SIZE + LEX_VOCAB_SIZE
+
+/**
+ * Special Token IDs
+ */
+const PAD_TOKEN_ID: TokenId = 0
+const UNK_TOKEN_ID: TokenId = 1
+const BOS_TOKEN_ID: TokenId = 2
+const EOS_TOKEN_ID: TokenId = 3
+const SEP_TOKEN_ID: TokenId = 4
+const CLS_TOKEN_ID: TokenId = 5
+const MASK_TOKEN_ID: TokenId = 6
+
+/**
+ * Legal Domain Special Tokens
+ */
+const ENTITY_START_ID: TokenId = 7
+const ENTITY_END_ID: TokenId = 8
+const RELATION_START_ID: TokenId = 9
+const RELATION_END_ID: TokenId = 10
+const PRINCIPLE_START_ID: TokenId = 11
+const PRINCIPLE_END_ID: TokenId = 12
+const EVENT_START_ID: TokenId = 13
+const EVENT_END_ID: TokenId = 14
+const AGENT_START_ID: TokenId = 15
+const AGENT_END_ID: TokenId = 16
+const TEMPORAL_START_ID: TokenId = 17
+const TEMPORAL_END_ID: TokenId = 18
+
+/**
+ * Special Token Strings
+ */
+const PAD_TOKEN: Token = "[PAD]"
+const UNK_TOKEN: Token = "[UNK]"
+const BOS_TOKEN: Token = "[BOS]"
+const EOS_TOKEN: Token = "[EOS]"
+const SEP_TOKEN: Token = "[SEP]"
+const CLS_TOKEN: Token = "[CLS]"
+const MASK_TOKEN: Token = "[MASK]"
+const ENTITY_START: Token = "[ENT]"
+const ENTITY_END: Token = "[/ENT]"
+const RELATION_START: Token = "[REL]"
+const RELATION_END: Token = "[/REL]"
+const PRINCIPLE_START: Token = "[PRIN]"
+const PRINCIPLE_END: Token = "[/PRIN]"
+const EVENT_START: Token = "[EVT]"
+const EVENT_END: Token = "[/EVT]"
+const AGENT_START: Token = "[AGT]"
+const AGENT_END: Token = "[/AGT]"
+const TEMPORAL_START: Token = "[TMP]"
+const TEMPORAL_END: Token = "[/TMP]"
+
+// ============================================================================
+// SECTION 3: MODEL ARCHITECTURE CONSTANTS
+// ============================================================================
+
+/**
+ * Default Model Dimensions
+ */
+const DEFAULT_EMBED_DIM: EmbedDim = 768
+const DEFAULT_HIDDEN_DIM: HiddenDim = 3072
+const DEFAULT_NUM_HEADS: NumHeads = 12
+const DEFAULT_NUM_LAYERS: NumLayers = 12
+const DEFAULT_MAX_SEQ_LEN: SeqLen = 4096
+const DEFAULT_DROPOUT: ℝ[0,1] = 0.1
+
+/**
+ * Multi-Agent Attention Constants
+ */
+const NUM_AGENT_HEADS: NumHeads = 4         // Dedicated agent attention heads
+const CROSS_ATTENTION_HEADS: NumHeads = 4   // Cross-agent attention heads
+const SELF_ATTENTION_HEADS: NumHeads = 4    // Self-attention heads
+
+/**
+ * Legal Reasoning Constants
+ */
+const MAX_ENTITIES: ℕ₊ = 64                 // Maximum entities per context
+const MAX_RELATIONS: ℕ₊ = 256               // Maximum relations per context
+const MAX_EVENTS: ℕ₊ = 128                  // Maximum events per timeline
+const MAX_PRINCIPLES: ℕ₊ = 512              // Maximum legal principles
+const MAX_TUPLE_SIZE: ℕ₊ = 8                // Maximum n-tuple dimension
+
+// ============================================================================
+// SECTION 4: ENUMERATED TYPES
+// ============================================================================
+
+/**
+ * Entity Types in Legal Domain
+ */
+enum EntityType {
+    NATURAL_PERSON,                         // Human individual
+    JURISTIC_PERSON,                        // Legal entity (company, trust)
+    TRUST,                                  // Trust entity
+    COMPANY,                                // Registered company
+    PARTNERSHIP,                            // Business partnership
+    GOVERNMENT_BODY,                        // Government entity
+    COURT,                                  // Judicial body
+    UNKNOWN                                 // Unclassified entity
+}
+
+/**
+ * Relation Categories
+ */
+enum RelationCategory {
+    FAMILY,                                 // Family relationships
+    OWNERSHIP,                              // Ownership/shareholding
+    EMPLOYMENT,                             // Employment relationships
+    FIDUCIARY,                              // Fiduciary duties
+    CONTRACTUAL,                            // Contractual relationships
+    ADVERSARIAL,                            // Legal adversaries
+    COORDINATION,                           // Coordinated action
+    CONTROL,                                // Control relationships
+    TEMPORAL,                               // Temporal relationships
+    CAUSAL                                  // Causal relationships
+}
+
+/**
+ * Event Categories
+ */
+enum EventCategory {
+    CONTRACTUAL,                            // Contract-related events
+    RETALIATION,                            // Retaliatory actions
+    COORDINATION,                           // Coordinated actions
+    DISCLOSURE,                             // Information disclosure
+    BREACH,                                 // Breach of duty/contract
+    FRAUD,                                  // Fraudulent acts
+    LEGAL_ACTION,                           // Court filings, etc.
+    ADMINISTRATIVE,                         // Administrative actions
+    FINANCIAL,                              // Financial transactions
+    COMMUNICATION                           // Communications
+}
+
+/**
+ * Legal Domains
+ */
+enum LegalDomain {
+    CIVIL,                                  // Civil law
+    CRIMINAL,                               // Criminal law
+    ADMINISTRATIVE,                         // Administrative law
+    CONSTITUTIONAL,                         // Constitutional law
+    COMPANY,                                // Company law
+    TRUST,                                  // Trust law
+    LABOUR,                                 // Labour law
+    EVIDENCE,                               // Law of evidence
+    PROCEDURE,                              // Procedural law
+    CONTRACT,                               // Contract law
+    DELICT,                                 // Law of delict
+    PROPERTY                                // Property law
+}
+
+/**
+ * Inference Types
+ */
+enum InferenceType {
+    DEDUCTIVE,                              // Deductive reasoning
+    INDUCTIVE,                              // Inductive reasoning
+    ABDUCTIVE,                              // Abductive reasoning
+    ANALOGICAL,                             // Reasoning by analogy
+    PROBABILISTIC                           // Probabilistic inference
+}
+
+/**
+ * Pattern Types for Detection
+ */
+enum PatternType {
+    COORDINATION,                           // Multi-actor coordination
+    RETALIATION,                            // Retaliatory pattern
+    CONFLICT,                               // Conflict pattern
+    CONTROL,                                // Control pattern
+    CO_RESPONDENT,                          // Co-respondent defense
+    FIDUCIARY_BREACH,                       // Fiduciary breach pattern
+    FRAUD,                                  // Fraud pattern
+    TEMPORAL_CAUSATION                      // Temporal causation
+}
+
+// ============================================================================
+// SECTION 5: COMPOSITE TYPES
+// ============================================================================
+
+/**
+ * Tensor Shape Type
+ */
+type Shape = Tuple<ℕ₊>                      // Tensor dimensions
+
+/**
+ * Token Sequence
+ */
+type TokenSequence = Array<TokenId>
+
+/**
+ * Attention Mask
+ */
+type AttentionMask = Array<{0, 1}>          // Binary mask
+
+/**
+ * Embedding Vector
+ */
+type EmbeddingVector = Array<ℝ>[EmbedDim]
+
+/**
+ * Hidden State
+ */
+type HiddenState = Array<ℝ>[HiddenDim]
+
+/**
+ * Probability Distribution over Vocabulary
+ */
+type VocabDistribution = Array<Probability>[TOTAL_VOCAB_SIZE]
+
+/**
+ * Log Probability Distribution
+ */
+type LogVocabDistribution = Array<LogProb>[TOTAL_VOCAB_SIZE]
+
+/**
+ * Entity Representation
+ */
+record Entity {
+    id: EntityId,
+    name: String,
+    type: EntityType,
+    aliases: Array<String>,
+    attributes: Map<String, String>,
+    embedding: Option<EmbeddingVector>
+}
+
+/**
+ * Relation Representation
+ */
+record Relation {
+    id: RelationId,
+    sourceEntity: EntityId,
+    targetEntity: EntityId,
+    category: RelationCategory,
+    type: String,
+    confidence: Confidence,
+    startDate: Option<Timestamp>,
+    endDate: Option<Timestamp>,
+    evidence: Array<String>
+}
+
+/**
+ * Event Representation
+ */
+record Event {
+    id: String,
+    timestamp: Timestamp,
+    category: EventCategory,
+    description: String,
+    involvedEntities: Array<EntityId>,
+    causedBy: Option<String>,
+    causesEvents: Array<String>,
+    temporalProximity: Option<ℕ₀>,          // Milliseconds
+    confidence: Confidence,
+    evidence: Array<String>
+}
+
+/**
+ * Legal Principle
+ */
+record LegalPrinciple {
+    id: PrincipleId,
+    name: String,
+    level: ℕ₊,                              // Hierarchy level
+    confidence: Confidence,
+    description: String,
+    domains: Array<LegalDomain>,
+    provenance: String,
+    relatedPrinciples: Array<PrincipleId>,
+    inferenceType: InferenceType,
+    applicationContext: String
+}
+
+/**
+ * N-Tuple for Dimensional Slicing
+ */
+record NTuple<N: ℕ₊> {
+    id: String,
+    dimension: N,
+    elements: Array<EntityId>[N],
+    relationTypes: Array<String>,
+    confidence: Confidence,
+    category: String,
+    metadata: Map<String, String>
+}
+
+/**
+ * Hyperedge for Hypergraph
+ */
+record Hyperedge {
+    id: String,
+    nodes: Array<EntityId>,
+    edgeType: String,
+    weight: ℝ[0,1],
+    attributes: Map<String, String>
+}
+
+/**
+ * Agent State for Multi-Agent Attention
+ */
+record AgentState {
+    entityId: EntityId,
+    selfAttention: Array<ℝ>,
+    crossAttention: Map<EntityId, Array<ℝ>>,
+    psychologicalState: Map<String, ℝ>,
+    perceivedStates: Map<EntityId, Map<String, ℝ>>
+}
+
+/**
+ * Timestamp Type
+ */
+type Timestamp = ℕ₀                         // Unix timestamp in milliseconds
+
+// ============================================================================
+// SECTION 6: INVARIANTS
+// ============================================================================
+
+/**
+ * Global Type Invariants
+ */
+invariant VocabSizeInvariant:
+    TOTAL_VOCAB_SIZE = VOCAB_SIZE + LEX_VOCAB_SIZE
+
+invariant SpecialTokenOrdering:
+    PAD_TOKEN_ID < UNK_TOKEN_ID ∧
+    UNK_TOKEN_ID < BOS_TOKEN_ID ∧
+    BOS_TOKEN_ID < EOS_TOKEN_ID
+
+invariant AttentionHeadSum:
+    NUM_AGENT_HEADS + CROSS_ATTENTION_HEADS + SELF_ATTENTION_HEADS ≤ DEFAULT_NUM_HEADS
+
+invariant ConfidenceBounds:
+    ∀ c: Confidence • 0 ≤ c ≤ 1
+
+invariant ProbabilityNormalization:
+    ∀ dist: VocabDistribution • sum(dist) = 1.0
+
+invariant TokenIdBounds:
+    ∀ tid: TokenId • tid < TOTAL_VOCAB_SIZE
+
+invariant TupleSize:
+    ∀ t: NTuple<N> • 2 ≤ N ≤ MAX_TUPLE_SIZE
+
+invariant EntityLimit:
+    ∀ ctx: Context • |ctx.entities| ≤ MAX_ENTITIES
+
+invariant RelationLimit:
+    ∀ ctx: Context • |ctx.relations| ≤ MAX_RELATIONS
+
+invariant EventLimit:
+    ∀ ctx: Context • |ctx.events| ≤ MAX_EVENTS
+
+// ============================================================================
+// SECTION 7: TYPE CONSTRUCTORS
+// ============================================================================
+
+/**
+ * Option Type for Nullable Values
+ */
+type Option<T> = Some<T> | None
+
+/**
+ * Result Type for Error Handling
+ */
+type Result<T, E> = Ok<T> | Err<E>
+
+/**
+ * Either Type for Disjoint Unions
+ */
+type Either<L, R> = Left<L> | Right<R>
+
+/**
+ * Context Type for Legal Reasoning
+ */
+record Context {
+    entities: Array<Entity>,
+    relations: Array<Relation>,
+    events: Array<Event>,
+    principles: Array<LegalPrinciple>,
+    tuples: Array<NTuple<_>>,
+    hyperedges: Array<Hyperedge>,
+    agentStates: Map<EntityId, AgentState>
+}
+
+// ============================================================================
+// END OF TYPES.ZPP
+// ============================================================================

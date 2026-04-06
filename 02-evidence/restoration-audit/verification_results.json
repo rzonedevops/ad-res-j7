@@ -1,0 +1,803 @@
+{
+  "CIPC": {
+    "category": "CIPC",
+    "files": [
+      {
+        "size": 19798,
+        "lines": 479,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md"
+      },
+      {
+        "size": 19322,
+        "lines": 465,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251214.md"
+      },
+      {
+        "size": 19322,
+        "lines": 465,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md"
+      },
+      {
+        "size": 19197,
+        "lines": 461,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+      },
+      {
+        "size": 19197,
+        "lines": 461,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+      },
+      {
+        "size": 19108,
+        "lines": 359,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [
+          "Section 77"
+        ],
+        "completeness": 90.0,
+        "path": "docs/CIPC_COMPLAINT_REFINED_2026_01_03.backup_20260105_054131.md"
+      },
+      {
+        "size": 17951,
+        "lines": 434,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10.md"
+      },
+      {
+        "size": 17837,
+        "lines": 426,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_07.md"
+      },
+      {
+        "size": 17595,
+        "lines": 423,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_SF9_INTEGRATED_2025_12_09.md"
+      },
+      {
+        "size": 17476,
+        "lines": 418,
+        "found_markers": [
+          "Companies Act",
+          "Section 76",
+          "Section 77",
+          "Section 162",
+          "R10",
+          "Burden of Proof",
+          "Evidence",
+          "Peter Andrew Faucitt",
+          "Rynette Farrar",
+          "Bantjies"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/CIPC_COMPLAINT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md"
+      }
+    ],
+    "best_version": {
+      "size": 19798,
+      "lines": 479,
+      "found_markers": [
+        "Companies Act",
+        "Section 76",
+        "Section 77",
+        "Section 162",
+        "R10",
+        "Burden of Proof",
+        "Evidence",
+        "Peter Andrew Faucitt",
+        "Rynette Farrar",
+        "Bantjies"
+      ],
+      "missing_markers": [],
+      "completeness": 100.0,
+      "path": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md"
+    },
+    "issues": []
+  },
+  "POPIA": {
+    "category": "POPIA",
+    "files": [
+      {
+        "size": 15652,
+        "lines": 390,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Unauthorized Access",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud"
+        ],
+        "completeness": 62.5,
+        "path": "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+      },
+      {
+        "size": 15357,
+        "lines": 377,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md"
+      },
+      {
+        "size": 14881,
+        "lines": 363,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251214.md"
+      },
+      {
+        "size": 14881,
+        "lines": 363,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md"
+      },
+      {
+        "size": 14858,
+        "lines": 345,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Identity Fraud",
+          "Unauthorized Access",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14"
+        ],
+        "completeness": 75.0,
+        "path": "docs/filings/popia_complaint_REFINED_2026_01_18.md"
+      },
+      {
+        "size": 14756,
+        "lines": 359,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+      },
+      {
+        "size": 14438,
+        "lines": 319,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/criminal/POPIA_COMPLAINT_COMPREHENSIVE_2025_12_28.md"
+      },
+      {
+        "size": 13510,
+        "lines": 332,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10.md"
+      },
+      {
+        "size": 13132,
+        "lines": 318,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_05.md"
+      },
+      {
+        "size": 13132,
+        "lines": 318,
+        "found_markers": [
+          "POPIA",
+          "Personal Information",
+          "Section 19",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Information Officer",
+          "Section 14",
+          "Identity Fraud",
+          "Unauthorized Access"
+        ],
+        "completeness": 50.0,
+        "path": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_06.md"
+      }
+    ],
+    "best_version": {
+      "size": 15652,
+      "lines": 390,
+      "found_markers": [
+        "POPIA",
+        "Personal Information",
+        "Section 19",
+        "Unauthorized Access",
+        "Evidence"
+      ],
+      "missing_markers": [
+        "Information Officer",
+        "Section 14",
+        "Identity Fraud"
+      ],
+      "completeness": 62.5,
+      "path": "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+    },
+    "issues": [
+      "Best version only 62% complete"
+    ]
+  },
+  "NPA": {
+    "category": "NPA",
+    "files": [
+      {
+        "size": 14874,
+        "lines": 349,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [
+          "Income Tax"
+        ],
+        "completeness": 85.71428571428571,
+        "path": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md"
+      },
+      {
+        "size": 14874,
+        "lines": 349,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [
+          "Income Tax"
+        ],
+        "completeness": 85.71428571428571,
+        "path": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md"
+      },
+      {
+        "size": 11288,
+        "lines": 272,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/npa_tax_fraud_report_REFINED_2026_01_18.md"
+      },
+      {
+        "size": 11288,
+        "lines": 272,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/npa_tax_fraud_report_REFINED_2026_01_18.md"
+      },
+      {
+        "size": 9049,
+        "lines": 237,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2026_01_08.md"
+      },
+      {
+        "size": 9049,
+        "lines": 237,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/NPA_REFINED_2026_01_28.md"
+      },
+      {
+        "size": 9049,
+        "lines": 237,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2026_01_08.md"
+      },
+      {
+        "size": 8593,
+        "lines": 256,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md"
+      },
+      {
+        "size": 8593,
+        "lines": 256,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "Income Tax",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [],
+        "completeness": 100.0,
+        "path": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md"
+      },
+      {
+        "size": 8332,
+        "lines": 252,
+        "found_markers": [
+          "Tax Fraud",
+          "SARS",
+          "VAT",
+          "R",
+          "Evidence",
+          "Criminal"
+        ],
+        "missing_markers": [
+          "Income Tax"
+        ],
+        "completeness": 85.71428571428571,
+        "path": "docs/NPA_TAX_FRAUD_REPORT_2025_12_21.md"
+      }
+    ],
+    "best_version": {
+      "size": 14874,
+      "lines": 349,
+      "found_markers": [
+        "Tax Fraud",
+        "SARS",
+        "VAT",
+        "R",
+        "Evidence",
+        "Criminal"
+      ],
+      "missing_markers": [
+        "Income Tax"
+      ],
+      "completeness": 85.71428571428571,
+      "path": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md"
+    },
+    "issues": []
+  },
+  "Commercial Crime": {
+    "category": "Commercial Crime",
+    "files": [
+      {
+        "size": 8193,
+        "lines": 284,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md"
+      },
+      {
+        "size": 7717,
+        "lines": 270,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251214.md"
+      },
+      {
+        "size": 7717,
+        "lines": 270,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10_REFINED_20251213.md"
+      },
+      {
+        "size": 7599,
+        "lines": 266,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10.md"
+      },
+      {
+        "size": 7417,
+        "lines": 255,
+        "found_markers": [
+          "Commercial Crime",
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "R5.4"
+        ],
+        "completeness": 85.71428571428571,
+        "path": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_ENHANCED_2025_12_07.md"
+      },
+      {
+        "size": 7171,
+        "lines": 252,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_SF9_INTEGRATED_2025_12_09.md"
+      },
+      {
+        "size": 7052,
+        "lines": 247,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_FINAL_EVIDENCE_ENHANCED_2025_12_09.md"
+      },
+      {
+        "size": 6942,
+        "lines": 242,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_2025_12_08.md"
+      },
+      {
+        "size": 6821,
+        "lines": 237,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_05.md"
+      },
+      {
+        "size": 6821,
+        "lines": 237,
+        "found_markers": [
+          "Fraud",
+          "Theft",
+          "Money Laundering",
+          "R10",
+          "Evidence"
+        ],
+        "missing_markers": [
+          "Commercial Crime",
+          "R5.4"
+        ],
+        "completeness": 71.42857142857143,
+        "path": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_06.md"
+      }
+    ],
+    "best_version": {
+      "size": 8193,
+      "lines": 284,
+      "found_markers": [
+        "Fraud",
+        "Theft",
+        "Money Laundering",
+        "R10",
+        "Evidence"
+      ],
+      "missing_markers": [
+        "Commercial Crime",
+        "R5.4"
+      ],
+      "completeness": 71.42857142857143,
+      "path": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md"
+    },
+    "issues": []
+  }
+}

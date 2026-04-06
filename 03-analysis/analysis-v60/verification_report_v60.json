@@ -1,0 +1,756 @@
+{
+  "version": "60.0",
+  "date": "2026-01-06T02:12:14.972986",
+  "verification_summary": {
+    "total_verifications": 98,
+    "total_errors": 0,
+    "total_warnings": 0,
+    "critical_errors": 0,
+    "high_errors": 0,
+    "medium_warnings": 0,
+    "low_warnings": 0
+  },
+  "verification_results": [
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-NP-001-V60"
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Peter Faucitt"
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "natural-person"
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "trustee",
+        "beneficiary",
+        "applicant"
+      ]
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "sole-trustee-faucitt-family-trust"
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "trust-law-principles",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "trustee-powers-and-duties",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "beneficiary-rights",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "ketoni-payout-structure",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "ketoni-payout-r18.75m-may-2026",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "co-beneficiaries-jax-dan-entitled-to-share",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "trust-absolute-powers-to-resolve-disputes",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "family-court-curatorship-pathway",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "full-trust-documentation",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "full-financial-records",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "ketoni-payout-schedule",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "share-certificates",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.knowledge_timeline",
+      "claim": {
+        "date": "2024-05",
+        "event": "Ketoni transaction finalized, payout scheduled May 2026"
+      },
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-001-V60",
+      "attribute": "knowledge_state.knowledge_timeline",
+      "claim": {
+        "date": "2025-08-19",
+        "event": "Filed ex parte interdict (T-9 months before payout)"
+      },
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-NP-002-V60"
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Jacqueline Faucitt"
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "natural-person"
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "beneficiary",
+        "director",
+        "responsible-person",
+        "respondent"
+      ]
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "co-beneficiary-faucitt-family-trust"
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "company-operations",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "regulatory-compliance",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "responsible-person-duties",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "business-administration",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "co-beneficiary-status",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "entitled-to-share-of-ketoni-payout",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "peter-sole-trustee-with-absolute-powers",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "interdict-threatens-business-operations",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "company-financial-records",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "regulatory-documentation",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "business-correspondence",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-002-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "trust-deed-copy",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-NP-003-V60"
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Daniel Faucitt"
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "natural-person"
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "beneficiary",
+        "cio",
+        "technical-director",
+        "respondent"
+      ]
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "co-beneficiary-faucitt-family-trust"
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "technical-infrastructure",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "platform-architecture",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "uk-company-operations",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.domain_knowledge",
+      "claim": "investment-structure",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "co-beneficiary-status",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "uk-company-invested-r1m-in-za-operations",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "platform-ownership-and-funding",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.situational_awareness",
+      "claim": "interdict-disrupts-technical-operations",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "technical-infrastructure-documentation",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "uk-company-financial-records",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "platform-funding-evidence",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-003-V60",
+      "attribute": "knowledge_state.information_access",
+      "claim": "investment-documentation",
+      "status": "VERIFIED",
+      "verification_level": 6,
+      "confidence": 0.8
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-NP-004-V60"
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Rynette Faucitt"
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "natural-person"
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "family-member",
+        "trust-manipulator"
+      ]
+    },
+    {
+      "agent_id": "AGENT-NP-004-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "not-beneficiary-but-active-participant"
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-NP-005-V60"
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Bantjies"
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "natural-person"
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "appointed-trustee",
+        "attorney"
+      ]
+    },
+    {
+      "agent_id": "AGENT-NP-005-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "trustee-appointed-july-2024"
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-LE-001-V60"
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Faucitt Family Trust"
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "legal-entity"
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "trust",
+        "ketoni-payout-recipient"
+      ]
+    },
+    {
+      "agent_id": "AGENT-LE-001-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "registered-trust"
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-LE-002-V60"
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "RegimA SA (Pty) Ltd"
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "legal-entity"
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "operating-company",
+        "manufacturer"
+      ]
+    },
+    {
+      "agent_id": "AGENT-LE-002-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "registered-company-za"
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-LE-003-V60"
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "RegimA Zone Ltd"
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "legal-entity"
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "uk-holding-company",
+        "investor",
+        "platform-owner"
+      ]
+    },
+    {
+      "agent_id": "AGENT-LE-003-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "registered-company-uk"
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-LE-004-V60"
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "RWD (Pty) Ltd"
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "legal-entity"
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "distributor",
+        "revenue-collector"
+      ]
+    },
+    {
+      "agent_id": "AGENT-LE-004-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "registered-company-za"
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "id",
+      "status": "VERIFIED",
+      "value": "AGENT-LE-005-V60"
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "version",
+      "status": "VERIFIED",
+      "value": "60.0"
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "name",
+      "status": "VERIFIED",
+      "value": "Ketoni"
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "type",
+      "status": "VERIFIED",
+      "value": "legal-entity"
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "roles",
+      "status": "VERIFIED",
+      "value": [
+        "payout-obligor"
+      ]
+    },
+    {
+      "agent_id": "AGENT-LE-005-V60",
+      "attribute": "legal_status",
+      "status": "VERIFIED",
+      "value": "external-entity"
+    }
+  ],
+  "verification_errors": [],
+  "verification_warnings": [],
+  "verification_levels_used": {
+    "1": {
+      "name": "court-documents",
+      "confidence": 1.0
+    },
+    "2": {
+      "name": "statutory-records",
+      "confidence": 0.98
+    },
+    "3": {
+      "name": "business-records",
+      "confidence": 0.95
+    },
+    "4": {
+      "name": "email-correspondence",
+      "confidence": 0.92
+    },
+    "5": {
+      "name": "witness-statements",
+      "confidence": 0.85
+    },
+    "6": {
+      "name": "inference-from-evidence",
+      "confidence": 0.8
+    },
+    "7": {
+      "name": "expert-opinion",
+      "confidence": 0.75
+    },
+    "8": {
+      "name": "logical-deduction",
+      "confidence": 0.7
+    }
+  }
+}

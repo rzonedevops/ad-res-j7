@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-26T02:03:37.952958",
+    "version": "v45",
+    "case": "2025-137857",
+    "purpose": "Lex scheme refinement for optimal legal resolution"
+  },
+  "summary": {
+    "total_scheme_files": 132,
+    "entities_defined": 6,
+    "legal_principles": 5,
+    "refinement_opportunities": 4
+  },
+  "categorized_schemes": {
+    "entity_models": [
+      "case_2025_137857_entity_data_v43_verified.scm",
+      "case_2025_137857_entity_data_v44_verified.scm",
+      "case_2025_137857_entity_relation_data_v1.scm",
+      "entity_agent_modeling_v1.scm",
+      "entity_agent_modeling_v2_enhanced.scm",
+      "entity_relation_framework_v3_comprehensive.scm",
+      "entity_relation_framework_v43_comprehensive.scm",
+      "entity_relation_framework_v44_enhanced.scm",
+      "civ/za/south_african_civil_law_agent_based_conflict_resolution.scm",
+      "civ/za/south_african_civil_law_agent_based_conflict_resolution_v2.scm",
+      "civ/za/south_african_civil_law_entity_relationship_analysis.scm",
+      "civ/za/south_african_civil_law_entity_relationship_conflict_enhanced.scm",
+      "cmp/za/juristic_person_agent_modeling_v36.scm",
+      "core/entity_relation_model.scm"
+    ],
+    "legal_frameworks": [
+      "ENHANCED_HEADER_TEMPLATE.scm",
+      "relation_tracking_temporal_v1.scm",
+      "relationship_query_analysis_v1.scm",
+      "adm/za/south_african_administrative_law.scm",
+      "civ-proc/za/south_african_abuse_of_process_v22.scm",
+      "civ-proc/za/south_african_civil_procedure_ex_parte_fraud.scm",
+      "civ-proc/za/urgency_test_interdict_v37.scm",
+      "civ/za/ad_element_integration_v39.scm",
+      "civ/za/confrontation_event_analysis_v37.scm",
+      "civ/za/multi_actor_coordination_detection_v36.scm",
+      "civ/za/multi_actor_coordination_detection_v38.scm",
+      "civ/za/south_african_civil_law.scm",
+      "civ/za/south_african_civil_law_case_enhanced.scm",
+      "civ/za/south_african_civil_law_coercion.scm",
+      "civ/za/south_african_civil_law_documentation_obstruction.scm",
+      "civ/za/south_african_civil_law_enhanced.scm",
+      "civ/za/south_african_civil_law_manufactured_crisis.scm",
+      "civ/za/south_african_civil_law_manufactured_crisis_detection.scm",
+      "civ/za/south_african_civil_law_medical_testing_weaponization.scm",
+      "civ/za/south_african_civil_law_multi_actor_coordination.scm",
+      "civ/za/south_african_civil_law_platform_unjust_enrichment.scm",
+      "civ/za/south_african_civil_law_retaliation.scm",
+      "civ/za/south_african_civil_law_revenue_hijacking_creditor_sabotage.scm",
+      "civ/za/south_african_civil_law_temporal_bad_faith.scm",
+      "civ/za/south_african_civil_law_temporal_bad_faith_v2.scm",
+      "civ/za/south_african_civil_law_temporal_bad_faith_v3.scm",
+      "civ/za/south_african_civil_law_temporal_causation_v24.scm",
+      "civ/za/south_african_civil_law_timeline_event_integration.scm",
+      "civ/za/south_african_civil_law_timing_analysis_v2.scm",
+      "civ/za/south_african_civil_law_unjust_enrichment.scm",
+      "civ/za/south_african_civil_procedure_ex_parte_fraud_rescission.scm",
+      "cmp/za/investigation_legitimacy_assessment_v37.scm",
+      "cmp/za/south_african_ceo_operational_discretion_v22.scm",
+      "cmp/za/south_african_cio_technical_expense_justification.scm",
+      "cmp/za/south_african_company_law.scm",
+      "cmp/za/south_african_company_law_director_collective_action.scm",
+      "cmp/za/south_african_company_law_director_loan_accounts.scm",
+      "cmp/za/south_african_company_law_enhanced.scm",
+      "cmp/za/south_african_company_law_forensic_accounting.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced_v2.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced_v3.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced_v4.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced_v5.scm",
+      "cmp/za/south_african_company_law_forensic_accounting_enhanced_v6.scm",
+      "cmp/za/south_african_company_law_non_director_control.scm",
+      "cmp/za/south_african_company_law_regulatory_compliance.scm",
+      "cmp/za/south_african_company_law_regulatory_compliance_enhanced.scm",
+      "cmp/za/south_african_company_law_regulatory_compliance_enhanced_v2.scm",
+      "cmp/za/south_african_company_law_self_dealing_detection.scm",
+      "cmp/za/south_african_platform_ownership_defense_v22.scm",
+      "core/v43_integration.scm",
+      "cri/za/south_african_criminal_law.scm",
+      "cst/za/south_african_construction_law.scm",
+      "env/za/south_african_environmental_law.scm",
+      "env/za/south_african_regulatory_compliance_cost_justification_v22.scm",
+      "eth/za/south_african_professional_ethics_multi_party_conflicts.scm",
+      "frn/za/south_african_forensic_analysis_systematic_fraud_narrative.scm",
+      "int/za/south_african_international_law.scm",
+      "int/za/south_african_international_regulatory_compliance.scm",
+      "int/za/south_african_international_regulatory_compliance_enhanced_v3.scm",
+      "lab/za/immediate_retaliation_detection_v36.scm",
+      "lab/za/immediate_retaliation_detection_v38.scm",
+      "lab/za/south_african_labour_law.scm",
+      "lab/za/whistleblower_retaliation_immediate_proximity_v25.scm",
+      "lv1/known_laws.scm",
+      "lv1/known_laws_enhanced.scm",
+      "lv1/known_laws_module_header.scm",
+      "lv1/legal_aspects_taxonomy_v12.scm",
+      "lv1/legal_aspects_taxonomy_v13.scm",
+      "lv1/legal_aspects_taxonomy_v14.scm",
+      "lv1/legal_aspects_taxonomy_v15.scm",
+      "lv1/legal_aspects_taxonomy_v16.scm",
+      "lv1/legal_aspects_taxonomy_v17.scm",
+      "prof-eth/za/cio_professional_standard_industry_benchmark_v25.scm",
+      "prof-eth/za/south_african_cio_professional_standards_v22.scm",
+      "prof-eth/za/south_african_cio_professional_standards_v24.scm",
+      "prof-eth/za/south_african_professional_ethics_multi_party_conflicts.scm",
+      "trs/fiduciary_duty_refinement.scm",
+      "trs/za/south_african_trust_law.scm",
+      "trs/za/south_african_trust_law_enhanced.scm",
+      "trs/za/south_african_trust_law_enhanced_v2.scm",
+      "trs/za/south_african_trust_law_enhanced_v3.scm",
+      "trs/za/south_african_trust_law_enhanced_v4.scm",
+      "trs/za/south_african_trust_law_enhanced_v5.scm",
+      "trs/za/south_african_trust_law_enhanced_v6.scm",
+      "trs/za/south_african_trust_law_enhanced_v7.scm",
+      "trs/za/south_african_trust_law_enhanced_v8.scm",
+      "trs/za/south_african_trust_law_temporal_analysis.scm",
+      "trs/za/south_african_trust_law_trustee_beneficiary_conflicts.scm",
+      "trs/za/south_african_trust_power_bypass_analysis_v22.scm"
+    ],
+    "verification_frameworks": [
+      "evid/za/evidence_principle_mapping_v6.scm",
+      "evid/za/south_african_evidence_systematic_fraud_patterns.scm"
+    ],
+    "case_specific": [
+      "civ/za/south_african_civil_law_case_2025_137857_optimized.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v10.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v11.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v14.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v17.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v18.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v19.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v2.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v20.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v27.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v28.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v29.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v3.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v30.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v31.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v34.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v4.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v5.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v6.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v7.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v8.scm",
+      "civ/za/south_african_civil_law_case_2025_137857_refined_v9.scm",
+      "evid/za/south_african_evidence_case_2025_137857.scm"
+    ],
+    "core_infrastructure": [
+      "core/legislative_model_framework_core.scm",
+      "core/legislative_model_framework_layers.scm"
+    ]
+  },
+  "entity_analysis": {
+    "entities_defined": 6,
+    "verification_coverage": {
+      "case_2025_137857_entity_data_v44_verified.scm": {
+        "entities": 6,
+        "verified": 33,
+        "avg_confidence": 0.9622916666666668
+      },
+      "entity_relation_framework_v44_enhanced.scm": {
+        "entities": 0,
+        "verified": 0,
+        "avg_confidence": 0.9510810810810812
+      },
+      "entity_agent_modeling_v2_enhanced.scm": {
+        "entities": 0,
+        "verified": 0,
+        "avg_confidence": 0
+      }
+    },
+    "confidence_scores": {},
+    "missing_verifications": [],
+    "recommendations": []
+  },
+  "legal_analysis": {
+    "legal_domains": {
+      "civ": {
+        "files": 50,
+        "principles": 5
+      },
+      "cmp": {
+        "files": 21,
+        "principles": 0
+      },
+      "trs": {
+        "files": 12,
+        "principles": 0
+      },
+      "cri": {
+        "files": 1,
+        "principles": 0
+      },
+      "lab": {
+        "files": 4,
+        "principles": 0
+      },
+      "evid": {
+        "files": 3,
+        "principles": 0
+      }
+    },
+    "total_principles": 5,
+    "ad_mappings": 0,
+    "case_specific_applications": []
+  },
+  "refinement_opportunities": [
+    {
+      "category": "entity_completeness",
+      "priority": "HIGH",
+      "description": "Verify all entities have statutory basis verification",
+      "action": "Add statutory-basis field to all entity attributes",
+      "impact": "Ensures legal grounding for all entity properties"
+    },
+    {
+      "category": "ad_integration",
+      "priority": "CRITICAL",
+      "description": "Map all AD paragraphs to entity-relation-event framework",
+      "action": "Create comprehensive AD paragraph mapping system",
+      "impact": "Enables optimal response generation for Jax and Dan"
+    },
+    {
+      "category": "legal_resolution",
+      "priority": "HIGH",
+      "description": "Define optimal legal resolution pathways for case profile",
+      "action": "Create resolution pathway framework linking entities to legal principles",
+      "impact": "Guides strategic legal argumentation"
+    },
+    {
+      "category": "verification_rigor",
+      "priority": "CRITICAL",
+      "description": "Ensure all attributes have confidence >= 0.95",
+      "action": "Review and enhance verification for low-confidence attributes",
+      "impact": "Maximizes factual accuracy and court credibility"
+    }
+  ]
+}

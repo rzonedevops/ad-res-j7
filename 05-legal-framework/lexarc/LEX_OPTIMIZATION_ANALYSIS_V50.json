@@ -1,0 +1,117 @@
+{
+  "timestamp": "2025-12-27T02:02:54.351005",
+  "analysis_version": "v50",
+  "lex_directory": "/home/ubuntu/ad-res-j7/lex",
+  "domain_coverage": {
+    "ENHANCED_HEADER_TEMPLATE.scm": 1,
+    "ad_paragraph_comprehensive_mapping_v45.scm": 1,
+    "agent_based_model_v48_ketoni_integrated.scm": 1,
+    "case_2025_137857_entity_data_v43_verified.scm": 1,
+    "case_2025_137857_entity_data_v44_verified.scm": 1,
+    "case_2025_137857_entity_relation_data_v1.scm": 1,
+    "entity_agent_modeling_v1.scm": 1,
+    "entity_agent_modeling_v2_enhanced.scm": 1,
+    "entity_relation_framework_v3_comprehensive.scm": 1,
+    "entity_relation_framework_v43_comprehensive.scm": 1,
+    "entity_relation_framework_v44_enhanced.scm": 1,
+    "entity_relation_framework_v45_ad_integrated.scm": 1,
+    "entity_relation_framework_v46_ketoni_corrected.scm": 1,
+    "entity_relation_framework_v47_verified.scm": 1,
+    "entity_relation_framework_v48_ketoni_payout_integrated.scm": 1,
+    "entity_relation_framework_v49_motive_integrated.scm": 1,
+    "relation_tracking_temporal_v1.scm": 1,
+    "relationship_query_analysis_v1.scm": 1,
+    "adm": 1,
+    "civ-proc": 3,
+    "civ": 50,
+    "cmp": 21,
+    "core": 4,
+    "cri": 1,
+    "cst": 1,
+    "env": 2,
+    "eth": 1,
+    "evid": 3,
+    "frn": 1,
+    "int": 3,
+    "lab": 4,
+    "lv1": 9,
+    "prof-eth": 4,
+    "trs": 14
+  },
+  "entity_relation_frameworks": [
+    {
+      "version": "entity_relation_framework_v49_motive_integrated.scm",
+      "entities": [
+        "peter-andrew-faucitt",
+        "jacqueline-faucitt",
+        "daniel-jacobus-bantjes",
+        "rynette-farrar",
+        "kevin-michael-derrick",
+        "kayla-pretorius",
+        "faucitt-family-trust",
+        "ketoni-investment-holdings",
+        "rezonance"
+      ],
+      "relations": [
+        "ketoni-debt-to-fft",
+        "bantjes-appointment",
+        "peter-jax-interdict",
+        "medical-testing-demand",
+        "rezonance-dissolution-pressure"
+      ],
+      "events": [
+        "ketoni-incorporation",
+        "fft-ketoni-investment",
+        "kayla-murder",
+        "card-expiry-except-rwd",
+        "sage-admin-seizure",
+        "rezonance-dissolution-meeting",
+        "bantjes-trustee-appointment",
+        "settlement-agreement",
+        "interdict-filing"
+      ],
+      "motives": [
+        "ketoni-payout-capture"
+      ]
+    }
+  ],
+  "optimization_opportunities": [
+    {
+      "type": "entity_coverage",
+      "priority": "medium",
+      "description": "Only 9 entities defined - may need expansion"
+    }
+  ],
+  "recommendations": [
+    {
+      "area": "Entity-Relation Framework",
+      "action": "Upgrade core integration from v43 to v49",
+      "rationale": "v49 includes R18.75M motive integration",
+      "priority": "critical"
+    },
+    {
+      "area": "Agent-Based Modeling",
+      "action": "Develop high-resolution agent models for all entities",
+      "rationale": "Enable behavioral analysis and motive inference",
+      "priority": "high"
+    },
+    {
+      "area": "Temporal Causation",
+      "action": "Expand temporal chain analysis with confidence scoring",
+      "rationale": "Strengthen causal inference for legal arguments",
+      "priority": "high"
+    },
+    {
+      "area": "Evidence Mapping",
+      "action": "Create evidence-to-principle direct mappings",
+      "rationale": "Optimize law resolution by linking evidence to legal principles",
+      "priority": "high"
+    },
+    {
+      "area": "Legal Domain Coverage",
+      "action": "Enhance civil procedure and evidence law schemes",
+      "rationale": "Critical for interdict and fraud analysis",
+      "priority": "medium"
+    }
+  ]
+}

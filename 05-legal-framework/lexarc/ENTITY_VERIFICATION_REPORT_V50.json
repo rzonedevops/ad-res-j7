@@ -1,0 +1,235 @@
+{
+  "verification_version": "v50",
+  "verification_date": "2025-12-27",
+  "verification_standard": "rigorous-source-based",
+  "total_checks": 40,
+  "passed_checks": 39,
+  "failed_checks": 0,
+  "warning_checks": 1,
+  "pass_rate": 0.975,
+  "errors": [],
+  "warnings": [
+    "rynette-farrar: Confidence score differs from expected 1.0"
+  ],
+  "verification_results": {
+    "peter-andrew-faucitt": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "id-number",
+        "status": "pass",
+        "value": "5103215039082"
+      },
+      {
+        "check": "trust-role",
+        "status": "pass",
+        "value": "Founder, Trustee, 50% Beneficiary"
+      },
+      {
+        "check": "confidence-score",
+        "status": "pass",
+        "value": 0.98
+      }
+    ],
+    "jacqueline-faucitt": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "id-number",
+        "status": "pass",
+        "value": "5706070898181"
+      },
+      {
+        "check": "trust-role",
+        "status": "pass",
+        "value": "Trustee, 50% Beneficiary"
+      },
+      {
+        "check": "confidence-score",
+        "status": "pass",
+        "value": 0.98
+      }
+    ],
+    "daniel-jacobus-bantjes": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "id-number",
+        "status": "pass",
+        "value": "5810045103089"
+      },
+      {
+        "check": "trust-role",
+        "status": "pass",
+        "value": "Trustee (appointed Jul 2024)"
+      },
+      {
+        "check": "confidence-score",
+        "status": "pass",
+        "value": 0.95
+      }
+    ],
+    "rynette-farrar": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "critical-fact-not-trustee",
+        "status": "pass",
+        "critical": true
+      },
+      {
+        "check": "confidence-score",
+        "status": "warning"
+      }
+    ],
+    "faucitt-family-trust": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "registration",
+        "status": "pass",
+        "value": "IT 003651/2013"
+      }
+    ],
+    "ketoni-investment-holdings": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "registration",
+        "status": "pass",
+        "value": "2023/562189/07"
+      },
+      {
+        "check": "debt-amount",
+        "status": "pass",
+        "value": 18750000
+      }
+    ],
+    "rezonance": [
+      {
+        "check": "entity-definition",
+        "status": "pass"
+      },
+      {
+        "check": "registration",
+        "status": "pass",
+        "value": "K2017081396"
+      },
+      {
+        "check": "creditor-claim",
+        "status": "pass",
+        "value": 1035000
+      }
+    ],
+    "ketoni-debt-to-fft": [
+      {
+        "check": "relation-definition",
+        "status": "pass"
+      }
+    ],
+    "peter-jax-interdict": [
+      {
+        "check": "relation-definition",
+        "status": "pass"
+      }
+    ],
+    "daniel-whistleblower-retaliation": [
+      {
+        "check": "relation-definition",
+        "status": "pass"
+      }
+    ],
+    "ketoni-incorporation": [
+      {
+        "check": "event-definition",
+        "status": "pass"
+      },
+      {
+        "check": "event-date",
+        "status": "pass",
+        "value": "2023-02-20"
+      }
+    ],
+    "fft-ketoni-investment": [
+      {
+        "check": "event-definition",
+        "status": "pass"
+      },
+      {
+        "check": "event-date",
+        "status": "pass",
+        "value": "2023-04-24"
+      }
+    ],
+    "kayla-murder": [
+      {
+        "check": "event-definition",
+        "status": "pass"
+      },
+      {
+        "check": "event-date",
+        "status": "pass",
+        "value": "2023-07-13"
+      }
+    ],
+    "daniel-fraud-report": [
+      {
+        "check": "event-definition",
+        "status": "pass"
+      },
+      {
+        "check": "event-date",
+        "status": "pass",
+        "value": "2025-06-06/10"
+      }
+    ],
+    "interdict-filing": [
+      {
+        "check": "event-definition",
+        "status": "pass"
+      },
+      {
+        "check": "event-date",
+        "status": "pass",
+        "value": "2025-08-13"
+      }
+    ],
+    "retaliation-cascade": [
+      {
+        "check": "chain-definition",
+        "status": "pass"
+      }
+    ],
+    "payout-preparation-cascade": [
+      {
+        "check": "chain-definition",
+        "status": "pass"
+      }
+    ],
+    "creditor-elimination-cascade": [
+      {
+        "check": "chain-definition",
+        "status": "pass"
+      }
+    ],
+    "multi-actor-coordination-cascade": [
+      {
+        "check": "chain-definition",
+        "status": "pass"
+      }
+    ]
+  },
+  "overall_status": "PASS"
+}

@@ -1,0 +1,64 @@
+graph TD
+    subgraph "Faucitt Family Trust (Central Control Vehicle)"
+        P["AGENT-NP-003-V68<br><b>Peter Faucitt</b><br>(Main Trustee, Applicant)"]
+        J["AGENT-NP-001-V68<br><b>Jacqueline Faucitt</b><br>(Trustee, Respondent)"]
+        B["AGENT-NP-005-V68<br><b>Mr. Bantjes</b><br>(Trustee, Curator, Peter's Attorney)"]
+        FFT[AGENT-LE-001-V68<br>Faucitt Family Trust]
+
+        P -- "Has Absolute Powers Over" --> FFT
+        J -- "Owes Fiduciary Duty To" --> FFT
+        B -- "Owes Fiduciary Duty To" --> FFT
+    end
+
+    subgraph "Business Operations & Alleged Financial Misconduct"
+        RWW["AGENT-LE-002-V68<br>RegimA Worldwide"]
+        SLG["AGENT-LE-003-V68<br>Strategic Logistics"]
+        VV["AGENT-LE-004-V68<br>Villa Via"]
+        D["AGENT-NP-002-V68<br><b>Daniel Faucitt</b><br>(Director, Whistleblower, Respondent)"]
+        R["AGENT-NP-004-V68<br><b>Rynette</b><br>(Financial Controller)"]
+        ADD["AGENT-LE-008-V68<br>Adderory (Rynette's Son)"]
+    end
+
+    subgraph "External & Regulatory Entities"
+        K["AGENT-LE-009-V68<br>Ketoni<br>(ZAR 18.75M Payout Due)"]
+        SARS["AGENT-ENTITY-012-V68<br>SARS"]
+        INFO_REG["AGENT-ENTITY-013-V68<br>Information Regulator (POPIA)"]
+        CIPC["AGENT-ENTITY-011-V68<br>CIPC"]
+        COURT[High Court]
+    end
+
+    %% Key Relationships & Actions
+    P -- "Files Interdict (Aug 13, 2025)" --> J
+    P -- "Files Interdict (Aug 13, 2025)" --> D
+    P -- "<br>Owes ZAR 1.8M+ To<br>(Alleged Conflict of Interest)" --> B
+    P -- "Allegedly Instructs/Directs" --> R
+
+    COURT -- "Appoints as Curator Bonis" --> B
+
+    R -- "Controls Finances Of" --> RWW
+    R -- "Controls Finances Of" --> SLG
+    R -- "Alleged Conflict of Interest via Son" --> ADD
+    ADD -- "Supplies Packaging To" --> RWW
+    RWW -- "Pays Inflated Rent To<br>(86% Profit)" --> VV
+
+    D -- "Manages IT & Finances For" --> RWW
+    D -- "Files Whistleblower Report (June 6-10, 2025)" --> SARS
+    D -- "Files Whistleblower Report (June 6-10, 2025)" --> CIPC
+
+    J -- "Acts as POPIA Info Officer For" --> RWW
+    RWW -- "Duty to Report To" --> INFO_REG
+
+    FFT -- "Owns" --> RWW
+    FFT -- "Owns" --> VV
+    K -- "Owes ZAR 18.75M To<br>(Due May 2026)" --> FFT
+
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
+    classDef person fill:#cde4ff,stroke:#4285f4,stroke-width:2px;
+    classDef company fill:#e2f0d9,stroke:#5a9d5a,stroke-width:2px;
+    classDef trust fill:#fff2cc,stroke:#ffbf00,stroke-width:2px;
+    classDef external fill:#fde2e2,stroke:#d93025,stroke-width:2px;
+
+    class P,J,B,D,R person;
+    class RWW,SLG,VV,ADD company;
+    class FFT trust;
+    class K,SARS,INFO_REG,CIPC,COURT external;

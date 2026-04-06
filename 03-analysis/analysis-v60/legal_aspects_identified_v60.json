@@ -1,0 +1,453 @@
+{
+  "version": "60.0",
+  "date": "2026-01-06T02:09:02.462952",
+  "total_ad_paragraphs_analyzed": 13,
+  "legal_aspects": [
+    {
+      "ad_paragraph": "10.5",
+      "priority": "1-Critical",
+      "topic": "Detailed Financial Allegations",
+      "peters_claim": "Systematic financial misconduct",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "trust-distribution-obligations"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        },
+        {
+          "domain": "company-law",
+          "aspects": []
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "fraud",
+            "theft",
+            "revenue-hijacking"
+          ]
+        },
+        {
+          "domain": "family-law",
+          "aspects": [
+            "mental-capacity-manipulation"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "Faucitt Family Trust",
+        "RWD \n  ",
+        "RegimA Skin",
+        "Daniel Faucitt",
+        "RegimA SA",
+        "RegimA Zone",
+        "RWD ",
+        "RWD\n  "
+      ],
+      "confidence": 0.94
+    },
+    {
+      "ad_paragraph": "7.2",
+      "priority": "1-Critical",
+      "topic": "IT Expense Discrepancies",
+      "peters_claim": "Unexplained IT expenses",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": [
+            "material-non-disclosure-ex-parte",
+            "manufactured-urgency"
+          ]
+        },
+        {
+          "domain": "company-law",
+          "aspects": [
+            "nominal-director-without-control",
+            "director-loan-account-structure"
+          ]
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "fraud",
+            "theft"
+          ]
+        },
+        {
+          "domain": "administrative-law",
+          "aspects": [
+            "regulatory-compliance-failure"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "RWD ",
+        "Daniel Faucitt",
+        "RegimA SA"
+      ],
+      "confidence": 1.0
+    },
+    {
+      "ad_paragraph": "7.6",
+      "priority": "1-Critical",
+      "topic": "R500K Payment",
+      "peters_claim": "Unauthorized R500,000 payment to Jax",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "trust-distribution-obligations"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        },
+        {
+          "domain": "company-law",
+          "aspects": []
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "revenue-hijacking"
+          ]
+        },
+        {
+          "domain": "family-law",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "RegimA Skin",
+        "Daniel Faucitt",
+        "RegimA SA",
+        "RegimA Zone",
+        "RWD "
+      ],
+      "confidence": 0.94
+    },
+    {
+      "ad_paragraph": "7.7",
+      "priority": "1-Critical",
+      "topic": "R500K Payment Details",
+      "peters_claim": "Payment made without authorization",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "trust-distribution-obligations"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        },
+        {
+          "domain": "company-law",
+          "aspects": [
+            "director-duties-breach",
+            "nominal-director-without-control",
+            "director-loan-account-structure"
+          ]
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "fraud",
+            "theft",
+            "revenue-hijacking"
+          ]
+        },
+        {
+          "domain": "family-law",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "RegimA Zone",
+        "RWD ",
+        "Daniel Faucitt",
+        "RegimA SA"
+      ],
+      "confidence": 0.97
+    },
+    {
+      "ad_paragraph": "7.9",
+      "priority": "1-Critical",
+      "topic": "Payment Justification",
+      "peters_claim": "No legitimate business purpose",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "trust-distribution-obligations"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        },
+        {
+          "domain": "company-law",
+          "aspects": []
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "fraud",
+            "misrepresentation",
+            "revenue-hijacking"
+          ]
+        },
+        {
+          "domain": "administrative-law",
+          "aspects": [
+            "regulatory-compliance-failure"
+          ]
+        },
+        {
+          "domain": "family-law",
+          "aspects": [
+            "mental-capacity-manipulation"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "RegimA Zone",
+        "RWD ",
+        "Daniel Faucitt",
+        "RegimA SA"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "ad_paragraph": "11",
+      "priority": "2-High-Priority",
+      "topic": "Urgency",
+      "peters_claim": "Urgent need for interdict",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": [
+            "manufactured-urgency"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "ad_paragraph": "13",
+      "priority": "2-High-Priority",
+      "topic": "Interim Relief",
+      "peters_claim": "Interim relief necessary",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "ad_paragraph": "3",
+      "priority": "2-High-Priority",
+      "topic": "Respondent Identification",
+      "peters_claim": "Identification of parties",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "fiduciary-duty-breach"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": [
+            "material-non-disclosure-ex-parte"
+          ]
+        },
+        {
+          "domain": "company-law",
+          "aspects": [
+            "director-duties-breach",
+            "director-loan-account-structure"
+          ]
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": []
+        },
+        {
+          "domain": "administrative-law",
+          "aspects": [
+            "regulatory-compliance-failure"
+          ]
+        },
+        {
+          "domain": "family-law",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "Jacqueline Faucitt",
+        "Peter Faucitt",
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "ad_paragraph": "3.11",
+      "priority": "2-High-Priority",
+      "topic": "Jax's Role",
+      "peters_claim": "Jax's position in companies",
+      "identified_domains": [
+        {
+          "domain": "trust-law",
+          "aspects": [
+            "trust-distribution-obligations"
+          ]
+        },
+        {
+          "domain": "civil-procedure",
+          "aspects": [
+            "material-non-disclosure-ex-parte"
+          ]
+        },
+        {
+          "domain": "company-law",
+          "aspects": [
+            "director-duties-breach",
+            "business-judgment-rule"
+          ]
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "misrepresentation"
+          ]
+        },
+        {
+          "domain": "administrative-law",
+          "aspects": [
+            "regulatory-compliance-failure"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "Jacqueline Faucitt",
+        "Peter Faucitt",
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "ad_paragraph": "7.12",
+      "priority": "2-High-Priority",
+      "topic": "Accountant Concerns",
+      "peters_claim": "Accountant raised concerns",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "ad_paragraph": "7.14",
+      "priority": "2-High-Priority",
+      "topic": "Documentation Requests",
+      "peters_claim": "Documentation not provided / Daniel \"obstructing staff\"",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        },
+        {
+          "domain": "company-law",
+          "aspects": [
+            "nominal-director-without-control"
+          ]
+        },
+        {
+          "domain": "criminal-law",
+          "aspects": [
+            "theft",
+            "misrepresentation",
+            "revenue-hijacking"
+          ]
+        },
+        {
+          "domain": "administrative-law",
+          "aspects": [
+            "regulatory-compliance-failure"
+          ]
+        }
+      ],
+      "entities_involved": [
+        "RWD ",
+        "RegimA Skin",
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.97
+    },
+    {
+      "ad_paragraph": "8",
+      "priority": "2-High-Priority",
+      "topic": "Peter's Discovery",
+      "peters_claim": "Peter discovered irregularities",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "ad_paragraph": "8.4",
+      "priority": "2-High-Priority",
+      "topic": "Confrontation",
+      "peters_claim": "Peter confronted Jax",
+      "identified_domains": [
+        {
+          "domain": "civil-procedure",
+          "aspects": []
+        }
+      ],
+      "entities_involved": [
+        "Daniel Faucitt"
+      ],
+      "confidence": 0.84
+    }
+  ],
+  "domain_summary": {
+    "trust-law": 6,
+    "civil-procedure": 13,
+    "company-law": 8,
+    "criminal-law": 8,
+    "family-law": 5,
+    "administrative-law": 5
+  },
+  "priority_summary": {
+    "1-Critical": 5,
+    "2-High-Priority": 8
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "_lexicog_spec_version": "1.0.0",
+  "_zpp_spec_files": [
+    "spec/Types.zpp",
+    "spec/TokenizerConfig.zpp",
+    "spec/ModelConfig.zpp",
+    "spec/Tokenizer.zpp",
+    "spec/Model.zpp",
+    "spec/InferencePipe.zpp"
+  ],
+  
+  "model_type": "lexicog-transformer",
+  "model_name": "ad-res-j7",
+  "model_version": "1.0.0",
+  
+  "architectures": ["LexicogForCausalLM"],
+  "auto_map": {
+    "AutoConfig": "configuration_lexicog.LexicogConfig",
+    "AutoModelForCausalLM": "modeling_lexicog.LexicogForCausalLM",
+    "AutoTokenizer": "tokenization_lexicog.LexicogTokenizer"
+  },
+  
+  "vocab_size": 32000,
+  "lex_vocab_size": 8192,
+  "total_vocab_size": 40192,
+  
+  "hidden_size": 768,
+  "intermediate_size": 3072,
+  "num_hidden_layers": 12,
+  "num_attention_heads": 12,
+  "max_position_embeddings": 4096,
+  
+  "num_agent_heads": 4,
+  "num_cross_attention_heads": 4,
+  "num_self_attention_heads": 4,
+  "agent_pool_size": 64,
+  
+  "hidden_act": "gelu_new",
+  "hidden_dropout_prob": 0.1,
+  "attention_probs_dropout_prob": 0.1,
+  "layer_norm_eps": 1e-12,
+  
+  "type_vocab_size": 2,
+  "initializer_range": 0.02,
+  "use_cache": true,
+  
+  "lex_config": {
+    "_zpp_invariant": "LexConfigBounds",
+    "max_entities": 64,
+    "entity_embed_dim": 768,
+    "entity_pooling": "attention",
+    
+    "max_relations": 256,
+    "relation_embed_dim": 768,
+    "relation_attention_heads": 4,
+    
+    "max_events": 128,
+    "temporal_embed_dim": 768,
+    "temporal_encoding_type": "rotary",
+    
+    "max_principles": 128,
+    "principle_embed_dim": 768,
+    "principle_hierarchy_depth": 5,
+    
+    "hypergraph_enabled": true,
+    "max_hyperedges": 512,
+    "hyperedge_aggregation": "attention",
+    
+    "max_tuple_size": 8,
+    "tuple_embed_dim": 768,
+    
+    "inference_types": [
+      "deductive",
+      "inductive",
+      "abductive",
+      "analogical",
+      "probabilistic"
+    ],
+    "confidence_threshold": 0.7
+  },
+  
+  "generation_config": {
+    "_zpp_contract": "validateGenerationConfig",
+    "max_length": 4096,
+    "max_new_tokens": null,
+    "min_length": 1,
+    
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_k": 50,
+    "top_p": 0.95,
+    "typical_p": 1.0,
+    "repetition_penalty": 1.1,
+    
+    "num_beams": 1,
+    "num_beam_groups": 1,
+    "diversity_penalty": 0.0,
+    "length_penalty": 1.0,
+    "early_stopping": false,
+    
+    "pad_token_id": 0,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    
+    "num_return_sequences": 1,
+    "output_scores": false,
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "return_dict_in_generate": false
+  },
+  
+  "quantization_config": null,
+  
+  "torch_dtype": "bfloat16",
+  "use_bfloat16": true,
+  
+  "legal_domains": [
+    "civil",
+    "criminal",
+    "trust",
+    "company",
+    "labour",
+    "evidence",
+    "constitutional",
+    "administrative",
+    "contract",
+    "delict",
+    "family",
+    "insolvency"
+  ],
+  
+  "entity_types": [
+    "natural_person",
+    "juristic_person",
+    "trust",
+    "company",
+    "close_corporation",
+    "partnership",
+    "government_entity",
+    "court",
+    "regulatory_body"
+  ],
+  
+  "relation_categories": [
+    "ownership",
+    "fiduciary",
+    "employment",
+    "family",
+    "contractual",
+    "adversarial",
+    "coordination",
+    "control"
+  ],
+  
+  "inference_type_weights": {
+    "deductive": 1.0,
+    "inductive": 0.8,
+    "abductive": 0.7,
+    "analogical": 0.6,
+    "probabilistic": 0.9
+  },
+  
+  "_zpp_invariants": [
+    "HiddenSizeDivisibility",
+    "AttentionHeadSum",
+    "IntermediateSizeRatio",
+    "DropoutBounds",
+    "LayerNormEpsPositive",
+    "VocabSizeConsistency",
+    "MaxPositionEmbeddings",
+    "AgentPoolSize",
+    "LexConfigBounds",
+    "GenerationConfigConsistency",
+    "TemperaturePositive",
+    "TopKPositive",
+    "TopPBounds"
+  ],
+  
+  "_zpp_contracts": [
+    "validateModelConfig",
+    "validateLexConfig",
+    "validateGenerationConfig",
+    "computeHeadDim",
+    "computeTotalParams"
+  ]
+}

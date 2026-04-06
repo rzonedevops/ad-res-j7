@@ -1,0 +1,49 @@
+---
+layout: default
+title: Relations Index
+---
+
+# Relations Index
+
+**Last Updated:** 2026-03-23
+
+| ID | Title | Entities | Evidence |
+|----|-------|----------|----------|
+| AYMAC_KAYLOVEST_ELLIOTT_NETWORK | [Aymac-Kaylovest-Elliott Network](./AYMAC_KAYLOVEST_ELLIOTT_NETWORK.md) | PERSON_001, PERSON_002, ORG_026, ORG_027, ORG_028, ORG_002 |  |
+| BACKDATED_ENTRIES | [Backdated Journal Entries — 2021 Forgery](./BACKDATED_ENTRIES.md) |  |  |
+| BANKING_MANDATE_FRAUD | [Banking Mandate Fraud Network](./BANKING_MANDATE_FRAUD.md) | PERSON_001, PERSON_002, PERSON_005, BANK_001 | EVENT107, SF10, SF11 |
+| BANTJIES_FALSE_INDEPENDENCE | [Bantjies False Independence Declaration](./BANTJIES_FALSE_INDEPENDENCE.md) |  |  |
+| CONTEMPT_RELATIONS_2026_02_09 | [Contempt Proceedings Relations Map](./CONTEMPT_RELATIONS_2026_02_09.md) |  | EVENT060, EVENT095, EVENT096, EVENT097, EVENT098, EVENT099, EVENT100, EVENT101 |
+| COORDINATED_RETALIATION | [Coordinated Retaliation Pattern](./COORDINATED_RETALIATION.md) |  | SF10, SF11 |
+| DOMAIN_IDENTITY_FRAUD | [Domain & Digital Identity Fraud](./DOMAIN_IDENTITY_FRAUD.md) |  | EVENT105, EVENT107, EVENT113, SF10 |
+| DUAL_CORPORATE_IDENTITY | [Relation: Dual Corporate Identity — Kaylovest Three / Villa Via](./DUAL_CORPORATE_IDENTITY.md) | ORG_005, ORG_027 | EVENT106, EVENT124 |
+| ELLIOTT_ATTORNEYS_PROTECTION | [Elliott Attorneys — Non-Party Protection](./ELLIOTT_ATTORNEYS_PROTECTION.md) |  | SF13 |
+| FORGERY_BACKDATING_RELATIONS_2026_02_18 | [Forgery & Backdating Relations — Two-Date Distinction](./FORGERY_BACKDATING_RELATIONS_2026_02_18.md) | PERSON_002, PERSON_007 | EVENT049, EVENT063, EVENT103, EVENT104, EVENT105, SF15 |
+| IDENTITY_FRAUD_NETWORK | [Relation: Identity Fraud Network](./IDENTITY_FRAUD_NETWORK.md) |  | EVENT103, EVENT105, EVENT107, EVENT108, EVENT113, SF10 |
+| INTERCOMPANY_FRAUD | [Intercompany Fraud Network](./INTERCOMPANY_FRAUD.md) |  |  |
+| INTERDICT_VOID_AB_INITIO | [Interdict Void Ab Initio — Complete Analysis](./INTERDICT_VOID_AB_INITIO.md) |  |  |
+| KETONI_FUND_FLOW_COMPLETE | [Ketoni Fund Flow — Complete Architecture](./KETONI_FUND_FLOW_COMPLETE.md) |  |  |
+| KETONI_INSIDER_TRADING_NETWORK | [Relation: Ketoni Insider Trading Network](./KETONI_INSIDER_TRADING_NETWORK.md) | PERSON_007, PERSON_001, PERSON_002, PERSON_015, ORG_016, TRUST_001 | EVENT103, EVENT117, EVENT119 |
+| LEX_SIM_NN_ATTRIBUTION_2026_03_10 | [LEX-SIM-NN Evidence Attribution Relations](./LEX_SIM_NN_ATTRIBUTION_2026_03_10.md) |  |  |
+| MAILBOX_EVIDENCE_RELATIONS_2026_02_09 | [Relations from Mailbox Evidence (2026-02-09)](./MAILBOX_EVIDENCE_RELATIONS_2026_02_09.md) |  |  |
+| MANUFACTURE_ADMISSION | [Bantjies "Manufacture" Admission](./MANUFACTURE_ADMISSION.md) |  | EVENT119 |
+| PETER_R10_6M_EXTRACTION | [Peter's R10.6M Post-Interdict Extraction](./PETER_R10_6M_EXTRACTION.md) |  |  |
+| REL_037 | [REL_037: Unauthorized Access to Tax Records](./REL_037.md) | PERSON_001, PERSON_002, PLATFORM_002 | EVENT174 |
+| REL_038 | [REL_038: Deliberate API Severance](./REL_038.md) | PERSON_001, PERSON_002, PLATFORM_003 | EVENT175 |
+| REVENUE_HIJACKING_CHAIN | [Relation: Revenue Hijacking Chain](./REVENUE_HIJACKING_CHAIN.md) | PERSON_002, PERSON_020, PERSON_021, PERSON_001, PERSON_007, BANK_ACCOUNT_ABSA | EVENT114, EVENT115, EVENT119, EVENT121, SF10 |
+| REZONANCE_DEBT_FABRICATION | [ReZonance Debt Fabrication](./REZONANCE_DEBT_FABRICATION.md) |  |  |
+| RULE_30_DATING_ANOMALY | [Rule 30/30A Dating Anomaly — Elliott Attorneys](./RULE_30_DATING_ANOMALY.md) |  | EVENT103, EVENT132 |
+| RYNETTE_BANTJIES_CONSPIRACY_2026_03_07 | [Rynette Farrar — Daniel Bantjies: Coordinated Conspiracy Relations](./RYNETTE_BANTJIES_CONSPIRACY_2026_03_07.md) |  | EVENT103, EVENT114, EVENT115, EVENT116, EVENT117, EVENT119, EVENT120 |
+| SAGE_SYSTEM_CAPTURE | [Sage Accounting System Capture](./SAGE_SYSTEM_CAPTURE.md) |  | EVENT105, EVENT110, SF11 |
+| SARS_CREDENTIAL_ABUSE | [SARS Credential Abuse Network](./SARS_CREDENTIAL_ABUSE.md) |  | EVENT103, EVENT107 |
+| SARS_FLAGGED_INVOICES | [SARS Flagged Invoices — February 2025](./SARS_FLAGGED_INVOICES.md) |  | EVENT126 |
+| STOCK2SHOP_DISRUPTION | [Stock2Shop Platform Disruption](./STOCK2SHOP_DISRUPTION.md) |  |  |
+| STOCK_ADJUSTMENT_FRAUD | [Stock Adjustment Fraud — R4.2M Discrepancy](./STOCK_ADJUSTMENT_FRAUD.md) |  |  |
+| TRUST_CAPTURE_SEQUENCE | [Relation: Trust Capture Sequence](./TRUST_CAPTURE_SEQUENCE.md) |  | EVENT103, EVENT104, EVENT105, EVENT107, EVENT108, EVENT114, EVENT115, EVENT117, SF15 |
+| VILLA_VIA_KAYLOVEST_IDENTITY | [Villa Via Arcadia No 2 CC and Kaylovest Three (Pty) Ltd — Dual Entity Under Same Base Number](./VILLA_VIA_KAYLOVEST_IDENTITY.md) | ORG_005, ORG_027, PERSON_001 | EVENT106 |
+| VILLA_VIA_PROFIT_EXTRACTION | [Villa Via Profit Extraction Scheme](./VILLA_VIA_PROFIT_EXTRACTION.md) |  | EVENT124 |
+| director_of | [Director Of Relations](./director_of.md) | PERSON_001, ORG_001, PERSON_001, ORG_002, PERSON_001, ORG_004, PERSON_001, ORG_006, PERSON_004, ORG_001, PERSON_005, ORG_001, PERSON_005, ORG_003, PERSON_005, ORG_008, PERSON_013, ORG_008, PERSON_014, ORG_017, PERSON_014, ORG_018 |  |
+| financial_flow | [Financial Flow Relations](./financial_flow.md) | ORG_002, ORG_008, ORG_017, TRUST_001, ORG_001, BANK_ACCOUNT_ABSA | SF12 |
+| sabotage_framing_link | [Sabotage-Framing Link Relation](./sabotage_framing_link.md) |  | EVENT110 |
+| shareholder_of | [Shareholder Of Relations](./shareholder_of.md) | TRUST_001, ORG_001, TRUST_001, ORG_017, PERSON_005, ORG_003, PERSON_005, ORG_008, PERSON_013, ORG_008 |  |
+| trustee_of | [Trustee Of Relations](./trustee_of.md) | PERSON_001, TRUST_001, PERSON_004, TRUST_001, PERSON_007, TRUST_001 | SF15 |

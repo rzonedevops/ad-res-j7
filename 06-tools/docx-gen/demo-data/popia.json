@@ -1,0 +1,35 @@
+{
+  "caseRef": "2025-137857-POPIA",
+  "date": "2026-02-08",
+  "version": "Foreknowledge Refined",
+  "burdenOfProof": "Balance of Probabilities (50%+) — EXCEEDED",
+  "executiveSummary": "This complaint details systematic violations of the Protection of Personal Information Act committed through unauthorized access to personal data, identity fraud, and misuse of personal information for financial crimes.",
+  "complainants": {
+    "names": "Daniel James Faucitt and Jacqueline Faucitt",
+    "capacity": "Data Subjects whose personal information was unlawfully processed"
+  },
+  "respondents": [
+    { "name": "Rynette Farrar", "role": "Financial Controller", "violations": "Unauthorized access to personal data, identity fraud, misuse of banking credentials." },
+    { "name": "Peter Andrew Faucitt", "role": "Director", "violations": "Authorized or permitted unauthorized access to personal data systems." }
+  ],
+  "violations": [
+    { "section": "s9", "condition": "Condition 1: Accountability", "violation": "Failed to ensure lawful processing", "evidence": "System access logs, SF10", "status": "PROVEN" },
+    { "section": "s10", "condition": "Condition 2: Processing Limitation", "violation": "Processed personal info without consent or legitimate purpose", "evidence": "Stolen card details, ABSA account openings", "status": "PROVEN" },
+    { "section": "s19", "condition": "Condition 7: Security Safeguards", "violation": "Failed to secure personal information", "evidence": "Unauthorized Sage access under pete@regima.com", "status": "PROVEN" }
+  ],
+  "dataSubjects": [
+    { "name": "Daniel James Faucitt", "dataCompromised": "Banking credentials, ID number, card details", "impact": "8 unauthorized accounts opened; financial loss exceeding R500,000" },
+    { "name": "Jacqueline Faucitt", "dataCompromised": "Personal identity information", "impact": "Company access revoked; ongoing financial harm" }
+  ],
+  "reliefSought": [
+    "Issue an enforcement notice under s95 of POPIA.",
+    "Impose an administrative fine under s107.",
+    "Order the responsible party to notify all affected data subjects.",
+    "Refer the matter to SAPS for criminal prosecution under s107(1)."
+  ],
+  "annexures": [
+    { "id": "A", "description": "System Access Logs and SF10 Analysis" },
+    { "id": "B", "description": "Identity Fraud Evidence" },
+    { "id": "C", "description": "Unauthorized Account Documentation" }
+  ]
+}

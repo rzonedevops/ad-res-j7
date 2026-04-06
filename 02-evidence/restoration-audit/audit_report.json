@@ -1,0 +1,1009 @@
+{
+  "timestamp": "2026-01-28 06:24:18",
+  "commit_analyzed": "c21d804",
+  "parent_commit": "a68a5de",
+  "total_deleted_files": 477,
+  "categories": {
+    "legal_filings_cipc": {
+      "count": 24,
+      "files": [
+        "docs/filings/CIPC_COMPLAINT_ENHANCED_2025_11_28.md",
+        "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+        "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+        "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+        "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_07.md",
+        "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_08.md",
+        "docs/filings/CIPC_COMPLAINT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_20251203.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_11_27.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_11_28.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_04.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_05.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_06.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24.md",
+        "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24_UPDATED_20251226.md",
+        "docs/filings/CIPC_COMPLAINT_SF9_INTEGRATED_2025_12_09.md",
+        "docs/filings/CIPC_TIMELINE_VERIFIED.md",
+        "docs/filings/regulatory/CIPC_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+        "docs/filings/regulatory/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+        "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_27.md"
+      ]
+    },
+    "legal_filings_popia": {
+      "count": 17,
+      "files": [
+        "docs/filings/POPIA_COMPLAINT_ENHANCED_2025_11_28.md",
+        "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+        "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+        "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_11_27.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_11_28.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_05.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_06.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+        "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_24.md",
+        "docs/filings/criminal/POPIA_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+        "docs/filings/criminal/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+        "docs/filings/criminal/POPIA_COMPLAINT_REFINED_2025_12_27.md",
+        "docs/filings/criminal/popia_complaint.md",
+        "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+      ]
+    },
+    "legal_filings_npa": {
+      "count": 13,
+      "files": [
+        "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_05.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_06.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251214.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251216.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24.md",
+        "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24_UPDATED_20251226.md",
+        "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md",
+        "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_27.md"
+      ]
+    },
+    "legal_filings_commercial": {
+      "count": 11,
+      "files": [
+        "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251214.md",
+        "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md",
+        "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251216.md",
+        "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_2025_12_08.md",
+        "docs/filings/COMMERCIAL_CRIME_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+        "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10.md",
+        "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10_REFINED_20251213.md",
+        "docs/filings/COMMERCIAL_CRIME_SF9_INTEGRATED_2025_12_09.md",
+        "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_05.md",
+        "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_06.md",
+        "docs/filings/COMMERCIAL_CRIME_SUBMISSION_ENHANCED_2025_12_07.md"
+      ]
+    },
+    "legal_filings_criminal": {
+      "count": 11,
+      "files": [
+        "docs/criminal-evidence.html",
+        "docs/criminal-evidence.md",
+        "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+        "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+        "docs/filings/CRIMINAL_COMPLAINT_REFINED_2025_11_28.md",
+        "docs/filings/CRIMINAL_COMPLAINT_SUMMARY_20251203.md",
+        "docs/filings/CRIMINAL_COMPLAINT_TORTURE_PERJURY_FRAUD.md",
+        "docs/filings/CRIMINAL_COMPLAINT_V2_ENHANCED.md",
+        "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+        "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+        "docs/filings/criminal/criminal_complaint.md"
+      ]
+    },
+    "legal_filings_civil": {
+      "count": 25,
+      "files": [
+        "docs/civil-evidence.html",
+        "docs/civil-evidence.md",
+        "docs/filings/AFFIDAVIT_DRAFTS_COMPARISON.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251214.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251216.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_2025_12_08.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_09.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_SF9_INTEGRATED_2025_12_09.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_STRUCTURE.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V2_FRAUD_FOCUS.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V3_COMPLETE.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V4_CORRECTED.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V5_FINAL.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V6_CURATORSHIP_CONSPIRACY.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V7_FINAL_COMPLETE.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V8_ENHANCED.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V8_EVIDENCE_ENHANCED.md",
+        "docs/filings/ANSWERING_AFFIDAVIT_V9_FINAL_2025_12_07.md",
+        "docs/filings/civil/ANSWERING_AFFIDAVIT_REFINED_2025_12_10.md",
+        "docs/filings/civil/ANSWERING_AFFIDAVIT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+        "docs/filings/civil/answering_affidavit.md"
+      ]
+    },
+    "evidence_docs": {
+      "count": 33,
+      "files": [
+        "docs/CONSPIRACY_EVIDENCE_CROSS_REFERENCE_R18_75M_TIMELINE.md",
+        "docs/EMAIL_ARCHIVE_EVIDENCE_REPORT_2025-11-19.md",
+        "docs/EVIDENCE_DOCUMENTATION_REPORT.md",
+        "docs/EVIDENCE_INDEX_COMPREHENSIVE_2025_12_15.md",
+        "docs/EVIDENCE_MAPPING_LETTER_OF_DEMAND.md",
+        "docs/EVIDENCE_SUMMARY_FRAUD_INVESTIGATION.md",
+        "docs/EVIDENCE_SUMMARY_R500K_FABRICATION.md",
+        "docs/EVIDENCE_SUMMARY_R500K_FABRICATION_V2.md",
+        "docs/FRAUD_EVIDENCE_REPORT_2019_ACCOUNTS.md",
+        "docs/NEW_EVIDENCE_INTEGRATION_SUMMARY_2025_12_08.md",
+        "docs/analysis/EVIDENCE_COVERAGE_ANALYSIS.md",
+        "docs/analysis/NEW_EVIDENCE_ANALYSIS_2025_12_08.md",
+        "docs/application-1-evidence.md",
+        "docs/application-2-evidence.md",
+        "docs/application-3-evidence.md",
+        "docs/evidence-index-2025-12-19.md",
+        "docs/evidence-index-comprehensive-2025-12-23.md",
+        "docs/evidence-index-comprehensive.md",
+        "docs/evidence-index-generated.md",
+        "docs/evidence-index.md",
+        "docs/evidence-quick-reference.md",
+        "docs/evidence/README.md",
+        "docs/evidence/README.md.backup_2025_12_30",
+        "docs/evidence/README_ENHANCED_2025_12_30.md",
+        "docs/evidence/evidence_index.md",
+        "docs/evidence/index.md",
+        "docs/evidence_destruction_timeline.mmd",
+        "docs/evidence_destruction_timeline.png",
+        "docs/evidence_index.md",
+        "docs/legal-framework-evidence-based.md",
+        "docs/regulatory-evidence.html",
+        "docs/regulatory-evidence.md",
+        "docs/s162-delinquent-director-application-evidence-based.md"
+      ]
+    },
+    "analysis_reports": {
+      "count": 104,
+      "files": [
+        "docs/CHANGES_SUMMARY.md",
+        "docs/EXECUTIVE_SUMMARY.md",
+        "docs/EXECUTIVE_SUMMARY_2025-11-17.md",
+        "docs/EXECUTIVE_SUMMARY_2025_12_06.md",
+        "docs/IMPLEMENTATION_SUMMARY.md",
+        "docs/IMPROVEMENTS_REPORT.md",
+        "docs/LEGAL_FILINGS_STATUS_SUMMARY_2025_12_25.md",
+        "docs/LEGAL_FILINGS_SUMMARY_2025_12_10.md",
+        "docs/LEGAL_FILINGS_SUMMARY_2025_12_11.md",
+        "docs/OPTIMIZATION_REPORT_2025_12_09.md",
+        "docs/OPTIMIZATION_SUMMARY_FINAL.md",
+        "docs/PHASE_2_COMPLETION_SUMMARY.md",
+        "docs/PHASE_3_COMPLETION_SUMMARY.md",
+        "docs/R18_75M_KETONI_PAYOUT_CENTRAL_MOTIVE_ANALYSIS.md",
+        "docs/REFINED_DATA_MODELS_SUMMARY.md",
+        "docs/REFINEMENT_ANALYSIS_REPORT_2025_12_04.json",
+        "docs/REFINEMENT_EXECUTIVE_REPORT.md",
+        "docs/REFINEMENT_EXECUTIVE_SUMMARY_2025-11-15.md",
+        "docs/REFINEMENT_EXECUTIVE_SUMMARY_2025_12_09.md",
+        "docs/REFINEMENT_REPORT_2025-11-13.md",
+        "docs/REFINEMENT_REPORT_2025_12_11.md",
+        "docs/REFINEMENT_SUMMARY.md",
+        "docs/REFINEMENT_SUMMARY_2025-11-14.md",
+        "docs/REFINEMENT_SUMMARY_2025-11-16.md",
+        "docs/REFINEMENT_SUMMARY_2025_12_06.md",
+        "docs/REFINEMENT_SUMMARY_2025_12_08.md",
+        "docs/REFINEMENT_SUMMARY_2025_12_10.md",
+        "docs/VERIFIED_ENTITY_SUMMARY_V47.md",
+        "docs/analysis/ANALYSIS_AND_IMPROVEMENTS_REPORT_2025-11-16.md",
+        "docs/analysis/ANALYSIS_AND_IMPROVEMENTS_REPORT_2025-11-19.md",
+        "docs/analysis/ANALYSIS_AND_REFINEMENT_REPORT_2025_11_23.md",
+        "docs/analysis/ANALYSIS_AND_REFINEMENT_REPORT_2025_11_24.md",
+        "docs/analysis/ANALYSIS_REFINEMENTS.md",
+        "docs/analysis/ANALYSIS_SUMMARY_2025_11_20.md",
+        "docs/analysis/ANALYSIS_SUMMARY_2025_11_24.md",
+        "docs/analysis/BANTJIES_DEBT_PAYMENT_SCHEDULE_ANALYSIS.md",
+        "docs/analysis/BURDEN_OF_PROOF_REPORT_2025_12_03.md",
+        "docs/analysis/COMPREHENSIVE_ANALYSIS_AND_IMPROVEMENTS_REPORT_2025_11_19.md",
+        "docs/analysis/COMPREHENSIVE_ANALYSIS_SUMMARY_2025_11_20.md",
+        "docs/analysis/CORRECTED_LEGAL_CORRESPONDENCE_ANALYSIS_2025_11_26.md",
+        "docs/analysis/CRITICAL_DOCUMENTS_ANALYSIS.md",
+        "docs/analysis/CROSS_REFERENCE_ANALYSIS.md",
+        "docs/analysis/CURATORSHIP_CONSPIRACY_ANALYSIS_REPORT.md",
+        "docs/analysis/CURATORSHIP_FINANCIAL_MOTIVE_ANALYSIS.md",
+        "docs/analysis/CURATORSHIP_SETUP_PATTERN_ANALYSIS.md",
+        "docs/analysis/CURRENT_DATA_MODEL_ANALYSIS.md",
+        "docs/analysis/CURRENT_MODEL_ANALYSIS_2025_11_19.md",
+        "docs/analysis/DATA_MODEL_ANALYSIS_2025_11_25.md",
+        "docs/analysis/FINAL_ANALYSIS_REPORT_2025_11_20.md",
+        "docs/analysis/FRAUDULENT_SHELL_COMPANY_ANALYSIS.md",
+        "docs/analysis/HUMAN_RIGHTS_VIOLATIONS_ANALYSIS.md",
+        "docs/analysis/JURISTIC_TIMELINE_MATRIX.md",
+        "docs/analysis/LEGAL_FRAMEWORK_ANALYSIS_REPORT.md",
+        "docs/analysis/NETWORK_ANALYSIS.md",
+        "docs/analysis/NEW_LEGAL_CORRESPONDENCE_ANALYSIS_2025_11_26.md",
+        "docs/analysis/POWERPOINT_SALES_WORKFLOW_ANALYSIS_2025_12_08.md",
+        "docs/analysis/README.md",
+        "docs/analysis/REGIMASA_2019_FINANCIAL_STATEMENTS_ANALYSIS.md",
+        "docs/analysis/SEQUENTIAL_INTERDICTS_PATTERN_ANALYSIS.md",
+        "docs/analysis/SF9_ATTORNEY_LETTER_ANALYSIS_2025_12_08.md",
+        "docs/analysis/TIMELINE_IMPROVEMENTS_REPORT.md",
+        "docs/analysis/ZIP_CONTENTS_RELEVANCE_ANALYSIS.md",
+        "docs/analysis/index.md",
+        "docs/archive/old_reports/AD_RES_J7_CROSS_REFERENCE_2025_11_25.md",
+        "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_19.md",
+        "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_20.md",
+        "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_25.md",
+        "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_27.md",
+        "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_SUMMARY_2025_11_28.md",
+        "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_11_25.md",
+        "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_12_05.md",
+        "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_19.md",
+        "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_28.md",
+        "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_12_19.md",
+        "docs/archive/old_reports/DATA_MODEL_ANALYSIS_2025_11_20.json",
+        "docs/archive/old_reports/DATA_MODEL_ANALYSIS_2025_11_21.json",
+        "docs/archive/old_reports/DATA_MODEL_UPDATES_2025_11_19.md",
+        "docs/archive/old_reports/EVENT_PATTERNS_2025_11_21.json",
+        "docs/archive/old_reports/EXECUTIVE_SUMMARY_2025_11_25.md",
+        "docs/archive/old_reports/EXECUTIVE_SUMMARY_2025_11_26.md",
+        "docs/archive/old_reports/EXECUTIVE_SUMMARY_FINAL_2025_11_25.md",
+        "docs/archive/old_reports/EXECUTIVE_SUMMARY_REFINEMENTS_2025_11_19.md",
+        "docs/archive/old_reports/FINAL_COMPREHENSIVE_IMPROVEMENTS_2025_11_19.md",
+        "docs/archive/old_reports/FIXED_LINKS_VERIFICATION_2025_11_20.md",
+        "docs/archive/old_reports/IMPROVEMENTS_2025_11_24.md",
+        "docs/archive/old_reports/IMPROVEMENTS_RECOMMENDATIONS_2025_11_19.md",
+        "docs/archive/old_reports/IMPROVEMENTS_REPORT_2025_11_20.md",
+        "docs/archive/old_reports/IMPROVEMENTS_REPORT_FINAL_2025_11_19.md",
+        "docs/archive/old_reports/IMPROVEMENTS_SUMMARY_2025_11_20.md",
+        "docs/archive/old_reports/LEGAL_CORRESPONDENCE_INTEGRATION_SUMMARY_2025_11_26.md",
+        "docs/archive/old_reports/REFINEMENTS_LOG_2025_11_20.json",
+        "docs/archive/old_reports/REFINEMENT_EXECUTIVE_SUMMARY_2025_11_18.md",
+        "docs/archive/old_reports/REFINEMENT_REPORT_2025_11_26.md",
+        "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_19.md",
+        "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_21.md",
+        "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_22.md",
+        "docs/archive/old_reports/REFINEMENT_SUMMARY_2025_11_25.md",
+        "docs/archive/old_reports/TIMELINE_IMPROVEMENTS_2025_11_20.json",
+        "docs/archive/old_reports/TIMELINE_IMPROVEMENTS_2025_11_21.json",
+        "docs/archive/old_reports/VALIDATION_REPORT_2025_11_21.json",
+        "docs/data-model-analysis.md",
+        "docs/filings/FILINGS_REFINEMENT_SUMMARY_20251217.json",
+        "docs/financial_impact_summary.md",
+        "docs/gh_pages_analysis.md"
+      ]
+    },
+    "index_files": {
+      "count": 16,
+      "files": [
+        "docs/PAGES_README.md",
+        "docs/README.md",
+        "docs/entities/README.md",
+        "docs/entities/index.md",
+        "docs/entities/organizations/README.md",
+        "docs/entities/persons/README.md",
+        "docs/entity-profiles/index.md",
+        "docs/events/README.md",
+        "docs/filings/README.md",
+        "docs/filings/index.md",
+        "docs/index.html",
+        "docs/index.md",
+        "docs/index_2025_12_23.md",
+        "docs/index_improved.md",
+        "docs/index_improved_2025_12_25.md",
+        "docs/index_updated_2025_12_05.md"
+      ]
+    },
+    "other_docs": {
+      "count": 68,
+      "files": [
+        "docs/BURDEN_OF_PROOF_ENHANCED_2025_12_04.json",
+        "docs/COMBINED_LEGAL_NARRATIVE.md",
+        "docs/CORRECTION_AND_NEW_FINDINGS_2025-11-19.md",
+        "docs/ENHANCEMENT_RECOMMENDATIONS.md",
+        "docs/FFT_KETONI_INVESTMENT_TIMELINE_V48.md",
+        "docs/FINANCIAL_IMPACT_SCHEMA_DESIGN.md",
+        "docs/FORENSIC_CAUSAL_MAP.md",
+        "docs/IMPROVEMENTS_AND_RECOMMENDATIONS.md",
+        "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-14.md",
+        "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-15.md",
+        "docs/IMPROVEMENTS_RECOMMENDATIONS_2025-11-17.md",
+        "docs/LEGAL_FILINGS_IMPROVEMENTS_2025_12_04.md",
+        "docs/LEGAL_FILINGS_IMPROVEMENTS_2025_12_06.md",
+        "docs/REFUTATION_OF_DEMAND_LETTER_KL0034.md",
+        "docs/RELATIONS_UPDATE_2025_12_18.md",
+        "docs/RELATIONS_UPDATE_2025_12_19.md",
+        "docs/REVENUE_HIJACKING_NEW_INSIGHTS_V50.md",
+        "docs/STRATEGIC_RESPONSE_FRAMEWORK.md",
+        "docs/TRUST_CAPTURE_MAP.md",
+        "docs/UNKNOWN_TRANSACTIONS_SMOKING_GUN.md",
+        "docs/VERIFIED_EVENT_TIMELINE_V47.md",
+        "docs/_layouts/default.html",
+        "docs/application-1.md",
+        "docs/application-2.md",
+        "docs/application-3.md",
+        "docs/applications.md",
+        "docs/conspiracy_network.mmd",
+        "docs/conspiracy_network.png",
+        "docs/delinquent-director-application.md",
+        "docs/entity-profiles/bank_001-unknown-account.md",
+        "docs/entity-profiles/bank_account_001-regima-skin-savings-account.md",
+        "docs/entity-profiles/bank_account_002-villa-via-savings-acc.md",
+        "docs/entity-profiles/bank_account_003-strategic-savings-acc.md",
+        "docs/entity-profiles/org_001-regima-worldwide-distribution-pty-ltd.md",
+        "docs/entity-profiles/org_002-regima-skin-treatments-cc.md",
+        "docs/entity-profiles/org_003-regima-zone-ltd.md",
+        "docs/entity-profiles/org_004-strategic-logistics-group.md",
+        "docs/entity-profiles/org_005-villa-via.md",
+        "docs/entity-profiles/org_006-regima-sa.md",
+        "docs/entity-profiles/org_008-rezonance-pty-ltd.md",
+        "docs/entity-profiles/org_009-adderory-pty-ltd.md",
+        "docs/entity-profiles/org_010-adderory-skin-pty-ltd.md",
+        "docs/entity-profiles/person_001-peter-andrew-faucitt.md",
+        "docs/entity-profiles/person_002-rynette-farrar.md",
+        "docs/entity-profiles/person_003-adderory-rynette's-son.md",
+        "docs/entity-profiles/person_004-jacqueline-faucitt.md",
+        "docs/entity-profiles/person_004-kent.md",
+        "docs/entity-profiles/person_005-daniel-james-faucitt.md",
+        "docs/entity-profiles/person_005-eldridge-davids.md",
+        "docs/entity-profiles/person_006-linda.md",
+        "docs/entity-profiles/person_007-danie-bantjies.md",
+        "docs/entity-profiles/person_008-kayla-pretorius.md",
+        "docs/entity-profiles/person_008-kayla.md",
+        "docs/entity-profiles/person_009-gee.md",
+        "docs/entity-profiles/person_010-bernadine-wright.md",
+        "docs/entity-profiles/person_011-chantal.md",
+        "docs/entity-profiles/person_012-jax.md",
+        "docs/entity-profiles/trust_001-family-trust.md",
+        "docs/filings/regulatory/regulatory_complaints.md",
+        "docs/legal-framework.md",
+        "docs/letter-of-demand-refutation.md",
+        "docs/oppression-application.md",
+        "docs/s162_delinquent_director_application_full_text.md",
+        "docs/s163-oppression-not-pursued.md",
+        "docs/strategic_position_slide_content.md",
+        "docs/timeline.html",
+        "docs/timeline.md",
+        "docs/timeline_enhanced_2025_12_05.md"
+      ]
+    },
+    "entities": {
+      "count": 66,
+      "files": [
+        "docs/entities/BANK_001.md",
+        "docs/entities/BANK_ACCOUNT_001.md",
+        "docs/entities/BANK_ACCOUNT_002.md",
+        "docs/entities/BANK_ACCOUNT_003.md",
+        "docs/entities/DOMAIN_001.md",
+        "docs/entities/DOMAIN_002.md",
+        "docs/entities/ORG_001.md",
+        "docs/entities/ORG_002.md",
+        "docs/entities/ORG_003.md",
+        "docs/entities/ORG_004.md",
+        "docs/entities/ORG_005.md",
+        "docs/entities/ORG_006.md",
+        "docs/entities/ORG_008.md",
+        "docs/entities/ORG_009.md",
+        "docs/entities/ORG_010.md",
+        "docs/entities/ORG_011.md",
+        "docs/entities/ORG_012.md",
+        "docs/entities/ORG_013.md",
+        "docs/entities/ORG_014.md",
+        "docs/entities/ORG_015.md",
+        "docs/entities/PERSON_001.md",
+        "docs/entities/PERSON_002.md",
+        "docs/entities/PERSON_003.md",
+        "docs/entities/PERSON_004.md",
+        "docs/entities/PERSON_005.md",
+        "docs/entities/PERSON_006.md",
+        "docs/entities/PERSON_007.md",
+        "docs/entities/PERSON_008.md",
+        "docs/entities/PERSON_009.md",
+        "docs/entities/PERSON_010.md",
+        "docs/entities/PERSON_011.md",
+        "docs/entities/PERSON_012.md",
+        "docs/entities/PERSON_013.md",
+        "docs/entities/PERSON_014.md",
+        "docs/entities/PERSON_015.md",
+        "docs/entities/PLATFORM_001.md",
+        "docs/entities/TRUST_001.md",
+        "docs/entities/organizations/ORG_001.md",
+        "docs/entities/organizations/ORG_002.md",
+        "docs/entities/organizations/ORG_003.md",
+        "docs/entities/organizations/ORG_004.md",
+        "docs/entities/organizations/ORG_005.md",
+        "docs/entities/organizations/ORG_006.md",
+        "docs/entities/organizations/ORG_007.md",
+        "docs/entities/organizations/ORG_008.md",
+        "docs/entities/organizations/ORG_009.md",
+        "docs/entities/organizations/ORG_010.md",
+        "docs/entities/organizations/ORG_011.md",
+        "docs/entities/organizations/ORG_012.md",
+        "docs/entities/organizations/ORG_013.md",
+        "docs/entities/organizations/ORG_014.md",
+        "docs/entities/organizations/ORG_015.md",
+        "docs/entities/organizations/ORG_016.md",
+        "docs/entities/persons/PERSON_001.md",
+        "docs/entities/persons/PERSON_002.md",
+        "docs/entities/persons/PERSON_003.md",
+        "docs/entities/persons/PERSON_004.md",
+        "docs/entities/persons/PERSON_005.md",
+        "docs/entities/persons/PERSON_006.md",
+        "docs/entities/persons/PERSON_007.md",
+        "docs/entities/persons/PERSON_008.md",
+        "docs/entities/persons/PERSON_009.md",
+        "docs/entities/persons/PERSON_010.md",
+        "docs/entities/persons/PERSON_011.md",
+        "docs/entities/persons/PERSON_012.md",
+        "docs/entities/persons/PERSON_013.md"
+      ]
+    },
+    "events": {
+      "count": 89,
+      "files": [
+        "docs/events/EVENT_001.md",
+        "docs/events/EVENT_002.md",
+        "docs/events/EVENT_003.md",
+        "docs/events/EVENT_004.md",
+        "docs/events/EVENT_005.md",
+        "docs/events/EVENT_006.md",
+        "docs/events/EVENT_007.md",
+        "docs/events/EVENT_008.md",
+        "docs/events/EVENT_009.md",
+        "docs/events/EVENT_010.md",
+        "docs/events/EVENT_011.md",
+        "docs/events/EVENT_012.md",
+        "docs/events/EVENT_013.md",
+        "docs/events/EVENT_014.md",
+        "docs/events/EVENT_015.md",
+        "docs/events/EVENT_016.md",
+        "docs/events/EVENT_017.md",
+        "docs/events/EVENT_018.md",
+        "docs/events/EVENT_019.md",
+        "docs/events/EVENT_020.md",
+        "docs/events/EVENT_021.md",
+        "docs/events/EVENT_022.md",
+        "docs/events/EVENT_023.md",
+        "docs/events/EVENT_024.md",
+        "docs/events/EVENT_025.md",
+        "docs/events/EVENT_026.md",
+        "docs/events/EVENT_027.md",
+        "docs/events/EVENT_028.md",
+        "docs/events/EVENT_029.md",
+        "docs/events/EVENT_047.md",
+        "docs/events/EVENT_048.md",
+        "docs/events/EVENT_049.md",
+        "docs/events/EVENT_050.md",
+        "docs/events/EVENT_051.md",
+        "docs/events/EVENT_052.md",
+        "docs/events/EVENT_053.md",
+        "docs/events/EVENT_054.md",
+        "docs/events/EVENT_055.md",
+        "docs/events/EVENT_056.md",
+        "docs/events/EVENT_057.md",
+        "docs/events/EVENT_058.md",
+        "docs/events/EVENT_059.md",
+        "docs/events/EVENT_060.md",
+        "docs/events/EVENT_061.md",
+        "docs/events/EVENT_062.md",
+        "docs/events/EVENT_063.md",
+        "docs/events/EVENT_070.md",
+        "docs/events/EVENT_071.md",
+        "docs/events/EVENT_072.md",
+        "docs/events/EVENT_073.md",
+        "docs/events/EVENT_074.md",
+        "docs/events/EVENT_075.md",
+        "docs/events/EVENT_076.md",
+        "docs/events/EVENT_077.md",
+        "docs/events/EVENT_078.md",
+        "docs/events/EVENT_079.md",
+        "docs/events/EVENT_080.md",
+        "docs/events/EVENT_081.md",
+        "docs/events/EVENT_082.md",
+        "docs/events/EVENT_083.md",
+        "docs/events/EVENT_084.md",
+        "docs/events/EVENT_085.md",
+        "docs/events/EVENT_086.md",
+        "docs/events/EVENT_087.md",
+        "docs/events/EVENT_088.md",
+        "docs/events/EVENT_D001.md",
+        "docs/events/EVENT_D002.md",
+        "docs/events/EVENT_D003.md",
+        "docs/events/EVENT_D004.md",
+        "docs/events/EVENT_D005.md",
+        "docs/events/EVENT_H001.md",
+        "docs/events/EVENT_H002.md",
+        "docs/events/EVENT_H003.md",
+        "docs/events/EVENT_H004.md",
+        "docs/events/EVENT_H005.md",
+        "docs/events/EVENT_H006.md",
+        "docs/events/EVENT_H007.md",
+        "docs/events/EVENT_H008.md",
+        "docs/events/EVENT_H009.md",
+        "docs/events/EVENT_H010.md",
+        "docs/events/EVENT_H018.md",
+        "docs/events/EVT-063.md",
+        "docs/events/EVT-064.md",
+        "docs/events/EVT-065.md",
+        "docs/events/EVT-066.md",
+        "docs/events/EVT-067.md",
+        "docs/events/EVT-068.md",
+        "docs/events/EVT-069.md",
+        "docs/events/timeline.md"
+      ]
+    },
+    "timelines": {
+      "count": 0,
+      "files": []
+    },
+    "skills": {
+      "count": 0,
+      "files": []
+    },
+    "other": {
+      "count": 0,
+      "files": []
+    }
+  },
+  "critical_files": [
+    {
+      "file": "docs/EVIDENCE_INDEX_COMPREHENSIVE_2025_12_15.md",
+      "size_bytes": 10017,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/analysis/COMPREHENSIVE_ANALYSIS_AND_IMPROVEMENTS_REPORT_2025_11_19.md",
+      "size_bytes": 22280,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/analysis/COMPREHENSIVE_ANALYSIS_SUMMARY_2025_11_20.md",
+      "size_bytes": 11737,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_19.md",
+      "size_bytes": 10814,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_20.md",
+      "size_bytes": 20740,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_25.md",
+      "size_bytes": 4747,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_27.md",
+      "size_bytes": 17610,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_SUMMARY_2025_11_28.md",
+      "size_bytes": 9671,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_11_25.md",
+      "size_bytes": 14312,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_12_05.md",
+      "size_bytes": 15487,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_19.md",
+      "size_bytes": 12801,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_28.md",
+      "size_bytes": 13674,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_12_19.md",
+      "size_bytes": 7713,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/archive/old_reports/FINAL_COMPREHENSIVE_IMPROVEMENTS_2025_11_19.md",
+      "size_bytes": 12562,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251214.md",
+      "size_bytes": 16473,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251216.md",
+      "size_bytes": 8249,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size_bytes": 16594,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size_bytes": 16704,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/ANSWERING_AFFIDAVIT_V8_EVIDENCE_ENHANCED.md",
+      "size_bytes": 15858,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+      "size_bytes": 19328,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size_bytes": 19804,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+      "size_bytes": 1290,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_07.md",
+      "size_bytes": 17843,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size_bytes": 17372,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size_bytes": 17482,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_04.md",
+      "size_bytes": 15956,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_05.md",
+      "size_bytes": 17237,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_06.md",
+      "size_bytes": 17251,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10.md",
+      "size_bytes": 17957,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size_bytes": 19203,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size_bytes": 19328,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24.md",
+      "size_bytes": 8221,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24_UPDATED_20251226.md",
+      "size_bytes": 8757,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251214.md",
+      "size_bytes": 7717,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size_bytes": 8193,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251216.md",
+      "size_bytes": 6355,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_2025_12_08.md",
+      "size_bytes": 6942,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+      "size_bytes": 7052,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10.md",
+      "size_bytes": 7599,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10_REFINED_20251213.md",
+      "size_bytes": 7717,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SF9_INTEGRATED_2025_12_09.md",
+      "size_bytes": 7171,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_05.md",
+      "size_bytes": 6821,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_06.md",
+      "size_bytes": 6821,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/COMMERCIAL_CRIME_SUBMISSION_ENHANCED_2025_12_07.md",
+      "size_bytes": 7417,
+      "pattern_matched": "COMMERCIAL_CRIME"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+      "size_bytes": 11337,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+      "size_bytes": 13083,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_REFINED_2025_11_28.md",
+      "size_bytes": 11650,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_SUMMARY_20251203.md",
+      "size_bytes": 14398,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_TORTURE_PERJURY_FRAUD.md",
+      "size_bytes": 11337,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/CRIMINAL_COMPLAINT_V2_ENHANCED.md",
+      "size_bytes": 11337,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251214.md",
+      "size_bytes": 7654,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size_bytes": 8593,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251216.md",
+      "size_bytes": 772,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24.md",
+      "size_bytes": 5335,
+      "pattern_matched": "NPA_TAX_FRAUD_REPORT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24_UPDATED_20251226.md",
+      "size_bytes": 5871,
+      "pattern_matched": "NPA_TAX_FRAUD_REPORT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+      "size_bytes": 14883,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+      "size_bytes": 15359,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251216.md",
+      "size_bytes": 937,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_05.md",
+      "size_bytes": 13134,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_06.md",
+      "size_bytes": 13134,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10.md",
+      "size_bytes": 13512,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size_bytes": 14758,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+      "size_bytes": 14883,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_24.md",
+      "size_bytes": 6141,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+      "size_bytes": 15792,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+      "size_bytes": 13318,
+      "pattern_matched": "CRIMINAL_COMPLAINT"
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+      "size_bytes": 14450,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+      "size_bytes": 4855,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/criminal/POPIA_COMPLAINT_REFINED_2025_12_27.md",
+      "size_bytes": 1481,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+      "size_bytes": 14339,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+      "size_bytes": 5675,
+      "pattern_matched": "EVIDENCE_ENHANCED"
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size_bytes": 19203,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_27.md",
+      "size_bytes": 3059,
+      "pattern_matched": "CIPC_COMPLAINT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md",
+      "size_bytes": 14884,
+      "pattern_matched": "COMPREHENSIVE"
+    },
+    {
+      "file": "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_27.md",
+      "size_bytes": 1325,
+      "pattern_matched": "NPA_TAX_FRAUD_REPORT_REFINED_2025_12"
+    },
+    {
+      "file": "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+      "size_bytes": 15654,
+      "pattern_matched": "POPIA_COMPLAINT_REFINED_2025_12"
+    }
+  ],
+  "restoration_candidates": [
+    "docs/EVIDENCE_INDEX_COMPREHENSIVE_2025_12_15.md",
+    "docs/analysis/COMPREHENSIVE_ANALYSIS_AND_IMPROVEMENTS_REPORT_2025_11_19.md",
+    "docs/analysis/COMPREHENSIVE_ANALYSIS_SUMMARY_2025_11_20.md",
+    "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_19.md",
+    "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_20.md",
+    "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_REPORT_2025_11_27.md",
+    "docs/archive/old_reports/COMPREHENSIVE_IMPROVEMENTS_SUMMARY_2025_11_28.md",
+    "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_11_25.md",
+    "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_REPORT_2025_12_05.md",
+    "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_19.md",
+    "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_11_28.md",
+    "docs/archive/old_reports/COMPREHENSIVE_REFINEMENT_SUMMARY_2025_12_19.md",
+    "docs/archive/old_reports/FINAL_COMPREHENSIVE_IMPROVEMENTS_2025_11_19.md",
+    "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251214.md",
+    "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_20251216.md",
+    "docs/filings/ANSWERING_AFFIDAVIT_EVIDENCE_ENHANCED_2025_12_08.md",
+    "docs/filings/ANSWERING_AFFIDAVIT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+    "docs/filings/ANSWERING_AFFIDAVIT_V8_EVIDENCE_ENHANCED.md",
+    "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+    "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+    "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_07.md",
+    "docs/filings/CIPC_COMPLAINT_EVIDENCE_ENHANCED_2025_12_08.md",
+    "docs/filings/CIPC_COMPLAINT_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_04.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_05.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_06.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24.md",
+    "docs/filings/CIPC_COMPLAINT_REFINED_2025_12_24_UPDATED_20251226.md",
+    "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251214.md",
+    "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251215_REFINED.md",
+    "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_20251216.md",
+    "docs/filings/COMMERCIAL_CRIME_EVIDENCE_ENHANCED_2025_12_08.md",
+    "docs/filings/COMMERCIAL_CRIME_FINAL_EVIDENCE_ENHANCED_2025_12_09.md",
+    "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10.md",
+    "docs/filings/COMMERCIAL_CRIME_REFINED_2025_12_10_REFINED_20251213.md",
+    "docs/filings/COMMERCIAL_CRIME_SF9_INTEGRATED_2025_12_09.md",
+    "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_05.md",
+    "docs/filings/COMMERCIAL_CRIME_SUBMISSION_2025_12_06.md",
+    "docs/filings/COMMERCIAL_CRIME_SUBMISSION_ENHANCED_2025_12_07.md",
+    "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+    "docs/filings/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+    "docs/filings/CRIMINAL_COMPLAINT_REFINED_2025_11_28.md",
+    "docs/filings/CRIMINAL_COMPLAINT_SUMMARY_20251203.md",
+    "docs/filings/CRIMINAL_COMPLAINT_TORTURE_PERJURY_FRAUD.md",
+    "docs/filings/CRIMINAL_COMPLAINT_V2_ENHANCED.md",
+    "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251214.md",
+    "docs/filings/NPA_TAX_FRAUD_REPORT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+    "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24.md",
+    "docs/filings/NPA_TAX_FRAUD_REPORT_REFINED_2025_12_24_UPDATED_20251226.md",
+    "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251214.md",
+    "docs/filings/POPIA_COMPLAINT_EVIDENCE_ENHANCED_20251215_REFINED.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_05.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_06.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12_REFINED_20251213.md",
+    "docs/filings/POPIA_COMPLAINT_REFINED_2025_12_24.md",
+    "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED.md",
+    "docs/filings/criminal/CRIMINAL_COMPLAINT_EVIDENCE_ENHANCED_UPDATED_2025_12_12.md",
+    "docs/filings/criminal/POPIA_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+    "docs/filings/regulatory/CIPC_COMPLAINT_COMPREHENSIVE_2025_12_28.md",
+    "docs/filings/regulatory/CIPC_COMPLAINT_EVIDENCE_ENHANCED_20251217.md",
+    "docs/filings/regulatory/CIPC_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md",
+    "docs/filings/regulatory/NPA_TAX_FRAUD_REPORT_COMPREHENSIVE_2025_12_28.md",
+    "docs/filings/regulatory/POPIA_COMPLAINT_REFINED_2025_12_10_UPDATED_2025_12_12.md"
+  ]
+}

@@ -1,0 +1,49 @@
+  {
+    "entity": "RegimA Skin Treatments",
+    "file_path": "/home/ubuntu/upload/REG-TRIALBALANCE.xlsx",
+    "dates": [
+      "2019-03-01",
+      "2020-02-29"
+    ],
+    "entities": [
+      "RWW",
+      "RegimA ",
+      "FNB",
+      "Villa Via",
+      "RWWD",
+      "SARS",
+      "Strategic Logistics"
+    ],
+    "transactions": [],
+    "sheets": [
+      "TB",
+      "AJEs"
+    ]
+  },
+  {
+    "entity": "RegimA Worldwide Distribution",
+    "file_path": "/home/ubuntu/upload/WW-TrialBalanceFEB20.xlsx",
+    "dates": [
+      "2020-02-20"
+    ],
+    "entities": [
+      "Regima",
+      "FNB",
+      "RegimA Skin Treatments"
+    ],
+    "transactions": [],
+    "sheets": [
+      "WW - TrialBalance FEB20",
+      "AJE'S"
+    ]
+  },
+  {
+    "entity": "Strategic Logistics",
+    "file_path": "/home/ubuntu/upload/SL-TRIALBALANCE2020.xlsx",
+    "dates": [
+      "2019-03-01",
+      "2020-02-29"
+    ],
+    "entities": [
+      "Regima",
+      "RegimA ",

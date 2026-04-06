@@ -1,0 +1,236 @@
+{
+  "model_name": "RegimA Group Financial Relationships Model 2020",
+  "model_version": "2.0",
+  "created_date": "2025-01-10",
+  "data_source": "Trial Balance Evidence Package August 2020",
+  "period_covered": "2019-03-01 to 2020-04-30",
+  
+  "entities": {
+    "RST": {
+      "full_name": "RegimA Skin Treatments",
+      "entity_type": "Primary Operating Company",
+      "financial_year_end": "2020-02-29",
+      "ownership_structure": {
+        "co_director_ownership": "50%",
+        "other_shareholders": "50%"
+      },
+      "key_personnel": {
+        "ceo": "Jacqui Faucitt (Jax)",
+        "role": "Primary Brand Management"
+      },
+      "financial_metrics_2020": {
+        "sales": 21822058.61,
+        "cost_of_sales": 8206221.57,
+        "directors_fees": 2400000.00,
+        "interest_received": 1882780.18,
+        "interest_from_slg": 414334.09,
+        "admin_fees_paid": 948615.99
+      },
+      "strategic_role": "Profit concentration entity, receives interest from SLG"
+    },
+    
+    "RWW": {
+      "full_name": "RegimA Worldwide Distribution",
+      "entity_type": "Distribution and E-commerce",
+      "financial_year_end": "2020-02-29",
+      "ownership_structure": {
+        "user_ownership": "33%",
+        "co_director_ownership": "33%",
+        "third_party_ownership": "33%"
+      },
+      "key_personnel": {
+        "cio": "Daniel Faucitt (Dan)",
+        "role": "E-Commerce Automation Platform"
+      },
+      "financial_metrics_2020": {
+        "sales": 7440828.33,
+        "cost_of_sales": 5622740.58,
+        "admin_fees_reallocated": 810097.70,
+        "production_cost_allocation": 750000.00,
+        "computer_expenses": 313710.83,
+        "warehouse_charges": 647215.80
+      },
+      "strategic_role": "Expense dumping ground, receives cost allocations from RST"
+    },
+    
+    "SLG": {
+      "full_name": "Strategic Logistics",
+      "entity_type": "Manufacturing and Logistics",
+      "financial_year_end": "2020-02-29",
+      "ownership_structure": {
+        "user_ownership": "33%",
+        "co_director_ownership": "33%",
+        "third_party_ownership": "33%"
+      },
+      "financial_metrics_2020": {
+        "sales": 14900286.76,
+        "cost_of_sales": 13578642.35,
+        "regima_loan_account": 12971390.13,
+        "interest_paid_to_rst": 414334.09,
+        "admin_fees_reallocated": 252041.73,
+        "customer_control_account": 3873717.87
+      },
+      "strategic_role": "Loss-making entity, massive debtor to RST, pays interest to RST"
+    },
+    
+    "VV": {
+      "full_name": "Villa Via",
+      "entity_type": "Property Holding Company",
+      "financial_year_end": "2020-04-30",
+      "ownership_structure": {
+        "co_director_ownership": "50%",
+        "other_shareholders": "50%"
+      },
+      "financial_metrics_2020": {
+        "monthly_rental_income": 4384701.36,
+        "net_profit": 3727475.50,
+        "land_buildings_cost": 24469195.99,
+        "members_loan_account": 22806538.74,
+        "electricity_water": 438217.97,
+        "repairs_maintenance": 368309.99
+      },
+      "strategic_role": "Rental income generator, capital extraction vehicle"
+    }
+  },
+  
+  "inter_company_relationships": {
+    "rst_to_slg_loan": {
+      "creditor": "RST",
+      "debtor": "SLG", 
+      "amount": 12971390.13,
+      "type": "Inter-company loan",
+      "interest_rate": "Calculated at R414K annually",
+      "significance": "Massive debt burden on SLG, profit extraction for RST"
+    },
+    
+    "rst_to_rww_loan": {
+      "creditor": "RST",
+      "debtor": "RWW",
+      "amount": 750000.00,
+      "date": "2020-02-28",
+      "purpose": "Production cost allocation",
+      "significance": "Cost dumping mechanism on RWW"
+    },
+    
+    "vv_to_slg_loan": {
+      "creditor": "VV",
+      "debtor": "SLG",
+      "amount": 600000.00,
+      "date": "2020-04-30",
+      "significance": "Additional debt burden on SLG"
+    },
+    
+    "cost_allocation_patterns": {
+      "rww_admin_reallocation": {
+        "amount": 810097.70,
+        "from": "Admin fees",
+        "to": "Production costs",
+        "purpose": "Obscure true cost structure"
+      },
+      "slg_admin_reallocation": {
+        "amount": 252041.73,
+        "from": "Admin fees", 
+        "to": "Production costs",
+        "purpose": "Reduce apparent admin overhead"
+      }
+    }
+  },
+  
+  "financial_manipulation_indicators": {
+    "transfer_pricing_red_flags": [
+      "SLG massive debt to RST (R13M) with interest payments",
+      "Cost reallocations from admin to production across entities",
+      "Different financial year-ends creating reporting complexity",
+      "Villa Via members loan of R22.8M indicating capital extraction"
+    ],
+    
+    "profit_shifting_mechanisms": [
+      "Interest income concentrated in RST from SLG loan",
+      "Production costs dumped on RWW through loan mechanism",
+      "Admin fee reallocations to obscure true profitability",
+      "Villa Via rental income with high members loan"
+    ],
+    
+    "cost_dumping_evidence": [
+      "RWW receives R750K production cost allocation from RST",
+      "RWW admin fees of R810K reallocated to production",
+      "RWW bears warehouse charges of R647K",
+      "RWW computer expenses of R314K for group operations"
+    ]
+  },
+  
+  "control_mechanisms": {
+    "bookkeeping_control": {
+      "controller": "Co-director's personal bookkeeper",
+      "scope": "All entity accounts",
+      "significance": "Centralized control enables manipulation"
+    },
+    
+    "ownership_concentration": {
+      "rst_vv_control": "Co-director owns 50% of RST and VV",
+      "slg_rww_control": "Co-director is 33% shareholder and co-director",
+      "user_position": "33% shareholder SLG/RWW, employee of RST only"
+    }
+  },
+  
+  "cost_of_sales_structure": {
+    "slg_to_rst": {
+      "percentage": "38%",
+      "description": "SLG sells to RST at 38% cost of sales"
+    },
+    "rst_to_rww_rsa": {
+      "percentage": "62%", 
+      "description": "RST sells to RWW and RSA at 62% cost of sales"
+    },
+    "manipulation_indicator": "24% markup from SLG to final sale suggests profit concentration in RST"
+  },
+  
+  "timeline_integration": {
+    "key_dates": [
+      {
+        "date": "2019-03-01",
+        "event": "Financial year start RST/SLG",
+        "significance": "Beginning of manipulation period"
+      },
+      {
+        "date": "2020-02-20", 
+        "event": "Multiple AJE entries",
+        "significance": "Coordinated inter-company adjustments"
+      },
+      {
+        "date": "2020-02-28",
+        "event": "Year-end adjustments and interest payment",
+        "significance": "R414K interest from SLG to RST, R750K loan to RWW"
+      },
+      {
+        "date": "2020-08-13",
+        "event": "Danie Bantjes email with final TBs",
+        "significance": "Financial statement finalization coordination"
+      }
+    ]
+  },
+  
+  "strategic_implications": {
+    "for_jax_defense": [
+      "Jax is CEO of RST but not shareholder/director",
+      "Jax confronted fraud in May 2025, triggering cover-up",
+      "Financial structures show systematic profit extraction from entities Jax doesn't control",
+      "Cost dumping on RWW (where Jax has no ownership) supports victimization narrative"
+    ],
+    
+    "fraud_enablement": [
+      "Complex inter-company structures obscure economic substance",
+      "Centralized bookkeeping control enables manipulation",
+      "Different financial year-ends create reporting gaps",
+      "Massive inter-company debts create artificial profit shifting"
+    ]
+  },
+  
+  "recommended_analysis": [
+    "Cross-reference R414K interest payments with other years",
+    "Analyze Villa Via rental agreements for related party transactions", 
+    "Examine SLG inventory adjustments for transfer pricing manipulation",
+    "Investigate RWW cost allocation mechanisms for expense dumping patterns",
+    "Correlate 2020 structures with 2022-2025 fraud timeline"
+  ]
+}

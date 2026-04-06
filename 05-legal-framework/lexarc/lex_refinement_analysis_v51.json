@@ -1,0 +1,144 @@
+{
+  "analysis_date": "2025-12-28T02:03:14.009822",
+  "repository": "cogpy/ad-res-j7",
+  "case": "2025-137857",
+  "version": "51.0",
+  "summary": {
+    "total_schemes": 141,
+    "total_domains": 17,
+    "total_principles": 537,
+    "refinement_opportunities": 5
+  },
+  "domains": {
+    "root": 19,
+    "adm": 1,
+    "civ-proc": 3,
+    "civ": 50,
+    "cmp": 21,
+    "core": 4,
+    "cri": 1,
+    "cst": 1,
+    "env": 2,
+    "eth": 1,
+    "evid": 3,
+    "frn": 1,
+    "int": 3,
+    "lab": 4,
+    "lv1": 9,
+    "prof-eth": 4,
+    "trs": 14
+  },
+  "refinement_opportunities": [
+    {
+      "type": "versioning",
+      "priority": "medium",
+      "description": "56 schemes lack version numbers",
+      "schemes": [
+        "ENHANCED_HEADER_TEMPLATE.scm",
+        "adm/za/south_african_administrative_law.scm",
+        "civ-proc/za/south_african_civil_procedure_ex_parte_fraud.scm",
+        "civ/za/south_african_civil_law.scm",
+        "civ/za/south_african_civil_law_agent_based_conflict_resolution.scm"
+      ]
+    },
+    {
+      "type": "temporal_analysis",
+      "priority": "high",
+      "description": "1 schemes in temporal-relevant domains lack temporal analysis",
+      "schemes": [
+        "lab/za/south_african_labour_law.scm"
+      ]
+    },
+    {
+      "type": "agent_modeling",
+      "priority": "high",
+      "description": "39 schemes lack agent-based behavioral modeling",
+      "schemes": [
+        "civ/za/ad_element_integration_v39.scm",
+        "civ/za/confrontation_event_analysis_v37.scm",
+        "civ/za/multi_actor_coordination_detection_v36.scm",
+        "civ/za/multi_actor_coordination_detection_v38.scm",
+        "civ/za/south_african_civil_law_case_2025_137857_refined_v18.scm"
+      ]
+    },
+    {
+      "type": "verification_framework",
+      "priority": "critical",
+      "description": "3 schemes lack verification/source attribution",
+      "schemes": [
+        "adm/za/south_african_administrative_law.scm",
+        "lv1/known_laws_module_header.scm",
+        "prof-eth/za/south_african_cio_professional_standards_v24.scm"
+      ]
+    },
+    {
+      "type": "version_upgrade",
+      "priority": "high",
+      "description": "76 case-specific schemes need upgrade to v50+",
+      "schemes": [
+        "ad_paragraph_comprehensive_mapping_v45.scm (v45)",
+        "case_2025_137857_entity_data_v43_verified.scm (v43)",
+        "case_2025_137857_entity_data_v44_verified.scm (v44)",
+        "case_2025_137857_entity_relation_data_v1.scm (v1)",
+        "entity_agent_modeling_v2_enhanced.scm (v2)",
+        "entity_relation_framework_v3_comprehensive.scm (v3)",
+        "entity_relation_framework_v43_comprehensive.scm (v43)",
+        "entity_relation_framework_v44_enhanced.scm (v44)",
+        "entity_relation_framework_v45_ad_integrated.scm (v45)",
+        "entity_relation_framework_v46_ketoni_corrected.scm (v46)"
+      ]
+    }
+  ],
+  "top_schemes_by_size": [
+    {
+      "path": "core/legislative_model_framework_layers.scm",
+      "size": 70162,
+      "principles": 0
+    },
+    {
+      "path": "civ/za/south_african_civil_law.scm",
+      "size": 67680,
+      "principles": 16
+    },
+    {
+      "path": "civ/za/south_african_civil_law_case_2025_137857_refined_v6.scm",
+      "size": 64643,
+      "principles": 7
+    },
+    {
+      "path": "core/legislative_model_framework_core.scm",
+      "size": 58637,
+      "principles": 0
+    },
+    {
+      "path": "entity_relation_framework_v50_high_resolution_agents.scm",
+      "size": 56751,
+      "principles": 0
+    },
+    {
+      "path": "int/za/south_african_international_law.scm",
+      "size": 56519,
+      "principles": 0
+    },
+    {
+      "path": "cst/za/south_african_construction_law.scm",
+      "size": 56409,
+      "principles": 0
+    },
+    {
+      "path": "lab/za/south_african_labour_law.scm",
+      "size": 55331,
+      "principles": 0
+    },
+    {
+      "path": "civ/za/south_african_civil_law_case_2025_137857_refined_v30.scm",
+      "size": 54801,
+      "principles": 0
+    },
+    {
+      "path": "civ/za/south_african_civil_law_case_2025_137857_refined_v18.scm",
+      "size": 52251,
+      "principles": 0
+    }
+  ]
+}
